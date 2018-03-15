@@ -1,0 +1,38 @@
+# Food items
+
+# Most of the foods are simple items that have always existed
+foods:
+    apple¦s = minecraft:apple
+    baked potato¦s = minecraft:baked_potato
+    beetroot¦s = minecraft:beetroot
+    beetroot (soup|stew) = minecraft:beetroot_soup
+    bread = minecraft:bread
+    cake¦s = minecraft:cake
+    carrot¦s = minecraft:carrot
+    chorus fruit¦s = minecraft:chorus_fruit
+    cooked chicken¦s = minecraft:cooked_chicken
+    cooked mutton¦s = minecraft:cooked_mutton
+    cooked porkchop¦s = minecraft:cooked_porkchop
+    cooked rabbit¦s = minecraft:cooked_rabbit
+    cookie¦s = minecraft:cookie
+    golden carrot¦s = minecraft:golden_carrot
+    melon¦s = minecraft:melon
+    mushroom stew¦s = minecraft:mushroom_stew
+    poisonous potato¦es = minecraft:poisonous_potato
+    potato¦es = minecraft:potato
+    pumpkin pie¦s = minecraft:pumpkin_pie
+    rabbit (stew|soup) = minecraft:rabbit stew
+    [raw] beef = minecraft:beef
+    raw chicken¦s = minecraft:chicken
+    [raw] mutton¦s = minecraft:mutton
+    [raw] porkchop¦s = minecraft:porkchop
+    raw rabbit¦s = minecraft:rabbit
+    rotten flesh = minecraft:rotten_flesh
+    spider eye¦s = minecraft:spider_eye
+    (steak¦s|cooked beef) = minecraft:steak
+
+# Before 1.13, some foods had data values
+old foods:
+    # Fishes
+    # Golden apples
+    # TODO Skript data value support

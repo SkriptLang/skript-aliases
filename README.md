@@ -56,9 +56,27 @@ own tags specified before the next id is given.
 ### Variations
 Sometimes, there are multiple items that are quite similar, but still have
 some differences. For example potions are like this: they all share an id, but
-have their own tags.
+have their own tags. In these cases, it might make sense to define a variation:
+```
+{potions}:
+    mundane = - {"Potion": "minecraft:mundane"}
+    awkward = - {"Potion": "mineraft:awkward"}
+{potions} potion = minecraft:potion
+```
+Basically, in place of {potions}, there can be either mundane or awkward. What
+it is, will affect the tags of resulting item. Since all potions share an id,
+we can use a hyphen instead of retyping minecraft:potion.
 
-WIP - documenting this and rest of features is yet to be done
+### Conditions
+Each section that contains aliases may have a special entry to control which
+Minecraft versions the aliases in said section are for. The options are
+following:
+```
+minecraft versions = 1.12 or newer # Matches a version and newer ones
+minecraft versions = 1.12 or older # Matches a version and previous ones
+minecraft versions = 1.11 to 1.12 # Matches both given versions and the versions between them
+```
+Of course, in reality, only one of these is allowed per section of aliases.
 
 ## Developing Aliases (for experienced developers)
 1. Fork if you don't have write access
@@ -105,11 +123,9 @@ the produced folder from *skript-aliases* to just aliases.
 If you have something you want to do, good. If not, you can check issues in
 this repository to find out something you'd like to work on.
 
-When know *what* you want to do, it is time to familiarize yourself with
-the structure of aliases. Where is it what you want to change? Does it require
-a new file, or would it be a simple modification or addition to an existing one?
-Read the comments in files; they will usually describe their contents. If you
-make your own file, add it to a correct folder and comment it similarly.
+When know *what* you want to do, it is time to decide where the change goes to.
+Look at the files, read their comments and try to figure that out. Usually, the
+aliases files are categorized based on Minecraft creative inventory categories.
 
 You can, and must, test your changes using Skript. Basically, reload aliases
 a lot while you do your changes. Log in to the server and give items to you to
