@@ -21,7 +21,7 @@ foods:
     poisonous potato¦es = minecraft:poisonous_potato
     potato¦es = minecraft:potato
     pumpkin pie¦s = minecraft:pumpkin_pie
-    rabbit (stew|soup) = minecraft:rabbit stew
+    rabbit (stew|soup) = minecraft:rabbit_stew
     [raw] beef = minecraft:beef
     raw chicken¦s = minecraft:chicken
     [raw] mutton¦s = minecraft:mutton
@@ -29,10 +29,17 @@ foods:
     raw rabbit¦s = minecraft:rabbit
     rotten flesh = minecraft:rotten_flesh
     spider eye¦s = minecraft:spider_eye
-    (steak¦s|cooked beef) = minecraft:steak
+    (steak¦s|cooked beef) = minecraft:cooked_beef
 
 # Before 1.13, some foods had data values
 old foods:
-    # Fishes
-    # Golden apples
-    # TODO Skript data value support
+    minecraft version = 1.13 or older
+    [raw] fish¦es = minecraft:fish
+    [raw] salmon¦s = minecraft:fish {Damage:1}
+    clownfish¦es = minecraft:fish {Damage:2}
+    pufferfish¦es = minecraft:fish {Damage:3}
+    cooked fish¦es = minecraft:cooked_fish
+    cooked salmon¦s = minecraft:cooked_fish {Damage:1}
+
+    [normal] golden apple = minecraft:golden_apple
+    enchanted golden apple = minecraft:golden_apple {Damage:1}
