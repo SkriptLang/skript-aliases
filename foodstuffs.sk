@@ -33,7 +33,7 @@ foods:
 
 # Before 1.13, some foods had data values
 old foods:
-    minecraft version = 1.13 or older
+    minecraft version = 1.12.2 or older
     [raw] fish¦es = minecraft:fish
     [raw] salmon¦s = minecraft:fish {Damage:1}
     clownfish¦es = minecraft:fish {Damage:2}
