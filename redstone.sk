@@ -1,8 +1,8 @@
 power sources:
 	redstone block¦s = minecraft:redstone_block
-	redstone [dust] block¦s = minecraft:redstone_wire
-	[any] redstone [dust] item¦s = minecraft:redstone
-	redstone [dust] = redstone block, redstone item
+	redstone (wire|dust block)¦s = minecraft:redstone_wire
+	redstone (dust|item)¦s = minecraft:redstone
+	any redstone item = redstone block, redstone item
 
 	lit redstone torch¦es = minecraft:redstone_torch
 	unlit redstone torch¦es = minecraft:unlit_redstone_torch
@@ -13,26 +13,25 @@ power sources:
 	(gold|light[ ][weight[ed]]) pressure plate¦s = minecraft:light_weighted_pressure_plate
 	(iron|heavy[ ][weight[ed]]) pressure plate¦s = minecraft:heavy_weighted_pressure_plate
 	(normal|uninverted) daylight (detector|sensor)¦s = minecraft:daylight_detector
-	[inverted] daylight (detector|sensor) [inverted]¦s = minecraft:inverted_daylight_detector
-	[any] daylight (detector|sensor)¦s = daylight detector, inverted daylight detector
+	[inverted] daylight (detector|sensor)¦s = minecraft:daylight_detector_inverted
+	[any] daylight (detector|sensor)¦s = normal daylight detector, inverted daylight detector
 	stone button¦s = minecraft:stone_button
 	tripwire hook¦s = minecraft:tripwire_hook
 	trapped chest¦s = minecraft:trapped_chest
 
 activatables:
 	dispenser¦s = minecraft:dispenser
-	note block¦s = minecraft:note_block
 	dropper¦s = minecraft:dropper
 	tnt¦s = minecraft:tnt
 
 	lit [redstone] lamp¦s = minecraft:lit_redstone_lamp
-	unlit [redstone] lamp¦s = minecraft:redstone_lamp
-	[any] redstone lamp¦s = lit redstone lamp, unlit redstone lamp
+	[unlit] [redstone] lamp¦s = minecraft:redstone_lamp
+	any [redstone] lamp¦s = lit redstone lamp, unlit redstone lamp
 
-	normal piston¦s = minecraft:piston
+	[normal] piston¦s = minecraft:piston
 	sticky piston¦s = minecraft:sticky_piston
 	piston head¦s = minecraft:piston_head
-	(block 36|block moved by piston|moving block¦s) = minecraft:piston_extension
+	(piston extension|block 36|block moved by piston|moving block¦s) = minecraft:piston_extension
 
 	iron trapdoor¦s = minecraft:iron_trapdoor
 
@@ -50,7 +49,8 @@ activatables:
 	dark oak [wood[en]] door¦s = minecraft:dark_oak_door
 
 legacy wood activatables:
-	minecraft versions = 1.12.2 or older
+	minecraft version = 1.12.2 or older
+
 	wood[en] button¦s = minecraft:wooden_button
 	[any] button = stone button, wood button
 
@@ -67,8 +67,11 @@ legacy wood activatables:
 	[any] wood[en] door¦s = oak door, spruce door, birch door, jungle door, acacia door, dark oak door
 	[any] door¦s = iron door, any wood door
 
+	note block¦s = minecraft:noteblock
+
 current wood activatables:
-	minecraft versions = 1.13 or newer
+	minecraft version = 1.13 or newer
+
 	(oak|regular|normal) [wood[en]] button¦s = minecraft:oak_button
 	(spruce|fir|redwood|pine) [wood[en]] button¦s = minecraft:spruce_button
 	birch [wood[en]] button¦s = minecraft:birch_button
@@ -100,19 +103,27 @@ current wood activatables:
 	[any] wood[en] door¦s = oak door, spruce door, birch door, jungle door, acacia door, dark oak door
 	[any] door¦s = iron door, any wood door
 
+	note block¦s = minecraft:note_block
+
+legacy logic:
+	minecraft version = 1.12.2 or older
+
+	(inactive|unpowered) [redstone] comparator¦s = minecraft:comparator
+	(active|powered) [redstone] comparator¦s = minecraft:comparator {Damage:4}
+	[redstone] comparator item¦s = minecraft:comparator
+
+# TODO 1.13 logic
+
 logic:
 	(inactive|unpowered) [redstone] repeater¦s = minecraft:unpowered_repeater
 	(active|powered) [redstone] repeater¦s = minecraft:powered_repeater
 	[redstone] repeater item¦s = minecraft:repeater
 	[any] [redstone] repeater¦s = unpowered repeater, powered repeater, repeater item
 
-	(inactive|unpowered) [redstone] comparator¦s = minecraft:unpowered_comparator
-	(active|powered) [redstone] comparator¦s = minecraft:powered_comparator
-	[redstone] comparator item¦s = minecraft:comparator
-	[any] [redstone] comparator¦s = unpowered comparator, powered comparator, comparator item
+	any [redstone] comparator¦s = unpowered comparator, powered comparator, comparator item
 
 	hopper¦s = minecraft:hopper
 
 new logic:
-	minecraft versions = 1.11 or newer
+	minecraft version = 1.11 or newer
 	[redstone] observer¦s = minecraft:observer
