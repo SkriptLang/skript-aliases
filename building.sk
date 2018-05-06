@@ -1,0 +1,27 @@
+building blocks:
+  grass [block¦s] = minecraft:grass
+  dirt [block¦s] = minecraft:dirt
+  cobblestone [block¦s] = minecraft:cobblestone
+  bedrock [block¦s] = minecraft:bedrock
+
+  sand [block¦s] = minecraft:sand
+  sandstone [block¦s] = minecraft:sandstone
+  gravel [block¦s] = minecraft:gravel
+
+  gold ore¦s = minecraft:gold_ore
+  iron ore¦s = minecraft:iron_ore
+  coal ore¦s = minecraft:coal_ore
+  lapis [lazuli] ore = minecraft:lapis_ore
+  [any] ore = gold ore, iron ore, coal ore, lapis ore
+
+  glass [block¦s] = minecraft:glass
+
+  lapis [lazuli] block¦s = minecraft:lapis_block
+
+# TODO 1.13 and earlier versions have separate:
+# Stone, and variants
+# Coarse dirt, podzol
+# Planks and wood
+# Red sand(stone)
+# Sponges
+# Colored glass

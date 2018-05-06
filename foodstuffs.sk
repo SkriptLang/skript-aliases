@@ -43,3 +43,5 @@ old foods:
 
     [normal] golden apple = minecraft:golden_apple
     enchanted golden apple = minecraft:golden_apple {Damage:1}
+
+# TODO 1.13 foods
