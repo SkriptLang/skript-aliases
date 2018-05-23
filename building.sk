@@ -19,13 +19,13 @@ stones:
   moss[y] cobble[stone]¦s = minecraft:mossy_cobblestone
 
 sediments:
-  grass [block]¦s = minecraft:grass_block
-  dirt = minecraft:dirt
-  coarse dirt = minecraft:coarse_dirt
-  podzol = minecraft:podzol
-  sand = minecraft:sand
-  red sand = minecraft:red_sand
-  gravel = minecraft:gravel
+  grass [block¦s] = minecraft:grass_block
+  dirt [block¦s] = minecraft:dirt
+  coarse dirt [block¦s] = minecraft:coarse_dirt
+  podzol [block¦s] = minecraft:podzol
+  sand [block¦s] = minecraft:sand
+  red sand [block¦s] = minecraft:red_sand
+  gravel [block¦s] = minecraft:gravel
 
 wood:
   (oak|regular|normal) [wood[en]] plank¦s = minecraft:oak_planks
@@ -69,9 +69,11 @@ underground:
   lapis [lazuli] ore¦s = minecraft:lapis_ore
   diamond ore¦s = minecraft:diamond_ore
   redstone ore¦s = minecraft:redstone_ore
+  emerald ore¦s = minecraft:emerald_ore
+  any ore = gold ore, iron ore, coal ore, lapis ore, diamond ore, redstone ore, emerald ore
 
-  obsidian = minecraft:obsidian
-  bedrock = minecraft:bedrock
+  obsidian [block¦s] = minecraft:obsidian
+  bedrock [block¦s] = minecraft:bedrock
 
 underwater:
   sponge¦s = minecraft:sponge

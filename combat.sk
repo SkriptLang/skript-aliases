@@ -1,0 +1,97 @@
+update aquatic:
+	minecraft versions = 1.13 or newer
+	turtle [shell] helmet = minecraft:turtle_helmet
+	trident¦s = minecraft:trident
+
+	{update aquatic effects):
+		turtle master = - {"Potion": "minecraft:turtle_master"}
+		(long|extended) turtle master = - {"Potion": "minecraft:long_turtle_master"}
+		(strong|tier (2|II)) turtle master = - {"Potion": "minecraft:strong_turtle_master"}
+		slow fall[ing] = - {"Potion": "minecraft:slow_falling"}
+		(long|extended) slow fall[ing] = - {"Potion": "minecraft:long_slow_falling"}
+
+	{update aquatic effects} tipped arrow¦s = minecraft:tipped_arrow
+	tipped arrow[s] of {update aquatic effects} = minecraft:tipped_arrow
+
+exploration update:
+	minecraft versions = 1.11 or newer
+	totem[s] of undying = minecraft:totem_of_undying
+
+combat update:
+	minecraft versions = 1.9 or newer
+	shield¦s = minecraft:shield
+
+	{tipped arrow types}:
+		night vision = - {"Potion": "minecraft:night_vision"}
+		(long|extended) night vision = - {"Potion": "minecraft:long_night_vision"}
+		invisibility = - {"Potion": "minecraft:invisibility"}
+		(long|extended) invisibility = - {"Potion": "minecraft:long_invisibility"}
+		leaping = - {"Potion": "minecraft:leaping"}
+		(long|extended) leaping = - {"Potion": "minecraft:long_leaping"}
+		(strong|tier (2|II)) leaping = - {"Potion": "minecraft:strong_leaping"}
+		fire resistance = - {"Potion": "minecraft:fire_resistance"}
+		(long|extended) fire resistance = - {"Potion": "minecraft:long_fire_resistance"}
+		(swiftness|speed) = - {"Potion": "minecraft:swiftness"}
+		(long|extended) (swiftness|speed) = - {"Potion": "minecraft:long_swiftness"}
+		(strong|tier (2|II)) (swiftness|speed) = - {"Potion": "minecraft:strong_swiftness"}
+		slowness = - {"Potion": "minecraft:slowness"}
+		(long|extended) slowness = - {"Potion": "minecraft:long_slowness"}
+		(strong|tier (2|II)) slowness = - {"Potion": "minecraft:strong_slowness"}
+		water breathing = - {"Potion": "minecraft:water_breathing"}
+		(long|extended) water breathing = - {"Potion": "minecraft:long_water_breathing"}
+		(healing|instant health) = - {"Potion": "minecraft:healing"}
+		(strong|tier (2|II)) (healing|instant health) = - {"Potion": "minecraft:strong_healing"}
+		[instant] (harming|damage) = - {"Potion": "minecraft:harming"}
+		(strong|tier (2|II)) [instant] (harming|damage) = - {"Potion": "minecraft:strong_harming"}
+		poison = - {"Potion": "minecraft:poison"}
+		(long|extended) poison = - {"Potion": "minecraft:long_poison"}
+		(strong|tier (2|II)) poison = - {"Potion": "minecraft:strong_poison"}
+		regen[eration] = - {"Potion": "minecraft:regeneration"}
+		(long|extended) regen[eration] = - {"Potion": "minecraft:long_regeneration"}
+		(strong|tier (2|II)) regen[eration] = - {"Potion": "minecraft:strong_regeneration"}
+		strength = - {"Potion": "minecraft:strength"}
+		(long|extended) strength = - {"Potion": "minecraft:long_strength"}
+		(strong|tier (2|II)) strength = - {"Potion": "minecraft:strong_strength"}
+		weakness = - {"Potion": "minecraft:weakness"}
+		(long|extended) weakness = - {"Potion": "minecraft:long_weakness"}
+		luck = - {"Potion": "minecraft:luck"}
+
+	spectral arrow¦s = minecraft:spectral_arrow
+	{tipped arrow types} tipped arrow¦s = minecraft:tipped_arrow
+	tipped arrow[s] of {tipped arrow types} = minecraft:tipped_arrow
+
+armor:
+	leather (cap|helmet)¦s = minecraft:leather_helmet
+	leather chest(piece|plate)¦s = minecraft:leather_chestplate
+	leather (pants|leggings) = minecraft:leather_leggings
+	leather boots = minecraft:leather_boots
+
+	iron (cap|helmet)¦s = minecraft:iron_helmet
+	iron chest(piece|plate)¦s = minecraft:iron_chestplate
+	iron (pants|leggings) = minecraft:iron_leggings
+	iron boots = minecraft:iron_boots
+
+	gold[en] (cap|helmet)¦s = minecraft:golden_helmet
+	gold[en] chest(piece|plate)¦s = minecraft:golden_chestplate
+	gold[en] (pants|leggings) = minecraft:golden_leggings
+	gold[en] boots = minecraft:golden_boots
+
+	diamond (cap|helmet)¦s = minecraft:diamond_helmet
+	diamond chest(piece|plate)¦s = minecraft:diamond_chestplate
+	diamond (pants|leggings) = minecraft:diamond_leggings
+	diamond boots = minecraft:diamond_boots
+
+	chain[mail] (cap|helmet)¦s = minecraft:chainmail_helmet
+	chain[mail] chest(piece|plate)¦s = minecraft:chainmail_chestplate
+	chain[mail] (pants|leggings) = minecraft:chainmail_leggings
+	chain[mail] boots = minecraft:chainmail_boots
+
+weapons:
+	wood[en] sword¦s = minecraft:wooden_sword
+	stone sword¦s = minecraft:stone_sword
+	gold[en] sword¦s = minecraft:golden_sword
+	iron sword¦s = minecraft:iron_sword
+	diamond sword¦s = minecraft:diamond_sword
+
+	bow¦s = minecraft:bow
+	arrow¦s = minecraft:arrow

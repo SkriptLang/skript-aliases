@@ -1,8 +1,4 @@
 # Skript Aliases
-## Work In Progress
-Development of aliases will start in coming days/weeks. At the moment, there
-are some things in Skript that may require changes.
-
 These are the new aliases for Skript, currently work in progress. If you are
 looking for the plugin, you should go to the main
 [repository](https://github.com/bensku/Skript).
@@ -52,6 +48,23 @@ mundane potion = minecraft:potion {"Potion": "minecraft:mundane"}
 ```
 If there are multiple ids defined for an alias, each of them can have their
 own tags specified before the next id is given.
+
+### Block States
+Block states can be used by appending them to the id:
+```
+anvil pointing north = minecraft:anvil[facing=north]
+```
+Note that before 1.13, **not all** block states are supported. Things that do
+not have a block state in 1.13 do not work, even if they technically have it
+on target Minecraft version.
+
+Also, these are *block* states. Any data values that persist to items should be
+treated as damage values and represented as a tag:
+```
+[raw] salmon¦s = minecraft:fish {Damage:1}
+```
+1.13 will mostly get rid of these items, finally leaving damage to actually be
+used for, well, damage.
 
 ### Variations
 Sometimes, there are multiple items that are quite similar, but still have
