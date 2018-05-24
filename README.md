@@ -1,7 +1,7 @@
 # Skript Aliases
 These are the new aliases for Skript, currently work in progress. If you are
 looking for the plugin, you should go to the main
-[repository](https://github.com/bensku/Skript).
+[repository](https://github.com/SkriptLang/Skript).
 
 ## Structure of Aliases
 Aliases are laid out in multiple subfolders and files inside them. In each file,
