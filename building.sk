@@ -1,4 +1,5 @@
-stones:
+building blocks:
+  # Stones
   [smooth] stone¦s = minecraft:stone
 
   [raw] granite¦s = minecraft:granite
@@ -15,10 +16,11 @@ stones:
 
   any natural stone¦s = stone, any granite, any diorite, any andesite
 
-  cobble[stone]¦s = minecraft:cobblestone
-  moss[y] cobble[stone]¦s = minecraft:mossy_cobblestone
+  cobble[stone] [block¦s] = minecraft:cobblestone
+  moss[y] cobble[stone] [block¦s] = minecraft:mossy_cobblestone
+  any cobble[stone] [block¦s] = cobblestone, mossy cobblestone
 
-sediments:
+  # Sediments
   grass [block¦s] = minecraft:grass_block
   dirt [block¦s] = minecraft:dirt
   coarse dirt [block¦s] = minecraft:coarse_dirt
@@ -27,7 +29,7 @@ sediments:
   red sand [block¦s] = minecraft:red_sand
   gravel [block¦s] = minecraft:gravel
 
-wood:
+  # Wood
   (oak|regular|normal) [wood[en]] plank¦s = minecraft:oak_planks
   (spruce|fir|redwood|pine) [wood[en]] plank¦s = minecraft:spruce_planks
   birch [wood[en]] plank¦s = minecraft:birch_planks
@@ -42,27 +44,11 @@ wood:
   jungle [wood[en]] log¦s = minecraft:jungle_log
   acacia [wood[en]] log¦s = minecraft:acacia_log
   dark oak [wood[en]] log¦s = minecraft:dark_oak_log
-  normal log¦s = oak log, spruce log, birch log, jungle log, acacia log, dark oak log
+  any normal log¦s = oak log, spruce log, birch log, jungle log, acacia log, dark oak log
 
-  stripped (oak|regular|normal) log¦s = minecraft:stripped_oak_log
-  stripped (spruce|fir|redwood|pine) log¦s = minecraft:stripped_spruce_log
-  stripped birch log¦s = minecraft:stripped_birch_log
-  stripped jungle log¦s = minecraft:stripped_jungle_log
-  stripped acacia log¦s = minecraft:stripped_acacia_log
-  stripped dark oak log¦s = minecraft:stripped_dark_oak_log
-  [any] stripped log¦s = stripped oak log, stripped spruce log, stripped birch log, stripped jungle log, stripped acacia log, stripped dark oak log
+  any log = any normal log
 
-  (oak|regular|normal) bark¦s = minecraft:oak_bark
-  (spruce|fir|redwood|pine) bark¦s = minecraft:spruce_bark
-  birch bark¦s = minecraft:birch_bark
-  jungle bark¦s = minecraft:jungle_bark
-  acacia bark¦s = minecraft:acacia_bark
-  dark oak bark¦s = minecraft:dark_oak_bark
-  [any] bark¦s = oak bark, spruce bark, birch bark, jungle bark, acacia bark, dark oak bark
-
-  any log = normal logs, stripped logs, barks
-
-underground:
+  # Underground
   gold ore¦s = minecraft:gold_ore
   iron ore¦s = minecraft:iron_ore
   coal ore¦s = minecraft:coal_ore
@@ -75,11 +61,11 @@ underground:
   obsidian [block¦s] = minecraft:obsidian
   bedrock [block¦s] = minecraft:bedrock
 
-underwater:
+  # Unerwater
   sponge¦s = minecraft:sponge
   wet sponge¦s = minecraft:wet_sponge
 
-decorative:
+  # Decorative
   [plain] glass [block¦s] = minecraft:glass
 
   white wool = minecraft:white_wool
@@ -87,5 +73,36 @@ decorative:
   magenta wool = minecraft:magenta_wool
   light blue wool = minecraft:light_blue_wool
   yellow wool = minecraft:yellow_wool
-  (lime|light) [green] wool = minecraft:lime_wool
-  pink wool
+  (lime [green]|light green) wool = minecraft:lime_wool
+  pink wool = minecraft:pink_wool
+  [dark] gr(a|e)y wool = minecraft:gray_wool
+  light gr(a|e)y wool = minecraft:light_gray_wool
+  cyan wool = minecraft:cyan_wool
+  purple wool = minecraft:purple_wool
+  blue wool = minecraft:blue_wool
+  brown wool = minecraft:brown_wool
+  [dark] green wool = minecraft:green_wool
+  red wool = minecraft:red_wool
+  black wool = minecraft:black_wool
+  any wool = white wool, orange wool, magenta wool, light blue wool, yellow wool, lime wool, pink wool, dark gray wool, light gray wool, cyan wool, purple wool, blue wool, brown wool, dark green wool, red wool, black wool
+
+
+update aquatic:
+  # Update Aquatic added log variants with bark either on all sides or no sides.
+  stripped (oak|regular|normal) log¦s = minecraft:stripped_oak_log
+  stripped (spruce|fir|redwood|pine) log¦s = minecraft:stripped_spruce_log
+  stripped birch log¦s = minecraft:stripped_birch_log
+  stripped jungle log¦s = minecraft:stripped_jungle_log
+  stripped acacia log¦s = minecraft:stripped_acacia_log
+  stripped dark oak log¦s = minecraft:stripped_dark_oak_log
+  any stripped log [block¦s] = stripped oak log, stripped spruce log, stripped birch log, stripped jungle log, stripped acacia log, stripped dark oak log
+
+  (oak|regular|normal) bark¦s = minecraft:oak_bark
+  (spruce|fir|redwood|pine) bark¦s = minecraft:spruce_bark
+  birch bark¦s = minecraft:birch_bark
+  jungle bark¦s = minecraft:jungle_bark
+  acacia bark¦s = minecraft:acacia_bark
+  dark oak bark¦s = minecraft:dark_oak_bark
+  any bark [block¦s] = oak bark, spruce bark, birch bark, jungle bark, acacia bark, dark oak bark
+
+  any log = any normal log, any stripped log, any bark block
