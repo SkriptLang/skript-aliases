@@ -1,52 +1,19 @@
-building blocks:
+# The blocks whose ID layout hasn't changed for a long time (at least since 1.8).
+unchanged building blocks:
   # Stones
   [smooth] stone¦s = minecraft:stone
-
-  [raw] granite¦s = minecraft:granite
-  (smooth|polished) granite¦s = minecraft:polished_granite
-  any granite¦s = raw granite, polished granite
-
-  [raw] diorite¦s = minecraft:diorite
-  (smooth|polished) diorite¦s = minecraft:polished_diorite
-  any diorite¦s = raw diorite, polished diorite
-
-  [raw] andesite¦s = minecraft:andesite
-  (smooth|polished) andesite¦s = minecraft:polished_andesite
-  any andesite¦s = raw andesite, polished andesite
-
-  any natural stone¦s = stone, any granite, any diorite, any andesite
 
   cobble[stone] [block¦s] = minecraft:cobblestone
   moss[y] cobble[stone] [block¦s] = minecraft:mossy_cobblestone
   any cobble[stone] [block¦s] = cobblestone, mossy cobblestone
 
   # Sediments
-  grass [block¦s] = minecraft:grass_block
   dirt [block¦s] = minecraft:dirt
-  coarse dirt [block¦s] = minecraft:coarse_dirt
-  podzol [block¦s] = minecraft:podzol
   sand [block¦s] = minecraft:sand
   red sand [block¦s] = minecraft:red_sand
   gravel [block¦s] = minecraft:gravel
-
-  # Wood
-  (oak|regular|normal) [wood[en]] plank¦s = minecraft:oak_planks
-  (spruce|fir|redwood|pine) [wood[en]] plank¦s = minecraft:spruce_planks
-  birch [wood[en]] plank¦s = minecraft:birch_planks
-  jungle [wood[en]] plank¦s = minecraft:jungle_planks
-  acacia [wood[en]] plank¦s = minecraft:acacia_planks
-  dark oak [wood[en]] plank¦s = minecraft:dark_oak_planks
-  [any] plank¦s = oak planks, spruce planks, birch planks, jungle planks, acacia planks, dark oak planks
-
-  (oak|regular|normal) [wood[en]] log¦s = minecraft:oak_log
-  (spruce|fir|redwood|pine) [wood[en]] log¦s = minecraft:spruce_log
-  birch [wood[en]] log¦s = minecraft:birch_log
-  jungle [wood[en]] log¦s = minecraft:jungle_log
-  acacia [wood[en]] log¦s = minecraft:acacia_log
-  dark oak [wood[en]] log¦s = minecraft:dark_oak_log
-  any normal log¦s = oak log, spruce log, birch log, jungle log, acacia log, dark oak log
-
-  any log = any normal log
+  clay block¦s = minecraft:clay
+  mycelium [block¦s] = minecraft:mycelium
 
   # Underground
   gold ore¦s = minecraft:gold_ore
@@ -56,18 +23,48 @@ building blocks:
   diamond ore¦s = minecraft:diamond_ore
   redstone ore¦s = minecraft:redstone_ore
   emerald ore¦s = minecraft:emerald_ore
-  any ore = gold ore, iron ore, coal ore, lapis ore, diamond ore, redstone ore, emerald ore
+  [nether] quartz ore¦s = minecraft:quartz_ore
+  any ore = gold ore, iron ore, coal ore, lapis ore, diamond ore, redstone ore, emerald ore, nether quartz ore
 
   obsidian [block¦s] = minecraft:obsidian
   bedrock [block¦s] = minecraft:bedrock
 
-  # Unerwater
+  # Mineral blocks
+  (gold block[s]|block[s] of gold) = minecraft:gold_block
+  (iron block[s]|block[s] of iron) = minecraft:iron_block
+  (coal block[s]|block[s] of coal) = minecraft:coal_block
+  (lapis [lazuli] block[s]|block[s] of lapis [lazuli]) = minecraft:lapis_block
+  (diamond block[s]|block[s] of diamond) = minecraft:diamond_block
+  (redstone block[s]|block[s] of redstone) = minecraft:redstone_block
+  (emerald block[s]|block[s] of emerald) = minecraft:emerald_block
+  ([nether] quartz block[s]|block[s] of [nether] quartz) = minecraft:quartz_block
+
+  # Underwater
   sponge¦s = minecraft:sponge
   wet sponge¦s = minecraft:wet_sponge
 
-  # Decorative
-  [plain] glass [block¦s] = minecraft:glass
+  # Glass
+  [(plain|unstained|undyed)] glass [block¦s] = minecraft:glass
+  white stained glass [block¦s] = minecraft:white_stained_glass
+  orange stained glass [block¦s] = minecraft:orange_stained_glass
+  magenta stained glass [block¦s] = minecraft:magenta_stained_glass
+  light blue stained glass [block¦s] = minecraft:light_blue_stained_glass
+  yellow stained glass [block¦s] = minecraft:yellow_stained_glass
+  (lime [green]|light green) stained glass [block¦s] = minecraft:lime_stained_glass
+  pink stained glass [block¦s] = minecraft:pink_stained_glass
+  [dark] gr(a|e)y stained glass [block¦s] = minecraft:gray_stained_glass
+  light gr(a|e)y stained glass [block¦s] = minecraft:light_gray_stained_glass
+  cyan stained glass [block¦s] = minecraft:cyan_stained_glass
+  purple stained glass [block¦s] = minecraft:purple_stained_glass
+  blue stained glass [block¦s] = minecraft:blue_stained_glass
+  brown stained glass [block¦s] = minecraft:brown_stained_glass
+  [dark] green stained glass [block¦s] = minecraft:green_stained_glass
+  red stained glass [block¦s] = minecraft:red_stained_glass
+  black stained glass [block¦s] = minecraft:black_stained_glass
+  any stained glass [block¦s] = white stained glass, orange stained glass, magenta stained glass, light blue stained glass, yellow stained glass, lime stained glass, pink stained glass, dark gray stained glass, light gray stained glass, cyan stained glass, purple stained glass, blue stained glass, brown stained glass, dark green stained glass, red stained glass, black stained glass
+  any glass = plain glass, any stained glass
 
+  # Wool
   white wool = minecraft:white_wool
   orange wool = minecraft:orange_wool
   magenta wool = minecraft:magenta_wool
@@ -86,11 +83,279 @@ building blocks:
   black wool = minecraft:black_wool
   any wool = white wool, orange wool, magenta wool, light blue wool, yellow wool, lime wool, pink wool, dark gray wool, light gray wool, cyan wool, purple wool, blue wool, brown wool, dark green wool, red wool, black wool
 
+  # Stairs
+  oak [wood[en]] stair¦s = minecraft:oak_stairs
+  spruce [wood[en]] stair¦s = minecraft:spruce_stairs
+  birch [wood[en]] stair¦s = minecraft:birch_stairs
+  jungle [wood[en]] stair¦s = minecraft:jungle_stairs
+  acacia [wood[en]] stair¦s = minecraft:acacia_stairs
+  dark oak [wood[en]] stair¦s = minecraft:dark_oak_stairs
+  [red] brick stair¦s = minecraft:brick_stairs
+  stone brick stair¦s = minecraft:stone_brick_stairs
+  nether brick stair¦s = minecraft:nether_brick_stairs
+  [nether] quartz stair¦s = minecraft:quartz_stairs
+  sandstone stair¦s = minecraft:sandstone_stairs
 
+  # Construction/Decorative
+  [red] brick block¦s = minecraft:brick_block
+
+  # Nether
+  netherrack [block¦s] = minecraft:netherrack
+  soul sand [block¦s] = minecraft:soul_sand
+  glowstone [block¦s] = minecraft:glowstone
+  nether brick block¦s = minecraft:nether_brick
+
+  # Miscellaneous
+  ice [block¦s] = minecraft:ice
+  snow block¦s = minecraft:snow
+  hay [(bale|block)¦s] = minecraft:hay_block
+  packed ice [block¦s] = minecraft:packed_ice
+
+# 1.13 changed the IDs of a lot of blocks since they're no longer defined by data value.
+# This section is for blocks that had a different ID prior to 1.13.
+old blocks before flattening:
+  minecraft versions = 1.12 or older
+
+  # Stones
+  [raw] granite¦s = minecraft:stone {Damage:1}
+  (smooth|polished) granite¦s = minecraft:stone {Damage:2}
+  any granite¦s = raw granite, polished granite
+
+  [raw] diorite¦s = minecraft:stone {Damage:3}
+  (smooth|polished) diorite¦s = minecraft:stone {Damage:4}
+  any diorite¦s = raw diorite, polished diorite
+
+  [raw] andesite¦s = minecraft:stone {Damage:5}
+  (smooth|polished) andesite¦s = minecraft:stone {Damage:6}
+  any andesite¦s = raw andesite, polished andesite
+
+  any [natural] stone¦s = stone, any granite, any diorite, any andesite
+
+  # Sediments
+  grass [block¦s] = minecraft:grass
+  coarse dirt [block¦s] = minecraft:dirt {Damage:1}
+  podzol [block¦s] = minecraft:dirt {Damage:2}
+
+  # Wood
+  (oak|regular|normal) [wood[en]] plank¦s = minecraft:planks {Damage:0}
+  spruce [wood[en]] plank¦s = minecraft:planks {Damage:1}
+  birch [wood[en]] plank¦s = minecraft:planks {Damage:2}
+  jungle [wood[en]] plank¦s = minecraft:planks {Damage:3}
+  acacia [wood[en]] plank¦s = minecraft:planks {Damage:4}
+  dark oak [wood[en]] plank¦s = minecraft:planks {Damage:5}
+  any plank¦s = oak planks, spruce planks, birch planks, jungle planks, acacia planks, dark oak planks
+
+  (oak|regular|normal) [wood[en]] log¦s = minecraft:log {Damage:0}, minecraft:log {Damage:4}, minecraft:log {Damage:8}, minecraft:log {Damage:12}
+  spruce [wood[en]] log¦s = minecraft:log {Damage:1}, minecraft:log {Damage:5}, minecraft:log {Damage:9}, minecraft:log {Damage:13}
+  birch [wood[en]] log¦s = minecraft:log {Damage:2}, minecraft:log {Damage:6}, minecraft:log {Damage:10}, minecraft:log {Damage:14}
+  jungle [wood[en]] log¦s = minecraft:log {Damage:3}, minecraft:log {Damage:7}, minecraft:log {Damage:8}, minecraft:log {Damage:15}
+  acacia [wood[en]] log¦s = minecraft:log2 {Damage:0}, minecraft:log2 {Damage:2}, minecraft:log2 {Damage:4}, minecraft:log2 {Damage:6}, minecraft:log2 {Damage:8}, minecraft:log2 {Damage:10}, minecraft:log2 {Damage:12}, minecraft:log2 {Damage:14}
+  dark oak [wood[en]] log¦s = minecraft:log2 {Damage:1}, minecraft:log2 {Damage:3}, minecraft:log2 {Damage:5}, minecraft:log2 {Damage:7}, minecraft:log2 {Damage:9}, minecraft:log2 {Damage:11}, minecraft:log2 {Damage:13}, minecraft:log2 {Damage:15}
+  any normal log¦s = oak log, spruce log, birch log, jungle log, acacia log, dark oak log
+
+  any log = any normal log
+
+  # Desert
+  sandstone [block¦s] = minecraft:sandstone {Damage:0}
+  chiseled sandstone [block¦s] = minecraft:sandstone {Damage:1}
+  (smooth|cut) sandstone [block¦s] = minecraft:sandstone {Damage:2}
+  any sandstone [block¦s] = sandstone, chiseled sandstone, cut sandstone
+
+  red sandstone [block¦s] = minecraft:red_sandstone {Damage:0}
+  red chiseled sandstone [block¦s] = minecraft:red_sandstone {Damage:1}
+  red (smooth|cut) sandstone [block¦s] = minecraft:red_sandstone {Damage:2}
+  any red sandstone [block¦s] = red sandstone, red chiseled sandstone, red cut sandstone
+
+  # Slabs
+  stone slab = minecraft:stone_slab {Damage:0}
+  sandstone slab = minecraft:stone_slab {Damage:1}
+  (petrified|stone) [oak] wood[en] slab = minecraft:stone_slab {Damage:2}
+  cobble[stone] slab = minecraft:stone_slab {Damage:3}
+  brick slab = minecraft:stone_slab {Damage:4}
+  stone[ ]brick slab = minecraft:stone_slab {Damage:5}
+  nether brick slab = minecraft:stone_slab {Damage:6}
+  [nether] quartz slab = minecraft:stone_slab {Damage:7}
+
+  # Stairs
+  cobble[stone] stair¦s = minecraft:stone_stairs
+
+  # Construction/Decorative
+  [red] brick block¦s = minecraft:brick_block
+
+  stone brick¦s = minecraft:stonebrick {Damage:0}
+  moss[y] stone brick¦s = minecraft:stonebrick {Damage:1}
+  cracked stone brick¦s = minecraft:stonebrick {Damage:2}
+  chiseled stone brick¦s = minecraft:stonebrick {Damage:3}
+  any stone brick¦s = stone bricks, mossy stone bricks, cracked stone bricks, chiseled stone bricks
+
+  ([nether] quartz block[s]|block[s] of [nether] quartz) = minecraft:quartz_block {Damage:0}
+  chiseled [nether] quartz [block¦s] = minecraft:quartz_block {Damage:1}
+  [nether] quartz pillar¦s = minecraft:quartz_block {Damage:2}
+  any [nether] quartz [block¦s] = quartz block, chiseled quartz, quartz pillar
+
+  [raw] prismarine [block¦s] = minecraft:prismarine {Damage:0}
+  prismarine brick¦s = minecraft:prismarine {Damage:1}
+  dark prismarine [block¦s] = minecraft:prismarine {Damage:2}
+  any prismarine = raw prismarine, prismarine bricks, dark prismarine
+  sea lantern¦s = minecraft:sea_lantern
+
+  # Miscellaneous
+  [unlit] pumpkin¦s = minecraft:pumpkin
+  (lit pumpkin|jack-o[']-lantern)¦s = minecraft:lit_pumpkin
+  melon block¦s = minecraft:melon_block
+
+  # Stained clay. Renamed to terracotta in 1.12 but the ID wasn't changed until 1.13.
+  white (stained clay|terracotta) = minecraft:stained_hardened_clay {Damage:0}
+  orange (stained clay|terracotta) = minecraft:stained_hardened_clay {Damage:1}
+  magenta (stained clay|terracotta) = minecraft:stained_hardened_clay {Damage:2}
+  light blue (stained clay|terracotta) = minecraft:stained_hardened_clay {Damage:3}
+  yellow (stained clay|terracotta) = minecraft:stained_hardened_clay {Damage:4}
+  (lime [green]|light green) (stained clay|terracotta) = minecraft:stained_hardened_clay {Damage:5}
+  pink (stained clay|terracotta) = minecraft:stained_hardened_clay {Damage:6}
+  [dark] gr(a|e)y (stained clay|terracotta) = minecraft:stained_hardened_clay {Damage:7}
+  light gr(a|e)y (stained clay|terracotta) = minecraft:stained_hardened_clay {Damage:8}
+  cyan (stained clay|terracotta) = minecraft:stained_hardened_clay {Damage:9}
+  purple (stained clay|terracotta) = minecraft:stained_hardened_clay {Damage:10}
+  blue (stained clay|terracotta) = minecraft:stained_hardened_clay {Damage:11}
+  brown (stained clay|terracotta) = minecraft:stained_hardened_clay {Damage:12}
+  [dark] green (stained clay|terracotta) = minecraft:stained_hardened_clay {Damage:13}
+  red (stained clay|terracotta) = minecraft:stained_hardened_clay {Damage:14}
+  black (stained clay|terracotta) = minecraft:stained_hardened_clay {Damage:15}
+  any stained ([hard[ened]] clay|terracotta) [block¦s] = white terracotta, orange terracotta, magenta terracotta, light blue terracotta, yellow terracotta, lime terracotta, pink terracotta, dark gray terracotta, light gray terracotta, cyan terracotta, purple terracotta, blue terracotta, brown terracotta, dark green terracotta, red terracotta, black terracotta
+
+  [un(dyed|stained)] (hard[ened] clay|terracotta) [block¦s] = minecraft:hardened_clay
+  any (hard[ened] clay|terracotta) [block¦s] = any stained terracotta, unstained terracotta
+
+# 1.10 added a few blocks whose IDs were changed in the flattening (1.13)
+frostburn update before flattening:
+  minecraft versions = 1.10 to 1.12
+
+  magma [block¦s] = minecraft:magma
+  red nether brick¦s = minecraft:red_nether_brick
+
+# 1.13 removed data values and separated tons of blocks into their own IDs.
+# This section contains building blocks whose IDs were changed by 1.13.
+building blocks after flattening:
+  minecraft versions = 1.13 or newer
+
+  # Stones
+  [raw] granite¦s = minecraft:granite
+  (smooth|polished) granite¦s = minecraft:polished_granite
+  any granite¦s = raw granite, polished granite
+
+  [raw] diorite¦s = minecraft:diorite
+  (smooth|polished) diorite¦s = minecraft:polished_diorite
+  any diorite¦s = raw diorite, polished diorite
+
+  [raw] andesite¦s = minecraft:andesite
+  (smooth|polished) andesite¦s = minecraft:polished_andesite
+  any andesite¦s = raw andesite, polished andesite
+
+  any [natural] stone¦s = stone, any granite, any diorite, any andesite
+
+  # Sediments
+  grass [block¦s] = minecraft:grass_block
+  coarse dirt [block¦s] = minecraft:coarse_dirt
+  podzol [block¦s] = minecraft:podzol
+
+  # Wood
+  (oak|regular|normal) [wood[en]] plank¦s = minecraft:oak_planks
+  spruce [wood[en]] plank¦s = minecraft:spruce_planks
+  birch [wood[en]] plank¦s = minecraft:birch_planks
+  jungle [wood[en]] plank¦s = minecraft:jungle_planks
+  acacia [wood[en]] plank¦s = minecraft:acacia_planks
+  dark oak [wood[en]] plank¦s = minecraft:dark_oak_planks
+  [any] plank¦s = oak planks, spruce planks, birch planks, jungle planks, acacia planks, dark oak planks
+
+  (oak|regular|normal) [wood[en]] log¦s = minecraft:oak_log
+  spruce [wood[en]] log¦s = minecraft:spruce_log
+  birch [wood[en]] log¦s = minecraft:birch_log
+  jungle [wood[en]] log¦s = minecraft:jungle_log
+  acacia [wood[en]] log¦s = minecraft:acacia_log
+  dark oak [wood[en]] log¦s = minecraft:dark_oak_log
+  any normal log¦s = oak log, spruce log, birch log, jungle log, acacia log, dark oak log
+
+  any log = any normal log
+
+  # Desert
+  sandstone [block¦s] = minecraft:sandstone
+  chiseled sandstone [block¦s] = minecraft:chiseled_sandstone
+  (smooth|cut) sandstone [block¦s] = minecraft:cut_sandstone
+  any sandstone [block¦s] = sandstone, chiseled sandstone, cut sandstone
+
+  red sandstone [block¦s] = minecraft:red_sandstone
+  red chiseled sandstone [block¦s] = minecraft:chiseled_red_sandstone
+  red (smooth|cut) sandstone [block¦s] = minecraft:cut_red_sandstone
+  any red sandstone [block¦s] = red sandstone, red chiseled sandstone, red cut sandstone
+
+  # Construction/Decorative
+  ([nether] quartz block[s]|block[s] of [nether] quartz) = minecraft:quartz_block
+  chiseled [nether] quartz [block¦s] = minecraft:chiseled_quartz_block
+  [nether] quartz pillar¦s = minecraft:quartz_pillar
+  any [nether] quartz = quartz block, chiseled quartz, quartz pillar
+
+  [raw] prismarine [block¦s] = minecraft:prismarine {Damage:0}
+  prismarine brick¦s = minecraft:prismarine {Damage:1}
+  dark prismarine [block¦s] = minecraft:prismarine {Damage:2}
+  any prismarine = raw prismarine, prismarine bricks, dark prismarine
+  sea lantern¦s = minecraft:sea_lantern
+
+  # Terracotta
+  white (stained clay|terracotta) = minecraft:white_terracotta
+  orange (stained clay|terracotta) = minecraft:orange_terracotta
+  magenta (stained clay|terracotta) = minecraft:magenta_terracotta
+  light blue (stained clay|terracotta) = minecraft:light_blue_terracotta
+  yellow (stained clay|terracotta) = minecraft:yellow_terracotta
+  (lime [green]|light green) (stained clay|terracotta) = minecraft:lime_terracotta
+  pink (stained clay|terracotta) = minecraft:pink_terracotta
+  [dark] gr(a|e)y (stained clay|terracotta) = minecraft:gray_terracotta
+  light gr(a|e)y (stained clay|terracotta) = minecraft:light_gray_terracotta
+  cyan (stained clay|terracotta) = minecraft:cyan_terracotta
+  purple (stained clay|terracotta) = minecraft:purple_terracotta
+  blue (stained clay|terracotta) = minecraft:blue_terracotta
+  brown (stained clay|terracotta) = minecraft:brown_terracotta
+  [dark] green (stained clay|terracotta) = minecraft:green_terracotta
+  red (stained clay|terracotta) = minecraft:red_terracotta
+  black (stained clay|terracotta) = minecraft:black_terracotta
+  any (stained clay|terracotta) = white terracotta, orange terracotta, magenta terracotta, light blue terracotta, yellow terracotta, lime terracotta, pink terracotta, dark gray terracotta, light gray terracotta, cyan terracotta, purple terracotta, blue terracotta, brown terracotta, dark green terracotta, red terracotta, black terracotta
+
+  [un(dyed|stained)] (hard[ened] clay|terracotta) [block¦s] = minecraft:terracotta
+  any (hard[ened] clay|terracotta) [block¦s] = any stained terracotta, unstained terracotta
+
+  # Nether
+  magma [block¦s] = minecraft:magma_block
+  red nether brick¦s = minecraft:red_nether_bricks
+
+# Building blocks added in 1.9 whose IDs have never changed. End City stuff, namely.
+combat update:
+  minecraft versions = 1.9 or newer
+
+  end[ ]stone [block¦s] = minecraft:end_stone
+  purpur block¦s = minecraft:purpur_block
+  purpur pillar¦s = minecraft:purpur_pillar
+  purpur stair¦s = minecraft:purpur_stairs
+  purpur slab¦s = minecraft:purpur_slab
+
+# Building blocks added in 1.10 whose IDs have never changed.
+frostburn update:
+  minecraft versions = 1.10 or newer
+
+  nether wart block¦s = minecraft:nether_wart_block
+  bone block¦s = minecraft:bone_block
+
+# Building blocks add in 1.12 whose IDs have never changed.
+world of color update:
+  minecraft versions = 1.12 or newer
+
+
+
+# NEW items that were by 1.13 (as opposed to renames of old items).
 update aquatic:
+  minecraft versions = 1.13 or newer
+
   # Update Aquatic added log variants with bark either on all sides or no sides.
   stripped (oak|regular|normal) log¦s = minecraft:stripped_oak_log
-  stripped (spruce|fir|redwood|pine) log¦s = minecraft:stripped_spruce_log
+  stripped spruce log¦s = minecraft:stripped_spruce_log
   stripped birch log¦s = minecraft:stripped_birch_log
   stripped jungle log¦s = minecraft:stripped_jungle_log
   stripped acacia log¦s = minecraft:stripped_acacia_log
@@ -98,7 +363,7 @@ update aquatic:
   any stripped log [block¦s] = stripped oak log, stripped spruce log, stripped birch log, stripped jungle log, stripped acacia log, stripped dark oak log
 
   (oak|regular|normal) bark¦s = minecraft:oak_bark
-  (spruce|fir|redwood|pine) bark¦s = minecraft:spruce_bark
+  spruce bark¦s = minecraft:spruce_bark
   birch bark¦s = minecraft:birch_bark
   jungle bark¦s = minecraft:jungle_bark
   acacia bark¦s = minecraft:acacia_bark
@@ -106,3 +371,6 @@ update aquatic:
   any bark [block¦s] = oak bark, spruce bark, birch bark, jungle bark, acacia bark, dark oak bark
 
   any log = any normal log, any stripped log, any bark block
+
+  # Miscellaneous
+  blue ice [block¦s] = minecraft:blue_ice
