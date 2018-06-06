@@ -1,0 +1,45 @@
+dyes:
+  black dye¦s = minecraft:dye {Damage:0}
+  ink sac = minecraft:dye {Damage:0}
+  
+  red dye¦s = minecraft:dye {Damage:1}
+  rose red = minecraft:dye {Damage:1}
+  
+  [dark] green dye¦s = minecraft:dye {Damage:2}
+  cactus green = minecraft:dye {Damage:2}
+  
+  brown dye¦s = minecraft:dye {Damage:3}
+  cocoa bean¦s = minecraft:dye {Damage:3}
+  
+  blue dye¦s = minecraft:dye {Damage:4}
+  lapis lazuli = minecraft:dye {Damage:4}
+  
+  purple dye¦s = minecraft:dye {Damage:5}
+  
+  cyan dye¦s = minecraft:dye {Damage:6}
+  
+  light grey dye¦s = minecraft:dye {Damage:7}
+  
+  gray dye¦s = minecraft:dye {Damage:8}
+  
+  pink dye¦s = minecraft:dye {Damage:9}
+  
+  lime dye¦s = minecraft:dye {Damage:10}
+  light green dye¦s = minecraft:dye {Damage:10}
+  
+  yellow dye¦s = minecraft:dye {Damage:11}
+  dandelion yellow = minecraft:dye {Damage:11}
+  
+  light blue dye¦s = minecraft:dye {Damage:12}
+  
+  magenta dye¦s = minecraft:dye {Damage:13}
+  
+  orange dye¦s = minecraft:dye {Damage:14}
+  
+  white dye¦s = minecraft:dye {Damage:15}
+  bone meal = minecraft:dye {Damage 15}
+  
+  any dye¦s = ink sac, rose red, cactus green, cocoa bean¦s, lapis lazuli, purple dye¦s, cyan dye¦s, light grey dye¦s, gray dye¦s, pink dye¦s, lime dye¦s, yellow dye¦s, light blue dye¦s, magenta dye¦s, orange dye¦s, white dye¦s
+  
+  
+  
