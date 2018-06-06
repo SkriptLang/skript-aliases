@@ -1,7 +1,7 @@
 weapons:
   wood[en] sword¦s = minecraft:wooden_sword
   stone sword¦s = minecraft:stone_sword
-  gold sword¦s = minecraft:golden_sword
+  gold[en] sword¦s = minecraft:golden_sword
   iron sword¦s = minecraft:iron_sword
   diamond sword¦s = minecraft:diamond_sword
   
