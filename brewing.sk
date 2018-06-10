@@ -1,0 +1,93 @@
+potions:
+  [(glass|empty)] bottle¦s =
+  water bottle¦s = minecraft:potion {"Potion": "minecraft:water"}
+
+  {potion types}:
+    water = - {"Potion": "minecraft:water"}
+    thick = - {"Potion": "minecraft:thick"}
+    mundane = - {"Potion": "minecraft:mundane"}
+    awkward = - {"Potion": "minecraft:awkward"}
+
+    night vision = - {"Potion": "minecraft:night_vision"}
+    (extended|long) night vision = - {"Potion": "minecraft:night_vision"}
+
+    invisibility = - {"Potion": "minecraft:invisibility"}
+    (extended|long) invisibility = - {"Potion": "minecraft:long_invisibility"}
+
+    (leaping|jumping) = - {"Potion": "minecraft:leaping"}
+    (extended|long) (leaping|jumping) = - {"Potion": "minecraft:long_leaping"}
+    (empowered|strong|tier (2|II)) (leaping|jumping) = - {"Potion": "minecraft:strong_leaping"}
+
+    fire resistance = - {"Potion": "minecraft:fire_resistance"}
+    (extended|long) fire resistance = - {"Potion": "minecraft:fire_resistance"}
+
+    (speed|swiftness) = - {"Potion": "minecraft:swiftness"}
+    (extended|long) (speed|swiftness) = - {"Potion": "minecraft:long_swiftness"}
+    (empowered|strong|tier (2|II)) (speed|swiftness) = - {"Potion": "minecraft:strong_swiftness"}
+
+    slow[ness] = - {"Potion": "minecraft:slowness"}
+    (extended|long) slow[ness] = - {"Potion": "minecraft:long_slowness"}
+    (empowered|strong|tier (2|II)) slow[ness] = - {"Potion": "minecraft:strong_slowness"}
+
+    turtle master = - {"Potion": "minecraft:turtle_master"}
+    (extended|long) turtle master = - {"Potion": "minecraft:long_turtle_master"}
+    (empowered|strong|tier (2|II)) turtle master = - {"Potion": "minecraft:strong_turtle_master"}
+
+    water breathing = - {"Potion": "minecraft:water_breathing"}
+    (extended|long) water breathing = - {"Potion": "minecraft:long_water_breathing"}
+
+    heal(th|ing) = - {"Potion": "minecraft:healing"}
+    (empowered|strong|tier (2|II)) heal(th|ing) = - {"Potion": "minecraft:strong_healing"}
+
+    harming = - {"Potion": "minecraft:harming"}
+    (empowered|strong|tier (2|II)) harming = - {"Potion": "minecraft:strong_harming"}
+
+    poison[ing] = - {"Potion": "minecraft:poison"}
+    (extended|long) poison[ing] = - {"Potion": "minecraft:long_poison"}
+    (empowered|strong|tier (2|II)) poison[ing] = - {"Potion": "minecraft:strong_poison"}
+
+    regen[eration] = - {"Potion": "minecraft:regeneration"}
+    (extended|long) regen[eration] = - {"Potion": "minecraft:long_regeneration"}
+    (empowered|strong|tier (2|II)) regen[eration] = - {"Potion": "minecraft:strong_regeneration"}
+
+    strength = - {"Potion": "minecraft:strength"}
+    (extended|long) strength = - {"Potion": "minecraft:long_strength"}
+    (empowered|strong|tier (2|II)) strength = - {"Potion": "minecraft:strong_strength"}
+
+    weak(ness|ening) = - {"Potion": "minecraft:weakness"}
+    (extended|long) weak(ness|ening) = - {"Potion": "minecraft:long_weakness"}
+
+    slow fall[ing] = - {"Potion": "minecraft:slow_falling"}
+    (extended|long) slow fall[ing] = - {"Potion": "minecraft:long_slow_falling"}
+
+  (potion[s] of {potion types}|{potion types} potion¦s) = minecraft:potion
+  (splash potion[s] of {potion types}|{potion types} splash potion¦s) = minecraft:splash_potion
+  (splash potion[s] of {potion types}|{potion types} lingering potion¦s) = minecraft:lingering_potion
+
+blocks:
+  brewing stand¦s = minecraft:brewing_stand
+  cauldron¦s = minecraft:cauldron
+
+ingredients:
+  ghast tear¦s = minecraft:ghast_tear
+  fermented spider eye¦s = minecraft:fermented_spider_eye
+  blaze powder¦s = minecraft:blaze_powder
+  magma cream¦s = minecraft:magma_cream
+  (glistering|golden) melon[ slice]¦s = minecraft:speckled_melon
+  gold[en] carrot¦s = minecraft:golden_carrot
+  rabbit['s] (foot|feet) = minecraft:rabbit_foot
+
+combat update brewing:
+  minecraft versions = 1.9 or newer
+  dragon['s] breath = minecraft:dragon_breath
+
+  {combat update potions}:
+    luck = - {"Potion": "minecraft:luck"}
+
+  (potion[s] of {combat update potions}|{combat update potions} potion¦s) = minecraft:potion
+  (splash potion[s] of {combat update potions}|{combat update potions} splash potion¦s) = minecraft:splash_potion
+  (splash potion[s] of {combat update potions}|{combat update potions} lingering potion¦s) = minecraft:lingering_potion
+
+update aquatic ingredients:
+  minecraft versions = 1.13 or newer
+  phantom membrane¦s = minecraft:phantom_membrane
