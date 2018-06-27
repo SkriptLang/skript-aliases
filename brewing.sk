@@ -1,5 +1,5 @@
 potions:
-  [(glass|empty)] bottle¦s =
+  [(glass|empty)] bottle¦s = minecraft:glass_bottle
   water bottle¦s = minecraft:potion {"Potion": "minecraft:water"}
 
   {potion types}:
@@ -78,7 +78,7 @@ ingredients:
   rabbit['s] (foot|feet) = minecraft:rabbit_foot
 
 combat update brewing:
-  minecraft versions = 1.9 or newer
+  minecraft version = 1.9 or newer
   dragon['s] breath = minecraft:dragon_breath
 
   {combat update potions}:
@@ -89,5 +89,5 @@ combat update brewing:
   (splash potion[s] of {combat update potions}|{combat update potions} lingering potion¦s) = minecraft:lingering_potion
 
 update aquatic ingredients:
-  minecraft versions = 1.13 or newer
+  minecraft version = 1.13 or newer
   phantom membrane¦s = minecraft:phantom_membrane

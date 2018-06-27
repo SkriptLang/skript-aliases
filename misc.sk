@@ -1,0 +1,80 @@
+# Uncategorized items
+
+mining:
+    coal = minecraft:coal
+    diamond¦s = minecraft:diamond
+    iron ingot¦s = minecraft:iron_ingot
+    gold ingot¦s = minecraft:gold_ingot
+    [any] ingot¦s = iron ingot, gold ingot
+
+    gold nugget¦s = minecraft:gold_nugget
+    [any] nugget¦s = gold nugget # TODO 1.11 iron nugget
+
+    emerald¦s = minecraft:emerald
+    flint¦s = minecraft:flint
+
+old items:
+  minecraft version = 1.12.2 or older
+  charcoal = minecraft:coal {Damage:1}
+  sugar cane¦s = minecraft:reeds
+
+new items:
+    minecraft version = 1.13 or newer
+    charcoal = minecraft:charcoal
+    sugar cane¦s = minecraft:sugar_cane
+
+valuables:
+    beacon¦s = minecraft:beacon # TODO beacon API
+
+random items:
+    stick¦s = minecraft:stick
+    bowl¦s = minecraft:bowl
+    string¦s = minecraft:string
+    feather¦s = minecraft:feather
+    gunpowder = minecraft:gunpowder
+    snowball¦s = minecraft:snowball
+    leather = minecraft:leather
+    brick¦s = minecraft:brick
+    clay = minecraft:clay
+    paper¦s = minecraft:paper
+    book¦s = minecraft:book
+    slimeball¦s = minecraft:slime_ball
+    egg¦s = minecraft:egg
+    glowstone dust = minecraft:glowstone_dust
+    bone¦s = minecraft:bone
+    sugar = minecraft:sugar
+    ender pearl¦s = minecraft:ender_pearl
+    blaze rod¦s = minecraft:blaze_rod
+    nether wart = minecraft:nether_wart
+    eye¦s of ender = minecraft:ender_eye
+    (bottle¦s o' enchanting|xp bottle¦s|experience bottle¦s) = minecraft:experience_bottle
+    fire charge¦s = minecraft:fire_charge
+    (book and quill|writable book¦s) = minecraft:writable_book
+    # TODO maps?
+    nether star¦s = minecraft:nether_star
+    # TODO fireworks
+    nether brick¦s = minecraft:nether_brick
+    nether quartz = minecraft:quartz
+    prismarine shard¦s = minecraft:prismarine_shard
+    prismarine crystal¦s = minecraft:prismarine_crystals
+    rabbit hide¦s = minecraft:rabbit_hide
+    shulker shell¦s = minecraft:shulker_shell
+
+plants:
+    pumpkin seeds = minecraft:pumpkin_seeds
+    melon seeds = minecraft:melon_seeds
+    [wheat] seeds = minecraft:wheat_seeds
+    beetroot seeds = minecraft:beetroot_seeds
+    any seeds = pumpkin seeds, melon seeds, seeds
+
+    wheat = minecraft:wheat
+    chorus fruit¦s = minecraft:chorus_fruit
+    popped chorus fruit¦s = minecraft:chorus_fruit_popped
+
+buckets:
+    [empty] bucket = minecraft:bucket
+    water bucket = minecraft:water_bucket
+    lava bucket = minecraft:lava_bucket
+    milk [bucket] = minecraft:milk_bucket
+
+# TODO dyes, spawn eggs, horse armor, music discs

@@ -16,7 +16,7 @@ transportation:
   [oak] boat¦s = minecraft:boat
 
 combat update transportation:
-  minecraft versions = 1.9 or newer
+  minecraft version = 1.9 or newer
   spruce boat¦s = minecraft:spruce_boat
   birch boat¦s = minecraft:birch_boat
   jungle boat¦s = minecraft:jungle_boat
