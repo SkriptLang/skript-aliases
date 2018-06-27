@@ -80,14 +80,32 @@ Basically, in place of {potions}, there can be either mundane or awkward. What
 it is, will affect the tags of resulting item. Since all potions share an id,
 we can use a hyphen instead of retyping minecraft:potion.
 
+You can also substitute parts of ids to variations. Prefix a Minecraft id of
+alias with a hyphen, and place a hyphen in ids of all variations, in place
+where the replacement is desired:
+```
+{colored}:
+    white = minecraft:white_- # minecraft:white_wool
+    orange = minecraft:orange_- # minecraft:orange_wool
+{colored} wool = -wool
+```
+
+Variations support default values, which equal to empty strings:
+```
+{colored}:
+    {default} = minecraft:white_- # White wool is just 'wool'
+    white = minecraft:white_-
+{colored} wool = -wool
+```
+
 ### Conditions
 Each section that contains aliases may have a special entry to control which
 Minecraft versions the aliases in said section are for. The options are
 following:
 ```
-minecraft versions = 1.12 or newer # Matches a version and newer ones
-minecraft versions = 1.12 or older # Matches a version and previous ones
-minecraft versions = 1.11 to 1.12 # Matches both given versions and the versions between them
+minecraft version = 1.12 or newer # Matches a version and newer ones
+minecraft version = 1.12 or older # Matches a version and previous ones
+minecraft version = 1.11 to 1.12 # Matches both given versions and the versions between them
 ```
 Of course, in reality, only one of these is allowed per section of aliases.
 
