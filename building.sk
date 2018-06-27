@@ -114,7 +114,7 @@ unchanged building blocks:
 # 1.13 changed the IDs of a lot of blocks since they're no longer defined by data value.
 # This section is for blocks that had a different ID prior to 1.13.
 old blocks before flattening:
-  minecraft versions = 1.12 or older
+  minecraft version = 1.12 or older
 
   # Stones
   [raw] granite¦s = minecraft:stone {Damage:1}
@@ -228,7 +228,7 @@ old blocks before flattening:
 
 # 1.10 added a few blocks whose IDs were changed in the flattening (1.13)
 frostburn update before flattening:
-  minecraft versions = 1.10 to 1.12
+  minecraft version = 1.10 to 1.12
 
   magma [block¦s] = minecraft:magma
   red nether brick¦s = minecraft:red_nether_brick
@@ -236,7 +236,7 @@ frostburn update before flattening:
 # 1.13 removed data values and separated tons of blocks into their own IDs.
 # This section contains building blocks whose IDs were changed by 1.13.
 building blocks after flattening:
-  minecraft versions = 1.13 or newer
+  minecraft version = 1.13 or newer
 
   # Stones
   [raw] granite¦s = minecraft:granite
@@ -328,7 +328,7 @@ building blocks after flattening:
 
 # Building blocks added in 1.9 whose IDs have never changed. End City stuff, namely.
 combat update:
-  minecraft versions = 1.9 or newer
+  minecraft version = 1.9 or newer
 
   end[ ]stone [block¦s] = minecraft:end_stone
   purpur block¦s = minecraft:purpur_block
@@ -338,20 +338,20 @@ combat update:
 
 # Building blocks added in 1.10 whose IDs have never changed.
 frostburn update:
-  minecraft versions = 1.10 or newer
+  minecraft version = 1.10 or newer
 
   nether wart block¦s = minecraft:nether_wart_block
   bone block¦s = minecraft:bone_block
 
 # Building blocks add in 1.12 whose IDs have never changed.
 world of color update:
-  minecraft versions = 1.12 or newer
+  minecraft version = 1.12 or newer
 
 
 
 # NEW items that were by 1.13 (as opposed to renames of old items).
 update aquatic:
-  minecraft versions = 1.13 or newer
+  minecraft version = 1.13 or newer
 
   # Update Aquatic added log variants with bark either on all sides or no sides.
   stripped (oak|regular|normal) log¦s = minecraft:stripped_oak_log

@@ -1,5 +1,5 @@
 update aquatic:
-	minecraft versions = 1.13 or newer
+	minecraft version = 1.13 or newer
 	turtle [shell] helmet = minecraft:turtle_helmet
 	trident¦s = minecraft:trident
 
@@ -14,11 +14,11 @@ update aquatic:
 	tipped arrow[s] of {update aquatic effects} = minecraft:tipped_arrow
 
 exploration update:
-	minecraft versions = 1.11 or newer
+	minecraft version = 1.11 or newer
 	totem[s] of undying = minecraft:totem_of_undying
 
 combat update:
-	minecraft versions = 1.9 or newer
+	minecraft version = 1.9 or newer
 	shield¦s = minecraft:shield
 
 	{tipped arrow types}:
