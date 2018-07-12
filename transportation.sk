@@ -52,7 +52,7 @@ rails:
 		inactive = - [powered=false]
 
 	# Normal rail
-	[{rail straight}|{rail curve}] [normal] [minecart] (rail|track) [block]¦s = minecraft:rail
+	[({rail straight}|{rail curve})] [normal] [minecart] (rail|track) [block]¦s = minecraft:rail
 	[minecart] (rail|track) item¦s = minecraft:rail
 
 	# Powered Rail
