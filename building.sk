@@ -226,8 +226,11 @@ old blocks before flattening:
 
 	([nether] quartz block[s]|block[s] of [nether] quartz) = minecraft:quartz_block {Damage:0}
 	chiseled [nether] quartz [block¦s] = minecraft:quartz_block {Damage:1}
-	[nether] quartz pillar¦s = minecraft:quartz_block {Damage:2}
-	any [nether] quartz [block¦s] = quartz block, chiseled quartz, quartz pillar
+	vertical [nether] quartz pillar¦s = minecraft:quartz_block {Damage:2}
+	(east-west|west-east) [nether] quartz pillar¦s = minecraft:quartz_block {Damage:3}
+	(north-south|south-north) [nether] quartz pillar¦s = minecraft:quartz_block {Damage:4}
+	[any] [nether] quartz pillar = vertical quartz pillar, east-west quartz pillar, north-south quartz pillar
+	any [nether] quartz [block¦s] = quartz block, chiseled quartz, any quartz pillar
 
 	[raw] prismarine [block¦s] = minecraft:prismarine {Damage:0}
 	prismarine brick¦s = minecraft:prismarine {Damage:1}
@@ -364,7 +367,7 @@ building blocks after flattening:
 	# Construction/Decorative
 	([nether] quartz block[s]|block[s] of [nether] quartz) = minecraft:quartz_block
 	chiseled [nether] quartz [block¦s] = minecraft:chiseled_quartz_block
-	{axis aligned} [nether] quartz pillar¦s = minecraft:quartz_pillar
+	{axis-aligned} [nether] quartz pillar¦s = minecraft:quartz_pillar
 	any [nether] quartz = quartz block, chiseled quartz, quartz pillar
 
 	[raw] prismarine [block¦s] = minecraft:prismarine
@@ -389,7 +392,7 @@ building blocks after flattening:
 combat update:
 	minecraft version = 1.9 or newer
 	purpur block¦s = minecraft:purpur_block
-	purpur pillar¦s = minecraft:purpur_pillar
+	{axis-aligned} purpur pillar¦s = minecraft:purpur_pillar
 
 # Building blocks add in 1.9 whose IDs were changed in the flattening (1.13)
 combat update before flattening:
