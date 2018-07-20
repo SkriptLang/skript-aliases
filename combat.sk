@@ -92,6 +92,18 @@ armor:
 	chain[mail] armor = chain cap, chain chestpiece, chain pants, chain boots
 	
 	armor = leather armor, iron armor, gold armor, diamond armor, chain armor
+	
+	# By equipment slot
+	(cap|helmet)¦s = leather cap, iron cap, gold cap, diamond cap, chain cap
+	chest(piece|plate)¦s = leather chestpiece, iron chestpiece, gold chestpiece, diamond chestpiece, chain chestpiece
+	(pants|leggings) = leather pants, iron pants, gold pants, diamond pants, chain pants
+	boots = leather boots, iron boots, gold boots, diamond boots, chain boots
+
+horse armor:
+	iron horse armor = minecraft:iron_horse_armor
+	gold[end] horse armor = minecraft:golden_horse_armor
+	diamond horse armor = minecraft:diamond_horse_armor
+	horse armor = iron horse armor, gold horse armor, diamond horse armor
 
 weapons:
 	wood[en] sword¦s = minecraft:wooden_sword
