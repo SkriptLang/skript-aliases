@@ -77,7 +77,7 @@ armor:
 	gold[en] chest(piece|plate)¦s = minecraft:golden_chestplate
 	gold[en] (pants|leggings) = minecraft:golden_leggings
 	gold[en] boots = minecraft:golden_boots
-	gold[end] armor = gold cap, gold chestpiece, gold pants, gold boots
+	gold[en] armor = gold cap, gold chestpiece, gold pants, gold boots
 
 	diamond (cap|helmet)¦s = minecraft:diamond_helmet
 	diamond chest(piece|plate)¦s = minecraft:diamond_chestplate
@@ -101,7 +101,7 @@ armor:
 
 horse armor:
 	iron horse armor = minecraft:iron_horse_armor
-	gold[end] horse armor = minecraft:golden_horse_armor
+	gold[en] horse armor = minecraft:golden_horse_armor
 	diamond horse armor = minecraft:diamond_horse_armor
 	horse armor = iron horse armor, gold horse armor, diamond horse armor
 
