@@ -65,26 +65,45 @@ armor:
 	leather chest(piece|plate)¦s = minecraft:leather_chestplate
 	leather (pants|leggings) = minecraft:leather_leggings
 	leather boots = minecraft:leather_boots
+	leather armor = leather cap, leather chestpiece, leather pants, leather boots
 
 	iron (cap|helmet)¦s = minecraft:iron_helmet
 	iron chest(piece|plate)¦s = minecraft:iron_chestplate
 	iron (pants|leggings) = minecraft:iron_leggings
 	iron boots = minecraft:iron_boots
+	iron armor = iron cap, iron chestpiece, iron pants, iron boots
 
 	gold[en] (cap|helmet)¦s = minecraft:golden_helmet
 	gold[en] chest(piece|plate)¦s = minecraft:golden_chestplate
 	gold[en] (pants|leggings) = minecraft:golden_leggings
 	gold[en] boots = minecraft:golden_boots
+	gold[en] armor = gold cap, gold chestpiece, gold pants, gold boots
 
 	diamond (cap|helmet)¦s = minecraft:diamond_helmet
 	diamond chest(piece|plate)¦s = minecraft:diamond_chestplate
 	diamond (pants|leggings) = minecraft:diamond_leggings
 	diamond boots = minecraft:diamond_boots
+	diamond armor = diamond cap, diamond chestpiece, diamond pants, diamond boots
 
 	chain[mail] (cap|helmet)¦s = minecraft:chainmail_helmet
 	chain[mail] chest(piece|plate)¦s = minecraft:chainmail_chestplate
 	chain[mail] (pants|leggings) = minecraft:chainmail_leggings
 	chain[mail] boots = minecraft:chainmail_boots
+	chain[mail] armor = chain cap, chain chestpiece, chain pants, chain boots
+	
+	armor = leather armor, iron armor, gold armor, diamond armor, chain armor
+	
+	# By equipment slot
+	(cap|helmet)¦s = leather cap, iron cap, gold cap, diamond cap, chain cap
+	chest(piece|plate)¦s = leather chestpiece, iron chestpiece, gold chestpiece, diamond chestpiece, chain chestpiece
+	(pants|leggings) = leather pants, iron pants, gold pants, diamond pants, chain pants
+	boots = leather boots, iron boots, gold boots, diamond boots, chain boots
+
+horse armor:
+	iron horse armor = minecraft:iron_horse_armor
+	gold[en] horse armor = minecraft:golden_horse_armor
+	diamond horse armor = minecraft:diamond_horse_armor
+	horse armor = iron horse armor, gold horse armor, diamond horse armor
 
 weapons:
 	wood[en] sword¦s = minecraft:wooden_sword
