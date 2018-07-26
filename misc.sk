@@ -16,6 +16,7 @@ mining:
 exploration update:
 	minecraft version = 1.11 or newer
 	iron nugget¦s = minecraft:iron_nugger
+	shulker shell¦s = minecraft:shulker_shell
 
 old items:
 	minecraft version = 1.12.2 or older
@@ -62,7 +63,6 @@ random items:
 	prismarine shard¦s = minecraft:prismarine_shard
 	prismarine crystal¦s = minecraft:prismarine_crystals
 	rabbit hide¦s = minecraft:rabbit_hide
-	shulker shell¦s = minecraft:shulker_shell
 
 plants:
 	pumpkin seeds = minecraft:pumpkin_seeds
