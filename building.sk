@@ -86,12 +86,7 @@ old blocks before flattening:
 
 	# All wood
 	# planks
-	oak [wood[en]] plank¦s = minecraft:planks {Damage:0}
-	spruce [wood[en]] plank¦s = minecraft:planks {Damage:1}
-	birch [wood[en]] plank¦s = minecraft:planks {Damage:2}
-	jungle [wood[en]] plank¦s = minecraft:planks {Damage:3}
-	acacia [wood[en]] plank¦s = minecraft:planks {Damage:4}
-	dark oak [wood[en]] plank¦s = minecraft:planks {Damage:5}
+	{old wood type} plank¦s = minecraft:planks
 	any plank¦s = oak planks, spruce planks, birch planks, jungle planks, acacia planks, dark oak planks
 
 	# logs
@@ -134,7 +129,7 @@ old blocks before flattening:
 	any dark oak log = dark oak log, east-west dark oak log, north-south dark oak log, dark oak bark
 
 	[any] bark = oak bark, spruce bark, birch bark, jungle bark, acacia bark, dark oak bark
-	[any] log = oak log, spruce log, birch log, jungle log, acacia log, dark oak log
+	[any] log = any oak log, any spruce log, any birch log, any jungle log, any acacia log, any dark oak log
 
 	# Desert
 	red sand [block¦s] = minecraft:sand {Damage:1}
@@ -164,7 +159,7 @@ old blocks before flattening:
 	any (hard[ened] clay|terracotta) [block¦s] = any stained terracotta, unstained terracotta
 
 	#= Slabs
-	# "Stone slabs"
+	# Stone slabs
 	[bottom] stone slab = minecraft:stone_slab {Damage:0}
 	[bottom] sandstone slab = minecraft:stone_slab {Damage:1}
 	[bottom] (petrified|stone) [oak] wood[en] slab = minecraft:stone_slab {Damage:2}
@@ -185,29 +180,19 @@ old blocks before flattening:
 	(upside-down|top) [nether] quartz slab = minecraft:stone_slab {Damage:15}
 	(upside-down|top) red sandstone slab = minecraft:stone_slab2 {Damage:8}
 
-	# "Wood slabs"
-	[bottom] oak [wood[en]] slab = minecraft:wooden_slab {Damage:0}
-	[bottom] spruce [wood[en]] slab = minecraft:wooden_slab {Damage:1}
-	[bottom] birch [wood[en]] slab = minecraft:wooden_slab {Damage:2}
-	[bottom] jungle [wood[en]] slab = minecraft:wooden_slab {Damage:3}
-	[bottom] acacia [wood[en]] slab = minecraft:wooden_slab {Damage:4}
-	[bottom] dark oak [wood[en]] slab = minecraft:wooden_slab {Damage:5}
+	# Wood slabs
+	[bottom] {old wood type} slab = minecraft:wooden_slab
 
-	(upside-down|top) stone slab = minecraft:wooden_slab {Damage:8}
-	(upside-down|top) sandstone slab = minecraft:wooden_slab {Damage:9}
-	(upside-down|top) (petrified|stone) [oak] wood[en] slab = minecraft:wooden_slab {Damage:10}
-	(upside-down|top) cobble[stone] slab = minecraft:wooden_slab {Damage:11}
-	(upside-down|top) brick slab = minecraft:wooden_slab {Damage:12}
-	(upside-down|top) stone[ ]brick slab = minecraft:wooden_slab {Damage:13}
+	(upside-down|top) oak [wood[en]] slab = minecraft:wooden_slab {Damage:8}
+	(upside-down|top) spruce [wood[en]] slab = minecraft:wooden_slab {Damage:9}
+	(upside-down|top) birch [wood[en]] slab = minecraft:wooden_slab {Damage:10}
+	(upside-down|top) jungle [wood[en]] slab = minecraft:wooden_slab {Damage:11}
+	(upside-down|top) acacia [wood[en]] slab = minecraft:wooden_slab {Damage:12}
+	(upside-down|top) dark oak [wood[en]] slab = minecraft:wooden_slab {Damage:13}
 
 	#= Stairs
 	{stair direction} cobble[stone] stair¦s = minecraft:stone_stairs
-	{stair direction} oak [wood[en]] stair¦s = minecraft:oak_stairs
-	{stair direction} spruce [wood[en]] stair¦s = minecraft:spruce_stairs
-	{stair direction} birch [wood[en]] stair¦s = minecraft:birch_stairs
-	{stair direction} jungle [wood[en]] stair¦s = minecraft:jungle_stairs
-	{stair direction} acacia [wood[en]] stair¦s = minecraft:acacia_stairs
-	{stair direction} dark oak [wood[en]] stair¦s = minecraft:dark_oak_stairs
+	{stair direction} {wood type} stair¦s = -stairs
 	{stair direction} [red] brick stair¦s = minecraft:brick_stairs
 	{stair direction} stone brick stair¦s = minecraft:stone_brick_stairs
 	{stair direction} nether brick stair¦s = minecraft:nether_brick_stairs
@@ -224,7 +209,7 @@ old blocks before flattening:
 	chiseled stone brick¦s = minecraft:stonebrick {Damage:3}
 	any stone brick¦s = stone bricks, mossy stone bricks, cracked stone bricks, chiseled stone bricks
 
-	([nether] quartz block[s]|block[s] of [nether] quartz) = minecraft:quartz_block {Damage:0}
+	([nether] quartz block¦s|block¦s of [nether] quartz) = minecraft:quartz_block {Damage:0}
 	chiseled [nether] quartz [block¦s] = minecraft:quartz_block {Damage:1}
 	vertical [nether] quartz pillar¦s = minecraft:quartz_block {Damage:2}
 	(east-west|west-east) [nether] quartz pillar¦s = minecraft:quartz_block {Damage:3}
@@ -269,28 +254,15 @@ building blocks after flattening:
 
 	# Wood
 	# planks
-	oak [wood[en]] plank¦s = minecraft:oak_planks
-	spruce [wood[en]] plank¦s = minecraft:spruce_planks
-	birch [wood[en]] plank¦s = minecraft:birch_planks
-	jungle [wood[en]] plank¦s = minecraft:jungle_planks
-	acacia [wood[en]] plank¦s = minecraft:acacia_planks
-	dark oak [wood[en]] plank¦s = minecraft:dark_oak_planks
+	{wood type} plank¦s = -planks
 	[any] plank¦s = oak planks, spruce planks, birch planks, jungle planks, acacia planks, dark oak planks
 
-	# logs
-	{axis-aligned} oak [wood[en]] log¦s = minecraft:oak_log
-	{axis-aligned} spruce [wood[en]] log¦s = minecraft:spruce_log
-	{axis-aligned} birch [wood[en]] log¦s = minecraft:birch_log
-	{axis-aligned} jungle [wood[en]] log¦s = minecraft:jungle_log
-	{axis-aligned} acacia [wood[en]] log¦s = minecraft:acacia_log
-	{axis-aligned} dark oak [wood[en]] log¦s = minecraft:dark_oak_log
+	# Normal logs
+	{axis-aligned} {wood type} log¦s = -log
+	[any] log¦s = oak log, spruce log, birch log, jungle log, acacia log, dark oak log
 
-	oak bark¦s = minecraft:oak_wood
-	spruce bark¦s = minecraft:spruce_wood
-	birch bark¦s = minecraft:birch_wood
-	jungle bark¦s = minecraft:jungle_wood
-	acacia bark¦s = minecraft:acacia_wood
-	dark oak bark¦s = minecraft:dark_oak_wood
+	# Bark
+	{wood type} bark [block¦s] = -wood
 	[any] bark [block¦s] = oak bark, spruce bark, birch bark, jungle bark, acacia bark, dark oak bark
 
 	# Desert
@@ -327,42 +299,33 @@ building blocks after flattening:
 	[any] concrete powder [block¦s] = white concrete powder, orange concrete powder, magenta concrete powder, light blue concrete powder, yellow concrete powder, lime concrete powder, pink concrete powder, dark gray concrete powder, light gray concrete powder, cyan concrete powder, purple concrete powder, blue concrete powder, brown concrete powder, dark green concrete powder, red concrete powder, black concrete powder
 
 	#= Slabs
-	{block half} oak [wood[en]] slab = minecraft:oak_slab
-	{block half} spruce [wood[en]] slab = minecraft:spruce_slab
-	{block half} birch [wood[en]] slab = minecraft:birch_slab
-	{block half} jungle [wood[en]] slab = minecraft:jungle_slab
-	{block half} acacia [wood[en]] slab = minecraft:acacia_slab
-	{block half} dark oak [wood[en]] slab = minecraft:dark_oak_slab
-	{block half} stone slab = minecraft:stone_slab
-	{block half} sandstone slab = minecraft:sandstone_slab
-	{block half} (petrified|stone) oak [wood[en]] slab = minecraft:petrified oak_slab
-	{block half} cobble[stone] slab = minecraft:cobblestone_slab
-	{block half} brick slab = minecraft:brick_slab
-	{block half} stone[ ]brick slab = minecraft:stone_brick_slab
-	{block half} nether brick slab = minecraft:nether_brick_slab
-	{block half} [nether] quartz slab = minecraft:quartz_slab
-	{block half} red sandstone slab = minecraft:red_sandstone_slab
-	{block half} purpur slab = minecraft:purpur_slab
-	{block half} [raw] prismarine slab¦s = minecraft:prismarine_slab
-	{block half} prismarine brick slab¦s = minecraft:prismarine_brick_slab
-	{block half} dark prismarine slab¦s = minecraft:dark_prismarine_slab
+	{waterloggable} {block half} {wood type} slab = -slab
+	{waterloggable} {block half} stone slab = minecraft:stone_slab
+	{waterloggable} {block half} sandstone slab = minecraft:sandstone_slab
+	{waterloggable} {block half} (petrified|stone) oak [wood[en]] slab = minecraft:petrified oak_slab
+	{waterloggable} {block half} cobble[stone] slab = minecraft:cobblestone_slab
+	{waterloggable} {block half} brick slab = minecraft:brick_slab
+	{waterloggable} {block half} stone[ ]brick slab = minecraft:stone_brick_slab
+	{waterloggable} {block half} nether brick slab = minecraft:nether_brick_slab
+	{waterloggable} {block half} [nether] quartz slab = minecraft:quartz_slab
+	{waterloggable} {block half} red sandstone slab = minecraft:red_sandstone_slab
+	{waterloggable} {block half} purpur slab = minecraft:purpur_slab
+	{waterloggable} {block half} [raw] prismarine slab¦s = minecraft:prismarine_slab
+	{waterloggable} {block half} prismarine brick slab¦s = minecraft:prismarine_brick_slab
+	{waterloggable} {block half} dark prismarine slab¦s = minecraft:dark_prismarine_slab
 
 	# Stairs
-	{block half} {stair direction} cobble[stone] stair¦s = minecraft:cobblestone_stairs
-	{block half} {stair direction} oak [wood[en]] stair¦s = minecraft:oak_stairs
-	{block half} {stair direction} spruce [wood[en]] stair¦s = minecraft:spruce_stairs
-	{block half} {stair direction} birch [wood[en]] stair¦s = minecraft:birch_stairs
-	{block half} {stair direction} jungle [wood[en]] stair¦s = minecraft:jungle_stairs
-	{block half} {stair direction} acacia [wood[en]] stair¦s = minecraft:acacia_stairs
-	{block half} {stair direction} dark oak [wood[en]] stair¦s = minecraft:dark_oak_stairs
-	{block half} {stair direction} [red] brick stair¦s = minecraft:brick_stairs
-	{block half} {stair direction} stone brick stair¦s = minecraft:stone_brick_stairs
-	{block half} {stair direction} nether brick stair¦s = minecraft:nether_brick_stairs
-	{block half} {stair direction} [nether] quartz stair¦s = minecraft:quartz_stairs
-	{block half} {stair direction} prismarine brick stair¦s = minecraft:prismarine_brick_stairs {block half} {stair direction} purpur stair¦s = minecraft:purpur_stairs
-	{block half} {stair direction} sandstone stair¦s = minecraft:sandstone_stairs
-	{block half} {stair direction} prismarine stair¦s = minecraft:prismarine_stairs
-	{block half} {stair direction} dark prismarine stair¦s = minecraft:dark_prismarine_stairs
+	{waterloggable} {block half} {directional} {wood type} stair¦s = -stairs
+	{waterloggable} {block half} {directional} cobble[stone] stair¦s = minecraft:cobblestone_stairs
+	{waterloggable} {block half} {directional} [red] brick stair¦s = minecraft:brick_stairs
+	{waterloggable} {block half} {directional} stone brick stair¦s = minecraft:stone_brick_stairs
+	{waterloggable} {block half} {directional} nether brick stair¦s = minecraft:nether_brick_stairs
+	{waterloggable} {block half} {directional} [nether] quartz stair¦s = minecraft:quartz_stairs
+	{waterloggable} {block half} {directional} prismarine brick stair¦s = minecraft:prismarine_brick_stairs
+	{waterloggable} {block half} {directional} purpur stair¦s = minecraft:purpur_stairs
+	{waterloggable} {block half} {directional} sandstone stair¦s = minecraft:sandstone_stairs
+	{waterloggable} {block half} {directional} prismarine stair¦s = minecraft:prismarine_stairs
+	{waterloggable} {block half} {directional} dark prismarine stair¦s = minecraft:dark_prismarine_stairs
 
 	# Construction/Decorative
 	([nether] quartz block[s]|block[s] of [nether] quartz) = minecraft:quartz_block
@@ -421,8 +384,8 @@ world of color update before flattening:
 	{colored} concrete powder = minecraft:concrete powder
 
 # NEW items that were by 1.13 (as opposed to renames of old items).
-# Technically these could've been grouped with the post-flattening aliases but this
-# separation is better for clarity (changed IDs vs. new IDs as far as 1.13 goes.)
+# These could've been grouped with the post-flattening aliases but this is better for clarity
+# (changed IDs vs. new IDs as far as 1.13 goes.)
 update aquatic:
 	minecraft version = 1.13 or newer
 	# Update Aquatic added log variants no bark.
@@ -434,7 +397,7 @@ update aquatic:
 	stripped dark oak log¦s = minecraft:stripped_dark_oak_log
 	any stripped log [block¦s] = stripped oak log, stripped spruce log, stripped birch log, stripped jungle log, stripped acacia log, stripped dark oak log
 
-	# Redefine any log to include the stripped ones
+	# Define any log to include the stripped ones
 	any log = any normal log, any stripped log, any bark block
 
 	# Smooth double slabs became their own items in 1.13
@@ -443,28 +406,72 @@ update aquatic:
 	(smooth sandstone|double sandstone slab¦s) = minecraft:smooth_sandstone
 	(smooth stone|double stone slab¦s) = minecraft:smooth_stone
 
-	# Coral
-	dead (tube|blue) coral [block¦s] = minecraft:dead_tube_coral_block
-	dead (brain|pink) coral [block¦s] = minecraft:dead_brain_coral_block
-	dead (bubble|magenta) coral [block¦s] = minecraft:dead_bubble_coral_block
-	dead (fire|red) coral [block¦s] = minecraft:dead_fire_coral_block
-	dead (horn|yellow) coral [block¦s] = minecraft:dead_horn_coral_block
+	# Coral categories
+	{dead coral type}:
+		dead (tube|blue) coral = minecraft:dead_tube_coral_
+		dead (brain|pink) coral = minecraft:dead_brain_coral_
+		dead (bubble|magenta) coral = minecraft:dead_bubble_coral_
+		dead (fire|red) coral = minecraft:dead_fire_coral_
+		dead (horn|yellow) coral = minecraft:dead_horn_coral_
+	{living coral type}:
+		(living|alive) (tube|blue) coral = minecraft:tube_coral_
+		(living|alive) (brain|pink) coral = minecraft:brain_coral_
+		(living|alive) (bubble|magenta) coral = minecraft:bubble_coral_
+		(living|alive) (fire|red) coral = minecraft:fire_coral_
+		(living|alive) (horn|yellow) coral = minecraft:horn_coral_
 
-	(living|alive) (tube|blue) coral [block¦s] = minecraft:tube_coral_block
-	(living|alive) (brain|pink) coral [block¦s] = minecraft:brain_coral_block
-	(living|alive) (bubble|magenta) coral [block¦s] = minecraft:bubble_coral_block
-	(living|alive) (fire|red) coral [block¦s] = minecraft:fire_coral_block
-	(living|alive) (horn|yellow) coral [block¦s] = minecraft:horn_coral_block
+	# Coral blocks
+	{dead coral type} block¦s = -block
+	{living coral type} block¦s = -block
 
-	[any] (tube|blue) coral [block¦s] = dead tube coral block, living tube coral block
-	[any] (brain|pink) coral [block¦s] = dead brain coral block, living brain coral block
-	[any] (bubble|magenta) coral [block¦s] = dead bubble coral block, living bubble coral block
-	[any] (fire|red) coral [block¦s] = dead fire coral block, living fire coral block
-	[any] (horn|yellow) coral [block¦s] = dead horn coral block, living horn coral block
+	[any] (tube|blue) coral block¦s = dead tube coral block, living tube coral block
+	[any] (brain|pink) coral block¦s = dead brain coral block, living brain coral block
+	[any] (bubble|magenta) coral block¦s = dead bubble coral block, living bubble coral block
+	[any] (fire|red) coral block¦s = dead fire coral block, living fire coral block
+	[any] (horn|yellow) coral block¦s = dead horn coral block, living horn coral block
 
-	[any] dead coral [block¦s] = dead tube coral, dead brain coral, dead bubble coral, dead fire coral, dead horn coral
-	[any] living coral [block¦s] = living tube coral, living brain coral, living bubble coral, living fire coral, living horn coral
-	[any] coral [block¦s] = any dead coral, any living coral
+	[any] dead coral block¦s = dead tube coral, dead brain coral, dead bubble coral, dead fire coral, dead horn coral
+	[any] living coral block¦s = living tube coral, living brain coral, living bubble coral, living fire coral, living horn coral
+	[any] coral block¦s = any dead coral, any living coral
+
+	# Coral plants (2D). These don't come dead since they can only exist in water. These also don't
+	# have a living/dead prefix (and don't use the variation) because they don't come dead.
+	(tube|blue) coral plant¦s = minecraft:tube_coral
+	(brain|pink) coral plant¦s = minecraft:brain_coral
+	(bubble|magenta) coral plant¦s = minecraft:bubble_coral
+	(fire|red) coral plant¦s = minecraft:fire_coral
+	(horn|yellow) coral plant¦s = minecraft:horn_coral
+
+	[any] coral plant¦s = tube coral plant, brain coral plant, bubble coral plant, fire coral plant, horn coral plant
+
+	# Coral fans
+	# floor
+	{waterloggable} {dead coral type} fan¦s = -fan
+	{waterloggable} {living coral type} fan¦s = -fan
+	# wall
+	{waterloggable} {dead coral type} wall fan¦s = -wall_fan
+	{waterloggable} {living coral type} wall fan¦s = -wall_fan
+
+	[any] (tube|blue) coral fan¦s = dead tube coral fan, living tube coral fan, dead tube coral wall fan, living tube coral wall fan
+	[any] (brain|pink) coral fan¦s = dead brain coral fan, living brain coral fan, dead brain coral wall fan, living brain coral wall fan
+	[any] (bubble|magenta) coral fan¦s = dead bubble coral fan, living bubble coral fan, dead bubble coral wall fan, living bubble coral wall fan
+	[any] (fire|red) coral fan¦s = dead fire coral fan, living fire coral fan, dead fire coral wall fan, living fire coral wall fan
+	[any] (horn|yellow) coral fan¦s = dead horn coral fan, living horn coral fan, dead horn coral wall fan, living horn coral wall fan
+
+	[any] dead coral fan¦s = dead tube coral fan, dead brain coral fan, dead bubble coral fan, dead fire coral fan, dead horn coral fan, dead tube coral wall fan, dead brain coral wall fan, dead bubble coral wall fan, dead fire coral wall fan, dead horn coral wall fan
+	[any] living coral fan¦s = living tube coral fan, living brain coral fan, living bubble coral fan, living fire coral fan, living horn coral fan, living tube coral wall fan, living brain coral wall fan, living bubble coral wall fan, living fire coral wall fan, living horn coral wall fan
+	[any] coral fan¦s = any dead coral fan, any living coral fan
+
+	# Coral groups
+	[any] (tube|blue) coral = any tube coral block, any tube coral plant, any tube coral fan
+	[any] (brain|pink) coral = any brain coral block, any brain coral plant, any brain coral fan
+	[any] (bubble|magenta) coral = any bubble coral block, any bubble coral plant, any bubble coral fan
+	[any] (fire|red) coral = any fire coral block, any fire coral plant, any fire coral fan
+	[any] (horn|yellow) coral = any horn coral block, any horn coral plant, any horn coral fan
+
+	[any] dead coral = any dead coral block, any dead coral fan
+	[any] living coral = any living coral block, any coral plant, any living coral fan
+	[any] coral = any dead coral, any living coral
 
 	# Miscellaneous
 	blue ice [block¦s] = minecraft:blue_ice

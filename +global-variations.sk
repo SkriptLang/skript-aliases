@@ -72,6 +72,17 @@ data values:
 		(pressed|active) (north[ward[s]]( |-)[(facing|pointing)]) = - {Damage:12}
 		(pressed|active) (up[ward[s]]( |-)[(facing|pointing)]) = - {Damage:13}
 
+	# For wood types defined by data values in older versions. Not all wooden blocks can use this,
+	# just ones that were all stored in one ID using DVs 0-5 to represent them.
+	{old wood type}:
+		oak [wood[en]] = - {Damage:0}
+		spruce [wood[en]] = - {Damage:1}
+		birch [wood[en]] = - {Damage:2}
+		jungle [wood[en]] = - {Damage:3}
+		acacia [wood[en]] = - {Damage:4}
+		dark oak [wood[en]] = - {Damage:5}
+
+
 
 # Variations using block states as of 1.13.
 block states:
@@ -156,3 +167,14 @@ block states:
 	{lightable}:
 		lit = -[lit=true]
 		unlit = -[lit=false]
+
+# Aliases that can be used in at least one place both pre and post-flattening.
+global:
+	# For wood-based blocks that are defined with the wood type at the start of the alias.
+	{wood type}:
+		oak [wood[en]] = minecraft:oak_-
+		spruce [wood[en]] = minecraft:spruce_-
+		birch [wood[en]] = minecraft:birch_-
+		jungle [wood[en]] = minecraft:jungle_-
+		acacia [wood[en]] = minecraft:acacia_-
+		dark oak [wood[en]] = minecraft:dark_oak_-
