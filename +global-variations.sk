@@ -46,6 +46,32 @@ data values:
 		up[( |-)]side down (south[ward[s]]( |-)[(facing|pointing)]) = - {Damage:6}
 		up[( |-)]side down (north[ward[s]]( |-)[(facing|pointing)]) = - {Damage:7}
 
+	# For blocks that can be attached to sides of another block, such as torches or buttons.
+	{attached}:
+		{default} = - {Damage:5}
+		[(unpressed|inactive)] (down[ward[s]]( |-)[(facing|pointing)]) = - {Damage:0}
+		[(unpressed|inactive)] (east[ward[s]]( |-)[(facing|pointing)]) = - {Damage:1}
+		[(unpressed|inactive)] (west[ward[s]]( |-)[(facing|pointing)]) = - {Damage:2}
+		[(unpressed|inactive)] (south[ward[s]]( |-)[(facing|pointing)]) = - {Damage:3}
+		[(unpressed|inactive)] (north[ward[s]]( |-)[(facing|pointing)]) = - {Damage:4}
+		[(unpressed|inactive)] (up[ward[s]]( |-)[(facing|pointing)]) = - {Damage:5}
+
+	# For blocks that can be attached to sides of another block and toggled, namely buttons.
+	{attached toggleable}:
+		{default} = - {Damage:5}
+		[(unpressed|inactive)] (down[ward[s]]( |-)[(facing|pointing)]) = - {Damage:0}
+		[(unpressed|inactive)] (east[ward[s]]( |-)[(facing|pointing)]) = - {Damage:1}
+		[(unpressed|inactive)] (west[ward[s]]( |-)[(facing|pointing)]) = - {Damage:2}
+		[(unpressed|inactive)] (south[ward[s]]( |-)[(facing|pointing)]) = - {Damage:3}
+		[(unpressed|inactive)] (north[ward[s]]( |-)[(facing|pointing)]) = - {Damage:4}
+		[(unpressed|inactive)] (up[ward[s]]( |-)[(facing|pointing)]) = - {Damage:5}
+		(pressed|active) (down[ward[s]]( |-)[(facing|pointing)]) = - {Damage:8}
+		(pressed|active) (east[ward[s]]( |-)[(facing|pointing)]) = - {Damage:9}
+		(pressed|active) (west[ward[s]]( |-)[(facing|pointing)]) = - {Damage:10}
+		(pressed|active) (south[ward[s]]( |-)[(facing|pointing)]) = - {Damage:11}
+		(pressed|active) (north[ward[s]]( |-)[(facing|pointing)]) = - {Damage:12}
+		(pressed|active) (up[ward[s]]( |-)[(facing|pointing)]) = - {Damage:13}
+
 
 # Variations using block states as of 1.13.
 block states:
@@ -71,7 +97,7 @@ block states:
 	# For blocks that can point in all six directions.
 	# Dispenser, dropper, pistons, end rods.
 	{orientable}:
-		{default} = - {Damage:1}
+		{default} = -[facing=up]
 		(down[ward[s]]( |-)[(facing|pointing)]) = -[facing=down]
 		(up[ward[s]]( |-)[(facing|pointing)]) = -[facing=up]
 		(north[ward[s]]( |-)[(facing|pointing)]) = -[facing=north]
@@ -79,24 +105,18 @@ block states:
 		(west[ward[s]]( |-)[(facing|pointing)]) = -[facing=west]
 		(east[ward[s]]( |-)[(facing|pointing)]) = -[facing=east]
 
+	# For blocks that can only point in four directions.
 	{directional}:
+		{default} = -[facing=east]
 		(north[ward[s]]( |-)[(facing|pointing)]) = -[facing=north]
 		(south[ward[s]]( |-)[(facing|pointing)]) = -[facing=south]
 		(west[ward[s]]( |-)[(facing|pointing)]) = -[facing=west]
 		(east[ward[s]]( |-)[(facing|pointing)]) = -[facing=east]
-
-	# For all stairs in 1.13+
-	{stair direction}:
-		{default} = - -[facing=east]
-		(east[ward[s]]( |-)[(facing|pointing)]) = -[facing=east]
-		(west[ward[s]]( |-)[(facing|pointing)]) = -[facing=west]
-		(south[ward[s]]( |-)[(facing|pointing)]) = -[facing=south]
-		(north[ward[s]]( |-)[(facing|pointing)]) = -[facing=north]
 
 	# For anything that can exist in either the top or bottom half of a block
 	{block half}:
 		{default} = -[half=bottom]
-		right[( |-)]side up = -[half=bottom]
+		(right[( |-)]side up|bottom) = -[half=bottom]
 		(up[( |-)]side( |-)down|top) = -[half=top]
 
 	# For anything that can be rotated along the three axes like pillars and logs, i.e. for
@@ -106,3 +126,33 @@ block states:
 		vertical = -[axis=y]
 		(east-west|west-east|x( |-)aligned) = -[axis=x]
 		(north-south|south-north|z( |-)aligned) = -[axis=z]
+
+	# For anything that can be powered. Levers, buttons, etc.
+	{powerable}:
+		{default} = -[powered=false]
+		(powered|activated) = -[powered=true]
+		(unpowered|deactivated) = -[powered=false]
+
+	# For anything that can be waterlogged.
+	{waterloggable}:
+		{default} = -[waterlogged=false]
+		non-waterlogged = -[waterlogged=false]
+		waterlogged = [waterlogged=true]
+
+	# For anything that can be opened (doors, trapdoors, fence gates).
+	{openable}:
+		{default} = -[open=false]
+		open = -[open=true]
+		(closed|unopen[ed]) = -[open=false]
+
+	# For blocks that can be attached to sides of another block, such as levers.
+	{attached}:
+		{default} = -[face=floor]
+		floor[-attached] = -[face=floor]
+		wall[-attached] = -[face=wall]
+		ceiling[-attached] = -[face=ceiling]
+
+	# For blocks that have a lit state, like furnaces or redstone torches.
+	{lightable}:
+		lit = -[lit=true]
+		unlit = -[lit=false]
