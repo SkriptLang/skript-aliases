@@ -50,10 +50,10 @@ random items:
 	ender pearl¦s = minecraft:ender_pearl
 	blaze rod¦s = minecraft:blaze_rod
 	nether wart = minecraft:nether_wart
-	eye¦s of ender = minecraft:ender_eye
+	(ender eye¦s|eye¦s of ender) = minecraft:ender_eye
 	(bottle¦s o' enchanting|xp bottle¦s|experience bottle¦s) = minecraft:experience_bottle
 	fire charge¦s = minecraft:fire_charge
-	(book and quill|writable book¦s) = minecraft:writable_book
+	(book and quill¦s|writable book¦s) = minecraft:writable_book
 	# TODO maps?
 	nether star¦s = minecraft:nether_star
 	# TODO fireworks
@@ -76,15 +76,91 @@ plants:
 	popped chorus fruit¦s = minecraft:chorus_fruit_popped
 
 buckets:
-	[empty] bucket = minecraft:bucket
-	water bucket = minecraft:water_bucket
-	lava bucket = minecraft:lava_bucket
-	milk [bucket] = minecraft:milk_bucket
+	[empty] bucket¦s = minecraft:bucket
+	water bucket¦s = minecraft:water_bucket
+	lava bucket¦s = minecraft:lava_bucket
+	milk [bucket¦s] = minecraft:milk_bucket
+fish buckets:
+	minecraft version = 1.13 or newer
+	tropical fish bucket¦s = minecraft:clownfish_bucket
+	cod bucket¦s = minecraft:cod_bucket
+	pufferfish bucket¦s = minecraft:pufferfish_bucket
+	salmon bucket¦s = minecraft:salmon_bucket
 	
 horse armor:
 	iron horse armor = minecraft:iron_horse_armor
 	gold[en] horse armor = minecraft:golden_horse_armor
 	diamond horse armor = minecraft:diamond_horse_armor
 	horse armor = iron horse armor, gold horse armor, diamond horse armor
+	
+new music discs:
+	minecraft version = 1.13 or newer
+	11 [music] disc¦s = minecraft:music_disc_11
+	13 [music] disc¦s = minecraft:music_disc_13
+	blocks [music] disc¦s = minecraft:music_disc_blocks
+	cat [music] disc¦s = minecraft:music_disc_cat
+	chirp [music] disc¦s = minecraft:music_disc_chirp
+	far [music] disc¦s = minecraft:music_disc_far
+	mall [music] disc¦s = minecraft:music_disc_mall
+	mellohi [music] disc¦s = minecraft:music_disc_mellohi
+	stal [music] disc¦s = minecraft:music_disc_stal
+	strad [music] disc¦s = minecraft:music_disc_strad
+	wait [music] disc¦s = minecraft:music_disc_wait
+	ward [music] disc¦s = minecraft:music_disc_ward
+	
+old music discs:
+	minecraft version = 1.12 or older
+	11 [music] disc¦s = minecraft:record_11
+	13 [music] disc¦s = minecraft:record_13
+	blocks [music] disc¦s = minecraft:record_blocks
+	cat [music] disc¦s = minecraft:record_cat
+	chirp [music] disc¦s = minecraft:record_chirp
+	far [music] disc¦s = minecraft:record_far
+	mall [music] disc¦s = minecraft:record_mall
+	mellohi [music] disc¦s = minecraft:record_mellohi
+	stal [music] disc¦s = minecraft:record_stal
+	strad [music] disc¦s = minecraft:record_strad
+	wait [music] disc¦s = minecraft:record_wait
+	ward [music] disc¦s = minecraft:record_ward
+	
+new dyes:
+	minecraft version = 1.13 or newer
+	(ink sac|black dye)¦s = minecraft:ink_sac
+	(rose red|red dye)¦s = minecraft:rose_red
+	(cactus green|green dye)¦s = minecraft:cactus_green
+	brown dye¦s = minecraft:cocoa_beans
+	blue dye¦s = minecraft:lapis_lazuli
+	purple dye¦s = minecraft:purple_dye
+	cyan dye¦s = minecraft:cyan_dye
+	light gr(a|e)y dye¦s = minecraft:light_gray_dye
+	gr(a|e)y dye¦s = minecraft:gray_dye
+	pink dye¦s = minecraft:pink_dye
+	(lime|light green) dye¦s = minecraft:lime_dye
+	(dandelion yellow|yellow dye)¦s = minecraft:dandelion_yellow
+	light blue dye¦s = minecraft:light_blue_dye
+	magenta dye¦s = minecraft:magenta_dye
+	orange dye¦s = minecraft:orange_dye
+	white dye¦s = minecraft:bonemeal
+	
+old dyes:
+	minecraft version = 1.12 or older
+	(ink sac|black dye)¦s = minecraft:dye
+	(rose red|red dye)¦s =  minecraft:dye {Damage:1}
+	(cactus green|green dye)¦s = minecraft:dye {Damage:2}
+	brown dye¦s = minecraft:dye {Damage:3}
+	blue dye¦s = minecraft:dye {Damage:4}
+	purple dye¦s = minecraft:dye {Damage:5}
+	cyan dye¦s = minecraft:dye {Damage:6}
+	light gr(a|e)y dye¦s = minecraft:dye {Damage:7}
+	gr(a|e)y dye¦s = minecraft:dye {Damage:8}
+	pink dye¦s = minecraft:dye {Damage:9}
+	lime dye¦s = minecraft:dye {Damage:10}
+	(dandelion yellow|yellow dye)¦s = minecraft:dye {Damage:11}
+	light blue dye¦s = minecraft:dye {Damage:12}
+	magenta dye¦s = minecraft:dye {Damage:13}
+	orange dye¦s = minecraft:dye {Damage:14}
+	white dye¦s = minecraft:dye {Damage:15}
+	
+	
 
-# TODO dyes, spawn eggs, music discs
+# TODO spawn eggs
