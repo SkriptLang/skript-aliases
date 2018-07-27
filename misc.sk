@@ -4,18 +4,18 @@ mining:
 	coal = minecraft:coal
 	diamond¦s = minecraft:diamond
 	iron ingot¦s = minecraft:iron_ingot
-	gold ingot¦s = minecraft:gold_ingot
-	[any] ingot¦s = iron ingot, gold ingot
+	gold[en] ingot¦s = minecraft:gold_ingot
+	any ingot¦s = iron ingot, gold ingot
 
-	gold nugget¦s = minecraft:gold_nugget
-	[any] nugget¦s = gold nugget # TODO 1.11 iron nugget
+	gold[en] nugget¦s = minecraft:gold_nugget
 
 	emerald¦s = minecraft:emerald
 	flint¦s = minecraft:flint
 
 exploration update:
 	minecraft version = 1.11 or newer
-	iron nugget¦s = minecraft:iron_nugger
+	iron nugget¦s = minecraft:iron_nugget
+	any nugget¦s = gold nugget, iron nugget
 
 old items:
 	minecraft version = 1.12.2 or older
@@ -80,5 +80,11 @@ buckets:
 	water bucket = minecraft:water_bucket
 	lava bucket = minecraft:lava_bucket
 	milk [bucket] = minecraft:milk_bucket
+	
+horse armor:
+	iron horse armor = minecraft:iron_horse_armor
+	gold[en] horse armor = minecraft:golden_horse_armor
+	diamond horse armor = minecraft:diamond_horse_armor
+	horse armor = iron horse armor, gold horse armor, diamond horse armor
 
-# TODO dyes, spawn eggs, horse armor, music discs
+# TODO dyes, spawn eggs, music discs
