@@ -16,7 +16,6 @@ unchanged foods:
     cooked rabbit¦s = minecraft:cooked_rabbit
     cookie¦s = minecraft:cookie
     golden carrot¦s = minecraft:golden_carrot
-    melon¦s = minecraft:melon
     mushroom stew¦s = minecraft:mushroom_stew
     poisonous potato¦es = minecraft:poisonous_potato
     potato¦es = minecraft:potato
@@ -44,6 +43,8 @@ foods before flattening:
     [normal] golden apple = minecraft:golden_apple {Damage:0}
     (enchanted golden|notch) apple = minecraft:golden_apple {Damage:1}
     any golden apple = normal golden apple, enchanted golden apple
+    
+    melon [slice]¦s = minecraft:melon
 
 # Foods whose IDs were changed as part of the ID flattening in 1.13.
 foods after flattening:
@@ -59,3 +60,6 @@ foods after flattening:
     [normal] golden apple = minecraft:golden_apple
     (enchanted golden|notch) apple = minecraft:enchanted_golden_apple
     any golden apple = normal golden apple, enchanted golden apple
+    
+    melon [slice]¦s = minecraft:melon_slice
+    dried kelp¦s = minecraft:dried_kelp
