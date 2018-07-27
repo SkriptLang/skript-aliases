@@ -99,12 +99,6 @@ armor:
 	(pants|leggings) = leather pants, iron pants, gold pants, diamond pants, chain pants
 	boots = leather boots, iron boots, gold boots, diamond boots, chain boots
 
-horse armor:
-	iron horse armor = minecraft:iron_horse_armor
-	gold[en] horse armor = minecraft:golden_horse_armor
-	diamond horse armor = minecraft:diamond_horse_armor
-	horse armor = iron horse armor, gold horse armor, diamond horse armor
-
 weapons:
 	wood[en] sword¦s = minecraft:wooden_sword
 	stone sword¦s = minecraft:stone_sword
