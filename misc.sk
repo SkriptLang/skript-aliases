@@ -84,11 +84,12 @@ old buckets:
 	any bucket = empty bucket, water bucket, lava bucket, milk
 new buckets:
 	minecraft version = 1.13 or newer
-	tropical fish bucket¦s = minecraft:clownfish_bucket
+	tropical fish bucket¦s = minecraft:tropical_fish_bucket
 	cod bucket¦s = minecraft:cod_bucket
 	pufferfish bucket¦s = minecraft:pufferfish_bucket
 	salmon bucket¦s = minecraft:salmon_bucket
 	any bucket = empty bucket, water bucket, lava bucket, milk, tropical fish bucket, cod bucket, pufferfish bucket, salmon bucket
+	any fish bucket = tropical fish bucket, cod bucket, pufferfish bucket, salmon bucket
 	
 horse armor:
 	iron horse armor = minecraft:iron_horse_armor
