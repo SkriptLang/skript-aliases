@@ -161,6 +161,133 @@ old dyes:
 	orange dye¦s = minecraft:dye {Damage:14}
 	white dye¦s = minecraft:dye {Damage:15}
 	
+#entity tags got changed throughout versions so this section is somewhat large
+aquatic update spawn eggs:
+	minecraft version = 1.13 or newer
+	(bat[ spawn] egg¦s|spawn bat) = minecraft:bat_spawn_egg
+	(blaze[ spawn] egg¦s|spawn blaze) = minecraft:blaze_spawn_egg
+	(cave spider[ spawn] egg¦s|spawn cave spider) = minecraft:cave_spider_spawn_egg
+	(chicken spawn egg¦s|spawn chicken) = minecraft:chicken_spawn_egg
+	(cod[ spawn] egg¦s|spawn cod) = minecraft:cod_spawn_egg
+	(cow[ spawn] egg¦s|spawn cow) = minecraft:cow_spawn_egg
+	(creeper[ spawn]|spawn creeper) egg = minecraft:creeper_spawn_egg
+	(dolphin[ spawn]|spawn dolphin) egg = minecraft:dolphin_spawn_egg
+	(donkey[ spawn] egg¦s|spawn donkey) = minecraft:donkey_spawn_egg
+	(drowned[ spawn] egg¦s|spawn drowned) = minecraft:drowned_spawn_egg
+	(elder guardian[ spawn] egg¦s|spawn elder guardian) = minecraft:elder_guardian_spawn_egg
+	(enderman[ spawn] egg¦s|spawn enderman) = minecraft:enderman_spawn_egg
+	(endermite[ spawn] egg¦s|spawn endermite) = minecraft:endermite_spawn_egg
+	(evoker[ spawn] egg¦s|spawn evoker) = minecraft:evoker_spawn_egg
+	(ghast[ spawn] egg¦s|spawn ghast) = minecraft:ghast_spawn_egg
+	(guardian[ spawn] egg¦s|spawn guardian) = minecraft:guardian_spawn_egg
+	(horse[ spawn] egg¦s|spawn horse) = minecraft:horse_spawn_egg
+	(husk[ spawn] egg¦s|spawn husk) = minecraft:husk_spawn_egg
+	(llama[ spawn] egg¦s|spawn llama) = minecraft:llama_spawn_egg
+	(magma cube[ spawn] egg¦s|spawn magma cube) = minecraft:magma_cube_spawn_egg
+	((mooshroom|mushroom cow)[ spawn] egg¦s|spawn (mooshroom|mushroom cow)) = minecraft:mooshroom_spawn_egg
+	(mule[ spawn] egg¦s|spawn mule) = minecraft:mule_spawn_egg
+	(ocelot[ spawn] egg¦s|spawn ocelot) minecraft:ocelot_spawn_egg
+	(parrot[ spawn] egg¦s|spawn parrot) = minecraft:parrot_spawn_egg
+	(phantom[ spawn] egg¦s|spawn phantom) = minecraft:phantom_spawn_egg
+	(pig[ spawn] egg¦s|spawn pig) = minecraft:pig_spawn_egg
+	(polar bear[ spawn] egg¦s|spawn polar bear) = minecraft:polar_bear_spawn_egg
+	(pufferfish[ spawn] egg¦s|spawn pufferfish) = minecraft:pufferfish_spawn_egg
+	(rabbit[ spawn] egg¦s|spawn rabbit) = minecraft:rabbit_spawn_egg
+	(salmon[ spawn] egg¦s|spawn salmon) = minecraft:salmon_spawn_egg
+	(sheep[ spawn] egg¦s|spawn sheep) = minecraft:sheep_spawn_egg
+	(shulker[ spawn] egg¦s|spawn shulker) = minecraft:shulker_spawn_egg
+	(silverfish[ spawn] egg¦s|spawn silverfish) = minecraft:silverfish_spawn_egg
+	(skeleton[ spawn] egg¦s|spawn skeleton) = minecraft:skeleton_spawn_egg
+	(skelet(on|al) horse[ spawn] egg¦s|spawn skelet(on|al) horse) = minecraft:skeleton_horse_spawn_egg
+	(slime[ spawn] egg¦s|spawn slime) = minecraft:slime_spawn_egg
+	(spider[ spawn] egg¦s|spawn spider) = minecraft:spider_spawn_egg
+	(squid[ spawn] egg¦s|spawn squid) = minecraft:squid_spawn_egg
+	(stray[ spawn] egg¦s|spawn stray) = minecraft:stray_spawn_egg
+	(tropical fish[ spawn] egg¦s|spawn tropical fish) = minecraft:tropical_fish_spawn_egg
+	(turtle spawn egg¦s|spawn turtle) = minecraft:turtle_spawn_egg
+	(vex[ spawn] egg¦s|spawn vex) = minecraft:vex_spawn_egg
+	(villager[ spawn] egg¦s|spawn villager) = minecraft:villager_spawn_egg
+	(vindicator[ spawn] egg¦s|spawn vindicator) = minecraft:vindicator_spawn_egg
+	(witch[ spawn] egg¦s|spawn witch) = minecraft:witch_spawn_egg
+	(wither skeleton[ spawn] egg¦s|spawn wither skeleton) = minecraft:wither_skeleton_spawn_egg
+	((wolf|dog)[ spawn] egg¦s|spawn (wolf|dog)) = minecraft:wolf_spawn_egg
+	(zombie[ spawn] egg¦s|spawn zombie) = minecraft:zombie_spawn_egg
+	(zombi(e|fied) horse[ spawn] egg¦s|spawn zombi(e|fied) horse) = minecraft:zombie_horse_spawn_egg
+	((zombi(e|fied) pig[man])[ spawn] egg¦s|spawn (zombi(e|fied) pig[man])) = minecraft:zombie_pigman_spawn_egg
+	((zombi(e|fied) villager[ spawn] egg¦s|spawn (zombi(e|fied) villager) = minecraft:zombie_villager_spawn_egg
 	
+world of color update spawn eggs:
+	minecraft version = 1.12 to 1.12.2
+	(donkey[ spawn] egg¦s|spawn donkey) = minecraft:spawn_egg {EntityTag:{id:donkey}}
+	(elder guardian[ spawn] egg¦s|spawn elder guardian) = minecraft:spawn_egg {EntityTag:{id:elder_guardian}}
+	(evoker[ spawn] egg¦s|spawn evoker) = minecraft:spawn_egg {EntityTag:{id:evocation_illager}}
+	(husk[ spawn] egg¦s|spawn husk) = minecraft:spawn_egg {EntityTag:{id:husk}}
+	(llama[ spawn] egg¦s|spawn llama) = minecraft:spawn_egg {EntityTag:{id:llama}}
+	(mule[ spawn] egg¦s|spawn mule) = minecraft:spawn_egg {EntityTag:{id:mule}}
+	(parrot[ spawn] egg¦s|spawn parrot) = minecraft:spawn_egg {EntityTag:{id:parrot}}
+	(polar bear[ spawn] egg¦s|spawn polar bear) = minecraft:spawn_egg {EntityTag:{id:polar_bear}}
+	(shulker[ spawn] egg¦s|spawn shulker) = minecraft:spawn_egg {EntityTag:{id:shulker}}
+	(skelet(on|al) horse[ spawn] egg¦s|spawn skelet(on|al) horse) = minecraft:spawn_egg {EntityTag:{id:skeleton_horse}}
+	(stray[ spawn] egg¦s|spawn stray) = minecraft:spawn_egg {EntityTag:{id:stray}}
+	(vex[ spawn] egg¦s|spawn vex) = minecraft:spawn_egg {EntityTag:{id:vex}}
+	(vindicator[ spawn] egg¦s|spawn vindicator) = minecraft:spawn_egg {EntityTag:{id:vindication_illager}}
+	(wither skeleton[ spawn] egg¦s|spawn wither skeleton) = minecraft:spawn_egg {EntityTag:{id:wither_skeleton}}
+	(zombi(e|fied) horse[ spawn] egg¦s|spawn zombi(e|fied) horse) = minecraft:spawn_egg {EntityTag:{id:zombie_horse}}
+	((zombi(e|fied) villager[ spawn] egg¦s|spawn (zombi(e|fied) villager) = minecraft:spawn_egg {EntityTag:{id:zombie_villager}}
 
-# TODO spawn eggs
+exploration update spawn eggs:
+	minecraft version = 1.11 to 1.11.2
+	(donkey[ spawn] egg¦s|spawn donkey) = minecraft:spawn_egg {EntityTag:{id:minecraft:donkey}}
+	(elder guardian[ spawn] egg¦s|spawn elder guardian) = minecraft:spawn_egg {EntityTag:{id:minecraft:elder_guardian}}
+	(evoker[ spawn] egg¦s|spawn evoker) = minecraft:spawn_egg {EntityTag:{id:minecraft:evocation_illager}}
+	(husk[ spawn] egg¦s|spawn husk) = minecraft:spawn_egg {EntityTag:{id:minecraft:husk}}
+	(llama[ spawn] egg¦s|spawn llama) = minecraft:spawn_egg {EntityTag:{id:minecraft:llama}}
+	(mule[ spawn] egg¦s|spawn mule) = minecraft:spawn_egg {EntityTag:{id:minecraft:mule}}
+	(polar bear[ spawn] egg¦s|spawn polar bear) = minecraft:spawn_egg {EntityTag:{id:minecraft:polar_bear}}
+	(shulker[ spawn] egg¦s|spawn shulker) = minecraft:spawn_egg {EntityTag:{id:minecraft:shulker}}
+	(skelet(on|al) horse[ spawn] egg¦s|spawn skelet(on|al) horse) = minecraft:spawn_egg {EntityTag:{id:minecraft:skeleton_horse}}
+	(stray[ spawn] egg¦s|spawn stray) = minecraft:spawn_egg {EntityTag:{id:minecraft:stray}}
+	(vex[ spawn] egg¦s|spawn vex) = minecraft:spawn_egg {EntityTag:{id:minecraft:vex}}
+	(vindicator[ spawn] egg¦s|spawn vindicator) = minecraft:spawn_egg {EntityTag:{id:minecraft:vindication_illager}}
+	(wither skeleton[ spawn] egg¦s|spawn wither skeleton) = minecraft:spawn_egg {EntityTag:{id:minecraft:wither_skeleton}}
+	(zombi(e|fied) horse[ spawn] egg¦s|spawn zombi(e|fied) horse) = minecraft:spawn_egg {EntityTag:{id:minecraft:zombie_horse}}
+	((zombi(e|fied) villager[ spawn] egg¦s|spawn (zombi(e|fied) villager) = minecraft:spawn_egg {EntityTag:{id:minecraft:zombie_villager}}
+	
+frostburn update spawn eggs:
+	minecraft version = 1.10 to 1.10.2
+	(polar bear[ spawn] egg¦s|spawn polar bear) = minecraft:spawn_egg {EntityTag:{id:PolarBear}}
+	
+combat update spawn eggs:
+	minecraft version = 1.9 to 1.10.2
+	(shulker[ spawn] egg¦s|spawn shulker) = minecraft:spawn_egg {EntityTag:{id:Shulker}}
+
+bountiful update spawn eggs:
+	#these remained valid up to 1.12
+	minecraft version = 1.12.2 and older
+	(bat[ spawn] egg¦s|spawn bat) = minecraft:spawn_egg {Damage:65}
+	(blaze[ spawn] egg¦s|spawn blaze) = minecraft:spawn_egg {Damage:61}
+	(cave spider[ spawn] egg¦s|spawn cave spider) = minecraft:spawn_egg {Damage:59}
+	(chicken spawn egg¦s|spawn chicken) = minecraft:spawn_egg {Damage:93}
+	(cow[ spawn] egg¦s|spawn cow) = minecraft:spawn_egg {Damage:92}
+	(creeper[ spawn]|spawn creeper) egg = minecraft:spawn_egg {Damage:50}
+	(enderman[ spawn] egg¦s|spawn enderman) = minecraft:spawn_egg {Damage:58}
+	(endermite[ spawn] egg¦s|spawn endermite) = minecraft:spawn_egg {Damage:67}
+	(ghast[ spawn] egg¦s|spawn ghast) = minecraft:ghast_spawn_egg {Damage:56}
+	(guardian[ spawn] egg¦s|spawn guardian) = minecraft:guardian_spawn_egg {Damage:68}
+	(horse[ spawn] egg¦s|spawn horse) = minecraft:horse_spawn_egg {Damage:100}
+	(magma cube[ spawn] egg¦s|spawn magma cube) = minecraft:spawn_egg {Damage:62}
+	((mooshroom|mushroom cow)[ spawn] egg¦s|spawn (mooshroom|mushroom cow)) = minecraft:spawn_egg {Damage:96}
+	(ocelot[ spawn] egg¦s|spawn ocelot) minecraft:spawn_egg {Damage:98}
+	(pig[ spawn] egg¦s|spawn pig) = minecraft:pig_spawn_egg {Damage:90}
+	(rabbit[ spawn] egg¦s|spawn rabbit) = minecraft:spawn_egg {Damage:101}
+	(sheep[ spawn] egg¦s|spawn sheep) = minecraft:spawn_egg {Damage:91}
+	(silverfish[ spawn] egg¦s|spawn silverfish) = minecraft:spawn_egg {Damage:60}
+	(skeleton[ spawn] egg¦s|spawn skeleton) = minecraft:spawn_egg {Damage:51}
+	(slime[ spawn] egg¦s|spawn slime) = minecraft:spawn_egg {Damage:55}
+	(spider[ spawn] egg¦s|spawn spider) = minecraft:spawn_egg {Damage:52}
+	(squid[ spawn] egg¦s|spawn squid) = minecraft:spawn_egg {Damage:94}
+	(villager[ spawn] egg¦s|spawn villager) = minecraft:spawn_egg {Damage:120}
+	(witch[ spawn] egg¦s|spawn witch) = minecraft:spawn_egg {Damage:66}
+	((wolf|dog)[ spawn] egg¦s|spawn (wolf|dog)) = minecraft:spawn_egg {Damage:95}
+	(zombie[ spawn] egg¦s|spawn zombie) = minecraft:spawn_egg {Damage:54}
+	((zombi(e|fied) pig[man])[ spawn] egg¦s|spawn (zombi(e|fied) pig[man])) = minecraft:spawn_egg {Damage:57}
