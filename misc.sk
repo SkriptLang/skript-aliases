@@ -40,7 +40,7 @@ random items:
 	leather = minecraft:leather
 	brick¦s = minecraft:brick
 	clay [balls] = minecraft:clay
-	(pieces of paper|paper¦s) = minecraft:paper
+	(piece¦s of paper|paper¦s) = minecraft:paper
 	book¦s = minecraft:book
 	slimeball¦s = minecraft:slime_ball
 	egg¦s = minecraft:egg
@@ -75,28 +75,31 @@ plants:
 	chorus fruit¦s = minecraft:chorus_fruit
 	popped chorus fruit¦s = minecraft:chorus_fruit_popped
 
-buckets:
+old buckets:
+	minecraft version = 1.12.2 or older
 	[empty] bucket¦s = minecraft:bucket
 	water bucket¦s = minecraft:water_bucket
 	lava bucket¦s = minecraft:lava_bucket
 	milk [bucket¦s] = minecraft:milk_bucket
-fish buckets:
+	any bucket = empty bucket, water bucket, lava bucket, milk
+new buckets:
 	minecraft version = 1.13 or newer
 	tropical fish bucket¦s = minecraft:clownfish_bucket
 	cod bucket¦s = minecraft:cod_bucket
 	pufferfish bucket¦s = minecraft:pufferfish_bucket
 	salmon bucket¦s = minecraft:salmon_bucket
+	any bucket = empty bucket, water bucket, lava bucket, milk, tropical fish bucket, cod bucket, pufferfish bucket, salmon bucket
 	
 horse armor:
 	iron horse armor = minecraft:iron_horse_armor
 	gold[en] horse armor = minecraft:golden_horse_armor
 	diamond horse armor = minecraft:diamond_horse_armor
-	horse armor = iron horse armor, gold horse armor, diamond horse armor
+	any horse armor = iron horse armor, gold horse armor, diamond horse armor
 	
 new music discs:
 	minecraft version = 1.13 or newer
-	11 [music] disc¦s = minecraft:music_disc_11
-	13 [music] disc¦s = minecraft:music_disc_13
+	11-[music ]disc¦s = minecraft:music_disc_11
+	13-[music ]disc¦s = minecraft:music_disc_13
 	blocks [music] disc¦s = minecraft:music_disc_blocks
 	cat [music] disc¦s = minecraft:music_disc_cat
 	chirp [music] disc¦s = minecraft:music_disc_chirp
@@ -107,11 +110,12 @@ new music discs:
 	strad [music] disc¦s = minecraft:music_disc_strad
 	wait [music] disc¦s = minecraft:music_disc_wait
 	ward [music] disc¦s = minecraft:music_disc_ward
+	any [music] disc = 11-disc, 13-disc, blocks disc, cat disc, chirp disc, far disc, mall disc, mellohi disc, stal disc, strad disc, wait disc, ward disc
 	
 old music discs:
 	minecraft version = 1.12 or older
-	11 [music] disc¦s = minecraft:record_11
-	13 [music] disc¦s = minecraft:record_13
+	11-[music ]disc¦s = minecraft:record_11
+	13-[music ]disc¦s = minecraft:record_13
 	blocks [music] disc¦s = minecraft:record_blocks
 	cat [music] disc¦s = minecraft:record_cat
 	chirp [music] disc¦s = minecraft:record_chirp
@@ -122,6 +126,7 @@ old music discs:
 	strad [music] disc¦s = minecraft:record_strad
 	wait [music] disc¦s = minecraft:record_wait
 	ward [music] disc¦s = minecraft:record_ward
+	any [music] disc = 11-disc, 13-disc, blocks disc, cat disc, chirp disc, far disc, mall disc, mellohi disc, stal disc, strad disc, wait disc, ward disc
 	
 new dyes:
 	minecraft version = 1.13 or newer
@@ -141,6 +146,7 @@ new dyes:
 	magenta dye¦s = minecraft:magenta_dye
 	orange dye¦s = minecraft:orange_dye
 	white dye¦s = minecraft:bonemeal
+	any dye = black dye, red dye, green dye, brown dye, purple dye, cyan dye, light gray dye, gray dye, pink dye, lime dye, yellow dye, light blue dye, magenta dye, orange dye, white dye
 	
 old dyes:
 	minecraft version = 1.12 or older
@@ -160,6 +166,7 @@ old dyes:
 	magenta dye¦s = minecraft:dye {Damage:13}
 	orange dye¦s = minecraft:dye {Damage:14}
 	white dye¦s = minecraft:dye {Damage:15}
+	any dye = black dye, red dye, green dye, brown dye, purple dye, cyan dye, light gray dye, gray dye, pink dye, lime dye, yellow dye, light blue dye, magenta dye, orange dye, white dye
 	
 #entity tags got changed throughout versions so this section is somewhat large
 aquatic update spawn eggs:
@@ -218,7 +225,7 @@ aquatic update spawn eggs:
 	any spawn egg = spawn bat, spawn blaze, spawn cave spider, spawn chicken, spawn cow, spawn creeper, spawn enderman, spawn endermite, spawn ghast, spawn guardian, spawn horse, spawn magma cube, spawn mooshroom, ocelot, spawn pig, spawn rabbit, spawn sheep, spawn silverfish, spawn skeleton, spawn slime, spawn spider, spawn squid, spawn villager, spawn witch, spawn wolf, spawn zombie, spawn shulker, spawn polar bear, spawn donkey, spawn elder guardian, spawn evoker, spawn husk, spawn llama, spawn mule, spawn polar bear, spawn shulker, spawn skeleton horse, spawn stray, spawn vex, spawn vindicator, spawn wither skeleton, spawn zombie horse, spawn zombie villager, spawn parrot, spawn cod, spawn dolphin, spawn drowned, spawn phantom, spawn pufferfish, spawn salmon, spawn tropical fish, spawn turtle
 	
 world of color update spawn eggs:
-	minecraft version = 1.12 to 1.12.2
+	minecraft version = 1.12
 	(donkey[ spawn] egg¦s|spawn donkey) = minecraft:spawn_egg {EntityTag:{id:donkey}}
 	(elder guardian[ spawn] egg¦s|spawn elder guardian) = minecraft:spawn_egg {EntityTag:{id:elder_guardian}}
 	(evoker[ spawn] egg¦s|spawn evoker) = minecraft:spawn_egg {EntityTag:{id:evocation_illager}}
@@ -238,7 +245,7 @@ world of color update spawn eggs:
 	any spawn egg = spawn bat, spawn blaze, spawn cave spider, spawn chicken, spawn cow, spawn creeper, spawn enderman, spawn endermite, spawn ghast, spawn guardian, spawn horse, spawn magma cube, spawn mooshroom, ocelot, spawn pig, spawn rabbit, spawn sheep, spawn silverfish, spawn skeleton, spawn slime, spawn spider, spawn squid, spawn villager, spawn witch, spawn wolf, spawn zombie, spawn shulker, spawn polar bear, spawn donkey, spawn elder guardian, spawn evoker, spawn husk, spawn llama, spawn mule, spawn polar bear, spawn shulker, spawn skeleton horse, spawn stray, spawn vex, spawn vindicator, spawn wither skeleton, spawn zombie horse, spawn zombie villager, spawn parrot
 
 exploration update spawn eggs:
-	minecraft version = 1.11 to 1.11.2
+	minecraft version = 1.11
 	(donkey[ spawn] egg¦s|spawn donkey) = minecraft:spawn_egg {EntityTag:{id:minecraft:donkey}}
 	(elder guardian[ spawn] egg¦s|spawn elder guardian) = minecraft:spawn_egg {EntityTag:{id:minecraft:elder_guardian}}
 	(evoker[ spawn] egg¦s|spawn evoker) = minecraft:spawn_egg {EntityTag:{id:minecraft:evocation_illager}}
@@ -257,12 +264,12 @@ exploration update spawn eggs:
 	any spawn egg = spawn bat, spawn blaze, spawn cave spider, spawn chicken, spawn cow, spawn creeper, spawn enderman, spawn endermite, spawn ghast, spawn guardian, spawn horse, spawn magma cube, spawn mooshroom, ocelot, spawn pig, spawn rabbit, spawn sheep, spawn silverfish, spawn skeleton, spawn slime, spawn spider, spawn squid, spawn villager, spawn witch, spawn wolf, spawn zombie, spawn shulker, spawn polar bear, spawn donkey, spawn elder guardian, spawn evoker, spawn husk, spawn llama, spawn mule, spawn polar bear, spawn shulker, spawn skeleton horse, spawn stray, spawn vex, spawn vindicator, spawn wither skeleton, spawn zombie horse, spawn zombie villager
 	
 frostburn update spawn eggs:
-	minecraft version = 1.10 to 1.10.2
+	minecraft version = 1.10
 	(polar bear[ spawn] egg¦s|spawn polar bear) = minecraft:spawn_egg {EntityTag:{id:PolarBear}}
 	any spawn egg = spawn bat, spawn blaze, spawn cave spider, spawn chicken, spawn cow, spawn creeper, spawn enderman, spawn endermite, spawn ghast, spawn guardian, spawn horse, spawn magma cube, spawn mooshroom, ocelot, spawn pig, spawn rabbit, spawn sheep, spawn silverfish, spawn skeleton, spawn slime, spawn spider, spawn squid, spawn villager, spawn witch, spawn wolf, spawn zombie, spawn shulker, spawn polar bear
 	
 combat update spawn eggs:
-	minecraft version = 1.9 to 1.9.4
+	minecraft version = 1.9
 	(shulker[ spawn] egg¦s|spawn shulker) = minecraft:spawn_egg {EntityTag:{id:Shulker}}
 	any spawn egg = spawn bat, spawn blaze, spawn cave spider, spawn chicken, spawn cow, spawn creeper, spawn enderman, spawn endermite, spawn ghast, spawn guardian, spawn horse, spawn magma cube, spawn mooshroom, ocelot, spawn pig, spawn rabbit, spawn sheep, spawn silverfish, spawn skeleton, spawn slime, spawn spider, spawn squid, spawn villager, spawn witch, spawn wolf, spawn zombie, spawn shulker
 
