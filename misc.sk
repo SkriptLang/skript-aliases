@@ -13,7 +13,7 @@ mining:
 	flint¦s = minecraft:flint
 
 exploration update:
-	minecraft version = 1.11 or newer
+	minecraft version = 1.11.1 or newer
 	iron nugget¦s = minecraft:iron_nugget
 	any nugget¦s = gold nugget, iron nugget
 
