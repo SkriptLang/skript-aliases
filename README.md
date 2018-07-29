@@ -133,7 +133,7 @@ To contribute to aliases, you will need:
   * Anything that you use to edit scripts will do
 * A Github Account
 * A Minecraft server for testing
-  * Skript (currently a development build; *published soon*)
+  * Skript (currently a development build; can be downloaded [here](https://github.com/SkriptLang/skript-aliases/releases))
   * Spigot or Paper
   * No addons
 
