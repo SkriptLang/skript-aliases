@@ -1,0 +1,61 @@
+#= For blocks that aren't in the creative mode menu in any category.
+
+# Unlisted blocks whose IDs have never changed.
+unlisted blocks:
+	end[er] portal [block¦s] = minecraft:end_portal
+	fire = minecraft:fire
+
+# Unlisted blocks that had a different ID before the flattening.
+unlisted before flattening:
+	minecraft version = 1.12.2 or older
+	[nether] portal [block¦s] = minecraft:portal
+
+	{command block direction}:
+		{default} = - {Damage:1}
+		(down[ward[s]]( |-)[(facing|pointing)]) = - {Damage:0}
+		(up[ward[s]]( |-)[(facing|pointing)]) = - {Damage:1}
+		(north[ward[s]]( |-)[(facing|pointing)]) = - {Damage:2}
+		(south[ward[s]]( |-)[(facing|pointing)]) = - {Damage:3}
+		(west[ward[s]]( |-)[(facing|pointing)]) = - {Damage:4}
+		(east[ward[s]]( |-)[(facing|pointing)]) = - {Damage:5}
+		(down[ward[s]]( |-)[(facing|pointing)]) conditional = - {Damage:8}
+		(up[ward[s]]( |-)[(facing|pointing)]) conditional = - {Damage:9}
+		(north[ward[s]]( |-)[(facing|pointing)]) conditional = - {Damage:10}
+		(south[ward[s]]( |-)[(facing|pointing)]) conditional = - {Damage:11}
+		(west[ward[s]]( |-)[(facing|pointing)]) conditional = - {Damage:12}
+		(east[ward[s]]( |-)[(facing|pointing)]) conditional = - {Damage:13}
+	{command block direction} [impulse] command block¦s = minecraft:command_block
+
+# Unlisted blocks added in 1.9 whose states were changed in the flattening.
+combat update unlisted blocks before flattening:
+	minecraft version = 1.9 to 1.12.2
+	{command block direction} chain command block¦s = minecraft:chain_command_block
+	{command block direction} repeating command block¦s = minecraft:repeating_command_block
+
+# Unlisted blocks added in 1.11
+exploration update unlisted blocks before flattening:
+	minecraft version = 1.11 to 1.12.2
+	save structure block = minecraft:structure_block {Damage:0}
+	load structure block = minecraft:structure_block {Damage:1}
+	corner structure block = minecraft:structure_block {Damage:2}
+	data structure block = minecraft:structure_block {Damage:3}
+	[any] structure block¦s = save structure block, load structure block, corner structure block, data structure block
+
+# Unlisted blocks whose IDs were changed in the flattening.
+unlisted after flattening:
+	minecraft version = 1.13 or newer
+	[nether] portal [block¦s] = minecraft:nether_portal
+
+	{conditional}:
+		{default} = -[conditional=false]
+		unconditional = -[conditional=false]
+		conditional = -[conditional=true]
+	{orientable} {conditional} [impulse] command block¦s = minecraft:command_block
+	{orientable} {conditional} chain command block¦s = minecraft:chain_command_block
+	{orientable} {conditional} repeating command block¦s = minecraft:repeating_command_block
+
+	save structure block¦s = minecraft:structure_block[mode=save]
+	load structure block¦s = minecraft:structure_block[mode=load]
+	corner structure block¦s = minecraft:structure_block[mode=corner]
+	data structure block¦s = minecraft:structure_block[mode=data]
+	[any] structure block¦s = save structure block, load structure block, corner structure block, data structure block
