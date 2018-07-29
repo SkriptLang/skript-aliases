@@ -68,15 +68,6 @@ blocks:
   brewing stand¦s = minecraft:brewing_stand
   cauldron¦s = minecraft:cauldron
 
-ingredients:
-  ghast tear¦s = minecraft:ghast_tear
-  fermented spider eye¦s = minecraft:fermented_spider_eye
-  blaze powder¦s = minecraft:blaze_powder
-  magma cream¦s = minecraft:magma_cream
-  (glistering|golden) melon[ slice]¦s = minecraft:speckled_melon
-  gold[en] carrot¦s = minecraft:golden_carrot
-  rabbit['s] (foot|feet) = minecraft:rabbit_foot
-
 combat update brewing:
   minecraft version = 1.9 or newer
   dragon['s] breath = minecraft:dragon_breath
@@ -87,6 +78,21 @@ combat update brewing:
   (potion[s] of {combat update potions}|{combat update potions} potion¦s) = minecraft:potion
   (splash potion[s] of {combat update potions}|{combat update potions} splash potion¦s) = minecraft:splash_potion
   (splash potion[s] of {combat update potions}|{combat update potions} lingering potion¦s) = minecraft:lingering_potion
+
+unchanged ingredients:
+  ghast tear¦s = minecraft:ghast_tear
+  fermented spider eye¦s = minecraft:fermented_spider_eye
+  blaze powder¦s = minecraft:blaze_powder
+  magma cream¦s = minecraft:magma_cream
+  gold[en] carrot¦s = minecraft:golden_carrot
+  rabbit['s] (foot|feet) = minecraft:rabbit_foot
+
+ingredients before flattening:
+  minecraft version = 1.12.2 or older
+  (glistering|golden) melon[ slice]¦s = minecraft:speckled_melon
+
+ingredients after flattening:
+  (glistering|golden) melon[ slice]¦s = minecraft:glistering_melon_slice
 
 update aquatic ingredients:
   minecraft version = 1.13 or newer

@@ -1,7 +1,7 @@
 # Skript Aliases
 These are the new aliases for Skript, currently work in progress. If you are
 looking for the plugin, you should go to the main
-[repository](https://github.com/bensku/Skript).
+[repository](https://github.com/SkriptLang/Skript).
 
 ## Structure of Aliases
 Aliases are laid out in multiple subfolders and files inside them. In each file,
@@ -133,7 +133,7 @@ To contribute to aliases, you will need:
   * Anything that you use to edit scripts will do
 * A Github Account
 * A Minecraft server for testing
-  * Skript (currently a development build; *published soon*)
+  * Skript (currently a development build; can be downloaded [here](https://github.com/SkriptLang/skript-aliases/releases))
   * Spigot or Paper
   * No addons
 
