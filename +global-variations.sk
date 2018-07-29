@@ -46,15 +46,15 @@ data values:
 		up[( |-)]side down (south[ward[s]]( |-)[(facing|pointing)]) = - {Damage:6}
 		up[( |-)]side down (north[ward[s]]( |-)[(facing|pointing)]) = - {Damage:7}
 
-	# For blocks that can be attached to sides of another block, such as torches or buttons.
+	# For blocks that can be attached to sides of another block, such as torches.
 	{attached}:
 		{default} = - {Damage:5}
-		[(unpressed|inactive)] (down[ward[s]]( |-)[(facing|pointing)]) = - {Damage:0}
-		[(unpressed|inactive)] (east[ward[s]]( |-)[(facing|pointing)]) = - {Damage:1}
-		[(unpressed|inactive)] (west[ward[s]]( |-)[(facing|pointing)]) = - {Damage:2}
-		[(unpressed|inactive)] (south[ward[s]]( |-)[(facing|pointing)]) = - {Damage:3}
-		[(unpressed|inactive)] (north[ward[s]]( |-)[(facing|pointing)]) = - {Damage:4}
-		[(unpressed|inactive)] (up[ward[s]]( |-)[(facing|pointing)]) = - {Damage:5}
+		(down[ward[s]]( |-)[(facing|pointing)]) = - {Damage:0}
+		(east[ward[s]]( |-)[(facing|pointing)]) wall = - {Damage:1}
+		(west[ward[s]]( |-)[(facing|pointing)]) wall = - {Damage:2}
+		(south[ward[s]]( |-)[(facing|pointing)]) wall = - {Damage:3}
+		(north[ward[s]]( |-)[(facing|pointing)]) wall = - {Damage:4}
+		(up[ward[s]]( |-)[(facing|pointing)]|floor) = - {Damage:5}
 
 	# For blocks that can be attached to sides of another block and toggled, namely buttons.
 	{attached toggleable}:
@@ -147,7 +147,7 @@ block states:
 	# For anything that can be waterlogged.
 	{waterloggable}:
 		{default} = -[waterlogged=false]
-		non-waterlogged = -[waterlogged=false]
+		(dry|non-waterlogged) = -[waterlogged=false]
 		waterlogged = [waterlogged=true]
 
 	# For anything that can be opened (doors, trapdoors, fence gates).

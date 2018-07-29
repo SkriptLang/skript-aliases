@@ -145,7 +145,7 @@ old blocks before flattening:
 
 	# Glass
 	{colored} stained glass [block¦s] = minecraft:stained_glass
-	[any] stained glass block¦s = mineecraft:stained_glass
+	[any] stained glass block¦s = white stained glass, orange stained glass, magenta stained glass, light blue stained glass, yellow stained glass, lime stained glass, pink stained glass, dark gray stained glass, light gray stained glass, cyan stained glass, purple stained glass, blue stained glass, brown stained glass, dark green stained glass, red stained glass, black stained glass
 
 	# Wool
 	{colored} wool [block¦s] = minecraft:wool
