@@ -4,6 +4,9 @@
 unlisted blocks:
 	end[er] portal [block¦s] = minecraft:end_portal
 	fire = minecraft:fire
+	pumpkin stem = minecraft:pumpkin_stem
+	melon stem = minecraft:melon_stem
+	tripwire [(string|line)] = minecraft:tripwire
 
 # Unlisted blocks that had a different ID before the flattening.
 unlisted before flattening:
@@ -25,6 +28,11 @@ unlisted before flattening:
 		(west[ward[s]]( |-)[(facing|pointing)]) conditional = - {Damage:12}
 		(east[ward[s]]( |-)[(facing|pointing)]) conditional = - {Damage:13}
 	{command block direction} [impulse] command block¦s = minecraft:command_block
+
+# Unlisted blocks added in 1.9
+unchanged combat update unlisted:
+	minecraft version = 1.9 or newer
+	frosted ice = minecraft:frosted_ice
 
 # Unlisted blocks added in 1.9 whose states were changed in the flattening.
 combat update unlisted blocks before flattening:
@@ -59,3 +67,6 @@ unlisted after flattening:
 	corner structure block¦s = minecraft:structure_block[mode=corner]
 	data structure block¦s = minecraft:structure_block[mode=data]
 	[any] structure block¦s = save structure block, load structure block, corner structure block, data structure block
+
+	{directional} attached melon stem = minecraft:attached_melon_stem
+	{directional} attached pumpkin stem = minecraft:attached_pumpkin_stem
