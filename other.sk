@@ -4,6 +4,7 @@
 unlisted blocks:
 	end[er] portal [block¦s] = minecraft:end_portal
 	fire = minecraft:fire
+	air = minecraft:air
 
 # Unlisted blocks that had a different ID before the flattening.
 unlisted before flattening:
@@ -59,3 +60,6 @@ unlisted after flattening:
 	corner structure block¦s = minecraft:structure_block[mode=corner]
 	data structure block¦s = minecraft:structure_block[mode=data]
 	[any] structure block¦s = save structure block, load structure block, corner structure block, data structure block
+	
+	cave air = minecraft:cave_air
+	void air = minecraft:void_air
