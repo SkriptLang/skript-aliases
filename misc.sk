@@ -6,16 +6,17 @@ mining:
 	iron ingot¦s = minecraft:iron_ingot
 	gold[en] ingot¦s = minecraft:gold_ingot
 	any ingot¦s = iron ingot, gold ingot
-
 	gold[en] nugget¦s = minecraft:gold_nugget
-
 	emerald¦s = minecraft:emerald
 	flint¦s = minecraft:flint
 
-exploration update:
+exploration update 2:
 	minecraft version = 1.11.1 or newer
 	iron nugget¦s = minecraft:iron_nugget
 	any nugget¦s = gold nugget, iron nugget
+exploration update:
+	minecraft version = 1.11 or newer
+	shulker shell¦s = minecraft:shulker_shell
 
 old items:
 	minecraft version = 1.12.2 or older
@@ -99,35 +100,35 @@ horse armor:
 	
 new music discs:
 	minecraft version = 1.13 or newer
-	11-[music ]disc¦s = minecraft:music_disc_11
-	13-[music ]disc¦s = minecraft:music_disc_13
-	blocks [music] disc¦s = minecraft:music_disc_blocks
-	cat [music] disc¦s = minecraft:music_disc_cat
-	chirp [music] disc¦s = minecraft:music_disc_chirp
-	far [music] disc¦s = minecraft:music_disc_far
-	mall [music] disc¦s = minecraft:music_disc_mall
-	mellohi [music] disc¦s = minecraft:music_disc_mellohi
-	stal [music] disc¦s = minecraft:music_disc_stal
-	strad [music] disc¦s = minecraft:music_disc_strad
-	wait [music] disc¦s = minecraft:music_disc_wait
-	ward [music] disc¦s = minecraft:music_disc_ward
-	any [music] disc = 11-disc, 13-disc, blocks disc, cat disc, chirp disc, far disc, mall disc, mellohi disc, stal disc, strad disc, wait disc, ward disc
+	[music] (disc|record) 11 = minecraft:music_disc_11
+	[music] (disc|record) 13 = minecraft:music_disc_13
+	[music] (disc|record) blocks = minecraft:music_disc_blocks
+	[music] (disc|record) cat = minecraft:music_disc_cat
+	[music] (disc|record) chirp = minecraft:music_disc_chirp
+	[music] (disc|record) far = minecraft:music_disc_far
+	[music] (disc|record) mall = minecraft:music_disc_mall
+	[music] (disc|record) mellohi = minecraft:music_disc_mellohi
+	[music] (disc|record) stal = minecraft:music_disc_stal
+	[music] (disc|record) strad = minecraft:music_disc_strad
+	[music] (disc|record) wait = minecraft:music_disc_wait
+	[music] (disc|record) ward = minecraft:music_disc_ward
+	any [music] (disc|record) = music disc 11, music disc 13, music disc blocks, music disc cat, musici disc chirp, music disc far, music disc mall, music disc mellohi, music disc stal, music disc strad, music disc wait, music disc ward
 	
 old music discs:
 	minecraft version = 1.12 or older
-	11-[music ]disc¦s = minecraft:record_11
-	13-[music ]disc¦s = minecraft:record_13
-	blocks [music] disc¦s = minecraft:record_blocks
-	cat [music] disc¦s = minecraft:record_cat
-	chirp [music] disc¦s = minecraft:record_chirp
-	far [music] disc¦s = minecraft:record_far
-	mall [music] disc¦s = minecraft:record_mall
-	mellohi [music] disc¦s = minecraft:record_mellohi
-	stal [music] disc¦s = minecraft:record_stal
-	strad [music] disc¦s = minecraft:record_strad
-	wait [music] disc¦s = minecraft:record_wait
-	ward [music] disc¦s = minecraft:record_ward
-	any [music] disc = 11-disc, 13-disc, blocks disc, cat disc, chirp disc, far disc, mall disc, mellohi disc, stal disc, strad disc, wait disc, ward disc
+	[music] (disc|record) 11 = minecraft:record_11
+	[music] (disc|record) 13 = minecraft:record_13
+	[music] (disc|record) blocks = minecraft:record_blocks
+	[music] (disc|record) cat = minecraft:record_cat
+	[music] (disc|record) chirp = minecraft:record_chirp
+	[music] (disc|record) far = minecraft:record_far
+	[music] (disc|record) mall = minecraft:record_mall
+	[music] (disc|record) mellohi = minecraft:record_mellohi
+	[music] (disc|record) stal = minecraft:record_stal
+	[music] (disc|record) strad = minecraft:record_strad
+	[music] (disc|record) wait = minecraft:record_wait
+	[music] (disc|record) ward = minecraft:record_ward
+	any [music] (disc|record) = music disc 11, music disc 13, music disc blocks, music disc cat, musici disc chirp, music disc far, music disc mall, music disc mellohi, music disc stal, music disc strad, music disc wait, music disc ward
 	
 new dyes:
 	minecraft version = 1.13 or newer
