@@ -4,7 +4,8 @@
 
 # Variations which use data values for older Minecraft versions.
 data values:
-	minecraft version = 1.12 or older
+	minecraft version = 1.12.2 or older
+	# For blocks that were colored via data value in 1.12 and below
 	{colored}:
 		white = - {Damage:0}
 		orange = - {Damage:1}
@@ -22,6 +23,25 @@ data values:
 		[dark] green = - {Damage:13}
 		red = - {Damage:14}
 		black = - {Damage:15}
+	# For blocks that were colored via ID even in 1.12. Rarely used, but it needs to be a different
+	# variation than the 1.13 ID-based one because 'light_gray' used to be 'silver' in IDs.
+	{old colored IDs}:
+		white = minecraft:white_-
+		orange = minecraft:orange_-
+		magenta = minecraft:magenta_-
+		light blue = minecraft:light_blue_-
+		yellow = minecraft:yellow_-
+		(lime [green]|light green) = minecraft:lime_-
+		pink = minecraft:pink_-
+		[dark] gr(a|e)y = minecraft:gray_-
+		light gr(a|e)y = minecraft:silver_-
+		cyan = minecraft:cyan_-
+		purple = minecraft:purple_-
+		blue = minecraft:blue_-
+		brown = minecraft:brown_-
+		[dark] green = minecraft:green_-
+		red = minecraft:red_-
+		black = minecraft:black_-
 
 	# For blocks that can point in all six directions.
 	# Dispenser, dropper, pistons, end rods.
@@ -124,7 +144,8 @@ block states:
 		(west[ward[s]]( |-)[(facing|pointing)]) = -[facing=west]
 		(east[ward[s]]( |-)[(facing|pointing)]) = -[facing=east]
 
-	# For anything that can exist in either the top or bottom half of a block
+	# For anything that can exist in either the top or bottom half of a block (slabs), can be flipped
+	# (stairs), or that has top and bottom halves (double plants, doors, etc.)
 	{block half}:
 		{default} = -[half=bottom]
 		(right[( |-)]side up|bottom) = -[half=bottom]
