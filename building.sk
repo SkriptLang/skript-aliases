@@ -373,28 +373,28 @@ frostburn update:
 
 # Building blocks added in 1.10 whose IDs were changed in the flattening (1.13)
 frostburn update before flattening:
-	minecraft version = 1.10 to 1.12
+	minecraft version = 1.10 to 1.12.2
 	magma [block¦s] = minecraft:magma
 	red nether brick¦s = minecraft:red_nether_brick
 
 # Building blocks add in 1.12 whose IDs were changed in the flattening.
 world of color update before flattening:
-	minecraft version = 1.12
+	minecraft version = 1.12.2
 	{colored} concrete = minecraft:concrete
 	{colored} concrete powder = minecraft:concrete powder
 
-# NEW items that were by 1.13 (as opposed to renames of old items).
+# NEW items that were added by 1.13 (as opposed to renames of old items).
 # These could've been grouped with the post-flattening aliases but this is better for clarity
 # (changed IDs vs. new IDs as far as 1.13 goes.)
 update aquatic:
 	minecraft version = 1.13 or newer
 	# Update Aquatic added log variants no bark.
-	stripped oak log¦s = minecraft:stripped_oak_log
-	stripped spruce log¦s = minecraft:stripped_spruce_log
-	stripped birch log¦s = minecraft:stripped_birch_log
-	stripped jungle log¦s = minecraft:stripped_jungle_log
-	stripped acacia log¦s = minecraft:stripped_acacia_log
-	stripped dark oak log¦s = minecraft:stripped_dark_oak_log
+	{axis-aligned} stripped oak log¦s = minecraft:stripped_oak_log
+	{axis-aligned} stripped spruce log¦s = minecraft:stripped_spruce_log
+	{axis-aligned} stripped birch log¦s = minecraft:stripped_birch_log
+	{axis-aligned} stripped jungle log¦s = minecraft:stripped_jungle_log
+	{axis-aligned} stripped acacia log¦s = minecraft:stripped_acacia_log
+	{axis-aligned} stripped dark oak log¦s = minecraft:stripped_dark_oak_log
 	any stripped log [block¦s] = stripped oak log, stripped spruce log, stripped birch log, stripped jungle log, stripped acacia log, stripped dark oak log
 
 	# Define any log to include the stripped ones
