@@ -1,12 +1,17 @@
-#= For blocks that aren't in the creative mode menu in any category.
+#= For blocks that aren't in the creative mode menu in any category or that generally can't be obtained in the inventory.
 
 # Unlisted blocks whose IDs have never changed.
 unlisted blocks:
 	end[er] portal [block¦s] = minecraft:end_portal
 	fire = minecraft:fire
+<<<<<<< HEAD
 	pumpkin stem = minecraft:pumpkin_stem
 	melon stem = minecraft:melon_stem
 	tripwire [(string|line)] = minecraft:tripwire
+=======
+	air = minecraft:air
+	barrier [block]¦s = minecraft:barrier
+>>>>>>> 7ff2a77811d6ee82a8e01316c70eeed071d246f8
 
 # Unlisted blocks that had a different ID before the flattening.
 unlisted before flattening:
@@ -40,9 +45,14 @@ combat update unlisted blocks before flattening:
 	{command block direction} chain command block¦s = minecraft:chain_command_block
 	{command block direction} repeating command block¦s = minecraft:repeating_command_block
 
-# Unlisted blocks added in 1.11
+# Unlisted blocks added in 1.10 that never changed.
+frostburn update unlisted blocks:
+	minecraft version = 1.10 or newer
+	structure void¦s = minecraft:structure_void
+
+# Unlisted blocks added in 1.10 which were changed as part of the flattening
 exploration update unlisted blocks before flattening:
-	minecraft version = 1.11 to 1.12.2
+	minecraft version = 1.10 to 1.12.2
 	save structure block = minecraft:structure_block {Damage:0}
 	load structure block = minecraft:structure_block {Damage:1}
 	corner structure block = minecraft:structure_block {Damage:2}
@@ -67,6 +77,16 @@ unlisted after flattening:
 	corner structure block¦s = minecraft:structure_block[mode=corner]
 	data structure block¦s = minecraft:structure_block[mode=data]
 	[any] structure block¦s = save structure block, load structure block, corner structure block, data structure block
-
+	
 	{directional} attached melon stem = minecraft:attached_melon_stem
 	{directional} attached pumpkin stem = minecraft:attached_pumpkin_stem
+
+# Unlisted blocks added as part of 1.13 (Update Aquatic)
+update aquatic unlisted blocks:
+	minecraft version = 1.13 or newer
+	cave air = minecraft:cave_air
+	void air = minecraft:void_air
+
+	(upwards|pushing) bubble column = minecraft:bubble_column[drag=false]
+	(downwards|whirlpool|dragging) bubble column = minecraft:bubble_column[drag=true]
+	bubble column = upwards bubble column, downwards bubble column
