@@ -18,6 +18,7 @@ unchanged redstone:
 	{orientable} dispenser¦s = minecraft:dispenser
 	{orientable} dropper¦s = minecraft:dropper
 	tnt [block¦s] = minecraft:tnt
+	hopper¦s = minecraft:hopper
 
 	{orientable} [(normal|non-sticky)] piston¦s = minecraft:piston
 	{orientable} sticky piston¦s = minecraft:sticky_piston
@@ -126,52 +127,27 @@ redstone after flattening:
 	{comparator mode} {directional} {powerable} [redstone] comparator [item]¦s = minecraft:comparator
 
 	# Buttons
-	{orientable} {powerable} oak [wood[en]] button¦s = minecraft:oak_button
-	{orientable} {powerable} spruce [wood[en]] button¦s = minecraft:spruce_button
-	{orientable} {powerable} birch [wood[en]] button¦s = minecraft:birch_button
-	{orientable} {powerable} jungle [wood[en]] button¦s = minecraft:jungle_button
-	{orientable} {powerable} acacia [wood[en]] button¦s = minecraft:acacia_button
-	{orientable} {powerable} dark oak [wood[en]] button¦s = minecraft:dark_oak_button
+	{orientable} {powerable} {wood type} button¦s = -button
 	{orientable} {powerable} stone button¦s = minecraft:stone_button
 	[any] wood[en] button¦s = oak button, spruce button, birch button, jungle button, acacia button, dark oak button
 	[any] button¦s = stone button, any wooden button
 
 	# Pressure plates
-	{powerable} oak [wood[en]] pressure plate¦s = minecraft:oak_pressure_plate
-	{powerable} spruce [wood[en]] pressure plate¦s = minecraft:spruce_pressure_plate
-	{powerable} birch [wood[en]] pressure plate¦s = minecraft:birch_pressure_plate
-	{powerable} jungle [wood[en]] pressure plate¦s = minecraft:jungle_pressure_plate
-	{powerable} acacia [wood[en]] pressure plate¦s = minecraft:acacia_pressure_plate
-	{powerable} dark oak [wood[en]] pressure plate¦s = minecraft:dark_oak_pressure_plate
+	{powerable} {wood type} pressure plate¦s = -pressure_plate
 	[any] wood[en] pressure plate¦s = oak pressure plate, spruce pressure plate, birch pressure plate, jungle pressure plate, acacia pressure plate, dark oak pressure plate
 	[any] pressure plate¦s = stone pressure plate, gold pressure plate, iron pressure plate, any wooden pressure plate
 
 	# Trapdoors
-	{waterloggable} {openable} {powerable} oak [wood[en]] trapdoor¦s = minecraft:oak_trapdoor
-	{waterloggable} {openable} {powerable} spruce [wood[en]] trapdoor¦s = minecraft:spruce_trapdoor
-	{waterloggable} {openable} {powerable} birch [wood[en]] trapdoor¦s = minecraft:birch_trapdoor
-	{waterloggable} {openable} {powerable} jungle [wood[en]] trapdoor¦s = minecraft:jungle_trapdoor
-	{waterloggable} {openable} {powerable} acacia [wood[en]] trapdoor¦s = minecraft:acacia_trapdoor
-	{waterloggable} {openable} {powerable} dark oak [wood[en]] trapdoor¦s = minecraft:dark_oak_trapdoor
+	{waterloggable} {openable} {powerable} {wood type} trapdoor¦s = -trapdoor
 	[any] wood[en] trapdoor¦s = oak trapdoor, spruce trapdoor, birch trapdoor, jungle trapdoor, acacia trapdoor, dark oak trapdoor
 	[any] trapdoor¦s = iron trapdoor, any wooden trapdoor
 
 	# Fence gates
-	{openable} {powerable} oak [wood[en]] [fence] gate¦s = minecraft:oak_fence_gate
-	{openable} {powerable} spruce [wood[en]] [fence] gate¦s = minecraft:spruce_fence_gate
-	{openable} {powerable} birch [wood[en]] [fence] gate¦s = minecraft:birch_fence_gate
-	{openable} {powerable} jungle [wood[en]] [fence] gate¦s = minecraft:jungle_fence_gate
-	{openable} {powerable} acacia [wood[en]] [fence] gate¦s = minecraft:acacia_fence_gate
-	{openable} {powerable} dark oak [wood[en]] [fence] gate¦s = minecraft:dark_oak_fence_gate
+	{openable} {powerable} {wood type} [fence] gate¦s = -fence_gate
 	[any] [wood[en]] gate¦s = oak gate, spruce gate, birch gate, jungle gate, acacia gate, dark oak gate
 
 	# Doors
-	{directional} {block half} {openable} {powerable} oak [wood[en]] door¦s = minecraft:oak_door
-	{directional} {block half} {openable} {powerable} spruce [wood[en]] door¦s = minecraft:spruce_door
-	{directional} {block half} {openable} {powerable} birch [wood[en]] door¦s = minecraft:birch_door
-	{directional} {block half} {openable} {powerable} jungle [wood[en]] door¦s = minecraft:jungle_door
-	{directional} {block half} {openable} {powerable} acacia [wood[en]] door¦s = minecraft:acacia_door
-	{directional} {block half} {openable} {powerable} dark oak [wood[en]] door¦s = minecraft:dark_oak_door
+	{directional} {block half} {openable} {powerable} {wood type} door¦s = -door
 	{directional} {block half} {openable} {powerable} iron door¦s = minecraft:iron_door
 	[any] wood[en] door¦s = oak door, spruce door, birch door, jungle door, acacia door, dark oak door
 	[any] door¦s = iron door, any wooden door
@@ -194,10 +170,6 @@ redstone after flattening:
 	note block¦s = minecraft:note_block
 	{directional} {powerable} tripwire hook¦s = minecraft:tripwire_hook
 	{directional} {waterloggable} trapped chest¦s = minecraft:trapped_chest
-
-
-logic:
-	hopper¦s = minecraft:hopper
 
 exploration update:
 	minecraft version = 1.11 or newer

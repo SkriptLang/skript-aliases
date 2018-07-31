@@ -4,7 +4,8 @@
 
 # Variations which use data values for older Minecraft versions.
 data values:
-	minecraft version = 1.12 or older
+	minecraft version = 1.12.2 or older
+	# For blocks that were colored via data value in 1.12 and below
 	{colored}:
 		white = - {Damage:0}
 		orange = - {Damage:1}
@@ -22,6 +23,25 @@ data values:
 		[dark] green = - {Damage:13}
 		red = - {Damage:14}
 		black = - {Damage:15}
+	# For blocks that were colored via ID even in 1.12. Rarely used, but it needs to be a different
+	# variation than the 1.13 ID-based one because 'light_gray' used to be 'silver' in IDs.
+	{old colored IDs}:
+		white = minecraft:white_-
+		orange = minecraft:orange_-
+		magenta = minecraft:magenta_-
+		light blue = minecraft:light_blue_-
+		yellow = minecraft:yellow_-
+		(lime [green]|light green) = minecraft:lime_-
+		pink = minecraft:pink_-
+		[dark] gr(a|e)y = minecraft:gray_-
+		light gr(a|e)y = minecraft:silver_-
+		cyan = minecraft:cyan_-
+		purple = minecraft:purple_-
+		blue = minecraft:blue_-
+		brown = minecraft:brown_-
+		[dark] green = minecraft:green_-
+		red = minecraft:red_-
+		black = minecraft:black_-
 
 	# For blocks that can point in all six directions.
 	# Dispenser, dropper, pistons, end rods.
@@ -46,15 +66,15 @@ data values:
 		up[( |-)]side down (south[ward[s]]( |-)[(facing|pointing)]) = - {Damage:6}
 		up[( |-)]side down (north[ward[s]]( |-)[(facing|pointing)]) = - {Damage:7}
 
-	# For blocks that can be attached to sides of another block, such as torches or buttons.
+	# For blocks that can be attached to sides of another block, such as torches.
 	{attached}:
 		{default} = - {Damage:5}
-		[(unpressed|inactive)] (down[ward[s]]( |-)[(facing|pointing)]) = - {Damage:0}
-		[(unpressed|inactive)] (east[ward[s]]( |-)[(facing|pointing)]) = - {Damage:1}
-		[(unpressed|inactive)] (west[ward[s]]( |-)[(facing|pointing)]) = - {Damage:2}
-		[(unpressed|inactive)] (south[ward[s]]( |-)[(facing|pointing)]) = - {Damage:3}
-		[(unpressed|inactive)] (north[ward[s]]( |-)[(facing|pointing)]) = - {Damage:4}
-		[(unpressed|inactive)] (up[ward[s]]( |-)[(facing|pointing)]) = - {Damage:5}
+		(down[ward[s]]( |-)[(facing|pointing)]) = - {Damage:0}
+		(east[ward[s]]( |-)[(facing|pointing)]) wall = - {Damage:1}
+		(west[ward[s]]( |-)[(facing|pointing)]) wall = - {Damage:2}
+		(south[ward[s]]( |-)[(facing|pointing)]) wall = - {Damage:3}
+		(north[ward[s]]( |-)[(facing|pointing)]) wall = - {Damage:4}
+		(up[ward[s]]( |-)[(facing|pointing)]|floor) = - {Damage:5}
 
 	# For blocks that can be attached to sides of another block and toggled, namely buttons.
 	{attached toggleable}:
@@ -71,6 +91,17 @@ data values:
 		(pressed|active) (south[ward[s]]( |-)[(facing|pointing)]) = - {Damage:11}
 		(pressed|active) (north[ward[s]]( |-)[(facing|pointing)]) = - {Damage:12}
 		(pressed|active) (up[ward[s]]( |-)[(facing|pointing)]) = - {Damage:13}
+
+	# For wood types defined by data values in older versions. Not all wooden blocks can use this,
+	# just ones that were all stored in one ID using DVs 0-5 to represent them.
+	{old wood type}:
+		oak [wood[en]] = - {Damage:0}
+		spruce [wood[en]] = - {Damage:1}
+		birch [wood[en]] = - {Damage:2}
+		jungle [wood[en]] = - {Damage:3}
+		acacia [wood[en]] = - {Damage:4}
+		dark oak [wood[en]] = - {Damage:5}
+
 
 
 # Variations using block states as of 1.13.
@@ -113,7 +144,8 @@ block states:
 		(west[ward[s]]( |-)[(facing|pointing)]) = -[facing=west]
 		(east[ward[s]]( |-)[(facing|pointing)]) = -[facing=east]
 
-	# For anything that can exist in either the top or bottom half of a block
+	# For anything that can exist in either the top or bottom half of a block (slabs), can be flipped
+	# (stairs), or that has top and bottom halves (double plants, doors, etc.)
 	{block half}:
 		{default} = -[half=bottom]
 		(right[( |-)]side up|bottom) = -[half=bottom]
@@ -136,7 +168,7 @@ block states:
 	# For anything that can be waterlogged.
 	{waterloggable}:
 		{default} = -[waterlogged=false]
-		non-waterlogged = -[waterlogged=false]
+		(dry|non-waterlogged) = -[waterlogged=false]
 		waterlogged = [waterlogged=true]
 
 	# For anything that can be opened (doors, trapdoors, fence gates).
@@ -156,3 +188,14 @@ block states:
 	{lightable}:
 		lit = -[lit=true]
 		unlit = -[lit=false]
+
+# Aliases that can be used in at least one place both pre and post-flattening.
+global:
+	# For wood-based blocks that are defined with the wood type at the start of the alias.
+	{wood type}:
+		oak [wood[en]] = minecraft:oak_-
+		spruce [wood[en]] = minecraft:spruce_-
+		birch [wood[en]] = minecraft:birch_-
+		jungle [wood[en]] = minecraft:jungle_-
+		acacia [wood[en]] = minecraft:acacia_-
+		dark oak [wood[en]] = minecraft:dark_oak_-
