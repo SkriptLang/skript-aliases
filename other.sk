@@ -4,14 +4,11 @@
 unlisted blocks:
 	end[er] portal [block¦s] = minecraft:end_portal
 	fire = minecraft:fire
-<<<<<<< HEAD
 	pumpkin stem = minecraft:pumpkin_stem
 	melon stem = minecraft:melon_stem
 	tripwire [(string|line)] = minecraft:tripwire
-=======
 	air = minecraft:air
 	barrier [block]¦s = minecraft:barrier
->>>>>>> 7ff2a77811d6ee82a8e01316c70eeed071d246f8
 
 # Unlisted blocks that had a different ID before the flattening.
 unlisted before flattening:
@@ -20,18 +17,18 @@ unlisted before flattening:
 
 	{command block direction}:
 		{default} = - {Damage:1}
-		(down[ward[s]]( |-)[(facing|pointing)]) = - {Damage:0}
-		(up[ward[s]]( |-)[(facing|pointing)]) = - {Damage:1}
-		(north[ward[s]]( |-)[(facing|pointing)]) = - {Damage:2}
-		(south[ward[s]]( |-)[(facing|pointing)]) = - {Damage:3}
-		(west[ward[s]]( |-)[(facing|pointing)]) = - {Damage:4}
-		(east[ward[s]]( |-)[(facing|pointing)]) = - {Damage:5}
-		(down[ward[s]]( |-)[(facing|pointing)]) conditional = - {Damage:8}
-		(up[ward[s]]( |-)[(facing|pointing)]) conditional = - {Damage:9}
-		(north[ward[s]]( |-)[(facing|pointing)]) conditional = - {Damage:10}
-		(south[ward[s]]( |-)[(facing|pointing)]) conditional = - {Damage:11}
-		(west[ward[s]]( |-)[(facing|pointing)]) conditional = - {Damage:12}
-		(east[ward[s]]( |-)[(facing|pointing)]) conditional = - {Damage:13}
+		down[ward[s]][( |-)(facing|pointing)] = - {Damage:0}
+		up[ward[s]][( |-)(facing|pointing)] = - {Damage:1}
+		north[ward[s]][( |-)(facing|pointing)] = - {Damage:2}
+		south[ward[s]][( |-)(facing|pointing)] = - {Damage:3}
+		west[ward[s]][( |-)(facing|pointing)] = - {Damage:4}
+		east[ward[s]][( |-)(facing|pointing)] = - {Damage:5}
+		down[ward[s]][( |-)(facing|pointing)] conditional = - {Damage:8}
+		up[ward[s]][( |-)(facing|pointing)] conditional = - {Damage:9}
+		north[ward[s]][( |-)(facing|pointing)] conditional = - {Damage:10}
+		south[ward[s]][( |-)(facing|pointing)] conditional = - {Damage:11}
+		west[ward[s]][( |-)(facing|pointing)] conditional = - {Damage:12}
+		east[ward[s]][( |-)(facing|pointing)] conditional = - {Damage:13}
 	{command block direction} [impulse] command block¦s = minecraft:command_block
 
 # Unlisted blocks added in 1.9

@@ -227,6 +227,8 @@ old blocks before flattening:
 	[unlit] pumpkin¦s = minecraft:pumpkin
 	(lit pumpkin|jack-o[']-lantern)¦s = minecraft:lit_pumpkin
 	melon [block]¦s = minecraft:melon_block
+	
+	any ice = ice, packed ice
 
 # 1.13 removed data values and separated tons of blocks into their own IDs.
 # This section contains building blocks whose IDs were changed by 1.13.
@@ -475,4 +477,5 @@ update aquatic:
 
 	# Miscellaneous
 	blue ice [block¦s] = minecraft:blue_ice
+	any ice = ice, packed ice, blue ice
 	dried kelp block¦s = minecraft:dried_kelp_block

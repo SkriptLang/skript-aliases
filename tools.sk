@@ -23,6 +23,11 @@ tools:
   diamond axe¦s = minecraft:diamond_axe
   diamond shovel¦s = minecraft:diamond_shovel
   diamond hoe¦s = minecraft:diamond_hoe
+  
+  [any] pickaxe¦s = wooden pickaxe, stone pickaxe, golden pickaxe, iron pickaxe, diamond pickaxe
+  [any] axe¦s = wooden axe, stone axe, golden axe, iron axe, diamond axe
+  [any] shovel¦s = wooden shovel, stone shovel, golden shovel, iron shovel, diamond axe
+  [any] hoe¦s = wooden hoe, stone hoe, golden hoe, iron hoe, diamond hoe
 
   compass¦es = minecraft:compass
   [golde[en]] clock¦s = minecraft:clock
