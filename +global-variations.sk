@@ -23,6 +23,23 @@ data values:
 		[dark] green = - {Damage:13}
 		red = - {Damage:14}
 		black = - {Damage:15}
+	{opposite colored}:
+		white = - {Damage:15}
+		orange = - {Damage:14}
+		magenta = - {Damage:13}
+		light blue = - {Damage:12}
+		yellow = - {Damage:11}
+		(lime [green]|light green) = - {Damage:10}
+		pink = - {Damage:9}
+		[dark] gr(a|e)y = - {Damage:8}
+		light gr(a|e)y = - {Damage:7}
+		cyan = - {Damage:6}
+		purple = - {Damage:5}
+		blue = - {Damage:4}
+		brown = - {Damage:3}
+		[dark] green = - {Damage:2}
+		red = - {Damage:1}
+		black = - {Damage:0}
 	# For blocks that were colored via ID even in 1.12. Rarely used, but it needs to be a different
 	# variation than the 1.13 ID-based one because 'light_gray' used to be 'silver' in IDs.
 	{old colored IDs}:
@@ -47,50 +64,50 @@ data values:
 	# Dispenser, dropper, pistons, end rods.
 	{orientable}:
 		{default} = - {Damage:1}
-		(down[ward[s]]( |-)[(facing|pointing)]) = - {Damage:0}
-		(up[ward[s]]( |-)[(facing|pointing)]) = - {Damage:1}
-		(north[ward[s]]( |-)[(facing|pointing)]) = - {Damage:2}
-		(south[ward[s]]( |-)[(facing|pointing)]) = - {Damage:3}
-		(west[ward[s]]( |-)[(facing|pointing)]) = - {Damage:4}
-		(east[ward[s]]( |-)[(facing|pointing)]) = - {Damage:5}
+		down[ward[s]][( |-)(facing|pointing)] = - {Damage:0}
+		up[ward[s]][( |-)(facing|pointing)] = - {Damage:1}
+		north[ward[s]][( |-)(facing|pointing)] = - {Damage:2}
+		south[ward[s]][( |-)(facing|pointing)] = - {Damage:3}
+		west[ward[s]][( |-)(facing|pointing)] = - {Damage:4}
+		east[ward[s]][( |-)(facing|pointing)] = - {Damage:5}
 
 	# For all stairs
 	{stair direction}:
 		{default} = - {Damage:0}
-		[right[( |-)]side up] (east[ward[s]]( |-)[(facing|pointing)]) = - {Damage:0}
-		[right[( |-)]side up] (west[ward[s]]( |-)[(facing|pointing)]) = - {Damage:1}
-		[right[( |-)]side up] (south[ward[s]]( |-)[(facing|pointing)]) = - {Damage:2}
-		[right[( |-)]side up] (north[ward[s]]( |-)[(facing|pointing)]) = - {Damage:3}
-		up[( |-)]side down (east[ward[s]]( |-)[(facing|pointing)]) = - {Damage:4}
-		up[( |-)]side down (west[ward[s]]( |-)[(facing|pointing)]) = - {Damage:5}
-		up[( |-)]side down (south[ward[s]]( |-)[(facing|pointing)]) = - {Damage:6}
-		up[( |-)]side down (north[ward[s]]( |-)[(facing|pointing)]) = - {Damage:7}
+		[right[( |-)]side up] east[ward[s]][( |-)(facing|pointing)] = - {Damage:0}
+		[right[( |-)]side up] west[ward[s]][( |-)(facing|pointing)] = - {Damage:1}
+		[right[( |-)]side up] south[ward[s]][( |-)(facing|pointing)] = - {Damage:2}
+		[right[( |-)]side up] north[ward[s]][( |-)(facing|pointing)] = - {Damage:3}
+		up[( |-)]side down east[ward[s]][( |-)(facing|pointing)] = - {Damage:4}
+		up[( |-)]side down west[ward[s]][( |-)(facing|pointing)] = - {Damage:5}
+		up[( |-)]side down south[ward[s]][( |-)(facing|pointing)] = - {Damage:6}
+		up[( |-)]side down north[ward[s]][( |-)(facing|pointing)] = - {Damage:7}
 
 	# For blocks that can be attached to sides of another block, such as torches.
 	{attached}:
 		{default} = - {Damage:5}
-		(down[ward[s]]( |-)[(facing|pointing)]) = - {Damage:0}
-		(east[ward[s]]( |-)[(facing|pointing)]) wall = - {Damage:1}
-		(west[ward[s]]( |-)[(facing|pointing)]) wall = - {Damage:2}
-		(south[ward[s]]( |-)[(facing|pointing)]) wall = - {Damage:3}
-		(north[ward[s]]( |-)[(facing|pointing)]) wall = - {Damage:4}
-		(up[ward[s]]( |-)[(facing|pointing)]|floor) = - {Damage:5}
+		down[ward[s]][( |-)(facing|pointing)] = - {Damage:0}
+		east[ward[s]][( |-)(facing|pointing)] wall = - {Damage:1}
+		west[ward[s]][( |-)(facing|pointing)] wall = - {Damage:2}
+		south[ward[s]][( |-)(facing|pointing)] wall = - {Damage:3}
+		north[ward[s]][( |-)(facing|pointing)] wall = - {Damage:4}
+		up[ward[s]][( |-)(facing|pointing)]|floor = - {Damage:5}
 
 	# For blocks that can be attached to sides of another block and toggled, namely buttons.
 	{attached toggleable}:
 		{default} = - {Damage:5}
-		[(unpressed|inactive)] (down[ward[s]]( |-)[(facing|pointing)]) = - {Damage:0}
-		[(unpressed|inactive)] (east[ward[s]]( |-)[(facing|pointing)]) = - {Damage:1}
-		[(unpressed|inactive)] (west[ward[s]]( |-)[(facing|pointing)]) = - {Damage:2}
-		[(unpressed|inactive)] (south[ward[s]]( |-)[(facing|pointing)]) = - {Damage:3}
-		[(unpressed|inactive)] (north[ward[s]]( |-)[(facing|pointing)]) = - {Damage:4}
-		[(unpressed|inactive)] (up[ward[s]]( |-)[(facing|pointing)]) = - {Damage:5}
-		(pressed|active) (down[ward[s]]( |-)[(facing|pointing)]) = - {Damage:8}
-		(pressed|active) (east[ward[s]]( |-)[(facing|pointing)]) = - {Damage:9}
-		(pressed|active) (west[ward[s]]( |-)[(facing|pointing)]) = - {Damage:10}
-		(pressed|active) (south[ward[s]]( |-)[(facing|pointing)]) = - {Damage:11}
-		(pressed|active) (north[ward[s]]( |-)[(facing|pointing)]) = - {Damage:12}
-		(pressed|active) (up[ward[s]]( |-)[(facing|pointing)]) = - {Damage:13}
+		[(unpressed|inactive)] down[ward[s]][( |-)(facing|pointing)] = - {Damage:0}
+		[(unpressed|inactive)] east[ward[s]][( |-)(facing|pointing)] = - {Damage:1}
+		[(unpressed|inactive)] west[ward[s]][( |-)(facing|pointing)] = - {Damage:2}
+		[(unpressed|inactive)] south[ward[s]][( |-)(facing|pointing)] = - {Damage:3}
+		[(unpressed|inactive)] north[ward[s]][( |-)(facing|pointing)] = - {Damage:4}
+		[(unpressed|inactive)] up[ward[s]][( |-)(facing|pointing)] = - {Damage:5}
+		(pressed|active) down[ward[s]][( |-)(facing|pointing)] = - {Damage:8}
+		(pressed|active) east[ward[s]][( |-)(facing|pointing)] = - {Damage:9}
+		(pressed|active) west[ward[s]][( |-)(facing|pointing)] = - {Damage:10}
+		(pressed|active) south[ward[s]][( |-)(facing|pointing)] = - {Damage:11}
+		(pressed|active) north[ward[s]][( |-)(facing|pointing)] = - {Damage:12}
+		(pressed|active) up[ward[s]][( |-)(facing|pointing)] = - {Damage:13}
 
 	# For wood types defined by data values in older versions. Not all wooden blocks can use this,
 	# just ones that were all stored in one ID using DVs 0-5 to represent them.
@@ -129,20 +146,20 @@ block states:
 	# Dispenser, dropper, pistons, end rods.
 	{orientable}:
 		{default} = -[facing=up]
-		(down[ward[s]]( |-)[(facing|pointing)]) = -[facing=down]
-		(up[ward[s]]( |-)[(facing|pointing)]) = -[facing=up]
-		(north[ward[s]]( |-)[(facing|pointing)]) = -[facing=north]
-		(south[ward[s]]( |-)[(facing|pointing)]) = -[facing=south]
-		(west[ward[s]]( |-)[(facing|pointing)]) = -[facing=west]
-		(east[ward[s]]( |-)[(facing|pointing)]) = -[facing=east]
+		down[ward[s]][( |-)(facing|pointing)] = -[facing=down]
+		up[ward[s]][( |-)(facing|pointing)] = -[facing=up]
+		north[ward[s]][( |-)(facing|pointing)] = -[facing=north]
+		south[ward[s]][( |-)(facing|pointing)] = -[facing=south]
+		west[ward[s]][( |-)(facing|pointing)] = -[facing=west]
+		east[ward[s]][( |-)(facing|pointing)] = -[facing=east]
 
 	# For blocks that can only point in four directions.
 	{directional}:
 		{default} = -[facing=east]
-		(north[ward[s]]( |-)[(facing|pointing)]) = -[facing=north]
-		(south[ward[s]]( |-)[(facing|pointing)]) = -[facing=south]
-		(west[ward[s]]( |-)[(facing|pointing)]) = -[facing=west]
-		(east[ward[s]]( |-)[(facing|pointing)]) = -[facing=east]
+		north[ward[s]][( |-)(facing|pointing)] = -[facing=north]
+		south[ward[s]][( |-)(facing|pointing)] = -[facing=south]
+		west[ward[s]][( |-)(facing|pointing)] = -[facing=west]
+		east[ward[s]][( |-)(facing|pointing)] = -[facing=east]
 
 	# For anything that can exist in either the top or bottom half of a block (slabs), can be flipped
 	# (stairs), or that has top and bottom halves (double plants, doors, etc.)

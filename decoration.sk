@@ -115,10 +115,6 @@ decoratives before flattening:
 	[floor] sign¦s = minecraft:standing_sign
 	any sign¦s = wall sign, floor sign
 
-	# Banners
-	wall banner = minecraft:wall_banner
-	[standing] banner¦s = minecraft:standing_banner, minecraft:banner
-
 	# Miscellaneous
 	{attached} torch¦es = minecraft:torch
 	chest¦s = minecraft:chest
@@ -212,10 +208,6 @@ decoratives after flattening:
 
 		# Glazed terracotta was slightly changed in 1.13 because silver became light_gray in IDs.
 	{colored} glazed terracotta [block¦s] = -glazed_terracotta
-
-	# Banners
-	{directional} {colored} wall banner = -wall_banner
-	{colored} [standing] banner¦s = -banner
 
 	# Signs
 	{waterloggable} {directional} wall sign¦s = minecraft:wall_sign
@@ -332,7 +324,7 @@ update aquatic:
 		[bundle of] four = -[pickles=4]
 	({waterlogged} {pickle count}|{pickle count} {waterlogged}) sea pickle¦s = minecraft:sea_pickle
 	
-skulls:
+unchanged orientations:
 	{skull floor orientations}:
 		north[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:0}
 		north-northeast[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:1}
@@ -350,7 +342,25 @@ skulls:
 		west-northwest[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:13}
 		northwest[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:14}
 		north-northwest[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:15}
-old skulls:
+	{banner standing orientations}:
+		south[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:0}
+		south-southwest[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:1}
+		southwest[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:2}
+		west-southwest[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:3}
+		west[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:4}
+		west-northwest[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:5}
+		northwest[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:6}
+		north-northwest[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:7}
+		north[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:8}
+		north-northeast[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:9}
+		northeast[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:10}
+		east-northeast[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:11}
+		east[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:12}
+		east-southeast[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:13}
+		southeast[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:14}
+		south-southeast[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:15}
+		
+old orientations:
 	minecraft version = 1.12.2 or older
 	{skull types}:
 		skelet(on|al) (skull|head) = - {SkullType:0} 
@@ -358,25 +368,29 @@ old skulls:
 		zombi(e|fied) = - {SkullType:2}
 		player (head|skull) = - {SkullType:3}
 		creeper (head|skull) = - {SkullType:4}
-	{skull wall orientations}:
-		north[ward[s]][( |-)(facing|pointing)] = - {Damage:2}
-		south[ward[s]][( |-)(facing|pointing)] = - {Damage:3}
+	{wall orientations}:
+		north[ward[s]][( |-)(facing|pointing)] = - {Damage:3}
+		south[ward[s]][( |-)(facing|pointing)] = - {Damage:2}
 		east[ward[s]][( |-)(facing|pointing)] = - {Damage:4}
-		west[ward[s]][( |-)(facing|pointing)] = - {Damage:5
+		west[ward[s]][( |-)(facing|pointing)] = - {Damage:5}
 	
 combat update skulls:
 	minecraft version = 1.9 or newer
 	[ender[ ]]dragon (head|skull) item¦s = minecraft:skull {SkullType:5}
 	#skulls on walls and floors
-	({skull wall orientations}|{skull floor orientations}) [ender[ ]]dragon (head|skull) item¦s = minecraft:skull {SkullType:5}
+	({wall orientations}|{skull floor orientations}) [ender[ ]]dragon (head|skull) item¦s = minecraft:skull {SkullType:5}
 	
-skulls before flattening:
+directionals before flattening:
 	minecraft version = 1.12.2 or older
 	{skull types} item¦s = minecraft:skull
 	#skulls on walls and floors
-	({skull wall orientations}|{skull floor orientations}) {skull types} = minecraft:skull
+	({wall orientations}|{skull floor orientations}) {skull types} = minecraft:skull
+	#BANNERS
+	{wall orientations} {opposite colored} wall banner = minecraft:wall_banner
+	{banner standing orientations} {opposite colored} [standing] banner¦s = minecraft:banner
+	{opposite colored} banner item¦s = -banner
 	
-skulls after flattening:
+directionals after flattening:
 	minecraft version = 1.13 or newer
 	skelet(on|al) (skull|head) item¦s = minecraft:skeleton_skull
 	wither skle(on|al) (skull|head) item¦s = minecraft:wither_skeleton_skull
@@ -391,3 +405,7 @@ skulls after flattening:
 	({directional}|{skulls floor orientations}) player (head|skull) = minecraft:player_wall_head
 	({directional}|{skulls floor orientations}) creeper (head|skull) = minecraft:creeper_wall_head
 	({directional}|{skulls floor orientations})[ender[ ]]dragon (head|skull) = minecraft:dragon_wall_head
+	# BANNERS
+	{directional} {colored} wall banner = -wall_banner
+	{banner standing orientations} {colored} [standing] banner¦s = -banner
+	{colored} banner item¦s = -banner
