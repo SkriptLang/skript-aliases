@@ -375,7 +375,7 @@ old orientations:
 		west[ward[s]][( |-)(facing|pointing)] = - {Damage:5}
 	
 combat update skulls:
-	minecraft version = 1.9 or newer
+	minecraft version = 1.9 to 1.12.2
 	[ender[ ]]dragon (head|skull) item¦s = minecraft:skull {SkullType:5}
 	#skulls on walls and floors
 	({wall orientations}|{skull floor orientations}) [ender[ ]]dragon (head|skull)¦s = minecraft:skull {SkullType:5}
