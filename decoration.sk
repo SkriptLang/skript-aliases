@@ -363,11 +363,11 @@ unchanged orientations:
 old orientations:
 	minecraft version = 1.12.2 or older
 	{skull types}:
-		skelet(on|al) (skull|head) = - {SkullType:0} 
-		wither skle(on|al) (skull|head) = - {SkullType:1}
-		zombi(e|fied) = - {SkullType:2}
-		player (head|skull) = - {SkullType:3}
-		creeper (head|skull) = - {SkullType:4}
+		skelet(on|al) (skull|head)¦s = - {SkullType:0} 
+		wither skle(on|al) (skull|head)¦s = - {SkullType:1}
+		zombi(e|fied) (head|skull)¦s = - {SkullType:2}
+		player (head|skull)¦s = - {SkullType:3}
+		creeper (head|skull)¦s = - {SkullType:4}
 	{wall orientations}:
 		north[ward[s]][( |-)(facing|pointing)] = - {Damage:3}
 		south[ward[s]][( |-)(facing|pointing)] = - {Damage:2}
@@ -378,7 +378,7 @@ combat update skulls:
 	minecraft version = 1.9 or newer
 	[ender[ ]]dragon (head|skull) item¦s = minecraft:skull {SkullType:5}
 	#skulls on walls and floors
-	({wall orientations}|{skull floor orientations}) [ender[ ]]dragon (head|skull) item¦s = minecraft:skull {SkullType:5}
+	({wall orientations}|{skull floor orientations}) [ender[ ]]dragon (head|skull)¦s = minecraft:skull {SkullType:5}
 	
 directionals before flattening:
 	minecraft version = 1.12.2 or older
@@ -386,26 +386,33 @@ directionals before flattening:
 	#skulls on walls and floors
 	({wall orientations}|{skull floor orientations}) {skull types} = minecraft:skull
 	#BANNERS
-	{wall orientations} {opposite colored} wall banner = minecraft:wall_banner
+	{wall orientations} {opposite colored} wall banner¦s = minecraft:wall_banner
 	{banner standing orientations} {opposite colored} [standing] banner¦s = minecraft:banner
 	{opposite colored} banner item¦s = -banner
 	
 directionals after flattening:
 	minecraft version = 1.13 or newer
 	skelet(on|al) (skull|head) item¦s = minecraft:skeleton_skull
-	wither skle(on|al) (skull|head) item¦s = minecraft:wither_skeleton_skull
+	wither skelet(on|al) (skull|head) item¦s = minecraft:wither_skeleton_skull
 	zombi(e|fied) (head|skull) item¦s = minecraft:zombie_head
 	player (head|skull) item¦s = minecraft:player_head
 	creeper (head|skull) item¦s = minecraft:creeper_head
 	[ender[ ]]dragon (head|skull) item¦s = minecraft:dragon_head
-	#skulls on walls and floors
-	({directional}|{skulls floor orientations}) skelet(on|al) (skull|head) = minecraft:skeleton_wall_skull
-	({directional}|{skulls floor orientations}) wither skle(on|al) (skull|head) = minecraft:wither_skeleton_wall_skull
-	({directional}|{skulls floor orientations}) zombi(e|fied) (head|skull) = minecraft:zombie_wall_head
-	({directional}|{skulls floor orientations}) player (head|skull) = minecraft:player_wall_head
-	({directional}|{skulls floor orientations}) creeper (head|skull) = minecraft:creeper_wall_head
-	({directional}|{skulls floor orientations})[ender[ ]]dragon (head|skull) = minecraft:dragon_wall_head
+	#skulls on walls
+	{directional} skelet(on|al) (skull|head)¦s = minecraft:skeleton_wall_skull
+	{directional} wither skle(on|al) (skull|head)¦s = minecraft:wither_skeleton_wall_skull
+	{directional} zombi(e|fied) (head|skull)¦s = minecraft:zombie_wall_head
+	{directional} player (head|skull)¦s = minecraft:player_wall_head
+	{directional} creeper (head|skull)¦s = minecraft:creeper_wall_head
+	{directional} [ender[ ]]dragon (head|skull)¦s = minecraft:dragon_wall_head
+	#skulls on floors
+	{skull floor orientations} skelet(on|al) (skull|head)¦s = minecraft:skeleton_skull
+	{skull floor orientations} wither skelet(on|al) (skull|head)¦s = minecraft:wither_skeleton_skull
+	{skull floor orientations} zombi(e|fied) (head|skull)¦s = minecraft:zombie_head
+	{skull floor orientations} player (head|skull)¦s = minecraft:player_head
+	{skull floor orientations} creeper (head|skull)¦s = minecraft:creeper_head
+	{skull floor orientations} [ender[ ]]dragon (head|skull)¦s = minecraft:dragon_head
 	# BANNERS
-	{directional} {colored} wall banner = -wall_banner
+	{directional} {colored} wall banner¦s = -wall_banner
 	{banner standing orientations} {colored} [standing] banner¦s = -banner
 	{colored} banner item¦s = -banner
