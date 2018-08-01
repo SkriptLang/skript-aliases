@@ -9,7 +9,7 @@ potions:
     awkward = - {"Potion": "minecraft:awkward"}
 
     night vision = - {"Potion": "minecraft:night_vision"}
-    (extended|long) night vision = - {"Potion": "minecraft:night_vision"}
+    (extended|long) night vision = - {"Potion": "minecraft:long_night_vision"}
 
     invisibility = - {"Potion": "minecraft:invisibility"}
     (extended|long) invisibility = - {"Potion": "minecraft:long_invisibility"}
@@ -19,7 +19,7 @@ potions:
     (empowered|strong|tier (2|II)) (leaping|jumping) = - {"Potion": "minecraft:strong_leaping"}
 
     fire resistance = - {"Potion": "minecraft:fire_resistance"}
-    (extended|long) fire resistance = - {"Potion": "minecraft:fire_resistance"}
+    (extended|long) fire resistance = - {"Potion": "minecraft:long_fire_resistance"}
 
     (speed|swiftness) = - {"Potion": "minecraft:swiftness"}
     (extended|long) (speed|swiftness) = - {"Potion": "minecraft:long_swiftness"}
@@ -89,10 +89,10 @@ unchanged ingredients:
 
 ingredients before flattening:
   minecraft version = 1.12.2 or older
-  (glistering|golden) melon[ slice]¦s = minecraft:speckled_melon
+  (glistering|gold[en]) melon[ slice]¦s = minecraft:speckled_melon
 
 ingredients after flattening:
-  (glistering|golden) melon[ slice]¦s = minecraft:glistering_melon_slice
+  (glistering|gold[en]) melon[ slice]¦s = minecraft:glistering_melon_slice
 
 update aquatic ingredients:
   minecraft version = 1.13 or newer

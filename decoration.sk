@@ -7,8 +7,8 @@ unchanged decoratives:
 	(soil|farmland) [block¦s] = minecraft:farmland
 	cactus¦es = minecraft:cactus
 	jukebox¦es = minecraft:jukebox
-	huge brown mushroom block¦s = minecraft:brown_mushroom_block
-	huge red mushroom block¦s = minecraft:red_mushroom_block
+	[huge] brown mushroom block¦s = minecraft:brown_mushroom_block
+	[huge] red mushroom block¦s = minecraft:red_mushroom_block
 	vine¦s = minecraft:vine
 	enchant(ment|ing) table¦s = minecraft:enchanting_table
 	painting item¦s = minecraft:painting
@@ -189,7 +189,7 @@ decoratives after flattening:
 	any (infested|silverfish) block¦s = infested stone, infested cobblestone, infested stone brick, infested mossy stone brick, infested cracked stone brick, infested chiseled stone brick
 
 	# Huge mushroom stems are their own block now
-	huge mushroom stem¦s = minecraft:mushroom_stem
+	[huge] mushroom stem¦s = minecraft:mushroom_stem
 
 	# End Portal Frame
 	{end portal eye state}:

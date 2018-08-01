@@ -50,19 +50,34 @@ random items:
 	sugar = minecraft:sugar
 	ender pearl¦s = minecraft:ender_pearl
 	blaze rod¦s = minecraft:blaze_rod
-	nether wart = minecraft:nether_wart
+	nether wart¦s = minecraft:nether_wart
 	(ender eye¦s|eye¦s of ender) = minecraft:ender_eye
 	(bottle¦s o' enchanting|xp bottle¦s|experience bottle¦s) = minecraft:experience_bottle
 	fire charge¦s = minecraft:fire_charge
 	(book and quill¦s|writable book¦s) = minecraft:writable_book
-	# TODO maps?
+	[empty] map = minecraft:map
+	filled map = minecraft:filled_map
 	nether star¦s = minecraft:nether_star
-	# TODO fireworks
 	nether brick¦s = minecraft:nether_brick
 	nether quartz = minecraft:quartz
 	prismarine shard¦s = minecraft:prismarine_shard
 	prismarine crystal¦s = minecraft:prismarine_crystals
 	rabbit hide¦s = minecraft:rabbit_hide
+	
+fireworks:
+	{firework types}:
+		(0|zero|immediate) = {Fireworks:{Flight:0}}
+		(1|one|short) = {Fireworks:{Flight:1}}
+		(2|two|medium) = - {Fireworks:{Flight:2}}
+		(3|three|long) = - {Fireworks:{Flight:3}}
+	
+before flattening:
+	minecraft version = 1.12.2 or older
+	[(flight|duration|flight duration) {firework types} ] firework [rocket]¦s = fireworks
+	
+after flattening:
+	minecraft version = 1.13 or newer
+	[(flight|duration|flight duration) {firework types} ] firework [rocket]¦s = firework_rocket
 
 plants:
 	pumpkin seeds = minecraft:pumpkin_seeds
