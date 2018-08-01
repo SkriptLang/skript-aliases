@@ -105,6 +105,7 @@ weapons:
 	gold[en] sword¦s = minecraft:golden_sword
 	iron sword¦s = minecraft:iron_sword
 	diamond sword¦s = minecraft:diamond_sword
+	[any] sword¦s = wooden sword, stone sword, golden sword, iron sword, diamond sword
 
 	bow¦s = minecraft:bow
 	arrow¦s = minecraft:arrow

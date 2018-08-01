@@ -12,7 +12,7 @@ unchanged redstone:
 	(iron|heavy weighted) pressure plate¦s = minecraft:heavy_weighted_pressure_plate
 
 	(normal|uninverted) daylight (detector|sensor)¦s = minecraft:daylight_detector
-	[inverted] daylight (detector|sensor)¦s = minecraft:daylight_detector_inverted
+	inverted daylight (detector|sensor)¦s = minecraft:daylight_detector_inverted
 	[any] daylight (detector|sensor)¦s = normal daylight detector, inverted daylight detector
 
 	{orientable} dispenser¦s = minecraft:dispenser
@@ -58,14 +58,14 @@ redstone before flattening:
 	# Fences and doors
 	{gate state}:
 		{default} = - {Damage:0}
-		[closed] (south[ward[s]]( |-)[(facing|pointing)]) = - {Damage:0}
-		[closed] (west[ward[s]]( |-)[(facing|pointing)]) = - {Damage:1}
-		[closed] (north[ward[s]]( |-)[(facing|pointing)]) = - {Damage:2}
-		[closed] (east[ward[s]]( |-)[(facing|pointing)]) = - {Damage:3}
-		open (south[ward[s]]( |-)[(facing|pointing)]) = - {Damage:4}
-		open (west[ward[s]]( |-)[(facing|pointing)]) = - {Damage:5}
-		open (north[ward[s]]( |-)[(facing|pointing)]) = - {Damage:6}
-		open (east[ward[s]]( |-)[(facing|pointing)]) = - {Damage:7}
+		[closed] south[ward[s]][( |-)(facing|pointing)] = - {Damage:0}
+		[closed] west[ward[s]][( |-)(facing|pointing)] = - {Damage:1}
+		[closed] north[ward[s]][( |-)(facing|pointing)] = - {Damage:2}
+		[closed] east[ward[s]][( |-)(facing|pointing)] = - {Damage:3}
+		open south[ward[s]][( |-)(facing|pointing)] = - {Damage:4}
+		open west[ward[s]][( |-)(facing|pointing)] = - {Damage:5}
+		open north[ward[s]][( |-)(facing|pointing)] = - {Damage:6}
+		open east[ward[s]][( |-)(facing|pointing)] = - {Damage:7}
 
 	{gate state} oak [wood[en]] [fence] gate¦s = minecraft:fence_gate
 	{gate state} spruce [wood[en]] [fence] gate¦s = minecraft:spruce_fence_gate
@@ -77,14 +77,14 @@ redstone before flattening:
 
 	{door state}:
 		{default} = - {Damage:0}
-		[closed] (east[ward[s]]( |-)[(facing|pointing)]) [bottom] = - {Damage:0}
-		[closed] (south[ward[s]]( |-)[(facing|pointing)]) [bottom] = - {Damage:1}
-		[closed] (west[ward[s]]( |-)[(facing|pointing)]) [bottom] = - {Damage:2}
-		[closed] (north[ward[s]]( |-)[(facing|pointing)]) [bottom] = - {Damage:3}
-		open (east[ward[s]]( |-)[(facing|pointing)]) [bottom] = - {Damage:4}
-		open (south[ward[s]]( |-)[(facing|pointing)]) [bottom] = - {Damage:5}
-		open (west[ward[s]]( |-)[(facing|pointing)]) [bottom] = - {Damage:6}
-		open (north[ward[s]]( |-)[(facing|pointing)]) [bottom] = - {Damage:7}
+		[closed] east[ward[s]][( |-)(facing|pointing)] [bottom] = - {Damage:0}
+		[closed] south[ward[s]][( |-)(facing|pointing)] [bottom] = - {Damage:1}
+		[closed] west[ward[s]][( |-)(facing|pointing)] [bottom] = - {Damage:2}
+		[closed] north[ward[s]][( |-)(facing|pointing)] [bottom] = - {Damage:3}
+		open east[ward[s]][( |-)(facing|pointing)] [bottom] = - {Damage:4}
+		open south[ward[s]][( |-)(facing|pointing)] [bottom] = - {Damage:5}
+		open west[ward[s]][( |-)(facing|pointing)] [bottom] = - {Damage:6}
+		open north[ward[s]][( |-)(facing|pointing)] [bottom] = - {Damage:7}
 		left( |-)hinged [closed] top = - {Damage:8}
 		right( |-)hinged [closed] top = - {Damage:9}
 		left( |-)hinged powered [closed] top = - {Damage:10}
