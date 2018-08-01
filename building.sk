@@ -228,7 +228,7 @@ old blocks before flattening:
 	(lit pumpkin|jack-o[']-lantern)¦s = minecraft:lit_pumpkin
 	melon [block]¦s = minecraft:melon_block
 	
-	any ice = ice, packed ice
+	any ice [block¦s] = ice, packed ice
 
 # 1.13 removed data values and separated tons of blocks into their own IDs.
 # This section contains building blocks whose IDs were changed by 1.13.
