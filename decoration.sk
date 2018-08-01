@@ -331,3 +331,63 @@ update aquatic:
 		(trio of|[bundle of] three) = -[pickles=3]
 		[bundle of] four = -[pickles=4]
 	({waterlogged} {pickle count}|{pickle count} {waterlogged}) sea pickle¦s = minecraft:sea_pickle
+	
+skulls:
+	{skull floor orientations}:
+		north[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:0}
+		north-northeast[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:1}
+		northeast[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:2}
+		east-northeast[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:3}
+		east[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:4}
+		east-southeast[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:5}
+		southeast[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:6}
+		south-southeast[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:7}
+		south[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:8}
+		south-southwest[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:9}
+		southwest[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:10}
+		west-southwest[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:11}
+		west[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:12}
+		west-northwest[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:13}
+		northwest[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:14}
+		north-northwest[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:15}
+old skulls:
+	minecraft version = 1.12.2 or older
+	{skull types}:
+		skelet(on|al) (skull|head) = - {SkullType:0} 
+		wither skle(on|al) (skull|head) = - {SkullType:1}
+		zombi(e|fied) = - {SkullType:2}
+		player (head|skull) = - {SkullType:3}
+		creeper (head|skull) = - {SkullType:4}
+	{skull wall orientations}:
+		north[ward[s]][( |-)(facing|pointing)] = - {Damage:2}
+		south[ward[s]][( |-)(facing|pointing)] = - {Damage:3}
+		east[ward[s]][( |-)(facing|pointing)] = - {Damage:4}
+		west[ward[s]][( |-)(facing|pointing)] = - {Damage:5
+	
+combat update skulls:
+	minecraft version = 1.9 or newer
+	[ender[ ]]dragon (head|skull) item¦s = minecraft:skull {SkullType:5}
+	#skulls on walls and floors
+	({skull wall orientations}|{skull floor orientations}) [ender[ ]]dragon (head|skull) item¦s = minecraft:skull {SkullType:5}
+	
+skulls before flattening:
+	minecraft version = 1.12.2 or older
+	{skull types} item¦s = minecraft:skull
+	#skulls on walls and floors
+	({skull wall orientations}|{skull floor orientations}) {skull types} = minecraft:skull
+	
+skulls after flattening:
+	minecraft version = 1.13 or newer
+	skelet(on|al) (skull|head) item¦s = minecraft:skeleton_skull
+	wither skle(on|al) (skull|head) item¦s = minecraft:wither_skeleton_skull
+	zombi(e|fied) (head|skull) item¦s = minecraft:zombie_head
+	player (head|skull) item¦s = minecraft:player_head
+	creeper (head|skull) item¦s = minecraft:creeper_head
+	[ender[ ]]dragon (head|skull) item¦s = minecraft:dragon_head
+	#skulls on walls and floors
+	({directional}|{skulls floor orientations}) skelet(on|al) (skull|head) = minecraft:skeleton_wall_skull
+	({directional}|{skulls floor orientations}) wither skle(on|al) (skull|head) = minecraft:wither_skeleton_wall_skull
+	({directional}|{skulls floor orientations}) zombi(e|fied) (head|skull) = minecraft:zombie_wall_head
+	({directional}|{skulls floor orientations}) player (head|skull) = minecraft:player_wall_head
+	({directional}|{skulls floor orientations}) creeper (head|skull) = minecraft:creeper_wall_head
+	({directional}|{skulls floor orientations})[ender[ ]]dragon (head|skull) = minecraft:dragon_wall_head
