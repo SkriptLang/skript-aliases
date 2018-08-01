@@ -477,5 +477,5 @@ update aquatic:
 
 	# Miscellaneous
 	blue ice [block¦s] = minecraft:blue_ice
-	any ice = ice, packed ice, blue ice
+	any ice [block¦s] = ice, packed ice, blue ice
 	dried kelp block¦s = minecraft:dried_kelp_block
