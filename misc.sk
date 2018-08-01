@@ -64,20 +64,20 @@ random items:
 	prismarine crystal¦s = minecraft:prismarine_crystals
 	rabbit hide¦s = minecraft:rabbit_hide
 	
-{firework types}:
-	(0|zero) = {Fireworks:{Flight:0}}
-	(1|one) =  {Fireworks:{Flight:1}}
-	(2|two) = - {Fireworks:{Flight:2}}
-	(3|three) = - {Fireworks:{Flight:3}}
+fireworks:
+	{firework types}:
+		(0|zero|immediate) = {Fireworks:{Flight:0}}
+		(1|one|short) = {Fireworks:{Flight:1}}
+		(2|two|medium) = - {Fireworks:{Flight:2}}
+		(3|three|long) = - {Fireworks:{Flight:3}}
 	
 before flattening:
 	minecraft version = 1.12.2 or older
-	(firework|firework rocket)¦s = fireworks
-	[(flight|duration|flight duration) {firework types} ] (firework|firework rocket)¦s = fireworks
+	[(flight|duration|flight duration) {firework types} ] firework [rocket]¦s = fireworks
 	
 after flattening:
 	minecraft version = 1.13 or newer
-	[(flight|duration|flight duration) {firework types} ] (firework|firework rocket)¦s = firework_rocket
+	[(flight|duration|flight duration) {firework types} ] firework [rocket]¦s = firework_rocket
 
 plants:
 	pumpkin seeds = minecraft:pumpkin_seeds
