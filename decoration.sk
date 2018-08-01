@@ -123,9 +123,9 @@ decoratives before flattening:
 	{attached} torch¦es = minecraft:torch
 	chest¦s = minecraft:chest
 	(wet|moist|hydrated) farmland = minecraft:farmland {Damage:7}
-	[unlit] furnace¦s = minecraft:furnace
+	unlit furnace¦s = minecraft:furnace
 	lit furnace¦s = minecraft:lit_furnace
-	any furnace¦s = unlit furnace, lit furnace
+	[any] furnace¦s = unlit furnace, lit furnace
 	ladder¦s = minecraft:ladder
 	snow layer¦s = minecraft:snow_layer
 	iron bar¦s = minecraft:iron_bars
