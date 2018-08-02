@@ -256,16 +256,16 @@ decoratives after flattening:
 	{directional} {lightable} furnace¦s = minecraft:furnace
 	[any] furnace¦s = lit furnace, unlit furnace
 	snow layer¦s = minecraft:snow
-	{waterlogged} iron bar¦s = minecraft:iron_bars
-	{waterlogged} [plain] glass pane¦s = minecraft:glass_pane
+	{waterloggable} iron bar¦s = minecraft:iron_bars
+	{waterloggable} [plain] glass pane¦s = minecraft:glass_pane
 	(water[ ]lil(y|ies)|lily pad¦s) = minecraft:lily_pad
 	slime block¦s = minecraft:slime_block
 
 	# State dependent - aliases we can easily make more detailed than the old aliases thanks to states
 	dead chorus flower¦s = minecraft:chorus_flower[age=5]
-	{waterlogged} {directional} chest¦s = minecraft:chest
-	{waterlogged} {directional} ladder¦s = minecraft:ladder
-	{waterlogged} {directional} ender chest¦s = minecraft:ender_chest
+	{waterloggable} {directional} chest¦s = minecraft:chest
+	{waterloggable} {directional} ladder¦s = minecraft:ladder
+	{waterloggable} {directional} ender chest¦s = minecraft:ender_chest
 	{directional} (regular|complete) anvil¦s = minecraft:anvil
 	{directional} chipped anvil¦s = minecraft:chipped_anvil
 	{directional} damaged anvil¦s = minecraft:damaged_anvil
@@ -322,7 +322,7 @@ update aquatic:
 		(pair of|[bundle of] two) = -[pickles=2]
 		(trio of|[bundle of] three) = -[pickles=3]
 		[bundle of] four = -[pickles=4]
-	({waterlogged} {pickle count}|{pickle count} {waterlogged}) sea pickle¦s = minecraft:sea_pickle
+	({waterloggable} {pickle count}|{pickle count} {waterloggable}) sea pickle¦s = minecraft:sea_pickle
 	
 unchanged orientations:
 	{skull floor orientations}:
