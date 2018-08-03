@@ -66,8 +66,8 @@ random items:
 	
 fireworks:
 	{firework types}:
-		(0|zero|immediate) = {Fireworks:{Flight:0}}
-		(1|one|short) = {Fireworks:{Flight:1}}
+		(0|zero|immediate) = - {Fireworks:{Flight:0}}
+		(1|one|short) = - {Fireworks:{Flight:1}}
 		(2|two|medium) = - {Fireworks:{Flight:2}}
 		(3|three|long) = - {Fireworks:{Flight:3}}
 	

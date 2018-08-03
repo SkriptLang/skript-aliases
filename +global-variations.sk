@@ -186,7 +186,7 @@ block states:
 	{waterloggable}:
 		{default} = -[waterlogged=false]
 		(dry|non-waterlogged) = -[waterlogged=false]
-		waterlogged = [waterlogged=true]
+		waterlogged = -[waterlogged=true]
 
 	# For anything that can be opened (doors, trapdoors, fence gates).
 	{openable}:
