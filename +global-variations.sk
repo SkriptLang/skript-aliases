@@ -172,7 +172,7 @@ block states:
 	# things where "pointing east" and "pointing west" would look the same.
 	{axis-aligned}:
 		{default} = -[axis=y]
-		vertical = -[axis=y]
+		(vertical|z-aligned) = -[axis=y]
 		(east-west|west-east|x-aligned) = -[axis=x]
 		(north-south|south-north|z-aligned) = -[axis=z]
 
