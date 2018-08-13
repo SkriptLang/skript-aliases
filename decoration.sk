@@ -106,8 +106,8 @@ decoratives before flattening:
 	{colored} stained glass pane¦s = minecraft:stained_glass_pane
 	any stained glass pane¦s = white stained glass pane, orange stained glass pane, magenta stained glass pane, light blue stained glass pane, yellow stained glass pane, lime stained glass pane, pink stained glass pane, dark gray stained glass pane, light gray stained glass pane, cyan stained glass pane, purple stained glass pane, blue stained glass pane, brown stained glass pane, dark green stained glass pane, red stained glass pane, black stained glass pane
 
-		# Glazed terracotta colors actually are separated by IDs even here in 1.12. It uses a separate
-		# "old" variation because light_gray blocks used to be called silver in their IDs.
+	# Glazed terracotta colors actually are separated by IDs even here in 1.12. It uses a separate
+	# "old" variation because light_gray blocks used to be called silver in their IDs.
 	{old colored IDs} glazed terracotta [block¦s] = -glazed_terracotta
 
 	# Signs
@@ -217,11 +217,11 @@ decoratives after flattening:
 	# Beds
 	{bed part}:
 		{default} = -[part=foot]
-		(foot|end) = -[part=foot]
+		foot = -[part=foot]
 		head = -[part=head]
 	{bed occupied}:
 		{default} = -[occupied=false]
-		(vacant|empty|unoccupied) = -[occupied=false]
+		unoccupied = -[occupied=false]
 		occupied = -[occupied=true]
 	{directional} {bed occupied} {colored} bed {bed part} = -bed
 
@@ -326,53 +326,53 @@ update aquatic:
 	
 unchanged orientations:
 	{skull floor orientations}:
-		north[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:0}
-		north-northeast[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:1}
-		northeast[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:2}
-		east-northeast[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:3}
-		east[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:4}
-		east-southeast[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:5}
-		southeast[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:6}
-		south-southeast[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:7}
-		south[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:8}
-		south-southwest[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:9}
-		southwest[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:10}
-		west-southwest[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:11}
-		west[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:12}
-		west-northwest[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:13}
-		northwest[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:14}
-		north-northwest[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:15}
+		north[ward] [rotated] = - {Damage:1,Rot:0}
+		north-northeast[ward] [rotated] = - {Damage:1,Rot:1}
+		northeast[ward] [rotated] = - {Damage:1,Rot:2}
+		east-northeast[ward] [rotated] = - {Damage:1,Rot:3}
+		east[ward] [rotated] = - {Damage:1,Rot:4}
+		east-southeast[ward] [rotated] = - {Damage:1,Rot:5}
+		southeast[ward] [rotated] = - {Damage:1,Rot:6}
+		south-southeast[ward] [rotated] = - {Damage:1,Rot:7}
+		south[ward] [rotated] = - {Damage:1,Rot:8}
+		south-southwest[ward] [rotated] = - {Damage:1,Rot:9}
+		southwest[ward] [rotated] = - {Damage:1,Rot:10}
+		west-southwest[ward] [rotated] = - {Damage:1,Rot:11}
+		west[ward] [rotated] = - {Damage:1,Rot:12}
+		west-northwest[ward] [rotated] = - {Damage:1,Rot:13}
+		northwest[ward] [rotated] = - {Damage:1,Rot:14}
+		north-northwest[ward] [rotated] = - {Damage:1,Rot:15}
 	{banner standing orientations}:
-		south[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:0}
-		south-southwest[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:1}
-		southwest[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:2}
-		west-southwest[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:3}
-		west[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:4}
-		west-northwest[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:5}
-		northwest[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:6}
-		north-northwest[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:7}
-		north[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:8}
-		north-northeast[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:9}
-		northeast[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:10}
-		east-northeast[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:11}
-		east[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:12}
-		east-southeast[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:13}
-		southeast[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:14}
-		south-southeast[ward[s]][( |-)rotat(ion|ed)] = - {Damage:1,Rot:15}
+		south[ward] [rotated] = - {Damage:1,Rot:0}
+		south-southwest[ward] [rotated] = - {Damage:1,Rot:1}
+		southwest[ward] [rotated] = - {Damage:1,Rot:2}
+		west-southwest[ward] [rotated] = - {Damage:1,Rot:3}
+		west[ward] [rotated] = - {Damage:1,Rot:4}
+		west-northwest[ward] [rotated] = - {Damage:1,Rot:5}
+		northwest[ward] [rotated] = - {Damage:1,Rot:6}
+		north-northwest[ward] [rotated] = - {Damage:1,Rot:7}
+		north[ward] [rotated] = - {Damage:1,Rot:8}
+		north-northeast[ward] [rotated] = - {Damage:1,Rot:9}
+		northeast[ward] [rotated] = - {Damage:1,Rot:10}
+		east-northeast[ward] [rotated] = - {Damage:1,Rot:11}
+		east[ward] [rotated] = - {Damage:1,Rot:12}
+		east-southeast[ward] [rotated] = - {Damage:1,Rot:13}
+		southeast[ward] [rotated] = - {Damage:1,Rot:14}
+		south-southeast[ward] [rotated] = - {Damage:1,Rot:15}
 		
 old orientations:
 	minecraft version = 1.12.2 or older
 	{skull types}:
-		skelet(on|al) (skull|head)¦s = - {SkullType:0} 
-		wither skle(on|al) (skull|head)¦s = - {SkullType:1}
-		zombi(e|fied) (head|skull)¦s = - {SkullType:2}
+		skeleton (skull|head)¦s = - {SkullType:0} 
+		wither skeleton (skull|head)¦s = - {SkullType:1}
+		zombie (head|skull)¦s = - {SkullType:2}
 		player (head|skull)¦s = - {SkullType:3}
 		creeper (head|skull)¦s = - {SkullType:4}
 	{wall orientations}:
-		north[ward[s]][( |-)(facing|pointing)] = - {Damage:3}
-		south[ward[s]][( |-)(facing|pointing)] = - {Damage:2}
-		east[ward[s]][( |-)(facing|pointing)] = - {Damage:4}
-		west[ward[s]][( |-)(facing|pointing)] = - {Damage:5}
+		north[ward] [facing] = - {Damage:3}
+		south[ward] [facing] = - {Damage:2}
+		east[ward] [facing] = - {Damage:4}
+		west[ward] [facing] = - {Damage:5}
 	
 combat update skulls:
 	minecraft version = 1.9 to 1.12.2

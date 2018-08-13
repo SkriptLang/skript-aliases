@@ -56,37 +56,37 @@ redstone before flattening:
 	# Fences and doors
 	{gate state}:
 		{default} = - {Damage:0}
-		[closed] south[ward[s]][( |-)(facing|pointing)] = - {Damage:0}
-		[closed] west[ward[s]][( |-)(facing|pointing)] = - {Damage:1}
-		[closed] north[ward[s]][( |-)(facing|pointing)] = - {Damage:2}
-		[closed] east[ward[s]][( |-)(facing|pointing)] = - {Damage:3}
-		open south[ward[s]][( |-)(facing|pointing)] = - {Damage:4}
-		open west[ward[s]][( |-)(facing|pointing)] = - {Damage:5}
-		open north[ward[s]][( |-)(facing|pointing)] = - {Damage:6}
-		open east[ward[s]][( |-)(facing|pointing)] = - {Damage:7}
+		[closed] south[ward] [facing] = - {Damage:0}
+		[closed] west[ward] [facing] = - {Damage:1}
+		[closed] north[ward] [facing] = - {Damage:2}
+		[closed] east[ward] [facing] = - {Damage:3}
+		open south[ward] [facing] = - {Damage:4}
+		open west[ward] [facing] = - {Damage:5}
+		open north[ward] [facing] = - {Damage:6}
+		open east[ward] [facing] = - {Damage:7}
 
-	{gate state} oak [wood[en]] [fence] gate¦s = minecraft:fence_gate
-	{gate state} spruce [wood[en]] [fence] gate¦s = minecraft:spruce_fence_gate
-	{gate state} birch [wood[en]] [fence] gate¦s = minecraft:birch_fence_gate
-	{gate state} jungle [wood[en]] [fence] gate¦s = minecraft:jungle_fence_gate
-	{gate state} acacia [wood[en]] [fence] gate¦s = minecraft:acacia_fence_gate
-	{gate state} dark oak [wood[en]] [fence] gate¦s = minecraft:dark_oak_fence_gate
+	{gate state} oak [wood[en]] fence gate¦s = minecraft:fence_gate
+	{gate state} spruce [wood[en]] fence gate¦s = minecraft:spruce_fence_gate
+	{gate state} birch [wood[en]] fence gate¦s = minecraft:birch_fence_gate
+	{gate state} jungle [wood[en]] fence gate¦s = minecraft:jungle_fence_gate
+	{gate state} acacia [wood[en]] fence gate¦s = minecraft:acacia_fence_gate
+	{gate state} dark oak [wood[en]] fence gate¦s = minecraft:dark_oak_fence_gate
 	[any] [wood[en]] gate¦s = oak gate, spruce gate, birch gate, jungle gate, acacia gate, dark oak gate
 
 	{door state}:
 		{default} = - {Damage:0}
-		[closed] east[ward[s]][( |-)(facing|pointing)] [bottom] = - {Damage:0}
-		[closed] south[ward[s]][( |-)(facing|pointing)] [bottom] = - {Damage:1}
-		[closed] west[ward[s]][( |-)(facing|pointing)] [bottom] = - {Damage:2}
-		[closed] north[ward[s]][( |-)(facing|pointing)] [bottom] = - {Damage:3}
-		open east[ward[s]][( |-)(facing|pointing)] [bottom] = - {Damage:4}
-		open south[ward[s]][( |-)(facing|pointing)] [bottom] = - {Damage:5}
-		open west[ward[s]][( |-)(facing|pointing)] [bottom] = - {Damage:6}
-		open north[ward[s]][( |-)(facing|pointing)] [bottom] = - {Damage:7}
-		left( |-)hinged [closed] top = - {Damage:8}
-		right( |-)hinged [closed] top = - {Damage:9}
-		left( |-)hinged powered [closed] top = - {Damage:10}
-		right( |-)hinged powered [closed] top = - {Damage:11}
+		[closed] east[ward] [facing] [bottom] = - {Damage:0}
+		[closed] south[ward] [facing] [bottom] = - {Damage:1}
+		[closed] west[ward] [facing] [bottom] = - {Damage:2}
+		[closed] north[ward] [facing] [bottom] = - {Damage:3}
+		open east[ward] [facing] [bottom] = - {Damage:4}
+		open south[ward] [facing] [bottom] = - {Damage:5}
+		open west[ward] [facing] [bottom] = - {Damage:6}
+		open north[ward] [facing] [bottom] = - {Damage:7}
+		left-hinged [closed] top = - {Damage:8}
+		right-hinged [closed] top = - {Damage:9}
+		left-hinged powered [closed] top = - {Damage:10}
+		right-hinged powered [closed] top = - {Damage:11}
 
 	{door state} oak [wood[en]] door¦s = minecraft:wooden_door
 	{door state} iron door¦s = minecraft:iron_door
@@ -119,8 +119,8 @@ redstone after flattening:
 	# Logic pieces
 	{comparator mode}:
 		{default} = -[mode=compare]
-		compare(-| )mode = -[mode=compare]
-		subtract(-| )mode = -[mode=subtract]
+		compare mode = -[mode=compare]
+		subtract mode = -[mode=subtract]
 	{directional} {powerable} [redstone] repeater¦s = minecraft:repeater
 	{comparator mode} {directional} {powerable} [redstone] comparator [item]¦s = minecraft:comparator
 
@@ -141,7 +141,7 @@ redstone after flattening:
 	[any] trapdoor¦s = iron trapdoor, any wooden trapdoor
 
 	# Fence gates
-	{openable} {powerable} {wood type} [fence] gate¦s = -fence_gate
+	{openable} {powerable} {wood type} fence gate¦s = -fence_gate
 	[any] [wood[en]] gate¦s = oak gate, spruce gate, birch gate, jungle gate, acacia gate, dark oak gate
 
 	# Doors

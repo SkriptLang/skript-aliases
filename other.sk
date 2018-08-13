@@ -17,18 +17,18 @@ unlisted before flattening:
 
 	{command block direction}:
 		{default} = - {Damage:1}
-		down[ward[s]][( |-)(facing|pointing)] = - {Damage:0}
-		up[ward[s]][( |-)(facing|pointing)] = - {Damage:1}
-		north[ward[s]][( |-)(facing|pointing)] = - {Damage:2}
-		south[ward[s]][( |-)(facing|pointing)] = - {Damage:3}
-		west[ward[s]][( |-)(facing|pointing)] = - {Damage:4}
-		east[ward[s]][( |-)(facing|pointing)] = - {Damage:5}
-		down[ward[s]][( |-)(facing|pointing)] conditional = - {Damage:8}
-		up[ward[s]][( |-)(facing|pointing)] conditional = - {Damage:9}
-		north[ward[s]][( |-)(facing|pointing)] conditional = - {Damage:10}
-		south[ward[s]][( |-)(facing|pointing)] conditional = - {Damage:11}
-		west[ward[s]][( |-)(facing|pointing)] conditional = - {Damage:12}
-		east[ward[s]][( |-)(facing|pointing)] conditional = - {Damage:13}
+		down[ward] [facing] = - {Damage:0}
+		up[ward] [facing] = - {Damage:1}
+		north[ward] [facing] = - {Damage:2}
+		south[ward] [facing] = - {Damage:3}
+		west[ward] [facing] = - {Damage:4}
+		east[ward] [facing] = - {Damage:5}
+		down[ward] [facing] conditional = - {Damage:8}
+		up[ward] [facing] conditional = - {Damage:9}
+		north[ward] [facing] conditional = - {Damage:10}
+		south[ward] [facing] conditional = - {Damage:11}
+		west[ward] [facing] conditional = - {Damage:12}
+		east[ward] [facing] conditional = - {Damage:13}
 	{command block direction} [impulse] command block¦s = minecraft:command_block
 
 # Unlisted blocks added in 1.9
@@ -91,4 +91,4 @@ update aquatic unlisted blocks:
 # Figure out how they work in their fluid form on 1.13
 fluids:
 	[stationary] water = minecraft:water
-	[stationary] lava = minecraft:lava
+	[stationary] lava = minecraft:lavae
