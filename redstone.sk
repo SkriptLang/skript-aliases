@@ -168,15 +168,11 @@ redstone after flattening:
 	note block¦s = minecraft:note_block
 	{directional} {powerable} tripwire hook¦s = minecraft:tripwire_hook
 	{directional} {waterloggable} trapped chest¦s = minecraft:trapped_chest
-<<<<<<< HEAD
 	inverted daylight (detector|sensor)¦s = minecraft:daylight_detector[inverted=true]
 	(piston extension|block 36|moving piston|moving block¦s) = minecraft:moving_piston
 	
 categories:
 	[any] daylight (detector|sensor)¦s = normal daylight detector, inverted daylight detector
-=======
-	(piston extension|block 36|moving piston|moving block¦s) = minecraft:moving_piston
->>>>>>> 598e590... piston_extension -> moving_piston
 
 exploration update:
 	minecraft version = 1.11 or newer
