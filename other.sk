@@ -91,4 +91,4 @@ update aquatic unlisted blocks:
 # Figure out how they work in their fluid form on 1.13
 fluids:
 	[stationary] water = minecraft:water
-	[stationary] lava = minecraft:lavae
+	[stationary] lava = minecraft:lava
