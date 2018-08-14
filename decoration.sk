@@ -130,13 +130,14 @@ decoratives before flattening:
 	west[ward] facing ladder = minecraft:ladder {Damage:5}
 	
 	snow layer¦s = minecraft:snow_layer
-	(2|two) layer snow layer = minecraft:snow_layer {Damage:1}
-	(3|three) layer snow layer = minecraft:snow_layer {Damage:2}
-	(4|four) layer snow layer = minecraft:snow_layer {Damage:3}
-	(5|five) layer snow layer = minecraft:snow_layer {Damage:4}
-	(6|six) layer snow layer = minecraft:snow_layer {Damage:5}
-	(7|seven) layer snow layer = minecraft:snow_layer {Damage:6}
-	(8|eight) layer snow layer = minecraft:snow_layer {Damage:7}
+	(1|one) thick snow layer = minecraft:snow_layer {Damage:0}
+	(2|two) thick snow layer = minecraft:snow_layer {Damage:1}
+	(3|three) thick snow layer = minecraft:snow_layer {Damage:2}
+	(4|four) thick snow layer = minecraft:snow_layer {Damage:3}
+	(5|five) thick snow layer = minecraft:snow_layer {Damage:4}
+	(6|six) thick snow layer = minecraft:snow_layer {Damage:5}
+	(7|seven) thick snow layer = minecraft:snow_layer {Damage:6}
+	(8|eight) thick snow layer = minecraft:snow_layer {Damage:7}
 	
 	iron bar¦s = minecraft:iron_bars
 	[plain] glass pane¦s = minecraft:glass_pane
@@ -273,13 +274,14 @@ decoratives after flattening:
 	[any] furnace¦s = lit furnace, unlit furnace
 	
 	snow layer¦s = minecraft:snow_layer
-	(2|two) layer snow layer = minecraft:snow_layer[layers=2]
-	(3|three) layer snow layer = minecraft:snow_layer[layers=3]
-	(4|four) layer snow layer = minecraft:snow_layer[layers=4]
-	(5|five) layer snow layer = minecraft:snow_layer[layers=5]
-	(6|six) layer snow layer = minecraft:snow_layer[layers=6]
-	(7|seven) layer snow layer = minecraft:snow_layer[layers=7]
-	(8|eight) layer snow layer = minecraft:snow_layer[layers=8]
+	(1|one) thick snow layer = minecraft:snow_layer[layers=1]
+	(2|two) thick snow layer = minecraft:snow_layer[layers=2]
+	(3|three) thick snow layer = minecraft:snow_layer[layers=3]
+	(4|four) thick snow layer = minecraft:snow_layer[layers=4]
+	(5|five) thick snow layer = minecraft:snow_layer[layers=5]
+	(6|six) thick snow layer = minecraft:snow_layer[layers=6]
+	(7|seven) thick snow layer = minecraft:snow_layer[layers=7]
+	(8|eight) thick snow layer = minecraft:snow_layer[layers=8]
 	
 	{waterloggable} iron bar¦s = minecraft:iron_bars
 	{waterloggable} [plain] glass pane¦s = minecraft:glass_pane
