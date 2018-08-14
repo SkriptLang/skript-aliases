@@ -12,18 +12,17 @@ unchanged redstone:
 	(iron|heavy weighted) pressure plate¦s = minecraft:heavy_weighted_pressure_plate
 
 	(normal|uninverted) daylight (detector|sensor)¦s = minecraft:daylight_detector
-	inverted daylight (detector|sensor)¦s = minecraft:daylight_detector_inverted
-	[any] daylight (detector|sensor)¦s = normal daylight detector, inverted daylight detector
 
 	{orientable} dispenser¦s = minecraft:dispenser
 	{orientable} dropper¦s = minecraft:dropper
 	tnt [block¦s] = minecraft:tnt
 	hopper¦s = minecraft:hopper
+	
+	iron trapdoor¦s = minecraft:iron_trapdoor
 
 	{orientable} [(normal|non-sticky)] piston¦s = minecraft:piston
 	{orientable} sticky piston¦s = minecraft:sticky_piston
 	{orientable} piston head¦s = minecraft:piston_head
-	(piston extension|block 36|block moved by piston|moving block¦s) = minecraft:piston_extension
 
 redstone before flattening:
 	minecraft version = 1.12 or older
@@ -52,7 +51,6 @@ redstone before flattening:
 
 	# Trapdoors
 	[oak] wood[en] trapdoor¦s = minecraft:trapdoor
-	iron trapdoor¦s = minecraft:iron_trapdoor
 	[any] trapdoor¦s = wood trapdoor, iron trapdoor
 
 	# Fences and doors
@@ -114,7 +112,7 @@ redstone before flattening:
 	note block¦s = minecraft:noteblock
 	tripwire hook¦s = minecraft:tripwire_hook
 	trapped chest¦s = minecraft:trapped_chest
-
+	(piston extension|block 36|moving piston|moving block¦s) = minecraft:piston_extension
 
 redstone after flattening:
 	minecraft version = 1.13 or newer
@@ -170,6 +168,11 @@ redstone after flattening:
 	note block¦s = minecraft:note_block
 	{directional} {powerable} tripwire hook¦s = minecraft:tripwire_hook
 	{directional} {waterloggable} trapped chest¦s = minecraft:trapped_chest
+	inverted daylight (detector|sensor)¦s = minecraft:daylight_detector[inverted=true]
+	(piston extension|block 36|moving piston|moving block¦s) = minecraft:moving_piston
+	
+categories:
+	[any] daylight (detector|sensor)¦s = normal daylight detector, inverted daylight detector
 
 exploration update:
 	minecraft version = 1.11 or newer

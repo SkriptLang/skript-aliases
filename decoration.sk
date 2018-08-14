@@ -48,14 +48,14 @@ decoratives before flattening:
 	(red flower¦s|popp(y|ies)) = minecraft:red_flower {Damage:0}
 	blue orchid¦s = minecraft:red_flower {Damage:1}
 	allium¦s = minecraft:red_flower {Damage:2}
-	azue bluet¦s = minecraft:red_flower {Damage:3}
+	azure bluet¦s = minecraft:red_flower {Damage:3}
 	red tulip¦s = minecraft:red_flower {Damage:4}
 	orange tulip¦s = minecraft:red_flower {Damage:5}
 	white tulip¦s = minecraft:red_flower {Damage:6}
 	pink tulip¦s = minecraft:red_flower {Damage:7}
 	oxeye dais(y|ies) = minecraft:red_flower {Damage:8}
 	any tulip¦s = red tulip, orange tulip, white tulip, pink tulip
-	any small flower = dandelion, poppy, blue orchid, allium, azue bluet, any tulip, oxeye daisy
+	any small flower = dandelion, poppy, blue orchid, allium, azure bluet, any tulip, oxeye daisy
 
 	# Large flowers
 	sunflower¦s = minecraft:double_plant {Damage:0}
@@ -165,14 +165,14 @@ decoratives after flattening:
 	(red flower¦s|popp(y|ies)) = minecraft:poppy
 	blue orchid¦s = minecraft:blue_orchid
 	allium¦s = minecraft:allium
-	azue bluet¦s = minecraft:azue_bluet
+	azure bluet¦s = minecraft:azure_bluet
 	red tulip¦s = minecraft:red_tulip
 	orange tulip¦s = minecraft:orange_tulip
 	white tulip¦s = minecraft:white_tulip
 	pink tulip¦s = minecraft:pink_tulip
 	oxeye dais(y|ies) = minecraft:oxeye_daisy
 	any tulip¦s = red tulip, orange tulip, white tulip, pink tulip
-	any small flower = dandelion, poppy, blue orchid, allium, azue bluet, any tulip, oxeye daisy
+	any small flower = dandelion, poppy, blue orchid, allium, azure bluet, any tulip, oxeye daisy
 
 	# Large flowers
 	{block half} sunflower¦s = minecraft:sunflower
@@ -190,8 +190,8 @@ decoratives after flattening:
 	{waterloggable} nether brick fence¦s = minecraft:nether_brick_fence
 
 	# Silverfish blocks
-	(infested|silverfish) stone [block¦s] = minecraft:infested_stone
-	(infested|silverfish) cobblestone [block¦s] = minecraft:infested_cobblestone
+	(infested|silverfish) stone [block]¦s = minecraft:infested_stone
+	(infested|silverfish) cobblestone [block]¦s = minecraft:infested_cobblestone
 	(infested|silverfish) stone brick [block]¦s = minecraft:infested_stone_bricks
 	(infested|silverfish) mossy stone brick [block]¦s = minecraft:infested_mossy_stone_bricks
 	(infested|silverfish) cracked stone brick [block]¦s = minecraft:infested_cracked_stone_bricks
