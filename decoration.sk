@@ -122,8 +122,23 @@ decoratives before flattening:
 	unlit furnace¦s = minecraft:furnace
 	lit furnace¦s = minecraft:lit_furnace
 	[any] furnace¦s = unlit furnace, lit furnace
-	ladder¦s = minecraft:ladder
+	
+	ladder item¦s = minecraft:ladder
+	south[ward] facing ladder = minecraft:ladder {Damage:0}
+	north[ward] facing ladder = minecraft:ladder {Damage:3}
+	east[ward] facing ladder = minecraft:ladder {Damage:4}
+	west[ward] facing ladder = minecraft:ladder {Damage:5}
+	
 	snow layer¦s = minecraft:snow_layer
+	(1|one) thick snow layer = minecraft:snow_layer {Damage:0}
+	(2|two) thick snow layer = minecraft:snow_layer {Damage:1}
+	(3|three) thick snow layer = minecraft:snow_layer {Damage:2}
+	(4|four) thick snow layer = minecraft:snow_layer {Damage:3}
+	(5|five) thick snow layer = minecraft:snow_layer {Damage:4}
+	(6|six) thick snow layer = minecraft:snow_layer {Damage:5}
+	(7|seven) thick snow layer = minecraft:snow_layer {Damage:6}
+	(8|eight) thick snow layer = minecraft:snow_layer {Damage:7}
+	
 	iron bar¦s = minecraft:iron_bars
 	[plain] glass pane¦s = minecraft:glass_pane
 	(water[ ]lil(y|ies)|lily pad¦s) = minecraft:waterlily
@@ -192,7 +207,9 @@ decoratives after flattening:
 		{default} = -[eye=false]
 		unfilled = -[eye=false]
 		filled = -[eye=true]
-	{end portal eye state} {directional} end portal frame¦s = minecraft:end_portal_frame
+	{end portal eye state} {directional} end portal frame¦s [block] = minecraft:end_portal_frame
+	end portal frame item¦s = minecraft:end_portal_frame
+	
 
 	# Cobble walls
 	{waterloggable} cobblestone wall¦s = minecraft:cobblestone_wall
@@ -255,7 +272,17 @@ decoratives after flattening:
 	(wet|moist|hydrated) farmland = minecraft:farmland[moisture=7]
 	{directional} {lightable} furnace¦s = minecraft:furnace
 	[any] furnace¦s = lit furnace, unlit furnace
-	snow layer¦s = minecraft:snow
+	
+	snow layer¦s = minecraft:snow_layer
+	(1|one) thick snow layer = minecraft:snow_layer[layers=1]
+	(2|two) thick snow layer = minecraft:snow_layer[layers=2]
+	(3|three) thick snow layer = minecraft:snow_layer[layers=3]
+	(4|four) thick snow layer = minecraft:snow_layer[layers=4]
+	(5|five) thick snow layer = minecraft:snow_layer[layers=5]
+	(6|six) thick snow layer = minecraft:snow_layer[layers=6]
+	(7|seven) thick snow layer = minecraft:snow_layer[layers=7]
+	(8|eight) thick snow layer = minecraft:snow_layer[layers=8]
+	
 	{waterloggable} iron bar¦s = minecraft:iron_bars
 	{waterloggable} [plain] glass pane¦s = minecraft:glass_pane
 	(water[ ]lil(y|ies)|lily pad¦s) = minecraft:lily_pad
