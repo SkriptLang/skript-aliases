@@ -359,7 +359,7 @@ combat update:
 
 # Building blocks add in 1.9 whose IDs were changed in the flattening (1.13)
 combat update before flattening:
-	minecraft version = 1.9 to 1.12
+	minecraft version = 1.9 to 1.12.2
 	end[ ]stone brick¦s = minecraft:end_bricks
 	[bottom] purpur slab = minecraft:purpur_slab {Damage:0}
 	(upside-down|top) purpur slab = minecraft:purpur_slab {Damage:8}
