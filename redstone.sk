@@ -125,8 +125,8 @@ redstone after flattening:
 	{comparator mode} {directional} {powerable} [redstone] comparator [item]¦s = minecraft:comparator
 
 	# Buttons
-	{orientable} {powerable} {wood type} button¦s = -button
-	{orientable} {powerable} stone button¦s = minecraft:stone_button
+	{directional} {powerable} {wood type} button¦s = -button
+	{directional} {powerable} stone button¦s = minecraft:stone_button
 	[any] wood[en] button¦s = oak button, spruce button, birch button, jungle button, acacia button, dark oak button
 	[any] button¦s = stone button, any wooden button
 

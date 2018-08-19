@@ -3,7 +3,7 @@ update aquatic:
 	turtle [shell] helmet = minecraft:turtle_helmet
 	trident¦s = minecraft:trident
 
-	{update aquatic effects):
+	{update aquatic effects}:
 		turtle master = - {"Potion": "minecraft:turtle_master"}
 		(long|extended) turtle master = - {"Potion": "minecraft:long_turtle_master"}
 		(strong|upgraded|level 2) turtle master = - {"Potion": "minecraft:strong_turtle_master"}

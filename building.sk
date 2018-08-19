@@ -242,34 +242,45 @@ building blocks after flattening:
 	[any] concrete [block¦s] = white concrete, orange concrete, magenta concrete, light blue concrete, yellow concrete, lime concrete, pink concrete, dark gray concrete, light gray concrete, cyan concrete, purple concrete, blue concrete, brown concrete, dark green concrete, red concrete, black concrete
 	[any] concrete powder [block¦s] = white concrete powder, orange concrete powder, magenta concrete powder, light blue concrete powder, yellow concrete powder, lime concrete powder, pink concrete powder, dark gray concrete powder, light gray concrete powder, cyan concrete powder, purple concrete powder, blue concrete powder, brown concrete powder, dark green concrete powder, red concrete powder, black concrete powder
 
-	#= Slabs
-	{waterloggable} {block half} {wood type} slab = -slab
-	{waterloggable} {block half} stone slab = minecraft:stone_slab
-	{waterloggable} {block half} sandstone slab = minecraft:sandstone_slab
-	{waterloggable} {block half} (petrified|stone) oak [wood[en]] slab = minecraft:petrified oak_slab
-	{waterloggable} {block half} cobble[stone] slab = minecraft:cobblestone_slab
-	{waterloggable} {block half} brick slab = minecraft:brick_slab
-	{waterloggable} {block half} stone[ ]brick slab = minecraft:stone_brick_slab
-	{waterloggable} {block half} nether brick slab = minecraft:nether_brick_slab
-	{waterloggable} {block half} [nether] quartz slab = minecraft:quartz_slab
-	{waterloggable} {block half} red sandstone slab = minecraft:red_sandstone_slab
-	{waterloggable} {block half} purpur slab = minecraft:purpur_slab
-	{waterloggable} {block half} [raw] prismarine slab¦s = minecraft:prismarine_slab
-	{waterloggable} {block half} prismarine brick slab¦s = minecraft:prismarine_brick_slab
-	{waterloggable} {block half} dark prismarine slab¦s = minecraft:dark_prismarine_slab
+	# Slabs
+	{slab}:
+		{default} = -[type=bottom]
+		top = -[type=top]
+		bottom = -[type=bottom]
+		double = -[type=double]
+	
+	{waterloggable} {slab} {wood type} slab = -slab
+	{waterloggable} {slab} stone slab = minecraft:stone_slab
+	{waterloggable} {slab} sandstone slab = minecraft:sandstone_slab
+	{waterloggable} {slab} (petrified|stone) oak [wood[en]] slab = minecraft:petrified oak_slab
+	{waterloggable} {slab} cobble[stone] slab = minecraft:cobblestone_slab
+	{waterloggable} {slab} brick slab = minecraft:brick_slab
+	{waterloggable} {slab} stone[ ]brick slab = minecraft:stone_brick_slab
+	{waterloggable} {slab} nether brick slab = minecraft:nether_brick_slab
+	{waterloggable} {slab} [nether] quartz slab = minecraft:quartz_slab
+	{waterloggable} {slab} red sandstone slab = minecraft:red_sandstone_slab
+	{waterloggable} {slab} purpur slab = minecraft:purpur_slab
+	{waterloggable} {slab} [raw] prismarine slab¦s = minecraft:prismarine_slab
+	{waterloggable} {slab} prismarine brick slab¦s = minecraft:prismarine_brick_slab
+	{waterloggable} {slab} dark prismarine slab¦s = minecraft:dark_prismarine_slab
 
 	# Stairs
-	{waterloggable} {block half} {directional} {wood type} stair¦s = -stairs
-	{waterloggable} {block half} {directional} cobble[stone] stair¦s = minecraft:cobblestone_stairs
-	{waterloggable} {block half} {directional} [red] brick stair¦s = minecraft:brick_stairs
-	{waterloggable} {block half} {directional} stone brick stair¦s = minecraft:stone_brick_stairs
-	{waterloggable} {block half} {directional} nether brick stair¦s = minecraft:nether_brick_stairs
-	{waterloggable} {block half} {directional} [nether] quartz stair¦s = minecraft:quartz_stairs
-	{waterloggable} {block half} {directional} prismarine brick stair¦s = minecraft:prismarine_brick_stairs
-	{waterloggable} {block half} {directional} purpur stair¦s = minecraft:purpur_stairs
-	{waterloggable} {block half} {directional} sandstone stair¦s = minecraft:sandstone_stairs
-	{waterloggable} {block half} {directional} prismarine stair¦s = minecraft:prismarine_stairs
-	{waterloggable} {block half} {directional} dark prismarine stair¦s = minecraft:dark_prismarine_stairs
+	{stairs}:
+		{default} = -[half=bottom]
+		top = -[half=top]
+		bottom = -[half=bottom]
+	
+	{waterloggable} {stairs} {directional} {wood type} stair¦s = -stairs
+	{waterloggable} {stairs} {directional} cobble[stone] stair¦s = minecraft:cobblestone_stairs
+	{waterloggable} {stairs} {directional} [red] brick stair¦s = minecraft:brick_stairs
+	{waterloggable} {stairs} {directional} stone brick stair¦s = minecraft:stone_brick_stairs
+	{waterloggable} {stairs} {directional} nether brick stair¦s = minecraft:nether_brick_stairs
+	{waterloggable} {stairs} {directional} [nether] quartz stair¦s = minecraft:quartz_stairs
+	{waterloggable} {stairs} {directional} prismarine brick stair¦s = minecraft:prismarine_brick_stairs
+	{waterloggable} {stairs} {directional} purpur stair¦s = minecraft:purpur_stairs
+	{waterloggable} {stairs} {directional} sandstone stair¦s = minecraft:sandstone_stairs
+	{waterloggable} {stairs} {directional} prismarine stair¦s = minecraft:prismarine_stairs
+	{waterloggable} {stairs} {directional} dark prismarine stair¦s = minecraft:dark_prismarine_stairs
 
 	# Construction/Decorative
 	([nether] quartz block[s]|block[s] of [nether] quartz) = minecraft:quartz_block

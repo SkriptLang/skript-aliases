@@ -273,15 +273,15 @@ decoratives after flattening:
 	{directional} {lightable} furnace¦s = minecraft:furnace
 	[any] furnace¦s = lit furnace, unlit furnace
 	
-	snow layer¦s = minecraft:snow_layer
-	(1|one) thick snow layer = minecraft:snow_layer[layers=1]
-	(2|two) thick snow layer = minecraft:snow_layer[layers=2]
-	(3|three) thick snow layer = minecraft:snow_layer[layers=3]
-	(4|four) thick snow layer = minecraft:snow_layer[layers=4]
-	(5|five) thick snow layer = minecraft:snow_layer[layers=5]
-	(6|six) thick snow layer = minecraft:snow_layer[layers=6]
-	(7|seven) thick snow layer = minecraft:snow_layer[layers=7]
-	(8|eight) thick snow layer = minecraft:snow_layer[layers=8]
+	snow layer¦s = minecraft:snow
+	(1|one) thick snow layer = minecraft:snow[layers=1]
+	(2|two) thick snow layer = minecraft:snow[layers=2]
+	(3|three) thick snow layer = minecraft:snow[layers=3]
+	(4|four) thick snow layer = minecraft:snow[layers=4]
+	(5|five) thick snow layer = minecraft:snow[layers=5]
+	(6|six) thick snow layer = minecraft:snow[layers=6]
+	(7|seven) thick snow layer = minecraft:snow[layers=7]
+	(8|eight) thick snow layer = minecraft:snow[layers=8]
 	
 	{waterloggable} iron bar¦s = minecraft:iron_bars
 	{waterloggable} [plain] glass pane¦s = minecraft:glass_pane
