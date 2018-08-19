@@ -189,6 +189,7 @@ decoratives after flattening:
 	# Fences
 	{waterloggable} {wood type} fence¦s = -fence
 	{waterloggable} nether brick fence¦s = minecraft:nether_brick_fence
+	any fence¦s = oak fence, spruce fence, birch fence, jungle fence, acacia fence, dark oak fence, nether brick fence
 
 	# Silverfish blocks
 	(infested|silverfish) stone [block]¦s = minecraft:infested_stone

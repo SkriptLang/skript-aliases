@@ -72,7 +72,7 @@ redstone before flattening:
 	{gate state} acacia [wood[en]] fence gate¦s = minecraft:acacia_fence_gate
 	{gate state} dark oak [wood[en]] fence gate¦s = minecraft:dark_oak_fence_gate
 	[any] [wood[en]] gate¦s = oak gate, spruce gate, birch gate, jungle gate, acacia gate, dark oak gate
-
+	
 	{door state}:
 		{default} = - {Damage:0}
 		[closed] east[ward] [facing] [bottom] = - {Damage:0}
@@ -141,7 +141,7 @@ redstone after flattening:
 	[any] trapdoor¦s = iron trapdoor, any wooden trapdoor
 
 	# Fence gates
-	{openable} {powerable} {wood type} fence gate¦s = -fence_gate
+	{openable} {powerable} {wood type} [fence] gate¦s = -fence_gate
 	[any] [wood[en]] gate¦s = oak gate, spruce gate, birch gate, jungle gate, acacia gate, dark oak gate
 
 	# Doors
@@ -173,6 +173,7 @@ redstone after flattening:
 	
 categories:
 	[any] daylight (detector|sensor)¦s = normal daylight detector, inverted daylight detector
+	[any] fence part = any fence, any gate # Fences come from decoration.sk
 
 exploration update:
 	minecraft version = 1.11 or newer

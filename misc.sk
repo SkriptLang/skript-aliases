@@ -42,7 +42,6 @@ random items:
 	brick¦s = minecraft:brick
 	clay [balls] = minecraft:clay
 	(piece¦s of paper|paper¦s) = minecraft:paper
-	book¦s = minecraft:book
 	slimeball¦s = minecraft:slime_ball
 	egg¦s = minecraft:egg
 	glowstone dust = minecraft:glowstone_dust
@@ -54,7 +53,6 @@ random items:
 	(ender eye¦s|eye¦s of ender) = minecraft:ender_eye
 	(bottle¦s o' enchanting|xp bottle¦s|experience bottle¦s) = minecraft:experience_bottle
 	fire charge¦s = minecraft:fire_charge
-	(book and quill¦s|writable book¦s) = minecraft:writable_book
 	[empty] map = minecraft:map
 	filled map = minecraft:filled_map
 	nether star¦s = minecraft:nether_star
@@ -63,6 +61,13 @@ random items:
 	prismarine shard¦s = minecraft:prismarine_shard
 	prismarine crystal¦s = minecraft:prismarine_crystals
 	rabbit hide¦s = minecraft:rabbit_hide
+	
+books:
+	book¦s = minecraft:book
+	(book and quill|writable book)¦s = minecraft:writable_book
+	written book¦s = minecraft:written_book
+	book with text = writable book, written book
+	any book¦s = book, book with text
 	
 fireworks:
 	{firework types}:
