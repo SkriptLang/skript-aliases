@@ -3,7 +3,7 @@
 # Most of the foods are simple items that have always existed. These didn't change in 1.13.
 unchanged foods:
     apple¦s = minecraft:apple
-    baked potato¦s = minecraft:baked_potato
+    baked potato¦es = minecraft:baked_potato
     beetroot¦s = minecraft:beetroot
     beetroot (stew|soup)¦s = minecraft:beetroot_soup
     [loa(f|ves) of] bread = minecraft:bread
@@ -13,7 +13,7 @@ unchanged foods:
     (cooked beef|steak¦s) = minecraft:cooked_beef
     cooked chicken¦s = minecraft:cooked_chicken
     cooked mutton¦s = minecraft:cooked_mutton
-    cooked pork[chop]¦s = minecraft:cooked_porkchop
+    cooked pork[chop¦s] = minecraft:cooked_porkchop
     cooked rabbit¦s = minecraft:cooked_rabbit
     cookie¦s = minecraft:cookie
     golden carrot¦s = minecraft:golden_carrot
@@ -33,11 +33,11 @@ unchanged foods:
 # Before the flattening in 1.13, some foods used data values.
 foods before flattening:
     minecraft version = 1.12.2 or older
-    [raw] (fish¦es|(cod|fish) [fillet]¦s) = minecraft:fish
+    [raw] (fish¦es|cod [fillet]¦s|fish fillet¦s) = minecraft:fish
     [raw] salmon [fillet]¦s = minecraft:fish {Damage:1}
     clownfish¦es = minecraft:fish {Damage:2}
     pufferfish¦es = minecraft:fish {Damage:3}
-    cooked (fish¦es|(cod|fish) [fillet]¦s) = minecraft:cooked_fish
+    cooked (fish¦es|cod [fillet]¦s|fish fillet¦s) = minecraft:cooked_fish
     cooked salmon [fillet]¦s = minecraft:cooked_fish {Damage:1}
 
     [normal] golden apple = minecraft:golden_apple {Damage:0}
@@ -66,7 +66,7 @@ categories:
     any cod [fillet]¦s = raw cod, cooked cod
     any salmon [fillet]¦s = raw salmon, cooked salmon
     any raw fish¦es = raw cod, raw salmon, pufferfish, tropical fish
-    any cooked (fish¦es|fish [fillet¦s]) = cooked cod, cooked salmon
+    any cooked (fish¦es|fish fillet¦s) = cooked cod, cooked salmon
     any fish¦es = any raw fish, any cooked fish
     
     any golden apple = normal golden apple, enchanted golden apple

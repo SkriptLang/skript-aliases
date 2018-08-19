@@ -4,18 +4,18 @@ mining:
 	coal = minecraft:coal
 	diamond¦s = minecraft:diamond
 	iron ingot¦s = minecraft:iron_ingot
-	gold ingot¦s = minecraft:gold_ingot
-	[any] ingot¦s = iron ingot, gold ingot
-
-	gold nugget¦s = minecraft:gold_nugget
-	[any] nugget¦s = gold nugget # TODO 1.11 iron nugget
-
+	gold[en] ingot¦s = minecraft:gold_ingot
+	any ingot¦s = iron ingot, gold ingot
+	gold[en] nugget¦s = minecraft:gold_nugget
 	emerald¦s = minecraft:emerald
 	flint¦s = minecraft:flint
 
+exploration update 2:
+	minecraft version = 1.11.1 or newer
+	iron nugget¦s = minecraft:iron_nugget
+	any nugget¦s = gold nugget, iron nugget
 exploration update:
 	minecraft version = 1.11 or newer
-	iron nugget¦s = minecraft:iron_nugger
 	shulker shell¦s = minecraft:shulker_shell
 
 old items:
@@ -41,8 +41,7 @@ random items:
 	leather = minecraft:leather
 	brick¦s = minecraft:brick
 	clay [balls] = minecraft:clay
-	(pieces of paper|paper¦s) = minecraft:paper
-	book¦s = minecraft:book
+	(piece¦s of paper|paper¦s) = minecraft:paper
 	slimeball¦s = minecraft:slime_ball
 	egg¦s = minecraft:egg
 	glowstone dust = minecraft:glowstone_dust
@@ -50,19 +49,40 @@ random items:
 	sugar = minecraft:sugar
 	ender pearl¦s = minecraft:ender_pearl
 	blaze rod¦s = minecraft:blaze_rod
-	nether wart = minecraft:nether_wart
-	eye¦s of ender = minecraft:ender_eye
+	nether wart¦s = minecraft:nether_wart
+	(ender eye¦s|eye¦s of ender) = minecraft:ender_eye
 	(bottle¦s o' enchanting|xp bottle¦s|experience bottle¦s) = minecraft:experience_bottle
 	fire charge¦s = minecraft:fire_charge
-	(book and quill|writable book¦s) = minecraft:writable_book
-	# TODO maps?
+	[empty] map = minecraft:map
+	filled map = minecraft:filled_map
 	nether star¦s = minecraft:nether_star
-	# TODO fireworks
 	nether brick¦s = minecraft:nether_brick
 	nether quartz = minecraft:quartz
 	prismarine shard¦s = minecraft:prismarine_shard
 	prismarine crystal¦s = minecraft:prismarine_crystals
 	rabbit hide¦s = minecraft:rabbit_hide
+	
+books:
+	book¦s = minecraft:book
+	(book and quill|writable book)¦s = minecraft:writable_book
+	written book¦s = minecraft:written_book
+	book with text = writable book, written book
+	any book¦s = book, book with text
+	
+fireworks:
+	{firework types}:
+		(0|zero|immediate) = - {Fireworks:{Flight:0}}
+		(1|one|short) = - {Fireworks:{Flight:1}}
+		(2|two|medium) = - {Fireworks:{Flight:2}}
+		(3|three|long) = - {Fireworks:{Flight:3}}
+	
+before flattening:
+	minecraft version = 1.12.2 or older
+	[(flight|duration|flight duration) {firework types} ] firework [rocket]¦s = fireworks
+	
+after flattening:
+	minecraft version = 1.13 or newer
+	[(flight|duration|flight duration) {firework types} ] firework [rocket]¦s = firework_rocket
 
 plants:
 	pumpkin seeds = minecraft:pumpkin_seeds
@@ -75,10 +95,234 @@ plants:
 	chorus fruit¦s = minecraft:chorus_fruit
 	popped chorus fruit¦s = minecraft:chorus_fruit_popped
 
-buckets:
-	[empty] bucket = minecraft:bucket
-	water bucket = minecraft:water_bucket
-	lava bucket = minecraft:lava_bucket
-	milk [bucket] = minecraft:milk_bucket
+old buckets:
+	minecraft version = 1.12.2 or older
+	[empty] bucket¦s = minecraft:bucket
+	water bucket¦s = minecraft:water_bucket
+	lava bucket¦s = minecraft:lava_bucket
+	milk [bucket¦s] = minecraft:milk_bucket
+	any bucket = empty bucket, water bucket, lava bucket, milk
+new buckets:
+	minecraft version = 1.13 or newer
+	tropical fish bucket¦s = minecraft:tropical_fish_bucket
+	cod bucket¦s = minecraft:cod_bucket
+	pufferfish bucket¦s = minecraft:pufferfish_bucket
+	salmon bucket¦s = minecraft:salmon_bucket
+	any bucket = empty bucket, water bucket, lava bucket, milk, tropical fish bucket, cod bucket, pufferfish bucket, salmon bucket
+	any fish bucket = tropical fish bucket, cod bucket, pufferfish bucket, salmon bucket
+	
+horse armor:
+	iron horse armor = minecraft:iron_horse_armor
+	gold[en] horse armor = minecraft:golden_horse_armor
+	diamond horse armor = minecraft:diamond_horse_armor
+	any horse armor = iron horse armor, gold horse armor, diamond horse armor
+	
+new music discs:
+	minecraft version = 1.13 or newer
+	[music] (disc|record) 11 = minecraft:music_disc_11
+	[music] (disc|record) 13 = minecraft:music_disc_13
+	[music] (disc|record) blocks = minecraft:music_disc_blocks
+	[music] (disc|record) cat = minecraft:music_disc_cat
+	[music] (disc|record) chirp = minecraft:music_disc_chirp
+	[music] (disc|record) far = minecraft:music_disc_far
+	[music] (disc|record) mall = minecraft:music_disc_mall
+	[music] (disc|record) mellohi = minecraft:music_disc_mellohi
+	[music] (disc|record) stal = minecraft:music_disc_stal
+	[music] (disc|record) strad = minecraft:music_disc_strad
+	[music] (disc|record) wait = minecraft:music_disc_wait
+	[music] (disc|record) ward = minecraft:music_disc_ward
+	any [music] (disc|record) = music disc 11, music disc 13, music disc blocks, music disc cat, musici disc chirp, music disc far, music disc mall, music disc mellohi, music disc stal, music disc strad, music disc wait, music disc ward
+	
+old music discs:
+	minecraft version = 1.12 or older
+	[music] (disc|record) 11 = minecraft:record_11
+	[music] (disc|record) 13 = minecraft:record_13
+	[music] (disc|record) blocks = minecraft:record_blocks
+	[music] (disc|record) cat = minecraft:record_cat
+	[music] (disc|record) chirp = minecraft:record_chirp
+	[music] (disc|record) far = minecraft:record_far
+	[music] (disc|record) mall = minecraft:record_mall
+	[music] (disc|record) mellohi = minecraft:record_mellohi
+	[music] (disc|record) stal = minecraft:record_stal
+	[music] (disc|record) strad = minecraft:record_strad
+	[music] (disc|record) wait = minecraft:record_wait
+	[music] (disc|record) ward = minecraft:record_ward
+	any [music] (disc|record) = music disc 11, music disc 13, music disc blocks, music disc cat, musici disc chirp, music disc far, music disc mall, music disc mellohi, music disc stal, music disc strad, music disc wait, music disc ward
+	
+new dyes:
+	minecraft version = 1.13 or newer
+	(ink sac|black dye)¦s = minecraft:ink_sac
+	(rose red|red dye)¦s = minecraft:rose_red
+	(cactus green|green dye)¦s = minecraft:cactus_green
+	brown dye¦s = minecraft:cocoa_beans
+	blue dye¦s = minecraft:lapis_lazuli
+	purple dye¦s = minecraft:purple_dye
+	cyan dye¦s = minecraft:cyan_dye
+	light gr(a|e)y dye¦s = minecraft:light_gray_dye
+	gr(a|e)y dye¦s = minecraft:gray_dye
+	pink dye¦s = minecraft:pink_dye
+	(lime|light green) dye¦s = minecraft:lime_dye
+	(dandelion yellow|yellow dye)¦s = minecraft:dandelion_yellow
+	light blue dye¦s = minecraft:light_blue_dye
+	magenta dye¦s = minecraft:magenta_dye
+	orange dye¦s = minecraft:orange_dye
+	white dye¦s = minecraft:bonemeal
+	any dye = black dye, red dye, green dye, brown dye, purple dye, cyan dye, light gray dye, gray dye, pink dye, lime dye, yellow dye, light blue dye, magenta dye, orange dye, white dye
+	
+old dyes:
+	minecraft version = 1.12 or older
+	(ink sac|black dye)¦s = minecraft:dye
+	(rose red|red dye)¦s =  minecraft:dye {Damage:1}
+	(cactus green|green dye)¦s = minecraft:dye {Damage:2}
+	brown dye¦s = minecraft:dye {Damage:3}
+	blue dye¦s = minecraft:dye {Damage:4}
+	purple dye¦s = minecraft:dye {Damage:5}
+	cyan dye¦s = minecraft:dye {Damage:6}
+	light gr(a|e)y dye¦s = minecraft:dye {Damage:7}
+	gr(a|e)y dye¦s = minecraft:dye {Damage:8}
+	pink dye¦s = minecraft:dye {Damage:9}
+	lime dye¦s = minecraft:dye {Damage:10}
+	(dandelion yellow|yellow dye)¦s = minecraft:dye {Damage:11}
+	light blue dye¦s = minecraft:dye {Damage:12}
+	magenta dye¦s = minecraft:dye {Damage:13}
+	orange dye¦s = minecraft:dye {Damage:14}
+	white dye¦s = minecraft:dye {Damage:15}
+	any dye = black dye, red dye, green dye, brown dye, purple dye, cyan dye, light gray dye, gray dye, pink dye, lime dye, yellow dye, light blue dye, magenta dye, orange dye, white dye
+	
+#entity tags got changed throughout versions so this section is somewhat large
+aquatic update spawn eggs:
+	minecraft version = 1.13 or newer
+	(bat[ spawn] egg¦s|spawn bat) = minecraft:bat_spawn_egg
+	(blaze[ spawn] egg¦s|spawn blaze) = minecraft:blaze_spawn_egg
+	(cave spider[ spawn] egg¦s|spawn cave spider) = minecraft:cave_spider_spawn_egg
+	(chicken spawn egg¦s|spawn chicken) = minecraft:chicken_spawn_egg
+	(cod[ spawn] egg¦s|spawn cod) = minecraft:cod_spawn_egg
+	(cow[ spawn] egg¦s|spawn cow) = minecraft:cow_spawn_egg
+	(creeper[ spawn]|spawn creeper) egg = minecraft:creeper_spawn_egg
+	(dolphin[ spawn]|spawn dolphin) egg = minecraft:dolphin_spawn_egg
+	(donkey[ spawn] egg¦s|spawn donkey) = minecraft:donkey_spawn_egg
+	(drowned[ spawn] egg¦s|spawn drowned) = minecraft:drowned_spawn_egg
+	(elder guardian[ spawn] egg¦s|spawn elder guardian) = minecraft:elder_guardian_spawn_egg
+	(enderman[ spawn] egg¦s|spawn enderman) = minecraft:enderman_spawn_egg
+	(endermite[ spawn] egg¦s|spawn endermite) = minecraft:endermite_spawn_egg
+	(evoker[ spawn] egg¦s|spawn evoker) = minecraft:evoker_spawn_egg
+	(ghast[ spawn] egg¦s|spawn ghast) = minecraft:ghast_spawn_egg
+	(guardian[ spawn] egg¦s|spawn guardian) = minecraft:guardian_spawn_egg
+	(horse[ spawn] egg¦s|spawn horse) = minecraft:horse_spawn_egg
+	(husk[ spawn] egg¦s|spawn husk) = minecraft:husk_spawn_egg
+	(llama[ spawn] egg¦s|spawn llama) = minecraft:llama_spawn_egg
+	(magma cube[ spawn] egg¦s|spawn magma cube) = minecraft:magma_cube_spawn_egg
+	((mooshroom|mushroom cow)[ spawn] egg¦s|spawn (mooshroom|mushroom cow)) = minecraft:mooshroom_spawn_egg
+	(mule[ spawn] egg¦s|spawn mule) = minecraft:mule_spawn_egg
+	(ocelot[ spawn] egg¦s|spawn ocelot) minecraft:ocelot_spawn_egg
+	(parrot[ spawn] egg¦s|spawn parrot) = minecraft:parrot_spawn_egg
+	(phantom[ spawn] egg¦s|spawn phantom) = minecraft:phantom_spawn_egg
+	(pig[ spawn] egg¦s|spawn pig) = minecraft:pig_spawn_egg
+	(polar bear[ spawn] egg¦s|spawn polar bear) = minecraft:polar_bear_spawn_egg
+	(pufferfish[ spawn] egg¦s|spawn pufferfish) = minecraft:pufferfish_spawn_egg
+	(rabbit[ spawn] egg¦s|spawn rabbit) = minecraft:rabbit_spawn_egg
+	(salmon[ spawn] egg¦s|spawn salmon) = minecraft:salmon_spawn_egg
+	(sheep[ spawn] egg¦s|spawn sheep) = minecraft:sheep_spawn_egg
+	(shulker[ spawn] egg¦s|spawn shulker) = minecraft:shulker_spawn_egg
+	(silverfish[ spawn] egg¦s|spawn silverfish) = minecraft:silverfish_spawn_egg
+	(skeleton[ spawn] egg¦s|spawn skeleton) = minecraft:skeleton_spawn_egg
+	(skelet(on|al) horse[ spawn] egg¦s|spawn skelet(on|al) horse) = minecraft:skeleton_horse_spawn_egg
+	(slime[ spawn] egg¦s|spawn slime) = minecraft:slime_spawn_egg
+	(spider[ spawn] egg¦s|spawn spider) = minecraft:spider_spawn_egg
+	(squid[ spawn] egg¦s|spawn squid) = minecraft:squid_spawn_egg
+	(stray[ spawn] egg¦s|spawn stray) = minecraft:stray_spawn_egg
+	(tropical fish[ spawn] egg¦s|spawn tropical fish) = minecraft:tropical_fish_spawn_egg
+	(turtle spawn egg¦s|spawn turtle) = minecraft:turtle_spawn_egg
+	(vex[ spawn] egg¦s|spawn vex) = minecraft:vex_spawn_egg
+	(villager[ spawn] egg¦s|spawn villager) = minecraft:villager_spawn_egg
+	(vindicator[ spawn] egg¦s|spawn vindicator) = minecraft:vindicator_spawn_egg
+	(witch[ spawn] egg¦s|spawn witch) = minecraft:witch_spawn_egg
+	(wither skeleton[ spawn] egg¦s|spawn wither skeleton) = minecraft:wither_skeleton_spawn_egg
+	((wolf|dog)[ spawn] egg¦s|spawn (wolf|dog)) = minecraft:wolf_spawn_egg
+	(zombie[ spawn] egg¦s|spawn zombie) = minecraft:zombie_spawn_egg
+	(zombi(e|fied) horse[ spawn] egg¦s|spawn zombi(e|fied) horse) = minecraft:zombie_horse_spawn_egg
+	((zombi(e|fied) pig[man])[ spawn] egg¦s|spawn (zombi(e|fied) pig[man])) = minecraft:zombie_pigman_spawn_egg
+	((zombi(e|fied) villager[ spawn] egg¦s|spawn (zombi(e|fied) villager) = minecraft:zombie_villager_spawn_egg
+	any spawn egg = spawn bat, spawn blaze, spawn cave spider, spawn chicken, spawn cow, spawn creeper, spawn enderman, spawn endermite, spawn ghast, spawn guardian, spawn horse, spawn magma cube, spawn mooshroom, ocelot, spawn pig, spawn rabbit, spawn sheep, spawn silverfish, spawn skeleton, spawn slime, spawn spider, spawn squid, spawn villager, spawn witch, spawn wolf, spawn zombie, spawn shulker, spawn polar bear, spawn donkey, spawn elder guardian, spawn evoker, spawn husk, spawn llama, spawn mule, spawn polar bear, spawn shulker, spawn skeleton horse, spawn stray, spawn vex, spawn vindicator, spawn wither skeleton, spawn zombie horse, spawn zombie villager, spawn parrot, spawn cod, spawn dolphin, spawn drowned, spawn phantom, spawn pufferfish, spawn salmon, spawn tropical fish, spawn turtle
+	
+world of color update spawn eggs:
+	minecraft version = 1.12 to 1.12.2
+	(donkey[ spawn] egg¦s|spawn donkey) = minecraft:spawn_egg {EntityTag:{id:donkey}}
+	(elder guardian[ spawn] egg¦s|spawn elder guardian) = minecraft:spawn_egg {EntityTag:{id:elder_guardian}}
+	(evoker[ spawn] egg¦s|spawn evoker) = minecraft:spawn_egg {EntityTag:{id:evocation_illager}}
+	(husk[ spawn] egg¦s|spawn husk) = minecraft:spawn_egg {EntityTag:{id:husk}}
+	(llama[ spawn] egg¦s|spawn llama) = minecraft:spawn_egg {EntityTag:{id:llama}}
+	(mule[ spawn] egg¦s|spawn mule) = minecraft:spawn_egg {EntityTag:{id:mule}}
+	(parrot[ spawn] egg¦s|spawn parrot) = minecraft:spawn_egg {EntityTag:{id:parrot}}
+	(polar bear[ spawn] egg¦s|spawn polar bear) = minecraft:spawn_egg {EntityTag:{id:polar_bear}}
+	(shulker[ spawn] egg¦s|spawn shulker) = minecraft:spawn_egg {EntityTag:{id:shulker}}
+	(skelet(on|al) horse[ spawn] egg¦s|spawn skelet(on|al) horse) = minecraft:spawn_egg {EntityTag:{id:skeleton_horse}}
+	(stray[ spawn] egg¦s|spawn stray) = minecraft:spawn_egg {EntityTag:{id:stray}}
+	(vex[ spawn] egg¦s|spawn vex) = minecraft:spawn_egg {EntityTag:{id:vex}}
+	(vindicator[ spawn] egg¦s|spawn vindicator) = minecraft:spawn_egg {EntityTag:{id:vindication_illager}}
+	(wither skeleton[ spawn] egg¦s|spawn wither skeleton) = minecraft:spawn_egg {EntityTag:{id:wither_skeleton}}
+	(zombi(e|fied) horse[ spawn] egg¦s|spawn zombi(e|fied) horse) = minecraft:spawn_egg {EntityTag:{id:zombie_horse}}
+	((zombi(e|fied) villager[ spawn] egg¦s|spawn (zombi(e|fied) villager) = minecraft:spawn_egg {EntityTag:{id:zombie_villager}}
+	any spawn egg = spawn bat, spawn blaze, spawn cave spider, spawn chicken, spawn cow, spawn creeper, spawn enderman, spawn endermite, spawn ghast, spawn guardian, spawn horse, spawn magma cube, spawn mooshroom, ocelot, spawn pig, spawn rabbit, spawn sheep, spawn silverfish, spawn skeleton, spawn slime, spawn spider, spawn squid, spawn villager, spawn witch, spawn wolf, spawn zombie, spawn shulker, spawn polar bear, spawn donkey, spawn elder guardian, spawn evoker, spawn husk, spawn llama, spawn mule, spawn polar bear, spawn shulker, spawn skeleton horse, spawn stray, spawn vex, spawn vindicator, spawn wither skeleton, spawn zombie horse, spawn zombie villager, spawn parrot
 
-# TODO dyes, spawn eggs, horse armor, music discs
+exploration update spawn eggs:
+	minecraft version = 1.11 to 1.11.2
+	(donkey[ spawn] egg¦s|spawn donkey) = minecraft:spawn_egg {EntityTag:{id:minecraft:donkey}}
+	(elder guardian[ spawn] egg¦s|spawn elder guardian) = minecraft:spawn_egg {EntityTag:{id:minecraft:elder_guardian}}
+	(evoker[ spawn] egg¦s|spawn evoker) = minecraft:spawn_egg {EntityTag:{id:minecraft:evocation_illager}}
+	(husk[ spawn] egg¦s|spawn husk) = minecraft:spawn_egg {EntityTag:{id:minecraft:husk}}
+	(llama[ spawn] egg¦s|spawn llama) = minecraft:spawn_egg {EntityTag:{id:minecraft:llama}}
+	(mule[ spawn] egg¦s|spawn mule) = minecraft:spawn_egg {EntityTag:{id:minecraft:mule}}
+	(polar bear[ spawn] egg¦s|spawn polar bear) = minecraft:spawn_egg {EntityTag:{id:minecraft:polar_bear}}
+	(shulker[ spawn] egg¦s|spawn shulker) = minecraft:spawn_egg {EntityTag:{id:minecraft:shulker}}
+	(skelet(on|al) horse[ spawn] egg¦s|spawn skelet(on|al) horse) = minecraft:spawn_egg {EntityTag:{id:minecraft:skeleton_horse}}
+	(stray[ spawn] egg¦s|spawn stray) = minecraft:spawn_egg {EntityTag:{id:minecraft:stray}}
+	(vex[ spawn] egg¦s|spawn vex) = minecraft:spawn_egg {EntityTag:{id:minecraft:vex}}
+	(vindicator[ spawn] egg¦s|spawn vindicator) = minecraft:spawn_egg {EntityTag:{id:minecraft:vindication_illager}}
+	(wither skeleton[ spawn] egg¦s|spawn wither skeleton) = minecraft:spawn_egg {EntityTag:{id:minecraft:wither_skeleton}}
+	(zombi(e|fied) horse[ spawn] egg¦s|spawn zombi(e|fied) horse) = minecraft:spawn_egg {EntityTag:{id:minecraft:zombie_horse}}
+	((zombi(e|fied) villager[ spawn] egg¦s|spawn (zombi(e|fied) villager) = minecraft:spawn_egg {EntityTag:{id:minecraft:zombie_villager}}
+	any spawn egg = spawn bat, spawn blaze, spawn cave spider, spawn chicken, spawn cow, spawn creeper, spawn enderman, spawn endermite, spawn ghast, spawn guardian, spawn horse, spawn magma cube, spawn mooshroom, ocelot, spawn pig, spawn rabbit, spawn sheep, spawn silverfish, spawn skeleton, spawn slime, spawn spider, spawn squid, spawn villager, spawn witch, spawn wolf, spawn zombie, spawn shulker, spawn polar bear, spawn donkey, spawn elder guardian, spawn evoker, spawn husk, spawn llama, spawn mule, spawn polar bear, spawn shulker, spawn skeleton horse, spawn stray, spawn vex, spawn vindicator, spawn wither skeleton, spawn zombie horse, spawn zombie villager
+	
+frostburn update spawn eggs:
+	minecraft version = 1.10 to 1.10.2
+	(polar bear[ spawn] egg¦s|spawn polar bear) = minecraft:spawn_egg {EntityTag:{id:PolarBear}}
+	any spawn egg = spawn bat, spawn blaze, spawn cave spider, spawn chicken, spawn cow, spawn creeper, spawn enderman, spawn endermite, spawn ghast, spawn guardian, spawn horse, spawn magma cube, spawn mooshroom, ocelot, spawn pig, spawn rabbit, spawn sheep, spawn silverfish, spawn skeleton, spawn slime, spawn spider, spawn squid, spawn villager, spawn witch, spawn wolf, spawn zombie, spawn shulker, spawn polar bear
+	
+combat update spawn eggs:
+	minecraft version = 1.9 to 1.9.4
+	(shulker[ spawn] egg¦s|spawn shulker) = minecraft:spawn_egg {EntityTag:{id:Shulker}}
+	any spawn egg = spawn bat, spawn blaze, spawn cave spider, spawn chicken, spawn cow, spawn creeper, spawn enderman, spawn endermite, spawn ghast, spawn guardian, spawn horse, spawn magma cube, spawn mooshroom, ocelot, spawn pig, spawn rabbit, spawn sheep, spawn silverfish, spawn skeleton, spawn slime, spawn spider, spawn squid, spawn villager, spawn witch, spawn wolf, spawn zombie, spawn shulker
+
+bountiful update spawn eggs:
+	#these remained valid up to 1.12
+	minecraft version = 1.12.2 and older
+	(bat[ spawn] egg¦s|spawn bat) = minecraft:spawn_egg {Damage:65}
+	(blaze[ spawn] egg¦s|spawn blaze) = minecraft:spawn_egg {Damage:61}
+	(cave spider[ spawn] egg¦s|spawn cave spider) = minecraft:spawn_egg {Damage:59}
+	(chicken spawn egg¦s|spawn chicken) = minecraft:spawn_egg {Damage:93}
+	(cow[ spawn] egg¦s|spawn cow) = minecraft:spawn_egg {Damage:92}
+	(creeper[ spawn]|spawn creeper) egg = minecraft:spawn_egg {Damage:50}
+	(enderman[ spawn] egg¦s|spawn enderman) = minecraft:spawn_egg {Damage:58}
+	(endermite[ spawn] egg¦s|spawn endermite) = minecraft:spawn_egg {Damage:67}
+	(ghast[ spawn] egg¦s|spawn ghast) = minecraft:ghast_spawn_egg {Damage:56}
+	(guardian[ spawn] egg¦s|spawn guardian) = minecraft:guardian_spawn_egg {Damage:68}
+	(horse[ spawn] egg¦s|spawn horse) = minecraft:horse_spawn_egg {Damage:100}
+	(magma cube[ spawn] egg¦s|spawn magma cube) = minecraft:spawn_egg {Damage:62}
+	((mooshroom|mushroom cow)[ spawn] egg¦s|spawn (mooshroom|mushroom cow)) = minecraft:spawn_egg {Damage:96}
+	(ocelot[ spawn] egg¦s|spawn ocelot) minecraft:spawn_egg {Damage:98}
+	(pig[ spawn] egg¦s|spawn pig) = minecraft:pig_spawn_egg {Damage:90}
+	(rabbit[ spawn] egg¦s|spawn rabbit) = minecraft:spawn_egg {Damage:101}
+	(sheep[ spawn] egg¦s|spawn sheep) = minecraft:spawn_egg {Damage:91}
+	(silverfish[ spawn] egg¦s|spawn silverfish) = minecraft:spawn_egg {Damage:60}
+	(skeleton[ spawn] egg¦s|spawn skeleton) = minecraft:spawn_egg {Damage:51}
+	(slime[ spawn] egg¦s|spawn slime) = minecraft:spawn_egg {Damage:55}
+	(spider[ spawn] egg¦s|spawn spider) = minecraft:spawn_egg {Damage:52}
+	(squid[ spawn] egg¦s|spawn squid) = minecraft:spawn_egg {Damage:94}
+	(villager[ spawn] egg¦s|spawn villager) = minecraft:spawn_egg {Damage:120}
+	(witch[ spawn] egg¦s|spawn witch) = minecraft:spawn_egg {Damage:66}
+	((wolf|dog)[ spawn] egg¦s|spawn (wolf|dog)) = minecraft:spawn_egg {Damage:95}
+	(zombie[ spawn] egg¦s|spawn zombie) = minecraft:spawn_egg {Damage:54}
+	((zombi(e|fied) pig[man])[ spawn] egg¦s|spawn (zombi(e|fied) pig[man])) = minecraft:spawn_egg {Damage:57}
+	any spawn egg = spawn bat, spawn blaze, spawn cave spider, spawn chicken, spawn cow, spawn creeper, spawn enderman, spawn endermite, spawn ghast, spawn guardian, spawn horse, spawn magma cube, spawn mooshroom, ocelot, spawn pig, spawn rabbit, spawn sheep, spawn silverfish, spawn skeleton, spawn slime, spawn spider, spawn squid, spawn villager, spawn witch, spawn wolf, spawn zombie
+

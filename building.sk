@@ -1,64 +1,4 @@
 # The blocks whose ID layout hasn't changed for a long time (at least since 1.8).
-unchanged building blocks:
-	# Stones
-	stone [block¦s] = minecraft:stone
-
-	cobble[stone] [block¦s] = minecraft:cobblestone
-	moss[y] cobble[stone] [block¦s] = minecraft:mossy_cobblestone
-	any cobble[stone] [block¦s] = cobblestone, mossy cobblestone
-
-	# Sediments
-	dirt [block¦s] = minecraft:dirt
-	sand [block¦s] = minecraft:sand
-	gravel [block¦s] = minecraft:gravel
-	clay block¦s = minecraft:clay
-	mycelium [block¦s] = minecraft:mycelium
-
-	# Underground
-	gold ore¦s = minecraft:gold_ore
-	iron ore¦s = minecraft:iron_ore
-	coal ore¦s = minecraft:coal_ore
-	lapis [lazuli] ore¦s = minecraft:lapis_ore
-	diamond ore¦s = minecraft:diamond_ore
-	redstone ore¦s = minecraft:redstone_ore
-	emerald ore¦s = minecraft:emerald_ore
-	[nether] quartz ore¦s = minecraft:quartz_ore
-	any ore = gold ore, iron ore, coal ore, lapis ore, diamond ore, redstone ore, emerald ore, nether quartz ore
-
-	obsidian [block¦s] = minecraft:obsidian
-	bedrock [block¦s] = minecraft:bedrock
-
-	# Mineral blocks
-	(gold block¦s|block¦s of gold) = minecraft:gold_block
-	(iron block¦s|block¦s of iron) = minecraft:iron_block
-	(coal block¦s|block¦s of coal) = minecraft:coal_block
-	(lapis [lazuli] block¦s|block¦s of lapis [lazuli]) = minecraft:lapis_block
-	(diamond block¦s|block¦s of diamond) = minecraft:diamond_block
-	(redstone block¦s|block¦s of redstone) = minecraft:redstone_block
-	(emerald block¦s|block¦s of emerald) = minecraft:emerald_block
-	([nether] quartz block¦s|block¦s of [nether] quartz) = minecraft:quartz_block
-
-	# Underwater
-	sponge¦s = minecraft:sponge
-	wet sponge¦s = minecraft:wet_sponge
-
-	# Construction/Decorative
-	[red] brick block¦s = minecraft:brick_block
-	[(plain|unstained|undyed)] glass [block¦s] = minecraft:glass
-	book[ ]shel(f|ves) = minecraft:bookshelf
-
-	# Nether
-	netherrack [block¦s] = minecraft:netherrack
-	soul sand [block¦s] = minecraft:soul_sand
-	glowstone [block¦s] = minecraft:glowstone
-	nether brick block¦s = minecraft:nether_brick
-
-	# Miscellaneous
-	ice [block¦s] = minecraft:ice
-	snow block¦s = minecraft:snow
-	hay [(bale|block)¦s] = minecraft:hay_block
-	packed ice [block¦s] = minecraft:packed_ice
-	end[ ]stone [block¦s] = minecraft:end_stone
 
 # 1.13 changed the IDs of a lot of blocks since they're no longer defined by data value.
 # This section is for blocks that had a different ID prior to 1.13.
@@ -83,6 +23,7 @@ old blocks before flattening:
 	grass [block¦s] = minecraft:grass
 	coarse dirt [block¦s] = minecraft:dirt {Damage:1}
 	podzol [block¦s] = minecraft:dirt {Damage:2}
+	[nether] quartz ore¦s = minecraft:quartz_ore
 
 	# All wood
 	# planks
@@ -227,6 +168,8 @@ old blocks before flattening:
 	[unlit] pumpkin¦s = minecraft:pumpkin
 	(lit pumpkin|jack-o[']-lantern)¦s = minecraft:lit_pumpkin
 	melon [block]¦s = minecraft:melon_block
+	
+	any ice [block¦s] = ice, packed ice
 
 # 1.13 removed data values and separated tons of blocks into their own IDs.
 # This section contains building blocks whose IDs were changed by 1.13.
@@ -251,6 +194,7 @@ building blocks after flattening:
 	grass [block¦s] = minecraft:grass_block
 	coarse dirt [block¦s] = minecraft:coarse_dirt
 	podzol [block¦s] = minecraft:podzol
+	[nether] quartz ore¦s = minecraft:nether_quartz_ore
 
 	# Wood
 	# planks
@@ -298,34 +242,45 @@ building blocks after flattening:
 	[any] concrete [block¦s] = white concrete, orange concrete, magenta concrete, light blue concrete, yellow concrete, lime concrete, pink concrete, dark gray concrete, light gray concrete, cyan concrete, purple concrete, blue concrete, brown concrete, dark green concrete, red concrete, black concrete
 	[any] concrete powder [block¦s] = white concrete powder, orange concrete powder, magenta concrete powder, light blue concrete powder, yellow concrete powder, lime concrete powder, pink concrete powder, dark gray concrete powder, light gray concrete powder, cyan concrete powder, purple concrete powder, blue concrete powder, brown concrete powder, dark green concrete powder, red concrete powder, black concrete powder
 
-	#= Slabs
-	{waterloggable} {block half} {wood type} slab = -slab
-	{waterloggable} {block half} stone slab = minecraft:stone_slab
-	{waterloggable} {block half} sandstone slab = minecraft:sandstone_slab
-	{waterloggable} {block half} (petrified|stone) oak [wood[en]] slab = minecraft:petrified oak_slab
-	{waterloggable} {block half} cobble[stone] slab = minecraft:cobblestone_slab
-	{waterloggable} {block half} brick slab = minecraft:brick_slab
-	{waterloggable} {block half} stone[ ]brick slab = minecraft:stone_brick_slab
-	{waterloggable} {block half} nether brick slab = minecraft:nether_brick_slab
-	{waterloggable} {block half} [nether] quartz slab = minecraft:quartz_slab
-	{waterloggable} {block half} red sandstone slab = minecraft:red_sandstone_slab
-	{waterloggable} {block half} purpur slab = minecraft:purpur_slab
-	{waterloggable} {block half} [raw] prismarine slab¦s = minecraft:prismarine_slab
-	{waterloggable} {block half} prismarine brick slab¦s = minecraft:prismarine_brick_slab
-	{waterloggable} {block half} dark prismarine slab¦s = minecraft:dark_prismarine_slab
+	# Slabs
+	{slab}:
+		{default} = -[type=bottom]
+		top = -[type=top]
+		bottom = -[type=bottom]
+		double = -[type=double]
+	
+	{waterloggable} {slab} {wood type} slab = -slab
+	{waterloggable} {slab} stone slab = minecraft:stone_slab
+	{waterloggable} {slab} sandstone slab = minecraft:sandstone_slab
+	{waterloggable} {slab} (petrified|stone) oak [wood[en]] slab = minecraft:petrified oak_slab
+	{waterloggable} {slab} cobble[stone] slab = minecraft:cobblestone_slab
+	{waterloggable} {slab} brick slab = minecraft:brick_slab
+	{waterloggable} {slab} stone[ ]brick slab = minecraft:stone_brick_slab
+	{waterloggable} {slab} nether brick slab = minecraft:nether_brick_slab
+	{waterloggable} {slab} [nether] quartz slab = minecraft:quartz_slab
+	{waterloggable} {slab} red sandstone slab = minecraft:red_sandstone_slab
+	{waterloggable} {slab} purpur slab = minecraft:purpur_slab
+	{waterloggable} {slab} [raw] prismarine slab¦s = minecraft:prismarine_slab
+	{waterloggable} {slab} prismarine brick slab¦s = minecraft:prismarine_brick_slab
+	{waterloggable} {slab} dark prismarine slab¦s = minecraft:dark_prismarine_slab
 
 	# Stairs
-	{waterloggable} {block half} {directional} {wood type} stair¦s = -stairs
-	{waterloggable} {block half} {directional} cobble[stone] stair¦s = minecraft:cobblestone_stairs
-	{waterloggable} {block half} {directional} [red] brick stair¦s = minecraft:brick_stairs
-	{waterloggable} {block half} {directional} stone brick stair¦s = minecraft:stone_brick_stairs
-	{waterloggable} {block half} {directional} nether brick stair¦s = minecraft:nether_brick_stairs
-	{waterloggable} {block half} {directional} [nether] quartz stair¦s = minecraft:quartz_stairs
-	{waterloggable} {block half} {directional} prismarine brick stair¦s = minecraft:prismarine_brick_stairs
-	{waterloggable} {block half} {directional} purpur stair¦s = minecraft:purpur_stairs
-	{waterloggable} {block half} {directional} sandstone stair¦s = minecraft:sandstone_stairs
-	{waterloggable} {block half} {directional} prismarine stair¦s = minecraft:prismarine_stairs
-	{waterloggable} {block half} {directional} dark prismarine stair¦s = minecraft:dark_prismarine_stairs
+	{stairs}:
+		{default} = -[half=bottom]
+		top = -[half=top]
+		bottom = -[half=bottom]
+	
+	{waterloggable} {stairs} {directional} {wood type} stair¦s = -stairs
+	{waterloggable} {stairs} {directional} cobble[stone] stair¦s = minecraft:cobblestone_stairs
+	{waterloggable} {stairs} {directional} [red] brick stair¦s = minecraft:brick_stairs
+	{waterloggable} {stairs} {directional} stone brick stair¦s = minecraft:stone_brick_stairs
+	{waterloggable} {stairs} {directional} nether brick stair¦s = minecraft:nether_brick_stairs
+	{waterloggable} {stairs} {directional} [nether] quartz stair¦s = minecraft:quartz_stairs
+	{waterloggable} {stairs} {directional} prismarine brick stair¦s = minecraft:prismarine_brick_stairs
+	{waterloggable} {stairs} {directional} purpur stair¦s = minecraft:purpur_stairs
+	{waterloggable} {stairs} {directional} sandstone stair¦s = minecraft:sandstone_stairs
+	{waterloggable} {stairs} {directional} prismarine stair¦s = minecraft:prismarine_stairs
+	{waterloggable} {stairs} {directional} dark prismarine stair¦s = minecraft:dark_prismarine_stairs
 
 	# Construction/Decorative
 	([nether] quartz block[s]|block[s] of [nether] quartz) = minecraft:quartz_block
@@ -349,6 +304,66 @@ building blocks after flattening:
 	(lit pumpkin|jack(-| )o['](-| )lantern)¦s = minecraft:jack_o_lantern
 	melon [block]¦s = minecraft:melon
 
+# These were not changed in 1.13
+unchanged building blocks:
+	# Stones
+	stone [block¦s] = minecraft:stone
+
+	cobble[stone] [block¦s] = minecraft:cobblestone
+	moss[y] cobble[stone] [block¦s] = minecraft:mossy_cobblestone
+	any cobble[stone] [block¦s] = cobblestone, mossy cobblestone
+
+	# Sediments
+	dirt [block¦s] = minecraft:dirt
+	sand [block¦s] = minecraft:sand
+	gravel [block¦s] = minecraft:gravel
+	clay block¦s = minecraft:clay
+	mycelium [block¦s] = minecraft:mycelium
+
+	# Underground
+	gold ore¦s = minecraft:gold_ore
+	iron ore¦s = minecraft:iron_ore
+	coal ore¦s = minecraft:coal_ore
+	lapis [lazuli] ore¦s = minecraft:lapis_ore
+	diamond ore¦s = minecraft:diamond_ore
+	redstone ore¦s = minecraft:redstone_ore
+	emerald ore¦s = minecraft:emerald_ore
+	any ore = gold ore, iron ore, coal ore, lapis ore, diamond ore, redstone ore, emerald ore, nether quartz ore
+
+	obsidian [block¦s] = minecraft:obsidian
+	bedrock [block¦s] = minecraft:bedrock
+
+	# Mineral blocks
+	(gold block¦s|block¦s of gold) = minecraft:gold_block
+	(iron block¦s|block¦s of iron) = minecraft:iron_block
+	(coal block¦s|block¦s of coal) = minecraft:coal_block
+	(lapis [lazuli] block¦s|block¦s of lapis [lazuli]) = minecraft:lapis_block
+	(diamond block¦s|block¦s of diamond) = minecraft:diamond_block
+	(redstone block¦s|block¦s of redstone) = minecraft:redstone_block
+	(emerald block¦s|block¦s of emerald) = minecraft:emerald_block
+	([nether] quartz block¦s|block¦s of [nether] quartz) = minecraft:quartz_block
+
+	# Underwater
+	sponge¦s = minecraft:sponge
+	wet sponge¦s = minecraft:wet_sponge
+
+	# Construction/Decorative
+	[red] brick block¦s = minecraft:brick_block
+	[(plain|unstained|undyed)] glass [block¦s] = minecraft:glass
+	book[ ]shel(f|ves) = minecraft:bookshelf
+
+	# Nether
+	netherrack [block¦s] = minecraft:netherrack
+	soul sand [block¦s] = minecraft:soul_sand
+	glowstone [block¦s] = minecraft:glowstone
+	nether brick block¦s = minecraft:nether_brick
+
+	# Miscellaneous
+	ice [block¦s] = minecraft:ice
+	snow block¦s = minecraft:snow
+	hay [(bale|block)¦s] = minecraft:hay_block
+	packed ice [block¦s] = minecraft:packed_ice
+	end[ ]stone [block¦s] = minecraft:end_stone
 
 #== UPDATE-SPECIFICS
 # Building blocks added in 1.9 whose IDs have never changed. End City stuff, namely.
@@ -475,4 +490,5 @@ update aquatic:
 
 	# Miscellaneous
 	blue ice [block¦s] = minecraft:blue_ice
+	any ice [block¦s] = ice, packed ice, blue ice
 	dried kelp block¦s = minecraft:dried_kelp_block

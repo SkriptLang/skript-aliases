@@ -9,50 +9,50 @@ potions:
     awkward = - {"Potion": "minecraft:awkward"}
 
     night vision = - {"Potion": "minecraft:night_vision"}
-    (extended|long) night vision = - {"Potion": "minecraft:night_vision"}
+    (extended|long) night vision = - {"Potion": "minecraft:long_night_vision"}
 
     invisibility = - {"Potion": "minecraft:invisibility"}
     (extended|long) invisibility = - {"Potion": "minecraft:long_invisibility"}
 
     (leaping|jumping) = - {"Potion": "minecraft:leaping"}
     (extended|long) (leaping|jumping) = - {"Potion": "minecraft:long_leaping"}
-    (empowered|strong|tier (2|II)) (leaping|jumping) = - {"Potion": "minecraft:strong_leaping"}
+    (strong|upgraded|level 2) (leaping|jumping) = - {"Potion": "minecraft:strong_leaping"}
 
     fire resistance = - {"Potion": "minecraft:fire_resistance"}
-    (extended|long) fire resistance = - {"Potion": "minecraft:fire_resistance"}
+    (extended|long) fire resistance = - {"Potion": "minecraft:long_fire_resistance"}
 
     (speed|swiftness) = - {"Potion": "minecraft:swiftness"}
     (extended|long) (speed|swiftness) = - {"Potion": "minecraft:long_swiftness"}
-    (empowered|strong|tier (2|II)) (speed|swiftness) = - {"Potion": "minecraft:strong_swiftness"}
+    (strong|upgraded|level 2) (speed|swiftness) = - {"Potion": "minecraft:strong_swiftness"}
 
     slow[ness] = - {"Potion": "minecraft:slowness"}
     (extended|long) slow[ness] = - {"Potion": "minecraft:long_slowness"}
-    (empowered|strong|tier (2|II)) slow[ness] = - {"Potion": "minecraft:strong_slowness"}
+    (strong|upgraded|level 2) slow[ness] = - {"Potion": "minecraft:strong_slowness"}
 
     turtle master = - {"Potion": "minecraft:turtle_master"}
     (extended|long) turtle master = - {"Potion": "minecraft:long_turtle_master"}
-    (empowered|strong|tier (2|II)) turtle master = - {"Potion": "minecraft:strong_turtle_master"}
+    (strong|upgraded|level 2) turtle master = - {"Potion": "minecraft:strong_turtle_master"}
 
     water breathing = - {"Potion": "minecraft:water_breathing"}
     (extended|long) water breathing = - {"Potion": "minecraft:long_water_breathing"}
 
     heal(th|ing) = - {"Potion": "minecraft:healing"}
-    (empowered|strong|tier (2|II)) heal(th|ing) = - {"Potion": "minecraft:strong_healing"}
+    (strong|upgraded|level 2) heal(th|ing) = - {"Potion": "minecraft:strong_healing"}
 
     harming = - {"Potion": "minecraft:harming"}
-    (empowered|strong|tier (2|II)) harming = - {"Potion": "minecraft:strong_harming"}
+    (strong|upgraded|level 2) harming = - {"Potion": "minecraft:strong_harming"}
 
     poison[ing] = - {"Potion": "minecraft:poison"}
     (extended|long) poison[ing] = - {"Potion": "minecraft:long_poison"}
-    (empowered|strong|tier (2|II)) poison[ing] = - {"Potion": "minecraft:strong_poison"}
+    (strong|upgraded|level 2) poison[ing] = - {"Potion": "minecraft:strong_poison"}
 
     regen[eration] = - {"Potion": "minecraft:regeneration"}
     (extended|long) regen[eration] = - {"Potion": "minecraft:long_regeneration"}
-    (empowered|strong|tier (2|II)) regen[eration] = - {"Potion": "minecraft:strong_regeneration"}
+    (strong|upgraded|level 2) regen[eration] = - {"Potion": "minecraft:strong_regeneration"}
 
     strength = - {"Potion": "minecraft:strength"}
     (extended|long) strength = - {"Potion": "minecraft:long_strength"}
-    (empowered|strong|tier (2|II)) strength = - {"Potion": "minecraft:strong_strength"}
+    (strong|upgraded|level 2) strength = - {"Potion": "minecraft:strong_strength"}
 
     weak(ness|ening) = - {"Potion": "minecraft:weakness"}
     (extended|long) weak(ness|ening) = - {"Potion": "minecraft:long_weakness"}
@@ -89,10 +89,10 @@ unchanged ingredients:
 
 ingredients before flattening:
   minecraft version = 1.12.2 or older
-  (glistering|golden) melon[ slice]¦s = minecraft:speckled_melon
+  (glistering|gold[en]) melon[ slice]¦s = minecraft:speckled_melon
 
 ingredients after flattening:
-  (glistering|golden) melon[ slice]¦s = minecraft:glistering_melon_slice
+  (glistering|gold[en]) melon[ slice]¦s = minecraft:glistering_melon_slice
 
 update aquatic ingredients:
   minecraft version = 1.13 or newer
