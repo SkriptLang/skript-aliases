@@ -82,7 +82,7 @@ before flattening:
 	
 after flattening:
 	minecraft version = 1.13 or newer
-	[(flight|duration|flight duration) {firework types} ] firework [rocket]¦s = firework_rocket
+	[(flight|duration|flight duration) {firework types} ] firework [rocket]¦s = minecraft:firework_rocket
 
 plants:
 	pumpkin seeds = minecraft:pumpkin_seeds
@@ -93,15 +93,15 @@ plants:
 
 	wheat = minecraft:wheat
 	chorus fruit¦s = minecraft:chorus_fruit
-	popped chorus fruit¦s = minecraft:chorus_fruit_popped
+	popped chorus fruit¦s = minecraft:popped_chorus_fruit
 
-old buckets:
-	minecraft version = 1.12.2 or older
+unchanged buckets:
 	[empty] bucket¦s = minecraft:bucket
 	water bucket¦s = minecraft:water_bucket
 	lava bucket¦s = minecraft:lava_bucket
 	milk [bucket¦s] = minecraft:milk_bucket
 	any bucket = empty bucket, water bucket, lava bucket, milk
+	
 new buckets:
 	minecraft version = 1.13 or newer
 	tropical fish bucket¦s = minecraft:tropical_fish_bucket
@@ -131,7 +131,7 @@ new music discs:
 	[music] (disc|record) strad = minecraft:music_disc_strad
 	[music] (disc|record) wait = minecraft:music_disc_wait
 	[music] (disc|record) ward = minecraft:music_disc_ward
-	any [music] (disc|record) = music disc 11, music disc 13, music disc blocks, music disc cat, musici disc chirp, music disc far, music disc mall, music disc mellohi, music disc stal, music disc strad, music disc wait, music disc ward
+	any [music] (disc|record) = music disc 11, music disc 13, music disc blocks, music disc cat, music disc chirp, music disc far, music disc mall, music disc mellohi, music disc stal, music disc strad, music disc wait, music disc ward
 	
 old music discs:
 	minecraft version = 1.12 or older
@@ -166,7 +166,7 @@ new dyes:
 	light blue dye¦s = minecraft:light_blue_dye
 	magenta dye¦s = minecraft:magenta_dye
 	orange dye¦s = minecraft:orange_dye
-	white dye¦s = minecraft:bonemeal
+	white dye¦s = minecraft:bone_meal
 	any dye = black dye, red dye, green dye, brown dye, purple dye, cyan dye, light gray dye, gray dye, pink dye, lime dye, yellow dye, light blue dye, magenta dye, orange dye, white dye
 	
 old dyes:
@@ -198,8 +198,8 @@ aquatic update spawn eggs:
 	(chicken spawn egg¦s|spawn chicken) = minecraft:chicken_spawn_egg
 	(cod[ spawn] egg¦s|spawn cod) = minecraft:cod_spawn_egg
 	(cow[ spawn] egg¦s|spawn cow) = minecraft:cow_spawn_egg
-	(creeper[ spawn]|spawn creeper) egg = minecraft:creeper_spawn_egg
-	(dolphin[ spawn]|spawn dolphin) egg = minecraft:dolphin_spawn_egg
+	(creeper[ spawn] egg|spawn creeper) = minecraft:creeper_spawn_egg
+	(dolphin[ spawn] egg|spawn dolphin) = minecraft:dolphin_spawn_egg
 	(donkey[ spawn] egg¦s|spawn donkey) = minecraft:donkey_spawn_egg
 	(drowned[ spawn] egg¦s|spawn drowned) = minecraft:drowned_spawn_egg
 	(elder guardian[ spawn] egg¦s|spawn elder guardian) = minecraft:elder_guardian_spawn_egg
@@ -214,7 +214,7 @@ aquatic update spawn eggs:
 	(magma cube[ spawn] egg¦s|spawn magma cube) = minecraft:magma_cube_spawn_egg
 	((mooshroom|mushroom cow)[ spawn] egg¦s|spawn (mooshroom|mushroom cow)) = minecraft:mooshroom_spawn_egg
 	(mule[ spawn] egg¦s|spawn mule) = minecraft:mule_spawn_egg
-	(ocelot[ spawn] egg¦s|spawn ocelot) minecraft:ocelot_spawn_egg
+	(ocelot[ spawn] egg¦s|spawn ocelot) = minecraft:ocelot_spawn_egg
 	(parrot[ spawn] egg¦s|spawn parrot) = minecraft:parrot_spawn_egg
 	(phantom[ spawn] egg¦s|spawn phantom) = minecraft:phantom_spawn_egg
 	(pig[ spawn] egg¦s|spawn pig) = minecraft:pig_spawn_egg
@@ -242,8 +242,8 @@ aquatic update spawn eggs:
 	(zombie[ spawn] egg¦s|spawn zombie) = minecraft:zombie_spawn_egg
 	(zombi(e|fied) horse[ spawn] egg¦s|spawn zombi(e|fied) horse) = minecraft:zombie_horse_spawn_egg
 	((zombi(e|fied) pig[man])[ spawn] egg¦s|spawn (zombi(e|fied) pig[man])) = minecraft:zombie_pigman_spawn_egg
-	((zombi(e|fied) villager[ spawn] egg¦s|spawn (zombi(e|fied) villager) = minecraft:zombie_villager_spawn_egg
-	any spawn egg = spawn bat, spawn blaze, spawn cave spider, spawn chicken, spawn cow, spawn creeper, spawn enderman, spawn endermite, spawn ghast, spawn guardian, spawn horse, spawn magma cube, spawn mooshroom, ocelot, spawn pig, spawn rabbit, spawn sheep, spawn silverfish, spawn skeleton, spawn slime, spawn spider, spawn squid, spawn villager, spawn witch, spawn wolf, spawn zombie, spawn shulker, spawn polar bear, spawn donkey, spawn elder guardian, spawn evoker, spawn husk, spawn llama, spawn mule, spawn polar bear, spawn shulker, spawn skeleton horse, spawn stray, spawn vex, spawn vindicator, spawn wither skeleton, spawn zombie horse, spawn zombie villager, spawn parrot, spawn cod, spawn dolphin, spawn drowned, spawn phantom, spawn pufferfish, spawn salmon, spawn tropical fish, spawn turtle
+	(zombi(e|fied) villager[ spawn] egg¦s|spawn (zombi(e|fied) villager)) = minecraft:zombie_villager_spawn_egg
+	any spawn egg = spawn bat, spawn blaze, spawn cave spider, spawn chicken, spawn cow, spawn creeper, spawn enderman, spawn endermite, spawn ghast, spawn guardian, spawn horse, spawn magma cube, spawn mooshroom, spawn ocelot, spawn pig, spawn rabbit, spawn sheep, spawn silverfish, spawn skeleton, spawn slime, spawn spider, spawn squid, spawn villager, spawn witch, spawn wolf, spawn zombie, spawn shulker, spawn polar bear, spawn donkey, spawn elder guardian, spawn evoker, spawn husk, spawn llama, spawn mule, spawn polar bear, spawn shulker, spawn skeleton horse, spawn stray, spawn vex, spawn vindicator, spawn wither skeleton, spawn zombie horse, spawn zombie villager, spawn parrot, spawn cod, spawn dolphin, spawn drowned, spawn phantom, spawn pufferfish, spawn salmon, spawn tropical fish, spawn turtle
 	
 world of color update spawn eggs:
 	minecraft version = 1.12 to 1.12.2
@@ -310,7 +310,7 @@ bountiful update spawn eggs:
 	(horse[ spawn] egg¦s|spawn horse) = minecraft:horse_spawn_egg {Damage:100}
 	(magma cube[ spawn] egg¦s|spawn magma cube) = minecraft:spawn_egg {Damage:62}
 	((mooshroom|mushroom cow)[ spawn] egg¦s|spawn (mooshroom|mushroom cow)) = minecraft:spawn_egg {Damage:96}
-	(ocelot[ spawn] egg¦s|spawn ocelot) minecraft:spawn_egg {Damage:98}
+	(ocelot[ spawn] egg¦s|spawn ocelot) = minecraft:spawn_egg {Damage:98}
 	(pig[ spawn] egg¦s|spawn pig) = minecraft:pig_spawn_egg {Damage:90}
 	(rabbit[ spawn] egg¦s|spawn rabbit) = minecraft:spawn_egg {Damage:101}
 	(sheep[ spawn] egg¦s|spawn sheep) = minecraft:spawn_egg {Damage:91}

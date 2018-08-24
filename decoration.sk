@@ -118,6 +118,7 @@ decoratives before flattening:
 	# Miscellaneous
 	{attached} torch¦es = minecraft:torch
 	chest¦s = minecraft:chest
+	trapped chest¦s = minecraft:trapped_chest
 	(wet|moist|hydrated) farmland = minecraft:farmland {Damage:7}
 	unlit furnace¦s = minecraft:furnace
 	lit furnace¦s = minecraft:lit_furnace
@@ -141,12 +142,12 @@ decoratives before flattening:
 	
 	iron bar¦s = minecraft:iron_bars
 	[plain] glass pane¦s = minecraft:glass_pane
-	(water[ ]lil(y|ies)|lily pad¦s) = minecraft:waterlily
+	(water lil(y|ies)|lily pad¦s) = minecraft:waterlily
 	ender chest¦s = minecraft:ender_chest
 	anvil¦s = minecraft:anvil
 	slime block¦s = minecraft:slime
 	bed [block]¦s = minecraft:bed
-
+	any bed¦s = minecraft:bed
 
 # Decoratives whose IDs were changed as part of the flattening.
 decoratives after flattening:
@@ -242,6 +243,7 @@ decoratives after flattening:
 		unoccupied = -[occupied=false]
 		occupied = -[occupied=true]
 	{directional} {bed occupied} {colored} bed {bed part} = -bed
+	any bed = white bed # TODO implement something to explode {colored}
 
 	# Flower pots now each have their own ID!
 	(potted poppy|flower pot with poppy) = minecraft:potted_poppy
@@ -292,12 +294,16 @@ decoratives after flattening:
 	# State dependent - aliases we can easily make more detailed than the old aliases thanks to states
 	dead chorus flower¦s = minecraft:chorus_flower[age=5]
 	{waterloggable} {directional} chest¦s = minecraft:chest
+	{directional} {waterloggable} trapped chest¦s = minecraft:trapped_chest
 	{waterloggable} {directional} ladder¦s = minecraft:ladder
 	{waterloggable} {directional} ender chest¦s = minecraft:ender_chest
-	{directional} (regular|complete) anvil¦s = minecraft:anvil
+	{directional} [(unbroken|regular)] anvil¦s = minecraft:anvil
 	{directional} chipped anvil¦s = minecraft:chipped_anvil
 	{directional} damaged anvil¦s = minecraft:damaged_anvil
+	any anvil¦s = anvil, chipped anvil, damaged anvil
 
+chest categories:
+	any chest = chest, trapped chest, ender chest
 
 # New decoratives introduced in 1.9
 combat update:

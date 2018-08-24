@@ -1,5 +1,64 @@
 # The blocks whose ID layout hasn't changed for a long time (at least since 1.8).
 
+# These were not changed in 1.13
+unchanged building blocks:
+	# Stones
+	stone [block¦s] = minecraft:stone
+
+	cobble[stone] [block¦s] = minecraft:cobblestone
+	moss[y] cobble[stone] [block¦s] = minecraft:mossy_cobblestone
+	any cobble[stone] [block¦s] = cobblestone, mossy cobblestone
+
+	# Sediments
+	dirt [block¦s] = minecraft:dirt
+	sand [block¦s] = minecraft:sand
+	gravel [block¦s] = minecraft:gravel
+	clay block¦s = minecraft:clay
+	mycelium [block¦s] = minecraft:mycelium
+
+	# Underground
+	gold ore¦s = minecraft:gold_ore
+	iron ore¦s = minecraft:iron_ore
+	coal ore¦s = minecraft:coal_ore
+	lapis [lazuli] ore¦s = minecraft:lapis_ore
+	diamond ore¦s = minecraft:diamond_ore
+	redstone ore¦s = minecraft:redstone_ore
+	emerald ore¦s = minecraft:emerald_ore
+
+	obsidian [block¦s] = minecraft:obsidian
+	bedrock [block¦s] = minecraft:bedrock
+
+	# Mineral blocks
+	(gold block¦s|block¦s of gold) = minecraft:gold_block
+	(iron block¦s|block¦s of iron) = minecraft:iron_block
+	(coal block¦s|block¦s of coal) = minecraft:coal_block
+	(lapis [lazuli] block¦s|block¦s of lapis [lazuli]) = minecraft:lapis_block
+	(diamond block¦s|block¦s of diamond) = minecraft:diamond_block
+	(redstone block¦s|block¦s of redstone) = minecraft:redstone_block
+	(emerald block¦s|block¦s of emerald) = minecraft:emerald_block
+	([nether] quartz block¦s|block¦s of [nether] quartz) = minecraft:quartz_block
+
+	# Underwater
+	sponge¦s = minecraft:sponge
+	wet sponge¦s = minecraft:wet_sponge
+
+	# Construction/Decorative
+	[(plain|unstained|undyed)] glass [block¦s] = minecraft:glass
+	book[ ]shel(f|ves) = minecraft:bookshelf
+
+	# Nether
+	netherrack [block¦s] = minecraft:netherrack
+	soul sand [block¦s] = minecraft:soul_sand
+	glowstone [block¦s] = minecraft:glowstone
+	nether brick block¦s = minecraft:nether_brick
+
+	# Miscellaneous
+	ice [block¦s] = minecraft:ice
+	snow block¦s = minecraft:snow
+	hay [(bale|block)¦s] = minecraft:hay_block
+	packed ice [block¦s] = minecraft:packed_ice
+	end[ ]stone [block¦s] = minecraft:end_stone
+
 # 1.13 changed the IDs of a lot of blocks since they're no longer defined by data value.
 # This section is for blocks that had a different ID prior to 1.13.
 old blocks before flattening:
@@ -61,16 +120,6 @@ old blocks before flattening:
 	jungle [wood[en]] bark [block¦s] = minecraft:log {Damage:15}
 	acacia [wood[en]] bark [block¦s] = minecraft:log2 {Damage:12}
 	dark oak [wood[en]] bark [block¦s] = minecraft:log2 {Damage:13}
-
-	any oak log = oak log, east-west oak log, north-south oak log, oak bark
-	any spruce log = spruce log, east-west spruce log, north-south spruce log, spruce bark
-	any birch log = birch log, east-west birch log, north-south birch log, birch bark
-	any jungle log = jungle log, east-west jungle log, north-south jungle log, jungle bark
-	any acacia log = acacia log, east-west acacia log, north-south acacia log, acacia bark
-	any dark oak log = dark oak log, east-west dark oak log, north-south dark oak log, dark oak bark
-
-	[any] bark = oak bark, spruce bark, birch bark, jungle bark, acacia bark, dark oak bark
-	[any] log = any oak log, any spruce log, any birch log, any jungle log, any acacia log, any dark oak log
 
 	# Desert
 	red sand [block¦s] = minecraft:sand {Damage:1}
@@ -211,15 +260,15 @@ building blocks after flattening:
 
 	# Desert
 	red sand [block¦s] = minecraft:red_sand
-	normal sandstone [block¦s] = minecraft:sandstone
+	[normal] sandstone [block¦s] = minecraft:sandstone
 	chiseled sandstone [block¦s] = minecraft:chiseled_sandstone
 	(smooth|cut) sandstone [block¦s] = minecraft:cut_sandstone
 	[any] sandstone [block¦s] = sandstone, chiseled sandstone, cut sandstone
 
-	normal red sandstone [block¦s] = minecraft:red_sandstone
+	[normal] red sandstone [block¦s] = minecraft:red_sandstone
 	red chiseled sandstone [block¦s] = minecraft:chiseled_red_sandstone
 	(smooth|cut) red sandstone [block¦s] = minecraft:cut_red_sandstone
-	[any] red sandstone [block¦s] = red sandstone, red chiseled sandstone, red cut sandstone
+	[any] red sandstone [block¦s] = red sandstone, red chiseled sandstone, cut red sandstone
 
 	# Glass
 	{colored} stained glass [block¦s] = -stained_glass
@@ -234,7 +283,7 @@ building blocks after flattening:
 	[any] (stained clay|terracotta) = white terracotta, orange terracotta, magenta terracotta, light blue terracotta, yellow terracotta, lime terracotta, pink terracotta, dark gray terracotta, light gray terracotta, cyan terracotta, purple terracotta, blue terracotta, brown terracotta, dark green terracotta, red terracotta, black terracotta
 
 	[un(dyed|stained)] (hard[ened] clay|terracotta) [block¦s] = minecraft:terracotta
-	any (hard[ened] clay|terracotta) [block¦s] = any stained terracotta, unstained terracotta
+	any (hard[ened] clay|terracotta) [block¦s] = any terracotta, unstained terracotta
 
 	# Concrete
 	{colored} concrete = -concrete
@@ -303,67 +352,22 @@ building blocks after flattening:
 	(unlit|carved) pumpkin¦s = minecraft:carved_pumpkin
 	(lit pumpkin|jack(-| )o['](-| )lantern)¦s = minecraft:jack_o_lantern
 	melon [block]¦s = minecraft:melon
+	[red] brick block¦s = minecraft:bricks
+	
+# Categories for items that exist in both 1.13 and before but with different ids
+categories:
+	any oak log = oak log, east-west oak log, north-south oak log, oak bark
+	any spruce log = spruce log, east-west spruce log, north-south spruce log, spruce bark
+	any birch log = birch log, east-west birch log, north-south birch log, birch bark
+	any jungle log = jungle log, east-west jungle log, north-south jungle log, jungle bark
+	any acacia log = acacia log, east-west acacia log, north-south acacia log, acacia bark
+	any dark oak log = dark oak log, east-west dark oak log, north-south dark oak log, dark oak bark
 
-# These were not changed in 1.13
-unchanged building blocks:
-	# Stones
-	stone [block¦s] = minecraft:stone
-
-	cobble[stone] [block¦s] = minecraft:cobblestone
-	moss[y] cobble[stone] [block¦s] = minecraft:mossy_cobblestone
-	any cobble[stone] [block¦s] = cobblestone, mossy cobblestone
-
-	# Sediments
-	dirt [block¦s] = minecraft:dirt
-	sand [block¦s] = minecraft:sand
-	gravel [block¦s] = minecraft:gravel
-	clay block¦s = minecraft:clay
-	mycelium [block¦s] = minecraft:mycelium
-
-	# Underground
-	gold ore¦s = minecraft:gold_ore
-	iron ore¦s = minecraft:iron_ore
-	coal ore¦s = minecraft:coal_ore
-	lapis [lazuli] ore¦s = minecraft:lapis_ore
-	diamond ore¦s = minecraft:diamond_ore
-	redstone ore¦s = minecraft:redstone_ore
-	emerald ore¦s = minecraft:emerald_ore
+	[any] bark = oak bark, spruce bark, birch bark, jungle bark, acacia bark, dark oak bark
+	[any] log = any oak log, any spruce log, any birch log, any jungle log, any acacia log, any dark oak log
+	[any] normal log = any log # 1.13 adds some not so normal log types
+	
 	any ore = gold ore, iron ore, coal ore, lapis ore, diamond ore, redstone ore, emerald ore, nether quartz ore
-
-	obsidian [block¦s] = minecraft:obsidian
-	bedrock [block¦s] = minecraft:bedrock
-
-	# Mineral blocks
-	(gold block¦s|block¦s of gold) = minecraft:gold_block
-	(iron block¦s|block¦s of iron) = minecraft:iron_block
-	(coal block¦s|block¦s of coal) = minecraft:coal_block
-	(lapis [lazuli] block¦s|block¦s of lapis [lazuli]) = minecraft:lapis_block
-	(diamond block¦s|block¦s of diamond) = minecraft:diamond_block
-	(redstone block¦s|block¦s of redstone) = minecraft:redstone_block
-	(emerald block¦s|block¦s of emerald) = minecraft:emerald_block
-	([nether] quartz block¦s|block¦s of [nether] quartz) = minecraft:quartz_block
-
-	# Underwater
-	sponge¦s = minecraft:sponge
-	wet sponge¦s = minecraft:wet_sponge
-
-	# Construction/Decorative
-	[red] brick block¦s = minecraft:brick_block
-	[(plain|unstained|undyed)] glass [block¦s] = minecraft:glass
-	book[ ]shel(f|ves) = minecraft:bookshelf
-
-	# Nether
-	netherrack [block¦s] = minecraft:netherrack
-	soul sand [block¦s] = minecraft:soul_sand
-	glowstone [block¦s] = minecraft:glowstone
-	nether brick block¦s = minecraft:nether_brick
-
-	# Miscellaneous
-	ice [block¦s] = minecraft:ice
-	snow block¦s = minecraft:snow
-	hay [(bale|block)¦s] = minecraft:hay_block
-	packed ice [block¦s] = minecraft:packed_ice
-	end[ ]stone [block¦s] = minecraft:end_stone
 
 #== UPDATE-SPECIFICS
 # Building blocks added in 1.9 whose IDs have never changed. End City stuff, namely.
@@ -436,17 +440,17 @@ update aquatic:
 		(living|alive) (horn|yellow) coral = minecraft:horn_coral_
 
 	# Coral blocks
-	{dead coral type} block¦s = -block
-	{living coral type} block¦s = -block
+	{dead coral type} [block]¦s = -block
+	{living coral type} [block]¦s = -block
 
-	[any] (tube|blue) coral block¦s = dead tube coral block, living tube coral block
-	[any] (brain|pink) coral block¦s = dead brain coral block, living brain coral block
-	[any] (bubble|magenta) coral block¦s = dead bubble coral block, living bubble coral block
-	[any] (fire|red) coral block¦s = dead fire coral block, living fire coral block
-	[any] (horn|yellow) coral block¦s = dead horn coral block, living horn coral block
+	[any] (tube|blue) coral [block]¦s = dead tube coral block, living tube coral block
+	[any] (brain|pink) coral [block]¦s = dead brain coral block, living brain coral block
+	[any] (bubble|magenta) coral [block]¦s = dead bubble coral block, living bubble coral block
+	[any] (fire|red) coral [block]¦s = dead fire coral block, living fire coral block
+	[any] (horn|yellow) coral [block]¦s = dead horn coral block, living horn coral block
 
-	[any] dead coral block¦s = dead tube coral, dead brain coral, dead bubble coral, dead fire coral, dead horn coral
-	[any] living coral block¦s = living tube coral, living brain coral, living bubble coral, living fire coral, living horn coral
+	[any] dead coral [block]¦s = dead tube coral, dead brain coral, dead bubble coral, dead fire coral, dead horn coral
+	[any] living coral [block]¦s = living tube coral, living brain coral, living bubble coral, living fire coral, living horn coral
 	[any] coral block¦s = any dead coral, any living coral
 
 	# Coral plants (2D). These don't come dead since they can only exist in water. These also don't
@@ -478,11 +482,11 @@ update aquatic:
 	[any] coral fan¦s = any dead coral fan, any living coral fan
 
 	# Coral groups
-	[any] (tube|blue) coral = any tube coral block, any tube coral plant, any tube coral fan
-	[any] (brain|pink) coral = any brain coral block, any brain coral plant, any brain coral fan
-	[any] (bubble|magenta) coral = any bubble coral block, any bubble coral plant, any bubble coral fan
-	[any] (fire|red) coral = any fire coral block, any fire coral plant, any fire coral fan
-	[any] (horn|yellow) coral = any horn coral block, any horn coral plant, any horn coral fan
+	[any] (tube|blue) coral = any tube coral block, tube coral plant, any tube coral fan
+	[any] (brain|pink) coral = any brain coral block, brain coral plant, any brain coral fan
+	[any] (bubble|magenta) coral = any bubble coral block, bubble coral plant, any bubble coral fan
+	[any] (fire|red) coral = any fire coral block, fire coral plant, any fire coral fan
+	[any] (horn|yellow) coral = any horn coral block, horn coral plant, any horn coral fan
 
 	[any] dead coral = any dead coral block, any dead coral fan
 	[any] living coral = any living coral block, any coral plant, any living coral fan

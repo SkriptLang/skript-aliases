@@ -71,7 +71,7 @@ redstone before flattening:
 	{gate state} jungle [wood[en]] fence gate¦s = minecraft:jungle_fence_gate
 	{gate state} acacia [wood[en]] fence gate¦s = minecraft:acacia_fence_gate
 	{gate state} dark oak [wood[en]] fence gate¦s = minecraft:dark_oak_fence_gate
-	[any] [wood[en]] gate¦s = oak gate, spruce gate, birch gate, jungle gate, acacia gate, dark oak gate
+	[any] [fence] gate¦s = oak gate, spruce gate, birch gate, jungle gate, acacia gate, dark oak gate
 	
 	{door state}:
 		{default} = - {Damage:0}
@@ -111,7 +111,6 @@ redstone before flattening:
 	# Misc activatables/redstone components
 	note block¦s = minecraft:noteblock
 	tripwire hook¦s = minecraft:tripwire_hook
-	trapped chest¦s = minecraft:trapped_chest
 	(piston extension|block 36|moving piston|moving block¦s) = minecraft:piston_extension
 
 redstone after flattening:
@@ -142,7 +141,7 @@ redstone after flattening:
 
 	# Fence gates
 	{openable} {powerable} {wood type} [fence] gate¦s = -fence_gate
-	[any] [wood[en]] gate¦s = oak gate, spruce gate, birch gate, jungle gate, acacia gate, dark oak gate
+	[any] [fence] gate¦s = oak gate, spruce gate, birch gate, jungle gate, acacia gate, dark oak gate
 
 	# Doors
 	{directional} {block half} {openable} {powerable} {wood type} door¦s = -door
@@ -167,7 +166,6 @@ redstone after flattening:
 	# Misc activatables
 	note block¦s = minecraft:note_block
 	{directional} {powerable} tripwire hook¦s = minecraft:tripwire_hook
-	{directional} {waterloggable} trapped chest¦s = minecraft:trapped_chest
 	inverted daylight (detector|sensor)¦s = minecraft:daylight_detector[inverted=true]
 	(piston extension|block 36|moving piston|moving block¦s) = minecraft:moving_piston
 	
