@@ -14,6 +14,7 @@ unlisted blocks:
 unlisted before flattening:
 	minecraft version = 1.12.2 or older
 	[nether] portal [block¦s] = minecraft:portal
+	[(mob|monster)] spawner¦s = minecraft:mob_spawner
 
 	{command block direction}:
 		{default} = - {Damage:1}
@@ -60,6 +61,7 @@ exploration update unlisted blocks before flattening:
 unlisted after flattening:
 	minecraft version = 1.13 or newer
 	[nether] portal [block¦s] = minecraft:nether_portal
+	[(mob|monster)] spawner¦s = minecraft:spawner
 
 	{conditional}:
 		{default} = -[conditional=false]
