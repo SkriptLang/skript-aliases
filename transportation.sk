@@ -1,8 +1,8 @@
-boat 8:
+boat:
 	minecraft version = 1.8
-	[oak] boat¦s = minecraft:boat
+	[oak ]boat¦s = minecraft:boat
 
-boats 9-12:
+boats:
 	minecraft version = 1.9 to 1.12
 	oak boat¦s = minecraft:boat
 	acacia boat¦s = minecraft:boat_acacia
@@ -12,8 +12,8 @@ boats 9-12:
 	birch boat¦s = minecraft:boat_birch
 	[any] boat = oak boat, acacia boat, dark oak boat, jungle boat, spruce boat, birch boat
 
-boats 13:
-	minecraft version = 1.13 and newer
+boats new:
+	minecraft version = 1.13 or newer
 	oak boat¦s = minecraft:oak_boat
 	acacia boat¦s = minecraft:acacia_boat
 	dark oak boat¦s = minecraft:dark_oak_boat
