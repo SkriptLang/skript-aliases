@@ -74,7 +74,7 @@ rails before flattening:
 	({rail straight}|{rail powered}) activator [minecart] (rail|track)¦s = minecraft:activator_rail
 	activator [minecart] (rail|track) item¦s = minecraft:activator_rail
 
-rails after flattening
+rails after flattening:
 	minecraft version = 1.13 or newer
 
 	{rail straight}:
