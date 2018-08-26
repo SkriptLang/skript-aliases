@@ -6,7 +6,6 @@ unchanged redstone:
 	redstone (dust|item)¦s = minecraft:redstone
 	any redstone item = redstone block, redstone item
 
-	[redstone] lever¦s = minecraft:lever
 	stone pressure plate¦s = minecraft:stone_pressure_plate
 	(gold[en]|light weighted) pressure plate¦s = minecraft:light_weighted_pressure_plate
 	(iron|heavy weighted) pressure plate¦s = minecraft:heavy_weighted_pressure_plate
@@ -17,7 +16,7 @@ unchanged redstone:
 	{orientable} dropper¦s = minecraft:dropper
 	tnt [block¦s] = minecraft:tnt
 	hopper¦s = minecraft:hopper
-	
+
 	iron trapdoor¦s = minecraft:iron_trapdoor
 
 	{orientable} [(normal|non-sticky)] piston¦s = minecraft:piston
@@ -25,25 +24,25 @@ unchanged redstone:
 	{orientable} piston head¦s = minecraft:piston_head
 
 redstone before flattening:
-	minecraft version = 1.12 or older
+	minecraft version = 1.12.2 or older
 	# Repeater
 	(inactive|unpowered) [redstone] repeater¦s = minecraft:unpowered_repeater
 	(active|powered) [redstone] repeater¦s = minecraft:powered_repeater
 	[redstone] repeater item¦s = minecraft:repeater
 	[any] [redstone] repeater¦s = unpowered repeater, powered repeater, repeater item
 
-	# Comparator. Note that the powered_comparator block isn't even used (at least in 1.12 where I
-	# tested), which is why the aliases for it are limited.
+	# Comparator. Note that the powered_comparator block isn't even used.
 	powered comparator = minecraft:powered_comparator
 
 	[(inactive|unpowered)] [redstone] comparator [item]¦s = minecraft:comparator
 	(active|powered) [redstone] comparator¦s = minecraft:comparator {Damage:4}
 	any [redstone] comparator¦s = unpowered comparator, powered comparator
 
-	# Buttons
+	# Buttons & levers
 	{attached toggleable} [oak] wood[en] button¦s = minecraft:wooden_button
 	{attached toggleable} stone button¦s = minecraft:stone_button
 	[any] button = stone button, wood button
+	[redstone] lever¦s = minecraft:lever
 
 	# Pressure plates
 	[oak] wood[en] pressure plate¦s = minecraft:wooden_pressure_plate
@@ -72,7 +71,7 @@ redstone before flattening:
 	{gate state} acacia [wood[en]] fence gate¦s = minecraft:acacia_fence_gate
 	{gate state} dark oak [wood[en]] fence gate¦s = minecraft:dark_oak_fence_gate
 	[any] [fence] gate¦s = oak gate, spruce gate, birch gate, jungle gate, acacia gate, dark oak gate
-	
+
 	{door state}:
 		{default} = - {Damage:0}
 		[closed] east[ward] [facing] [bottom] = - {Damage:0}
@@ -168,7 +167,8 @@ redstone after flattening:
 	{directional} {powerable} tripwire hook¦s = minecraft:tripwire_hook
 	inverted daylight (detector|sensor)¦s = minecraft:daylight_detector[inverted=true]
 	(piston extension|block 36|moving piston|moving block¦s) = minecraft:moving_piston
-	
+	{powerable} {attached} {directional} [redstone] lever¦s = minecraft:lever
+
 categories:
 	[any] daylight (detector|sensor)¦s = normal daylight detector, inverted daylight detector
 	[any] fence part = any fence, any gate # Fences come from decoration.sk

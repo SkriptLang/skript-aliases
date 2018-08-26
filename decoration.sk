@@ -125,13 +125,13 @@ decoratives before flattening:
 	unlit furnace¦s = minecraft:furnace
 	lit furnace¦s = minecraft:lit_furnace
 	[any] furnace¦s = unlit furnace, lit furnace
-	
+
 	ladder item¦s = minecraft:ladder
 	south[ward] facing ladder = minecraft:ladder {Damage:0}
 	north[ward] facing ladder = minecraft:ladder {Damage:3}
 	east[ward] facing ladder = minecraft:ladder {Damage:4}
 	west[ward] facing ladder = minecraft:ladder {Damage:5}
-	
+
 	snow layer¦s = minecraft:snow_layer
 	(1|one) thick snow layer = minecraft:snow_layer {Damage:0}
 	(2|two) thick snow layer = minecraft:snow_layer {Damage:1}
@@ -141,7 +141,7 @@ decoratives before flattening:
 	(6|six) thick snow layer = minecraft:snow_layer {Damage:5}
 	(7|seven) thick snow layer = minecraft:snow_layer {Damage:6}
 	(8|eight) thick snow layer = minecraft:snow_layer {Damage:7}
-	
+
 	iron bar¦s = minecraft:iron_bars
 	[plain] glass pane¦s = minecraft:glass_pane
 	(water lil(y|ies)|lily pad¦s) = minecraft:waterlily
@@ -215,7 +215,7 @@ decoratives after flattening:
 		filled = -[eye=true]
 	{end portal eye state} {directional} end portal frame¦s [block] = minecraft:end_portal_frame
 	end portal frame item¦s = minecraft:end_portal_frame
-	
+
 
 	# Cobble walls
 	{waterloggable} cobblestone wall¦s = minecraft:cobblestone_wall
@@ -234,7 +234,7 @@ decoratives after flattening:
 
 	# Signs
 	{waterloggable} {directional} wall sign¦s = minecraft:wall_sign
-	{waterloggable} [floor] sign¦s = minecraft:sign
+	{waterloggable} {rotatable} [floor] sign¦s = minecraft:sign
 	any sign¦s = wall sign, floor sign
 
 	# Beds
@@ -279,7 +279,7 @@ decoratives after flattening:
 	(wet|moist|hydrated) farmland = minecraft:farmland[moisture=7]
 	{directional} {lightable} furnace¦s = minecraft:furnace
 	[any] furnace¦s = lit furnace, unlit furnace
-	
+
 	snow layer¦s = minecraft:snow
 	(1|one) thick snow layer = minecraft:snow[layers=1]
 	(2|two) thick snow layer = minecraft:snow[layers=2]
@@ -289,7 +289,7 @@ decoratives after flattening:
 	(6|six) thick snow layer = minecraft:snow[layers=6]
 	(7|seven) thick snow layer = minecraft:snow[layers=7]
 	(8|eight) thick snow layer = minecraft:snow[layers=8]
-	
+
 	{waterloggable} iron bar¦s = minecraft:iron_bars
 	{waterloggable} [plain] glass pane¦s = minecraft:glass_pane
 	(water[ ]lil(y|ies)|lily pad¦s) = minecraft:lily_pad
@@ -352,6 +352,7 @@ exploration update after flattening:
 update aquatic:
 	minecraft version = 1.13 or newer
 	seagrass¦es = minecraft:seagrass
+	tall seagrass¦es = minecraft:tall_seagrass
 
 	# This allows for e.g. "waterlogged pair of sea pickles" or "dry singular sea pickle"
 	{pickle count}:
@@ -360,26 +361,21 @@ update aquatic:
 		(pair of|[bundle of] two) = -[pickles=2]
 		(trio of|[bundle of] three) = -[pickles=3]
 		[bundle of] four = -[pickles=4]
-	({waterloggable} {pickle count}|{pickle count} {waterloggable}) [sea][ ]pickle¦s = minecraft:sea_pickle
-	
-unchanged orientations:
-	{skull floor orientations}:
-		north[ward] [rotated] = - {Damage:1,Rot:0}
-		north-northeast[ward] [rotated] = - {Damage:1,Rot:1}
-		northeast[ward] [rotated] = - {Damage:1,Rot:2}
-		east-northeast[ward] [rotated] = - {Damage:1,Rot:3}
-		east[ward] [rotated] = - {Damage:1,Rot:4}
-		east-southeast[ward] [rotated] = - {Damage:1,Rot:5}
-		southeast[ward] [rotated] = - {Damage:1,Rot:6}
-		south-southeast[ward] [rotated] = - {Damage:1,Rot:7}
-		south[ward] [rotated] = - {Damage:1,Rot:8}
-		south-southwest[ward] [rotated] = - {Damage:1,Rot:9}
-		southwest[ward] [rotated] = - {Damage:1,Rot:10}
-		west-southwest[ward] [rotated] = - {Damage:1,Rot:11}
-		west[ward] [rotated] = - {Damage:1,Rot:12}
-		west-northwest[ward] [rotated] = - {Damage:1,Rot:13}
-		northwest[ward] [rotated] = - {Damage:1,Rot:14}
-		north-northwest[ward] [rotated] = - {Damage:1,Rot:15}
+	({waterloggable} {pickle count}|{pickle count} {waterloggable}) [sea] pickle¦s = minecraft:sea_pickle
+
+orientations before flattening:
+	minecraft version = 1.12.2 or older
+	{skull types}:
+		skeleton (skull|head)¦s = - {SkullType:0}
+		wither skeleton (skull|head)¦s = - {SkullType:1}
+		zombie (head|skull)¦s = - {SkullType:2}
+		player (head|skull)¦s = - {SkullType:3}
+		creeper (head|skull)¦s = - {SkullType:4}
+	{wall orientations}:
+		north[ward] [facing] = - {Damage:3}
+		south[ward] [facing] = - {Damage:2}
+		east[ward] [facing] = - {Damage:4}
+		west[ward] [facing] = - {Damage:5}
 	{banner standing orientations}:
 		south[ward] [rotated] = - {Damage:1,Rot:0}
 		south-southwest[ward] [rotated] = - {Damage:1,Rot:1}
@@ -397,27 +393,30 @@ unchanged orientations:
 		east-southeast[ward] [rotated] = - {Damage:1,Rot:13}
 		southeast[ward] [rotated] = - {Damage:1,Rot:14}
 		south-southeast[ward] [rotated] = - {Damage:1,Rot:15}
-		
-old orientations:
-	minecraft version = 1.12.2 or older
-	{skull types}:
-		skeleton (skull|head)¦s = - {SkullType:0} 
-		wither skeleton (skull|head)¦s = - {SkullType:1}
-		zombie (head|skull)¦s = - {SkullType:2}
-		player (head|skull)¦s = - {SkullType:3}
-		creeper (head|skull)¦s = - {SkullType:4}
-	{wall orientations}:
-		north[ward] [facing] = - {Damage:3}
-		south[ward] [facing] = - {Damage:2}
-		east[ward] [facing] = - {Damage:4}
-		west[ward] [facing] = - {Damage:5}
-	
+	{skull floor orientations}:
+		north[ward] [rotated] = - {Damage:1,Rot:0}
+		north-northeast[ward] [rotated] = - {Damage:1,Rot:1}
+		northeast[ward] [rotated] = - {Damage:1,Rot:2}
+		east-northeast[ward] [rotated] = - {Damage:1,Rot:3}
+		east[ward] [rotated] = - {Damage:1,Rot:4}
+		east-southeast[ward] [rotated] = - {Damage:1,Rot:5}
+		southeast[ward] [rotated] = - {Damage:1,Rot:6}
+		south-southeast[ward] [rotated] = - {Damage:1,Rot:7}
+		south[ward] [rotated] = - {Damage:1,Rot:8}
+		south-southwest[ward] [rotated] = - {Damage:1,Rot:9}
+		southwest[ward] [rotated] = - {Damage:1,Rot:10}
+		west-southwest[ward] [rotated] = - {Damage:1,Rot:11}
+		west[ward] [rotated] = - {Damage:1,Rot:12}
+		west-northwest[ward] [rotated] = - {Damage:1,Rot:13}
+		northwest[ward] [rotated] = - {Damage:1,Rot:14}
+		north-northwest[ward] [rotated] = - {Damage:1,Rot:15}
+
 combat update skulls:
 	minecraft version = 1.9 to 1.12.2
 	[ender[ ]]dragon (head|skull) item¦s = minecraft:skull {SkullType:5}
 	#skulls on walls and floors
 	({wall orientations}|{skull floor orientations}) [ender[ ]]dragon (head|skull)¦s = minecraft:skull {SkullType:5}
-	
+
 directionals before flattening:
 	minecraft version = 1.12.2 or older
 	{skull types} item¦s = minecraft:skull
@@ -427,7 +426,7 @@ directionals before flattening:
 	{wall orientations} {opposite colored} wall banner¦s = minecraft:wall_banner
 	{banner standing orientations} {opposite colored} [standing] banner¦s = minecraft:banner
 	{opposite colored} banner item¦s = -banner
-	
+
 directionals after flattening:
 	minecraft version = 1.13 or newer
 	skelet(on|al) (skull|head) item¦s = minecraft:skeleton_skull
@@ -444,13 +443,12 @@ directionals after flattening:
 	{directional} creeper (head|skull)¦s = minecraft:creeper_wall_head
 	{directional} [ender[ ]]dragon (head|skull)¦s = minecraft:dragon_wall_head
 	#skulls on floors
-	{skull floor orientations} skelet(on|al) (skull|head)¦s = minecraft:skeleton_skull
-	{skull floor orientations} wither skelet(on|al) (skull|head)¦s = minecraft:wither_skeleton_skull
-	{skull floor orientations} zombi(e|fied) (head|skull)¦s = minecraft:zombie_head
-	{skull floor orientations} player (head|skull)¦s = minecraft:player_head
-	{skull floor orientations} creeper (head|skull)¦s = minecraft:creeper_head
-	{skull floor orientations} [ender[ ]]dragon (head|skull)¦s = minecraft:dragon_head
+	{reversed rotatable} skelet(on|al) (skull|head)¦s = minecraft:skeleton_skull
+	{reversed rotatable} wither skelet(on|al) (skull|head)¦s = minecraft:wither_skeleton_skull
+	{reversed rotatable} zombi(e|fied) (head|skull)¦s = minecraft:zombie_head
+	{reversed rotatable} player (head|skull)¦s = minecraft:player_head
+	{reversed rotatable} creeper (head|skull)¦s = minecraft:creeper_head
+	{reversed rotatable} [ender[ ]]dragon (head|skull)¦s = minecraft:dragon_head
 	# BANNERS
 	{directional} {colored} wall banner¦s = -wall_banner
-	{banner standing orientations} {colored} [standing] banner¦s = -banner
-	{colored} banner item¦s = -banner
+	{rotatable} {colored} [standing] banner¦s = -banner
