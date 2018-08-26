@@ -1,0 +1,75 @@
+transportation items:
+	elytra¦s = minecraft:elytra
+	saddle¦s = minecraft:saddle
+	carrot[s] on [a] stick¦s = minecraft:carrot_on_a_stick
+
+old oak boat:
+	minecraft version = 1.12.2 or older
+	oak boat¦s = minecraft:boat
+
+new oak boat:
+	minecraft version = 1.13 or newer
+	oak boat¦s = minecraft:oak_boat
+
+boats:
+	spruce boat¦s = minecraft:spruce_boat
+	birch boat¦s = minecraft:birch_boat
+	jungle boat¦s = minecraft:jungle_boat
+	acacia boat¦s = minecraft:acacia_boat
+	dark oak boat¦s = minecraft:dark_oak_boat
+
+	[any] boat¦s = oak boat, spruce boat, birch boat, jungle boat, acacia boat, dark oak boat
+
+minecarts:
+	[normal] minecart¦s = minecraft:minecart
+	
+	minecart[s] with chest¦s = minecraft:chest_minecart
+	storage minecart¦s = minecart with chest
+	
+	minecart[s] with furnace¦s = minecraft:furnace_minecart
+	powered minecart¦s = minecart with furnace
+
+	minecart[s] with TNT¦s = minecraft:tnt_minecart
+	minecart[s] with hopper¦s = minecraft:hopper_minecart
+	minecart[s] with command block¦s = minecraft:command_block_minecart
+
+	any minecart¦s = minecart, minecart with chest, minecart with furnace, minecart with TNT, minecart with hopper, minecart with command block
+
+rails:
+	{rail straight}:
+		[(flat|straight)] (north-south|south-north) = - [shape=north-south]
+		[(flat|straight)] (east-west|west-east) = - [shape=east-west]
+		(flat|straight) = north-south, east-west
+		
+		(ascending north|descending south) = - [shape=ascending_north]
+		(ascending south|descending north) = - [shape=ascending_south]
+		(ascending east|descending west) = - [shape=ascending_east]
+		(ascending west|descending east) = - [shape=ascending_west]
+
+	{rail curve}:
+		[curved] (north-east|east-north) = - [shape=north-east]
+		[curved] (north-west|west-north) = - [shape=north-west]
+		[curved] (south-east|east-south) = - [shape=south-east]
+		[curved] (south-west|west-south) = - [shape=south-west]
+
+	{rail power}:
+		active = - [powered=true]
+		inactive = - [powered=false]
+
+	# Normal rail
+	[({rail straight}|{rail curve})] [normal] [minecart] (rail|track) [block]¦s = minecraft:rail
+	(ascending|descending|inclined) [normal] [minecart] (rail|track) [block]¦s = ascending north rail, ascending south rail, ascending east rail, ascending west rail
+	curved [normal] [minecart] (rail|track) [block]¦s = north-east rail, north-west rail, south-east rail, south-west rail
+	[minecart] (rail|track) item¦s = minecraft:rail
+
+	# Powered Rail
+	{rail straight} [{rail power}] powered [minecart] (rail|track)¦s = minecraft:powered_rail
+	powered [minecart] (rail|track) item¦s = minecraft:powered_rail
+
+	# Detector Rail
+	{rail straight} [{rail power}] detector [minecart] (rail|track)¦s = minecraft:detector_rail
+	detector [minecart] (rail|track) item¦s = minecraft:detector_rail
+
+	# Activator rail
+	{rail straight} [{rail power}] activator [minecart] (rail|track)¦s = minecraft:activator_rail
+	activator [minecart] (rail|track) item¦s = minecraft:activator_rail
