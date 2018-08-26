@@ -62,7 +62,7 @@ unchanged building blocks:
 # 1.13 changed the IDs of a lot of blocks since they're no longer defined by data value.
 # This section is for blocks that had a different ID prior to 1.13.
 old blocks before flattening:
-	minecraft version = 1.12 or older
+	minecraft version = 1.12.2 or older
 	# Stones
 	[raw] granite¦s = minecraft:stone {Damage:1}
 	(smooth|polished) granite¦s = minecraft:stone {Damage:2}
@@ -217,7 +217,7 @@ old blocks before flattening:
 	[unlit] pumpkin¦s = minecraft:pumpkin
 	(lit pumpkin|jack-o[']-lantern)¦s = minecraft:lit_pumpkin
 	melon [block]¦s = minecraft:melon_block
-	
+
 	any ice [block¦s] = ice, packed ice
 
 # 1.13 removed data values and separated tons of blocks into their own IDs.
@@ -297,7 +297,7 @@ building blocks after flattening:
 		top = -[type=top]
 		bottom = -[type=bottom]
 		double = -[type=double]
-	
+
 	{waterloggable} {slab} {wood type} slab = -slab
 	{waterloggable} {slab} stone slab = minecraft:stone_slab
 	{waterloggable} {slab} sandstone slab = minecraft:sandstone_slab
@@ -318,7 +318,7 @@ building blocks after flattening:
 		{default} = -[half=bottom]
 		top = -[half=top]
 		bottom = -[half=bottom]
-	
+
 	{waterloggable} {stairs} {directional} {wood type} stair¦s = -stairs
 	{waterloggable} {stairs} {directional} cobble[stone] stair¦s = minecraft:cobblestone_stairs
 	{waterloggable} {stairs} {directional} [red] brick stair¦s = minecraft:brick_stairs
@@ -353,7 +353,7 @@ building blocks after flattening:
 	(lit pumpkin|jack(-| )o['](-| )lantern)¦s = minecraft:jack_o_lantern
 	melon [block]¦s = minecraft:melon
 	[red] brick block¦s = minecraft:bricks
-	
+
 # Categories for items that exist in both 1.13 and before but with different ids
 categories:
 	any oak log = oak log, east-west oak log, north-south oak log, oak bark
@@ -366,7 +366,7 @@ categories:
 	[any] bark = oak bark, spruce bark, birch bark, jungle bark, acacia bark, dark oak bark
 	[any] log = any oak log, any spruce log, any birch log, any jungle log, any acacia log, any dark oak log
 	[any] normal log = any log # 1.13 adds some not so normal log types
-	
+
 	any ore = gold ore, iron ore, coal ore, lapis ore, diamond ore, redstone ore, emerald ore, nether quartz ore
 
 #== UPDATE-SPECIFICS
@@ -496,3 +496,4 @@ update aquatic:
 	blue ice [block¦s] = minecraft:blue_ice
 	any ice [block¦s] = ice, packed ice, blue ice
 	dried kelp block¦s = minecraft:dried_kelp_block
+	end[ ]stone brick¦s = minecraft:end_stone_bricks
