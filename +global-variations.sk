@@ -206,6 +206,45 @@ block states:
 		lit = -[lit=true]
 		unlit = -[lit=false]
 
+	# For blocks that can be rotated
+	{rotatable}:
+		{default} = -[rotation:0]
+		south[ward] [rotated] = -[rotation:0]
+		south-southwest[ward] [rotated] = -[rotation:1]
+		southwest[ward] [rotated] = -[rotation:2]
+		west-southwest[ward] [rotated] = -[rotation:3]
+		west[ward] [rotated] = -[rotation:4]
+		west-northwest[ward] [rotated] = -[rotation:5]
+		northwest[ward] [rotated] = -[rotation:6]
+		north-northwest[ward] [rotated] = -[rotation:7]
+		north[ward] [rotated] = -[rotation:8]
+		north-northeast[ward] [rotated] = -[rotation:9]
+		northeast[ward] [rotated] = -[rotation:10]
+		east-northeast[ward] [rotated] = -[rotation:11]
+		east[ward] [rotated] = -[rotation:12]
+		east-southeast[ward] [rotated] = -[rotation:13]
+		southeast[ward] [rotated] = -[rotation:14]
+		south-southeast[ward] [rotated] = -[rotation:15]
+	# Skull faces point north at rotation 0 instead of south
+	{reversed rotatable}:
+		{default} = -[rotation:0]
+		north[ward] [rotated] = -[rotation:0]
+		north-northeast[ward] [rotated] = -[rotation:1]
+		northeast[ward] [rotated] = -[rotation:2]
+		east-northeast[ward] [rotated] = -[rotation:3]
+		east[ward] [rotated] = -[rotation:4]
+		east-southeast[ward] [rotated] = -[rotation:5]
+		southeast[ward] [rotated] = -[rotation:6]
+		south-southeast[ward] [rotated] = -[rotation:7]
+		south[ward] [rotated] = -[rotation:8]
+		south-southwest[ward] [rotated] = -[rotation:9]
+		southwest[ward] [rotated] = -[rotation:10]
+		west-southwest[ward] [rotated] = -[rotation:11]
+		west[ward] [rotated] = -[rotation:12]
+		west-northwest[ward] [rotated] = -[rotation:13]
+		northwest[ward] [rotated] = -[rotation:14]
+		north-northwest[ward] [rotated] = -[rotation:15]
+
 # Aliases that can be used in at least one place both pre and post-flattening.
 global:
 	# For wood-based blocks that are defined with the wood type at the start of the alias.
