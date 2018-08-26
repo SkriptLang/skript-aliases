@@ -111,7 +111,7 @@ weapons:
 	arrow¦s = minecraft:arrow
 
 horse armor old:
-	minecraft version = 1.12 or older
+	minecraft version = 1.12.2 or older
 	iron horse (armor|barding) = minecraft:iron_barding
 	gold[en] horse (armor|barding) = minecraft:gold_barding
 	diamond horse (armor|barding) = minecraft:diamond_barding
