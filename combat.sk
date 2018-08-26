@@ -125,10 +125,5 @@ horse armor new:
 
 	[any] horse armor = iron horse armor, gold horse armor, diamond horse armor
 
-other:
-	saddle = minecraft:saddle
-
-
-
 
 

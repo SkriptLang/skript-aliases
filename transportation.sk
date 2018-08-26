@@ -21,3 +21,11 @@ boats new:
 	spruce boat¦s = minecraft:spruce_boat
 	birch boat¦s = minecraft:birch_boat
 	[any] boat = oak boat, acacia boat, dark oak boat, jungle boat, spruce boat, birch boat
+
+elytra:
+	minecraft versions = 1.9 or newer
+	elytra¦s = minecraft:elytra
+
+misc transport:
+	carrot[s] on [a] stick¦s = minecraft:carrot_on_a_stick
+	saddle[s] = minecraft:saddle
