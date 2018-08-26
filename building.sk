@@ -215,7 +215,7 @@ old blocks before flattening:
 
 	# Miscellaneous
 	[unlit] pumpkin¦s = minecraft:pumpkin
-	(lit pumpkin|jack[(-| )]o['][(-| )]lantern)¦s = minecraft:lit_pumpkin
+	(lit pumpkin|jack(-| )o['](-| )lantern)¦s = minecraft:lit_pumpkin
 	melon [block]¦s = minecraft:melon_block
 	
 	any ice [block¦s] = ice, packed ice
