@@ -23,7 +23,7 @@ boats new:
 	[any] boat = oak boat, acacia boat, dark oak boat, jungle boat, spruce boat, birch boat
 
 elytra:
-	minecraft versions = 1.9 or newer
+	minecraft version = 1.9 or newer
 	elytra¦s = minecraft:elytra
 
 misc transport:
