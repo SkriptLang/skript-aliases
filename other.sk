@@ -9,6 +9,7 @@ unlisted blocks:
 	tripwire [(string|line)] = minecraft:tripwire
 	air = minecraft:air
 	barrier [block]¦s = minecraft:barrier
+	dragon egg¦s = minecraft:dragon_egg
 
 # Unlisted blocks that had a different ID before the flattening.
 unlisted before flattening:
@@ -76,7 +77,7 @@ unlisted after flattening:
 	corner structure block¦s = minecraft:structure_block[mode=corner]
 	data structure block¦s = minecraft:structure_block[mode=data]
 	[any] structure block¦s = save structure block, load structure block, corner structure block, data structure block
-	
+
 	{directional} attached melon stem = minecraft:attached_melon_stem
 	{directional} attached pumpkin stem = minecraft:attached_pumpkin_stem
 

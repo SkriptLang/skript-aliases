@@ -62,37 +62,37 @@ combat update:
 
 armor:
 	leather (cap|helmet)¦s = minecraft:leather_helmet
-	leather chest(piece|plate)¦s = minecraft:leather_chestplate
+	leather (tunic|chest(piece|plate))¦s = minecraft:leather_chestplate
 	leather (pants|leggings) = minecraft:leather_leggings
 	leather boots = minecraft:leather_boots
-	leather armor = leather cap, leather chestpiece, leather pants, leather boots
+	leather armo[u]r = leather cap, leather chestpiece, leather pants, leather boots
 
 	iron (cap|helmet)¦s = minecraft:iron_helmet
 	iron chest(piece|plate)¦s = minecraft:iron_chestplate
 	iron (pants|leggings) = minecraft:iron_leggings
 	iron boots = minecraft:iron_boots
-	iron armor = iron cap, iron chestpiece, iron pants, iron boots
+	iron armo[u]r = iron cap, iron chestpiece, iron pants, iron boots
 
 	gold[en] (cap|helmet)¦s = minecraft:golden_helmet
 	gold[en] chest(piece|plate)¦s = minecraft:golden_chestplate
 	gold[en] (pants|leggings) = minecraft:golden_leggings
 	gold[en] boots = minecraft:golden_boots
-	gold[en] armor = gold cap, gold chestpiece, gold pants, gold boots
+	gold[en] armo[u]r = gold cap, gold chestpiece, gold pants, gold boots
 
 	diamond (cap|helmet)¦s = minecraft:diamond_helmet
 	diamond chest(piece|plate)¦s = minecraft:diamond_chestplate
 	diamond (pants|leggings) = minecraft:diamond_leggings
 	diamond boots = minecraft:diamond_boots
-	diamond armor = diamond cap, diamond chestpiece, diamond pants, diamond boots
+	diamond armo[u]r = diamond cap, diamond chestpiece, diamond pants, diamond boots
 
 	chain[mail] (cap|helmet)¦s = minecraft:chainmail_helmet
 	chain[mail] chest(piece|plate)¦s = minecraft:chainmail_chestplate
 	chain[mail] (pants|leggings) = minecraft:chainmail_leggings
 	chain[mail] boots = minecraft:chainmail_boots
-	chain[mail] armor = chain cap, chain chestpiece, chain pants, chain boots
-	
-	armor = leather armor, iron armor, gold armor, diamond armor, chain armor
-	
+	chain[mail] armo[u]r = chain cap, chain chestpiece, chain pants, chain boots
+
+	armo[u]r = leather armor, iron armor, gold armor, diamond armor, chain armor
+
 	# By equipment slot
 	(cap|helmet)¦s = leather cap, iron cap, gold cap, diamond cap, chain cap
 	chest(piece|plate)¦s = leather chestpiece, iron chestpiece, gold chestpiece, diamond chestpiece, chain chestpiece
@@ -112,18 +112,15 @@ weapons:
 
 horse armor old:
 	minecraft version = 1.12.2 or older
-	iron horse (armor|barding) = minecraft:iron_barding
-	gold[en] horse (armor|barding) = minecraft:gold_barding
-	diamond horse (armor|barding) = minecraft:diamond_barding
-	[any] horse armor = iron horse armor, gold horse armor, diamond horse armor
+	iron horse (armo[u]r|barding) = minecraft:iron_barding
+	gold[en] horse (armo[u]r|barding) = minecraft:gold_barding
+	diamond horse (armo[u]r|barding) = minecraft:diamond_barding
+	[any] horse armo[u]r = iron horse armor, gold horse armor, diamond horse armor
 
 horse armor new:
 	minecraft version = 1.13 or newer
-	iron horse (armor|barding) = minecraft:iron_horse_armor
-	gold[en] horse (armor|barding) = minecraft:golden_horse_armor
-	diamond horse (armor|barding) = minecraft:diamond_horse_armor
+	iron horse (armo[u]r|barding) = minecraft:iron_horse_armor
+	gold[en] horse (armo[u]r|barding) = minecraft:golden_horse_armor
+	diamond horse (armo[u]r|barding) = minecraft:diamond_horse_armor
 
-	[any] horse armor = iron horse armor, gold horse armor, diamond horse armor
-
-
-
+	[any] horse armo[u]r = iron horse armor, gold horse armor, diamond horse armor
