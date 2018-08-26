@@ -155,6 +155,8 @@ decoratives after flattening:
 	{wood type} sapling¦s = -sapling
 	{wood type} lea(f|ves) = -leaves
 
+	[any] lea(f|ves) = oak leaves, birch leaves, jungle leaves, spruce leaves, dark oak leaves, acacia leaves
+
 	[cob]web¦s = minecraft:cobweb
 
 	# Plants
