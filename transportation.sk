@@ -14,7 +14,7 @@ old boats:
 	
 	[any] boat¦s = oak boat, spruce boat, birch boat, jungle boat, acacia boat, dark oak boat
 
-boats new:
+new boats:
 	minecraft version = 1.13 or newer
 	oak boat¦s = minecraft:oak_boat
 	spruce boat¦s = minecraft:spruce_boat
