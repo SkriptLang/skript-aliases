@@ -3,15 +3,20 @@ transportation items:
 	saddle¦s = minecraft:saddle
 	carrot[s] on [a] stick¦s = minecraft:carrot_on_a_stick
 
-old oak boat:
+old boats:
 	minecraft version = 1.12.2 or older
 	oak boat¦s = minecraft:boat
+	spruce boat¦s = minecraft:boat_spruce
+	birch boat¦s = minecraft:boat_birch
+	jungle boat¦s = minecraft:boat_jungle
+	acacia boat¦s = minecraft:boat_acacia
+	dark oak boat¦s = minecraft:boat_dark_oak
+	
+	[any] boat¦s = oak boat, spruce boat, birch boat, jungle boat, acacia boat, dark oak boat
 
-new oak boat:
+boats new:
 	minecraft version = 1.13 or newer
 	oak boat¦s = minecraft:oak_boat
-
-boats:
 	spruce boat¦s = minecraft:spruce_boat
 	birch boat¦s = minecraft:birch_boat
 	jungle boat¦s = minecraft:jungle_boat
