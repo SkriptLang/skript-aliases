@@ -36,6 +36,8 @@ decoratives before flattening:
 	(non-decayable|permanent) acacia lea(f|ves) = minecraft:leaves2 {Damage:4}
 	(non-decayable|permanent) dark oak lea(f|ves) = minecraft:leaves2 {Damage:5}
 
+	[any] lea(f|ves) = oak leaves, birch leaves, jungle leaves, spruce leaves, dark oak leaves, acacia leaves
+
 	[cob]web¦s = minecraft:web
 
 	# Plants
@@ -154,6 +156,8 @@ decoratives after flattening:
 	minecraft version = 1.13 or newer
 	{wood type} sapling¦s = -sapling
 	{wood type} lea(f|ves) = -leaves
+
+	[any] lea(f|ves) = oak leaves, birch leaves, jungle leaves, spruce leaves, dark oak leaves, acacia leaves
 
 	[cob]web¦s = minecraft:cobweb
 
@@ -356,7 +360,7 @@ update aquatic:
 		(pair of|[bundle of] two) = -[pickles=2]
 		(trio of|[bundle of] three) = -[pickles=3]
 		[bundle of] four = -[pickles=4]
-	({waterloggable} {pickle count}|{pickle count} {waterloggable}) sea pickle¦s = minecraft:sea_pickle
+	({waterloggable} {pickle count}|{pickle count} {waterloggable}) [sea][ ]pickle¦s = minecraft:sea_pickle
 	
 unchanged orientations:
 	{skull floor orientations}:
