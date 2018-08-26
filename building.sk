@@ -215,7 +215,7 @@ old blocks before flattening:
 
 	# Miscellaneous
 	[unlit] pumpkin¦s = minecraft:pumpkin
-	(lit pumpkin|jack-o[']-lantern)¦s = minecraft:lit_pumpkin
+	(lit pumpkin|jack[(-| )]o['][(-| )]lantern)¦s = minecraft:lit_pumpkin
 	melon [block]¦s = minecraft:melon_block
 	
 	any ice [block¦s] = ice, packed ice
@@ -255,7 +255,7 @@ building blocks after flattening:
 	[any] log¦s = oak log, spruce log, birch log, jungle log, acacia log, dark oak log
 
 	# Bark
-	{wood type} bark [block¦s] = -wood
+	{axis-aligned} {wood type} bark [block¦s] = -wood
 	[any] bark [block¦s] = oak bark, spruce bark, birch bark, jungle bark, acacia bark, dark oak bark
 
 	# Desert
