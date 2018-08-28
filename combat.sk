@@ -112,15 +112,15 @@ weapons:
 
 horse armor old:
 	minecraft version = 1.12.2 or older
-	iron horse (armo[u]r|barding) = minecraft:iron_barding
-	gold[en] horse (armo[u]r|barding) = minecraft:gold_barding
-	diamond horse (armo[u]r|barding) = minecraft:diamond_barding
+	iron (horse armo[u]r|barding) = minecraft:iron_barding
+	gold[en] (horse armo[u]r|barding) = minecraft:gold_barding
+	diamond (horse armo[u]r|barding) = minecraft:diamond_barding
 	[any] horse armo[u]r = iron horse armor, gold horse armor, diamond horse armor
 
 horse armor new:
 	minecraft version = 1.13 or newer
-	iron horse (armo[u]r|barding) = minecraft:iron_horse_armor
-	gold[en] horse (armo[u]r|barding) = minecraft:golden_horse_armor
-	diamond horse (armo[u]r|barding) = minecraft:diamond_horse_armor
+	iron (horse armo[u]r|barding) = minecraft:iron_horse_armor
+	gold[en] (horse armo[u]r|barding) = minecraft:golden_horse_armor
+	diamond (horse armo[u]r|barding) = minecraft:diamond_horse_armor
 
 	[any] horse armo[u]r = iron horse armor, gold horse armor, diamond horse armor
