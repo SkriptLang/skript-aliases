@@ -59,7 +59,7 @@ random items:
 	leather = minecraft:leather
 	brick¦s = minecraft:brick
 	clay [balls] = minecraft:clay
-	(piece¦s of paper|paper¦s) = minecraft:paper
+	(piece[s] of paper|paper¦s) = minecraft:paper
 	slimeball¦s = minecraft:slime_ball
 	egg¦s = minecraft:egg
 	glowstone dust = minecraft:glowstone_dust
@@ -68,8 +68,8 @@ random items:
 	ender pearl¦s = minecraft:ender_pearl
 	blaze rod¦s = minecraft:blaze_rod
 	nether wart¦s = minecraft:nether_wart
-	(ender eye¦s|eye¦s of ender) = minecraft:ender_eye
-	(bottle¦s o' enchanting|xp bottle¦s|experience bottle¦s) = minecraft:experience_bottle
+	(ender eye¦s|eye[s] of ender) = minecraft:ender_eye
+	(bottle[s] o' enchanting|xp bottle¦s|experience bottle¦s) = minecraft:experience_bottle
 	fire charge¦s = minecraft:fire_charge
 	[empty] map = minecraft:map
 	filled map = minecraft:filled_map
