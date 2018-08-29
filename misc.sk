@@ -27,6 +27,24 @@ new items:
 	minecraft version = 1.13 or newer
 	charcoal = minecraft:charcoal
 	sugar cane¦s = minecraft:sugar_cane
+	conduit¦s = minecraft:conduit
+	[turtle [shell]] scute¦s = minecraft:scute
+	kelp = minecraft:kelp
+	nautlius shell¦s = minecraft:nautilus_shell
+	heart[s] of the sea = minecraft:heart_of_the_sea
+
+	{hatch stage}:
+		{default} = -[hatch=0]
+		uncracked = -[hatch=2]
+		cracked = -[hatch=1]
+		almost hatched = -[hatch=2]
+	{egg count}:
+		{default} = -[eggs=1]
+		(one|singular) = -[eggs=1]
+		(pair of|[pile of] two) = -[eggs=2]
+		(trio of|[pile of] three) = -[eggs=3]
+		[pile of] four = -[eggs=4]
+	{egg count} {hatch stage} turtle egg¦s = minecraft:turtle_egg
 
 valuables:
 	beacon¦s = minecraft:beacon # TODO beacon API
