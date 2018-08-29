@@ -11,17 +11,12 @@ unchanged redstone:
 	(iron|heavy weighted) pressure plate¦s = minecraft:heavy_weighted_pressure_plate
 
 	(normal|uninverted) daylight (detector|sensor)¦s = minecraft:daylight_detector
+	(tripwire|placed string)¦s = minecraft:tripwire
 
 	{orientable} dispenser¦s = minecraft:dispenser
-	{orientable} dropper¦s = minecraft:dropper
-	tnt [block¦s] = minecraft:tnt
-	hopper¦s = minecraft:hopper
+	{orientable} dropper¦s = minecraft:dropper`
 
 	iron trapdoor¦s = minecraft:iron_trapdoor
-
-	{orientable} [(normal|non-sticky)] piston¦s = minecraft:piston
-	{orientable} sticky piston¦s = minecraft:sticky_piston
-	{orientable} piston head¦s = minecraft:piston_head
 
 redstone before flattening:
 	minecraft version = 1.12.2 or older
@@ -107,10 +102,17 @@ redstone before flattening:
 	[unlit] redstone lamp¦s = minecraft:redstone_lamp
 	any redstone lamp¦s = lit redstone lamp, unlit redstone lamp
 
+	# Pistons
+	{orientable} [(normal|non-sticky)] piston¦s = minecraft:piston
+	{orientable} sticky piston¦s = minecraft:sticky_piston
+	{orientable} piston head¦s = minecraft:piston_head
+
 	# Misc activatables/redstone components
 	note block¦s = minecraft:noteblock
 	tripwire hook¦s = minecraft:tripwire_hook
 	(piston extension|block 36|moving piston|moving block¦s) = minecraft:piston_extension
+	hopper¦s = minecraft:hopper
+	tnt [block¦s] = minecraft:tnt
 
 redstone after flattening:
 	minecraft version = 1.13 or newer
@@ -134,7 +136,7 @@ redstone after flattening:
 	[any] pressure plate¦s = stone pressure plate, gold pressure plate, iron pressure plate, any wooden pressure plate
 
 	# Trapdoors
-	{waterloggable} {openable} {powerable} {wood type} trapdoor¦s = -trapdoor
+	{waterloggable} {openable} {powerable} {directional} {wood type} trapdoor¦s = -trapdoor
 	[any] wood[en] trapdoor¦s = oak trapdoor, spruce trapdoor, birch trapdoor, jungle trapdoor, acacia trapdoor, dark oak trapdoor
 	[any] trapdoor¦s = iron trapdoor, any wooden trapdoor
 
@@ -158,21 +160,64 @@ redstone after flattening:
 	any redstone torch = any redstone floor torch, any redstone wall torch
 
 	# Redstone lamp
-	lit redstone lamp¦s = minecraft:redstone_lamp[lit=true]
-	[unlit] redstone lamp¦s = minecraft:redstone_lamp[lit=false]
-	any redstone lamp¦s = lit redstone lamp, unlit redstone lamp
+	{lightable} redstone lamp¦s = minecraft:redstone_lamp
+	[any] redstone lamp¦s = lit redstone lamp, unlit redstone lamp
+
+	# Note blocks
+	{instrumental}:
+		{default} = -[instrument=harp]
+		xylophone = -[instrument=xylophone]
+		chime = -[instrument=chime]
+		guitar = -[instrument=guitar]
+		bell = -[instrument=bell]
+		flute = -[instrument=flute]
+		bass = -[instrument=bass]
+		hat = -[instrument=hat]
+		snare = -[instrument=snare]
+		basedrum = -[instrument=basedrum]
+		harp = -[instrument=harp]
+	{powerable} {instrumental} note block¦s = minecraft:note_block
+
+	# Hoppers can't point up, and orientable includes up (and it's the default state)
+	{hopper direction}:
+		{default} = -[facing=down]
+		down[ward] [facing] = -[facing=down]
+		north[ward] [facing] = -[facing=north]
+		south[ward] [facing] = -[facing=south]
+		west[ward] [facing] = -[facing=west]
+		east[ward] [facing] = -[facing=east]
+	{enableable}:
+		{default} = -[enabled=true]
+		enabled = -[enabled=true]
+		disabled = -[enabled=false]
+	{enableable} {hopper direction} hopper¦s = minecraft:hopper
+
+	# Pistons
+	{extendable}:
+		{defaut} = -[extended=false]
+		(unextended|retracted) = -[extended=false]
+		extended = -[extended=true]
+	{orientable} {extendable} [(normal|non-sticky)] piston¦s = minecraft:piston
+	{orientable} {extendable} sticky piston¦s = minecraft:sticky_piston
+	{orientable} piston head¦s = minecraft:piston_head
+	(piston extension|block 36|moving piston|moving block¦s) = minecraft:moving_piston
 
 	# Misc activatables
-	note block¦s = minecraft:note_block
 	{directional} {powerable} tripwire hook¦s = minecraft:tripwire_hook
 	inverted daylight (detector|sensor)¦s = minecraft:daylight_detector[inverted=true]
-	(piston extension|block 36|moving piston|moving block¦s) = minecraft:moving_piston
 	{powerable} {attached} {directional} [redstone] lever¦s = minecraft:lever
+	tnt [block¦s] = minecraft:tnt
+	stable tnt [block¦s] = minecraft:tnt[unstable=false]
+	unstable tnt [block¦s] = minecraft:tnt[unstable=true]
+
+old observer:
+	minecraft version = 1.11 to 1.12.2
+	{orientable} [redstone] observer¦s = minecraft:observer
+
+new observer:
+	minecraft version = 1.13 or newer
+	{orientable} {powerable} [redstone] observer¦s = minecraft:observer
 
 categories:
 	[any] daylight (detector|sensor)¦s = normal daylight detector, inverted daylight detector
 	[any] fence part = any fence, any gate # Fences come from decoration.sk
-
-exploration update:
-	minecraft version = 1.11 or newer
-	{orientable} [redstone] observer¦s = minecraft:observer

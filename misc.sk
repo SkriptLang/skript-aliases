@@ -47,7 +47,14 @@ new items:
 	{egg count} {hatch stage} turtle egg¦s = minecraft:turtle_egg
 
 valuables:
-	beacon¦s = minecraft:beacon # TODO beacon API
+	{beacon levels}:
+		{default} = - {Levels:0}
+		(level (0|one)|unleveled) = - {Levels:0}
+		(level (1|one)) = - {Levels:1}
+		(level (2|two)) = - {Levels:2}
+		(level (3|three)) = - {Levels:3}
+		(level (4|four)|complete[d]) = - {Levels:4}
+	{beacon levels} beacon¦s = minecraft:beacon
 
 random items:
 	stick¦s = minecraft:stick

@@ -14,7 +14,6 @@ unchanged building blocks:
 	sand [block¦s] = minecraft:sand
 	gravel [block¦s] = minecraft:gravel
 	clay block¦s = minecraft:clay
-	mycelium [block¦s] = minecraft:mycelium
 
 	# Underground
 	gold ore¦s = minecraft:gold_ore
@@ -83,6 +82,7 @@ old blocks before flattening:
 	coarse dirt [block¦s] = minecraft:dirt {Damage:1}
 	podzol [block¦s] = minecraft:dirt {Damage:2}
 	[nether] quartz ore¦s = minecraft:quartz_ore
+	mycelium [block¦s] = minecraft:mycelium
 
 	# All wood
 	# planks
@@ -240,9 +240,15 @@ building blocks after flattening:
 	any [natural] stone¦s = stone, any granite, any diorite, any andesite
 
 	# Sediments
-	grass [block¦s] = minecraft:grass_block
+	{snowable}:
+		{default} = -[snowy=false]
+		(non-snowy|snowless) = -[snowy=false]
+		snowy = -[snowy=true]
+
+	{snowable} grass [block¦s] = minecraft:grass_block
+	{snowable} podzol [block¦s] = minecraft:podzol
+	{snowable} mycelium [block¦s] = minecraft:mycelium
 	coarse dirt [block¦s] = minecraft:coarse_dirt
-	podzol [block¦s] = minecraft:podzol
 	[nether] quartz ore¦s = minecraft:nether_quartz_ore
 
 	# Wood
