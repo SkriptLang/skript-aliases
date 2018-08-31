@@ -145,8 +145,8 @@ redstone after flattening:
 	[any] [fence] gate¦s = oak gate, spruce gate, birch gate, jungle gate, acacia gate, dark oak gate
 
 	# Doors
-	{powerable} {openable} {directional} {block half} {wood type} door¦s = -door
-	{powerable} {openable} {directional} {block half} iron door¦s = minecraft:iron_door
+	{powerable} {openable} {block half} {directional} {wood type} door¦s = -door
+	{powerable} {openable} {block half} {directional} iron door¦s = minecraft:iron_door
 	[any] wood[en] door¦s = oak door, spruce door, birch door, jungle door, acacia door, dark oak door
 	[any] door¦s = iron door, any wooden door
 

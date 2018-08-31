@@ -165,8 +165,8 @@ block states:
 	# (stairs), or that has top and bottom halves (double plants, doors, etc.)
 	{block half}:
 		{default} = -[half=lower]
-		(bottom|lower) = -[half=lower]
-		(top|upper) = -[half=upper]
+		(bottom|lower)[-half] = -[half=lower]
+		(top|upper)[-half] = -[half=upper]
 
 	# For anything that can be rotated along the three axes like pillars and logs, i.e. for
 	# things where "pointing east" and "pointing west" would look the same.

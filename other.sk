@@ -161,9 +161,8 @@ update aquatic unlisted blocks:
 	(downwards|whirlpool|dragging) bubble column = minecraft:bubble_column[drag=true]
 	bubble column = upwards bubble column, downwards bubble column
 
-# Fluids
+# Flowing lava and water exist as technical blocks in Minecraft 1.13 but they're not placeable
+# with vanilla commands nor do they exist in the material enum.
 fluids:
 	[stationary] water = minecraft:water
 	[stationary] lava = minecraft:lava
-	flowing water = minecraft:flowing_water
-	flowing lava = minecraft:flowing_lava
