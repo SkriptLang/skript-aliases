@@ -46,8 +46,8 @@ decoratives before flattening:
 	fern¦s = minecraft:tallgrass {Damage:2}
 
 	# Small flowers
-	(yellow flower|dandelion)¦s = minecraft:yellow_flower
-	(red flower¦s|popp(y|ies)) = minecraft:red_flower {Damage:0}
+	(dandelion|yellow flower)¦s = minecraft:yellow_flower
+	(popp(y|ies)|red flower¦s) = minecraft:red_flower {Damage:0}
 	blue orchid¦s = minecraft:red_flower {Damage:1}
 	allium¦s = minecraft:red_flower {Damage:2}
 	azure bluet¦s = minecraft:red_flower {Damage:3}
@@ -177,8 +177,8 @@ decoratives after flattening:
 	fern¦s = minecraft:fern
 
 	# Small flowers
-	(yellow flower|dandelion)¦s = minecraft:dandelion
-	(red flower¦s|popp(y|ies)) = minecraft:poppy
+	(dandelion|yellow flower)¦s = minecraft:dandelion
+	(popp(y|ies)|red flower¦s) = minecraft:poppy
 	blue orchid¦s = minecraft:blue_orchid
 	allium¦s = minecraft:allium
 	azure bluet¦s = minecraft:azure_bluet
@@ -260,27 +260,27 @@ decoratives after flattening:
 	any bed = white bed # TODO implement something to explode {colored}
 
 	# Flower pots now each have their own ID!
-	(potted poppy|flower pot with poppy) = minecraft:potted_poppy
-	(potted dandelion|flower pot with dandelion) = minecraft:potted_dandelion
-	(potted [blue] orchid|flower pot with [blue] orchid) = minecraft:potted_blue_orchid
-	(potted allium|flower pot with allium) = minecraft:potted_allium
-	(potted azure bluet|flower pot with azure bluet) = minecraft:potted_azure_bluet
-	(potted red tulip|flower pot with red tulip) = minecraft:potted_red_tulip
-	(potted orange tulip|flower pot with orange tulip) = minecraft:potted_orange_tulip
-	(potted white tulip|flower pot with white tulip) = minecraft:potted_white_tulip
-	(potted pink tulip|flower pot with pink tulip) = minecraft:potted_pink_tulip
-	(potted oxeye daisy|flower pot with oxeye daisy) = minecraft:potted_oxeye_daisy
-	(potted oak sapling|flower pot with oak sapling) = minecraft:potted_oak_sapling
-	(potted spruce sapling|flower pot with spruce sapling) = minecraft:potted_spruce_sapling
-	(potted birch sapling|flower pot with birch sapling) = minecraft:potted_birch_sapling
-	(potted jungle sapling|flower pot with jungle sapling) = minecraft:potted_jungle_sapling
-	(potted acacia sapling|flower pot with acacia sapling) = minecraft:potted_acacia_sapling
-	(potted dark oak sapling|flower pot with dark oak sapling) = minecraft:potted_dark_oak_sapling
-	(potted red mushroom|flower pot with red mushroom) = minecraft:potted_red_mushroom
-	(potted brown mushroom|flower pot with brown mushroom) = minecraft:potted_brown_mushroom
-	(potted cactus|flower pot with cactus) = minecraft:potted_cactus
-	(potted dead bush|flower pot with dead bush) = minecraft:potted_dead_bush
-	(potted fern|flower pot with fern) = minecraft:potted_fern
+	(potted|flower pot with) (dandelion|yellow flower) = minecraft:potted_dandelion
+	(potted|flower pot with) (poppy|red flower) = minecraft:potted_poppy
+	(potted|flower pot with) [blue] orchid = minecraft:potted_blue_orchid
+	(potted|flower pot with) allium = minecraft:potted_allium
+	(potted|flower pot with) azure bluet = minecraft:potted_azure_bluet
+	(potted|flower pot with) red tulip = minecraft:potted_red_tulip
+	(potted|flower pot with) orange tulip = minecraft:potted_orange_tulip
+	(potted|flower pot with) white tulip = minecraft:potted_white_tulip
+	(potted|flower pot with) pink tulip = minecraft:potted_pink_tulip
+	(potted|flower pot with) oxeye daisy = minecraft:potted_oxeye_daisy
+	(potted|flower pot with) oak [wood[en]] sapling = minecraft:potted_oak_sapling
+	(potted|flower pot with) spruce [wood[en]] sapling = minecraft:potted_spruce_sapling
+	(potted|flower pot with) birch [wood[en]] sapling = minecraft:potted_birch_sapling
+	(potted|flower pot with) jungle [wood[en]] sapling = minecraft:potted_jungle_sapling
+	(potted|flower pot with) acacia [wood[en]] sapling = minecraft:potted_acacia_sapling
+	(potted|flower pot with) dark oak [wood[en]] sapling = minecraft:potted_dark_oak_sapling
+	(potted|flower pot with) red mushroom = minecraft:potted_red_mushroom
+	(potted|flower pot with) brown mushroom = minecraft:potted_brown_mushroom
+	(potted|flower pot with) cactus = minecraft:potted_cactus
+	(potted|flower pot with) dead bush = minecraft:potted_dead_bush
+	(potted|flower pot with) fern = minecraft:potted_fern
 
 	# Miscellaneous
 	[floor] torch¦es = minecraft:torch
@@ -353,7 +353,7 @@ exploration update before flattening:
 exploration update after flattening:
 	minecraft version = 1.13 or newer
 	(default|normal) shulker box¦es = minecraft:shulker_box
-	{directional} {colored} shulker box¦es = -shulker_box
+	{orientable} {colored} shulker box¦es = -shulker_box
 	any shulker box¦es = default shulker box, white shulker box, orange shulker box, magenta shulker box, light blue shulker box, yellow shulker box, lime shulker box, pink shulker box, dark gray shulker box, light gray shulker box, cyan shulker box, purple shulker box, blue shulker box, brown shulker box, dark green shulker box, red shulker box, black shulker box
 
 
@@ -446,12 +446,12 @@ directionals after flattening:
 	creeper (head|skull) item¦s = minecraft:creeper_head
 	[ender[ ]]dragon (head|skull) item¦s = minecraft:dragon_head
 	#skulls on walls
-	{directional} skelet(on|al) (skull|head)¦s = minecraft:skeleton_wall_skull
-	{directional} wither skle(on|al) (skull|head)¦s = minecraft:wither_skeleton_wall_skull
-	{directional} zombi(e|fied) (head|skull)¦s = minecraft:zombie_wall_head
-	{directional} player (head|skull)¦s = minecraft:player_wall_head
-	{directional} creeper (head|skull)¦s = minecraft:creeper_wall_head
-	{directional} [ender[ ]]dragon (head|skull)¦s = minecraft:dragon_wall_head
+	{directional} skelet(on|al) wall[-mounted] (skull|head)¦s = minecraft:skeleton_wall_skull
+	{directional} wither skle(on|al) wall[-mounted] (skull|head)¦s = minecraft:wither_skeleton_wall_skull
+	{directional} zombi(e|fied) wall[-mounted] (head|skull)¦s = minecraft:zombie_wall_head
+	{directional} player wall[-mounted] (head|skull)¦s = minecraft:player_wall_head
+	{directional} creeper wall[-mounted] (head|skull)¦s = minecraft:creeper_wall_head
+	{directional} [ender[ ]]dragon wall[-mounted] (head|skull)¦s = minecraft:dragon_wall_head
 	#skulls on floors
 	{reversed rotatable} skelet(on|al) (skull|head)¦s = minecraft:skeleton_skull
 	{reversed rotatable} wither skelet(on|al) (skull|head)¦s = minecraft:wither_skeleton_skull
