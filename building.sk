@@ -54,7 +54,6 @@ unchanged building blocks:
 	# Miscellaneous
 	ice [block¦s] = minecraft:ice
 	snow block¦s = minecraft:snow
-	hay [(bale|block)¦s] = minecraft:hay_block
 	packed ice [block¦s] = minecraft:packed_ice
 	end[ ]stone [block¦s] = minecraft:end_stone
 
@@ -217,8 +216,8 @@ old blocks before flattening:
 	[unlit] pumpkin¦s = minecraft:pumpkin
 	(lit pumpkin|jack(-| )o['](-| )lantern)¦s = minecraft:lit_pumpkin
 	melon [block]¦s = minecraft:melon_block
-
 	any ice [block¦s] = ice, packed ice
+	hay [(bale|block)¦s] = minecraft:hay_block
 
 # 1.13 removed data values and separated tons of blocks into their own IDs.
 # This section contains building blocks whose IDs were changed by 1.13.
@@ -359,6 +358,8 @@ building blocks after flattening:
 	(lit pumpkin|jack(-| )o['](-| )lantern)¦s = minecraft:jack_o_lantern
 	melon [block]¦s = minecraft:melon
 	[red] brick block¦s = minecraft:bricks
+	{axis-aligned} hay [(bale|block)¦s] = minecraft:hay_block
+	[any] hay [(bale|block)¦s] = vertical hay bale, east-west hay bale, north-south hay bale
 
 # Categories for items that exist in both 1.13 and before but with different ids
 categories:

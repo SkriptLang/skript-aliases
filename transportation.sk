@@ -63,8 +63,8 @@ rails before flattening:
 		[curved] (north-east|east-north) = - {Damage:9}
 
 	# Powered Rail
-	({rail straight}|{rail powered}) powered [minecart] (rail|track)¦s = minecraft:golden_rail
-	powered [minecart] (rail|track) item¦s = minecraft:golden_rail
+	({rail straight}|{rail powered}) (golden|powered) [minecart] (rail|track)¦s = minecraft:golden_rail
+	(golden|powered) [minecart] (rail|track) item¦s = minecraft:golden_rail
 
 	# Detector Rail
 	({rail straight}|{rail powered}) detector [minecart] (rail|track)¦s = minecraft:detector_rail
@@ -94,15 +94,15 @@ rails after flattening:
 		[curved] (south-west|west-south) = -[shape=south_west]
 
 	# Powered Rail
-	{rail straight} {powerable} powered [minecart] (rail|track)¦s = minecraft:powered_rail
-	powered [minecart] (rail|track) item¦s = minecraft:powered_rail
+	{powerable} {rail straight} (golden|powered) [minecart] (rail|track)¦s = minecraft:powered_rail
+	(golden|powered) [minecart] (rail|track) item¦s = minecraft:powered_rail
 
 	# Detector Rail
-	{rail straight} {powerable} detector [minecart] (rail|track)¦s = minecraft:detector_rail
+	{powerable} {rail straight} detector [minecart] (rail|track)¦s = minecraft:detector_rail
 	detector [minecart] (rail|track) item¦s = minecraft:detector_rail
 
 	# Activator rail
-	{rail straight} {powerable} activator [minecart] (rail|track)¦s = minecraft:activator_rail
+	{powerable} {rail straight} activator [minecart] (rail|track)¦s = minecraft:activator_rail
 	activator [minecart] (rail|track) item¦s = minecraft:activator_rail
 
 # Rails whose IDs were never changed and whose version differences can be defined by variations.

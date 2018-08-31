@@ -240,7 +240,7 @@ decoratives after flattening:
 	any stained glass pane¦s = white stained glass pane, orange stained glass pane, magenta stained glass pane, light blue stained glass pane, yellow stained glass pane, lime stained glass pane, pink stained glass pane, dark gray stained glass pane, light gray stained glass pane, cyan stained glass pane, purple stained glass pane, blue stained glass pane, brown stained glass pane, dark green stained glass pane, red stained glass pane, black stained glass pane
 
 		# Glazed terracotta was slightly changed in 1.13 because silver became light_gray in IDs.
-	{colored} glazed terracotta [block¦s] = -glazed_terracotta
+	{directional} {colored} glazed terracotta [block¦s] = -glazed_terracotta
 
 	# Signs
 	{waterloggable} {directional} wall sign¦s = minecraft:wall_sign
