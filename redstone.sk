@@ -17,6 +17,7 @@ unchanged redstone:
 	{orientable} dropper¦s = minecraft:dropper`
 
 	iron trapdoor¦s = minecraft:iron_trapdoor
+	tnt [block¦s] = minecraft:tnt
 
 redstone before flattening:
 	minecraft version = 1.12.2 or older
@@ -112,7 +113,6 @@ redstone before flattening:
 	tripwire hook¦s = minecraft:tripwire_hook
 	(piston extension|block 36|moving piston|moving block¦s) = minecraft:piston_extension
 	hopper¦s = minecraft:hopper
-	tnt [block¦s] = minecraft:tnt
 
 redstone after flattening:
 	minecraft version = 1.13 or newer
@@ -206,7 +206,9 @@ redstone after flattening:
 	{directional} {powerable} tripwire hook¦s = minecraft:tripwire_hook
 	inverted daylight (detector|sensor)¦s = minecraft:daylight_detector[inverted=true]
 	{powerable} {attached} {directional} [redstone] lever¦s = minecraft:lever
-	tnt [block¦s] = minecraft:tnt
+
+unstable tnt:
+	minecraft version = 1.13.1 or newer
 	stable tnt [block¦s] = minecraft:tnt[unstable=false]
 	unstable tnt [block¦s] = minecraft:tnt[unstable=true]
 
