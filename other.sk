@@ -32,7 +32,7 @@ unlisted before flattening:
 	{command block direction} [impulse] command block¦s = minecraft:command_block
 
 	{cocoa states}:
-		{default}: - {Damage:0}
+		{default} = - {Damage:0}
 		(small|freshly planted) north[ward] [facing] = - {Damage:0}
 		(small|freshly planted) east[ward] [facing] = - {Damage:1}
 		(small|freshly planted) south[ward] [facing] = - {Damage:2}
@@ -122,7 +122,7 @@ unlisted after flattening:
 	{directional} attached pumpkin stem = minecraft:attached_pumpkin_stem
 
 	{cocoa growth state}:
-		{default}: -[age=2]
+		{default} = -[age=2]
 		(small|freshly planted) = -[age=0]
 		medium = -[age=1]
 		(ripe|big|large) = -[age=2]
