@@ -223,7 +223,7 @@ decoratives after flattening:
 		{default} = -[eye=false]
 		unfilled = -[eye=false]
 		filled = -[eye=true]
-	{end portal eye state} {directional} end portal frame¦s [block] = minecraft:end_portal_frame
+	{directional} {end portal eye state} end portal frame¦s [block] = minecraft:end_portal_frame
 	end portal frame item¦s = minecraft:end_portal_frame
 
 
@@ -308,7 +308,7 @@ decoratives after flattening:
 	# State dependent - aliases we can easily make more detailed than the old aliases thanks to states
 	dead chorus flower¦s = minecraft:chorus_flower[age=5]
 	{waterloggable} {directional} chest¦s = minecraft:chest
-	{directional} {waterloggable} trapped chest¦s = minecraft:trapped_chest
+	{waterloggable} {directional} trapped chest¦s = minecraft:trapped_chest
 	{waterloggable} {directional} ladder¦s = minecraft:ladder
 	{waterloggable} {directional} ender chest¦s = minecraft:ender_chest
 	{directional} [(unbroken|regular)] anvil¦s = minecraft:anvil

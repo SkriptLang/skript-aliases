@@ -119,14 +119,14 @@ redstone after flattening:
 	# Logic pieces
 	{comparator mode}:
 		{default} = -[mode=compare]
-		compare mode = -[mode=compare]
-		subtract mode = -[mode=subtract]
+		(comparison|compare mode) = -[mode=compare]
+		(subtraction|subtract mode) = -[mode=subtract]
 	{directional} {powerable} [redstone] repeater¦s = minecraft:repeater
-	{comparator mode} {directional} {powerable} [redstone] comparator [item]¦s = minecraft:comparator
+	{powerable} {directional} {comparator mode} [redstone] comparator [item]¦s = minecraft:comparator
 
 	# Buttons
-	{directional} {powerable} {wood type} button¦s = -button
-	{directional} {powerable} stone button¦s = minecraft:stone_button
+	{powerable} {directional} {wood type} button¦s = -button
+	{powerable} {directional} stone button¦s = minecraft:stone_button
 	[any] wood[en] button¦s = oak button, spruce button, birch button, jungle button, acacia button, dark oak button
 	[any] button¦s = stone button, any wooden button
 
@@ -136,17 +136,17 @@ redstone after flattening:
 	[any] pressure plate¦s = stone pressure plate, gold pressure plate, iron pressure plate, any wooden pressure plate
 
 	# Trapdoors
-	{waterloggable} {openable} {powerable} {directional} {wood type} trapdoor¦s = -trapdoor
+	{waterloggable} {openable} {directional} {wood type} trapdoor¦s = -trapdoor
 	[any] wood[en] trapdoor¦s = oak trapdoor, spruce trapdoor, birch trapdoor, jungle trapdoor, acacia trapdoor, dark oak trapdoor
 	[any] trapdoor¦s = iron trapdoor, any wooden trapdoor
 
 	# Fence gates
-	{openable} {powerable} {wood type} [fence] gate¦s = -fence_gate
+	{powerable} {openable} {wood type} [fence] gate¦s = -fence_gate
 	[any] [fence] gate¦s = oak gate, spruce gate, birch gate, jungle gate, acacia gate, dark oak gate
 
 	# Doors
-	{directional} {block half} {openable} {powerable} {wood type} door¦s = -door
-	{directional} {block half} {openable} {powerable} iron door¦s = minecraft:iron_door
+	{powerable} {openable} {directional} {block half} {wood type} door¦s = -door
+	{powerable} {openable} {directional} {block half} iron door¦s = minecraft:iron_door
 	[any] wood[en] door¦s = oak door, spruce door, birch door, jungle door, acacia door, dark oak door
 	[any] door¦s = iron door, any wooden door
 
@@ -216,7 +216,7 @@ old observer:
 
 new observer:
 	minecraft version = 1.13 or newer
-	{orientable} {powerable} [redstone] observer¦s = minecraft:observer
+	{powerable} {orientable} [redstone] observer¦s = minecraft:observer
 
 categories:
 	[any] daylight (detector|sensor)¦s = normal daylight detector, inverted daylight detector
