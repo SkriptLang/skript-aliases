@@ -51,14 +51,14 @@ redstone before flattening:
 	# Fences and doors
 	{gate state}:
 		{default} = - {Damage:0}
-		[closed] south[ward] [facing] = - {Damage:0}
-		[closed] west[ward] [facing] = - {Damage:1}
-		[closed] north[ward] [facing] = - {Damage:2}
-		[closed] east[ward] [facing] = - {Damage:3}
-		open south[ward] [facing] = - {Damage:4}
-		open west[ward] [facing] = - {Damage:5}
-		open north[ward] [facing] = - {Damage:6}
-		open east[ward] [facing] = - {Damage:7}
+		[closed] south(ward| facing) = - {Damage:0}
+		[closed] west(ward| facing) = - {Damage:1}
+		[closed] north(ward| facing) = - {Damage:2}
+		[closed] east(ward| facing) = - {Damage:3}
+		open south(ward| facing) = - {Damage:4}
+		open west(ward| facing) = - {Damage:5}
+		open north(ward| facing) = - {Damage:6}
+		open east(ward| facing) = - {Damage:7}
 
 	{gate state} oak [wood[en]] fence gate¦s = minecraft:fence_gate
 	{gate state} spruce [wood[en]] fence gate¦s = minecraft:spruce_fence_gate
@@ -70,14 +70,14 @@ redstone before flattening:
 
 	{door state}:
 		{default} = - {Damage:0}
-		[closed] east[ward] [facing] [bottom] = - {Damage:0}
-		[closed] south[ward] [facing] [bottom] = - {Damage:1}
-		[closed] west[ward] [facing] [bottom] = - {Damage:2}
-		[closed] north[ward] [facing] [bottom] = - {Damage:3}
-		open east[ward] [facing] [bottom] = - {Damage:4}
-		open south[ward] [facing] [bottom] = - {Damage:5}
-		open west[ward] [facing] [bottom] = - {Damage:6}
-		open north[ward] [facing] [bottom] = - {Damage:7}
+		[closed] east(ward| facing) [bottom] = - {Damage:0}
+		[closed] south(ward| facing) [bottom] = - {Damage:1}
+		[closed] west(ward| facing) [bottom] = - {Damage:2}
+		[closed] north(ward| facing) [bottom] = - {Damage:3}
+		open east(ward| facing) [bottom] = - {Damage:4}
+		open south(ward| facing) [bottom] = - {Damage:5}
+		open west(ward| facing) [bottom] = - {Damage:6}
+		open north(ward| facing) [bottom] = - {Damage:7}
 		left-hinged [closed] top = - {Damage:8}
 		right-hinged [closed] top = - {Damage:9}
 		left-hinged powered [closed] top = - {Damage:10}
@@ -181,11 +181,11 @@ redstone after flattening:
 	# Hoppers can't point up, and orientable includes up (and it's the default state)
 	{hopper direction}:
 		{default} = -[facing=down]
-		down[ward] [facing] = -[facing=down]
-		north[ward] [facing] = -[facing=north]
-		south[ward] [facing] = -[facing=south]
-		west[ward] [facing] = -[facing=west]
-		east[ward] [facing] = -[facing=east]
+		down(ward| facing) = -[facing=down]
+		north(ward| facing) = -[facing=north]
+		south(ward| facing) = -[facing=south]
+		west(ward| facing) = -[facing=west]
+		east(ward| facing) = -[facing=east]
 	{enableable}:
 		{default} = -[enabled=true]
 		enabled = -[enabled=true]

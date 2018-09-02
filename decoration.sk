@@ -285,7 +285,7 @@ decoratives after flattening:
 	# Miscellaneous
 	[floor] torch¦es = minecraft:torch
 	{directional} wall torch¦es = minecraft:wall_torch
-	any torch = floor torch, north wall torch, south wall torch, east wall torch, west wall torch
+	any torch = floor torch, north facing wall torch, south facing wall torch, east facing wall torch, west facing wall torch
 	(wet|moist|hydrated) farmland = minecraft:farmland[moisture=7]
 	{directional} {lightable} furnace¦s = minecraft:furnace
 	[any] furnace¦s = lit furnace, unlit furnace

@@ -64,50 +64,50 @@ data values:
 	# Dispenser, dropper, pistons, end rods.
 	{orientable}:
 		{default} = - {Damage:1}
-		down[ward] [facing] = - {Damage:0}
-		up[ward] [facing] = - {Damage:1}
-		north[ward] [facing] = - {Damage:2}
-		south[ward] [facing] = - {Damage:3}
-		west[ward] [facing] = - {Damage:4}
-		east[ward] [facing] = - {Damage:5}
+		down(ward| facing) = - {Damage:0}
+		up(ward| facing) = - {Damage:1}
+		north(ward| facing) = - {Damage:2}
+		south(ward| facing) = - {Damage:3}
+		west(ward| facing) = - {Damage:4}
+		east(ward| facing) = - {Damage:5}
 
 	# For all stairs
 	{stair direction}:
 		{default} = - {Damage:0}
-		[right-side up] east[ward] [facing] = - {Damage:0}
-		[right-side up] west[ward] [facing] = - {Damage:1}
-		[right-side up] south[ward] [facing] = - {Damage:2}
-		[right-side up] north[ward] [facing] = - {Damage:3}
-		upside down east[ward] [facing] = - {Damage:4}
-		upside down west[ward] [facing] = - {Damage:5}
-		upside down south[ward] [facing] = - {Damage:6}
-		upside down north[ward] [facing] = - {Damage:7}
+		[right-side up] east(ward| facing) = - {Damage:0}
+		[right-side up] west(ward| facing) = - {Damage:1}
+		[right-side up] south(ward| facing) = - {Damage:2}
+		[right-side up] north(ward| facing) = - {Damage:3}
+		upside down east(ward| facing) = - {Damage:4}
+		upside down west(ward| facing) = - {Damage:5}
+		upside down south(ward| facing) = - {Damage:6}
+		upside down north(ward| facing) = - {Damage:7}
 
 	# For blocks that can be attached to sides of another block, such as torches.
 	{attached}:
 		{default} = - {Damage:5}
-		down[ward] [facing] = - {Damage:0}
-		east[ward] [facing] wall = - {Damage:1}
-		west[ward] [facing] wall = - {Damage:2}
-		south[ward] [facing] wall = - {Damage:3}
-		north[ward] [facing] wall = - {Damage:4}
-		up[ward] [facing]|floor = - {Damage:5}
+		down(ward| facing) = - {Damage:0}
+		east(ward| facing) wall = - {Damage:1}
+		west(ward| facing) wall = - {Damage:2}
+		south(ward| facing) wall = - {Damage:3}
+		north(ward| facing) wall = - {Damage:4}
+		up(ward| facing)|floor = - {Damage:5}
 
 	# For blocks that can be attached to sides of another block and toggled, namely buttons.
 	{attached toggleable}:
 		{default} = - {Damage:5}
-		[inactive] down[ward] [facing] = - {Damage:0}
-		[inactive] east[ward] [facing] = - {Damage:1}
-		[inactive] west[ward] [facing] = - {Damage:2}
-		[inactive] south[ward] [facing] = - {Damage:3}
-		[inactive] north[ward] [facing] = - {Damage:4}
-		[inactive] up[ward] [facing] = - {Damage:5}
-		active down[ward] [facing] = - {Damage:8}
-		active east[ward] [facing] = - {Damage:9}
-		active west[ward] [facing] = - {Damage:10}
-		active south[ward] [facing] = - {Damage:11}
-		active north[ward] [facing] = - {Damage:12}
-		active up[ward] [facing] = - {Damage:13}
+		[inactive] down(ward| facing) = - {Damage:0}
+		[inactive] east(ward| facing) = - {Damage:1}
+		[inactive] west(ward| facing) = - {Damage:2}
+		[inactive] south(ward| facing) = - {Damage:3}
+		[inactive] north(ward| facing) = - {Damage:4}
+		[inactive] up(ward| facing) = - {Damage:5}
+		active down(ward| facing) = - {Damage:8}
+		active east(ward| facing) = - {Damage:9}
+		active west(ward| facing) = - {Damage:10}
+		active south(ward| facing) = - {Damage:11}
+		active north(ward| facing) = - {Damage:12}
+		active up(ward| facing) = - {Damage:13}
 
 	# For wood types defined by data values in older versions. Not all wooden blocks can use this,
 	# just ones that were all stored in one ID using DVs 0-5 to represent them.
@@ -146,20 +146,20 @@ block states:
 	# Dispenser, dropper, pistons, end rods.
 	{orientable}:
 		{default} = -[facing=up]
-		down[ward] [facing] = -[facing=down]
-		up[ward] [facing] = -[facing=up]
-		north[ward] [facing] = -[facing=north]
-		south[ward] [facing] = -[facing=south]
-		west[ward] [facing] = -[facing=west]
-		east[ward] [facing] = -[facing=east]
+		down(ward| facing) = -[facing=down]
+		up(ward| facing) = -[facing=up]
+		north(ward| facing) = -[facing=north]
+		south(ward| facing) = -[facing=south]
+		west(ward| facing) = -[facing=west]
+		east(ward| facing) = -[facing=east]
 
 	# For blocks that can only point in four directions.
 	{directional}:
 		{default} = -[facing=east]
-		north[ward] [facing] = -[facing=north]
-		south[ward] [facing] = -[facing=south]
-		west[ward] [facing] = -[facing=west]
-		east[ward] [facing] = -[facing=east]
+		north(ward| facing) = -[facing=north]
+		south(ward| facing) = -[facing=south]
+		west(ward| facing) = -[facing=west]
+		east(ward| facing) = -[facing=east]
 
 	# For anything that can exist in either the top or bottom half of a block (slabs), can be flipped
 	# (stairs), or that has top and bottom halves (double plants, doors, etc.)
@@ -185,7 +185,7 @@ block states:
 	# For anything that can be waterlogged.
 	{waterloggable}:
 		{default} = -[waterlogged=false]
-		(dry|non-waterlogged) = -[waterlogged=false]
+		dry = -[waterlogged=false]
 		waterlogged = -[waterlogged=true]
 
 	# For anything that can be opened (doors, trapdoors, fence gates).
@@ -209,49 +209,49 @@ block states:
 	# For blocks that can be rotated
 	{rotatable}:
 		{default} = -[rotation=0]
-		south[ward] [rotated] = -[rotation=0]
-		south-southwest[ward] [rotated] = -[rotation=1]
-		southwest[ward] [rotated] = -[rotation=2]
-		west-southwest[ward] [rotated] = -[rotation=3]
-		west[ward] [rotated] = -[rotation=4]
-		west-northwest[ward] [rotated] = -[rotation=5]
-		northwest[ward] [rotated] = -[rotation=6]
-		north-northwest[ward] [rotated] = -[rotation=7]
-		north[ward] [rotated] = -[rotation=8]
-		north-northeast[ward] [rotated] = -[rotation=9]
-		northeast[ward] [rotated] = -[rotation=10]
-		east-northeast[ward] [rotated] = -[rotation=11]
-		east[ward] [rotated] = -[rotation=12]
-		east-southeast[ward] [rotated] = -[rotation=13]
-		southeast[ward] [rotated] = -[rotation=14]
-		south-southeast[ward] [rotated] = -[rotation=15]
+		south(ward| rotated) = -[rotation=0]
+		south-southwest(ward| rotated) = -[rotation=1]
+		southwest(ward| rotated) = -[rotation=2]
+		west-southwest(ward| rotated) = -[rotation=3]
+		west(ward| rotated) = -[rotation=4]
+		west-northwest(ward| rotated) = -[rotation=5]
+		northwest(ward| rotated) = -[rotation=6]
+		north-northwest(ward| rotated) = -[rotation=7]
+		north(ward| rotated) = -[rotation=8]
+		north-northeast(ward| rotated) = -[rotation=9]
+		northeast(ward| rotated) = -[rotation=10]
+		east-northeast(ward| rotated) = -[rotation=11]
+		east(ward| rotated) = -[rotation=12]
+		east-southeast(ward| rotated) = -[rotation=13]
+		southeast(ward| rotated) = -[rotation=14]
+		south-southeast(ward| rotated) = -[rotation=15]
 	# Skull faces point north at rotation 0 instead of south
 	{reversed rotatable}:
 		{default} = -[rotation=0]
-		north[ward] [rotated] = -[rotation=0]
-		north-northeast[ward] [rotated] = -[rotation=1]
-		northeast[ward] [rotated] = -[rotation=2]
-		east-northeast[ward] [rotated] = -[rotation=3]
-		east[ward] [rotated] = -[rotation=4]
-		east-southeast[ward] [rotated] = -[rotation=5]
-		southeast[ward] [rotated] = -[rotation=6]
-		south-southeast[ward] [rotated] = -[rotation=7]
-		south[ward] [rotated] = -[rotation=8]
-		south-southwest[ward] [rotated] = -[rotation=9]
-		southwest[ward] [rotated] = -[rotation=10]
-		west-southwest[ward] [rotated] = -[rotation=11]
-		west[ward] [rotated] = -[rotation=12]
-		west-northwest[ward] [rotated] = -[rotation=13]
-		northwest[ward] [rotated] = -[rotation=14]
-		north-northwest[ward] [rotated] = -[rotation=15]
+		north(ward| rotated) = -[rotation=0]
+		north-northeast(ward| rotated) = -[rotation=1]
+		northeast(ward| rotated) = -[rotation=2]
+		east-northeast(ward| rotated) = -[rotation=3]
+		east(ward| rotated) = -[rotation=4]
+		east-southeast(ward| rotated) = -[rotation=5]
+		southeast(ward| rotated) = -[rotation=6]
+		south-southeast(ward| rotated) = -[rotation=7]
+		south(ward| rotated) = -[rotation=8]
+		south-southwest(ward| rotated) = -[rotation=9]
+		southwest(ward| rotated) = -[rotation=10]
+		west-southwest(ward| rotated) = -[rotation=11]
+		west(ward| rotated) = -[rotation=12]
+		west-northwest(ward| rotated) = -[rotation=13]
+		northwest(ward| rotated) = -[rotation=14]
+		north-northwest(ward| rotated) = -[rotation=15]
 
 # Aliases that can be used in at least one place both pre and post-flattening.
 global:
 	# For wood-based blocks that are defined with the wood type at the start of the alias.
 	{wood type}:
-		oak [wood[en]] = minecraft:oak_-
-		spruce [wood[en]] = minecraft:spruce_-
-		birch [wood[en]] = minecraft:birch_-
-		jungle [wood[en]] = minecraft:jungle_-
-		acacia [wood[en]] = minecraft:acacia_-
-		dark oak [wood[en]] = minecraft:dark_oak_-
+		oak [wood] = minecraft:oak_-
+		spruce [wood] = minecraft:spruce_-
+		birch [wood] = minecraft:birch_-
+		jungle [wood] = minecraft:jungle_-
+		acacia [wood] = minecraft:acacia_-
+		dark oak [wood] = minecraft:dark_oak_-
