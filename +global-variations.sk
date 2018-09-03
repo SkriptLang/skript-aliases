@@ -145,7 +145,7 @@ block states:
 	# For blocks that can point in all six directions.
 	# Dispenser, dropper, pistons, end rods.
 	{orientable}:
-		{default} = -[facing=up]
+		{default} = -
 		down(ward| facing) = -[facing=down]
 		up(ward| facing) = -[facing=up]
 		north(ward| facing) = -[facing=north]
@@ -155,7 +155,7 @@ block states:
 
 	# For blocks that can only point in four directions.
 	{directional}:
-		{default} = -[facing=east]
+		{default} = -
 		north(ward| facing) = -[facing=north]
 		south(ward| facing) = -[facing=south]
 		west(ward| facing) = -[facing=west]
