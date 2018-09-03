@@ -352,6 +352,18 @@ building blocks after flattening:
 	magma [block¦s] = minecraft:magma_block
 	red nether brick¦s = minecraft:red_nether_bricks
 
+
+
+	# Miscellaneous
+	pumpkin¦s = minecraft:pumpkin
+	(unlit|carved) pumpkin¦s = minecraft:carved_pumpkin
+	(lit pumpkin|jack(-| )o['](-| )lantern)¦s = minecraft:jack_o_lantern
+	melon [block]¦s = minecraft:melon
+	[red] brick block¦s = minecraft:bricks
+	{axis-aligned} hay [(bale|block)¦s] = minecraft:hay_block
+	[any] hay [(bale|block)¦s] = vertical hay bale, east-west hay bale, north-south hay bale
+	snow block¦s = minecraft:snow_block
+
 	# Snow layers
 	{snow depth}:
 		1 = -[layers=0]
@@ -364,16 +376,6 @@ building blocks after flattening:
 		8 = -[layers=8]
 	{snow depth} deep snow block = snow block
 	full snow block = 8 deep snow block
-
-	# Miscellaneous
-	pumpkin¦s = minecraft:pumpkin
-	(unlit|carved) pumpkin¦s = minecraft:carved_pumpkin
-	(lit pumpkin|jack(-| )o['](-| )lantern)¦s = minecraft:jack_o_lantern
-	melon [block]¦s = minecraft:melon
-	[red] brick block¦s = minecraft:bricks
-	{axis-aligned} hay [(bale|block)¦s] = minecraft:hay_block
-	[any] hay [(bale|block)¦s] = vertical hay bale, east-west hay bale, north-south hay bale
-	snow block¦s = minecraft:snow_block
 
 # Categories for items that exist in both 1.13 and before but with different ids
 categories:
