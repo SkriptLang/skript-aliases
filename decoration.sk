@@ -362,7 +362,7 @@ exploration update after flattening:
 update aquatic:
 	minecraft version = 1.13 or newer
 	seagrass¦es = minecraft:seagrass
-	tall seagrass¦es = minecraft:tall_seagrass
+	{block half} tall seagrass¦es = minecraft:tall_seagrass
 
 	# This allows for e.g. "waterlogged pair of sea pickles" or "dry singular sea pickle"
 	{pickle count}:
