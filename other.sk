@@ -105,7 +105,7 @@ unlisted after flattening:
 	[(mob|monster)] spawner¦s = minecraft:spawner
 
 	{conditional}:
-		{default} = -[conditional=false]
+		{default} = -
 		unconditional = -[conditional=false]
 		conditional = -[conditional=true]
 	{orientable} {conditional} [impulse] command block¦s = minecraft:command_block
@@ -122,14 +122,14 @@ unlisted after flattening:
 	{directional} attached pumpkin stem = minecraft:attached_pumpkin_stem
 
 	{cocoa growth state}:
-		{default} = -[age=2]
+		{default} = -
 		(small|freshly planted) = -[age=0]
 		medium = -[age=1]
 		(ripe|big|large) = -[age=2]
 	{cocoa growth state} {directional} cocoa [plant¦s] = minecraft:cocoa
 
 	{crop growth stage}:
-		{default} = -[age=7]
+		{default} = -
 		freshly planted = -[age=0]
 		stage (2|two) = -[age=1]
 		stage (3|three) = -[age=2]
@@ -144,7 +144,7 @@ unlisted after flattening:
 	{crop growth stage} pumpkin stem = minecraft:pumpkin_stem
 	{crop growth stage} melon stem = minecraft:melon_stem
 	{beetroot growth stage}:
-		{default} = -[age=3]
+		{default} = -
 		(freshly planted|stage (1|one)) = -[age=0]
 		stage (2|two) = -[age=1]
 		stage (3|three) = -[age=2]

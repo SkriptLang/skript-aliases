@@ -240,7 +240,7 @@ building blocks after flattening:
 
 	# Sediments
 	{snowable}:
-		{default} = -[snowy=false]
+		{default} = -
 		(non-snowy|snowless) = -[snowy=false]
 		snowy = -[snowy=true]
 
@@ -298,7 +298,7 @@ building blocks after flattening:
 
 	# Slabs
 	{slab}:
-		{default} = -[type=bottom]
+		{default} = -
 		top = -[type=top]
 		bottom = -[type=bottom]
 		double = -[type=double]
@@ -320,7 +320,7 @@ building blocks after flattening:
 
 	# Stairs
 	{stairs}:
-		{default} = -[half=bottom]
+		{default} = -
 		top = -[half=top]
 		bottom = -[half=bottom]
 
@@ -351,7 +351,7 @@ building blocks after flattening:
 	# Nether
 	magma [block¦s] = minecraft:magma_block
 	red nether brick¦s = minecraft:red_nether_bricks
-	
+
 	# Snow layers
 	{snow depth}:
 		1 = -[layers=0]

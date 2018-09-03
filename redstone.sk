@@ -118,7 +118,7 @@ redstone after flattening:
 	minecraft version = 1.13 or newer
 	# Logic pieces
 	{comparator mode}:
-		{default} = -[mode=compare]
+		{default} = -
 		(comparison|compare mode) = -[mode=compare]
 		(subtraction|subtract mode) = -[mode=subtract]
 	{directional} {powerable} [redstone] repeater¦s = minecraft:repeater
@@ -165,7 +165,7 @@ redstone after flattening:
 
 	# Note blocks
 	{instrumental}:
-		{default} = -[instrument=harp]
+		{default} = -
 		xylophone = -[instrument=xylophone]
 		chime = -[instrument=chime]
 		guitar = -[instrument=guitar]
@@ -180,21 +180,21 @@ redstone after flattening:
 
 	# Hoppers can't point up, and orientable includes up (and it's the default state)
 	{hopper direction}:
-		{default} = -[facing=down]
+		{default} = -
 		down(ward| facing) = -[facing=down]
 		north(ward| facing) = -[facing=north]
 		south(ward| facing) = -[facing=south]
 		west(ward| facing) = -[facing=west]
 		east(ward| facing) = -[facing=east]
 	{enableable}:
-		{default} = -[enabled=true]
+		{default} = -
 		enabled = -[enabled=true]
 		disabled = -[enabled=false]
 	{enableable} {hopper direction} hopper¦s = minecraft:hopper
 
 	# Pistons
 	{extendable}:
-		{defaut} = -[extended=false]
+		{defaut} = -
 		(unextended|retracted) = -[extended=false]
 		extended = -[extended=true]
 	{orientable} {extendable} [(normal|non-sticky)] piston¦s = minecraft:piston

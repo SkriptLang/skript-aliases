@@ -34,12 +34,12 @@ new items:
 	heart[s] of the sea = minecraft:heart_of_the_sea
 
 	{hatch stage}:
-		{default} = -[hatch=0]
+		{default} = -
 		uncracked = -[hatch=2]
 		cracked = -[hatch=1]
 		almost hatched = -[hatch=2]
 	{egg count}:
-		{default} = -[eggs=1]
+		{default} = -
 		(one|singular) = -[eggs=1]
 		(pair of|[pile of] two) = -[eggs=2]
 		(trio of|[pile of] three) = -[eggs=3]

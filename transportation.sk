@@ -78,7 +78,7 @@ rails after flattening:
 	minecraft version = 1.13 or newer
 
 	{rail straight}:
-		{default} = -[shape=north_south]
+		{default} = -
 		[(flat|straight)] (north-south|south-north) = -[shape=north_south]
 		[(flat|straight)] (east-west|west-east) = -[shape=east_west]
 		(ascending north|descending south) = -[shape=ascending_north]
@@ -87,7 +87,7 @@ rails after flattening:
 		(ascending west|descending east) = -[shape=ascending_west]
 
 	{rail curve}:
-		{default} = -[shape=north_east]
+		{default} = -
 		[curved] (north-east|east-north) = -[shape=north_east]
 		[curved] (north-west|west-north) = -[shape=north_west]
 		[curved] (south-east|east-south) = -[shape=south_east]

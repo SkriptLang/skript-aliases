@@ -157,7 +157,7 @@ decoratives after flattening:
 	{wood type} sapling¦s = -sapling
 
 	{decayable}:
-		{default} = -[persistent=false]
+		{default} = -
 		decayable = -[persistent=false]
 		(persistent|permanent) = -[persistent=true]
 	{decayable} {wood type} lea(f|ves) = -leaves
@@ -166,7 +166,7 @@ decoratives after flattening:
 	[cob]web¦s = minecraft:cobweb
 
 	{jukebox state}:
-		{default} = -[has_record=false]
+		{default} = -
 		without record = -[has_record=false]
 		with record = -[has_record=true]
 	jukebox[es] {jukebox state} = minecraft:jukebox
@@ -220,7 +220,7 @@ decoratives after flattening:
 
 	# End Portal Frame
 	{end portal eye state}:
-		{default} = -[eye=false]
+		{default} = -
 		unfilled = -[eye=false]
 		filled = -[eye=true]
 	{directional} {end portal eye state} end portal frame¦s [block] = minecraft:end_portal_frame
@@ -249,11 +249,11 @@ decoratives after flattening:
 
 	# Beds
 	{bed part}:
-		{default} = -[part=foot]
+		{default} = -
 		foot = -[part=foot]
 		head = -[part=head]
 	{bed occupied}:
-		{default} = -[occupied=false]
+		{default} = -
 		unoccupied = -[occupied=false]
 		occupied = -[occupied=true]
 	{directional} {bed occupied} {colored} bed {bed part} = -bed
@@ -366,7 +366,7 @@ update aquatic:
 
 	# This allows for e.g. "waterlogged pair of sea pickles" or "dry singular sea pickle"
 	{pickle count}:
-		{default} = -[pickles=1]
+		{default} = -
 		(one|singular) = -[pickles=1]
 		(pair of|[bundle of] two) = -[pickles=2]
 		(trio of|[bundle of] three) = -[pickles=3]
