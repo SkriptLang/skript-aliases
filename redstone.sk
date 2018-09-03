@@ -35,17 +35,17 @@ redstone before flattening:
 	any [redstone] comparator¦s = unpowered comparator, powered comparator
 
 	# Buttons & levers
-	{attached toggleable} [oak] wood[en] button¦s = minecraft:wooden_button
+	{attached toggleable} [oak] wood button¦s = minecraft:wooden_button
 	{attached toggleable} stone button¦s = minecraft:stone_button
 	[any] button = stone button, wood button
 	[redstone] lever¦s = minecraft:lever
 
 	# Pressure plates
-	[oak] wood[en] pressure plate¦s = minecraft:wooden_pressure_plate
+	[oak] wood pressure plate¦s = minecraft:wooden_pressure_plate
 	[any] pressure plate¦s = stone pressure plate, wood pressure plate, gold pressure plate, iron pressure plate
 
 	# Trapdoors
-	[oak] wood[en] trapdoor¦s = minecraft:trapdoor
+	[oak] wood trapdoor¦s = minecraft:trapdoor
 	[any] trapdoor¦s = wood trapdoor, iron trapdoor
 
 	# Fences and doors
@@ -60,12 +60,12 @@ redstone before flattening:
 		open north(ward| facing) = - {Damage:6}
 		open east(ward| facing) = - {Damage:7}
 
-	{gate state} oak [wood[en]] fence gate¦s = minecraft:fence_gate
-	{gate state} spruce [wood[en]] fence gate¦s = minecraft:spruce_fence_gate
-	{gate state} birch [wood[en]] fence gate¦s = minecraft:birch_fence_gate
-	{gate state} jungle [wood[en]] fence gate¦s = minecraft:jungle_fence_gate
-	{gate state} acacia [wood[en]] fence gate¦s = minecraft:acacia_fence_gate
-	{gate state} dark oak [wood[en]] fence gate¦s = minecraft:dark_oak_fence_gate
+	{gate state} oak [wood] fence gate¦s = minecraft:fence_gate
+	{gate state} spruce [wood] fence gate¦s = minecraft:spruce_fence_gate
+	{gate state} birch [wood] fence gate¦s = minecraft:birch_fence_gate
+	{gate state} jungle [wood] fence gate¦s = minecraft:jungle_fence_gate
+	{gate state} acacia [wood] fence gate¦s = minecraft:acacia_fence_gate
+	{gate state} dark oak [wood] fence gate¦s = minecraft:dark_oak_fence_gate
 	[any] [fence] gate¦s = oak gate, spruce gate, birch gate, jungle gate, acacia gate, dark oak gate
 
 	{door state}:
@@ -83,13 +83,13 @@ redstone before flattening:
 		left-hinged powered [closed] top = - {Damage:10}
 		right-hinged powered [closed] top = - {Damage:11}
 
-	{door state} oak [wood[en]] door¦s = minecraft:wooden_door
+	{door state} oak [wood] door¦s = minecraft:wooden_door
 	{door state} iron door¦s = minecraft:iron_door
-	{door state} spruce [wood[en]] door¦s = minecraft:spruce_door
-	{door state} birch [wood[en]] door¦s = minecraft:birch_door
-	{door state} jungle [wood[en]] door¦s = minecraft:jungle_door
-	{door state} acacia [wood[en]] door¦s = minecraft:acacia_door
-	{door state} dark oak [wood[en]] door¦s = minecraft:dark_oak_door
+	{door state} spruce [wood] door¦s = minecraft:spruce_door
+	{door state} birch [wood] door¦s = minecraft:birch_door
+	{door state} jungle [wood] door¦s = minecraft:jungle_door
+	{door state} acacia [wood] door¦s = minecraft:acacia_door
+	{door state} dark oak [wood] door¦s = minecraft:dark_oak_door
 	[any] wood[en] door¦s = oak door, spruce door, birch door, jungle door, acacia door, dark oak door
 	[any] door¦s = iron door, any wood door
 

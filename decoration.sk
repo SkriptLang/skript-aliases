@@ -382,50 +382,50 @@ orientations before flattening:
 		player (head|skull)¦s = - {SkullType:3}
 		creeper (head|skull)¦s = - {SkullType:4}
 	{wall orientations}:
-		north[ward] [facing] = - {Damage:3}
-		south[ward] [facing] = - {Damage:2}
-		east[ward] [facing] = - {Damage:4}
-		west[ward] [facing] = - {Damage:5}
+		north(ward| facing) = - {Damage:3}
+		south(ward| facing) = - {Damage:2}
+		east(ward| facing) = - {Damage:4}
+		west(ward| facing) = - {Damage:5}
 	{banner standing orientations}:
-		south[ward] [rotated] = - {Damage:1,Rot:0}
-		south-southwest[ward] [rotated] = - {Damage:1,Rot:1}
-		southwest[ward] [rotated] = - {Damage:1,Rot:2}
-		west-southwest[ward] [rotated] = - {Damage:1,Rot:3}
-		west[ward] [rotated] = - {Damage:1,Rot:4}
-		west-northwest[ward] [rotated] = - {Damage:1,Rot:5}
-		northwest[ward] [rotated] = - {Damage:1,Rot:6}
-		north-northwest[ward] [rotated] = - {Damage:1,Rot:7}
-		north[ward] [rotated] = - {Damage:1,Rot:8}
-		north-northeast[ward] [rotated] = - {Damage:1,Rot:9}
-		northeast[ward] [rotated] = - {Damage:1,Rot:10}
-		east-northeast[ward] [rotated] = - {Damage:1,Rot:11}
-		east[ward] [rotated] = - {Damage:1,Rot:12}
-		east-southeast[ward] [rotated] = - {Damage:1,Rot:13}
-		southeast[ward] [rotated] = - {Damage:1,Rot:14}
-		south-southeast[ward] [rotated] = - {Damage:1,Rot:15}
+		south(ward| rotated) = - {Damage:1,Rot:0}
+		south-southwest(ward| rotated) = - {Damage:1,Rot:1}
+		southwest(ward| rotated) = - {Damage:1,Rot:2}
+		west-southwest(ward| rotated) = - {Damage:1,Rot:3}
+		west(ward| rotated) = - {Damage:1,Rot:4}
+		west-northwest(ward| rotated) = - {Damage:1,Rot:5}
+		northwest(ward| rotated) = - {Damage:1,Rot:6}
+		north-northwest(ward| rotated) = - {Damage:1,Rot:7}
+		north(ward| rotated) = - {Damage:1,Rot:8}
+		north-northeast(ward| rotated) = - {Damage:1,Rot:9}
+		northeast(ward| rotated) = - {Damage:1,Rot:10}
+		east-northeast(ward| rotated) = - {Damage:1,Rot:11}
+		east(ward| rotated) = - {Damage:1,Rot:12}
+		east-southeast(ward| rotated) = - {Damage:1,Rot:13}
+		southeast(ward| rotated) = - {Damage:1,Rot:14}
+		south-southeast(ward| rotated) = - {Damage:1,Rot:15}
 	{skull floor orientations}:
-		north[ward] [rotated] = - {Damage:1,Rot:0}
-		north-northeast[ward] [rotated] = - {Damage:1,Rot:1}
-		northeast[ward] [rotated] = - {Damage:1,Rot:2}
-		east-northeast[ward] [rotated] = - {Damage:1,Rot:3}
-		east[ward] [rotated] = - {Damage:1,Rot:4}
-		east-southeast[ward] [rotated] = - {Damage:1,Rot:5}
-		southeast[ward] [rotated] = - {Damage:1,Rot:6}
-		south-southeast[ward] [rotated] = - {Damage:1,Rot:7}
-		south[ward] [rotated] = - {Damage:1,Rot:8}
-		south-southwest[ward] [rotated] = - {Damage:1,Rot:9}
-		southwest[ward] [rotated] = - {Damage:1,Rot:10}
-		west-southwest[ward] [rotated] = - {Damage:1,Rot:11}
-		west[ward] [rotated] = - {Damage:1,Rot:12}
-		west-northwest[ward] [rotated] = - {Damage:1,Rot:13}
-		northwest[ward] [rotated] = - {Damage:1,Rot:14}
-		north-northwest[ward] [rotated] = - {Damage:1,Rot:15}
+		north(ward| rotated) = - {Damage:1,Rot:0}
+		north-northeast(ward| rotated) = - {Damage:1,Rot:1}
+		northeast(ward| rotated) = - {Damage:1,Rot:2}
+		east-northeast(ward| rotated) = - {Damage:1,Rot:3}
+		east(ward| rotated) = - {Damage:1,Rot:4}
+		east-southeast(ward| rotated) = - {Damage:1,Rot:5}
+		southeast(ward| rotated) = - {Damage:1,Rot:6}
+		south-southeast(ward| rotated) = - {Damage:1,Rot:7}
+		south(ward| rotated) = - {Damage:1,Rot:8}
+		south-southwest(ward| rotated) = - {Damage:1,Rot:9}
+		southwest(ward| rotated) = - {Damage:1,Rot:10}
+		west-southwest(ward| rotated) = - {Damage:1,Rot:11}
+		west(ward| rotated) = - {Damage:1,Rot:12}
+		west-northwest(ward| rotated) = - {Damage:1,Rot:13}
+		northwest(ward| rotated) = - {Damage:1,Rot:14}
+		north-northwest(ward| rotated) = - {Damage:1,Rot:15}
 
 combat update skulls:
 	minecraft version = 1.9 to 1.12.2
-	[ender[ ]]dragon (head|skull) item¦s = minecraft:skull {SkullType:5}
+	[ender] dragon (head|skull) item¦s = minecraft:skull {SkullType:5}
 	#skulls on walls and floors
-	({wall orientations}|{skull floor orientations}) [ender[ ]]dragon (head|skull)¦s = minecraft:skull {SkullType:5}
+	({wall orientations}|{skull floor orientations}) [ender] dragon (head|skull)¦s = minecraft:skull {SkullType:5}
 
 directionals before flattening:
 	minecraft version = 1.12.2 or older
@@ -439,23 +439,23 @@ directionals before flattening:
 
 directionals after flattening:
 	minecraft version = 1.13 or newer
-	skelet(on|al) (skull|head) item¦s = minecraft:skeleton_skull
-	wither skelet(on|al) (skull|head) item¦s = minecraft:wither_skeleton_skull
-	zombi(e|fied) (head|skull) item¦s = minecraft:zombie_head
+	skeleton (skull|head) item¦s = minecraft:skeleton_skull
+	wither skeleton (skull|head) item¦s = minecraft:wither_skeleton_skull
+	zombie (head|skull) item¦s = minecraft:zombie_head
 	player (head|skull) item¦s = minecraft:player_head
 	creeper (head|skull) item¦s = minecraft:creeper_head
 	[ender[ ]]dragon (head|skull) item¦s = minecraft:dragon_head
 	#skulls on walls
-	{directional} skelet(on|al) wall[-mounted] (skull|head)¦s = minecraft:skeleton_wall_skull
-	{directional} wither skle(on|al) wall[-mounted] (skull|head)¦s = minecraft:wither_skeleton_wall_skull
-	{directional} zombi(e|fied) wall[-mounted] (head|skull)¦s = minecraft:zombie_wall_head
+	{directional} skeleton wall[-mounted] (skull|head)¦s = minecraft:skeleton_wall_skull
+	{directional} wither skleon wall[-mounted] (skull|head)¦s = minecraft:wither_skeleton_wall_skull
+	{directional} zombie wall[-mounted] (head|skull)¦s = minecraft:zombie_wall_head
 	{directional} player wall[-mounted] (head|skull)¦s = minecraft:player_wall_head
 	{directional} creeper wall[-mounted] (head|skull)¦s = minecraft:creeper_wall_head
 	{directional} [ender[ ]]dragon wall[-mounted] (head|skull)¦s = minecraft:dragon_wall_head
 	#skulls on floors
-	{reversed rotatable} skelet(on|al) (skull|head)¦s = minecraft:skeleton_skull
-	{reversed rotatable} wither skelet(on|al) (skull|head)¦s = minecraft:wither_skeleton_skull
-	{reversed rotatable} zombi(e|fied) (head|skull)¦s = minecraft:zombie_head
+	{reversed rotatable} skeleton (skull|head)¦s = minecraft:skeleton_skull
+	{reversed rotatable} wither skeleton (skull|head)¦s = minecraft:wither_skeleton_skull
+	{reversed rotatable} zombie (head|skull)¦s = minecraft:zombie_head
 	{reversed rotatable} player (head|skull)¦s = minecraft:player_head
 	{reversed rotatable} creeper (head|skull)¦s = minecraft:creeper_head
 	{reversed rotatable} [ender[ ]]dragon (head|skull)¦s = minecraft:dragon_head
