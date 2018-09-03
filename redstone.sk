@@ -194,7 +194,7 @@ redstone after flattening:
 
 	# Pistons
 	{extendable}:
-		{defaut} = -
+		{defaut} = -[extended=false]
 		(unextended|retracted) = -[extended=false]
 		extended = -[extended=true]
 	{orientable} {extendable} [(normal|non-sticky)] piston¦s = minecraft:piston
