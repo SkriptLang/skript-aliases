@@ -3,4 +3,4 @@
 torch options:
 	# TODO stairs, slabs
 	special torch sides = soul sand, monster spawner
-	special torch floors = special torch sides, any fence, glass block, any stained glass block, hopper, full snow block
+	special torch floors = special torch sides, any fence, glass block, any stained glass block, hopper, eight thick snow layer
