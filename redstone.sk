@@ -142,7 +142,7 @@ redstone after flattening:
 	[any] trapdoor¦s = iron trapdoor, any wooden trapdoor
 
 	# Fence gates
-	{powerable} {openable} {wood type} [fence] gate¦s = -fence_gate
+	{powerable} {openable} {directional} {wood type} [fence] gate¦s = -fence_gate
 	[any] [fence] gate¦s = oak gate, spruce gate, birch gate, jungle gate, acacia gate, dark oak gate
 
 	# Doors
