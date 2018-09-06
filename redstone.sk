@@ -16,7 +16,6 @@ unchanged redstone:
 	{orientable} dispenser¦s = minecraft:dispenser
 	{orientable} dropper¦s = minecraft:dropper`
 
-	iron trapdoor¦s = minecraft:iron_trapdoor
 	tnt [block¦s] = minecraft:tnt
 
 redstone before flattening:
@@ -45,6 +44,7 @@ redstone before flattening:
 	[any] pressure plate¦s = stone pressure plate, wood pressure plate, gold pressure plate, iron pressure plate
 
 	# Trapdoors
+	iron trapdoor¦s = minecraft:iron_trapdoor
 	[oak] wood trapdoor¦s = minecraft:trapdoor
 	[any] trapdoor¦s = wood trapdoor, iron trapdoor
 
@@ -136,7 +136,8 @@ redstone after flattening:
 	[any] pressure plate¦s = stone pressure plate, gold pressure plate, iron pressure plate, any wooden pressure plate
 
 	# Trapdoors
-	{waterloggable} {openable} {directional} {wood type} trapdoor¦s = -trapdoor
+	{waterloggable} {openable} {block half} {directional} iron trapdoor¦s = minecraft:iron_trapdoor
+	{waterloggable} {openable} {block half} {directional} {wood type} trapdoor¦s = -trapdoor
 	[any] wood[en] trapdoor¦s = oak trapdoor, spruce trapdoor, birch trapdoor, jungle trapdoor, acacia trapdoor, dark oak trapdoor
 	[any] trapdoor¦s = iron trapdoor, any wooden trapdoor
 
