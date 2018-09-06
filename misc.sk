@@ -104,10 +104,12 @@ fireworks:
 before flattening:
 	minecraft version = 1.12.2 or older
 	[(flight|duration|flight duration) {firework types} ] firework [rocket]¦s = fireworks
+	firework (star|charge)¦s = minecraft:firework_charge
 
 after flattening:
 	minecraft version = 1.13 or newer
 	[(flight|duration|flight duration) {firework types} ] firework [rocket]¦s = minecraft:firework_rocket
+	firework (star|charge)¦s = minecraft:firework_star
 
 plants:
 	pumpkin seeds = minecraft:pumpkin_seeds
