@@ -125,8 +125,8 @@ redstone after flattening:
 	{powerable} {directional} {comparator mode} [redstone] comparator [item]¦s = minecraft:comparator
 
 	# Buttons
-	{powerable} {directional} {wood type} button¦s = -button
-	{powerable} {directional} stone button¦s = minecraft:stone_button
+	{powerable} {directional} {wood type} {attached} button¦s = -button
+	{powerable} {directional} {attached} stone button¦s = minecraft:stone_button
 	[any] wood[en] button¦s = oak button, spruce button, birch button, jungle button, acacia button, dark oak button
 	[any] button¦s = stone button, any wooden button
 
@@ -191,7 +191,7 @@ redstone after flattening:
 		{default} = -
 		enabled = -[enabled=true]
 		disabled = -[enabled=false]
-	{enableable} {hopper direction} hopper¦s = minecraft:hopper
+	{hopper direction} {enableable} hopper¦s = minecraft:hopper
 
 	# Pistons
 	{extendable}:
@@ -206,7 +206,7 @@ redstone after flattening:
 	# Misc activatables
 	{directional} {powerable} tripwire hook¦s = minecraft:tripwire_hook
 	inverted daylight (detector|sensor)¦s = minecraft:daylight_detector[inverted=true]
-	{powerable} {attached} {directional} [redstone] lever¦s = minecraft:lever
+	{powerable} {directional} {attached} [redstone] lever¦s = minecraft:lever
 
 unstable tnt:
 	minecraft version = 1.13.1 or newer

@@ -197,9 +197,9 @@ block states:
 	# For blocks that can be attached to sides of another block, such as levers.
 	{attached}:
 		{default} = -
-		floor[-attached] = -[face=floor]
-		wall[-attached] = -[face=wall]
-		ceiling[-attached] = -[face=ceiling]
+		floor = -[face=floor]
+		wall = -[face=wall]
+		ceiling = -[face=ceiling]
 
 	# For blocks that have a lit state, like furnaces or redstone torches.
 	{lightable}:

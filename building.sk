@@ -354,8 +354,8 @@ building blocks after flattening:
 
 	# Miscellaneous
 	pumpkin¦s = minecraft:pumpkin
-	(unlit|carved) pumpkin¦s = minecraft:carved_pumpkin
-	(lit pumpkin|jack(-| )o['](-| )lantern)¦s = minecraft:jack_o_lantern
+	{directional} (unlit|carved) pumpkin¦s = minecraft:carved_pumpkin
+	{directional} (lit pumpkin|jack(-| )o['](-| )lantern)¦s = minecraft:jack_o_lantern
 	melon [block]¦s = minecraft:melon
 	[red] brick block¦s = minecraft:bricks
 	{axis-aligned} hay [(bale|block)¦s] = minecraft:hay_block
