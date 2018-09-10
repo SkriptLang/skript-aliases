@@ -105,7 +105,7 @@ decoratives before flattening:
 	{colored} carpet¦s = minecraft:carpet
 	any carpet¦s = white carpet, orange carpet, magenta carpet, light blue carpet, yellow carpet, lime carpet, pink carpet, dark gray carpet, light gray carpet, cyan carpet, purple carpet, blue carpet, brown carpet, dark green carpet, red carpet, black carpet
 
-	{colored} stained glass pane¦s = minecraft:stained_glass_pane
+	{colored} [stained] glass pane¦s = minecraft:stained_glass_pane
 	any stained glass pane¦s = white stained glass pane, orange stained glass pane, magenta stained glass pane, light blue stained glass pane, yellow stained glass pane, lime stained glass pane, pink stained glass pane, dark gray stained glass pane, light gray stained glass pane, cyan stained glass pane, purple stained glass pane, blue stained glass pane, brown stained glass pane, dark green stained glass pane, red stained glass pane, black stained glass pane
 
 	# Glazed terracotta colors actually are separated by IDs even here in 1.12. It uses a separate
@@ -236,7 +236,7 @@ decoratives after flattening:
 	{colored} carpet¦s = -carpet
 	any carpet¦s = white carpet, orange carpet, magenta carpet, light blue carpet, yellow carpet, lime carpet, pink carpet, dark gray carpet, light gray carpet, cyan carpet, purple carpet, blue carpet, brown carpet, dark green carpet, red carpet, black carpet
 
-	{colored} stained glass pane¦s = -stained_glass_pane
+	{colored} [stained] glass pane¦s = -stained_glass_pane
 	any stained glass pane¦s = white stained glass pane, orange stained glass pane, magenta stained glass pane, light blue stained glass pane, yellow stained glass pane, lime stained glass pane, pink stained glass pane, dark gray stained glass pane, light gray stained glass pane, cyan stained glass pane, purple stained glass pane, blue stained glass pane, brown stained glass pane, dark green stained glass pane, red stained glass pane, black stained glass pane
 
 		# Glazed terracotta was slightly changed in 1.13 because silver became light_gray in IDs.
