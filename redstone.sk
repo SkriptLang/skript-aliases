@@ -136,8 +136,12 @@ redstone after flattening:
 	[any] pressure plate¦s = stone pressure plate, gold pressure plate, iron pressure plate, any wooden pressure plate
 
 	# Trapdoors
-	{waterloggable} {openable} {block half} {directional} iron trapdoor¦s = minecraft:iron_trapdoor
-	{waterloggable} {openable} {block half} {directional} {wood type} trapdoor¦s = -trapdoor
+	{trapdoor}:
+		{default} = -
+		(bottom|lower)[-half] = -[half=bottom]
+		(top|upper)[-half] = -[half=top]
+	{waterloggable} {openable} {trapdoor} {directional} iron trapdoor¦s = minecraft:iron_trapdoor
+	{waterloggable} {openable} {directional} {wood type} trapdoor¦s = -trapdoor
 	[any] wood[en] trapdoor¦s = oak trapdoor, spruce trapdoor, birch trapdoor, jungle trapdoor, acacia trapdoor, dark oak trapdoor
 	[any] trapdoor¦s = iron trapdoor, any wooden trapdoor
 
