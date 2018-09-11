@@ -151,6 +151,8 @@ unlisted after flattening:
 		(ripe|fully grown|stage (4|four)) = -[age=3]
 	{beetroot growth stage} beet[root] plant¦s = minecraft:beetroots
 
+	debug stick¦s = minecraft:debug_stick
+
 # Unlisted blocks added as part of 1.13 (Update Aquatic)
 update aquatic unlisted blocks:
 	minecraft version = 1.13 or newer
