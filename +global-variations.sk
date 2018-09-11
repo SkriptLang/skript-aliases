@@ -179,8 +179,8 @@ block states:
 	# For anything that can be powered. Levers, buttons, etc.
 	{powerable}:
 		{default} = -
-		(powered|activated|active) = -[powered=true]
-		(unpowered|deactivated|inactive) = -[powered=false]
+		powered = -[powered=true]
+		unpowered = -[powered=false]
 
 	# For anything that can be waterlogged.
 	{waterloggable}:
