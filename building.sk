@@ -361,6 +361,7 @@ building blocks after flattening:
 	{axis-aligned} hay [(bale|block)¦s] = minecraft:hay_block
 	[any] hay [(bale|block)¦s] = vertical hay bale, east-west hay bale, north-south hay bale
 	snow block¦s = minecraft:snow_block
+	{axis-aligned} purpur pillar¦s = minecraft:purpur_pillar
 
 # Categories for items that exist in both 1.13 and before but with different ids
 categories:
@@ -382,12 +383,12 @@ categories:
 combat update:
 	minecraft version = 1.9 or newer
 	purpur block¦s = minecraft:purpur_block
-	{axis-aligned} purpur pillar¦s = minecraft:purpur_pillar
 
 # Building blocks add in 1.9 whose IDs were changed in the flattening (1.13)
 combat update before flattening:
 	minecraft version = 1.9 to 1.12.2
 	end[ ]stone brick¦s = minecraft:end_bricks
+	purpur pillar¦s = minecraft:purpur_pillar
 	[bottom] purpur slab = minecraft:purpur_slab {Damage:0}
 	(upside-down|top) purpur slab = minecraft:purpur_slab {Damage:8}
 	(double purpur|purpur double) slab = minecraft:purpur_double_slab
