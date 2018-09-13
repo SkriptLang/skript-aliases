@@ -42,7 +42,7 @@ unchanged building blocks:
 	wet sponge¦s = minecraft:wet_sponge
 
 	# Construction/Decorative
-	[(plain|unstained|undyed)] glass [block¦s] = minecraft:glass
+	[(plain|unstained)] glass [block¦s] = minecraft:glass
 	book[ ]shel(f|ves) = minecraft:bookshelf
 
 	# Nether
@@ -132,7 +132,7 @@ old blocks before flattening:
 	any red sandstone [block¦s] = red sandstone, red chiseled sandstone, red cut sandstone
 
 	# Glass
-	{colored} stained glass [block¦s] = minecraft:stained_glass
+	{colored} [stained] glass [block¦s] = minecraft:stained_glass
 	[any] stained glass block¦s = white stained glass, orange stained glass, magenta stained glass, light blue stained glass, yellow stained glass, lime stained glass, pink stained glass, dark gray stained glass, light gray stained glass, cyan stained glass, purple stained glass, blue stained glass, brown stained glass, dark green stained glass, red stained glass, black stained glass
 
 	# Wool
@@ -140,8 +140,8 @@ old blocks before flattening:
 	[any] wool [block¦s] = white wool, orange wool, magenta wool, light blue wool, yellow wool, lime wool, pink wool, dark gray wool, light gray wool, cyan wool, purple wool, blue wool, brown wool, dark green wool, red wool, black wool
 
 	# Stained clay. Renamed to terracotta in 1.12 but the ID wasn't changed until 1.13.
-	{colored} stained ([hard[ened]] clay|terracotta) [block¦s] = minecraft:stained_hardened_clay
-	any stained ([hard[ened]] clay|terracotta) [block¦s] = minecraft:stained_hardened_clay
+	{colored} [stained] ([hard[ened]] clay|terracotta) [block¦s] = minecraft:stained_hardened_clay
+	[any] stained ([hard[ened]] clay|terracotta) [block¦s] = minecraft:stained_hardened_clay
 
 	[un(dyed|stained)] (hard[ened] clay|terracotta) [block¦s] = minecraft:hardened_clay
 	any (hard[ened] clay|terracotta) [block¦s] = any stained terracotta, unstained terracotta
@@ -276,7 +276,7 @@ building blocks after flattening:
 	[any] red sandstone [block¦s] = red sandstone, red chiseled sandstone, cut red sandstone
 
 	# Glass
-	{colored} stained glass [block¦s] = -stained_glass
+	{colored} [stained] glass [block¦s] = -stained_glass
 	[any] stained glass block¦s = white stained glass, orange stained glass, magenta stained glass, light blue stained glass, yellow stained glass, lime stained glass, pink stained glass, dark gray stained glass, light gray stained glass, cyan stained glass, purple stained glass, blue stained glass, brown stained glass, dark green stained glass, red stained glass, black stained glass
 
 	# Wool
