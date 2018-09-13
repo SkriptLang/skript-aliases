@@ -39,7 +39,6 @@ unchanged building blocks:
 
 	# Underwater
 	sponge¦s = minecraft:sponge
-	wet sponge¦s = minecraft:wet_sponge
 
 	# Construction/Decorative
 	[(plain|unstained)] glass [block¦s] = minecraft:glass
@@ -129,7 +128,7 @@ old blocks before flattening:
 	red sandstone [block¦s] = minecraft:red_sandstone {Damage:0}
 	red chiseled sandstone [block¦s] = minecraft:red_sandstone {Damage:1}
 	(smooth|cut) red sandstone [block¦s] = minecraft:red_sandstone {Damage:2}
-	any red sandstone [block¦s] = red sandstone, red chiseled sandstone, red cut sandstone
+	any red sandstone [block¦s] = red sandstone, red chiseled sandstone, cut red sandstone
 
 	# Glass
 	{colored} [stained] glass [block¦s] = minecraft:stained_glass
@@ -210,6 +209,7 @@ old blocks before flattening:
 	dark prismarine [block¦s] = minecraft:prismarine {Damage:2}
 	any prismarine = raw prismarine, prismarine bricks, dark prismarine
 	sea lantern¦s = minecraft:sea_lantern
+	wet sponge¦s = minecraft:sponge {Damage:1}
 
 	# Miscellaneous
 	[unlit] pumpkin¦s = minecraft:pumpkin
@@ -347,6 +347,7 @@ building blocks after flattening:
 	dark prismarine [block¦s] = minecraft:dark_prismarine
 	any prismarine [block¦s] = raw prismarine, prismarine bricks, dark prismarine
 	sea lantern¦s = minecraft:sea_lantern
+	wet sponge¦s = minecraft:wet_sponge
 
 	# Nether
 	magma [block¦s] = minecraft:magma_block
@@ -409,7 +410,7 @@ frostburn update before flattening:
 world of color update before flattening:
 	minecraft version = 1.12.2
 	{colored} concrete = minecraft:concrete
-	{colored} concrete powder = minecraft:concrete powder
+	{colored} concrete powder = minecraft:concrete_powder
 
 # NEW items that were added by 1.13 (as opposed to renames of old items).
 # These could've been grouped with the post-flattening aliases but this is better for clarity
@@ -436,17 +437,17 @@ update aquatic:
 
 	# Coral categories
 	{dead coral type}:
-		dead (tube|blue) coral = minecraft:dead_tube_coral_
-		dead (brain|pink) coral = minecraft:dead_brain_coral_
-		dead (bubble|magenta) coral = minecraft:dead_bubble_coral_
-		dead (fire|red) coral = minecraft:dead_fire_coral_
-		dead (horn|yellow) coral = minecraft:dead_horn_coral_
+		dead (tube|blue) coral = minecraft:dead_tube_coral_-
+		dead (brain|pink) coral = minecraft:dead_brain_coral_-
+		dead (bubble|magenta) coral = minecraft:dead_bubble_coral_-
+		dead (fire|red) coral = minecraft:dead_fire_coral_-
+		dead (horn|yellow) coral = minecraft:dead_horn_coral_-
 	{living coral type}:
-		(living|alive) (tube|blue) coral = minecraft:tube_coral_
-		(living|alive) (brain|pink) coral = minecraft:brain_coral_
-		(living|alive) (bubble|magenta) coral = minecraft:bubble_coral_
-		(living|alive) (fire|red) coral = minecraft:fire_coral_
-		(living|alive) (horn|yellow) coral = minecraft:horn_coral_
+		(living|alive) (tube|blue) coral = minecraft:tube_coral_-
+		(living|alive) (brain|pink) coral = minecraft:brain_coral_-
+		(living|alive) (bubble|magenta) coral = minecraft:bubble_coral_-
+		(living|alive) (fire|red) coral = minecraft:fire_coral_-
+		(living|alive) (horn|yellow) coral = minecraft:horn_coral_-
 
 	# Coral blocks
 	{dead coral type} [block]¦s = -block

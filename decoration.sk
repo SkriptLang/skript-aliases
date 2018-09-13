@@ -204,7 +204,6 @@ decoratives after flattening:
 	# Fences
 	{waterloggable} {wood type} fence¦s = -fence
 	{waterloggable} nether brick fence¦s = minecraft:nether_brick_fence
-	any fence¦s = oak fence, spruce fence, birch fence, jungle fence, acacia fence, dark oak fence, nether brick fence
 
 	# Silverfish blocks
 	(infested|silverfish) stone [block]¦s = minecraft:infested_stone
@@ -316,8 +315,9 @@ decoratives after flattening:
 	{directional} damaged anvil¦s = minecraft:damaged_anvil
 	any anvil¦s = anvil, chipped anvil, damaged anvil
 
-chest categories:
-	any chest = chest, trapped chest, ender chest
+unchanged categories:
+	any chest¦s = chest, trapped chest, ender chest
+	any fence¦s = oak fence, spruce fence, birch fence, jungle fence, acacia fence, dark oak fence, nether brick fence
 
 # New decoratives introduced in 1.9
 combat update:
@@ -434,8 +434,8 @@ directionals before flattening:
 	({wall orientations}|{skull floor orientations}) {skull types} = minecraft:skull
 	#BANNERS
 	{wall orientations} {opposite colored} wall banner¦s = minecraft:wall_banner
-	{banner standing orientations} {opposite colored} [standing] banner¦s = minecraft:banner
-	{opposite colored} banner item¦s = -banner
+	{banner standing orientations} {opposite colored} [standing] banner¦s = minecraft:standing_banner
+	{opposite colored} banner item¦s = minecraft:banner
 
 directionals after flattening:
 	minecraft version = 1.13 or newer
