@@ -448,8 +448,8 @@ update aquatic:
 		(living|alive) (horn|yellow) coral = minecraft:horn_coral_
 
 	# Coral blocks
-	{dead coral type} [block]¦s = -block
-	{living coral type} [block]¦s = -block
+	{dead coral type} [block]¦s = -_block
+	{living coral type} [block]¦s = -_block
 
 	[any] (tube|blue) coral [block]¦s = dead tube coral block, living tube coral block
 	[any] (brain|pink) coral [block]¦s = dead brain coral block, living brain coral block
@@ -473,11 +473,11 @@ update aquatic:
 
 	# Coral fans
 	# floor
-	{waterloggable} {dead coral type} fan¦s = -fan
-	{waterloggable} {living coral type} fan¦s = -fan
+	{waterloggable} {dead coral type} fan¦s = -_fan
+	{waterloggable} {living coral type} fan¦s = -_fan
 	# wall
-	{waterloggable} {dead coral type} wall fan¦s = -wall_fan
-	{waterloggable} {living coral type} wall fan¦s = -wall_fan
+	{waterloggable} {dead coral type} wall fan¦s = -_wall_fan
+	{waterloggable} {living coral type} wall fan¦s = -_wall_fan
 
 	[any] (tube|blue) coral fan¦s = dead tube coral fan, living tube coral fan, dead tube coral wall fan, living tube coral wall fan
 	[any] (brain|pink) coral fan¦s = dead brain coral fan, living brain coral fan, dead brain coral wall fan, living brain coral wall fan
