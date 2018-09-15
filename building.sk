@@ -415,7 +415,7 @@ world of color update before flattening:
 # (changed IDs vs. new IDs as far as 1.13 goes.)
 update aquatic:
 	minecraft version = 1.13 or newer
-	# Update Aquatic added log variants no bark.
+	# Update Aquatic added log variants with no bark.
 	{axis-aligned} stripped oak log¦s = minecraft:stripped_oak_log
 	{axis-aligned} stripped spruce log¦s = minecraft:stripped_spruce_log
 	{axis-aligned} stripped birch log¦s = minecraft:stripped_birch_log
@@ -424,8 +424,17 @@ update aquatic:
 	{axis-aligned} stripped dark oak log¦s = minecraft:stripped_dark_oak_log
 	any stripped log [block¦s] = stripped oak log, stripped spruce log, stripped birch log, stripped jungle log, stripped acacia log, stripped dark oak log
 
+	# There's also barkless variants of the full bark logs.
+	{axis-aligned} stripped oak bark [block¦s] = minecraft:stripped_oak_wood
+	{axis-aligned} stripped spruce bark [block¦s] = minecraft:stripped_spruce_wood
+	{axis-aligned} stripped birch bark [block¦s] = minecraft:stripped_birch_wood
+	{axis-aligned} stripped jungle bark [block¦s] = minecraft:stripped_jungle_wood
+	{axis-aligned} stripped acacia bark [block¦s] = minecraft:stripped_acacia_wood
+	{axis-aligned} stripped dark oak log¦s = minecraft:stripped_dark_oak_wood
+	any stripped bark [block¦s] = stripped oak bark, stripped spruce bark, stripped birch bark, stripped jungle bark, stripped acacia bark, stripped dark oak bark
+
 	# Define any log to include the stripped ones
-	any log = any normal log, any stripped log, any bark block
+	any log = any normal log, any stripped log, any bark block, any stripped bark block
 
 	# Smooth double slabs became their own items in 1.13
 	(smooth quartz|double quartz slab¦s) = minecraft:smooth_quartz
