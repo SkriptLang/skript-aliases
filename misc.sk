@@ -289,7 +289,7 @@ world of color update spawn eggs:
 	(vindicator[ spawn] egg¦s|spawn vindicator) = minecraft:spawn_egg {EntityTag:{id:vindication_illager}}
 	(wither skeleton[ spawn] egg¦s|spawn wither skeleton) = minecraft:spawn_egg {EntityTag:{id:wither_skeleton}}
 	(zombi(e|fied) horse[ spawn] egg¦s|spawn zombi(e|fied) horse) = minecraft:spawn_egg {EntityTag:{id:zombie_horse}}
-	((zombi(e|fied) villager[ spawn] egg¦s|spawn (zombi(e|fied) villager) = minecraft:spawn_egg {EntityTag:{id:zombie_villager}}
+	(zombi(e|fied) villager[ spawn] egg¦s|spawn zombi(e|fied) villager) = minecraft:spawn_egg {EntityTag:{id:zombie_villager}}
 	any spawn egg = spawn bat, spawn blaze, spawn cave spider, spawn chicken, spawn cow, spawn creeper, spawn enderman, spawn endermite, spawn ghast, spawn guardian, spawn horse, spawn magma cube, spawn mooshroom, ocelot, spawn pig, spawn rabbit, spawn sheep, spawn silverfish, spawn skeleton, spawn slime, spawn spider, spawn squid, spawn villager, spawn witch, spawn wolf, spawn zombie, spawn shulker, spawn polar bear, spawn donkey, spawn elder guardian, spawn evoker, spawn husk, spawn llama, spawn mule, spawn polar bear, spawn shulker, spawn skeleton horse, spawn stray, spawn vex, spawn vindicator, spawn wither skeleton, spawn zombie horse, spawn zombie villager, spawn parrot
 
 exploration update spawn eggs:

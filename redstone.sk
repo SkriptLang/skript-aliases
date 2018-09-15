@@ -14,7 +14,7 @@ unchanged redstone:
 	(tripwire|placed string)¦s = minecraft:tripwire
 
 	{orientable} dispenser¦s = minecraft:dispenser
-	{orientable} dropper¦s = minecraft:dropper`
+	{orientable} dropper¦s = minecraft:dropper
 
 	tnt [block¦s] = minecraft:tnt
 
@@ -60,12 +60,12 @@ redstone before flattening:
 		open north(ward| facing) = - {Damage:6}
 		open east(ward| facing) = - {Damage:7}
 
-	{gate state} oak [wood] fence gate¦s = minecraft:fence_gate
-	{gate state} spruce [wood] fence gate¦s = minecraft:spruce_fence_gate
-	{gate state} birch [wood] fence gate¦s = minecraft:birch_fence_gate
-	{gate state} jungle [wood] fence gate¦s = minecraft:jungle_fence_gate
-	{gate state} acacia [wood] fence gate¦s = minecraft:acacia_fence_gate
-	{gate state} dark oak [wood] fence gate¦s = minecraft:dark_oak_fence_gate
+	{gate state} oak [wood] [fence] gate¦s = minecraft:fence_gate
+	{gate state} spruce [wood] [fence] gate¦s = minecraft:spruce_fence_gate
+	{gate state} birch [wood] [fence] gate¦s = minecraft:birch_fence_gate
+	{gate state} jungle [wood] [fence] gate¦s = minecraft:jungle_fence_gate
+	{gate state} acacia [wood] [fence] gate¦s = minecraft:acacia_fence_gate
+	{gate state} dark oak [wood] [fence] gate¦s = minecraft:dark_oak_fence_gate
 	[any] [fence] gate¦s = oak gate, spruce gate, birch gate, jungle gate, acacia gate, dark oak gate
 
 	{door state}:
