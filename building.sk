@@ -185,6 +185,7 @@ old blocks before flattening:
 	{stair direction} nether brick stair¦s = minecraft:nether_brick_stairs
 	{stair direction} [nether] quartz stair¦s = minecraft:quartz_stairs
 	{stair direction} sandstone stair¦s = minecraft:sandstone_stairs
+	{stair direction} red sandstone stair¦s = minecraft:red_sandstone_stairs
 	{stair direction} purpur stair¦s = minecraft:purpur_stairs
 
 	# Construction/Decorative
@@ -330,10 +331,11 @@ building blocks after flattening:
 	{waterloggable} {stairs} {directional} stone brick stair¦s = minecraft:stone_brick_stairs
 	{waterloggable} {stairs} {directional} nether brick stair¦s = minecraft:nether_brick_stairs
 	{waterloggable} {stairs} {directional} [nether] quartz stair¦s = minecraft:quartz_stairs
-	{waterloggable} {stairs} {directional} prismarine brick stair¦s = minecraft:prismarine_brick_stairs
 	{waterloggable} {stairs} {directional} purpur stair¦s = minecraft:purpur_stairs
 	{waterloggable} {stairs} {directional} sandstone stair¦s = minecraft:sandstone_stairs
+	{waterloggable} {stairs} {directional} red sandstone stair¦s = minecraft:red_sandstone_stairs
 	{waterloggable} {stairs} {directional} prismarine stair¦s = minecraft:prismarine_stairs
+	{waterloggable} {stairs} {directional} prismarine brick stair¦s = minecraft:prismarine_brick_stairs
 	{waterloggable} {stairs} {directional} dark prismarine stair¦s = minecraft:dark_prismarine_stairs
 
 	# Construction/Decorative
@@ -349,8 +351,14 @@ building blocks after flattening:
 	sea lantern¦s = minecraft:sea_lantern
 	wet sponge¦s = minecraft:wet_sponge
 
+	stone brick¦s = minecraft:stone_bricks
+	moss[y] stone brick¦s = minecraft:mossy_stone_bricks
+	cracked stone brick¦s = minecraft:cracked_stone_bricks
+	chiseled stone brick¦s = minecraft:chiseled_stone_bricks
+
 	# Nether
 	magma [block¦s] = minecraft:magma_block
+	nether brick¦s = minecraft:nether_bricks
 	red nether brick¦s = minecraft:red_nether_bricks
 
 	# Miscellaneous

@@ -10,23 +10,25 @@ mining:
 	emerald¦s = minecraft:emerald
 	flint¦s = minecraft:flint
 
+exploration update:
+	minecraft version = 1.11 or newer
+	shulker shell¦s = minecraft:shulker_shell
 exploration update 2:
 	minecraft version = 1.11.1 or newer
 	iron nugget¦s = minecraft:iron_nugget
 	any nugget¦s = gold nugget, iron nugget
-exploration update:
-	minecraft version = 1.11 or newer
-	shulker shell¦s = minecraft:shulker_shell
 
 old items:
 	minecraft version = 1.12.2 or older
 	charcoal = minecraft:coal {Damage:1}
 	sugar cane¦s = minecraft:reeds
+	clay [balls] = minecraft:clay
 
 new items:
 	minecraft version = 1.13 or newer
 	charcoal = minecraft:charcoal
 	sugar cane¦s = minecraft:sugar_cane
+	clay [balls] = minecraft:clay_ball
 	conduit¦s = minecraft:conduit
 	[turtle [shell]] scute¦s = minecraft:scute
 	kelp = minecraft:kelp
@@ -65,7 +67,6 @@ random items:
 	snowball¦s = minecraft:snowball
 	leather = minecraft:leather
 	brick¦s = minecraft:brick
-	clay [balls] = minecraft:clay
 	(piece[s] of paper|paper¦s) = minecraft:paper
 	slimeball¦s = minecraft:slime_ball
 	egg¦s = minecraft:egg
@@ -86,6 +87,7 @@ random items:
 	prismarine shard¦s = minecraft:prismarine_shard
 	prismarine crystal¦s = minecraft:prismarine_crystals
 	rabbit hide¦s = minecraft:rabbit_hide
+	enchanted book¦s = minecraft:enchanted_book
 
 books:
 	book¦s = minecraft:book

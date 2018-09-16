@@ -13,6 +13,7 @@ unchanged decoratives:
 	painting item¦s = minecraft:painting
 	item frame item¦s = minecraft:item_frame
 	[empty] flower pot¦s = minecraft:flower_pot
+	armor stand¦s = minecraft:armor_stand
 
 
 # Decoratives who used to have a different ID before the flattening.

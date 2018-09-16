@@ -203,6 +203,7 @@ block states:
 
 	# For blocks that have a lit state, like furnaces or redstone torches.
 	{lightable}:
+		{default} = -
 		lit = -[lit=true]
 		unlit = -[lit=false]
 

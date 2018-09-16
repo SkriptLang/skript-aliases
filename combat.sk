@@ -1,27 +1,9 @@
-update aquatic:
-	minecraft version = 1.13 or newer
-	turtle [shell] helmet = minecraft:turtle_helmet
-	trident¦s = minecraft:trident
-
-	{update aquatic effects}:
-		turtle master = - {"Potion": "minecraft:turtle_master"}
-		(long|extended) turtle master = - {"Potion": "minecraft:long_turtle_master"}
-		(strong|upgraded|level 2) turtle master = - {"Potion": "minecraft:strong_turtle_master"}
-		slow fall[ing] = - {"Potion": "minecraft:slow_falling"}
-		(long|extended) slow fall[ing] = - {"Potion": "minecraft:long_slow_falling"}
-
-	{update aquatic effects} tipped arrow¦s = minecraft:tipped_arrow
-	tipped arrow[s] of {update aquatic effects} = minecraft:tipped_arrow
-
-exploration update:
-	minecraft version = 1.11 or newer
-	totem[s] of undying = minecraft:totem_of_undying
-
 combat update:
 	minecraft version = 1.9 or newer
 	shield¦s = minecraft:shield
 
 	{tipped arrow types}:
+		{default} = -
 		night vision = - {"Potion": "minecraft:night_vision"}
 		(long|extended) night vision = - {"Potion": "minecraft:long_night_vision"}
 		invisibility = - {"Potion": "minecraft:invisibility"}
@@ -116,3 +98,22 @@ horse armor:
 	diamond (horse armo[u]r|barding) = minecraft:diamond_horse_armor
 
 	[any] (horse armo[u]r|barding) = iron horse armor, gold horse armor, diamond horse armor
+
+exploration update combat items:
+	minecraft version = 1.11 or newer
+	totem[s] of undying = minecraft:totem_of_undying
+
+update aquatic combat items:
+	minecraft version = 1.13 or newer
+	turtle [shell] helmet = minecraft:turtle_helmet
+	trident¦s = minecraft:trident
+
+	{update aquatic effects}:
+		turtle master = - {"Potion": "minecraft:turtle_master"}
+		(long|extended) turtle master = - {"Potion": "minecraft:long_turtle_master"}
+		(strong|upgraded|level 2) turtle master = - {"Potion": "minecraft:strong_turtle_master"}
+		slow fall[ing] = - {"Potion": "minecraft:slow_falling"}
+		(long|extended) slow fall[ing] = - {"Potion": "minecraft:long_slow_falling"}
+
+	{update aquatic effects} tipped arrow¦s = minecraft:tipped_arrow
+	tipped arrow[s] of {update aquatic effects} = minecraft:tipped_arrow
