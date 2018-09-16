@@ -466,9 +466,9 @@ update aquatic:
 	[any] (fire|red) coral block¦s = dead fire coral block, living fire coral block
 	[any] (horn|yellow) coral block¦s = dead horn coral block, living horn coral block
 
-	[any] dead coral block¦s = dead tube coral, dead brain coral, dead bubble coral, dead fire coral, dead horn coral
-	[any] living coral block¦s = living tube coral, living brain coral, living bubble coral, living fire coral, living horn coral
-	[any] coral block¦s = any dead coral, any living coral
+	[any] dead coral block¦s = dead tube coral block, dead brain coral block, dead bubble coral block, dead fire coral block, dead horn coral block
+	[any] living coral block¦s = living tube coral block, living brain coral block, living bubble coral block, living fire coral block, living horn coral block
+	[any] coral block¦s = any dead coral block, any living coral block
 
 	# Coral plants (the 2D ones like flowers).
 	{waterloggable} {coral type} plant¦s = -
