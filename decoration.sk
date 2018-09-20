@@ -334,8 +334,7 @@ combat update:
 # Shulker boxes were introduced in 1.11 but purple ones weren't differentiated from undyed.
 exploration update before flattening:
 	minecraft version = 1.11 to 1.12.2
-	# Annoyingly we have to redefine all of these because purple_shulker_box doesn't exist here :(
-	(default|normal|purple) shulker box¦es = minecraft:shulker_box
+	(default|normal|purple) shulker box¦es = minecraft:purple_shulker_box
 	white shulker box¦es = minecraft:white_shulker_box
 	orange shulker box¦es = minecraft:orange_shulker_box
 	magenta shulker box¦es = minecraft:magenta_shulker_box
@@ -344,7 +343,7 @@ exploration update before flattening:
 	(lime [green]|light green) shulker box¦es = minecraft:lime_shulker_box
 	pink shulker box¦es = minecraft:pink_shulker_box
 	[dark] gr(a|e)y shulker box¦es = minecraft:gray_shulker_box
-	light gr(a|e)y shulker box¦es = minecraft:light_gray_shulker_box
+	light gr(a|e)y shulker box¦es = minecraft:silver_shulker_box
 	cyan shulker box¦es = minecraft:cyan_shulker_box
 	blue shulker box¦es = minecraft:blue_shulker_box
 	brown shulker box¦es = minecraft:brown_shulker_box
