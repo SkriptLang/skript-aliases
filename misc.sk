@@ -164,7 +164,7 @@ new music discs:
 	[any] [music] (disc|record) = music disc 11, music disc 13, music disc blocks, music disc cat, music disc chirp, music disc far, music disc mall, music disc mellohi, music disc stal, music disc strad, music disc wait, music disc ward
 
 old music discs:
-	minecraft version = 1.12 or older
+	minecraft version = 1.12.2 or older
 	[music] (disc|record) 11 = minecraft:record_11
 	[music] (disc|record) 13 = minecraft:record_13
 	[music] (disc|record) blocks = minecraft:record_blocks
@@ -184,8 +184,8 @@ new dyes:
 	(ink sac|black dye)¦s = minecraft:ink_sac
 	(rose red|red dye)¦s = minecraft:rose_red
 	(cactus green|green dye)¦s = minecraft:cactus_green
-	brown dye¦s = minecraft:cocoa_beans
-	blue dye¦s = minecraft:lapis_lazuli
+	(cocoa bean|brown dye)¦s = minecraft:cocoa_beans
+	(lapis [lazuli]|blue dye)¦s = minecraft:lapis_lazuli
 	purple dye¦s = minecraft:purple_dye
 	cyan dye¦s = minecraft:cyan_dye
 	light gr(a|e)y dye¦s = minecraft:light_gray_dye
@@ -196,16 +196,16 @@ new dyes:
 	light blue dye¦s = minecraft:light_blue_dye
 	magenta dye¦s = minecraft:magenta_dye
 	orange dye¦s = minecraft:orange_dye
-	(white dye|bone[ ]meal)¦s = minecraft:bone_meal
+	(bone[ ]meal|white dye)¦s = minecraft:bone_meal
 	any dye = black dye, red dye, green dye, brown dye, purple dye, cyan dye, light gray dye, gray dye, pink dye, lime dye, yellow dye, light blue dye, magenta dye, orange dye, white dye
 
 old dyes:
-	minecraft version = 1.12 or older
-	(ink sac|black dye)¦s = minecraft:dye
+	minecraft version = 1.12.2 or older
+	(ink sac|black dye)¦s = minecraft:dye {Damage:0}
 	(rose red|red dye)¦s =  minecraft:dye {Damage:1}
 	(cactus green|green dye)¦s = minecraft:dye {Damage:2}
-	brown dye¦s = minecraft:dye {Damage:3}
-	blue dye¦s = minecraft:dye {Damage:4}
+	(cocoa bean|brown dye)¦s = minecraft:dye {Damage:3}
+	(lapis [lazuli]|blue dye)¦s = minecraft:dye {Damage:4}
 	purple dye¦s = minecraft:dye {Damage:5}
 	cyan dye¦s = minecraft:dye {Damage:6}
 	light gr(a|e)y dye¦s = minecraft:dye {Damage:7}
@@ -216,7 +216,7 @@ old dyes:
 	light blue dye¦s = minecraft:dye {Damage:12}
 	magenta dye¦s = minecraft:dye {Damage:13}
 	orange dye¦s = minecraft:dye {Damage:14}
-	white dye¦s = minecraft:dye {Damage:15}
+	(bone[ ]meal|white dye)¦s = minecraft:dye {Damage:15}
 	any dye = black dye, red dye, green dye, brown dye, purple dye, cyan dye, light gray dye, gray dye, pink dye, lime dye, yellow dye, light blue dye, magenta dye, orange dye, white dye
 
 #entity tags got changed throughout versions so this section is somewhat large
@@ -325,7 +325,7 @@ combat update spawn eggs:
 	any spawn egg = spawn bat, spawn blaze, spawn cave spider, spawn chicken, spawn cow, spawn creeper, spawn enderman, spawn endermite, spawn ghast, spawn guardian, spawn horse, spawn magma cube, spawn mooshroom, ocelot, spawn pig, spawn rabbit, spawn sheep, spawn silverfish, spawn skeleton, spawn slime, spawn spider, spawn squid, spawn villager, spawn witch, spawn wolf, spawn zombie, spawn shulker
 
 bountiful update spawn eggs:
-	#these remained valid up to 1.12
+	# These remained valid up to 1.12
 	minecraft version = 1.12.2 and older
 	(bat[ spawn] egg|spawn bat)¦s = minecraft:spawn_egg {Damage:65}
 	(blaze[ spawn] egg|spawn blaze)¦s = minecraft:spawn_egg {Damage:61}
