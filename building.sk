@@ -253,7 +253,7 @@ building blocks after flattening:
 
 	# Wood
 	# planks
-	{wood type} plank¦s = -planks
+	{wood type} plank[s] = -planks
 	[any] plank¦s = oak planks, spruce planks, birch planks, jungle planks, acacia planks, dark oak planks
 
 	# Normal logs
@@ -307,7 +307,7 @@ building blocks after flattening:
 	{waterloggable} {slab} {wood type} slab = -slab
 	{waterloggable} {slab} stone slab = minecraft:stone_slab
 	{waterloggable} {slab} sandstone slab = minecraft:sandstone_slab
-	{waterloggable} {slab} (petrified|stone) oak [wood[en]] slab = minecraft:petrified oak_slab
+	{waterloggable} {slab} (petrified|stone) oak [wood[en]] slab = minecraft:petrified_oak_slab
 	{waterloggable} {slab} cobble[stone] slab = minecraft:cobblestone_slab
 	{waterloggable} {slab} brick slab = minecraft:brick_slab
 	{waterloggable} {slab} stone[ ]brick slab = minecraft:stone_brick_slab

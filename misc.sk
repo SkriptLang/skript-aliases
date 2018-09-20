@@ -195,7 +195,7 @@ new dyes:
 	light blue dye¦s = minecraft:light_blue_dye
 	magenta dye¦s = minecraft:magenta_dye
 	orange dye¦s = minecraft:orange_dye
-	white dye¦s = minecraft:bone_meal
+	(white dye|bone[ ]meal)¦s = minecraft:bone_meal
 	any dye = black dye, red dye, green dye, brown dye, purple dye, cyan dye, light gray dye, gray dye, pink dye, lime dye, yellow dye, light blue dye, magenta dye, orange dye, white dye
 
 old dyes:

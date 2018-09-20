@@ -2,6 +2,7 @@
 unchanged decoratives:
 	brown mushroom¦s = minecraft:brown_mushroom
 	red mushroom¦s = minecraft:red_mushroom
+	[any] [small] mushroom = brown mushroom, red mushroom
 	{orientable} end[er] rod¦s = minecraft:end_rod
 	(workbench¦es|crafting table¦s) = minecraft:crafting_table
 	(soil|farmland) [block¦s] = minecraft:farmland
@@ -319,6 +320,7 @@ decoratives after flattening:
 unchanged categories:
 	any chest¦s = chest, trapped chest, ender chest
 	any fence¦s = oak fence, spruce fence, birch fence, jungle fence, acacia fence, dark oak fence, nether brick fence
+	any sapling¦s = oak sapling, spruce sapling, birch sapling, jungle sapling, acacia sapling, dark oak sapling
 
 # New decoratives introduced in 1.9
 combat update:
