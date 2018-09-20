@@ -77,6 +77,7 @@ unlisted before flattening:
 unchanged combat update unlisted:
 	minecraft version = 1.9 or newer
 	frosted ice = minecraft:frosted_ice
+	end[er] gateway = minecraft:end_gateway
 
 # Unlisted blocks added in 1.9 whose states were changed in the flattening.
 combat update unlisted blocks before flattening:
@@ -98,6 +99,11 @@ exploration update unlisted blocks before flattening:
 	data structure block = minecraft:structure_block {Damage:3}
 	[any] structure block¦s = save structure block, load structure block, corner structure block, data structure block
 
+# Unlisted blocks added in 1.12
+world of color unlisted blocks:
+	minecraft version = 1.12 or newer
+	knowledge book¦s = minecraft:knowledge_book
+
 # Unlisted blocks whose IDs were changed in the flattening.
 unlisted after flattening:
 	minecraft version = 1.13 or newer
@@ -112,10 +118,13 @@ unlisted after flattening:
 	{orientable} {conditional} chain command block¦s = minecraft:chain_command_block
 	{orientable} {conditional} repeating command block¦s = minecraft:repeating_command_block
 
-	save structure block¦s = minecraft:structure_block[mode=save]
-	load structure block¦s = minecraft:structure_block[mode=load]
-	corner structure block¦s = minecraft:structure_block[mode=corner]
-	data structure block¦s = minecraft:structure_block[mode=data]
+	{structure block mode}:
+		{default} = -
+		save [mode] = -[mode=save]
+		load [mode] = -[mode=load]
+		corner [mode] = -[mode=corner]
+		data [mode] = -[mode=data]
+	{structure block mode} structure block¦s = minecraft:structure_block
 	[any] structure block¦s = save structure block, load structure block, corner structure block, data structure block
 
 	{directional} attached melon stem = minecraft:attached_melon_stem
@@ -151,15 +160,19 @@ unlisted after flattening:
 		(ripe|fully grown|stage (4|four)) = -[age=3]
 	{beetroot growth stage} beet[root] plant¦s = minecraft:beetroots
 
+	debug stick¦s = minecraft:debug_stick
+
 # Unlisted blocks added as part of 1.13 (Update Aquatic)
 update aquatic unlisted blocks:
 	minecraft version = 1.13 or newer
 	cave air = minecraft:cave_air
 	void air = minecraft:void_air
 
-	(upwards|pushing) bubble column = minecraft:bubble_column[drag=false]
-	(downwards|whirlpool|dragging) bubble column = minecraft:bubble_column[drag=true]
-	bubble column = upwards bubble column, downwards bubble column
+	{column direction}:
+		{default} = -
+		(upward|pushing) = -[drag=false]
+		(downward[s]|whirlpool|dragging) = -[drag=true]
+	{column direction} bubble column = minecraft:bubble_column
 
 # Flowing lava and water exist as technical blocks in Minecraft 1.13 but they're not placeable
 # with vanilla commands nor do they exist in the material enum.

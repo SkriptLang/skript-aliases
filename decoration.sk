@@ -2,6 +2,7 @@
 unchanged decoratives:
 	brown mushroom¦s = minecraft:brown_mushroom
 	red mushroom¦s = minecraft:red_mushroom
+	[any] [small] mushroom = brown mushroom, red mushroom
 	{orientable} end[er] rod¦s = minecraft:end_rod
 	(workbench¦es|crafting table¦s) = minecraft:crafting_table
 	(soil|farmland) [block¦s] = minecraft:farmland
@@ -13,6 +14,7 @@ unchanged decoratives:
 	painting item¦s = minecraft:painting
 	item frame item¦s = minecraft:item_frame
 	[empty] flower pot¦s = minecraft:flower_pot
+	armor stand¦s = minecraft:armor_stand
 
 
 # Decoratives who used to have a different ID before the flattening.
@@ -105,7 +107,7 @@ decoratives before flattening:
 	{colored} carpet¦s = minecraft:carpet
 	any carpet¦s = white carpet, orange carpet, magenta carpet, light blue carpet, yellow carpet, lime carpet, pink carpet, dark gray carpet, light gray carpet, cyan carpet, purple carpet, blue carpet, brown carpet, dark green carpet, red carpet, black carpet
 
-	{colored} stained glass pane¦s = minecraft:stained_glass_pane
+	{colored} [stained] glass pane¦s = minecraft:stained_glass_pane
 	any stained glass pane¦s = white stained glass pane, orange stained glass pane, magenta stained glass pane, light blue stained glass pane, yellow stained glass pane, lime stained glass pane, pink stained glass pane, dark gray stained glass pane, light gray stained glass pane, cyan stained glass pane, purple stained glass pane, blue stained glass pane, brown stained glass pane, dark green stained glass pane, red stained glass pane, black stained glass pane
 
 	# Glazed terracotta colors actually are separated by IDs even here in 1.12. It uses a separate
@@ -204,7 +206,6 @@ decoratives after flattening:
 	# Fences
 	{waterloggable} {wood type} fence¦s = -fence
 	{waterloggable} nether brick fence¦s = minecraft:nether_brick_fence
-	any fence¦s = oak fence, spruce fence, birch fence, jungle fence, acacia fence, dark oak fence, nether brick fence
 
 	# Silverfish blocks
 	(infested|silverfish) stone [block]¦s = minecraft:infested_stone
@@ -236,7 +237,7 @@ decoratives after flattening:
 	{colored} carpet¦s = -carpet
 	any carpet¦s = white carpet, orange carpet, magenta carpet, light blue carpet, yellow carpet, lime carpet, pink carpet, dark gray carpet, light gray carpet, cyan carpet, purple carpet, blue carpet, brown carpet, dark green carpet, red carpet, black carpet
 
-	{colored} stained glass pane¦s = -stained_glass_pane
+	{colored} [stained] glass pane¦s = -stained_glass_pane
 	any stained glass pane¦s = white stained glass pane, orange stained glass pane, magenta stained glass pane, light blue stained glass pane, yellow stained glass pane, lime stained glass pane, pink stained glass pane, dark gray stained glass pane, light gray stained glass pane, cyan stained glass pane, purple stained glass pane, blue stained glass pane, brown stained glass pane, dark green stained glass pane, red stained glass pane, black stained glass pane
 
 		# Glazed terracotta was slightly changed in 1.13 because silver became light_gray in IDs.
@@ -316,8 +317,10 @@ decoratives after flattening:
 	{directional} damaged anvil¦s = minecraft:damaged_anvil
 	any anvil¦s = anvil, chipped anvil, damaged anvil
 
-chest categories:
-	any chest = chest, trapped chest, ender chest
+unchanged categories:
+	any chest¦s = chest, trapped chest, ender chest
+	any fence¦s = oak fence, spruce fence, birch fence, jungle fence, acacia fence, dark oak fence, nether brick fence
+	any sapling¦s = oak sapling, spruce sapling, birch sapling, jungle sapling, acacia sapling, dark oak sapling
 
 # New decoratives introduced in 1.9
 combat update:
@@ -434,8 +437,8 @@ directionals before flattening:
 	({wall orientations}|{skull floor orientations}) {skull types} = minecraft:skull
 	#BANNERS
 	{wall orientations} {opposite colored} wall banner¦s = minecraft:wall_banner
-	{banner standing orientations} {opposite colored} [standing] banner¦s = minecraft:banner
-	{opposite colored} banner item¦s = -banner
+	{banner standing orientations} {opposite colored} [standing] banner¦s = minecraft:standing_banner
+	{opposite colored} banner item¦s = minecraft:banner
 
 directionals after flattening:
 	minecraft version = 1.13 or newer

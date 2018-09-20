@@ -93,6 +93,7 @@ ingredients before flattening:
 	(glistering|gold[en]) melon[ slice]¦s = minecraft:speckled_melon
 
 ingredients after flattening:
+	minecraft version = 1.13 or newer
 	(glistering|gold[en]) melon[ slice]¦s = minecraft:glistering_melon_slice
 
 update aquatic ingredients:

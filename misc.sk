@@ -10,23 +10,25 @@ mining:
 	emerald¦s = minecraft:emerald
 	flint¦s = minecraft:flint
 
+exploration update:
+	minecraft version = 1.11 or newer
+	shulker shell¦s = minecraft:shulker_shell
 exploration update 2:
 	minecraft version = 1.11.1 or newer
 	iron nugget¦s = minecraft:iron_nugget
 	any nugget¦s = gold nugget, iron nugget
-exploration update:
-	minecraft version = 1.11 or newer
-	shulker shell¦s = minecraft:shulker_shell
 
 old items:
 	minecraft version = 1.12.2 or older
 	charcoal = minecraft:coal {Damage:1}
 	sugar cane¦s = minecraft:reeds
+	clay [balls] = minecraft:clay
 
 new items:
 	minecraft version = 1.13 or newer
 	charcoal = minecraft:charcoal
 	sugar cane¦s = minecraft:sugar_cane
+	clay [balls] = minecraft:clay_ball
 	conduit¦s = minecraft:conduit
 	[turtle [shell]] scute¦s = minecraft:scute
 	kelp = minecraft:kelp
@@ -65,7 +67,6 @@ random items:
 	snowball¦s = minecraft:snowball
 	leather = minecraft:leather
 	brick¦s = minecraft:brick
-	clay [balls] = minecraft:clay
 	(piece[s] of paper|paper¦s) = minecraft:paper
 	slimeball¦s = minecraft:slime_ball
 	egg¦s = minecraft:egg
@@ -86,6 +87,7 @@ random items:
 	prismarine shard¦s = minecraft:prismarine_shard
 	prismarine crystal¦s = minecraft:prismarine_crystals
 	rabbit hide¦s = minecraft:rabbit_hide
+	enchanted book¦s = minecraft:enchanted_book
 
 books:
 	book¦s = minecraft:book
@@ -193,7 +195,7 @@ new dyes:
 	light blue dye¦s = minecraft:light_blue_dye
 	magenta dye¦s = minecraft:magenta_dye
 	orange dye¦s = minecraft:orange_dye
-	white dye¦s = minecraft:bone_meal
+	(white dye|bone[ ]meal)¦s = minecraft:bone_meal
 	any dye = black dye, red dye, green dye, brown dye, purple dye, cyan dye, light gray dye, gray dye, pink dye, lime dye, yellow dye, light blue dye, magenta dye, orange dye, white dye
 
 old dyes:
@@ -289,7 +291,7 @@ world of color update spawn eggs:
 	(vindicator[ spawn] egg¦s|spawn vindicator) = minecraft:spawn_egg {EntityTag:{id:vindication_illager}}
 	(wither skeleton[ spawn] egg¦s|spawn wither skeleton) = minecraft:spawn_egg {EntityTag:{id:wither_skeleton}}
 	(zombi(e|fied) horse[ spawn] egg¦s|spawn zombi(e|fied) horse) = minecraft:spawn_egg {EntityTag:{id:zombie_horse}}
-	((zombi(e|fied) villager[ spawn] egg¦s|spawn (zombi(e|fied) villager) = minecraft:spawn_egg {EntityTag:{id:zombie_villager}}
+	(zombi(e|fied) villager[ spawn] egg¦s|spawn zombi(e|fied) villager) = minecraft:spawn_egg {EntityTag:{id:zombie_villager}}
 	any spawn egg = spawn bat, spawn blaze, spawn cave spider, spawn chicken, spawn cow, spawn creeper, spawn enderman, spawn endermite, spawn ghast, spawn guardian, spawn horse, spawn magma cube, spawn mooshroom, ocelot, spawn pig, spawn rabbit, spawn sheep, spawn silverfish, spawn skeleton, spawn slime, spawn spider, spawn squid, spawn villager, spawn witch, spawn wolf, spawn zombie, spawn shulker, spawn polar bear, spawn donkey, spawn elder guardian, spawn evoker, spawn husk, spawn llama, spawn mule, spawn polar bear, spawn shulker, spawn skeleton horse, spawn stray, spawn vex, spawn vindicator, spawn wither skeleton, spawn zombie horse, spawn zombie villager, spawn parrot
 
 exploration update spawn eggs:

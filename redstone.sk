@@ -14,9 +14,8 @@ unchanged redstone:
 	(tripwire|placed string)¦s = minecraft:tripwire
 
 	{orientable} dispenser¦s = minecraft:dispenser
-	{orientable} dropper¦s = minecraft:dropper`
+	{orientable} dropper¦s = minecraft:dropper
 
-	iron trapdoor¦s = minecraft:iron_trapdoor
 	tnt [block¦s] = minecraft:tnt
 
 redstone before flattening:
@@ -45,6 +44,7 @@ redstone before flattening:
 	[any] pressure plate¦s = stone pressure plate, wood pressure plate, gold pressure plate, iron pressure plate
 
 	# Trapdoors
+	iron trapdoor¦s = minecraft:iron_trapdoor
 	[oak] wood trapdoor¦s = minecraft:trapdoor
 	[any] trapdoor¦s = wood trapdoor, iron trapdoor
 
@@ -60,12 +60,12 @@ redstone before flattening:
 		open north(ward| facing) = - {Damage:6}
 		open east(ward| facing) = - {Damage:7}
 
-	{gate state} oak [wood] fence gate¦s = minecraft:fence_gate
-	{gate state} spruce [wood] fence gate¦s = minecraft:spruce_fence_gate
-	{gate state} birch [wood] fence gate¦s = minecraft:birch_fence_gate
-	{gate state} jungle [wood] fence gate¦s = minecraft:jungle_fence_gate
-	{gate state} acacia [wood] fence gate¦s = minecraft:acacia_fence_gate
-	{gate state} dark oak [wood] fence gate¦s = minecraft:dark_oak_fence_gate
+	{gate state} oak [wood] [fence] gate¦s = minecraft:fence_gate
+	{gate state} spruce [wood] [fence] gate¦s = minecraft:spruce_fence_gate
+	{gate state} birch [wood] [fence] gate¦s = minecraft:birch_fence_gate
+	{gate state} jungle [wood] [fence] gate¦s = minecraft:jungle_fence_gate
+	{gate state} acacia [wood] [fence] gate¦s = minecraft:acacia_fence_gate
+	{gate state} dark oak [wood] [fence] gate¦s = minecraft:dark_oak_fence_gate
 	[any] [fence] gate¦s = oak gate, spruce gate, birch gate, jungle gate, acacia gate, dark oak gate
 
 	{door state}:
@@ -125,8 +125,8 @@ redstone after flattening:
 	{powerable} {directional} {comparator mode} [redstone] comparator [item]¦s = minecraft:comparator
 
 	# Buttons
-	{powerable} {directional} {wood type} button¦s = -button
-	{powerable} {directional} stone button¦s = minecraft:stone_button
+	{powerable} {directional} {wood type} {attached} button¦s = -button
+	{powerable} {directional} {attached} stone button¦s = minecraft:stone_button
 	[any] wood[en] button¦s = oak button, spruce button, birch button, jungle button, acacia button, dark oak button
 	[any] button¦s = stone button, any wooden button
 
@@ -136,12 +136,17 @@ redstone after flattening:
 	[any] pressure plate¦s = stone pressure plate, gold pressure plate, iron pressure plate, any wooden pressure plate
 
 	# Trapdoors
-	{waterloggable} {openable} {directional} {wood type} trapdoor¦s = -trapdoor
+	{trapdoor position}:
+		{default} = -
+		(bottom|lower)[-half] = -[half=bottom]
+		(top|upper)[-half] = -[half=top]
+	{waterloggable} {openable} {trapdoor position} {directional} iron trapdoor¦s = minecraft:iron_trapdoor
+	{waterloggable} {openable} {trapdoor position} {directional} {wood type} trapdoor¦s = -trapdoor
 	[any] wood[en] trapdoor¦s = oak trapdoor, spruce trapdoor, birch trapdoor, jungle trapdoor, acacia trapdoor, dark oak trapdoor
 	[any] trapdoor¦s = iron trapdoor, any wooden trapdoor
 
 	# Fence gates
-	{powerable} {openable} {wood type} [fence] gate¦s = -fence_gate
+	{powerable} {openable} {directional} {wood type} [fence] gate¦s = -fence_gate
 	[any] [fence] gate¦s = oak gate, spruce gate, birch gate, jungle gate, acacia gate, dark oak gate
 
 	# Doors
@@ -190,7 +195,7 @@ redstone after flattening:
 		{default} = -
 		enabled = -[enabled=true]
 		disabled = -[enabled=false]
-	{enableable} {hopper direction} hopper¦s = minecraft:hopper
+	{hopper direction} {enableable} hopper¦s = minecraft:hopper
 
 	# Pistons
 	{extendable}:
@@ -205,7 +210,7 @@ redstone after flattening:
 	# Misc activatables
 	{directional} {powerable} tripwire hook¦s = minecraft:tripwire_hook
 	inverted daylight (detector|sensor)¦s = minecraft:daylight_detector[inverted=true]
-	{powerable} {attached} {directional} [redstone] lever¦s = minecraft:lever
+	{powerable} {directional} {attached} [redstone] lever¦s = minecraft:lever
 
 unstable tnt:
 	minecraft version = 1.13.1 or newer
