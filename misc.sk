@@ -276,7 +276,7 @@ aquatic update spawn eggs:
 	any spawn egg¦s = spawn bat, spawn blaze, spawn cave spider, spawn chicken, spawn cow, spawn creeper, spawn enderman, spawn endermite, spawn ghast, spawn guardian, spawn horse, spawn magma cube, spawn mooshroom, spawn ocelot, spawn pig, spawn rabbit, spawn sheep, spawn silverfish, spawn skeleton, spawn slime, spawn spider, spawn squid, spawn villager, spawn witch, spawn wolf, spawn zombie, spawn shulker, spawn polar bear, spawn donkey, spawn elder guardian, spawn evoker, spawn husk, spawn llama, spawn mule, spawn polar bear, spawn shulker, spawn skeleton horse, spawn stray, spawn vex, spawn vindicator, spawn wither skeleton, spawn zombie horse, spawn zombie villager, spawn parrot, spawn cod, spawn dolphin, spawn drowned, spawn phantom, spawn pufferfish, spawn salmon, spawn tropical fish, spawn turtle
 
 world of color update spawn eggs:
-	minecraft version¦s = 1.12 to 1.12.2
+	minecraft version = 1.12 to 1.12.2
 	(donkey[ spawn] egg|spawn donkey)¦s = minecraft:spawn_egg {EntityTag:{id:donkey}}
 	(elder guardian[ spawn] egg|spawn elder guardian)¦s = minecraft:spawn_egg {EntityTag:{id:elder_guardian}}
 	(evoker[ spawn] egg|spawn evoker)¦s = minecraft:spawn_egg {EntityTag:{id:evocation_illager}}
