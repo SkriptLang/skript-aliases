@@ -39,6 +39,7 @@ foods before flattening:
 	pufferfish¦es = minecraft:fish {Damage:3}
 	cooked (fish¦es|cod [fillet]¦s|fish fillet¦s) = minecraft:cooked_fish
 	cooked salmon [fillet]¦s = minecraft:cooked_fish {Damage:1}
+	any raw fish¦es = raw cod, raw salmon, pufferfish, clownfish
 
 	[normal] golden apple = minecraft:golden_apple {Damage:0}
 	(enchanted golden|notch) apple = minecraft:golden_apple {Damage:1}
@@ -54,6 +55,7 @@ foods after flattening:
 	cooked salmon [fillet]¦s = minecraft:cooked_salmon
 	pufferfish¦es = minecraft:pufferfish
 	tropical fish¦es = minecraft:tropical_fish
+	any raw fish¦es = raw cod, raw salmon, pufferfish, tropical fish
 	
 	[normal] golden apple = minecraft:golden_apple
 	(enchanted golden|notch) apple = minecraft:enchanted_golden_apple
@@ -86,9 +88,7 @@ common categories:
 old food categories:
 	minecraft version = 1.12.2 or older
 	[any] food = any fish, fruit, root vegetables, stews, meats, monster meats, desserts, bread, baked potato, poisonous potato
-	any raw fish¦es = raw cod, raw salmon, pufferfish, clownfish
 
 food categories after update aquatic:
 	minecraft version = 1.13 or newer 
 	[any] food = any fish, fruit, root vegetables, stews, meats, monster meats, desserts, bread, baked potato, poisonous potato, dried kelp
-	any raw fish¦es = raw cod, raw salmon, pufferfish, tropical fish
