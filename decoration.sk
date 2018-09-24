@@ -116,8 +116,8 @@ decoratives before flattening:
 
 	# Signs
 	wall sign¦s = minecraft:wall_sign
-	[floor] sign¦s = minecraft:standing_sign
-	any sign¦s = wall sign, floor sign
+	floor sign¦s = minecraft:standing_sign
+	[any] sign¦s = wall sign, floor sign
 
 	# Miscellaneous
 	{attached} torch¦es = minecraft:torch
@@ -245,8 +245,8 @@ decoratives after flattening:
 
 	# Signs
 	{waterloggable} {directional} wall sign¦s = minecraft:wall_sign
-	{waterloggable} {rotatable} [floor] sign¦s = minecraft:sign
-	any sign¦s = wall sign, floor sign
+	{waterloggable} {rotatable} floor sign¦s = minecraft:sign
+	[any] sign¦s = wall sign, floor sign
 
 	# Beds
 	{bed part}:
