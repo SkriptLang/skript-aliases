@@ -10,7 +10,6 @@ unchanged redstone:
 	(gold[en]|light weighted) pressure plate¦s = minecraft:light_weighted_pressure_plate
 	(iron|heavy weighted) pressure plate¦s = minecraft:heavy_weighted_pressure_plate
 
-	(normal|uninverted) daylight (detector|sensor)¦s = minecraft:daylight_detector
 	(tripwire|placed string)¦s = minecraft:tripwire
 
 	{orientable} dispenser¦s = minecraft:dispenser
@@ -113,6 +112,8 @@ redstone before flattening:
 	tripwire hook¦s = minecraft:tripwire_hook
 	(piston extension|block 36|moving piston|moving block¦s) = minecraft:piston_extension
 	hopper¦s = minecraft:hopper
+	(normal|uninverted) daylight (detector|sensor)¦s = minecraft:daylight_detector
+	inverted daylight (detector|sensor)¦s = minecraft:daylight_detector_inverted
 
 redstone after flattening:
 	minecraft version = 1.13 or newer
@@ -209,6 +210,7 @@ redstone after flattening:
 
 	# Misc activatables
 	{directional} {powerable} tripwire hook¦s = minecraft:tripwire_hook
+	[(normal|uninverted)] daylight (detector|sensor)¦s = minecraft:daylight_detector[inverted=false]
 	inverted daylight (detector|sensor)¦s = minecraft:daylight_detector[inverted=true]
 	{powerable} {directional} {attached} [redstone] lever¦s = minecraft:lever
 
