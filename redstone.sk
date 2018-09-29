@@ -20,16 +20,16 @@ unchanged redstone:
 redstone before flattening:
 	minecraft version = 1.12.2 or older
 	# Repeater
-	(inactive|unpowered) [redstone] repeater¦s = minecraft:unpowered_repeater
-	(active|powered) [redstone] repeater¦s = minecraft:powered_repeater
+	unpowered [redstone] repeater¦s = minecraft:unpowered_repeater
+	powered [redstone] repeater¦s = minecraft:powered_repeater
 	[redstone] repeater item¦s = minecraft:repeater
 	[any] [redstone] repeater¦s = unpowered repeater, powered repeater, repeater item
 
 	# Comparator. Note that the powered_comparator block isn't even used.
 	powered comparator = minecraft:powered_comparator
 
-	[(inactive|unpowered)] [redstone] comparator [item]¦s = minecraft:comparator
-	(active|powered) [redstone] comparator¦s = minecraft:comparator {Damage:4}
+	[unpowered] [redstone] comparator [item]¦s = minecraft:comparator
+	powered [redstone] comparator¦s = minecraft:comparator {Damage:4}
 	any [redstone] comparator¦s = unpowered comparator, powered comparator
 
 	# Buttons & levers
@@ -110,7 +110,7 @@ redstone before flattening:
 	# Misc activatables/redstone components
 	note block¦s = minecraft:noteblock
 	tripwire hook¦s = minecraft:tripwire_hook
-	(piston extension|block 36|moving piston|moving block¦s) = minecraft:piston_extension
+	(piston extension|block 36|moving piston|moving block¦s) = minecraft:piston_head
 	hopper¦s = minecraft:hopper
 	(normal|uninverted) daylight (detector|sensor)¦s = minecraft:daylight_detector
 	inverted daylight (detector|sensor)¦s = minecraft:daylight_detector_inverted

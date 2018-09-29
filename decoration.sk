@@ -16,6 +16,14 @@ unchanged decoratives:
 	[empty] flower pot¦s = minecraft:flower_pot
 	armor stand¦s = minecraft:armor_stand
 
+# Decoratives added in 1.12 that were changed in the flattening.
+world of color decoratives before flattening:
+	minecraft version = 1.12 to 1.12.2
+	
+	# Glazed terracotta colors actually are separated by IDs even here in 1.12. It uses a separate
+	# "old" variation because light_gray blocks used to be called silver in their IDs.
+	{old colored IDs} glazed terracotta [block¦s] = -glazed_terracotta
+
 
 # Decoratives who used to have a different ID before the flattening.
 decoratives before flattening:
@@ -109,10 +117,6 @@ decoratives before flattening:
 
 	{colored} [stained] glass pane¦s = minecraft:stained_glass_pane
 	any stained glass pane¦s = white stained glass pane, orange stained glass pane, magenta stained glass pane, light blue stained glass pane, yellow stained glass pane, lime stained glass pane, pink stained glass pane, dark gray stained glass pane, light gray stained glass pane, cyan stained glass pane, purple stained glass pane, blue stained glass pane, brown stained glass pane, dark green stained glass pane, red stained glass pane, black stained glass pane
-
-	# Glazed terracotta colors actually are separated by IDs even here in 1.12. It uses a separate
-	# "old" variation because light_gray blocks used to be called silver in their IDs.
-	{old colored IDs} glazed terracotta [block¦s] = -glazed_terracotta
 
 	# Signs
 	wall sign¦s = minecraft:wall_sign
@@ -438,6 +442,7 @@ directionals before flattening:
 	{wall orientations} {opposite colored} wall banner¦s = minecraft:wall_banner
 	{banner standing orientations} {opposite colored} [standing] banner¦s = minecraft:standing_banner
 	{opposite colored} banner item¦s = minecraft:banner
+	[any] (head|skull) item¦s = minecraft:skull
 
 directionals after flattening:
 	minecraft version = 1.13 or newer
@@ -447,6 +452,7 @@ directionals after flattening:
 	player (head|skull) item¦s = minecraft:player_head
 	creeper (head|skull) item¦s = minecraft:creeper_head
 	[ender[ ]]dragon (head|skull) item¦s = minecraft:dragon_head
+	[any] (head|skull) item¦s = skeleton skull item, wither skeleton skull item, zombie head item, player head item, creeper head item, ender dragon head item
 	#skulls on walls
 	{directional} skeleton wall[-mounted] (skull|head)¦s = minecraft:skeleton_wall_skull
 	{directional} wither skleon wall[-mounted] (skull|head)¦s = minecraft:wither_skeleton_wall_skull
