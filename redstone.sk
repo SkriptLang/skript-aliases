@@ -1,7 +1,7 @@
 # Redstone category items whose IDs have never changed or whose differences across versions can be
 # defined purely by variations.
 unchanged redstone:
-	redstone block¦s = minecraft:redstone_block
+	# Redstone block in building
 	redstone (wire|dust block)¦s = minecraft:redstone_wire
 	redstone (dust|item)¦s = minecraft:redstone
 	any redstone item = redstone block, redstone item
