@@ -1,6 +1,6 @@
 potions:
 	[(glass|empty)] bottle¦s = minecraft:glass_bottle
-	water bottle¦s = minecraft:potion {"Potion": "minecraft:water"}
+	(bottle[s] of water|water bottle¦s) = minecraft:potion {"Potion": "minecraft:water"}
 
 	{potion types}:
 		{default} = - # Match all potions

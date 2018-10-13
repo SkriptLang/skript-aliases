@@ -120,8 +120,10 @@ update aquatic combat items:
 
 old categories:
 	minecraft version = 1.12.2 or older
-	equipment = any sword, bow, any armor, shield
+	[any] weapon¦s = any sword, bow
+	[any] equipment = any weapon, any armor, shield
 
 new categories:
 	minecraft version = 1.13 or newer
-	equipment = trident, any sword, bow, any armor, shield
+	[any] weapon¦s = any sword, bow, trident
+	[any] equipment = any weapon, any armor, shield
