@@ -141,12 +141,6 @@ new buckets:
 	any bucket = empty bucket, water bucket, lava bucket, milk, tropical fish bucket, cod bucket, pufferfish bucket, salmon bucket
 	any fish bucket = tropical fish bucket, cod bucket, pufferfish bucket, salmon bucket
 
-horse armor:
-	iron horse armor = minecraft:iron_horse_armor
-	gold[en] horse armor = minecraft:golden_horse_armor
-	diamond horse armor = minecraft:diamond_horse_armor
-	any horse armor = iron horse armor, gold horse armor, diamond horse armor
-
 new music discs:
 	minecraft version = 1.13 or newer
 	[music] (disc|record) 11 = minecraft:music_disc_11
