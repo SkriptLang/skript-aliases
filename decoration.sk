@@ -179,7 +179,7 @@ decoratives after flattening:
 
 	# Plants
 	dead (grass|bush)¦es = minecraft:dead_bush
-	(tall|long) grass¦es = minecraft:grass
+	short grass¦es = minecraft:grass
 	fern¦s = minecraft:fern
 
 	# Small flowers
