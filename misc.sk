@@ -68,7 +68,7 @@ random items:
 	gunpowder = minecraft:gunpowder
 	snowball¦s = minecraft:snowball
 	leather = minecraft:leather
-	brick¦s = minecraft:brick
+	[clay] brick [item]¦s = minecraft:brick
 	(piece[s] of paper|paper¦s) = minecraft:paper
 	slimeball¦s = minecraft:slime_ball
 	egg¦s = minecraft:egg
@@ -105,12 +105,12 @@ fireworks:
 		(2|two|medium) = - {Fireworks:{Flight:2}}
 		(3|three|long) = - {Fireworks:{Flight:3}}
 
-before flattening:
+fireworks before flattening:
 	minecraft version = 1.12.2 or older
 	[(flight|duration|flight duration) {firework types} ] firework [rocket]¦s = fireworks
 	firework (star|charge)¦s = minecraft:firework_charge
 
-after flattening:
+fireworks after flattening:
 	minecraft version = 1.13 or newer
 	[(flight|duration|flight duration) {firework types} ] firework [rocket]¦s = minecraft:firework_rocket
 	firework (star|charge)¦s = minecraft:firework_star

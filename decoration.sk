@@ -228,7 +228,7 @@ decoratives after flattening:
 		{default} = -
 		unfilled = -[eye=false]
 		filled = -[eye=true]
-	{directional} {end portal eye state} end portal frame¦s [block] = minecraft:end_portal_frame
+	{directional} {end portal eye state} end portal frame [block]¦s = minecraft:end_portal_frame
 	end portal frame item¦s = minecraft:end_portal_frame
 
 
@@ -332,7 +332,7 @@ combat update:
 	chorus (plant|stem)¦s = minecraft:chorus_plant
 	chorus flower¦s = minecraft:chorus_flower
 	grass path [block]¦s = minecraft:grass_path
-	end crystal item¦s = minecraft:end_crystal
+	end[er] crystal item¦s = minecraft:end_crystal
 
 
 # Shulker boxes were introduced in 1.11 but purple ones weren't differentiated from undyed.

@@ -71,7 +71,13 @@ potions:
 
 blocks:
 	brewing stand¦s = minecraft:brewing_stand
-	cauldron¦s = minecraft:cauldron
+	{cauldron level}:
+		{default} = -[level=0]
+		empty = -[level=0]
+		one-third filled = -[level=1]
+		two-thirds filled = -[level=2]
+		(filled|full) = -[level=3]
+	{cauldron level} cauldron¦s = minecraft:cauldron
 
 combat update brewing:
 	minecraft version = 1.9 or newer
