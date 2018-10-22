@@ -64,6 +64,10 @@ potions:
 	(potion[s] of {potion types}|{potion types} potion¦s) = minecraft:potion
 	(splash potion[s] of {potion types}|{potion types} splash potion¦s) = minecraft:splash_potion
 	(splash potion[s] of {potion types}|{potion types} lingering potion¦s) = minecraft:lingering_potion
+	potion = minecraft:potion
+	[any] splash potion = minecraft:splash_potion
+	[any] lingering potion = minecraft:lingering_potion
+	any potion = potion, any splash potion, any lingering potion
 
 blocks:
 	brewing stand¦s = minecraft:brewing_stand

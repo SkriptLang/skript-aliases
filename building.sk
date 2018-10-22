@@ -149,7 +149,7 @@ old blocks before flattening:
 	# Stone slabs
 	[bottom] stone slab = minecraft:stone_slab {Damage:0}
 	[bottom] sandstone slab = minecraft:stone_slab {Damage:1}
-	[bottom] (petrified|stone) [oak] wood[en] slab = minecraft:stone_slab {Damage:2}
+	[bottom] (petrified|stone) oak [wood[en]] slab = minecraft:stone_slab {Damage:2}
 	[bottom] cobble[stone] slab = minecraft:stone_slab {Damage:3}
 	[bottom] brick slab = minecraft:stone_slab {Damage:4}
 	[bottom] stone[ ]brick slab = minecraft:stone_slab {Damage:5}
@@ -159,7 +159,7 @@ old blocks before flattening:
 
 	(upside-down|top) stone slab = minecraft:stone_slab {Damage:8}
 	(upside-down|top) sandstone slab = minecraft:stone_slab {Damage:9}
-	(upside-down|top) (petrified|stone) [oak] wood[en] slab = minecraft:stone_slab {Damage:10}
+	(upside-down|top) (petrified|stone) oak [wood[en]] slab = minecraft:stone_slab {Damage:10}
 	(upside-down|top) cobble[stone] slab = minecraft:stone_slab {Damage:11}
 	(upside-down|top) brick slab = minecraft:stone_slab {Damage:12}
 	(upside-down|top) stone[ ]brick slab = minecraft:stone_slab {Damage:13}
@@ -176,6 +176,9 @@ old blocks before flattening:
 	(upside-down|top) jungle [wood[en]] slab = minecraft:wooden_slab {Damage:11}
 	(upside-down|top) acacia [wood[en]] slab = minecraft:wooden_slab {Damage:12}
 	(upside-down|top) dark oak [wood[en]] slab = minecraft:wooden_slab {Damage:13}
+
+	any wood[en] slab = oak slab, spruce slab, birch slab, jungle slab, acacia slab, dark oak slab
+	any slab = any wooden slab, stone slab, sandstone slab, petrified oak slab, cobblestone slab, brick slab, stone brick slab, nether brick slab, quartz slab, red sandstone slab
 
 	#= Stairs
 	{stair direction} cobble[stone] stair¦s = minecraft:stone_stairs
@@ -318,6 +321,8 @@ building blocks after flattening:
 	{waterloggable} {slab} [raw] prismarine slab¦s = minecraft:prismarine_slab
 	{waterloggable} {slab} prismarine brick slab¦s = minecraft:prismarine_brick_slab
 	{waterloggable} {slab} dark prismarine slab¦s = minecraft:dark_prismarine_slab
+	any wood[en] slab = oak slab, spruce slab, birch slab, jungle slab, acacia slab, dark oak slab
+	any slab = any wooden slab, stone slab, sandstone slab, petrified oak slab, cobblestone slab, brick slab, stone brick slab, nether brick slab, quartz slab, red sandstone slab, purpur slab, prismarine slab, prismarine brick slab, dark prismarine brick slab
 
 	# Stairs
 	{stairs}:
@@ -401,6 +406,7 @@ combat update before flattening:
 	[bottom] purpur slab = minecraft:purpur_slab {Damage:0}
 	(upside-down|top) purpur slab = minecraft:purpur_slab {Damage:8}
 	(double purpur|purpur double) slab = minecraft:purpur_double_slab
+	any slab = any slab, purpur slab
 
 # Building blocks added in 1.10 whose IDs have never changed.
 frostburn update:

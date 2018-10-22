@@ -262,7 +262,7 @@ decoratives after flattening:
 		unoccupied = -[occupied=false]
 		occupied = -[occupied=true]
 	{directional} {bed occupied} {colored} bed {bed part} = -bed
-	any bed = white bed # TODO implement something to explode {colored}
+	any bed = white bed, orange bed, magenta bed, light blue bed, yellow bed, lime bed, pink bed, dark gray bed, light gray bed, cyan bed, purple bed, blue bed, brown bed, dark green bed, red bed, black bed
 
 	# Flower pots now each have their own ID!
 	(potted|flower pot with) (dandelion|yellow flower) = minecraft:potted_dandelion
@@ -338,29 +338,14 @@ combat update:
 # Shulker boxes were introduced in 1.11 but purple ones weren't differentiated from undyed.
 exploration update before flattening:
 	minecraft version = 1.11 to 1.12.2
-	(default|normal|purple) shulker box¦es = minecraft:purple_shulker_box
-	white shulker box¦es = minecraft:white_shulker_box
-	orange shulker box¦es = minecraft:orange_shulker_box
-	magenta shulker box¦es = minecraft:magenta_shulker_box
-	light blue shulker box¦es = minecraft:light_blue_shulker_box
-	yellow shulker box¦es = minecraft:yellow_shulker_box
-	(lime [green]|light green) shulker box¦es = minecraft:lime_shulker_box
-	pink shulker box¦es = minecraft:pink_shulker_box
-	[dark] gr(a|e)y shulker box¦es = minecraft:gray_shulker_box
-	light gr(a|e)y shulker box¦es = minecraft:silver_shulker_box
-	cyan shulker box¦es = minecraft:cyan_shulker_box
-	blue shulker box¦es = minecraft:blue_shulker_box
-	brown shulker box¦es = minecraft:brown_shulker_box
-	[dark] green shulker box¦es = minecraft:green_shulker_box
-	red shulker box¦es = minecraft:red_shulker_box
-	black shulker box¦es = minecraft:black_shulker_box
-	any shulker box¦es = default shulker box, white shulker box, orange shulker box, magenta shulker box, light blue shulker box, yellow shulker box, lime shulker box, pink shulker box, dark gray shulker box, light gray shulker box, cyan shulker box, blue shulker box, brown shulker box, dark green shulker box, red shulker box, black shulker box
+	{old colored IDs} shulker box¦es = -shulker_box
+	any shulker box¦es = purple shulker box, white shulker box, orange shulker box, magenta shulker box, light blue shulker box, yellow shulker box, lime shulker box, pink shulker box, dark gray shulker box, light gray shulker box, cyan shulker box, blue shulker box, brown shulker box, dark green shulker box, red shulker box, black shulker box
 
 exploration update after flattening:
 	minecraft version = 1.13 or newer
-	(default|normal) shulker box¦es = minecraft:shulker_box
+	{orientable} [normal] shulker box¦es = minecraft:shulker_box
 	{orientable} {colored} shulker box¦es = -shulker_box
-	any shulker box¦es = default shulker box, white shulker box, orange shulker box, magenta shulker box, light blue shulker box, yellow shulker box, lime shulker box, pink shulker box, dark gray shulker box, light gray shulker box, cyan shulker box, purple shulker box, blue shulker box, brown shulker box, dark green shulker box, red shulker box, black shulker box
+	any shulker box¦es = normal shulker box, white shulker box, orange shulker box, magenta shulker box, light blue shulker box, yellow shulker box, lime shulker box, pink shulker box, dark gray shulker box, light gray shulker box, cyan shulker box, purple shulker box, blue shulker box, brown shulker box, dark green shulker box, red shulker box, black shulker box
 
 
 # New decoratives introduced in 1.13. These could have been grouped with the above post-flattening
@@ -442,6 +427,7 @@ directionals before flattening:
 	{wall orientations} {opposite colored} wall banner¦s = minecraft:wall_banner
 	{banner standing orientations} {opposite colored} [standing] banner¦s = minecraft:standing_banner
 	{opposite colored} banner item¦s = minecraft:banner
+	[any] banner = white banner, orange banner, magenta banner, light blue banner, yellow banner, lime banner, pink banner, dark gray banner, light gray banner, cyan banner, purple banner, blue banner, brown banner, dark green banner, red banner, black banner
 	[any] (head|skull) item¦s = minecraft:skull
 
 directionals after flattening:
