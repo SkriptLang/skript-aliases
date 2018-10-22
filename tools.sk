@@ -35,7 +35,7 @@ tools:
 	[any] shovel¦s = wooden shovel, stone shovel, golden shovel, iron shovel, diamond axe
 	[any] hoe¦s = wooden hoe, stone hoe, golden hoe, iron hoe, diamond hoe
 
-	[any] tool¦s = any pickaxe, any axe, any shovel, any hoe
+	any tool¦s = any pickaxe, any axe, any shovel, any hoe
 
 	compass¦es = minecraft:compass
 	[golde[en]] clock¦s = minecraft:clock

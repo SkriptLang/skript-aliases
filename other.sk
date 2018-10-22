@@ -13,7 +13,7 @@ unlisted blocks:
 unlisted before flattening:
 	minecraft version = 1.12.2 or older
 	[nether] portal [block¦s] = minecraft:portal
-	[(mob|monster)] spawner¦s = minecraft:mob_spawner
+	[monster] spawner¦s = minecraft:mob_spawner
 
 	{command block direction}:
 		{default} = - {Damage:1}

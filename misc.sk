@@ -77,7 +77,7 @@ random items:
 	sugar = minecraft:sugar
 	ender pearl¦s = minecraft:ender_pearl
 	blaze rod¦s = minecraft:blaze_rod
-	nether wart¦s = minecraft:nether_wart
+	nether wart item¦s = minecraft:nether_wart
 	(ender eye¦s|eye[s] of ender) = minecraft:ender_eye
 	(bottle[s] o' enchanting|xp bottle¦s|experience bottle¦s) = minecraft:experience_bottle
 	fire charge¦s = minecraft:fire_charge
@@ -116,13 +116,13 @@ after flattening:
 	firework (star|charge)¦s = minecraft:firework_star
 
 plants:
-	pumpkin seeds = minecraft:pumpkin_seeds
-	melon seeds = minecraft:melon_seeds
-	[wheat] seeds = minecraft:wheat_seeds
-	beetroot seeds = minecraft:beetroot_seeds
-	any seeds = pumpkin seeds, melon seeds, seeds
+	pumpkin seed¦s = minecraft:pumpkin_seeds
+	melon seed¦s = minecraft:melon_seeds
+	[wheat] seed¦s = minecraft:wheat_seeds
+	beetroot seed¦s = minecraft:beetroot_seeds
+	any seed¦s = pumpkin seeds, melon seeds, wheat seeds
 
-	wheat = minecraft:wheat
+	wheat item¦s = minecraft:wheat
 	chorus fruit¦s = minecraft:chorus_fruit
 
 unchanged buckets:
