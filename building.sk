@@ -322,7 +322,7 @@ building blocks after flattening:
 	{waterloggable} {slab} prismarine brick slab¦s = minecraft:prismarine_brick_slab
 	{waterloggable} {slab} dark prismarine slab¦s = minecraft:dark_prismarine_slab
 	any wood[en] slab = oak slab, spruce slab, birch slab, jungle slab, acacia slab, dark oak slab
-	any slab = any wooden slab, stone slab, sandstone slab, petrified oak slab, cobblestone slab, brick slab, stone brick slab, nether brick slab, quartz slab, red sandstone slab, purpur slab, prismarine slab, prismarine brick slab, dark prismarine brick slab
+	any slab = any wooden slab, stone slab, sandstone slab, petrified oak slab, cobblestone slab, brick slab, stone brick slab, nether brick slab, quartz slab, red sandstone slab, purpur slab, prismarine slab, prismarine brick slab, dark prismarine slab
 
 	# Stairs
 	{stairs}:
