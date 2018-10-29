@@ -14,7 +14,7 @@ unchanged decoratives:
 	painting item¦s = minecraft:painting
 	item frame item¦s = minecraft:item_frame
 	[empty] flower pot¦s = minecraft:flower_pot
-	armor stand¦s = minecraft:armor_stand
+	armor stand¦s = minecraft:armor_stand[relatedEntity=armor stand]
 
 # Decoratives added in 1.12 that were changed in the flattening.
 world of color decoratives before flattening:

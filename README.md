@@ -109,6 +109,16 @@ minecraft version = 1.11 to 1.12 # Matches both given versions and the versions 
 ```
 Of course, in reality, only one of these is allowed per section of aliases.
 
+### Related entities
+An alias can have an associated entity defined. This is used to deal with
+naming conflicts. For example, if we want armor stand entity to be usable
+everywhere, we need to define it as:
+```
+armor stand¦s = minecraft:armor_stand[relatedEntity=armor stand]
+```
+Note that <code>relatedEntity</code> is not a block state, even if it
+looks like one.
+
 ## Developing Aliases (for experienced developers)
 1. Fork if you don't have write access
 2. Clone this in plugins/Skript, rename cloned folder to just *aliases*
