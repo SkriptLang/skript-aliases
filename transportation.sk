@@ -5,32 +5,32 @@ transportation items:
 
 old oak boat:
 	minecraft version = 1.12.2 or older
-	oak boat¦s = minecraft:boat
+	oak boat¦s = minecraft:boat[relatedEntity=oak boat]
 
 new oak boat:
 	minecraft version = 1.13 or newer
-	oak boat¦s = minecraft:oak_boat
+	oak boat¦s = minecraft:oak_boat[relatedEntity=oak boat]
 
 boats:
-	spruce boat¦s = minecraft:spruce_boat
-	birch boat¦s = minecraft:birch_boat
-	jungle boat¦s = minecraft:jungle_boat
-	acacia boat¦s = minecraft:acacia_boat
-	dark oak boat¦s = minecraft:dark_oak_boat
+	spruce boat¦s = minecraft:spruce_boat[relatedEntity=spruce boat]
+	birch boat¦s = minecraft:birch_boat[relatedEntity=birch boat]
+	jungle boat¦s = minecraft:jungle_boat[relatedEntity=jungle boat]
+	acacia boat¦s = minecraft:acacia_boat[relatedEntity=acacia boat]
+	dark oak boat¦s = minecraft:dark_oak_boat[relatedEntity=dark oak boat]
 
 	[any] boat¦s = oak boat, spruce boat, birch boat, jungle boat, acacia boat, dark oak boat
 
 minecarts:
-	[normal] minecart¦s = minecraft:minecart
+	[normal] minecart¦s = minecraft:minecart[relatedEntity=minecart]
 
 	minecart[s] with chest¦s = minecraft:chest_minecart
-	storage minecart¦s = minecart with chest
+	storage minecart¦s = minecart with chest[relatedEntity=minecart with chest]
 
 	minecart[s] with furnace¦s = minecraft:furnace_minecart
-	powered minecart¦s = minecart with furnace
+	powered minecart¦s = minecart with furnace[relatedEntity=powered minecart]
 
-	minecart[s] with TNT¦s = minecraft:tnt_minecart
-	minecart[s] with hopper¦s = minecraft:hopper_minecart
+	minecart[s] with TNT¦s = minecraft:tnt_minecart[relatedEntity=explosive minecart]
+	minecart[s] with hopper¦s = minecraft:hopper_minecart[relatedEntity=hopper minecart]
 	minecart[s] with command block¦s = minecraft:command_block_minecart
 
 	any minecart¦s = minecart, minecart with chest, minecart with furnace, minecart with TNT, minecart with hopper, minecart with command block

@@ -66,20 +66,20 @@ random items:
 	string¦s = minecraft:string
 	feather¦s = minecraft:feather
 	gunpowder = minecraft:gunpowder
-	snowball¦s = minecraft:snowball
+	snowball¦s = minecraft:snowball[relatedEntity=snowball]
 	leather = minecraft:leather
 	[clay] brick [item]¦s = minecraft:brick
 	(piece[s] of paper|paper¦s) = minecraft:paper
 	slimeball¦s = minecraft:slime_ball
-	egg¦s = minecraft:egg
+	egg¦s = minecraft:egg[relatedEntity=egg]
 	glowstone dust = minecraft:glowstone_dust
 	bone¦s = minecraft:bone
 	sugar = minecraft:sugar
-	ender pearl¦s = minecraft:ender_pearl
+	ender pearl¦s = minecraft:ender_pearl[relatedEntity=ender pearl]
 	blaze rod¦s = minecraft:blaze_rod
 	nether wart item¦s = minecraft:nether_wart
 	(ender eye¦s|eye[s] of ender) = minecraft:ender_eye
-	(bottle[s] o' enchanting|xp bottle¦s|experience bottle¦s) = minecraft:experience_bottle
+	(bottle[s] o' enchanting|xp bottle¦s|experience bottle¦s) = minecraft:experience_bottle[relatedEntity=xp bottle]
 	fire charge¦s = minecraft:fire_charge
 	[empty] map = minecraft:map
 	filled map = minecraft:filled_map

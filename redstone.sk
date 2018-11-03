@@ -15,7 +15,7 @@ unchanged redstone:
 	{orientable} dispenser¦s = minecraft:dispenser
 	{orientable} dropper¦s = minecraft:dropper
 
-	tnt [block¦s] = minecraft:tnt
+	tnt [block¦s] = minecraft:tnt[relatedEntity=primed tnt]
 
 redstone before flattening:
 	minecraft version = 1.12.2 or older

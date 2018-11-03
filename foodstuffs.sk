@@ -23,10 +23,10 @@ unchanged foods:
 	pumpkin pie¦s = minecraft:pumpkin_pie
 	rabbit (stew|soup)¦s = minecraft:rabbit_stew
 	[raw] beef = minecraft:beef
-	[raw] chicken¦s = minecraft:chicken
+	[raw] chicken¦s = minecraft:chicken[relatedEntity=chicken]
 	[raw] mutton¦s = minecraft:mutton
 	[raw] pork[chop]¦s = minecraft:porkchop
-	[raw] rabbit¦s = minecraft:rabbit
+	[raw] rabbit¦s = minecraft:rabbit[relatedEntity=rabbit]
 	rotten flesh = minecraft:rotten_flesh
 	spider eye¦s = minecraft:spider_eye
 
@@ -49,12 +49,12 @@ foods before flattening:
 # Foods whose IDs were changed as part of the ID flattening in 1.13.
 foods after flattening:
 	minecraft version = 1.13 or newer
-	[raw] cod [fillet]¦s = minecraft:cod
+	[raw] cod [fillet]¦s = minecraft:cod[relatedEntity=cod]
 	cooked cod [fillet]¦s = minecraft:cooked_cod
-	[raw] salmon [fillet]¦s = minecraft:salmon
+	[raw] salmon [fillet]¦s = minecraft:salmon[relatedEntity=salmon]
 	cooked salmon [fillet]¦s = minecraft:cooked_salmon
-	pufferfish¦es = minecraft:pufferfish
-	tropical fish¦es = minecraft:tropical_fish
+	pufferfish¦es = minecraft:pufferfish[relatedEntity=puffer fish]
+	tropical fish¦es = minecraft:tropical_fish[relatedEntity=tropical fish]
 	any raw fish¦es = raw cod, raw salmon, pufferfish, tropical fish
 	
 	[normal] golden apple = minecraft:golden_apple

@@ -11,10 +11,10 @@ unchanged decoratives:
 	[huge] red mushroom block¦s = minecraft:red_mushroom_block
 	vine¦s = minecraft:vine
 	enchant(ment|ing) table¦s = minecraft:enchanting_table
-	painting item¦s = minecraft:painting
-	item frame item¦s = minecraft:item_frame
 	[empty] flower pot¦s = minecraft:flower_pot
-	armor stand¦s = minecraft:armor_stand[relatedEntity=armor stand]
+	painting [item]¦s = minecraft:painting[relatedEntity=painting]
+	item frame [item]¦s = minecraft:item_frame[relatedEntity=item frame]
+	armor stand [item]¦s = minecraft:armor_stand[relatedEntity=armor stand]
 
 # Decoratives added in 1.12 that were changed in the flattening.
 world of color decoratives before flattening:
@@ -332,7 +332,7 @@ combat update:
 	chorus (plant|stem)¦s = minecraft:chorus_plant
 	chorus flower¦s = minecraft:chorus_flower
 	grass path [block]¦s = minecraft:grass_path
-	end[er] crystal item¦s = minecraft:end_crystal
+	end[er] crystal [item]¦s = minecraft:end_crystal[relatedEntity=ender crystal]
 
 
 # Shulker boxes were introduced in 1.11 but purple ones weren't differentiated from undyed.
