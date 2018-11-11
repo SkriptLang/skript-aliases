@@ -120,12 +120,12 @@ old blocks before flattening:
 
 	# Desert
 	red sand [block¦s] = minecraft:sand {Damage:1}
-	sandstone [block¦s] = minecraft:sandstone {Damage:0}
+	[normal] sandstone [block¦s] = minecraft:sandstone {Damage:0}
 	chiseled sandstone [block¦s] = minecraft:sandstone {Damage:1}
 	(smooth|cut) sandstone [block¦s] = minecraft:sandstone {Damage:2}
 	any sandstone [block¦s] = sandstone, chiseled sandstone, cut sandstone
 
-	red sandstone [block¦s] = minecraft:red_sandstone {Damage:0}
+	[normal] red sandstone [block¦s] = minecraft:red_sandstone {Damage:0}
 	red chiseled sandstone [block¦s] = minecraft:red_sandstone {Damage:1}
 	(smooth|cut) red sandstone [block¦s] = minecraft:red_sandstone {Damage:2}
 	any red sandstone [block¦s] = red sandstone, red chiseled sandstone, cut red sandstone
@@ -272,12 +272,12 @@ building blocks after flattening:
 	[normal] sandstone [block¦s] = minecraft:sandstone
 	chiseled sandstone [block¦s] = minecraft:chiseled_sandstone
 	(smooth|cut) sandstone [block¦s] = minecraft:cut_sandstone
-	[any] sandstone [block¦s] = sandstone, chiseled sandstone, cut sandstone
+	any sandstone [block¦s] = sandstone, chiseled sandstone, cut sandstone
 
 	[normal] red sandstone [block¦s] = minecraft:red_sandstone
 	red chiseled sandstone [block¦s] = minecraft:chiseled_red_sandstone
 	(smooth|cut) red sandstone [block¦s] = minecraft:cut_red_sandstone
-	[any] red sandstone [block¦s] = red sandstone, red chiseled sandstone, cut red sandstone
+	any red sandstone [block¦s] = red sandstone, red chiseled sandstone, cut red sandstone
 
 	# Glass
 	{colored} [stained] glass [block¦s] = -stained_glass
