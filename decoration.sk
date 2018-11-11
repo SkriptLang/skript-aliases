@@ -479,3 +479,8 @@ directionals after flattening:
 	# BANNERS
 	{directional} {colored} wall banner¦s = -wall_banner
 	{rotatable} {colored} [standing] banner¦s = -banner
+
+# The aliases for glazed terracotta remained the same but the IDs changed between 1.12 and 1.13
+glazed terracotta group:
+	minecraft version = 1.12 or newer
+	any glazed terracotta = white glazed terracotta, orange glazed terracotta, magenta glazed terracotta, light blue glazed terracotta, yellow glazed terracotta, lime glazed terracotta, pink glazed terracotta, dark gray glazed terracotta, light gray glazed terracotta, cyan glazed terracotta, purple glazed terracotta, blue glazed terracotta, brown glazed terracotta, dark green glazed terracotta, red glazed terracotta, black glazed terracotta

@@ -140,7 +140,7 @@ old blocks before flattening:
 
 	# Stained clay. Renamed to terracotta in 1.12 but the ID wasn't changed until 1.13.
 	{colored} [stained] ([hard[ened]] clay|terracotta) [block¦s] = minecraft:stained_hardened_clay
-	[any] stained ([hard[ened]] clay|terracotta) [block¦s] = minecraft:stained_hardened_clay
+	any stained ([hard[ened]] clay|terracotta) [block¦s] = minecraft:stained_hardened_clay
 
 	[un(dyed|stained)] (hard[ened] clay|terracotta) [block¦s] = minecraft:hardened_clay
 	any (hard[ened] clay|terracotta) [block¦s] = any stained terracotta, unstained terracotta
@@ -289,10 +289,10 @@ building blocks after flattening:
 
 	# Terracotta
 	{colored} [stained] ([hard[ened]] clay|terracotta) = -terracotta
-	[any] (stained clay|terracotta) = white terracotta, orange terracotta, magenta terracotta, light blue terracotta, yellow terracotta, lime terracotta, pink terracotta, dark gray terracotta, light gray terracotta, cyan terracotta, purple terracotta, blue terracotta, brown terracotta, dark green terracotta, red terracotta, black terracotta
+	any stained ([hard[ened]] clay|terracotta) = white terracotta, orange terracotta, magenta terracotta, light blue terracotta, yellow terracotta, lime terracotta, pink terracotta, dark gray terracotta, light gray terracotta, cyan terracotta, purple terracotta, blue terracotta, brown terracotta, dark green terracotta, red terracotta, black terracotta
 
 	[un(dyed|stained)] (hard[ened] clay|terracotta) [block¦s] = minecraft:terracotta
-	any (hard[ened] clay|terracotta) [block¦s] = any terracotta, unstained terracotta
+	any (hard[ened] clay|terracotta) [block¦s] = any stained terracotta, unstained terracotta
 
 	# Concrete
 	{colored} concrete = -concrete
