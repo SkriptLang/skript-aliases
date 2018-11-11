@@ -44,7 +44,7 @@ foods before flattening:
 	[normal] golden apple = minecraft:golden_apple {Damage:0}
 	(enchanted golden|notch) apple = minecraft:golden_apple {Damage:1}
 	
-	melon [slice]¦s = minecraft:melon
+	melon slice¦s = minecraft:melon
 
 # Foods whose IDs were changed as part of the ID flattening in 1.13.
 foods after flattening:
@@ -60,7 +60,7 @@ foods after flattening:
 	[normal] golden apple = minecraft:golden_apple
 	(enchanted golden|notch) apple = minecraft:enchanted_golden_apple
 	
-	melon [slice]¦s = minecraft:melon_slice
+	melon slice¦s = minecraft:melon_slice
 	dried kelp¦s = minecraft:dried_kelp
 
 # Groups of items for useful reference
