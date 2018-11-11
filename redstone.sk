@@ -3,7 +3,7 @@
 unchanged redstone:
 	# Redstone block in building
 	redstone (wire|dust block)¦s = minecraft:redstone_wire
-	redstone (dust|item)¦s = minecraft:redstone
+	redstone[ (dust|item)]¦s = minecraft:redstone
 	any redstone item = redstone block, redstone item
 
 	stone pressure plate¦s = minecraft:stone_pressure_plate
