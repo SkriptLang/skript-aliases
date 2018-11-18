@@ -446,11 +446,20 @@ directionals before flattening:
 	{skull types} item¦s = minecraft:skull
 	({wall orientations}|{skull floor orientations}) {skull types} = minecraft:skull
 
-	# Banners
+banners:
+	minecraft version = 1.11 to 1.12.2
 	{wall orientations} {placed banner colors} wall banner¦s = minecraft:wall_banner
 	{banner standing orientations} {placed banner colors} [standing] banner¦s = minecraft:standing_banner
 	{opposite colored} banner item¦s = minecraft:banner
 	[any] banner item = white banner item, orange banner item, magenta banner item, light blue banner item, yellow banner item, lime banner item, pink banner item, dark gray banner item, light gray banner item, cyan banner item, purple banner item, blue banner item, brown banner item, dark green banner item, red banner item, black banner item
+	[any] banner = minecraft:banner, minecraft:wall_banner, minecraft:standing_banner
+	
+basic banners:
+	minecraft version = 1.10.2 or older
+	# Simplified banner aliases
+	wall banner¦s = minecraft:wall_banner
+	[standing] banner¦s = minecraft:standing_banner
+	[any] banner item¦s = minecraft:banner
 	[any] banner = minecraft:banner, minecraft:wall_banner, minecraft:standing_banner
 
 directionals after flattening:

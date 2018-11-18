@@ -98,9 +98,14 @@ horse armor:
 	diamond (horse armo[u]r|barding) = minecraft:diamond_horse_armor
 
 	[any] (horse armo[u]r|barding) = iron horse armor, gold horse armor, diamond horse armor
+	
+# Minecraft Wiki is wrong about totem versions; name changed only after 1.12
+old totem:
+	minecraft version = 1.11 to 1.11.2
+	totem[s] of undying = minecraft:totem
 
-exploration update combat items:
-	minecraft version = 1.11 or newer
+new totem:
+	minecraft version = 1.12 or newer
 	totem[s] of undying = minecraft:totem_of_undying
 
 update aquatic combat items:
