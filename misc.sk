@@ -122,7 +122,7 @@ plants:
 	beetroot seed¦s = minecraft:beetroot_seeds
 	any seed¦s = pumpkin seeds, melon seeds, wheat seeds
 
-	wheat item¦s = minecraft:wheat
+	wheat [item¦s] = minecraft:wheat
 	chorus fruit¦s = minecraft:chorus_fruit
 
 unchanged buckets:
