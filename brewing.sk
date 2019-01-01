@@ -72,7 +72,7 @@ potions:
 blocks:
 	brewing stand¦s = minecraft:brewing_stand
 	{cauldron level}:
-		{default} = -[level=0]
+		{default} = -
 		empty = -[level=0]
 		one-third filled = -[level=1]
 		two-thirds filled = -[level=2]
