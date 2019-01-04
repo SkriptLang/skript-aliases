@@ -48,7 +48,6 @@ unchanged building blocks:
 	netherrack [block¦s] = minecraft:netherrack
 	soul sand [block¦s] = minecraft:soul_sand
 	glowstone [block¦s] = minecraft:glowstone
-	nether brick block¦s = minecraft:nether_brick
 
 	# Miscellaneous
 	ice [block¦s] = minecraft:ice
@@ -193,6 +192,7 @@ old blocks before flattening:
 
 	# Construction/Decorative
 	[red] brick block¦s = minecraft:brick_block
+	nether brick [block]¦s = minecraft:nether_brick
 
 	stone brick¦s = minecraft:stonebrick {Damage:0}
 	moss[y] stone brick¦s = minecraft:stonebrick {Damage:1}
@@ -363,7 +363,7 @@ building blocks after flattening:
 
 	# Nether
 	magma [block¦s] = minecraft:magma_block
-	nether brick¦s = minecraft:nether_bricks
+	nether brick [block]¦s = minecraft:nether_bricks
 	red nether brick¦s = minecraft:red_nether_bricks
 
 	# Miscellaneous

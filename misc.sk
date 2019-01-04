@@ -24,6 +24,7 @@ old items:
 	sugar cane¦s = minecraft:reeds
 	clay [balls] = minecraft:clay
 	popped chorus fruit¦s = minecraft:chorus_fruit_popped
+	nether brick item¦s = minecraft:netherbrick
 
 new items:
 	minecraft version = 1.13 or newer
@@ -36,6 +37,7 @@ new items:
 	nautlius shell¦s = minecraft:nautilus_shell
 	heart[s] of the sea = minecraft:heart_of_the_sea
 	popped chorus fruit¦s = minecraft:popped_chorus_fruit
+	nether brick item¦s = minecraft:nether_brick
 
 	{hatch stage}:
 		{default} = -
@@ -84,7 +86,6 @@ random items:
 	[empty] map = minecraft:map
 	filled map = minecraft:filled_map
 	nether star¦s = minecraft:nether_star
-	nether brick¦s = minecraft:nether_brick
 	nether quartz = minecraft:quartz
 	prismarine shard¦s = minecraft:prismarine_shard
 	prismarine crystal¦s = minecraft:prismarine_crystals
