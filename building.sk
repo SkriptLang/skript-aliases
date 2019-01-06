@@ -271,12 +271,12 @@ building blocks after flattening:
 	red sand [block¦s] = minecraft:red_sand
 	[normal] sandstone [block¦s] = minecraft:sandstone
 	chiseled sandstone [block¦s] = minecraft:chiseled_sandstone
-	(smooth|cut) sandstone [block¦s] = minecraft:cut_sandstone
+	cut sandstone [block¦s] = minecraft:cut_sandstone
 	any sandstone [block¦s] = sandstone, chiseled sandstone, cut sandstone
 
 	[normal] red sandstone [block¦s] = minecraft:red_sandstone
 	red chiseled sandstone [block¦s] = minecraft:chiseled_red_sandstone
-	(smooth|cut) red sandstone [block¦s] = minecraft:cut_red_sandstone
+	cut red sandstone [block¦s] = minecraft:cut_red_sandstone
 	any red sandstone [block¦s] = red sandstone, red chiseled sandstone, cut red sandstone
 
 	# Glass
@@ -453,10 +453,10 @@ update aquatic:
 	any log = any normal log, any stripped log, any bark block, any stripped bark block
 
 	# Smooth double slabs became their own items in 1.13
-	(smooth quartz|double quartz slab¦s) = minecraft:smooth_quartz
-	(smooth red sandstone|double red sandstone slab¦s) = minecraft:smooth_red_sandstone
-	(smooth sandstone|double sandstone slab¦s) = minecraft:smooth_sandstone
-	(smooth stone|double stone slab¦s) = minecraft:smooth_stone
+	smooth quartz = minecraft:smooth_quartz
+	smooth red sandstone = minecraft:smooth_red_sandstone
+	smooth sandstone = minecraft:smooth_sandstone
+	smooth stone = minecraft:smooth_stone
 
 	# Coral categories
 	{coral type}:
