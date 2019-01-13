@@ -32,7 +32,7 @@ tools:
 	
 	[any] pickaxe¦s = wooden pickaxe, stone pickaxe, golden pickaxe, iron pickaxe, diamond pickaxe
 	[any] axe¦s = wooden axe, stone axe, golden axe, iron axe, diamond axe
-	[any] shovel¦s = wooden shovel, stone shovel, golden shovel, iron shovel, diamond axe
+	[any] shovel¦s = wooden shovel, stone shovel, golden shovel, iron shovel, diamond shovel
 	[any] hoe¦s = wooden hoe, stone hoe, golden hoe, iron hoe, diamond hoe
 
 	any tool¦s = any pickaxe, any axe, any shovel, any hoe
