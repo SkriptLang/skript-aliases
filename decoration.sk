@@ -367,11 +367,12 @@ update aquatic:
 orientations before flattening:
 	minecraft version = 1.12.2 or older
 	{skull types}:
-		skeleton (skull|head)¦s = - {SkullType:0}
-		wither skeleton (skull|head)¦s = - {SkullType:1}
-		zombie (head|skull)¦s = - {SkullType:2}
-		player (head|skull)¦s = - {SkullType:3}
-		creeper (head|skull)¦s = - {SkullType:4}
+		skeleton (skull|head)¦s = - {Damage:0}
+		wither skeleton (skull|head)¦s = - {Damage:1}
+		zombie (head|skull)¦s = - {Damage:2}
+		player (head|skull)¦s = - {Damage:3}
+		creeper (head|skull)¦s = - {Damage:4}
+		dragon (head|skull)¦s = - {Damage:5}
 	{wall orientations}:
 		{default} = -
 		south(ward| facing) = - {Damage:3}
