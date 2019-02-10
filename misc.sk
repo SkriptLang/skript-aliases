@@ -41,7 +41,7 @@ new items:
 
 	{hatch stage}:
 		{default} = -
-		uncracked = -[hatch=2]
+		uncracked = -[hatch=0]
 		cracked = -[hatch=1]
 		almost hatched = -[hatch=2]
 	{egg count}:
