@@ -111,6 +111,8 @@ new totem:
 update aquatic combat items:
 	minecraft version = 1.13 or newer
 	turtle [shell] helmet = minecraft:turtle_helmet
+	[any] (cap|helmet)¦s = leather cap, iron cap, gold cap, diamond cap, chain cap, turtle helmet
+
 	trident¦s = minecraft:trident[relatedEntity=trident]
 
 	{update aquatic effects}:
