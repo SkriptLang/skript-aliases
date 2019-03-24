@@ -192,7 +192,7 @@ new dyes:
 	magenta dye¦s = minecraft:magenta_dye
 	orange dye¦s = minecraft:orange_dye
 	(bone[ ]meal|white dye)¦s = minecraft:bone_meal
-	any dye = black dye, red dye, green dye, brown dye, blue dye, purple dye, cyan dye, light gray dye, gray dye, pink dye, lime dye, yellow dye, light blue dye, magenta dye, orange dye, white dye
+	[any] dye = black dye, red dye, green dye, brown dye, blue dye, purple dye, cyan dye, light gray dye, gray dye, pink dye, lime dye, yellow dye, light blue dye, magenta dye, orange dye, white dye
 
 old dyes:
 	minecraft version = 1.12.2 or older
@@ -212,7 +212,7 @@ old dyes:
 	magenta dye¦s = minecraft:dye {Damage:13}
 	orange dye¦s = minecraft:dye {Damage:14}
 	(bone[ ]meal|white dye)¦s = minecraft:dye {Damage:15}
-	any dye = black dye, red dye, green dye, brown dye, blue dye, purple dye, cyan dye, light gray dye, gray dye, pink dye, lime dye, yellow dye, light blue dye, magenta dye, orange dye, white dye
+	[any] dye = black dye, red dye, green dye, brown dye, blue dye, purple dye, cyan dye, light gray dye, gray dye, pink dye, lime dye, yellow dye, light blue dye, magenta dye, orange dye, white dye
 
 # SPAWN EGGS: Their format and the entity tags changed a lot throughout versions so this section is somewhat large
 spawn eggs after flattening:
