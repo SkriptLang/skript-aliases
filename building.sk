@@ -21,7 +21,6 @@ unchanged building blocks:
 	coal ore¦s = minecraft:coal_ore
 	lapis [lazuli] ore¦s = minecraft:lapis_ore
 	diamond ore¦s = minecraft:diamond_ore
-	redstone ore¦s = minecraft:redstone_ore
 	emerald ore¦s = minecraft:emerald_ore
 
 	obsidian [block¦s] = minecraft:obsidian
@@ -78,6 +77,9 @@ old blocks before flattening:
 	coarse dirt [block¦s] = minecraft:dirt {Damage:1}
 	podzol [block¦s] = minecraft:dirt {Damage:2}
 	[nether] quartz ore¦s = minecraft:quartz_ore
+	unlit redstone ore¦s = minecraft:redstone_ore
+	lit redstone ore¦s = minecraft:lit_redstone_ore
+	redstone ore¦s = unlit redstone ore, lit redstone ore
 	mycelium [block¦s] = minecraft:mycelium
 
 	# All wood
@@ -254,6 +256,7 @@ building blocks after flattening:
 	{snowable} mycelium [block¦s] = minecraft:mycelium
 	coarse dirt [block¦s] = minecraft:coarse_dirt
 	[nether] quartz ore¦s = minecraft:nether_quartz_ore
+	{lightable} redstone ore¦s = minecraft:redstone_ore
 
 	# Wood
 	# planks
