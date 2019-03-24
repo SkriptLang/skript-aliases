@@ -189,6 +189,7 @@ old blocks before flattening:
 	{stair direction} sandstone stair¦s = minecraft:sandstone_stairs
 	{stair direction} red sandstone stair¦s = minecraft:red_sandstone_stairs
 	{stair direction} purpur stair¦s = minecraft:purpur_stairs
+	[any] stair¦s = oak stairs, spruce stairs, birch stairs, jungle stairs, acacia stairs, dark oak stairs, cobblestone stairs, brick stairs, stone brick stairs, nether brick stairs, quartz stairs, purpur stairs, sandstone stairs, red sandstone stairs
 
 	# Construction/Decorative
 	[red] brick block¦s = minecraft:brick_block
@@ -342,6 +343,7 @@ building blocks after flattening:
 	{waterloggable} {stairs} {directional} prismarine stair¦s = minecraft:prismarine_stairs
 	{waterloggable} {stairs} {directional} prismarine brick stair¦s = minecraft:prismarine_brick_stairs
 	{waterloggable} {stairs} {directional} dark prismarine stair¦s = minecraft:dark_prismarine_stairs
+	[any] stair¦s = oak stairs, spruce stairs, birch stairs, jungle stairs, acacia stairs, dark oak stairs, cobblestone stairs, brick stairs, stone brick stairs, nether brick stairs, quartz stairs, purpur stairs, sandstone stairs, red sandstone stairs, prismarine stairs, prismarine brick stairs, dark prismarine stairs
 
 	# Construction/Decorative
 	([nether] quartz block[s]|block[s] of [nether] quartz) = minecraft:quartz_block
