@@ -113,7 +113,7 @@ village and pillage update combat items:
 	minecraft version = 1.14 or newer
 	crossbow¦s = minecraft:crossbow
 
-aqautic update combat items:
+update aquatic combat items:
 	minecraft version = 1.13 or newer
 	turtle [shell] helmet = minecraft:turtle_helmet
 	[any] (cap|helmet)¦s = leather cap, iron cap, gold cap, diamond cap, chain cap, turtle helmet

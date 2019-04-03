@@ -57,20 +57,20 @@ village and pillage update:
 	minecraft version = 1.14 or newer
 
 	#Stairs
-	{waterloggable} {stairs} {directional} stone stair¦s = minecraft:stone_stairs
-	{waterloggable} {stairs} {directional} granite stair¦s = minecraft:granite_stairs
-	{waterloggable} {stairs} {directional} diorite stair¦s = minecraft:diorite_stairs
-	{waterloggable} {stairs} {directional} andesite stair¦s = minecraft:andesite_stairs
-	{waterloggable} {stairs} {directional} polished granite stair¦s = minecraft:polished_granite_stairs
-	{waterloggable} {stairs} {directional} polished diorite stair¦s = minecraft:polished_diorite_stairs
-	{waterloggable} {stairs} {directional} polished andesite stair¦s = minecraft:polished_andesite_stairs
-	{waterloggable} {stairs} {directional} mossy stone brick stair¦s = minecraft:mossy_stone_brick_stairs
-	{waterloggable} {stairs} {directional} mossy cobble[stone] stair¦s = minecraft:mossy_cobblestone_stairs
-	{waterloggable} {stairs} {directional} smooth sandstone stair¦s = minecraft:smooth_sandstone_stairs
-	{waterloggable} {stairs} {directional} smooth red sandstone stair¦s = minecraft:smooth_red_sandstone_stairs
-	{waterloggable} {stairs} {directional} smooth quartz stair¦s = minecraft:smooth_quartz_stairs
-	{waterloggable} {stairs} {directional} red nether brick stair¦s = minecraft:red_nether_brick_stairs
-	{waterloggable} {stairs} {directional} end stone brick stair¦s = minecraft:end_stone_brick_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} stone stair¦s = minecraft:stone_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} granite stair¦s = minecraft:granite_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} diorite stair¦s = minecraft:diorite_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} andesite stair¦s = minecraft:andesite_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} polished granite stair¦s = minecraft:polished_granite_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} polished diorite stair¦s = minecraft:polished_diorite_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} polished andesite stair¦s = minecraft:polished_andesite_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} mossy stone brick stair¦s = minecraft:mossy_stone_brick_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} mossy cobble[stone] stair¦s = minecraft:mossy_cobblestone_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} smooth sandstone stair¦s = minecraft:smooth_sandstone_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} smooth red sandstone stair¦s = minecraft:smooth_red_sandstone_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} smooth quartz stair¦s = minecraft:smooth_quartz_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} red nether brick stair¦s = minecraft:red_nether_brick_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} end stone brick stair¦s = minecraft:end_stone_brick_stairs
 	[any] stair¦s = oak stairs, spruce stairs, birch stairs, jungle stairs, acacia stairs, dark oak stairs, cobblestone stairs, brick stairs, stone brick stairs, nether brick stairs, quartz stairs, purpur stairs, sandstone stairs, red sandstone stairs, prismarine stairs, prismarine brick stairs, dark prismarine stairs, stone stairs, granite stairs, diorite stairs, andesite stairs, polished granite stairs, polished diorite stairs, polished andesite stairs, mossy stone brick stairs, mossy cobblestone stairs, smooth sandstone stairs, smooth red sandstone stairs, smooth quartz stairs, red nether brick stairs, end stone brick stairs
 	[any] stone stair¦s = stone stairs, granite stairs, diorite stairs, andesite stairs, polished granite stairs, polished diorite stairs, polished andesite stairs, mossy stone brick stairs, mossy cobblestone stairs
 	[any] sandstone stair¦s = smooth sandstone stairs, smooth red sandstone stairs
@@ -377,19 +377,26 @@ building blocks after flattening:
 		{default} = -
 		top = -[half=top]
 		bottom = -[half=bottom]
+	{stairs shape}:
+		{default} = -
+		straight = -[shape=straight]
+		inner-left = -[shape=inner_left]
+		inner-right = -[shape=inner_right]
+		outer-left = -[shape=outer_left]
+		outer-right = -[shape=outer_right]
 
-	{waterloggable} {stairs} {directional} {wood type} stair¦s = -stairs
-	{waterloggable} {stairs} {directional} cobble[stone] stair¦s = minecraft:cobblestone_stairs
-	{waterloggable} {stairs} {directional} [red] brick stair¦s = minecraft:brick_stairs
-	{waterloggable} {stairs} {directional} stone brick stair¦s = minecraft:stone_brick_stairs
-	{waterloggable} {stairs} {directional} nether brick stair¦s = minecraft:nether_brick_stairs
-	{waterloggable} {stairs} {directional} [nether] quartz stair¦s = minecraft:quartz_stairs
-	{waterloggable} {stairs} {directional} purpur stair¦s = minecraft:purpur_stairs
-	{waterloggable} {stairs} {directional} sandstone stair¦s = minecraft:sandstone_stairs
-	{waterloggable} {stairs} {directional} red sandstone stair¦s = minecraft:red_sandstone_stairs
-	{waterloggable} {stairs} {directional} prismarine stair¦s = minecraft:prismarine_stairs
-	{waterloggable} {stairs} {directional} prismarine brick stair¦s = minecraft:prismarine_brick_stairs
-	{waterloggable} {stairs} {directional} dark prismarine stair¦s = minecraft:dark_prismarine_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} {wood type} stair¦s = -stairs
+	{waterloggable} {stairs} {stairs shape} {directional} cobble[stone] stair¦s = minecraft:cobblestone_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} [red] brick stair¦s = minecraft:brick_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} stone brick stair¦s = minecraft:stone_brick_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} nether brick stair¦s = minecraft:nether_brick_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} [nether] quartz stair¦s = minecraft:quartz_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} purpur stair¦s = minecraft:purpur_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} sandstone stair¦s = minecraft:sandstone_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} red sandstone stair¦s = minecraft:red_sandstone_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} prismarine stair¦s = minecraft:prismarine_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} prismarine brick stair¦s = minecraft:prismarine_brick_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} dark prismarine stair¦s = minecraft:dark_prismarine_stairs
 	[any] stair¦s = oak stairs, spruce stairs, birch stairs, jungle stairs, acacia stairs, dark oak stairs, cobblestone stairs, brick stairs, stone brick stairs, nether brick stairs, quartz stairs, purpur stairs, sandstone stairs, red sandstone stairs, prismarine stairs, prismarine brick stairs, dark prismarine stairs
 
 	# Construction/Decorative
