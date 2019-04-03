@@ -108,7 +108,7 @@ old totem:
 new totem:
 	minecraft version = 1.12 or newer
 	totem[s] of undying = minecraft:totem_of_undying
-	
+
 village and pillage update combat items:
 	minecraft version = 1.14 or newer
 	crossbow¦s = minecraft:crossbow
@@ -134,7 +134,7 @@ old categories:
 	minecraft version = 1.12.2 or older
 	[any] weapon¦s = any sword, bow
 	[any] equipment = any weapon, any armor, shield
-	
+
 village and pillage update categories:
 	minecraft version = 1.14 or newer
 	[any] weapon¦s = any sword, bow, trident, crossbow
@@ -144,4 +144,3 @@ update aquatic categories:
 	minecraft version = 1.13 to 1.13.2
 	[any] weapon¦s = any sword, bow, trident
 	[any] equipment = any weapon, any armor, shield
-

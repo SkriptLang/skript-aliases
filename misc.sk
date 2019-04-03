@@ -25,9 +25,6 @@ village and pillage update:
 		(filled|level 8) = -[level=8]
 	{composter stage} composter¦s = minecraft:composter
 
-	kelp plant¦s = minecraft:kelp_plant
-	non-growing kelp [plant¦s] = minecraft:kelp[age=25]
-
 	{bamboo age}:
 		{default} = -
 		(thin|age 0) = -[age=0]
