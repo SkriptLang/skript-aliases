@@ -96,8 +96,9 @@ horse armor:
 	iron (horse armo[u]r|barding) = minecraft:iron_horse_armor
 	gold[en] (horse armo[u]r|barding) = minecraft:golden_horse_armor
 	diamond (horse armo[u]r|barding) = minecraft:diamond_horse_armor
+	leather (horse armo[u]r|barding) = minecraft:leather_horse_armor
 
-	[any] (horse armo[u]r|barding) = iron horse armor, gold horse armor, diamond horse armor
+	[any] (horse armo[u]r|barding) = iron horse armor, gold horse armor, diamond horse armor, leather horse armor
 	
 # Minecraft Wiki is wrong about totem versions; name changed only after 1.12
 old totem:
@@ -107,8 +108,12 @@ old totem:
 new totem:
 	minecraft version = 1.12 or newer
 	totem[s] of undying = minecraft:totem_of_undying
+	
+village and pillage update combat items:
+	minecraft version = 1.14 or newer
+	crossbow¦s = minecraft:crossbow
 
-update aquatic combat items:
+aqautic update combat items:
 	minecraft version = 1.13 or newer
 	turtle [shell] helmet = minecraft:turtle_helmet
 	[any] (cap|helmet)¦s = leather cap, iron cap, gold cap, diamond cap, chain cap, turtle helmet
@@ -129,8 +134,14 @@ old categories:
 	minecraft version = 1.12.2 or older
 	[any] weapon¦s = any sword, bow
 	[any] equipment = any weapon, any armor, shield
+	
+village and pillage update categories:
+	minecraft version = 1.14 or newer
+	[any] weapon¦s = any sword, bow, trident, crossbow
+	[any] equipment = any weapon, any armor, shield
 
-new categories:
-	minecraft version = 1.13 or newer
+update aquatic categories:
+	minecraft version = 1.13 to 1.13.2
 	[any] weapon¦s = any sword, bow, trident
 	[any] equipment = any weapon, any armor, shield
+

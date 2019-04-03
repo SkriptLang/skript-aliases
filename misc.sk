@@ -10,6 +10,46 @@ mining:
 	emerald¦s = minecraft:emerald
 	flint¦s = minecraft:flint
 
+village and pillage update:
+	minecraft version = 1.14 or newer
+	{composter stage}:
+		{default} = -
+		(empty|unfilled|level 0) = -[level=0]
+		level 1 = -[level=1]
+		level 2 = -[level=2]
+		level 3 = -[level=3]
+		(half full|half empty|level 4) = -[level=4]
+		level 5 = -[level=5]
+		level 6 = -[level=6]
+		level 7 = -[level=7]
+		(filled|level 8) = -[level=8]
+	{composter stage} composter¦s = minecraft:composter
+
+	kelp plant¦s = minecraft:kelp_plant
+	non-growing kelp [plant¦s] = minecraft:kelp[age=25]
+
+	{bamboo age}:
+		{default} = -
+		(thin|age 0) = -[age=0]
+		(thick|age 1) = -[age=1]
+	{bamboo leaves}:
+		{default} = -
+		leafless = -[leaves=none]
+		small leaved -[leaves=small]
+		large leaved -[leaves=large]
+	{bamboo stage}:
+		{default} = -
+		(stagnant|stage 0) = -[stage=0]
+		(growing|stage 1) = -[stage=1]
+	{bamboo age} {bamboo leaves} {bamboo stage} bamboo = minecraft:bamboo
+	bamboo = minecraft:bamboo
+
+	flower charge banner pattern¦s = minecraft:flower_banner_pattern
+	creeper charge banner pattern¦s = minecraft:creeper_banner_pattern
+	skull charge banner pattern¦s = minecraft:skull_banner_pattern
+	(mojang|thing) banner pattern¦s = minecraft:mojang_banner_pattern
+	globe banner pattern¦s = minecraft:globe_banner_pattern
+
 exploration update:
 	minecraft version = 1.11 or newer
 	shulker shell¦s = minecraft:shulker_shell
@@ -97,6 +137,7 @@ books:
 	(book and quill|writable book)¦s = minecraft:writable_book
 	written book¦s = minecraft:written_book
 	book with text = writable book, written book
+	enchanted book = minecraft:enchanted_book
 	any book¦s = book, book with text
 
 fireworks:
@@ -174,7 +215,15 @@ old music discs:
 	[music] (disc|record) ward = minecraft:record_ward
 	any [music] (disc|record) = music disc 11, music disc 13, music disc blocks, music disc cat, music disc chirp, music disc far, music disc mall, music disc mellohi, music disc stal, music disc strad, music disc wait, music disc ward
 
-new dyes:
+village and pillage update dyes:
+	minecraft version = 1.14 or newer
+	black dye¦s = minecraft:black_dye
+	brown dye¦s = minecraft:brown_dye
+	blue dye¦s = minecraft:blue_dye
+	white dye¦s = minecraft:white_dye
+	[any] dye = black dye, red dye, green dye, brown dye, blue dye, purple dye, cyan dye, light gray dye, gray dye, pink dye, lime dye, yellow dye, light blue dye, magenta dye, orange dye, white dye
+
+aquatic update dyes:
 	minecraft version = 1.13 or newer
 	(ink sac|black dye)¦s = minecraft:ink_sac
 	(rose red|red dye)¦s = minecraft:rose_red
@@ -194,7 +243,7 @@ new dyes:
 	(bone[ ]meal|white dye)¦s = minecraft:bone_meal
 	[any] dye = black dye, red dye, green dye, brown dye, blue dye, purple dye, cyan dye, light gray dye, gray dye, pink dye, lime dye, yellow dye, light blue dye, magenta dye, orange dye, white dye
 
-old dyes:
+dyes before flattening:
 	minecraft version = 1.12.2 or older
 	(ink sac|black dye)¦s = minecraft:dye {Damage:0}
 	(rose red|red dye)¦s =  minecraft:dye {Damage:1}
@@ -215,6 +264,17 @@ old dyes:
 	[any] dye = black dye, red dye, green dye, brown dye, blue dye, purple dye, cyan dye, light gray dye, gray dye, pink dye, lime dye, yellow dye, light blue dye, magenta dye, orange dye, white dye
 
 # SPAWN EGGS: Their format and the entity tags changed a lot throughout versions so this section is somewhat large
+
+village and pillage spawn eggs:
+	minecraft version = 1.14 or newer
+	(pillager [spawn] egg|spawn pillager)¦s = minecraft:pillager_spawn_egg
+	(ravager [spawn] egg|spawn ravager)¦s = minecraft:ravager_spawn_egg
+	(wandering trade [spawn] egg|spawn wandering trader)¦s = minecraft:wandering_trader_spawn_egg
+	(trader llama [spawn] egg|spawn trader llama)¦s = minecraft:trader_llama_spawn_egg
+	(cat [spawn] egg|spawn cat)¦s = minecraft:cat_spawn_egg #Cats are now a seperate mob from ocelots
+	(fox [spawn] egg|spawn fox)¦s = minecraft:fox_spawn_egg
+	(panda [spawn] egg|spawn panda)¦s = minecraft:panda_spawn_egg
+
 spawn eggs after flattening:
 	minecraft version = 1.13 or newer
 	(bat [spawn] egg|spawn bat)¦s = minecraft:bat_spawn_egg
