@@ -33,7 +33,7 @@ unchanged foods:
 village and pillage update foods:
 	minecraft version = 1.14 or newer
 	dried kelp = minecraft:dried_kelp
-	sweet berries = minecraft:sweet_berries
+	sweet berr(y|ies) = minecraft:sweet_berries
 
 # Before the flattening in 1.13, some foods used data values.
 foods before flattening:

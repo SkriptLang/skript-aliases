@@ -76,6 +76,7 @@ unlisted before flattening:
 village and pillage update:
 	minecraft version = 1.14 or newer
 	suspicious stew¦s = minecraft:suspicious_stew #food item, but not listed in creative menu; may change
+	{orientable} jigsaw block¦s = minecraft:jigsaw
 
 # Unlisted blocks added in 1.9
 unchanged combat update unlisted:

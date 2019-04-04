@@ -47,14 +47,11 @@ village and pillage decoratives:
 
 	#Crafting Blocks
 	{directional} loom¦s = minecraft:loom
-	{barrel open}:
-		{default} = -
-		closed = -[open=false]
-		open(ed) =[open=true]
-	{orientable} {barrel open} barrel¦s = minecraft:barrel
+	{orientable} {openable} barrel¦s = minecraft:barrel
 	{directional} {lightable} smoker¦s = minecraft:smoker
 	{directional} {lightable} blast furnace¦s = minecraft:blast_furnace
 	{directional} stone[ ]cutter¦s = minecraft:stonecutter
+	cartography table¦s = minecraft:cartography_table
 
 	#Whether the grindstone is on the floor, wall, or ceiling.
 	{grindstone face}:
@@ -64,8 +61,7 @@ village and pillage decoratives:
 		ceiling - [face=ceiling]
 	{directional} {grindstone face} grindstone¦s = minecraft:grindstone
 
-	#Non-functional "crafting" blocks
-	cartography table¦s = minecraft:cartography_table
+	#Non-functional "crafting" blocks; these are used for village jobs
 	fletching table¦s = minecraft:fletching_table
 	smithing table¦s = minecraft:smithing_table
 

@@ -96,10 +96,15 @@ horse armor:
 	iron (horse armo[u]r|barding) = minecraft:iron_horse_armor
 	gold[en] (horse armo[u]r|barding) = minecraft:golden_horse_armor
 	diamond (horse armo[u]r|barding) = minecraft:diamond_horse_armor
+
+	[any] (horse armo[u]r|barding) = iron horse armor, gold horse armor, diamond horse armor
+
+village and pillage horse armor:
+	minecraft version = 1.14 or newer
 	leather (horse armo[u]r|barding) = minecraft:leather_horse_armor
 
 	[any] (horse armo[u]r|barding) = iron horse armor, gold horse armor, diamond horse armor, leather horse armor
-	
+
 # Minecraft Wiki is wrong about totem versions; name changed only after 1.12
 old totem:
 	minecraft version = 1.11 to 1.11.2

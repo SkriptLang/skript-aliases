@@ -38,14 +38,23 @@ village and pillage update:
 		{default} = -
 		(stagnant|stage 0) = -[stage=0]
 		(growing|stage 1) = -[stage=1]
-	{bamboo age} {bamboo leaves} {bamboo stage} bamboo = minecraft:bamboo
+	{bamboo age} {bamboo leaves} {bamboo stage} bamboo [plant] = minecraft:bamboo
 	bamboo = minecraft:bamboo
+
+	{berry age}:
+		{default} = -
+		young = -[age=0]
+		berryless = -[age=1]
+		(some berries|berried) = -[age=2]
+		(many berries|very berried) = -[age=3]
+	{berry age} sweet berry bush [plant] = minecraft:sweet_berry_bush
 
 	flower charge banner pattern¦s = minecraft:flower_banner_pattern
 	creeper charge banner pattern¦s = minecraft:creeper_banner_pattern
 	skull charge banner pattern¦s = minecraft:skull_banner_pattern
 	(mojang|thing) banner pattern¦s = minecraft:mojang_banner_pattern
 	globe banner pattern¦s = minecraft:globe_banner_pattern
+	[any] banner pattern¦s = flower charge banner pattern, creeper charge banner pattern, skull charge banner pattern, thing banner pattern, globe banner pattern,
 
 exploration update:
 	minecraft version = 1.11 or newer
@@ -212,14 +221,6 @@ old music discs:
 	[music] (disc|record) ward = minecraft:record_ward
 	any [music] (disc|record) = music disc 11, music disc 13, music disc blocks, music disc cat, music disc chirp, music disc far, music disc mall, music disc mellohi, music disc stal, music disc strad, music disc wait, music disc ward
 
-village and pillage update dyes:
-	minecraft version = 1.14 or newer
-	black dye¦s = minecraft:black_dye
-	brown dye¦s = minecraft:brown_dye
-	blue dye¦s = minecraft:blue_dye
-	white dye¦s = minecraft:white_dye
-	[any] dye = black dye, red dye, green dye, brown dye, blue dye, purple dye, cyan dye, light gray dye, gray dye, pink dye, lime dye, yellow dye, light blue dye, magenta dye, orange dye, white dye
-
 aquatic update dyes:
 	minecraft version = 1.13 or newer
 	(ink sac|black dye)¦s = minecraft:ink_sac
@@ -260,17 +261,15 @@ dyes before flattening:
 	(bone[ ]meal|white dye)¦s = minecraft:dye {Damage:15}
 	[any] dye = black dye, red dye, green dye, brown dye, blue dye, purple dye, cyan dye, light gray dye, gray dye, pink dye, lime dye, yellow dye, light blue dye, magenta dye, orange dye, white dye
 
-# SPAWN EGGS: Their format and the entity tags changed a lot throughout versions so this section is somewhat large
-
-village and pillage spawn eggs:
+village and pillage update dyes:
 	minecraft version = 1.14 or newer
-	(pillager [spawn] egg|spawn pillager)¦s = minecraft:pillager_spawn_egg
-	(ravager [spawn] egg|spawn ravager)¦s = minecraft:ravager_spawn_egg
-	(wandering trade [spawn] egg|spawn wandering trader)¦s = minecraft:wandering_trader_spawn_egg
-	(trader llama [spawn] egg|spawn trader llama)¦s = minecraft:trader_llama_spawn_egg
-	(cat [spawn] egg|spawn cat)¦s = minecraft:cat_spawn_egg #Cats are now a seperate mob from ocelots
-	(fox [spawn] egg|spawn fox)¦s = minecraft:fox_spawn_egg
-	(panda [spawn] egg|spawn panda)¦s = minecraft:panda_spawn_egg
+	black dye¦s = minecraft:black_dye
+	brown dye¦s = minecraft:brown_dye
+	blue dye¦s = minecraft:blue_dye
+	white dye¦s = minecraft:white_dye
+	[any] dye = black dye, red dye, green dye, brown dye, blue dye, purple dye, cyan dye, light gray dye, gray dye, pink dye, lime dye, yellow dye, light blue dye, magenta dye, orange dye, white dye
+
+# SPAWN EGGS: Their format and the entity tags changed a lot throughout versions so this section is somewhat large
 
 spawn eggs after flattening:
 	minecraft version = 1.13 or newer
@@ -326,6 +325,17 @@ spawn eggs after flattening:
 	(zombie pig[man] [spawn] egg|spawn zombie pig[man])¦s = minecraft:zombie_pigman_spawn_egg
 	(zombie villager [spawn] egg|spawn zombie villager)¦s = minecraft:zombie_villager_spawn_egg
 	[any] spawn egg¦s = spawn bat, spawn blaze, spawn cave spider, spawn chicken, spawn cod, spawn cow, spawn creeper, spawn dolphin, spawn donkey, spawn drowned, spawn elder guardian, spawn enderman, spawn endermite, spawn evoker, spawn ghast, spawn guardian, spawn horse, spawn husk, spawn llama, spawn magma cube, spawn mooshroom, spawn mule, spawn ocelot, spawn parrot, spawn phantom, spawn pig, spawn polar bear, spawn pufferfish, spawn rabbit, spawn salmon, spawn sheep, spawn shulker, spawn silverfish, spawn skeleton, spawn skeleton horse, spawn slime, spawn spider, spawn squid, spawn stray, spawn tropical fish, spawn turtle, spawn vex, spawn villager, spawn vindicator, spawn witch, spawn wither skeleton, spawn wolf, spawn zombie, spawn zombie horse, spawn zombie pigman, spawn zombie villager
+
+village and pillage spawn eggs:
+	minecraft version = 1.14 or newer
+	(pillager [spawn] egg|spawn pillager)¦s = minecraft:pillager_spawn_egg
+	(ravager [spawn] egg|spawn ravager)¦s = minecraft:ravager_spawn_egg
+	(wandering trader [spawn] egg|spawn wandering trader)¦s = minecraft:wandering_trader_spawn_egg
+	(trader llama [spawn] egg|spawn trader llama)¦s = minecraft:trader_llama_spawn_egg
+	(cat [spawn] egg|spawn cat)¦s = minecraft:cat_spawn_egg #Cats are now a seperate mob from ocelots
+	(fox [spawn] egg|spawn fox)¦s = minecraft:fox_spawn_egg
+	(panda [spawn] egg|spawn panda)¦s = minecraft:panda_spawn_egg
+	[any] spawn egg¦s = spawn bat, spawn blaze, spawn cave spider, spawn chicken, spawn cod, spawn cow, spawn creeper, spawn dolphin, spawn donkey, spawn drowned, spawn elder guardian, spawn enderman, spawn endermite, spawn evoker, spawn ghast, spawn guardian, spawn horse, spawn husk, spawn llama, spawn magma cube, spawn mooshroom, spawn mule, spawn ocelot, spawn parrot, spawn phantom, spawn pig, spawn polar bear, spawn pufferfish, spawn rabbit, spawn salmon, spawn sheep, spawn shulker, spawn silverfish, spawn skeleton, spawn skeleton horse, spawn slime, spawn spider, spawn squid, spawn stray, spawn tropical fish, spawn turtle, spawn vex, spawn villager, spawn vindicator, spawn witch, spawn wither skeleton, spawn wolf, spawn zombie, spawn zombie horse, spawn zombie pigman, spawn zombie villager, spawn pillager, spawn ravager, spawn wandering trader, spawn trader llama spawn cat, spawn fox, spawn panda
 
 # These are for mobs that have existed since at least 1.8 and these IDs remained valid up through 1.12
 spawn eggs before flattening:
