@@ -54,7 +54,7 @@ village and pillage update:
 	skull charge banner pattern¦s = minecraft:skull_banner_pattern
 	(mojang|thing) banner pattern¦s = minecraft:mojang_banner_pattern
 	globe banner pattern¦s = minecraft:globe_banner_pattern
-	[any] banner pattern¦s = flower charge banner pattern, creeper charge banner pattern, skull charge banner pattern, thing banner pattern, globe banner pattern,
+	[any] banner pattern¦s = flower charge banner pattern, creeper charge banner pattern, skull charge banner pattern, thing banner pattern, globe banner pattern
 
 exploration update:
 	minecraft version = 1.11 or newer
