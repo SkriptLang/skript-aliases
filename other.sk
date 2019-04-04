@@ -73,6 +73,11 @@ unlisted before flattening:
 		(ripe|fully grown|stage (4|four)) = - {Damage:3}
 	{beetroot growth stage} beet[root] plant¦s = minecraft:beetroots
 
+village and pillage update:
+	minecraft version = 1.14 or newer
+	suspicious stew¦s = minecraft:suspicious_stew #food item, but not listed in creative menu; may change
+	{orientable} jigsaw block¦s = minecraft:jigsaw
+
 # Unlisted blocks added in 1.9
 unchanged combat update unlisted:
 	minecraft version = 1.9 or newer
