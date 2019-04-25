@@ -231,11 +231,11 @@ village and pillage update dyes:
 	[any] dye = black dye, red dye, green dye, brown dye, blue dye, purple dye, cyan dye, light gray dye, gray dye, pink dye, lime dye, yellow dye, light blue dye, magenta dye, orange dye, white dye
 
 village and pillage update (removed from dyes):
-    minecraft version = 1.14 or newer
-    bone[ ]meal¦s = minecraft:bone_meal
-    lapis [lazuli]¦s = minecraft:lapis_lazuli
-    ink sac¦s = minecraft:ink_sac
-    cocoa bean¦s = minecraft:cocoa_beans
+	minecraft version = 1.14 or newer
+	bone[ ]meal¦s = minecraft:bone_meal
+	lapis [lazuli]¦s = minecraft:lapis_lazuli
+	ink sac¦s = minecraft:ink_sac
+	cocoa bean¦s = minecraft:cocoa_beans
 
 # SPAWN EGGS: Their format and the entity tags changed a lot throughout versions so this section is somewhat large
 
