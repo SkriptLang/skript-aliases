@@ -20,7 +20,7 @@ village and pillage decoratives:
 	minecraft version = 1.14 or newer
 	{waterloggable} {directional} {wood type} wall sign¦s = -wall_sign
 	{waterloggable} {rotatable} {wood type} floor sign¦s = -sign
-	[any] sign¦s = wall sign, floor sign
+	[any] sign¦s = oak wall sign, birch wall sign, jungle wall sign, spruce wall sign, acacia wall sign, dark oak wall sign, oak floor sign, birch floor sign, jungle floor sign, spruce floor sign, acacia floor sign, dark oak floor sign
 
 	cornflower¦s = minecraft:cornflower
 	lily of the valley = minecraft:lily_of_the_valley
@@ -58,7 +58,7 @@ village and pillage decoratives:
 		{default} = -
 		floor = -[face=floor]
 		wall = -[face=wall]
-		ceiling - [face=ceiling]
+		ceiling = -[face=ceiling]
 	{directional} {grindstone face} grindstone¦s = minecraft:grindstone
 
 	#Non-functional "crafting" blocks; these are used for village jobs

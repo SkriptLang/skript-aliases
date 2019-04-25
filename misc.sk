@@ -10,51 +10,6 @@ mining:
 	emerald¦s = minecraft:emerald
 	flint¦s = minecraft:flint
 
-village and pillage update:
-	minecraft version = 1.14 or newer
-	{composter stage}:
-		{default} = -
-		(empty|unfilled|level 0) = -[level=0]
-		level 1 = -[level=1]
-		level 2 = -[level=2]
-		level 3 = -[level=3]
-		(half full|half empty|level 4) = -[level=4]
-		level 5 = -[level=5]
-		level 6 = -[level=6]
-		level 7 = -[level=7]
-		(filled|level 8) = -[level=8]
-	{composter stage} composter¦s = minecraft:composter
-
-	{bamboo age}:
-		{default} = -
-		(thin|age 0) = -[age=0]
-		(thick|age 1) = -[age=1]
-	{bamboo leaves}:
-		{default} = -
-		leafless = -[leaves=none]
-		small leaved -[leaves=small]
-		large leaved -[leaves=large]
-	{bamboo stage}:
-		{default} = -
-		(stagnant|stage 0) = -[stage=0]
-		(growing|stage 1) = -[stage=1]
-	{bamboo age} {bamboo leaves} {bamboo stage} bamboo [plant] = minecraft:bamboo
-	bamboo = minecraft:bamboo
-
-	{berry age}:
-		{default} = -
-		young = -[age=0]
-		berryless = -[age=1]
-		(some berries|berried) = -[age=2]
-		(many berries|very berried) = -[age=3]
-	{berry age} sweet berry bush [plant] = minecraft:sweet_berry_bush
-
-	flower charge banner pattern¦s = minecraft:flower_banner_pattern
-	creeper charge banner pattern¦s = minecraft:creeper_banner_pattern
-	skull charge banner pattern¦s = minecraft:skull_banner_pattern
-	(mojang|thing) banner pattern¦s = minecraft:mojang_banner_pattern
-	globe banner pattern¦s = minecraft:globe_banner_pattern
-	[any] banner pattern¦s = flower charge banner pattern, creeper charge banner pattern, skull charge banner pattern, thing banner pattern, globe banner pattern
 
 exploration update:
 	minecraft version = 1.11 or newer
@@ -221,26 +176,6 @@ old music discs:
 	[music] (disc|record) ward = minecraft:record_ward
 	any [music] (disc|record) = music disc 11, music disc 13, music disc blocks, music disc cat, music disc chirp, music disc far, music disc mall, music disc mellohi, music disc stal, music disc strad, music disc wait, music disc ward
 
-aquatic update dyes:
-	minecraft version = 1.13 or newer
-	(ink sac|black dye)¦s = minecraft:ink_sac
-	(rose red|red dye)¦s = minecraft:rose_red
-	(cactus green|green dye)¦s = minecraft:cactus_green
-	(cocoa bean|brown dye)¦s = minecraft:cocoa_beans
-	(lapis [lazuli]|blue dye)¦s = minecraft:lapis_lazuli
-	purple dye¦s = minecraft:purple_dye
-	cyan dye¦s = minecraft:cyan_dye
-	light gr(a|e)y dye¦s = minecraft:light_gray_dye
-	gr(a|e)y dye¦s = minecraft:gray_dye
-	pink dye¦s = minecraft:pink_dye
-	(lime|light green) dye¦s = minecraft:lime_dye
-	(dandelion yellow|yellow dye)¦s = minecraft:dandelion_yellow
-	light blue dye¦s = minecraft:light_blue_dye
-	magenta dye¦s = minecraft:magenta_dye
-	orange dye¦s = minecraft:orange_dye
-	(bone[ ]meal|white dye)¦s = minecraft:bone_meal
-	[any] dye = black dye, red dye, green dye, brown dye, blue dye, purple dye, cyan dye, light gray dye, gray dye, pink dye, lime dye, yellow dye, light blue dye, magenta dye, orange dye, white dye
-
 dyes before flattening:
 	minecraft version = 1.12.2 or older
 	(ink sac|black dye)¦s = minecraft:dye {Damage:0}
@@ -261,13 +196,46 @@ dyes before flattening:
 	(bone[ ]meal|white dye)¦s = minecraft:dye {Damage:15}
 	[any] dye = black dye, red dye, green dye, brown dye, blue dye, purple dye, cyan dye, light gray dye, gray dye, pink dye, lime dye, yellow dye, light blue dye, magenta dye, orange dye, white dye
 
+aquatic update dyes:
+	minecraft version = 1.13 or newer
+	purple dye¦s = minecraft:purple_dye
+	cyan dye¦s = minecraft:cyan_dye
+	light gr(a|e)y dye¦s = minecraft:light_gray_dye
+	gr(a|e)y dye¦s = minecraft:gray_dye
+	pink dye¦s = minecraft:pink_dye
+	(lime|light green) dye¦s = minecraft:lime_dye
+	light blue dye¦s = minecraft:light_blue_dye
+	magenta dye¦s = minecraft:magenta_dye
+	orange dye¦s = minecraft:orange_dye
+
+	minecraft version = 1.13 to 1.13.2
+	(bone[ ]meal|white dye)¦s = minecraft:bone_meal
+	(lapis [lazuli]|blue dye)¦s = minecraft:lapis_lazuli
+	(ink sac|black dye)¦s = minecraft:ink_sac
+	(cocoa bean|brown dye)¦s = minecraft:cocoa_beans
+	(rose red|red dye)¦s = minecraft:rose_red
+	(cactus green|green dye)¦s = minecraft:cactus_green
+	(dandelion yellow|yellow dye)¦s = minecraft:dandelion_yellow
+	[any] dye = black dye, red dye, green dye, brown dye, blue dye, purple dye, cyan dye, light gray dye, gray dye, pink dye, lime dye, yellow dye, light blue dye, magenta dye, orange dye, white dye
+
+
 village and pillage update dyes:
 	minecraft version = 1.14 or newer
 	black dye¦s = minecraft:black_dye
 	brown dye¦s = minecraft:brown_dye
 	blue dye¦s = minecraft:blue_dye
 	white dye¦s = minecraft:white_dye
+	red dye¦s = minecraft:red_dye
+	green dye¦s = minecraft:green_dye
+	yellow dye¦s = minecraft:yellow_dye
 	[any] dye = black dye, red dye, green dye, brown dye, blue dye, purple dye, cyan dye, light gray dye, gray dye, pink dye, lime dye, yellow dye, light blue dye, magenta dye, orange dye, white dye
+
+village and pillage update (removed from dyes):
+	minecraft version = 1.14 or newer
+	bone[ ]meal¦s = minecraft:bone_meal
+	lapis [lazuli]¦s = minecraft:lapis_lazuli
+	ink sac¦s = minecraft:ink_sac
+	cocoa bean¦s = minecraft:cocoa_beans
 
 # SPAWN EGGS: Their format and the entity tags changed a lot throughout versions so this section is somewhat large
 
@@ -335,7 +303,7 @@ village and pillage spawn eggs:
 	(cat [spawn] egg|spawn cat)¦s = minecraft:cat_spawn_egg #Cats are now a seperate mob from ocelots
 	(fox [spawn] egg|spawn fox)¦s = minecraft:fox_spawn_egg
 	(panda [spawn] egg|spawn panda)¦s = minecraft:panda_spawn_egg
-	[any] spawn egg¦s = spawn bat, spawn blaze, spawn cave spider, spawn chicken, spawn cod, spawn cow, spawn creeper, spawn dolphin, spawn donkey, spawn drowned, spawn elder guardian, spawn enderman, spawn endermite, spawn evoker, spawn ghast, spawn guardian, spawn horse, spawn husk, spawn llama, spawn magma cube, spawn mooshroom, spawn mule, spawn ocelot, spawn parrot, spawn phantom, spawn pig, spawn polar bear, spawn pufferfish, spawn rabbit, spawn salmon, spawn sheep, spawn shulker, spawn silverfish, spawn skeleton, spawn skeleton horse, spawn slime, spawn spider, spawn squid, spawn stray, spawn tropical fish, spawn turtle, spawn vex, spawn villager, spawn vindicator, spawn witch, spawn wither skeleton, spawn wolf, spawn zombie, spawn zombie horse, spawn zombie pigman, spawn zombie villager, spawn pillager, spawn ravager, spawn wandering trader, spawn trader llama spawn cat, spawn fox, spawn panda
+	[any] spawn egg¦s = spawn bat, spawn blaze, spawn cave spider, spawn chicken, spawn cod, spawn cow, spawn creeper, spawn dolphin, spawn donkey, spawn drowned, spawn elder guardian, spawn enderman, spawn endermite, spawn evoker, spawn ghast, spawn guardian, spawn horse, spawn husk, spawn llama, spawn magma cube, spawn mooshroom, spawn mule, spawn ocelot, spawn parrot, spawn phantom, spawn pig, spawn polar bear, spawn pufferfish, spawn rabbit, spawn salmon, spawn sheep, spawn shulker, spawn silverfish, spawn skeleton, spawn skeleton horse, spawn slime, spawn spider, spawn squid, spawn stray, spawn tropical fish, spawn turtle, spawn vex, spawn villager, spawn vindicator, spawn witch, spawn wither skeleton, spawn wolf, spawn zombie, spawn zombie horse, spawn zombie pigman, spawn zombie villager, spawn pillager, spawn ravager, spawn wandering trader, spawn trader llama, spawn cat, spawn fox, spawn panda
 
 # These are for mobs that have existed since at least 1.8 and these IDs remained valid up through 1.12
 spawn eggs before flattening:
@@ -417,3 +385,49 @@ combat update spawn eggs:
 	minecraft version = 1.9 to 1.9.4
 	(shulker [spawn] egg|spawn shulker)¦s = minecraft:spawn_egg {EntityTag:{id:Shulker}}
 	[any] spawn egg¦s = spawn bat, spawn blaze, spawn cave spider, spawn chicken, spawn cow, spawn creeper, spawn enderman, spawn endermite, spawn ghast, spawn guardian, spawn horse, spawn magma cube, spawn mooshroom, spawn ocelot, spawn pig, spawn rabbit, spawn sheep, spawn silverfish, spawn skeleton, spawn slime, spawn spider, spawn squid, spawn villager, spawn witch, spawn wolf, spawn zombie, spawn zombie pigman, spawn shulker
+
+village and pillage update:
+	minecraft version = 1.14 or newer
+	{composter stage}:
+		{default} = -
+		(empty|unfilled|level 0) = -[level=0]
+		level 1 = -[level=1]
+		level 2 = -[level=2]
+		level 3 = -[level=3]
+		(half full|half empty|level 4) = -[level=4]
+		level 5 = -[level=5]
+		level 6 = -[level=6]
+		level 7 = -[level=7]
+		(filled|level 8) = -[level=8]
+	{composter stage} composter¦s = minecraft:composter
+
+	{bamboo age}:
+		{default} = -
+		(thin|age 0) = -[age=0]
+		(thick|age 1) = -[age=1]
+	{bamboo leaves}:
+		{default} = -
+		leafless = -[leaves=none]
+		small leaved = -[leaves=small]
+		large leaved = -[leaves=large]
+	{bamboo stage}:
+		{default} = -
+		(stagnant|stage 0) = -[stage=0]
+		(growing|stage 1) = -[stage=1]
+	{bamboo age} {bamboo leaves} {bamboo stage} bamboo [plant] = minecraft:bamboo
+	bamboo = minecraft:bamboo
+
+	{berry age}:
+		{default} = -
+		young = -[age=0]
+		berryless = -[age=1]
+		(some berries|berried) = -[age=2]
+		(many berries|very berried) = -[age=3]
+	{berry age} sweet berry bush [plant] = minecraft:sweet_berry_bush
+
+	flower charge banner pattern¦s = minecraft:flower_banner_pattern
+	creeper charge banner pattern¦s = minecraft:creeper_banner_pattern
+	skull charge banner pattern¦s = minecraft:skull_banner_pattern
+	(mojang|thing) banner pattern¦s = minecraft:mojang_banner_pattern
+	globe banner pattern¦s = minecraft:globe_banner_pattern
+	[any] banner pattern¦s = flower charge banner pattern, creeper charge banner pattern, skull charge banner pattern, thing banner pattern, globe banner pattern
