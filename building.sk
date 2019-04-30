@@ -21,7 +21,6 @@ unchanged building blocks:
 	coal ore¦s = minecraft:coal_ore
 	lapis [lazuli] ore¦s = minecraft:lapis_ore
 	diamond ore¦s = minecraft:diamond_ore
-	redstone ore¦s = minecraft:redstone_ore
 	emerald ore¦s = minecraft:emerald_ore
 
 	obsidian [block¦s] = minecraft:obsidian
@@ -54,6 +53,7 @@ unchanged building blocks:
 	packed ice [block¦s] = minecraft:packed_ice
 	end[ ]stone [block¦s] = minecraft:end_stone
 
+
 # 1.13 changed the IDs of a lot of blocks since they're no longer defined by data value.
 # This section is for blocks that had a different ID prior to 1.13.
 old blocks before flattening:
@@ -78,12 +78,15 @@ old blocks before flattening:
 	coarse dirt [block¦s] = minecraft:dirt {Damage:1}
 	podzol [block¦s] = minecraft:dirt {Damage:2}
 	[nether] quartz ore¦s = minecraft:quartz_ore
+	unlit redstone ore¦s = minecraft:redstone_ore
+	lit redstone ore¦s = minecraft:lit_redstone_ore
+	redstone ore¦s = unlit redstone ore, lit redstone ore
 	mycelium [block¦s] = minecraft:mycelium
 
 	# All wood
 	# planks
 	{old wood type} plank¦s = minecraft:planks
-	any plank¦s = oak planks, spruce planks, birch planks, jungle planks, acacia planks, dark oak planks
+	[any] plank¦s = oak planks, spruce planks, birch planks, jungle planks, acacia planks, dark oak planks
 
 	# logs
 	[vertical] oak [wood[en]] log¦s = minecraft:log {Damage:0}
@@ -139,7 +142,7 @@ old blocks before flattening:
 
 	# Stained clay. Renamed to terracotta in 1.12 but the ID wasn't changed until 1.13.
 	{colored} [stained] ([hard[ened]] clay|terracotta) [block¦s] = minecraft:stained_hardened_clay
-	any stained ([hard[ened]] clay|terracotta) [block¦s] = minecraft:stained_hardened_clay
+	[any] stained ([hard[ened]] clay|terracotta) [block¦s] = minecraft:stained_hardened_clay
 
 	[un(dyed|stained)] (hard[ened] clay|terracotta) [block¦s] = minecraft:hardened_clay
 	any (hard[ened] clay|terracotta) [block¦s] = any stained terracotta, unstained terracotta
@@ -189,6 +192,7 @@ old blocks before flattening:
 	{stair direction} sandstone stair¦s = minecraft:sandstone_stairs
 	{stair direction} red sandstone stair¦s = minecraft:red_sandstone_stairs
 	{stair direction} purpur stair¦s = minecraft:purpur_stairs
+	[any] stair¦s = oak stairs, spruce stairs, birch stairs, jungle stairs, acacia stairs, dark oak stairs, cobblestone stairs, brick stairs, stone brick stairs, nether brick stairs, quartz stairs, purpur stairs, sandstone stairs, red sandstone stairs
 
 	# Construction/Decorative
 	[red] brick block¦s = minecraft:brick_block
@@ -253,6 +257,7 @@ building blocks after flattening:
 	{snowable} mycelium [block¦s] = minecraft:mycelium
 	coarse dirt [block¦s] = minecraft:coarse_dirt
 	[nether] quartz ore¦s = minecraft:nether_quartz_ore
+	{lightable} redstone ore¦s = minecraft:redstone_ore
 
 	# Wood
 	# planks
@@ -307,41 +312,49 @@ building blocks after flattening:
 		bottom = -[type=bottom]
 		double = -[type=double]
 
-	{waterloggable} {slab} {wood type} slab = -slab
-	{waterloggable} {slab} stone slab = minecraft:stone_slab
-	{waterloggable} {slab} sandstone slab = minecraft:sandstone_slab
-	{waterloggable} {slab} (petrified|stone) oak [wood[en]] slab = minecraft:petrified_oak_slab
-	{waterloggable} {slab} cobble[stone] slab = minecraft:cobblestone_slab
-	{waterloggable} {slab} brick slab = minecraft:brick_slab
-	{waterloggable} {slab} stone[ ]brick slab = minecraft:stone_brick_slab
-	{waterloggable} {slab} nether brick slab = minecraft:nether_brick_slab
-	{waterloggable} {slab} [nether] quartz slab = minecraft:quartz_slab
-	{waterloggable} {slab} red sandstone slab = minecraft:red_sandstone_slab
-	{waterloggable} {slab} purpur slab = minecraft:purpur_slab
+	{waterloggable} {slab} {wood type} slab¦s = -slab
+	{waterloggable} {slab} stone slab¦s = minecraft:stone_slab
+	{waterloggable} {slab} sandstone slab¦s = minecraft:sandstone_slab
+	{waterloggable} {slab} (petrified|stone) oak [wood[en]] slab¦s = minecraft:petrified_oak_slab
+	{waterloggable} {slab} cobble[stone] slab¦s = minecraft:cobblestone_slab
+	{waterloggable} {slab} brick slab¦s = minecraft:brick_slab
+	{waterloggable} {slab} stone[ ]brick slab¦s = minecraft:stone_brick_slab
+	{waterloggable} {slab} nether brick slab¦s = minecraft:nether_brick_slab
+	{waterloggable} {slab} [nether] quartz slab¦s = minecraft:quartz_slab
+	{waterloggable} {slab} red sandstone slab¦s = minecraft:red_sandstone_slab
+	{waterloggable} {slab} purpur slab¦s = minecraft:purpur_slab
 	{waterloggable} {slab} [raw] prismarine slab¦s = minecraft:prismarine_slab
 	{waterloggable} {slab} prismarine brick slab¦s = minecraft:prismarine_brick_slab
 	{waterloggable} {slab} dark prismarine slab¦s = minecraft:dark_prismarine_slab
-	any wood[en] slab = oak slab, spruce slab, birch slab, jungle slab, acacia slab, dark oak slab
-	any slab = any wooden slab, stone slab, sandstone slab, petrified oak slab, cobblestone slab, brick slab, stone brick slab, nether brick slab, quartz slab, red sandstone slab, purpur slab, prismarine slab, prismarine brick slab, dark prismarine slab
+	[any] wood[en] slab¦s = oak slab, spruce slab, birch slab, jungle slab, acacia slab, dark oak slab
+	[any] slab¦s = any wooden slab, stone slab, sandstone slab, petrified oak slab, cobblestone slab, brick slab, stone brick slab, nether brick slab, quartz slab, red sandstone slab, purpur slab, prismarine slab, prismarine brick slab, dark prismarine slab
 
 	# Stairs
 	{stairs}:
 		{default} = -
 		top = -[half=top]
 		bottom = -[half=bottom]
+	{stairs shape}:
+		{default} = -
+		straight = -[shape=straight]
+		inner-left = -[shape=inner_left]
+		inner-right = -[shape=inner_right]
+		outer-left = -[shape=outer_left]
+		outer-right = -[shape=outer_right]
 
-	{waterloggable} {stairs} {directional} {wood type} stair¦s = -stairs
-	{waterloggable} {stairs} {directional} cobble[stone] stair¦s = minecraft:cobblestone_stairs
-	{waterloggable} {stairs} {directional} [red] brick stair¦s = minecraft:brick_stairs
-	{waterloggable} {stairs} {directional} stone brick stair¦s = minecraft:stone_brick_stairs
-	{waterloggable} {stairs} {directional} nether brick stair¦s = minecraft:nether_brick_stairs
-	{waterloggable} {stairs} {directional} [nether] quartz stair¦s = minecraft:quartz_stairs
-	{waterloggable} {stairs} {directional} purpur stair¦s = minecraft:purpur_stairs
-	{waterloggable} {stairs} {directional} sandstone stair¦s = minecraft:sandstone_stairs
-	{waterloggable} {stairs} {directional} red sandstone stair¦s = minecraft:red_sandstone_stairs
-	{waterloggable} {stairs} {directional} prismarine stair¦s = minecraft:prismarine_stairs
-	{waterloggable} {stairs} {directional} prismarine brick stair¦s = minecraft:prismarine_brick_stairs
-	{waterloggable} {stairs} {directional} dark prismarine stair¦s = minecraft:dark_prismarine_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} {wood type} stair¦s = -stairs
+	{waterloggable} {stairs} {stairs shape} {directional} cobble[stone] stair¦s = minecraft:cobblestone_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} [red] brick stair¦s = minecraft:brick_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} stone brick stair¦s = minecraft:stone_brick_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} nether brick stair¦s = minecraft:nether_brick_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} [nether] quartz stair¦s = minecraft:quartz_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} purpur stair¦s = minecraft:purpur_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} sandstone stair¦s = minecraft:sandstone_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} red sandstone stair¦s = minecraft:red_sandstone_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} prismarine stair¦s = minecraft:prismarine_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} prismarine brick stair¦s = minecraft:prismarine_brick_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} dark prismarine stair¦s = minecraft:dark_prismarine_stairs
+	[any] stair¦s = oak stairs, spruce stairs, birch stairs, jungle stairs, acacia stairs, dark oak stairs, cobblestone stairs, brick stairs, stone brick stairs, nether brick stairs, quartz stairs, purpur stairs, sandstone stairs, red sandstone stairs, prismarine stairs, prismarine brick stairs, dark prismarine stairs
 
 	# Construction/Decorative
 	([nether] quartz block[s]|block[s] of [nether] quartz) = minecraft:quartz_block
@@ -390,7 +403,7 @@ categories:
 	[any] log = any oak log, any spruce log, any birch log, any jungle log, any acacia log, any dark oak log
 	[any] normal log = any log # 1.13 adds some not so normal log types
 
-	any ore = gold ore, iron ore, coal ore, lapis ore, diamond ore, redstone ore, emerald ore, nether quartz ore
+	[any] ore = gold ore, iron ore, coal ore, lapis ore, diamond ore, redstone ore, emerald ore, nether quartz ore
 
 #== UPDATE-SPECIFICS
 # Building blocks added in 1.9 whose IDs have never changed. End City stuff, namely.
@@ -406,7 +419,7 @@ combat update before flattening:
 	[bottom] purpur slab = minecraft:purpur_slab {Damage:0}
 	(upside-down|top) purpur slab = minecraft:purpur_slab {Damage:8}
 	(double purpur|purpur double) slab = minecraft:purpur_double_slab
-	any slab = any slab, purpur slab
+	[any] slab = any slab, purpur slab
 
 # Building blocks added in 1.10 whose IDs have never changed.
 frostburn update:
@@ -438,7 +451,7 @@ update aquatic:
 	{axis-aligned} stripped jungle log¦s = minecraft:stripped_jungle_log
 	{axis-aligned} stripped acacia log¦s = minecraft:stripped_acacia_log
 	{axis-aligned} stripped dark oak log¦s = minecraft:stripped_dark_oak_log
-	any stripped log [block¦s] = stripped oak log, stripped spruce log, stripped birch log, stripped jungle log, stripped acacia log, stripped dark oak log
+	[any] stripped log [block¦s] = stripped oak log, stripped spruce log, stripped birch log, stripped jungle log, stripped acacia log, stripped dark oak log
 
 	# There's also barkless variants of the full bark logs.
 	{axis-aligned} stripped oak bark [block¦s] = minecraft:stripped_oak_wood
@@ -447,7 +460,7 @@ update aquatic:
 	{axis-aligned} stripped jungle bark [block¦s] = minecraft:stripped_jungle_wood
 	{axis-aligned} stripped acacia bark [block¦s] = minecraft:stripped_acacia_wood
 	{axis-aligned} stripped dark oak bark [block¦s] = minecraft:stripped_dark_oak_wood
-	any stripped bark [block¦s] = stripped oak bark, stripped spruce bark, stripped birch bark, stripped jungle bark, stripped acacia bark, stripped dark oak bark
+	[any] stripped bark [block¦s] = stripped oak bark, stripped spruce bark, stripped birch bark, stripped jungle bark, stripped acacia bark, stripped dark oak bark
 
 	# Define any log to include the stripped ones
 	any log = any normal log, any stripped log, any bark block, any stripped bark block
@@ -529,3 +542,66 @@ update aquatic:
 	any ice [block¦s] = ice, packed ice, blue ice
 	dried kelp block¦s = minecraft:dried_kelp_block
 	end[ ]stone brick¦s = minecraft:end_stone_bricks
+
+
+village and pillage update:
+	minecraft version = 1.14 or newer
+	# Stairs
+	{stairs}:
+		{default} = -
+		top = -[half=top]
+		bottom = -[half=bottom]
+	{stairs shape}:
+		{default} = -
+		straight = -[shape=straight]
+		inner-left = -[shape=inner_left]
+		inner-right = -[shape=inner_right]
+		outer-left = -[shape=outer_left]
+		outer-right = -[shape=outer_right]
+	#Stairs
+	{waterloggable} {stairs} {stairs shape} {directional} stone stair¦s = minecraft:stone_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} granite stair¦s = minecraft:granite_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} diorite stair¦s = minecraft:diorite_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} andesite stair¦s = minecraft:andesite_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} polished granite stair¦s = minecraft:polished_granite_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} polished diorite stair¦s = minecraft:polished_diorite_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} polished andesite stair¦s = minecraft:polished_andesite_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} mossy stone brick stair¦s = minecraft:mossy_stone_brick_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} mossy cobble[stone] stair¦s = minecraft:mossy_cobblestone_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} smooth sandstone stair¦s = minecraft:smooth_sandstone_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} smooth red sandstone stair¦s = minecraft:smooth_red_sandstone_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} smooth quartz stair¦s = minecraft:smooth_quartz_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} red nether brick stair¦s = minecraft:red_nether_brick_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} end stone brick stair¦s = minecraft:end_stone_brick_stairs
+	[any] stair¦s = oak stairs, spruce stairs, birch stairs, jungle stairs, acacia stairs, dark oak stairs, cobblestone stairs, brick stairs, stone brick stairs, nether brick stairs, quartz stairs, purpur stairs, sandstone stairs, red sandstone stairs, prismarine stairs, prismarine brick stairs, dark prismarine stairs, stone stairs, granite stairs, diorite stairs, andesite stairs, polished granite stairs, polished diorite stairs, polished andesite stairs, mossy stone brick stairs, mossy cobblestone stairs, smooth sandstone stairs, smooth red sandstone stairs, smooth quartz stairs, red nether brick stairs, end stone brick stairs
+	[any] stone stair¦s = stone stairs, granite stairs, diorite stairs, andesite stairs, polished granite stairs, polished diorite stairs, polished andesite stairs, mossy stone brick stairs, mossy cobblestone stairs
+	[any] sandstone stair¦s = smooth sandstone stairs, smooth red sandstone stairs
+
+	#Slabs
+	{slab}:
+		{default} = -
+		top = -[type=top]
+		bottom = -[type=bottom]
+		double = -[type=double]
+		
+	{waterloggable} {slab} stone slab¦s = minecraft:stone_slab
+	{waterloggable} {slab} smooth stone slab¦s = minecraft:smooth_stone_slab
+	{waterloggable} {slab} granite slab¦s = minecraft:granite_slab
+	{waterloggable} {slab} diorite slab¦s = minecraft:diorite_slab
+	{waterloggable} {slab} andesite slab¦s = minecraft:andesite_slab
+	{waterloggable} {slab} polished granite slab¦s = minecraft:polished_granite_slab
+	{waterloggable} {slab} polished diorite slab¦s = minecraft:polished_diorite_slab
+	{waterloggable} {slab} polished andesite slab¦s = minecraft:polished_andesite_slab
+	{waterloggable} {slab} mossy stone brick slab¦s = minecraft:mossy_stone_brick_slab
+	{waterloggable} {slab} mossy cobble[stone] slab¦s = minecraft:mossy_cobblestone_slab
+	{waterloggable} {slab} smooth sandstone slab¦s = minecraft:smooth_sandstone_slab
+	{waterloggable} {slab} smooth red sandstone slab¦s = minecraft:smooth_red_sandstone_slab
+	{waterloggable} {slab} cut sandstone slab¦s = minecraft:cut_sandstone_slab
+	{waterloggable} {slab} cut red sandstone slab¦s = minecraft:cut_red_sandstone_slab
+	{waterloggable} {slab} smooth quartz slab¦s = minecraft:smooth_quartz_slab
+	{waterloggable} {slab} red nether brick slab¦s = minecraft:red_nether_brick_slab
+	{waterloggable} {slab} end stone brick slab¦s = minecraft:end_stone_brick_slab
+	[any] slab¦s = any wooden slab, stone slab, sandstone slab, petrified oak slab, cobblestone slab, brick slab, stone brick slab, nether brick slab, quartz slab, red sandstone slab, purpur slab, prismarine slab, prismarine brick slab, dark prismarine slab, stone slab, smooth stone slab, granite slab, diorite slab, andesite slab, polished granite slab, polished diorite slab, polished andesite slab, mossy stone brick slab, mossy cobblestone slab, smooth sandstone slab, smooth red sandstone slab, cut sandstone slab, cut red sandstone slab, smooth quartz slab, red nether brick slab, end stone brick slab
+	[any] stone slab¦s = stone slab, smooth stone slab, granite slab, diorite slab, andesite slab, polished granite slab, polished diorite slab, polished andesite slab, mossy stone brick slab, mossy cobblestone slab
+	[any] sandstone slab¦s = smooth sandstone slab, smooth red sandstone slab, cut sandstone slab, cut red sandstone slab
+
