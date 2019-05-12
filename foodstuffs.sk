@@ -30,6 +30,11 @@ unchanged foods:
 	rotten flesh = minecraft:rotten_flesh
 	spider eye¦s = minecraft:spider_eye
 
+village and pillage update foods:
+	minecraft version = 1.14 or newer
+	dried kelp = minecraft:dried_kelp
+	sweet berr(y|ies) = minecraft:sweet_berries
+
 # Before the flattening in 1.13, some foods used data values.
 foods before flattening:
 	minecraft version = 1.12.2 or older

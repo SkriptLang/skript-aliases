@@ -17,6 +17,10 @@ unchanged redstone:
 
 	tnt [block¦s] = minecraft:tnt[relatedEntity=primed tnt]
 
+village and pillage update:
+	minecraft version = 1.14 or newer
+	{powerable} {directional} lectern = minecraft:lectern
+
 redstone before flattening:
 	minecraft version = 1.12.2 or older
 	# Repeater
@@ -122,7 +126,7 @@ redstone after flattening:
 		{default} = -
 		(comparison|compare mode) = -[mode=compare]
 		(subtraction|subtract mode) = -[mode=subtract]
-	{directional} {powerable} [redstone] repeater¦s = minecraft:repeater
+	{powerable} {directional} [redstone] repeater¦s = minecraft:repeater
 	{powerable} {directional} {comparator mode} [redstone] comparator [item]¦s = minecraft:comparator
 
 	# Buttons

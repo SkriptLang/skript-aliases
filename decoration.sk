@@ -16,6 +16,72 @@ unchanged decoratives:
 	item frame [item]¦s = minecraft:item_frame[relatedEntity=item frame]
 	armor stand [item]¦s = minecraft:armor_stand[relatedEntity=armor stand]
 
+village and pillage decoratives:
+	minecraft version = 1.14 or newer
+	{waterloggable} {directional} {wood type} wall sign¦s = -wall_sign
+	{waterloggable} {rotatable} {wood type} floor sign¦s = -sign
+	[any] sign¦s = oak wall sign, birch wall sign, jungle wall sign, spruce wall sign, acacia wall sign, dark oak wall sign, oak floor sign, birch floor sign, jungle floor sign, spruce floor sign, acacia floor sign, dark oak floor sign
+
+	cornflower¦s = minecraft:cornflower
+	lily of the valley = minecraft:lily_of_the_valley
+	wither rose¦s = minecraft:wither_rose
+
+	{waterloggable} brick wall¦s = minecraft:brick_wall
+	{waterloggable} prismarine wall¦s = minecraft:prismarine_wall
+	{waterloggable} sandstone wall¦s = minecraft:sandstone wall
+	{waterloggable} red sandstone wall¦s = minecraft:red_sandstone_wall
+	{waterloggable} stone brick wall¦s = minecraft:stone_brick_wall
+	{waterloggable} mossy stone brick wall¦s = minecraft:mossy_stone_brick_wall
+	{waterloggable} granite wall¦s = minecraft:granite_wall
+	{waterloggable} diorite wall¦s = minecraft:diorite_wall
+	{waterloggable} andesite wall¦s = minecraft:andesite_wall
+	{waterloggable} nether brick wall¦s = minecraft:nether_brick_wall
+	{waterloggable} red nether brick wall¦s = minecraft:red_nether_brick_wall
+	{waterloggable} end stone brick wall¦s = minecraft:end_stone_brick_wall
+
+	{scaffold bottom}:
+		{default} = -
+		bottomless = -[bottom=false]
+		bottom = -[bottom=true]
+	{waterloggable} {scaffold bottom} scaffolding = minecraft:scaffolding
+
+	#Crafting Blocks
+	{directional} loom¦s = minecraft:loom
+	{orientable} {openable} barrel¦s = minecraft:barrel
+	{directional} {lightable} smoker¦s = minecraft:smoker
+	{directional} {lightable} blast furnace¦s = minecraft:blast_furnace
+	{directional} stone[ ]cutter¦s = minecraft:stonecutter
+	cartography table¦s = minecraft:cartography_table
+
+	#Whether the grindstone is on the floor, wall, or ceiling.
+	{grindstone face}:
+		{default} = -
+		floor = -[face=floor]
+		wall = -[face=wall]
+		ceiling = -[face=ceiling]
+	{directional} {grindstone face} grindstone¦s = minecraft:grindstone
+
+	#Non-functional "crafting" blocks; these are used for village jobs
+	fletching table¦s = minecraft:fletching_table
+	smithing table¦s = minecraft:smithing_table
+
+	{bell attachment}:
+		{default} = -
+		floor = -[attachment=floor]
+		single wall = -[attachment=single_wall]
+		double wall = -[attachment=double_wall]
+		ceiling = -[attachment=ceiling]
+	{directional} {bell attachment} bell¦s = minecraft:bell
+
+	{lantern hanging}:
+		{default} = -
+		(floor|not hanging) = -[hanging=false]
+		(hanging|ceiling) = -[hanging=true]
+	{lantern hanging} lantern = minecraft:lantern
+
+	{waterloggable} {lightable} campfire¦s = minecraft:campfire
+	{waterloggable} {lightable} signaling campfire = minecraft:campfire[signal_fire=true]
+
 # Decoratives added in 1.12 that were changed in the flattening.
 world of color decoratives before flattening:
 	minecraft version = 1.12 to 1.12.2
@@ -23,7 +89,6 @@ world of color decoratives before flattening:
 	# Glazed terracotta colors actually are separated by IDs even here in 1.12. It uses a separate
 	# "old" variation because light_gray blocks used to be called silver in their IDs.
 	{old colored IDs} glazed terracotta [block¦s] = -glazed_terracotta
-
 
 # Decoratives who used to have a different ID before the flattening.
 decoratives before flattening:
@@ -182,6 +247,9 @@ decoratives after flattening:
 	short grass¦es = minecraft:grass
 	fern¦s = minecraft:fern
 
+	kelp plant¦s = minecraft:kelp_plant
+	non-growing kelp [plant¦s] = minecraft:kelp[age=25]
+
 	# Small flowers
 	(dandelion|yellow flower)¦s = minecraft:dandelion
 	(popp(y|ies)|red flower¦s) = minecraft:poppy
@@ -231,7 +299,6 @@ decoratives after flattening:
 	{directional} {end portal eye state} end portal frame [block]¦s = minecraft:end_portal_frame
 	end portal frame item¦s = minecraft:end_portal_frame
 
-
 	# Cobble walls
 	{waterloggable} cobblestone wall¦s = minecraft:cobblestone_wall
 	{waterloggable} mossy cobblestone wall¦s = minecraft:mossy_cobblestone_wall
@@ -244,13 +311,8 @@ decoratives after flattening:
 	{colored} [stained] glass pane¦s = -stained_glass_pane
 	[any] stained glass pane¦s = white stained glass pane, orange stained glass pane, magenta stained glass pane, light blue stained glass pane, yellow stained glass pane, lime stained glass pane, pink stained glass pane, dark gray stained glass pane, light gray stained glass pane, cyan stained glass pane, purple stained glass pane, blue stained glass pane, brown stained glass pane, dark green stained glass pane, red stained glass pane, black stained glass pane
 
-		# Glazed terracotta was slightly changed in 1.13 because silver became light_gray in IDs.
+	# Glazed terracotta was slightly changed in 1.13 because silver became light_gray in IDs.
 	{directional} {colored} glazed terracotta [block¦s] = -glazed_terracotta
-
-	# Signs
-	{waterloggable} {directional} wall sign¦s = minecraft:wall_sign
-	{waterloggable} {rotatable} floor sign¦s = minecraft:sign
-	[any] sign¦s = wall sign, floor sign
 
 	# Beds
 	{bed part}:
@@ -321,6 +383,12 @@ decoratives after flattening:
 	{directional} damaged anvil¦s = minecraft:damaged_anvil
 	any anvil¦s = anvil, chipped anvil, damaged anvil
 
+update aquatic signs:
+	minecraft version = 1.13 to 1.13.2
+	{waterloggable} {directional} wall sign¦s = minecraft:wall_sign
+	{waterloggable} {rotatable} floor sign¦s = minecraft:sign
+	[any] sign¦s = wall sign, floor sign
+
 unchanged categories:
 	any chest¦s = chest, trapped chest, ender chest
 	[any] fence¦s = oak fence, spruce fence, birch fence, jungle fence, acacia fence, dark oak fence, nether brick fence
@@ -334,7 +402,6 @@ combat update:
 	grass path [block]¦s = minecraft:grass_path
 	end[er] crystal [item]¦s = minecraft:end_crystal[relatedEntity=ender crystal]
 
-
 # Shulker boxes were introduced in 1.11 but purple ones weren't differentiated from undyed.
 exploration update before flattening:
 	minecraft version = 1.11 to 1.12.2
@@ -346,7 +413,6 @@ exploration update after flattening:
 	{orientable} [normal] shulker box¦es = minecraft:shulker_box
 	{orientable} {colored} shulker box¦es = -shulker_box
 	any shulker box¦es = normal shulker box, white shulker box, orange shulker box, magenta shulker box, light blue shulker box, yellow shulker box, lime shulker box, pink shulker box, dark gray shulker box, light gray shulker box, cyan shulker box, purple shulker box, blue shulker box, brown shulker box, dark green shulker box, red shulker box, black shulker box
-
 
 # New decoratives introduced in 1.13. These could have been grouped with the above post-flattening
 # group but I think separating the entirely new items makes more sense.
