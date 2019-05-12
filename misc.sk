@@ -108,12 +108,12 @@ fireworks:
 
 fireworks before flattening:
 	minecraft version = 1.12.2 or older
-	[(flight|duration|flight duration) {firework types} ] firework [rocket]¦s = fireworks
+	[(flight|duration|flight duration) {firework types} ] firework [rocket]¦s = minecraft:fireworks[relatedEntity=firework rocket]
 	firework (star|charge)¦s = minecraft:firework_charge
 
 fireworks after flattening:
 	minecraft version = 1.13 or newer
-	[(flight|duration|flight duration) {firework types} ] firework [rocket]¦s = minecraft:firework_rocket
+	[(flight|duration|flight duration) {firework types} ] firework [rocket]¦s = minecraft:firework_rocket[relatedEntity=firework rocket]
 	firework (star|charge)¦s = minecraft:firework_star
 
 plants:
