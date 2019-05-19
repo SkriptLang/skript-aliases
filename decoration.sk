@@ -19,8 +19,10 @@ unchanged decoratives:
 village and pillage decoratives:
 	minecraft version = 1.14 or newer
 	{waterloggable} {directional} {wood type} wall sign¦s = -wall_sign
-	{waterloggable} {rotatable} {wood type} floor sign¦s = -sign
-	[any] sign¦s = oak wall sign, birch wall sign, jungle wall sign, spruce wall sign, acacia wall sign, dark oak wall sign, oak floor sign, birch floor sign, jungle floor sign, spruce floor sign, acacia floor sign, dark oak floor sign
+	{waterloggable} {rotatable} {wood type} [floor] sign¦s = -sign
+	[any] wall sign¦s = oak wall sign, birch wall sign, jungle wall sign, spruce wall sign, acacia wall sign, dark oak wall sign
+	[any] floor sign¦s = oak floor sign, birch floor sign, jungle floor sign, spruce floor sign, acacia floor sign, dark oak floor sign
+	[any] sign¦s = any wall sign, any floor sign
 
 	cornflower¦s = minecraft:cornflower
 	lily of the valley = minecraft:lily_of_the_valley
@@ -80,12 +82,12 @@ village and pillage decoratives:
 	{lantern hanging} lantern = minecraft:lantern
 
 	{waterloggable} {lightable} campfire¦s = minecraft:campfire
-	{waterloggable} {lightable} signaling campfire = minecraft:campfire[signal_fire=true]
+	{waterloggable} {lightable} signal[ing] campfire = minecraft:campfire[signal_fire=true]
 
 # Decoratives added in 1.12 that were changed in the flattening.
 world of color decoratives before flattening:
 	minecraft version = 1.12 to 1.12.2
-	
+
 	# Glazed terracotta colors actually are separated by IDs even here in 1.12. It uses a separate
 	# "old" variation because light_gray blocks used to be called silver in their IDs.
 	{old colored IDs} glazed terracotta [block¦s] = -glazed_terracotta
@@ -186,7 +188,8 @@ decoratives before flattening:
 	# Signs
 	wall sign¦s = minecraft:wall_sign
 	floor sign¦s = minecraft:standing_sign
-	[any] sign¦s = wall sign, floor sign
+	sign item¦s = minecraft:sign
+	[any] sign¦s = wall sign, floor sign, sign item
 
 	# Miscellaneous
 	{attached} torch¦es = minecraft:torch
@@ -520,7 +523,7 @@ banners:
 	{opposite colored} banner item¦s = minecraft:banner
 	[any] banner item = white banner item, orange banner item, magenta banner item, light blue banner item, yellow banner item, lime banner item, pink banner item, dark gray banner item, light gray banner item, cyan banner item, purple banner item, blue banner item, brown banner item, dark green banner item, red banner item, black banner item
 	[any] banner = minecraft:banner, minecraft:wall_banner, minecraft:standing_banner
-	
+
 basic banners:
 	minecraft version = 1.10.2 or older
 	# Simplified banner aliases
