@@ -524,9 +524,9 @@ banners:
 	[any] banner item = white banner item, orange banner item, magenta banner item, light blue banner item, yellow banner item, lime banner item, pink banner item, dark gray banner item, light gray banner item, cyan banner item, purple banner item, blue banner item, brown banner item, dark green banner item, red banner item, black banner item
 	[any] banner = minecraft:banner, minecraft:wall_banner, minecraft:standing_banner
 
+# Simplified banner aliases for old Minecraft versions.
 basic banners:
 	minecraft version = 1.10.2 or older
-	# Simplified banner aliases
 	wall banner¦s = minecraft:wall_banner
 	[standing] banner¦s = minecraft:standing_banner
 	[any] banner item¦s = minecraft:banner
@@ -541,23 +541,29 @@ directionals after flattening:
 	creeper (head|skull) item¦s = minecraft:creeper_head
 	[ender[ ]]dragon (head|skull) item¦s = minecraft:dragon_head
 	[any] (head|skull) item¦s = skeleton skull item, wither skeleton skull item, zombie head item, player head item, creeper head item, ender dragon head item
-	#skulls on walls
+
+	# Skulls on walls
 	{directional} skeleton wall[-mounted] (skull|head)¦s = minecraft:skeleton_wall_skull
 	{directional} wither skleon wall[-mounted] (skull|head)¦s = minecraft:wither_skeleton_wall_skull
 	{directional} zombie wall[-mounted] (head|skull)¦s = minecraft:zombie_wall_head
 	{directional} player wall[-mounted] (head|skull)¦s = minecraft:player_wall_head
 	{directional} creeper wall[-mounted] (head|skull)¦s = minecraft:creeper_wall_head
 	{directional} [ender[ ]]dragon wall[-mounted] (head|skull)¦s = minecraft:dragon_wall_head
-	#skulls on floors
+
+	# Skulls on floors
 	{reversed rotatable} skeleton (skull|head)¦s = minecraft:skeleton_skull
 	{reversed rotatable} wither skeleton (skull|head)¦s = minecraft:wither_skeleton_skull
 	{reversed rotatable} zombie (head|skull)¦s = minecraft:zombie_head
 	{reversed rotatable} player (head|skull)¦s = minecraft:player_head
 	{reversed rotatable} creeper (head|skull)¦s = minecraft:creeper_head
 	{reversed rotatable} [ender[ ]]dragon (head|skull)¦s = minecraft:dragon_head
-	# BANNERS
+
+	# Banners
 	{directional} {colored} wall banner¦s = -wall_banner
-	{rotatable} {colored} [standing] banner¦s = -banner
+	{rotatable} {colored} (standing|floor) banner¦s = -banner
+	[any] wall banner¦s = white wall banner, orange wall banner, magenta wall banner, light blue wall banner, yellow wall banner, lime wall banner, pink wall banner, dark gray wall banner, light gray wall banner, cyan wall banner, purple wall banner, blue wall banner, brown wall banner, dark green wall banner, red wall banner, black wall banner
+	[any] (standing|floor) banner¦s = white floor banner, orange floor banner, magenta floor banner, light blue floor banner, yellow floor banner, lime floor banner, pink floor banner, dark gray floor banner, light gray floor banner, cyan floor banner, purple floor banner, blue floor banner, brown floor banner, dark green floor banner, red floor banner, black floor banner
+	[any] banner¦s = any wall banner, any standing banner
 
 # The aliases for glazed terracotta remained the same but the IDs changed between 1.12 and 1.13
 glazed terracotta group:
