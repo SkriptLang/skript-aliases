@@ -29,11 +29,11 @@ minecarts:
 	minecart[s] with furnace¦s = minecraft:furnace_minecart
 	powered minecart¦s = minecart with furnace[relatedEntity=powered minecart]
 
-	minecart[s] with TNT¦s = minecraft:tnt_minecart[relatedEntity=explosive minecart]
+	minecart[s] with tnt¦s = minecraft:tnt_minecart[relatedEntity=explosive minecart]
 	minecart[s] with hopper¦s = minecraft:hopper_minecart[relatedEntity=hopper minecart]
 	minecart[s] with command block¦s = minecraft:command_block_minecart
 
-	any minecart¦s = minecart, minecart with chest, minecart with furnace, minecart with TNT, minecart with hopper, minecart with command block
+	any minecart¦s = minecart, minecart with chest, minecart with furnace, minecart with tnt, minecart with hopper, minecart with command block
 
 rails before flattening:
 	minecraft version = 1.12.2 or older
