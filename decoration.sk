@@ -544,7 +544,7 @@ directionals after flattening:
 
 	# Skulls on walls
 	{directional} skeleton wall[-mounted] (skull|head)¦s = minecraft:skeleton_wall_skull
-	{directional} wither skleon wall[-mounted] (skull|head)¦s = minecraft:wither_skeleton_wall_skull
+	{directional} wither skeleton wall[-mounted] (skull|head)¦s = minecraft:wither_skeleton_wall_skull
 	{directional} zombie wall[-mounted] (head|skull)¦s = minecraft:zombie_wall_head
 	{directional} player wall[-mounted] (head|skull)¦s = minecraft:player_wall_head
 	{directional} creeper wall[-mounted] (head|skull)¦s = minecraft:creeper_wall_head
