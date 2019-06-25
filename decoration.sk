@@ -386,6 +386,14 @@ decoratives after flattening:
 	{directional} damaged anvil¦s = minecraft:damaged_anvil
 	any anvil¦s = anvil, chipped anvil, damaged anvil
 
+village update potted flowers and saplings:
+	minecraft version = 1.14 or newer
+	(potted|flower pot with) bamboo = minecraft:potted_bamboo
+	(potted|flower pot with) cornflower = minecraft:potted_cornflower
+	(potted|flower pot with) lily of the valley = minecraft:potted_lily_of_the_valley
+	(potted|flower pot with) wither rose = minecraft:potted_wither_rose
+	bamboo sapling = minecraft:bamboo_sapling
+
 update aquatic signs:
 	minecraft version = 1.13 to 1.13.2
 	{waterloggable} {directional} wall sign¦s = minecraft:wall_sign
