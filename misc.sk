@@ -23,7 +23,6 @@ old items:
 	minecraft version = 1.12.2 or older
 	charcoal = minecraft:coal {Damage:1}
 	sugar cane¦s = minecraft:reeds
-	clay [ball¦s] = minecraft:clay
 	popped chorus fruit¦s = minecraft:chorus_fruit_popped
 	nether brick item¦s = minecraft:netherbrick
 
@@ -31,7 +30,6 @@ new items:
 	minecraft version = 1.13 or newer
 	charcoal = minecraft:charcoal
 	sugar cane¦s = minecraft:sugar_cane
-	clay [balls] = minecraft:clay_ball
 	conduit¦s = minecraft:conduit
 	[turtle [shell]] scute¦s = minecraft:scute
 	kelp = minecraft:kelp
@@ -71,6 +69,7 @@ random items:
 	gunpowder = minecraft:gunpowder
 	snowball¦s = minecraft:snowball[relatedEntity=snowball]
 	leather = minecraft:leather
+	clay [balls] = minecraft:clay_ball
 	[clay] brick [item]¦s = minecraft:brick
 	(piece[s] of paper|paper¦s) = minecraft:paper
 	slimeball¦s = minecraft:slime_ball
