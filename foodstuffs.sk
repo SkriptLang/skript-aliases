@@ -46,7 +46,7 @@ foods before flattening:
 	cooked salmon [fillet]¦s = minecraft:cooked_fish {Damage:1}
 	any raw fish¦es = raw cod, raw salmon, pufferfish, clownfish
 
-	[normal] golden apple = minecraft:golden_apple {Damage:0}
+	[normal] golden apple = minecraft:golden_apple
 	(enchanted golden|notch) apple = minecraft:golden_apple {Damage:1}
 	
 	melon slice¦s = minecraft:melon
