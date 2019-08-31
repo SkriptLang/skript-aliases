@@ -16,74 +16,6 @@ unchanged decoratives:
 	item frame [item]¦s = minecraft:item_frame[relatedEntity=item frame]
 	armor stand [item]¦s = minecraft:armor_stand[relatedEntity=armor stand]
 
-village and pillage decoratives:
-	minecraft version = 1.14 or newer
-	{waterloggable} {directional} {wood type} wall sign¦s = -wall_sign
-	{waterloggable} {rotatable} {wood type} [floor] sign¦s = -sign
-	[any] wall sign¦s = oak wall sign, birch wall sign, jungle wall sign, spruce wall sign, acacia wall sign, dark oak wall sign
-	[any] floor sign¦s = oak floor sign, birch floor sign, jungle floor sign, spruce floor sign, acacia floor sign, dark oak floor sign
-	[any] sign¦s = any wall sign, any floor sign
-
-	cornflower¦s = minecraft:cornflower
-	lily of the valley = minecraft:lily_of_the_valley
-	wither rose¦s = minecraft:wither_rose
-
-	{waterloggable} brick wall¦s = minecraft:brick_wall
-	{waterloggable} prismarine wall¦s = minecraft:prismarine_wall
-	{waterloggable} sandstone wall¦s = minecraft:sandstone wall
-	{waterloggable} red sandstone wall¦s = minecraft:red_sandstone_wall
-	{waterloggable} stone brick wall¦s = minecraft:stone_brick_wall
-	{waterloggable} mossy stone brick wall¦s = minecraft:mossy_stone_brick_wall
-	{waterloggable} granite wall¦s = minecraft:granite_wall
-	{waterloggable} diorite wall¦s = minecraft:diorite_wall
-	{waterloggable} andesite wall¦s = minecraft:andesite_wall
-	{waterloggable} nether brick wall¦s = minecraft:nether_brick_wall
-	{waterloggable} red nether brick wall¦s = minecraft:red_nether_brick_wall
-	{waterloggable} end stone brick wall¦s = minecraft:end_stone_brick_wall
-
-	{scaffold bottom}:
-		{default} = -
-		bottomless = -[bottom=false]
-		bottom = -[bottom=true]
-	{waterloggable} {scaffold bottom} scaffolding = minecraft:scaffolding
-
-	#Crafting Blocks
-	{directional} loom¦s = minecraft:loom
-	{orientable} {openable} barrel¦s = minecraft:barrel
-	{directional} {lightable} smoker¦s = minecraft:smoker
-	{directional} {lightable} blast furnace¦s = minecraft:blast_furnace
-	{directional} stone[ ]cutter¦s = minecraft:stonecutter
-	cartography table¦s = minecraft:cartography_table
-
-	#Whether the grindstone is on the floor, wall, or ceiling.
-	{grindstone face}:
-		{default} = -
-		floor = -[face=floor]
-		wall = -[face=wall]
-		ceiling = -[face=ceiling]
-	{directional} {grindstone face} grindstone¦s = minecraft:grindstone
-
-	#Non-functional "crafting" blocks; these are used for village jobs
-	fletching table¦s = minecraft:fletching_table
-	smithing table¦s = minecraft:smithing_table
-
-	{bell attachment}:
-		{default} = -
-		floor = -[attachment=floor]
-		single wall = -[attachment=single_wall]
-		double wall = -[attachment=double_wall]
-		ceiling = -[attachment=ceiling]
-	{directional} {bell attachment} bell¦s = minecraft:bell
-
-	{lantern hanging}:
-		{default} = -
-		(floor|not hanging) = -[hanging=false]
-		(hanging|ceiling) = -[hanging=true]
-	{lantern hanging} lantern = minecraft:lantern
-
-	{waterloggable} {lightable} campfire¦s = minecraft:campfire
-	{waterloggable} {lightable} signal[ing] campfire = minecraft:campfire[signal_fire=true]
-
 # Decoratives added in 1.12 that were changed in the flattening.
 world of color decoratives before flattening:
 	minecraft version = 1.12 to 1.12.2
@@ -393,6 +325,75 @@ village update potted flowers and saplings:
 	(potted|flower pot with) lily of the valley = minecraft:potted_lily_of_the_valley
 	(potted|flower pot with) wither rose = minecraft:potted_wither_rose
 	bamboo sapling = minecraft:bamboo_sapling
+
+village and pillage decoratives:
+	minecraft version = 1.14 or newer
+	{waterloggable} {directional} {wood type} wall sign¦s = -wall_sign
+	{waterloggable} {rotatable} {wood type} [floor] sign¦s = -sign
+	[any] wall sign¦s = oak wall sign, birch wall sign, jungle wall sign, spruce wall sign, acacia wall sign, dark oak wall sign
+	[any] floor sign¦s = oak floor sign, birch floor sign, jungle floor sign, spruce floor sign, acacia floor sign, dark oak floor sign
+	[any] sign¦s = any wall sign, any floor sign
+
+	cornflower¦s = minecraft:cornflower
+	lily of the valley = minecraft:lily_of_the_valley
+	wither[ed] rose¦s = minecraft:wither_rose
+	[any] small flower = any small flower, cornflower, lily of the valley, wither rose
+
+	{waterloggable} brick wall¦s = minecraft:brick_wall
+	{waterloggable} prismarine wall¦s = minecraft:prismarine_wall
+	{waterloggable} sandstone wall¦s = minecraft:sandstone wall
+	{waterloggable} red sandstone wall¦s = minecraft:red_sandstone_wall
+	{waterloggable} stone brick wall¦s = minecraft:stone_brick_wall
+	{waterloggable} mossy stone brick wall¦s = minecraft:mossy_stone_brick_wall
+	{waterloggable} granite wall¦s = minecraft:granite_wall
+	{waterloggable} diorite wall¦s = minecraft:diorite_wall
+	{waterloggable} andesite wall¦s = minecraft:andesite_wall
+	{waterloggable} nether brick wall¦s = minecraft:nether_brick_wall
+	{waterloggable} red nether brick wall¦s = minecraft:red_nether_brick_wall
+	{waterloggable} end stone brick wall¦s = minecraft:end_stone_brick_wall
+
+	{scaffold bottom}:
+		{default} = -
+		bottomless = -[bottom=false]
+		bottom = -[bottom=true]
+	{waterloggable} {scaffold bottom} scaffolding = minecraft:scaffolding
+
+	#Crafting Blocks
+	{directional} loom¦s = minecraft:loom
+	{orientable} {openable} barrel¦s = minecraft:barrel
+	{directional} {lightable} smoker¦s = minecraft:smoker
+	{directional} {lightable} blast furnace¦s = minecraft:blast_furnace
+	{directional} stone[ ]cutter¦s = minecraft:stonecutter
+	cartography table¦s = minecraft:cartography_table
+
+	# Whether the grindstone is on the floor, wall, or ceiling.
+	{grindstone face}:
+		{default} = -
+		floor = -[face=floor]
+		wall = -[face=wall]
+		ceiling = -[face=ceiling]
+	{directional} {grindstone face} grindstone¦s = minecraft:grindstone
+
+	# Non-functional "crafting" blocks; these are used for village jobs
+	fletching table¦s = minecraft:fletching_table
+	smithing table¦s = minecraft:smithing_table
+
+	{bell attachment}:
+		{default} = -
+		floor = -[attachment=floor]
+		single wall = -[attachment=single_wall]
+		double wall = -[attachment=double_wall]
+		ceiling = -[attachment=ceiling]
+	{directional} {bell attachment} bell¦s = minecraft:bell
+
+	{lantern hanging}:
+		{default} = -
+		(floor|not hanging) = -[hanging=false]
+		(hanging|ceiling) = -[hanging=true]
+	{lantern hanging} lantern = minecraft:lantern
+
+	{waterloggable} {lightable} campfire¦s = minecraft:campfire
+	{waterloggable} {lightable} signal[ing] campfire = minecraft:campfire[signal_fire=true]
 
 update aquatic signs:
 	minecraft version = 1.13 to 1.13.2
