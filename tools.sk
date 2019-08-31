@@ -44,6 +44,3 @@ tools:
 	shear¦s = minecraft:shears
 	(lead¦s|leash¦es) = minecraft:lead
 	name[ ]tag¦s = minecraft:name_tag
-
-categories:
-	[any] item with durability = any equipment, any tool, fishing rod, flint and steel, shear, elytra
