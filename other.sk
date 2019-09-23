@@ -182,7 +182,8 @@ update aquatic unlisted blocks:
 
 # Flowing lava and water exist as technical blocks in Minecraft 1.13 but they're not placeable
 # with vanilla commands nor do they exist in the material enum.
-fluids:
+updated fluids:
+	minecraft version = 1.13 or newer
 	{water state}:
 		{default} = -
 		stationary = -[level=0]
@@ -204,4 +205,7 @@ fluids:
 		falling stage (7/seven) = -[level=14]
 		falling stage (8/eight) = -[level=15]
 	{water state} water = minecraft:water
+old fluids:
+	minecraft version = 1.12.2 or older
+	[stationary] water = minecraft:water
 	[stationary] lava = minecraft:lava
