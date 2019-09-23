@@ -184,27 +184,28 @@ update aquatic unlisted blocks:
 # with vanilla commands nor do they exist in the material enum.
 updated fluids:
 	minecraft version = 1.13 or newer
-	{water state}:
+	{fluid state}:
 		{default} = -
 		stationary = -[level=0]
 		flowing = -[level=1]
-		flowing stage (1/one) = -[level=1]
-		flowing stage (2/two) = -[level=2]
-		flowing stage (3/three) = -[level=3]
-		flowing stage (4/four) = -[level=4]
-		flowing stage (5/five) = -[level=5]
-		flowing stage (6/six) = -[level=6]
-		flowing stage (7/seven) = -[level=7]
+		flowing stage (1|one) = -[level=1]
+		flowing stage (2|two) = -[level=2]
+		flowing stage (3|three) = -[level=3]
+		flowing stage (4|four) = -[level=4]
+		flowing stage (5|five) = -[level=5]
+		flowing stage (6|six) = -[level=6]
+		flowing stage (7|seven) = -[level=7]
 		falling = -[level=8]
-		falling stage (1/one) = -[level=8]
-		falling stage (2/two) = -[level=9]
-		falling stage (3/three) = -[level=10]
-		falling stage (4/four) = -[level=11]
-		falling stage (5/five) = -[level=12]
-		falling stage (6/six) = -[level=13]
-		falling stage (7/seven) = -[level=14]
-		falling stage (8/eight) = -[level=15]
-	{water state} water = minecraft:water
+		falling stage (1|one) = -[level=8]
+		falling stage (2|two) = -[level=9]
+		falling stage (3|three) = -[level=10]
+		falling stage (4|four) = -[level=11]
+		falling stage (5|five) = -[level=12]
+		falling stage (6|six) = -[level=13]
+		falling stage (7|seven) = -[level=14]
+		falling stage (8|eight) = -[level=15]
+	{fluid state} water = minecraft:water
+	{fluid state} lava = minecraft:lava
 old fluids:
 	minecraft version = 1.12.2 or older
 	[stationary] water = minecraft:water
