@@ -53,7 +53,7 @@ new items:
 
 valuables:
 	{beacon levels}:
-		{default} = - {Levels:0}
+		{default} = -
 		(level (0|one)|unleveled) = - {Levels:0}
 		(level (1|one)) = - {Levels:1}
 		(level (2|two)) = - {Levels:2}
