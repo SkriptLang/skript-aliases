@@ -169,6 +169,16 @@ old blocks before flattening:
 	(upside-down|top) [nether] quartz slab = minecraft:stone_slab {Damage:15}
 	(upside-down|top) red sandstone slab = minecraft:stone_slab2 {Damage:8}
 
+	double stone slab = minecraft:double_stone_slab {Damage:0}
+	double sandstone slab = minecraft:double_stone_slab {Damage:1}
+	double (petrified|stone) oak [wood[en]] slab = minecraft:double_stone_slab {Damage:2}
+	double cobble[stone] slab = minecraft:double_stone_slab {Damage:3}
+	double brick slab = minecraft:double_stone_slab {Damage:4}
+	double stone[ ]brick slab = minecraft:double_stone_slab {Damage:5}
+	double nether brick slab = minecraft:double_stone_slab {Damage:6}
+	double [nether] quartz slab = minecraft:double_stone_slab {Damage:7}
+	double red sandstone slab = minecraft:double_stone_slab2 {Damage:0}
+
 	# Wood slabs
 	[bottom] {old wood type} slab = minecraft:wooden_slab
 
@@ -178,6 +188,13 @@ old blocks before flattening:
 	(upside-down|top) jungle [wood[en]] slab = minecraft:wooden_slab {Damage:11}
 	(upside-down|top) acacia [wood[en]] slab = minecraft:wooden_slab {Damage:12}
 	(upside-down|top) dark oak [wood[en]] slab = minecraft:wooden_slab {Damage:13}
+
+	double oak [wood[en]] slab = minecraft:double_wooden_slab {Damage:0}
+	double spruce [wood[en]] slab = minecraft:double_wooden_slab {Damage:1}
+	double birch [wood[en]] slab = minecraft:double_wooden_slab {Damage:2}
+	double jungle [wood[en]] slab = minecraft:double_wooden_slab {Damage:3}
+	double acacia [wood[en]] slab = minecraft:double_wooden_slab {Damage:4}
+	double dark oak [wood[en]] slab = minecraft:double_wooden_slab {Damage:5}
 
 	any wood[en] slab = oak slab, spruce slab, birch slab, jungle slab, acacia slab, dark oak slab
 	any slab = any wooden slab, stone slab, sandstone slab, petrified oak slab, cobblestone slab, brick slab, stone brick slab, nether brick slab, quartz slab, red sandstone slab

@@ -7,7 +7,6 @@ unchanged foods:
 	beetroot¦s = minecraft:beetroot
 	beetroot (stew|soup)¦s = minecraft:beetroot_soup
 	[loa(f|ves) of] bread = minecraft:bread
-	cake¦s = minecraft:cake
 	carrot¦s = minecraft:carrot
 	chorus fruit¦s = minecraft:chorus_fruit
 	(cooked beef|steak¦s) = minecraft:cooked_beef
@@ -51,6 +50,9 @@ foods before flattening:
 	
 	melon slice¦s = minecraft:melon
 
+	cake¦s = minecraft:cake_block
+	cake item¦s = minecraft:cake
+
 # Foods whose IDs were changed as part of the ID flattening in 1.13.
 foods after flattening:
 	minecraft version = 1.13 or newer
@@ -67,6 +69,8 @@ foods after flattening:
 	
 	melon slice¦s = minecraft:melon_slice
 	dried kelp¦s = minecraft:dried_kelp
+
+	cake¦s = minecraft:cake
 
 # Groups of items for useful reference
 common categories:
@@ -85,15 +89,15 @@ common categories:
 	[any] cooked meat¦s = steak, cooked chicken, cooked mutton, cooked porkchop, cooked rabbit
 	[any] meat¦s = any raw meat, any cooked meat
 	[any] monster (food|meat¦s) = rotten flesh, spider eye
-	
-	[any] dessert¦s = cookie, cake, pumpkin pie
 	[any] cooked food¦s = baked potato, any cooked meat, any cooked fish
 
 # All foods before
 old food categories:
 	minecraft version = 1.12.2 or older
+	[any] dessert¦s = cookie, cake item, pumpkin pie
 	[any] food = any fish, fruit, root vegetables, stews, meats, monster meats, desserts, bread, baked potato, poisonous potato
 
 food categories after update aquatic:
-	minecraft version = 1.13 or newer 
+	minecraft version = 1.13 or newer
+	[any] dessert¦s = cookie, cake, pumpkin pie
 	[any] food = any fish, fruit, root vegetables, stews, meats, monster meats, desserts, bread, baked potato, poisonous potato, dried kelp
