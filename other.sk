@@ -62,7 +62,7 @@ unlisted before flattening:
 		(ripe|fully grown|stage (8|eight)) = - {Damage:7}
 	{crop growth stage} potato plant¦s = minecraft:potatoes
 	{crop growth stage} carrot plant¦s = minecraft:carrots
-	{crop growth stage} wheat plant¦s = minecraft:wheat
+	{crop growth stage} wheat plant¦s = minecraft:wheat_plant
 	{crop growth stage} pumpkin stem = minecraft:pumpkin_stem
 	{crop growth stage} melon stem = minecraft:melon_stem
 	{beetroot growth stage}:
@@ -208,5 +208,7 @@ updated fluids:
 	{fluid state} lava = minecraft:lava
 old fluids:
 	minecraft version = 1.12.2 or older
+	flowing water = minecraft:flowing_water
+	flowing lava = minecraft:flowing_lava
 	[stationary] water = minecraft:water
 	[stationary] lava = minecraft:lava

@@ -11,7 +11,8 @@ unchanged decoratives:
 	[huge] red mushroom block¦s = minecraft:red_mushroom_block
 	vine¦s = minecraft:vine
 	enchant(ment|ing) table¦s = minecraft:enchanting_table
-	[empty] flower pot¦s = minecraft:flower_pot
+	[empty] flower pot¦s = minecraft:flower_pot_block
+	[empty] flower pot item¦s = minecraft:flower_pot
 	painting [item]¦s = minecraft:painting[relatedEntity=painting]
 	item frame [item]¦s = minecraft:item_frame[relatedEntity=item frame]
 	armor stand [item]¦s = minecraft:armor_stand[relatedEntity=armor stand]

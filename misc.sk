@@ -22,7 +22,8 @@ exploration update 2:
 old items:
 	minecraft version = 1.12.2 or older
 	charcoal = minecraft:coal {Damage:1}
-	sugar cane¦s = minecraft:reeds
+	sugar cane item¦s = minecraft:reeds
+	sugar cane¦s = minecraft:sugar_cane_block
 	popped chorus fruit¦s = minecraft:chorus_fruit_popped
 	nether brick item¦s = minecraft:netherbrick
 
@@ -79,7 +80,6 @@ random items:
 	sugar = minecraft:sugar
 	ender pearl¦s = minecraft:ender_pearl[relatedEntity=ender pearl]
 	blaze rod¦s = minecraft:blaze_rod
-	nether wart item¦s = minecraft:nether_wart
 	(ender eye¦s|eye[s] of ender) = minecraft:ender_eye
 	(bottle[s] o' enchanting|xp bottle¦s|experience bottle¦s) = minecraft:experience_bottle[relatedEntity=xp bottle]
 	fire charge¦s = minecraft:fire_charge
@@ -91,6 +91,16 @@ random items:
 	prismarine crystal¦s = minecraft:prismarine_crystals
 	rabbit hide¦s = minecraft:rabbit_hide
 	enchanted book¦s = minecraft:enchanted_book
+
+pre-flattening random items:
+	minecraft version = 1.12.2 or older
+	nether wart item¦s = minecraft:nether_wart
+	nether wart [plant]¦s = minecraft:nether_warts
+
+post-flattening random items:
+	minecraft version = 1.13 or newer
+	nether wart [item]¦s = minecraft:nether_wart
+
 
 books:
 	book¦s = minecraft:book
