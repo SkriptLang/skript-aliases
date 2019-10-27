@@ -115,8 +115,8 @@ redstone before flattening:
 	any redstone torch¦es = lit redstone torch, unlit redstone torch
 
 	# Redstone lamp
-	lit redstone lamp¦s = minecraft:redstone_lamp {lit:true}
-	[unlit] redstone lamp¦s = minecraft:redstone_lamp {lit:false}
+	lit redstone lamp¦s = minecraft:lit_redstone_lamp
+	[unlit] redstone lamp¦s = minecraft:redstone_lamp
 	any redstone lamp¦s = lit redstone lamp, unlit redstone lamp
 
 	# Pistons
