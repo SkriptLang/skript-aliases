@@ -11,8 +11,6 @@ unchanged decoratives:
 	[huge] red mushroom block¦s = minecraft:red_mushroom_block
 	vine¦s = minecraft:vine
 	enchant(ment|ing) table¦s = minecraft:enchanting_table
-	[empty] flower pot¦s = minecraft:flower_pot_block
-	[empty] flower pot item¦s = minecraft:flower_pot
 	painting [item]¦s = minecraft:painting[relatedEntity=painting]
 	item frame [item]¦s = minecraft:item_frame[relatedEntity=item frame]
 	armor stand [item]¦s = minecraft:armor_stand[relatedEntity=armor stand]
@@ -157,6 +155,9 @@ decoratives before flattening:
 	slime block¦s = minecraft:slime
 	bed [block]¦s = minecraft:bed
 	any bed¦s = minecraft:bed
+	
+	[empty] flower pot¦s = minecraft:flower_pot_block
+	[empty] flower pot item¦s = minecraft:flower_pot
 
 # Decoratives whose IDs were changed as part of the flattening.
 decoratives after flattening:
@@ -263,6 +264,7 @@ decoratives after flattening:
 	any bed = white bed, orange bed, magenta bed, light blue bed, yellow bed, lime bed, pink bed, dark gray bed, light gray bed, cyan bed, purple bed, blue bed, brown bed, dark green bed, red bed, black bed
 
 	# Flower pots now each have their own ID!
+	[empty] flower pot¦s = minecraft:flower_pot
 	(potted|flower pot with) (dandelion|yellow flower) = minecraft:potted_dandelion
 	(potted|flower pot with) (poppy|red flower) = minecraft:potted_poppy
 	(potted|flower pot with) [blue] orchid = minecraft:potted_blue_orchid
