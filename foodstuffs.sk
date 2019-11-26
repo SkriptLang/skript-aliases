@@ -34,6 +34,10 @@ village and pillage update foods:
 	dried kelp = minecraft:dried_kelp
 	sweet berr(y|ies) = minecraft:sweet_berries
 
+buzzy bee update update foods:
+	minecraft version = 1.15 or newer
+	honey bottle¦s = minecraft:honey_bottle
+
 # Before the flattening in 1.13, some foods used data values.
 foods before flattening:
 	minecraft version = 1.12.2 or older
@@ -80,16 +84,20 @@ common categories:
 	any fish¦es = any raw fish, any cooked fish
 	
 	any golden apple = normal golden apple, enchanted golden apple
+	any apple = any golden apple, apple
 	[any] (soup|stew)¦s = beetroot soup, mushroom stew, rabbit stew
 	[any] root vegetable¦s = beetroot, carrot, potato
 	any potato¦es = potato, baked potato
-	[any] fruit¦s = apple, chorus fruit, melon slice, any golden apple
+	[any] fruit¦s = any apple, chorus fruit, melon slice
 	
 	[any] raw meat¦s = raw beef, raw chicken, raw mutton, raw porkchop, raw rabbit
 	[any] cooked meat¦s = steak, cooked chicken, cooked mutton, cooked porkchop, cooked rabbit
 	[any] meat¦s = any raw meat, any cooked meat
 	[any] monster (food|meat¦s) = rotten flesh, spider eye
 	[any] cooked food¦s = baked potato, any cooked meat, any cooked fish
+
+	minecraft version = 1.14 or newer
+	[any] fruit¦s = any apple, chorus fruit, melon slice, sweet berry
 
 # All foods before
 old food categories:
@@ -101,3 +109,7 @@ food categories after update aquatic:
 	minecraft version = 1.13 or newer
 	[any] dessert¦s = cookie, cake, pumpkin pie
 	[any] food = any fish, fruit, root vegetables, stews, meats, monster meats, desserts, bread, baked potato, poisonous potato, dried kelp
+
+food categories after buzzy bee update:
+	minecraft version = 1.15 or newer
+    [any] food = any fish, fruit, root vegetables, stews, meats, monster meats, desserts, bread, baked potato, poisonous potato, dried kelp, honey bottle
