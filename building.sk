@@ -471,12 +471,12 @@ update aquatic:
 	[any] stripped log [block¦s] = stripped oak log, stripped spruce log, stripped birch log, stripped jungle log, stripped acacia log, stripped dark oak log
 
 	# There's also barkless variants of the full bark logs.
-	{axis-aligned} stripped oak bark [block¦s] = minecraft:stripped_oak_wood
-	{axis-aligned} stripped spruce bark [block¦s] = minecraft:stripped_spruce_wood
-	{axis-aligned} stripped birch bark [block¦s] = minecraft:stripped_birch_wood
-	{axis-aligned} stripped jungle bark [block¦s] = minecraft:stripped_jungle_wood
-	{axis-aligned} stripped acacia bark [block¦s] = minecraft:stripped_acacia_wood
-	{axis-aligned} stripped dark oak bark [block¦s] = minecraft:stripped_dark_oak_wood
+	{axis-aligned} stripped oak (bark|wood) [block¦s] = minecraft:stripped_oak_wood
+	{axis-aligned} stripped spruce (bark|wood) [block¦s] = minecraft:stripped_spruce_wood
+	{axis-aligned} stripped birch (bark|wood) [block¦s] = minecraft:stripped_birch_wood
+	{axis-aligned} stripped jungle (bark|wood) [block¦s] = minecraft:stripped_jungle_wood
+	{axis-aligned} stripped acacia (bark|wood) [block¦s] = minecraft:stripped_acacia_wood
+	{axis-aligned} stripped dark oak (bark|wood) [block¦s] = minecraft:stripped_dark_oak_wood
 	[any] stripped bark [block¦s] = stripped oak bark, stripped spruce bark, stripped birch bark, stripped jungle bark, stripped acacia bark, stripped dark oak bark
 
 	# Define any log to include the stripped ones
