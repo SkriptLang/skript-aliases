@@ -77,7 +77,6 @@ decoratives before flattening:
 	tall plant top = minecraft:double_plant {Damage:8}
 	[any] (large|tall|double height) flower = sunflower, lilac, rose bush, peony
 
-	[any] flower¦s = any small flower, any large flower
 
 	# Fences
 	oak fence¦s = minecraft:fence
@@ -209,8 +208,6 @@ decoratives after flattening:
 	{block half} rose bush¦es = minecraft:rose_bush
 	{block half} peon(y|ies) = minecraft:peony
 	[any] (large|tall|double height) flower = sunflower, lilac, rose bush, peony
-
-	[any] flower¦s = any small flower, any large flower
 
 	# Fences
 	{waterloggable} {wood type} fence¦s = -fence
@@ -408,6 +405,7 @@ unchanged categories:
 	any chest¦s = chest, trapped chest, ender chest
 	[any] fence¦s = oak fence, spruce fence, birch fence, jungle fence, acacia fence, dark oak fence, nether brick fence
 	[any] sapling¦s = oak sapling, spruce sapling, birch sapling, jungle sapling, acacia sapling, dark oak sapling
+	[any] flower¦s = any small flower, any large flower
 
 # New decoratives introduced in 1.9
 combat update:
