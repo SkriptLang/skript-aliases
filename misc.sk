@@ -253,7 +253,7 @@ spawn eggs after flattening:
 	(bat [spawn] egg|spawn bat)¦s = minecraft:bat_spawn_egg
 	(blaze [spawn] egg|spawn blaze)¦s = minecraft:blaze_spawn_egg
 	(cave spider [spawn] egg|spawn cave spider)¦s = minecraft:cave_spider_spawn_egg
-	(chicken spawn egg|spawn chicken)¦s = minecraft:chicken_spawn_egg
+	(chicken [spawn] egg|spawn chicken)¦s = minecraft:chicken_spawn_egg
 	(cod [spawn] egg|spawn cod)¦s = minecraft:cod_spawn_egg
 	(cow [spawn] egg|spawn cow)¦s = minecraft:cow_spawn_egg
 	(creeper [spawn] egg|spawn creeper)¦s = minecraft:creeper_spawn_egg
@@ -320,7 +320,7 @@ spawn eggs before flattening:
 	(bat [spawn] egg|spawn bat)¦s = minecraft:spawn_egg {Damage:65}
 	(blaze [spawn] egg|spawn blaze)¦s = minecraft:spawn_egg {Damage:61}
 	(cave spider [spawn] egg|spawn cave spider)¦s = minecraft:spawn_egg {Damage:59}
-	(chicken spawn egg|spawn chicken)¦s = minecraft:spawn_egg {Damage:93}
+	(chicken [spawn] egg|spawn chicken)¦s = minecraft:spawn_egg {Damage:93}
 	(cow [spawn] egg|spawn cow)¦s = minecraft:spawn_egg {Damage:92}
 	(creeper [spawn] egg|spawn creeper)¦s = minecraft:spawn_egg {Damage:50}
 	(enderman [spawn] egg|spawn enderman)¦s = minecraft:spawn_egg {Damage:58}
