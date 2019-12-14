@@ -579,3 +579,20 @@ directionals after flattening:
 glazed terracotta group:
 	minecraft version = 1.12 or newer
 	any glazed terracotta = white glazed terracotta, orange glazed terracotta, magenta glazed terracotta, light blue glazed terracotta, yellow glazed terracotta, lime glazed terracotta, pink glazed terracotta, dark gray glazed terracotta, light gray glazed terracotta, cyan glazed terracotta, purple glazed terracotta, blue glazed terracotta, brown glazed terracotta, dark green glazed terracotta, red glazed terracotta, black glazed terracotta
+
+buzzy bee update:
+	minecraft version = 1.15 or newer
+	{honey level}:
+		{default} = -
+		(empty|level 0) = -[honey_level=0]
+		level 1 = -[honey_level=1]
+		level 2 = -[honey_level=2]
+		level 3 = -[honey_level=3]
+		level 4 = -[honey_level=4]
+		(full|filled|level 5) = -[honey_level=5]
+
+	{directional} {honey level} beehive¦s = minecraft:beehive
+	{directional} {honey level} bee nest¦s = minecraft:bee_nest
+
+	honey block¦s = minecraft:honey_block
+	honeycomb block¦s = minecraft:honeycomb_block
