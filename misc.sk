@@ -69,10 +69,10 @@ random items:
 	gunpowder = minecraft:gunpowder
 	snowball¦s = minecraft:snowball[relatedEntity=snowball]
 	leather = minecraft:leather
-	clay [balls] = minecraft:clay_ball
+	clay [ball¦s] = minecraft:clay_ball
 	[clay] brick [item]¦s = minecraft:brick
 	(piece[s] of paper|paper¦s) = minecraft:paper
-	slimeball¦s = minecraft:slime_ball
+	slime[ ]ball¦s = minecraft:slime_ball
 	egg¦s = minecraft:egg[relatedEntity=egg]
 	glowstone dust = minecraft:glowstone_dust
 	bone¦s = minecraft:bone
@@ -86,7 +86,7 @@ random items:
 	[empty] map = minecraft:map
 	filled map = minecraft:filled_map
 	nether star¦s = minecraft:nether_star
-	nether quartz = minecraft:quartz
+	[nether] quartz = minecraft:quartz
 	prismarine shard¦s = minecraft:prismarine_shard
 	prismarine crystal¦s = minecraft:prismarine_crystals
 	rabbit hide¦s = minecraft:rabbit_hide
