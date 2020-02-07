@@ -449,3 +449,10 @@ village and pillage update:
 buzzy bee update:
 	minecraft version = 1.15 or newer
 	honeycomb¦s = minecraft:honeycomb
+
+nether update:
+	minecraft version = 1.16 or newer
+
+	netherite ingot¦s = minecraft:netherite_ingot
+	netherite scrap¦s = minecraft:netherite_scrap
+	(hoglin [spawn] egg|spawn hoglin)¦s = minecraft:hoglin_spawn_egg

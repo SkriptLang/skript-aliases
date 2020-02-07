@@ -247,3 +247,16 @@ new observer:
 categories:
 	[any] daylight (detector|sensor)¦s = normal daylight detector, inverted daylight detector
 	[any] fence part = any fence, any gate # Fences come from decoration.sk
+
+nether update:
+	minecraft version = 1.16 or newer
+
+	{powerable} {nether_block} pressure plate¦s = -pressure_plate
+	{waterloggable} {openable} {trapdoor position} {directional} {nether_block} trapdoor¦s = -trapdoor
+	{powerable} {openable} {block half} {directional} {nether_block} door¦s = -door
+	{attached toggleable} {nether_block} button¦s = -button
+	{powerable} {openable} {directional} {nether_block} [fence] gate¦s = -fence_gate
+
+	[any] pressure plate¦s = stone pressure plate, gold pressure plate, iron pressure plate, any wooden pressure plate, crimson pressure plate, warped pressure plate
+	[any] trapdoor¦s = wood trapdoor, iron trapdoor, crimson trapdoor, warped trapdoor
+	[any] button = stone button, wood button, crimson button, warped button

@@ -212,3 +212,8 @@ old fluids:
 	flowing lava = minecraft:flowing_lava
 	[stationary] water = minecraft:water
 	[stationary] lava = minecraft:lava
+
+nether update:
+	minecraft version = 1.16 or newer
+
+	soul fire = minecraft:soul_fire #will do block states at a later time

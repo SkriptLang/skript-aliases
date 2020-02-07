@@ -256,3 +256,7 @@ global:
 		jungle [wood] = minecraft:jungle_-
 		acacia [wood] = minecraft:acacia_-
 		dark oak [wood] = minecraft:dark_oak_-
+
+	{nether_block}:
+		crimson = minecraft:crimson_-
+		warped = minecraft:warped_-

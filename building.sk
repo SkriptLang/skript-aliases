@@ -622,3 +622,23 @@ village and pillage update:
 	[any] stone slab¦s = stone slab, smooth stone slab, granite slab, diorite slab, andesite slab, polished granite slab, polished diorite slab, polished andesite slab, mossy stone brick slab, mossy cobblestone slab
 	[any] sandstone slab¦s = smooth sandstone slab, smooth red sandstone slab, cut sandstone slab, cut red sandstone slab
 
+nether update:
+	minecraft version = 1.16 or newer
+
+	ancient debris = minecraft:ancient_debris
+	basalt = minecraft:basalt
+	netherite block¦s = minecraft:netherite_block
+	soul soil¦s = minecraft:soul_soil
+	warped wart block = minecraft:warped_wart_block
+
+	{nether_block} nylium¦s = -nylium
+	{nether_block} plank¦s = -planks
+	{nether_block} stem¦s = -stem
+	stripped crimson stem¦s = minecraft:stripped_crimson_stem
+	stripped warped stem¦s = minecraft:stripped_warped_stem
+	{nether_block} stair¦s = -stairs
+	{nether_block} slab¦s = -slab
+
+	[any] nylium¦s = crimson nylium, warped nylium
+	[any] plank¦s = oak planks, spruce planks, jungle planks, birch planks, acacia planks, dark oak planks, crimson planks, warped planks
+

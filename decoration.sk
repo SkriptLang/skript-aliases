@@ -596,3 +596,24 @@ buzzy bee update:
 
 	honey block¦s = minecraft:honey_block
 	honeycomb block¦s = minecraft:honeycomb_block
+
+nether update:
+	minecraft version = 1.16 or newer
+
+	shroomlight¦s = minecraft:shroomlight
+	[floor] soul fire torch¦es = minecraft:soul_fire_torch
+	{directional} soul fire wall torch¦es = minecraft:soul_fire_wall_torch
+	{lantern hanging} soul fire lantern¦s = minecraft:soul_fire_lantern
+	weeping vine¦s = minecraft:weeping_vines
+	weeping vine (block|plant)¦s = minecraft:weeping_vines_plant
+
+
+	{nether_block} fungi¦s = -fungi
+	{nether_block} root¦s = -roots
+	{waterloggable} {nether_blocks} fence¦s = -fence
+	{waterloggable} {directional} {nether_block} wall sign¦s = -wall_sign
+	{waterloggable} {rotatable} {nether_block} [floor] sign¦s = -sign
+
+	[any] fungi¦s = crimson fungi, warped fungi
+	[any] root¦s = crimson roots, warped roots
+	[any] fence¦s = oak fence, spruce fence, birch fence, jungle fence, acacia fence, dark oak fence, nether brick fence, crimson fence, warped fence
