@@ -606,11 +606,12 @@ nether update:
 	{lantern hanging} soul fire lantern¦s = minecraft:soul_fire_lantern
 	weeping vine¦s = minecraft:weeping_vines
 	weeping vine (block|plant)¦s = minecraft:weeping_vines_plant
+	nether sprout¦s = minecraft:nether_sprouts
 
 
 	{nether_block} fungi¦s = -fungi
 	{nether_block} root¦s = -roots
-	{waterloggable} {nether_blocks} fence¦s = -fence
+	{waterloggable} {nether_block} fence¦s = -fence
 	{waterloggable} {directional} {nether_block} wall sign¦s = -wall_sign
 	{waterloggable} {rotatable} {nether_block} [floor] sign¦s = -sign
 
