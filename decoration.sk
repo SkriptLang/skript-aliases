@@ -608,11 +608,8 @@ nether update:
 	weeping vine (block|plant)¦s = minecraft:weeping_vines_plant
 	nether sprout¦s = minecraft:nether_sprouts
 
-	{nether_block} fung(us|i) = -fungus
-	{nether_block} root¦s = -roots
-	{waterloggable} {nether_block} fence¦s = -fence
-	{waterloggable} {directional} {nether_block} wall sign¦s = -wall_sign
-	{waterloggable} {rotatable} {nether_block} [floor] sign¦s = -sign
+	{nether block} fung(us|i) = -fungus
+	{nether block} root¦s = -roots
 
 	[any] fung(us|i) = crimson fungus, warped fungus
 	[any] root¦s = crimson roots, warped roots

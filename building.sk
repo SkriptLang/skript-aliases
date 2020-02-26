@@ -629,16 +629,13 @@ nether update:
 	basalt = minecraft:basalt
 	netherite block¦s = minecraft:netherite_block
 	soul soil¦s = minecraft:soul_soil
-	warped wart block = minecraft:warped_wart_block
+	warped [nether] wart block¦s = minecraft:warped_wart_block
 	crying obsidian = minecraft:crying_obsidian
 
-	{nether_block} nylium¦s = -nylium
-	{nether_block} plank¦s = -planks
-	{nether_block} stem¦s = -stem
-	stripped crimson stem¦s = minecraft:stripped_crimson_stem
-	stripped warped stem¦s = minecraft:stripped_warped_stem
-	{nether_block} stair¦s = -stairs
-	{nether_block} slab¦s = -slab
+	{nether block} nylium¦s = -nylium
+	{nether block} stem¦s = -stem
+	{axis-aligned} stripped crimson stem¦s = minecraft:stripped_crimson_stem
+	{axis-aligned} stripped warped stem¦s = minecraft:stripped_warped_stem
 
 	[any] nylium¦s = crimson nylium, warped nylium
 	[any] plank¦s = oak planks, spruce planks, jungle planks, birch planks, acacia planks, dark oak planks, crimson planks, warped planks
