@@ -258,6 +258,6 @@ nether update:
 	[any] wood[en] trapdoor¦s = oak trapdoor, spruce trapdoor, birch trapdoor, jungle trapdoor, acacia trapdoor, dark oak trapdoor, crimson trap door, warped trap door
 
 global:
-    [any] door¦s = iron door, any wooden door
+	[any] door¦s = iron door, any wooden door
 	[any] button = stone button, wood button
 	[any] trapdoor¦s = iron trapdoor, any wooden trapdoor
