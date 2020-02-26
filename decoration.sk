@@ -609,12 +609,12 @@ nether update:
 	nether sprout¦s = minecraft:nether_sprouts
 
 
-	{nether_block} fungi¦s = -fungi
+	{nether_block} fung(us|i) = -fungus
 	{nether_block} root¦s = -roots
 	{waterloggable} {nether_block} fence¦s = -fence
 	{waterloggable} {directional} {nether_block} wall sign¦s = -wall_sign
 	{waterloggable} {rotatable} {nether_block} [floor] sign¦s = -sign
 
-	[any] fungi¦s = crimson fungi, warped fungi
+	[any] fung(us|i) = crimson fungus, warped fungus
 	[any] root¦s = crimson roots, warped roots
 	[any] fence¦s = oak fence, spruce fence, birch fence, jungle fence, acacia fence, dark oak fence, nether brick fence, crimson fence, warped fence
