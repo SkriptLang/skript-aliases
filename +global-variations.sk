@@ -247,8 +247,10 @@ block states:
 		north-northwest(ward| rotated) = -[rotation=15]
 
 # Aliases that can be used in at least one place both pre and post-flattening.
-global:
-	# For wood-based blocks that are defined with the wood type at the start of the alias.
+pre-nether-update woods:
+	minecraft version = 1.15.2 or older
+
+    # For wood-based blocks that are defined with the wood type at the start of the alias.
 	{wood type}:
 		oak [wood] = minecraft:oak_-
 		spruce [wood] = minecraft:spruce_-
@@ -257,6 +259,20 @@ global:
 		acacia [wood] = minecraft:acacia_-
 		dark oak [wood] = minecraft:dark_oak_-
 
-	{nether_block}:
+nether-update woods:
+	minecraft version = 1.16 or newer
+
+    # For wood-based blocks that are defined with the wood type at the start of the alias.
+	{wood type}:
+		oak [wood] = minecraft:oak_-
+		spruce [wood] = minecraft:spruce_-
+		birch [wood] = minecraft:birch_-
+		jungle [wood] = minecraft:jungle_-
+		acacia [wood] = minecraft:acacia_-
+		dark oak [wood] = minecraft:dark_oak_-
+		crimson = minecraft:crimson_-
+		warped = minecraft:warped_-
+
+	{nether block}:
 		crimson = minecraft:crimson_-
 		warped = minecraft:warped_-
