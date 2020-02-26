@@ -256,6 +256,7 @@ nether update:
 	{powerable} {openable} {block half} {directional} {nether_block} door¦s = -door
 	{attached toggleable} {nether_block} button¦s = -button
 	{powerable} {openable} {directional} {nether_block} [fence] gate¦s = -fence_gate
+	target [block] = minecraft:target
 
 	[any] pressure plate¦s = stone pressure plate, gold pressure plate, iron pressure plate, any wooden pressure plate, crimson pressure plate, warped pressure plate
 	[any] trapdoor¦s = wood trapdoor, iron trapdoor, crimson trapdoor, warped trapdoor

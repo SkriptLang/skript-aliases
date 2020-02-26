@@ -630,6 +630,7 @@ nether update:
 	netherite block¦s = minecraft:netherite_block
 	soul soil¦s = minecraft:soul_soil
 	warped wart block = minecraft:warped_wart_block
+	crying obsidian = minecraft:crying_obsidian
 
 	{nether_block} nylium¦s = -nylium
 	{nether_block} plank¦s = -planks
