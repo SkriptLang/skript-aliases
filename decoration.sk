@@ -608,7 +608,6 @@ nether update:
 	weeping vine (block|plant)¦s = minecraft:weeping_vines_plant
 	nether sprout¦s = minecraft:nether_sprouts
 
-
 	{nether_block} fung(us|i) = -fungus
 	{nether_block} root¦s = -roots
 	{waterloggable} {nether_block} fence¦s = -fence
@@ -618,3 +617,8 @@ nether update:
 	[any] fung(us|i) = crimson fungus, warped fungus
 	[any] root¦s = crimson roots, warped roots
 	[any] fence¦s = oak fence, spruce fence, birch fence, jungle fence, acacia fence, dark oak fence, nether brick fence, crimson fence, warped fence
+
+	(potted|flower pot with) crimson fungus = minecraft:potted_crimson_fungus
+	(potted|flower pot with) crimson roots = minecraft:potted_crimson_roots
+	(potted|flower pot with) warped fungus = minecraft:potted_warped_fungus
+	(potted|flower pot with) warped roots = minecraft:potted_warped_roots
