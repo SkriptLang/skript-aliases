@@ -371,7 +371,8 @@ building blocks after flattening:
 	{waterloggable} {stairs} {stairs shape} {directional} prismarine stair¦s = minecraft:prismarine_stairs
 	{waterloggable} {stairs} {stairs shape} {directional} prismarine brick stair¦s = minecraft:prismarine_brick_stairs
 	{waterloggable} {stairs} {stairs shape} {directional} dark prismarine stair¦s = minecraft:dark_prismarine_stairs
-	[any] stair¦s = oak stairs, spruce stairs, birch stairs, jungle stairs, acacia stairs, dark oak stairs, cobblestone stairs, brick stairs, stone brick stairs, nether brick stairs, quartz stairs, purpur stairs, sandstone stairs, red sandstone stairs, prismarine stairs, prismarine brick stairs, dark prismarine stairs
+	[any] wood[en] stair¦s = oak stairs, spruce stairs, birch stairs, jungle stairs, acacia stairs, dark oak stairs
+	[any] stair¦s = any wood stairs, cobblestone stairs, brick stairs, stone brick stairs, nether brick stairs, quartz stairs, purpur stairs, sandstone stairs, red sandstone stairs, prismarine stairs, prismarine brick stairs, dark prismarine stairs
 
 	# Construction/Decorative
 	([nether] quartz block[s]|block[s] of [nether] quartz) = minecraft:quartz_block
@@ -590,9 +591,10 @@ village and pillage update:
 	{waterloggable} {stairs} {stairs shape} {directional} smooth quartz stair¦s = minecraft:smooth_quartz_stairs
 	{waterloggable} {stairs} {stairs shape} {directional} red nether brick stair¦s = minecraft:red_nether_brick_stairs
 	{waterloggable} {stairs} {stairs shape} {directional} end stone brick stair¦s = minecraft:end_stone_brick_stairs
-	[any] stair¦s = oak stairs, spruce stairs, birch stairs, jungle stairs, acacia stairs, dark oak stairs, cobblestone stairs, brick stairs, stone brick stairs, nether brick stairs, quartz stairs, purpur stairs, sandstone stairs, red sandstone stairs, prismarine stairs, prismarine brick stairs, dark prismarine stairs, stone stairs, granite stairs, diorite stairs, andesite stairs, polished granite stairs, polished diorite stairs, polished andesite stairs, mossy stone brick stairs, mossy cobblestone stairs, smooth sandstone stairs, smooth red sandstone stairs, smooth quartz stairs, red nether brick stairs, end stone brick stairs
-	[any] stone stair¦s = stone stairs, granite stairs, diorite stairs, andesite stairs, polished granite stairs, polished diorite stairs, polished andesite stairs, mossy stone brick stairs, mossy cobblestone stairs
-	[any] sandstone stair¦s = smooth sandstone stairs, smooth red sandstone stairs
+	[any] stone stair¦s = stone stairs, granite stairs, diorite stairs, andesite stairs, polished granite stairs, polished diorite stairs, polished andesite stairs, stone brick stairs, mossy stone brick stairs, cobblestone stairs, mossy cobblestone stairs
+	[any] sandstone stair¦s = sandstone stairs, smooth sandstone stairs, red sandstone stairs, smooth red sandstone stairs
+	[any] stair¦s = any wood stairs, any stone stairs, any sandstone stairs, brick stairs, nether brick stairs, quartz stairs, purpur stairs, prismarine stairs, prismarine brick stairs, dark prismarine stairs, smooth quartz stairs, red nether brick stairs, end stone brick stairs
+
 
 	#Slabs
 	{slab}:
@@ -627,16 +629,43 @@ nether update:
 
 	ancient debris = minecraft:ancient_debris
 	basalt = minecraft:basalt
-	netherite block¦s = minecraft:netherite_block
+	polished basalt = minecraft:polished_basalt
+	(netherite block¦s|block¦s of netherite) = minecraft:netherite_block
 	soul soil¦s = minecraft:soul_soil
 	warped [nether] wart block¦s = minecraft:warped_wart_block
 	crying obsidian = minecraft:crying_obsidian
+	chiseled nether brick¦s = minecraft:chiseled_nether_bricks
+	cracked nether brick¦s = minecraft:cracked_nether_bricks
+	nether gold ore¦s = minecraft:nether_gold_ore
+	quartz brick¦s = minecraft:quartz_bricks
 
 	{nether block} nylium¦s = -nylium
 	{nether block} stem¦s = -stem
+	{nether block} hyphae = -hyphae
 	{axis-aligned} stripped crimson stem¦s = minecraft:stripped_crimson_stem
 	{axis-aligned} stripped warped stem¦s = minecraft:stripped_warped_stem
+	{axis-aligned} stripped crimson hyphae¦s = minecraft:stripped_crimson_hyphae
+	{axis-aligned} stripped warped hyphae¦s = minecraft:stripped_warped_hyphae
 
 	[any] nylium¦s = crimson nylium, warped nylium
 	[any] plank¦s = oak planks, spruce planks, jungle planks, birch planks, acacia planks, dark oak planks, crimson planks, warped planks
+
+	blackstone = minecraft:blackstone
+	polished blackstone = minecraft:polished_blackstone
+	polished blackstone brick¦s = minecraft:polished_blackstone_bricks
+	cracked polished blackstone brick¦s = minecraft:cracked_polished_blackstone_bricks
+	chiseled polished blackstone = minecraft:chiseled_polished_blackstone
+	{waterloggable} {slab} blackstone slab¦s = minecraft:blackstone_slab
+	{waterloggable} {slab} polished blackstone slab¦s = minecraft:polished_blackstone_slab
+	{waterloggable} {slab} polished blackstone brick slab¦s = minecraft:polished_blackstone_brick_slab
+	{waterloggable} {stairs} {stairs shape} {directional} blackstone stair¦s = minecraft:blackstone_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} polished blackstone stair¦s = minecraft:polished_blackstone_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} polished blackstone brick stair¦s = minecraft:polished_blackstone_brick_stairs
+	gilded blackstone = minecraft:gilded_blackstone
+
+	any blackstone slab¦s = blackstone slab, polished blackstone slab, polished blackstone brick slab
+	any blackstone stair¦s = blackstone stairs, polished blackstone stairs, polished blackstone brick stairs
+	[any] slab¦s = any wooden slab, stone slab, sandstone slab, petrified oak slab, cobblestone slab, brick slab, stone brick slab, nether brick slab, quartz slab, red sandstone slab, purpur slab, prismarine slab, prismarine brick slab, dark prismarine slab, stone slab, smooth stone slab, granite slab, diorite slab, andesite slab, polished granite slab, polished diorite slab, polished andesite slab, mossy stone brick slab, mossy cobblestone slab, smooth sandstone slab, smooth red sandstone slab, cut sandstone slab, cut red sandstone slab, smooth quartz slab, red nether brick slab, end stone brick slab, any blackstone slab
+	[any] stair¦s = any wood stairs, any stone stairs, any sandstone stairs, brick stairs, nether brick stairs, quartz stairs, purpur stairs, prismarine stairs, prismarine brick stairs, dark prismarine stairs, smooth quartz stairs, red nether brick stairs, end stone brick stairs, any blackstone stairs
+
 

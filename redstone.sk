@@ -249,8 +249,10 @@ nether update:
 	minecraft version = 1.16 or newer
 
 	target [block] = minecraft:target
+	{powerable} polished blackstone pressure plate¦s = minecraft:polished_blackstone_pressure_plate
+	{powerable} {directional} {attached} polished blackstone button¦s = minecraft:polished_blackstone_button
 
-	[any] pressure plate¦s = stone pressure plate, gold pressure plate, iron pressure plate, any wooden pressure plate, crimson pressure plate, warped pressure plate
+	[any] pressure plate¦s = stone pressure plate, gold pressure plate, iron pressure plate, any wooden pressure plate, crimson pressure plate, warped pressure plate, polished blackstone pressure plate
 	[any] wood[en] button¦s = oak button, spruce button, birch button, jungle button, acacia button, dark oak button, crimson button, warped button
 	[any] [fence] gate¦s = oak gate, spruce gate, birch gate, jungle gate, acacia gate, dark oak gate, crimson gate, warped gate
 	[any] wood[en] door item¦s = oak door item, spruce door item, birch door item, jungle door item, acacia door item, dark oak door item, crimson door item, warped door item
@@ -259,5 +261,5 @@ nether update:
 
 global:
 	[any] door¦s = iron door, any wooden door
-	[any] button = stone button, wood button
+	[any] button¦s = stone button, wood button
 	[any] trapdoor¦s = iron trapdoor, any wooden trapdoor

@@ -161,13 +161,13 @@ decoratives before flattening:
 # Decoratives whose IDs were changed as part of the flattening.
 decoratives after flattening:
 	minecraft version = 1.13 or newer
-	{wood type} sapling¦s = -sapling
+	{tree type} sapling¦s = -sapling
 
 	{decayable}:
 		{default} = -
 		decayable = -[persistent=false]
 		(persistent|permanent) = -[persistent=true]
-	{decayable} {wood type} lea(f|ves) = -leaves
+	{decayable} {tree type} lea(f|ves) = -leaves
 	[any] lea(f|ves) = oak leaves, birch leaves, jungle leaves, spruce leaves, dark oak leaves, acacia leaves
 
 	[cob]web¦s = minecraft:cobweb
@@ -601,12 +601,15 @@ nether update:
 	minecraft version = 1.16 or newer
 
 	shroomlight¦s = minecraft:shroomlight
-	[floor] soul fire torch¦es = minecraft:soul_fire_torch
-	{directional} soul fire wall torch¦es = minecraft:soul_fire_wall_torch
-	{lantern hanging} soul fire lantern¦s = minecraft:soul_fire_lantern
+	[floor] soul torch¦es = minecraft:soul_torch
+	{directional} soul wall torch¦es = minecraft:soul_wall_torch
 	weeping vine¦s = minecraft:weeping_vines
 	weeping vine (block|plant)¦s = minecraft:weeping_vines_plant
+	twisting vine¦s = minecraft:twisting_vines
+	twisting vine (block|plant)¦s = minecraft:twisting_vines_plant
 	nether sprout¦s = minecraft:nether_sprouts
+	{waterloggable} chain¦s = minecraft:chain
+	lodestone¦s = minecraft:lodestone
 
 	{nether block} fung(us|i) = -fungus
 	{nether block} root¦s = -roots
@@ -619,3 +622,24 @@ nether update:
 	(potted|flower pot with) crimson roots = minecraft:potted_crimson_roots
 	(potted|flower pot with) warped fungus = minecraft:potted_warped_fungus
 	(potted|flower pot with) warped roots = minecraft:potted_warped_roots
+
+	{waterloggable} blackstone wall¦s = minecraft:blackstone_wall
+	{waterloggable} polished blackstone wall¦s = minecraft:polished_blackstone_wall
+	{waterloggable} polished blackstone brick wall¦s = minecraft:polished_blackstone_brick_wall
+
+	{charges}:
+		{default} = -
+		(empty|level 0) = -[charges=0]
+		level 1 = -[charges=1]
+		level 2 = -[charges=2]
+		level 3 = -[charges=3]
+		(full[y charged]|level 4) = -[charges=5]
+
+	{charges} respawn anchor¦s = minecraft:respawn_anchor
+
+	{waterloggable} {lightable} soul campfire¦s = minecraft:soul_campfire
+	{waterloggable} {lightable} signal[ing] soul campfire = minecraft:soul_campfire[signal_fire=true]
+	any campfire = campfire, soul campfire
+
+	{lantern hanging} soul lantern¦s = minecraft:soul_lantern
+	any lantern = lantern, soul lantern

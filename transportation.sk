@@ -111,3 +111,8 @@ unchanged rails:
 	(ascending|descending|inclined) [normal] [minecart] (rail|track) [block]¦s = ascending north rail, ascending south rail, ascending east rail, ascending west rail
 	curved [normal] [minecart] (rail|track) [block]¦s = north-east rail, north-west rail, south-east rail, south-west rail
 	[minecart] (rail|track) item¦s = minecraft:rail
+
+nether update:
+	minecraft version = 1.16 or newer
+
+	warped fungus on a stick¦s = minecraft:warped_fungus_on_a_stick
