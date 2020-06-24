@@ -614,8 +614,8 @@ nether update:
 	{nether block} fung(us|i) = -fungus
 	{nether block} root¦s = -roots
 
-	[any] fung(us|i) = crimson fungus, warped fungus
-	[any] root¦s = crimson roots, warped roots
+	[any] nether fung(us|i) = crimson fungus, warped fungus
+	[any] nether root¦s = crimson roots, warped roots
 	[any] fence¦s = oak fence, spruce fence, birch fence, jungle fence, acacia fence, dark oak fence, nether brick fence, crimson fence, warped fence
 
 	(potted|flower pot with) crimson fungus = minecraft:potted_crimson_fungus

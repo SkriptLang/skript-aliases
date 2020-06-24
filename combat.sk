@@ -152,7 +152,7 @@ update aquatic categories:
 
 nether update:
 	minecraft version = 1.16 or newer
-	netherite sword = minecraft:netherite_sword
+	netherite sword¦s = minecraft:netherite_sword
 
 	netherite (cap|helmet)¦s = minecraft:netherite_helmet
 	netherite chest(piece|plate)¦s = minecraft:netherite_chestplate
