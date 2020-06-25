@@ -282,11 +282,11 @@ building blocks after flattening:
 	[any] plank¦s = oak planks, spruce planks, birch planks, jungle planks, acacia planks, dark oak planks
 
 	# Normal logs
-	{axis-aligned} {wood type} log¦s = -log
+	{axis-aligned} {tree type} log¦s = -log
 	[any] log¦s = oak log, spruce log, birch log, jungle log, acacia log, dark oak log
 
 	# Bark
-	{axis-aligned} {wood type} bark [block¦s] = -wood
+	{axis-aligned} {tree type} bark [block¦s] = -wood
 	[any] bark [block¦s] = oak bark, spruce bark, birch bark, jungle bark, acacia bark, dark oak bark
 
 	# Desert

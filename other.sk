@@ -76,6 +76,9 @@ unlisted before flattening:
 village and pillage update:
 	minecraft version = 1.14 or newer
 	suspicious stew¦s = minecraft:suspicious_stew #food item, but not listed in creative menu; may change
+
+village and pillage pre-nether:
+	minecraft version = 1.14 to 1.15.2
 	{orientable} jigsaw block¦s = minecraft:jigsaw
 
 # Unlisted blocks added in 1.9
@@ -217,3 +220,20 @@ nether update:
 	minecraft version = 1.16 or newer
 
 	soul fire = minecraft:soul_fire #will do block states at a later time
+
+	# Blockstates for jigsaws were changed
+	{jigsaw-orientation}:
+		{default} = -
+		down-east = -[orientation=down_east]
+		down-north = -[orientation=down_north]
+		down-south = -[orientation=down_south]
+		down-west = -[orientation=down_west]
+		up-east = -[orientation=up_east]
+		up-north = -[orientation=up_north]
+		up-south = -[orientation=up_south]
+		up-west = -[orientation=up_west]
+		east-up = -[orientation=east_up]
+		west-up = -[orientation=west_up]
+		north-up = -[orientation=north_up]
+		south-up = -[orientation=south_up]
+	{jigsaw-orientation} jigsaw block¦s = minecraft:jigsaw

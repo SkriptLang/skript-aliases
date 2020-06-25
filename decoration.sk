@@ -633,7 +633,7 @@ nether update:
 		level 1 = -[charges=1]
 		level 2 = -[charges=2]
 		level 3 = -[charges=3]
-		(full[y charged]|level 4) = -[charges=5]
+		(full[y charged]|level 4) = -[charges=4]
 
 	{charges} respawn anchor¦s = minecraft:respawn_anchor
 
