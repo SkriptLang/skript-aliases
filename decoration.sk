@@ -392,8 +392,8 @@ village and pillage decoratives:
 		(hanging|ceiling) = -[hanging=true]
 	{lantern hanging} lantern = minecraft:lantern
 
-	{waterloggable} {lightable} campfire¦s = minecraft:campfire
-	{waterloggable} {lightable} signal[ing] campfire = minecraft:campfire[signal_fire=true]
+	{waterloggable} {directional} {lightable} campfire¦s = minecraft:campfire
+	{waterloggable} {directional} {lightable} signal[ing] campfire = minecraft:campfire[signal_fire=true]
 
 update aquatic signs:
 	minecraft version = 1.13 to 1.13.2
