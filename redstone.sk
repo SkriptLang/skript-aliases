@@ -146,7 +146,6 @@ redstone after flattening:
 	{powerable} {directional} {wood type} {attached} button¦s = -button
 	{powerable} {directional} {attached} stone button¦s = minecraft:stone_button
 	[any] wood[en] button¦s = oak button, spruce button, birch button, jungle button, acacia button, dark oak button
-	[any] button¦s = stone button, any wooden button
 
 	# Pressure plates
 	{powerable} {wood type} pressure plate¦s = -pressure_plate
@@ -161,7 +160,6 @@ redstone after flattening:
 	{waterloggable} {openable} {trapdoor position} {directional} iron trapdoor¦s = minecraft:iron_trapdoor
 	{waterloggable} {openable} {trapdoor position} {directional} {wood type} trapdoor¦s = -trapdoor
 	[any] wood[en] trapdoor¦s = oak trapdoor, spruce trapdoor, birch trapdoor, jungle trapdoor, acacia trapdoor, dark oak trapdoor
-	[any] trapdoor¦s = iron trapdoor, any wooden trapdoor
 
 	# Fence gates
 	{powerable} {openable} {directional} {wood type} [fence] gate¦s = -fence_gate
@@ -171,7 +169,6 @@ redstone after flattening:
 	{powerable} {openable} {block half} {directional} {wood type} door¦s = -door
 	{powerable} {openable} {block half} {directional} iron door¦s = minecraft:iron_door
 	[any] wood[en] door¦s = oak door, spruce door, birch door, jungle door, acacia door, dark oak door
-	[any] door¦s = iron door, any wooden door
 
 	# Redstone torches
 	{lightable} redstone [floor] torch¦es = minecraft:redstone_torch
@@ -247,3 +244,21 @@ new observer:
 categories:
 	[any] daylight (detector|sensor)¦s = normal daylight detector, inverted daylight detector
 	[any] fence part = any fence, any gate # Fences come from decoration.sk
+
+nether update:
+	minecraft version = 1.16 or newer
+
+	target [block]¦s = minecraft:target
+	{powerable} polished blackstone pressure plate¦s = minecraft:polished_blackstone_pressure_plate
+	{powerable} {directional} {attached} polished blackstone button¦s = minecraft:polished_blackstone_button
+
+	[any] pressure plate¦s = stone pressure plate, gold pressure plate, iron pressure plate, any wooden pressure plate, crimson pressure plate, warped pressure plate, polished blackstone pressure plate
+	[any] wood[en] button¦s = oak button, spruce button, birch button, jungle button, acacia button, dark oak button, crimson button, warped button
+	[any] [fence] gate¦s = oak gate, spruce gate, birch gate, jungle gate, acacia gate, dark oak gate, crimson gate, warped gate
+	[any] wood[en] door¦s = oak door, spruce door, birch door, jungle door, acacia door, dark oak door, crimson door, warped door
+	[any] wood[en] trapdoor¦s = oak trapdoor, spruce trapdoor, birch trapdoor, jungle trapdoor, acacia trapdoor, dark oak trapdoor, crimson trapdoor, warped trapdoor
+
+global:
+	[any] door¦s = iron door, any wooden door
+	[any] button¦s = stone button, wood button
+	[any] trapdoor¦s = iron trapdoor, any wooden trapdoor

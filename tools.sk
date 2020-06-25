@@ -35,8 +35,6 @@ tools:
 	[any] shovel¦s = wooden shovel, stone shovel, golden shovel, iron shovel, diamond shovel
 	[any] hoe¦s = wooden hoe, stone hoe, golden hoe, iron hoe, diamond hoe
 
-	any tool¦s = any pickaxe, any axe, any shovel, any hoe
-
 	compass¦es = minecraft:compass
 	[gold[en]] clock¦s = minecraft:clock
 	fishing rod¦s = minecraft:fishing_rod
@@ -44,3 +42,20 @@ tools:
 	shear¦s = minecraft:shears
 	(lead¦s|leash¦es) = minecraft:lead
 	name[ ]tag¦s = minecraft:name_tag
+
+nether update:
+	minecraft version = 1.16 or newer
+	netherite pickaxe¦s = minecraft:netherite_pickaxe
+	netherite axe¦s = minecraft:netherite_axe
+	netherite shovel¦s = minecraft:netherite_shovel
+	netherite hoe¦s = minecraft:netherite_hoe
+
+	[any] netherite tool¦s = netherite pickaxe, netherite axe, netherite shovel, netherite hoe
+
+	[any] pickaxe¦s = wooden pickaxe, stone pickaxe, golden pickaxe, iron pickaxe, diamond pickaxe, netherite pickaxe
+	[any] axe¦s = wooden axe, stone axe, golden axe, iron axe, diamond axe, netherite axe
+	[any] shovel¦s = wooden shovel, stone shovel, golden shovel, iron shovel, diamond shovel, netherite shovel
+	[any] hoe¦s = wooden hoe, stone hoe, golden hoe, iron hoe, diamond hoe, netherite hoe
+
+global:
+	any tool¦s = any pickaxe, any axe, any shovel, any hoe
