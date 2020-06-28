@@ -248,7 +248,7 @@ categories:
 nether update:
 	minecraft version = 1.16 or newer
 
-	target [block]¦s = minecraft:target
+	(archery|redstone|hay|bullseye) target [block]¦s = minecraft:target
 	{powerable} polished blackstone pressure plate¦s = minecraft:polished_blackstone_pressure_plate
 	{powerable} {directional} {attached} polished blackstone button¦s = minecraft:polished_blackstone_button
 
