@@ -158,3 +158,14 @@ nether update:
 	netherite chest(piece|plate)¦s = minecraft:netherite_chestplate
 	netherite (pants|leggings) = minecraft:netherite_leggings
 	netherite boots = minecraft:netherite_boots
+	[any] netherite armo[u]r = netherite cap, netherite chestpiece, netherite pants, netherite boots
+
+	[any] armo[u]r = leather armor, iron armor, gold armor, diamond armor, chain armor, netherite armor
+
+	# By equipment slot
+	[any] (cap|helmet)¦s = leather cap, iron cap, gold cap, diamond cap, chain cap, netherite cap
+	[any] chest(piece|plate)¦s = leather chestpiece, iron chestpiece, gold chestpiece, diamond chestpiece, chain chestpiece, netherite chestpiece
+	[any] (pants|leggings) = leather pants, iron pants, gold pants, diamond pants, chain pants, netherite pants
+	[any] boots = leather boots, iron boots, gold boots, diamond boots, chain boots, netherite boots
+
+	[any] equipment = any weapon, any armor, shield
