@@ -591,7 +591,7 @@ village and pillage update:
 	{waterloggable} {stairs} {stairs shape} {directional} smooth quartz stair¦s = minecraft:smooth_quartz_stairs
 	{waterloggable} {stairs} {stairs shape} {directional} red nether brick stair¦s = minecraft:red_nether_brick_stairs
 	{waterloggable} {stairs} {stairs shape} {directional} end stone brick stair¦s = minecraft:end_stone_brick_stairs
-	[any] stone stair¦s = stone stairs, granite stairs, diorite stairs, andesite stairs, polished granite stairs, polished diorite stairs, polished andesite stairs, stone brick stairs, mossy stone brick stairs, cobblestone stairs, mossy cobblestone stairs
+	any stone stair¦s = stone stairs, granite stairs, diorite stairs, andesite stairs, polished granite stairs, polished diorite stairs, polished andesite stairs, stone brick stairs, mossy stone brick stairs, cobblestone stairs, mossy cobblestone stairs
 	[any] sandstone stair¦s = sandstone stairs, smooth sandstone stairs, red sandstone stairs, smooth red sandstone stairs
 	[any] stair¦s = any wood stairs, any stone stairs, any sandstone stairs, brick stairs, nether brick stairs, quartz stairs, purpur stairs, prismarine stairs, prismarine brick stairs, dark prismarine stairs, smooth quartz stairs, red nether brick stairs, end stone brick stairs
 
