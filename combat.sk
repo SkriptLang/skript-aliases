@@ -152,8 +152,13 @@ update aquatic categories:
 
 nether update:
 	minecraft version = 1.16 or newer
-	netherite sword¦s = minecraft:netherite_sword
 
+	# Add Netherite sword to the sword category.
+	netherite sword¦s = minecraft:netherite_sword
+	[any] sword¦s = wooden sword, stone sword, golden sword, iron sword, diamond sword, netherite sword
+	[any] weapon¦s = any sword, bow, trident, crossbow
+
+	# Define Netherite armor and redefine the armor category.
 	netherite (cap|helmet)¦s = minecraft:netherite_helmet
 	netherite chest(piece|plate)¦s = minecraft:netherite_chestplate
 	netherite (pants|leggings) = minecraft:netherite_leggings
@@ -162,7 +167,7 @@ nether update:
 
 	[any] armo[u]r = leather armor, iron armor, gold armor, diamond armor, chain armor, netherite armor
 
-	# By equipment slot
+	# Redefine by equipment slot.
 	[any] (cap|helmet)¦s = leather cap, iron cap, gold cap, diamond cap, chain cap, netherite cap
 	[any] chest(piece|plate)¦s = leather chestpiece, iron chestpiece, gold chestpiece, diamond chestpiece, chain chestpiece, netherite chestpiece
 	[any] (pants|leggings) = leather pants, iron pants, gold pants, diamond pants, chain pants, netherite pants
