@@ -640,8 +640,8 @@ nether update:
 	quartz brick¦s = minecraft:quartz_bricks
 
 	{nether block} nylium¦s = -nylium
-	{nether block} stem¦s = -stem
-	{nether block} hyphae = -hyphae
+	{axis-aligned} {nether block} stem¦s = -stem
+	{axis-aligned} {nether block} hyphae = -hyphae
 	{axis-aligned} stripped crimson stem¦s = minecraft:stripped_crimson_stem
 	{axis-aligned} stripped warped stem¦s = minecraft:stripped_warped_stem
 	{axis-aligned} stripped crimson hyphae¦s = minecraft:stripped_crimson_hyphae
