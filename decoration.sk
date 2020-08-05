@@ -643,3 +643,7 @@ nether update:
 
 	{lantern hanging} soul lantern¦s = minecraft:soul_lantern
 	any lantern = lantern, soul lantern
+
+	[any] wall sign¦s = any wall sign, crimson wall sign, warped wall sign
+	[any] floor sign¦s = any floor sign, crimson floor sign, warped floor sign
+	[any] sign¦s = any wall sign, any floor sign
