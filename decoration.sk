@@ -515,8 +515,8 @@ orientations before flattening:
 
 combat update skulls:
 	minecraft version = 1.9 to 1.12.2
-	[ender] dragon (head|skull) item¦s = minecraft:skull {SkullType:5}
-	({wall orientations}|{skull floor orientations}) [ender] dragon (head|skull)¦s = minecraft:skull {SkullType:5}
+	[ender] dragon (head|skull) item¦s = minecraft:skull {Damage:5}
+	({wall orientations}|{skull floor orientations}) [ender] dragon (head|skull)¦s = minecraft:skull {Damage:5}
 
 directionals before flattening:
 	minecraft version = 1.12.2 or older
