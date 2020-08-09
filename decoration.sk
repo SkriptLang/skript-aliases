@@ -365,6 +365,7 @@ village and pillage decoratives:
 	{directional} {lightable} blast furnace¦s = minecraft:blast_furnace
 	{directional} stone[ ]cutter¦s = minecraft:stonecutter
 	cartography table¦s = minecraft:cartography_table
+	any furnace = any furnace, smoker, blast furnace
 
 	# Whether the grindstone is on the floor, wall, or ceiling.
 	{grindstone face}:
