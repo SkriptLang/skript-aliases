@@ -142,7 +142,7 @@ spawn eggs after flattening:
 	(zombie [spawn] egg|spawn zombie)¦s = minecraft:zombie_spawn_egg
 	(zombie horse [spawn] egg|spawn zombie horse)¦s = minecraft:zombie_horse_spawn_egg
 	(zombie villager [spawn] egg|spawn zombie villager)¦s = minecraft:zombie_villager_spawn_egg
-	[any] spawn egg¦s = spawn bat, spawn blaze, spawn cave spider, spawn chicken, spawn cod, spawn cow, spawn creeper, spawn dolphin, spawn donkey, spawn drowned, spawn elder guardian, spawn enderman, spawn endermite, spawn evoker, spawn ghast, spawn guardian, spawn horse, spawn husk, spawn llama, spawn magma cube, spawn mooshroom, spawn mule, spawn ocelot, spawn parrot, spawn phantom, spawn pig, spawn polar bear, spawn pufferfish, spawn rabbit, spawn salmon, spawn sheep, spawn shulker, spawn silverfish, spawn skeleton, spawn skeleton horse, spawn slime, spawn spider, spawn squid, spawn stray, spawn tropical fish, spawn turtle, spawn vex, spawn villager, spawn vindicator, spawn witch, spawn wither skeleton, spawn wolf, spawn zombie, spawn zombie horse, spawn zombie pigman, spawn zombie villager
+	[any] spawn egg¦s = spawn bat, spawn blaze, spawn cave spider, spawn chicken, spawn cod, spawn cow, spawn creeper, spawn dolphin, spawn donkey, spawn drowned, spawn elder guardian, spawn enderman, spawn endermite, spawn evoker, spawn ghast, spawn guardian, spawn horse, spawn husk, spawn llama, spawn magma cube, spawn mooshroom, spawn mule, spawn ocelot, spawn parrot, spawn phantom, spawn pig, spawn polar bear, spawn pufferfish, spawn rabbit, spawn salmon, spawn sheep, spawn shulker, spawn silverfish, spawn skeleton, spawn skeleton horse, spawn slime, spawn spider, spawn squid, spawn stray, spawn tropical fish, spawn turtle, spawn vex, spawn villager, spawn vindicator, spawn witch, spawn wither skeleton, spawn wolf, spawn zombie, spawn zombie horse, spawn zombie villager
 
 village and pillage spawn eggs:
 	minecraft version = 1.14 or newer
@@ -164,7 +164,7 @@ buzzy bee spawn eggs:
 zombie pigman before nether update:
 	minecraft version = 1.13 to 1.15.2
 	((zombified piglin|zombie pig[man]) [spawn] egg|spawn (zombified piglin|zombie pig[man]))¦s = minecraft:zombie_pigman_spawn_egg
-	[any] spawn egg¦s = any spawn egg, spawn pigman
+	[any] spawn egg¦s = any spawn egg, spawn zombie pigman
 
 zombified piglin after nether update:
 	minecraft version = 1.16 or newer
