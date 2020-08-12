@@ -648,3 +648,10 @@ nether update:
 	[any] wall sign¦s = any wall sign, crimson wall sign, warped wall sign
 	[any] floor sign¦s = any floor sign, crimson floor sign, warped floor sign
 	[any] sign¦s = any wall sign, any floor sign
+
+nether update part 2:
+	minecraft version = 1.16.2 or newer
+	{waterloggable} {axis-aligned} chain¦s = minecraft:chain
+	{waterloggable} {lantern hanging} lantern = minecraft:lantern
+	{waterloggable} {lantern hanging} soul lantern¦s = minecraft:soul_lantern
+	any lantern = lantern, soul lantern
