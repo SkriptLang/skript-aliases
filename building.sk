@@ -665,7 +665,93 @@ nether update:
 
 	any blackstone slab¦s = blackstone slab, polished blackstone slab, polished blackstone brick slab
 	any blackstone stair¦s = blackstone stairs, polished blackstone stairs, polished blackstone brick stairs
-	[any] slab¦s = any wooden slab, stone slab, sandstone slab, petrified oak slab, cobblestone slab, brick slab, stone brick slab, nether brick slab, quartz slab, red sandstone slab, purpur slab, prismarine slab, prismarine brick slab, dark prismarine slab, stone slab, smooth stone slab, granite slab, diorite slab, andesite slab, polished granite slab, polished diorite slab, polished andesite slab, mossy stone brick slab, mossy cobblestone slab, smooth sandstone slab, smooth red sandstone slab, cut sandstone slab, cut red sandstone slab, smooth quartz slab, red nether brick slab, end stone brick slab, any blackstone slab
-	[any] stair¦s = any wood stairs, any stone stairs, any sandstone stairs, brick stairs, nether brick stairs, quartz stairs, purpur stairs, prismarine stairs, prismarine brick stairs, dark prismarine stairs, smooth quartz stairs, red nether brick stairs, end stone brick stairs, any blackstone stairs
+	[any] slab¦s = any slab, any blackstone slab
+	[any] stair¦s = any stair, any blackstone stair
 
-
+caves and cliffs update part 1:
+	minecraft version = 1.17 or newer
+	
+	(amethyst block¦s|block¦s of amethyst) = minecraft:amethyst_block
+	budding amethyst¦s = minecraft:budding_amethyst
+	
+	{waxed}:
+		{default}: minecraft:-
+		waxed: minecraft:waxed_-
+	{waxed} (copper block¦s|block¦s of copper) = -copper_block
+	{waxed} exposed copper [block¦s] = -exposed_copper
+	{waxed} weathered copper [block¦s] = -weathered_copper
+	{waxed} oxidized copper [block¦s] = -oxidized_copper
+	{waxed} cut copper [block¦s] = -cut_copper
+	{waxed} exposed cut copper [block¦s] = -exposed_cut_copper
+	{waxed} weathered cut copper [block¦s] = -weathered_cut_copper
+	{waxed} oxidized cut copper [block¦s] = -oxidized_cut_copper
+	
+	{waterloggable} {stairs} {stairs shape} {directional} {waxed} cut copper stair¦s = -cut_copper_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} {waxed} exposed copper stair¦s = -exposed_cut_copper_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} {waxed} weathered copper stair¦s = -weathered_cut_copper_stairs
+	{waterloggable} {stairs} {stairs shape} {directional} {waxed} oxidized copper stair¦s = -oxidized_cut_copper_stairs
+	
+	any non-waxed [cut] copper stair¦s = cut copper stairs, exposed copper stairs, weathered copper stairs, oxidized copper stairs
+	any waxed [cut] copper stair¦s = waxed cut copper stairs, waxed exposed copper stairs, waxed weathered copper stairs, waxed oxidized copper stairs
+	any [cut] copper stair¦s = any non-waxed copper stairs, any waxed copper stairs
+	
+	{waterloggable} {slab} {waxed} cut copper slab¦s = -cut_copper_slab
+	{waterloggable} {slab} {waxed} exposed copper slab¦s = -exposed_cut_copper_slab
+	{waterloggable} {slab} {waxed} weathered copper slab¦s = -weathered_cut_copper_slab
+	{waterloggable} {slab} {waxed} oxidized copper slab¦s = -oxidized_cut_copper_slab
+	
+	any non-waxed [cut] copper slab¦s = cut copper slab, exposed copper slab, weathered copper slab, oxidized copper slab
+	any waxed [cut] copper slab¦s = waxed cut copper slab, waxed exposed copper slab, waxed weathered copper slab, waxed oxidized copper slab
+	any [cut] copper slab¦s = any non-waxed copper slab, any waxed copper slab
+	
+	{axis-aligned} deepslate [block¦s] = minecraft:deepslate
+	chiseled deepslate [block¦s] = minecraft:chiseled_deepslate
+	
+	cobbled deepslate [block¦s] = minecraft:cobbled_deepslate
+	{waterloggable} {stairs} {stairs shape} {directional} cobbled deepslate stair¦s = minecraft:cobbled_deepslate_stairs
+	{waterloggable} {slab} cobbled deepslate slab¦s = minecraft:cobbled_deepslate_slab
+	
+	polished deepslate [block¦s] = minecraft:polished_deepslate
+	{waterloggable} {stairs} {stairs shape} {directional} polished deepslate stair¦s = minecraft:polished_deepslate_stairs
+	{waterloggable} {slab} polished deepslate slab¦s = minecraft:polished_deepslate_slab
+	
+	deepslate tile¦s = minecraft:deepslate_tiles
+	cracked deepslate tile¦s = minecraft:cracked_deepslate_tiles
+	any deepslate tile¦s = deepslate tile, cracked tile brick
+	{waterloggable} {stairs} {stairs shape} {directional} deepslate tile stair¦s = minecraft:deepslate_tile_stairs
+	{waterloggable} {slab} deepslate tile slab¦s = minecraft:deepslate_tile_slab
+	
+	deepslate brick¦s = minecraft:deepslate_bricks
+	cracked deepslate brick¦s = minecraft:cracked_deepslate_bricks
+	any deepslate brick¦s = deepslate brick, cracked deepslate brick
+	{waterloggable} {stairs} {stairs shape} {directional} deepslate brick stair¦s = minecraft:deepslate_brick_stairs
+	{waterloggable} {slab} deepslate brick slab¦s = minecraft:deepslate_brick_slab
+	
+	[any] stair¦s = any stair, any copper stairs, cobbled deepslate stairs, polished deepslate stairs, deepslate tile stairs, deepslate brick stairs
+	[any] slab¦s = any slab, any copper slab, cobbled deepslate slab, polished deepslate slab, deepslate tile slab, deepslate brick slab
+	
+	(raw iron block¦s|block¦s of raw iron) = minecraft:raw_iron_block
+	(raw copper block¦s|block¦s of raw copper) = minecraft:raw_copper_block
+	(raw gold block¦s|block¦s of raw gold) = minecraft:raw_gold_block
+	
+	calcite = minecraft:calcite
+	tuff = minecraft:tuff
+	dripstone block¦s = minecraft:dripstone_block
+	smooth basalt = minecraft:smooth_basalt
+	rooted dirt [block¦s] = minecraft:rooted_dirt
+	
+	tinted glass = minecraft:tinted_glass
+	
+	copper ore¦s = minecraft:copper_ore
+	deepslate coal ore¦s = minecraft:deepslate_coal_ore
+	deepslate iron ore¦s = minecraft:deepslate_iron_ore
+	deepslate copper ore¦s = minecraft:deepslate_copper_ore
+	deepslate gold ore¦s = minecraft:deepslate_gold_ore
+	deepslate redstone ore¦s = minecraft:deepslate_redstone_ore
+	deepslate emerald ore¦s = minecraft:deepslate_emerald_ore
+	deepslate lapis lazuli ore¦s = minecraft:deepslate_lapis_lazuli_ore
+	deepslate diamond ore¦s = minecraft:deepslate_diamond_ore
+	
+	[any] stone ore = any ore
+	[any] deepslate ore = deepslate coal ore, deepslate iron ore, deepslate copper ore, deepslate gold ore, deepslate redstone ore, deepslate emerald ore, deepslate lapis lazuli ore, deepslate diamond ore
+	[any] ore = any stone ore, any deepslate ore

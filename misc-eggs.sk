@@ -167,3 +167,10 @@ nether update part 2:
 	minecraft version = 1.16.2 or newer
 	(piglin brute [spawn] egg|spawn piglin brute)¦s = minecraft:piglin_brute_spawn_egg
 	[any] spawn egg¦s = any spawn egg, spawn piglin brute
+
+caves and cliffs update part 1:
+	minecraft version = 1.17 or newer
+	(axolotl [spawn] egg|spawn axolotl)¦s = minecraft:axolotl_spawn_egg
+	(goat [spawn] egg|spawn goat)¦s = minecraft:goat_spawn_egg
+	(glow squid [spawn] egg|spawn glow squid)¦s = minecraft:glow_squid_spawn_egg
+	[any] spawn egg¦s = any spawn egg, spawn axolotl, spawn goat, spawn glow squid

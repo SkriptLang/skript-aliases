@@ -237,3 +237,47 @@ nether update:
 		north-up = -[orientation=north_up]
 		south-up = -[orientation=south_up]
 	{jigsaw-orientation} jigsaw block¦s = minecraft:jigsaw
+
+caves and cliffs update part 1:
+	minecraft version = 1.17 or newer
+	
+	candle = minecraft:candle_cake
+	{colored} candle = -candle_cake
+	
+	{berried}:
+		{default}: -
+		berried = -[berries=true]
+	cave vines = minecraft:cave_vines
+	cave vines plant = minecraft:cave_vines_plant
+	
+	powder snow = minecraft:powder_snow
+	
+	{light level}:
+		{default}: -
+		level (1|one): - {BlockStateTag: {level:"1"}}
+		level (2|two): - {BlockStateTag: {level:"2"}}
+		level (3|three): - {BlockStateTag: {level:"3"}}
+		level (4|four): - {BlockStateTag: {level:"4"}}
+		level (5|five): - {BlockStateTag: {level:"5"}}
+		level (6|six): - {BlockStateTag: {level:"6"}}
+		level (7|seven): - {BlockStateTag: {level:"7"}}
+		level (8|eight): - {BlockStateTag: {level:"8"}}
+		level (9|nine): - {BlockStateTag: {level:"9"}}
+		level (10|ten): - {BlockStateTag: {level:"10"}}
+		level (11|eleven): - {BlockStateTag: {level:"11"}}
+		level (12|twelve): - {BlockStateTag: {level:"12"}}
+		level (13|thirteen): - {BlockStateTag: {level:"13"}}
+		level (14|fourteen): - {BlockStateTag: {level:"14"}}
+		level (15|fifteen): - {BlockStateTag: {level:"15"}}
+	{light level} light [block¦s] = minecraft:light
+	
+	# The following aliases will likely need to be moved to their 'proper' categories in the future
+	# As of 1.17, these items were not fully implemented
+	
+	bundle¦s = minecraft:bundle
+	
+	{sculk sensor activity}:
+		{default} = -
+		active = -[sculk_sensor_phase=active]
+		cooldown = -[sculk_sensor_phase=cooldown]
+	{waterlogged} {sculk sensor activity} sculk sensor = minecraft:sculk_sensor
