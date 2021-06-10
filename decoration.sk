@@ -672,8 +672,8 @@ caves and cliffs update part 1:
 	{decayable} flowering azalea lea(f|ves) = minecraft:flowering_azalea_leaves
 	[any] lea(f|ves) = any leaves, azalea leaves, flowering azalea leaves
 	
-	candle = minecraft:candle
-	{colored} candle = -candle
+	candle¦s = minecraft:candle
+	{colored} candle¦s = -candle
 	
 	{pointed dripstone thickness}:
 		{default} = -
@@ -688,7 +688,7 @@ caves and cliffs update part 1:
 		(ceiling [attached]|downward facing) = -[vertical_direction=up]
 	{waterloggable} {pointed dripstone direction} pointed dripstone {pointed dripstone thickess} = minecraft:pointed_dripstone
 	
-	spore blossom = minecraft:spore_blossom
+	spore blossom¦s = minecraft:spore_blossom
 	
 	moss carpet¦s = minecraft:moss_carpet
 	moss block¦s = minecraft:moss_block

@@ -241,8 +241,8 @@ nether update:
 caves and cliffs update part 1:
 	minecraft version = 1.17 or newer
 	
-	candle = minecraft:candle_cake
-	{colored} candle = -candle_cake
+	candle cake¦s = minecraft:candle_cake
+	{colored} candle cake¦s = -candle_cake
 	
 	{berried}:
 		{default}: -
@@ -250,7 +250,7 @@ caves and cliffs update part 1:
 	cave vines = minecraft:cave_vines
 	cave vines plant = minecraft:cave_vines_plant
 	
-	powder snow = minecraft:powder_snow
+	powder snow [block¦s] = minecraft:powder_snow
 	
 	{light level}:
 		{default}: -
