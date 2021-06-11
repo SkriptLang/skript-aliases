@@ -413,7 +413,6 @@ combat update:
 	minecraft version = 1.9 or newer
 	chorus (plant|stem)¦s = minecraft:chorus_plant
 	chorus flower¦s = minecraft:chorus_flower
-	grass path [block]¦s = minecraft:grass_path
 	end[er] crystal [item]¦s = minecraft:end_crystal[relatedEntity=ender crystal]
 
 # Shulker boxes were introduced in 1.11 but purple ones weren't differentiated from undyed.
@@ -657,6 +656,11 @@ nether update part 2:
 	{waterloggable} {lantern hanging} soul lantern¦s = minecraft:soul_lantern
 	any lantern = lantern, soul lantern
 
+before caves and cliffs update part 1:
+	minecraft version = 1.16.5 or older
+	
+	(grass|dirt) path [block]¦s = minecraft:grass_path
+
 caves and cliffs update part 1:
 	minecraft version = 1.17 or newer
 	
@@ -686,7 +690,7 @@ caves and cliffs update part 1:
 		{default} = -
 		(floor [attached]|upward facing) = -[vertical_direction=down]
 		(ceiling [attached]|downward facing) = -[vertical_direction=up]
-	{waterloggable} {pointed dripstone direction} pointed dripstone {pointed dripstone thickess} = minecraft:pointed_dripstone
+	{waterloggable} {pointed dripstone direction} pointed dripstone {pointed dripstone thickness} = minecraft:pointed_dripstone
 	
 	spore blossom¦s = minecraft:spore_blossom
 	
@@ -696,11 +700,11 @@ caves and cliffs update part 1:
 	{waterloggable} hanging root¦s = minecraft:hanging_roots
 	
 	{dripleaf tilt}:
-		{default}: -
-		fully tilted: -[tilt=full]
-		non-tilted: -[tilt=none]
-		partially tilted: -[tilt=partial]
-		unstabl(e|y tilted): -[tilt=unstable]
+		{default} = -
+		fully tilted = -[tilt=full]
+		non-tilted = -[tilt=none]
+		partially tilted = -[tilt=partial]
+		unstabl(e|y tilted) = -[tilt=unstable]
 	{waterloggable} {directional} {dripleaf tilt} big dripleaf = minecraft:big_dripleaf
 	{waterloggable} {directional} big dripleaf stem = minecraft:big_dripleaf_stem
 	{waterloggable} {directional} {block half} small dripleaf = minecraft:small_dripleaf
@@ -711,7 +715,9 @@ caves and cliffs update part 1:
 	{waterloggable} cobbled deepslate wall¦s = minecraft:cobbled_deepslate_wall
 	{waterloggable} polished deepslate wall¦s = minecraft:polished_deepslate_wall
 	{waterloggable} deepslate brick wall¦s = minecraft:deepslate_brick_wall
-	{waterloggable} deepslate tile wall¦s = minecraft:cobbled_deepslate_tile_wall
+	{waterloggable} deepslate tile wall¦s = minecraft:deepslate_tile_wall
 	
 	{waterloggable} glow lichen¦s = minecraft:glow_lichen
 	glow item frame [item]¦s = minecraft:glow_item_frame[relatedEntity=glow item frame]
+	
+	(grass|dirt) path [block]¦s = minecraft:dirt_path

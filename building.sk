@@ -675,8 +675,8 @@ caves and cliffs update part 1:
 	budding amethyst¦s = minecraft:budding_amethyst
 	
 	{waxed}:
-		{default}: minecraft:-
-		waxed: minecraft:waxed_-
+		{default} = minecraft:-
+		waxed = minecraft:waxed_-
 	{waxed} (copper block¦s|block¦s of copper) = -copper_block
 	{waxed} exposed copper [block¦s] = -exposed_copper
 	{waxed} weathered copper [block¦s] = -weathered_copper
@@ -717,7 +717,7 @@ caves and cliffs update part 1:
 	
 	deepslate tile¦s = minecraft:deepslate_tiles
 	cracked deepslate tile¦s = minecraft:cracked_deepslate_tiles
-	any deepslate tile¦s = deepslate tile, cracked tile brick
+	any deepslate tile¦s = deepslate tile, cracked deepslate tile
 	{waterloggable} {stairs} {stairs shape} {directional} deepslate tile stair¦s = minecraft:deepslate_tile_stairs
 	{waterloggable} {slab} deepslate tile slab¦s = minecraft:deepslate_tile_slab
 	
@@ -749,9 +749,9 @@ caves and cliffs update part 1:
 	deepslate gold ore¦s = minecraft:deepslate_gold_ore
 	deepslate redstone ore¦s = minecraft:deepslate_redstone_ore
 	deepslate emerald ore¦s = minecraft:deepslate_emerald_ore
-	deepslate lapis lazuli ore¦s = minecraft:deepslate_lapis_lazuli_ore
+	deepslate lapis [lazuli] ore¦s = minecraft:deepslate_lapis_ore
 	deepslate diamond ore¦s = minecraft:deepslate_diamond_ore
 	
 	[any] stone ore = any ore
-	[any] deepslate ore = deepslate coal ore, deepslate iron ore, deepslate copper ore, deepslate gold ore, deepslate redstone ore, deepslate emerald ore, deepslate lapis lazuli ore, deepslate diamond ore
+	[any] deepslate ore = deepslate coal ore, deepslate iron ore, deepslate copper ore, deepslate gold ore, deepslate redstone ore, deepslate emerald ore, deepslate lapis ore, deepslate diamond ore
 	[any] ore = any stone ore, any deepslate ore

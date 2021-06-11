@@ -261,7 +261,7 @@ nether update:
 caves and cliffs update part 1:
 	minecraft version = 1.17 or newer
 	
-	{waterloggable} {powered} {orientable} lightning rod¦s = minecraft:lightning_rod
+	{waterloggable} {powerable} {orientable} lightning rod¦s = minecraft:lightning_rod
 
 global post flattening:
 	minecraft version = 1.13 or newer
