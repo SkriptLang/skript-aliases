@@ -413,7 +413,6 @@ combat update:
 	minecraft version = 1.9 or newer
 	chorus (plant|stem)¦s = minecraft:chorus_plant
 	chorus flower¦s = minecraft:chorus_flower
-	grass path [block]¦s = minecraft:grass_path
 	end[er] crystal [item]¦s = minecraft:end_crystal[relatedEntity=ender crystal]
 
 # Shulker boxes were introduced in 1.11 but purple ones weren't differentiated from undyed.
@@ -651,7 +650,74 @@ nether update:
 
 nether update part 2:
 	minecraft version = 1.16.2 or newer
+	
 	{waterloggable} {axis-aligned} chain¦s = minecraft:chain
 	{waterloggable} {lantern hanging} lantern = minecraft:lantern
 	{waterloggable} {lantern hanging} soul lantern¦s = minecraft:soul_lantern
 	any lantern = lantern, soul lantern
+
+before caves and cliffs update part 1:
+	minecraft version = 1.16.5 or older
+	
+	(grass|dirt) path [block]¦s = minecraft:grass_path
+
+caves and cliffs update part 1:
+	minecraft version = 1.17 or newer
+	
+	{waterloggable} {orientable} small amethyst bud¦s = minecraft:small_amethyst_bud
+	{waterloggable} {orientable} medium amethyst bud¦s = minecraft:medium_amethyst_bud
+	{waterloggable} {orientable} large amethyst bud¦s = minecraft:large_amethyst_bud
+	[any] amethyst bud¦s = small amethyst bud, medium amethyst bud, large amethyst bud
+	{waterloggable} {orientable} amethyst cluster¦s = minecraft:amethyst_cluster
+	
+	azalea¦s = minecraft:azalea
+	flowering azalea¦s = minecraft:flowering_azalea
+	{decayable} azalea lea(f|ves) = minecraft:azalea_leaves
+	{decayable} flowering azalea lea(f|ves) = minecraft:flowering_azalea_leaves
+	[any] lea(f|ves) = any leaves, azalea leaves, flowering azalea leaves
+	
+	candle¦s = minecraft:candle
+	{colored} candle¦s = -candle
+	
+	{pointed dripstone thickness}:
+		{default} = -
+		base = -[thickness=base]
+		frustum = -[thickness=frustum]
+		middle = -[thickness=middle]
+		tip = -[thickness=tip]
+		tip merge = -[thickness=tip_merge]
+	{pointed dripstone direction}:
+		{default} = -
+		(floor [attached]|upward facing) = -[vertical_direction=down]
+		(ceiling [attached]|downward facing) = -[vertical_direction=up]
+	{waterloggable} {pointed dripstone direction} pointed dripstone {pointed dripstone thickness} = minecraft:pointed_dripstone
+	
+	spore blossom¦s = minecraft:spore_blossom
+	
+	moss carpet¦s = minecraft:moss_carpet
+	moss block¦s = minecraft:moss_block
+	
+	{waterloggable} hanging root¦s = minecraft:hanging_roots
+	
+	{dripleaf tilt}:
+		{default} = -
+		fully tilted = -[tilt=full]
+		non-tilted = -[tilt=none]
+		partially tilted = -[tilt=partial]
+		unstabl(e|y tilted) = -[tilt=unstable]
+	{waterloggable} {directional} {dripleaf tilt} big dripleaf = minecraft:big_dripleaf
+	{waterloggable} {directional} big dripleaf stem = minecraft:big_dripleaf_stem
+	{waterloggable} {directional} {block half} small dripleaf = minecraft:small_dripleaf
+	
+	(infested|silverfish) deepslate [block]¦s = minecraft:infested_deepslate
+	[any] (infested|silverfish) block¦s = any infested block, infested deepslate
+	
+	{waterloggable} cobbled deepslate wall¦s = minecraft:cobbled_deepslate_wall
+	{waterloggable} polished deepslate wall¦s = minecraft:polished_deepslate_wall
+	{waterloggable} deepslate brick wall¦s = minecraft:deepslate_brick_wall
+	{waterloggable} deepslate tile wall¦s = minecraft:deepslate_tile_wall
+	
+	{waterloggable} glow lichen¦s = minecraft:glow_lichen
+	glow item frame [item]¦s = minecraft:glow_item_frame[relatedEntity=glow item frame]
+	
+	(grass|dirt) path [block]¦s = minecraft:dirt_path

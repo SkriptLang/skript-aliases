@@ -57,5 +57,9 @@ nether update:
 	[any] shovel¦s = wooden shovel, stone shovel, golden shovel, iron shovel, diamond shovel, netherite shovel
 	[any] hoe¦s = wooden hoe, stone hoe, golden hoe, iron hoe, diamond hoe, netherite hoe
 
+caves and cliffs update part 1:
+	minecraft version = 1.17 or newer
+	spyglass¦es = minecraft:spyglass
+
 global:
 	any tool¦s = any pickaxe, any axe, any shovel, any hoe

@@ -31,12 +31,15 @@ unchanged foods:
 
 village and pillage update foods:
 	minecraft version = 1.14 or newer
-	dried kelp = minecraft:dried_kelp
 	sweet berr(y|ies) = minecraft:sweet_berries
 
 buzzy bee update update foods:
 	minecraft version = 1.15 or newer
 	honey bottle¦s = minecraft:honey_bottle
+
+caves and cliffs update part 1:
+	minecraft version = 1.17 or newer
+	glow berr(y|ies) = minecraft:glow_berries
 
 # Before the flattening in 1.13, some foods used data values.
 foods before flattening:
@@ -111,6 +114,14 @@ food categories after update aquatic:
 	[any] dessert¦s = cookie, cake, pumpkin pie
 	[any] food = any fish, fruit, root vegetables, stews, meats, monster meats, desserts, bread, baked potato, poisonous potato, dried kelp
 
+food categories after village and pillage update:
+	minecraft version = 1.14 or newer
+	[any] food = any food, sweet berry
+
 food categories after buzzy bee update:
 	minecraft version = 1.15 or newer
-	[any] food = any fish, fruit, root vegetables, stews, meats, monster meats, desserts, bread, baked potato, poisonous potato, dried kelp, honey bottle
+	[any] food = any food, honey bottle
+
+food categories after caves and cliffs update part 1:
+	minecraft version = 1.17 or newer
+	[any] food = any food, glow berry

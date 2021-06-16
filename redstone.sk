@@ -258,6 +258,11 @@ nether update:
 	[any] wood[en] door¦s = oak door, spruce door, birch door, jungle door, acacia door, dark oak door, crimson door, warped door
 	[any] wood[en] trapdoor¦s = oak trapdoor, spruce trapdoor, birch trapdoor, jungle trapdoor, acacia trapdoor, dark oak trapdoor, crimson trapdoor, warped trapdoor
 
+caves and cliffs update part 1:
+	minecraft version = 1.17 or newer
+	
+	{waterloggable} {powerable} {orientable} lightning rod¦s = minecraft:lightning_rod
+
 global post flattening:
 	minecraft version = 1.13 or newer
 	[any] door¦s = iron door, any wooden door

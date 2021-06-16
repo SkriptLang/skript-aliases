@@ -146,10 +146,10 @@ unchanged buckets:
 
 new buckets:
 	minecraft version = 1.13 or newer
-	tropical fish bucket¦s = minecraft:tropical_fish_bucket
-	cod bucket¦s = minecraft:cod_bucket
-	pufferfish bucket¦s = minecraft:pufferfish_bucket
-	salmon bucket¦s = minecraft:salmon_bucket
+	(tropical fish bucket¦s|bucket¦s of tropical fish) = minecraft:tropical_fish_bucket
+	(cod bucket¦s|bucket¦s of cod) = minecraft:cod_bucket
+	(pufferfish bucket¦s|bucket¦s of pufferfish) = minecraft:pufferfish_bucket
+	(salmon bucket¦s|bucket¦s of salmon) = minecraft:salmon_bucket
 	any bucket = empty bucket, water bucket, lava bucket, milk, tropical fish bucket, cod bucket, pufferfish bucket, salmon bucket
 	any fish bucket = tropical fish bucket, cod bucket, pufferfish bucket, salmon bucket
 
@@ -300,6 +300,7 @@ nether update:
 	minecraft version = 1.16 or newer
 
 	netherite ingot¦s = minecraft:netherite_ingot
+	any ingot¦s = any ingot, netherite ingot
 	netherite scrap¦s = minecraft:netherite_scrap
 
 	[music] (disc|record) pigstep = minecraft:music_disc_pigstep
@@ -307,3 +308,23 @@ nether update:
 
 	(snout|piglin) banner pattern¦s = minecraft:piglin_banner_pattern
 	[any] banner pattern¦s = flower charge banner pattern, creeper charge banner pattern, skull charge banner pattern, thing banner pattern, globe banner pattern, snout banner pattern
+
+caves and cliffs update part 1:
+	minecraft version = 1.17 or newer
+	
+	glow ink sac¦s = minecraft:glow_ink_sac
+	
+	amethyst shard¦s = minecraft:amethyst_shard
+	
+	powder snow bucket¦s = minecraft:powder_snow_bucket
+	(axolotl bucket¦s|bucket¦s of axolotl) = minecraft:axolotl_bucket
+	any bucket = any bucket, powder snow bucket, axolotl bucket
+	any fish bucket = any fish bucket, axolotl bucket
+	
+	copper ingot¦s = minecraft:copper_ingot
+	any ingot¦s = any ingot, copper ingot
+	
+	raw iron = minecraft:raw_iron
+	raw copper = minecraft:raw_copper
+	raw gold = minecraft:raw_gold
+	[any] raw ore¦s = raw iron, raw copper, raw gold

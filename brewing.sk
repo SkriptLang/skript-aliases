@@ -69,8 +69,12 @@ potions:
 	[any] lingering potion = minecraft:lingering_potion
 	any potion = potion, any splash potion, any lingering potion
 
-blocks:
+blocks unchanged:
 	brewing stand¦s = minecraft:brewing_stand
+
+blocks before caves and cliffs update part 1:
+	minecraft version = 1.16.5 or older
+	
 	{cauldron level}:
 		{default} = -
 		empty = -[level=0]
@@ -78,6 +82,21 @@ blocks:
 		two-thirds filled = -[level=2]
 		(filled|full) = -[level=3]
 	{cauldron level} cauldron¦s = minecraft:cauldron
+
+blocks after caves and cliffs update part 1:
+	minecraft version = 1.17 or newer
+	
+	[empty] cauldron¦s = minecraft:cauldron
+	
+	lava cauldron¦s = minecraft:lava_cauldron
+	{cauldron level}:
+		{default} = -
+		one-third filled = -[level=1]
+		two-thirds filled = -[level=2]
+		(filled|full) = -[level=3]
+	{cauldron level} [water] cauldron¦s = minecraft:water_cauldron # "water" is optional for backwards compatibility
+	{cauldron level} powder snow cauldron¦s = minecraft:powder_snow_cauldron
+	
 
 combat update brewing:
 	minecraft version = 1.9 or newer
