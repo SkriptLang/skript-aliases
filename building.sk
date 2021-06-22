@@ -752,7 +752,7 @@ caves and cliffs update part 1:
 	deepslate lapis [lazuli] ore¦s = minecraft:deepslate_lapis_ore
 	deepslate diamond ore¦s = minecraft:deepslate_diamond_ore
 	
-	[any] stone ore = gold ore, iron ore, coal ore, lapis ore, diamond ore, redstone ore, emerald ore
+	[any] stone ore = gold ore, iron ore, coal ore, lapis ore, diamond ore, redstone ore, emerald ore, copper ore
 	[any] nether ore = nether gold ore, nether quartz ore
 	[any] deepslate ore = deepslate coal ore, deepslate iron ore, deepslate copper ore, deepslate gold ore, deepslate redstone ore, deepslate emerald ore, deepslate lapis ore, deepslate diamond ore
 	[any] ore = any stone ore, any deepslate ore, any nether ore
