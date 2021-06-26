@@ -410,15 +410,15 @@ building blocks after flattening:
 
 # Categories for items that exist in both 1.13 and before but with different ids
 categories:
-	any oak log = oak log, east-west oak log, north-south oak log, oak bark
-	any spruce log = spruce log, east-west spruce log, north-south spruce log, spruce bark
-	any birch log = birch log, east-west birch log, north-south birch log, birch bark
-	any jungle log = jungle log, east-west jungle log, north-south jungle log, jungle bark
-	any acacia log = acacia log, east-west acacia log, north-south acacia log, acacia bark
-	any dark oak log = dark oak log, east-west dark oak log, north-south dark oak log, dark oak bark
+	any oak log = oak log, east-west oak log, north-south oak log
+	any spruce log = spruce log, east-west spruce log, north-south spruce log
+	any birch log = birch log, east-west birch log, north-south birch log
+	any jungle log = jungle log, east-west jungle log, north-south jungle log
+	any acacia log = acacia log, east-west acacia log, north-south acacia log
+	any dark oak log = dark oak log, east-west dark oak log, north-south dark oak log
 
 	[any] bark = oak bark, spruce bark, birch bark, jungle bark, acacia bark, dark oak bark
-	[any] log = any oak log, any spruce log, any birch log, any jungle log, any acacia log, any dark oak log
+	[any] log = any oak log, any spruce log, any birch log, any jungle log, any acacia log, any dark oak log, any bark
 	[any] normal log = any log # 1.13 adds some not so normal log types
 
 	[any] stone ore = gold ore, iron ore, coal ore, lapis ore, diamond ore, redstone ore, emerald ore
@@ -668,6 +668,7 @@ nether update:
 	any blackstone stair¦s = blackstone stairs, polished blackstone stairs, polished blackstone brick stairs
 	[any] slab¦s = any slab, any blackstone slab
 	[any] stair¦s = any stair, any blackstone stair
+	[any] stem = crimson stem, warped stem
 
 caves and cliffs update part 1:
 	minecraft version = 1.17 or newer
