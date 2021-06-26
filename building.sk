@@ -421,7 +421,8 @@ categories:
 	[any] log = any oak log, any spruce log, any birch log, any jungle log, any acacia log, any dark oak log
 	[any] normal log = any log # 1.13 adds some not so normal log types
 
-	[any] ore = gold ore, iron ore, coal ore, lapis ore, diamond ore, redstone ore, emerald ore, nether quartz ore, copper ore, nether gold ore
+	[any] stone ore = gold ore, iron ore, coal ore, lapis ore, diamond ore, redstone ore, emerald ore
+	[any] ore = any stone ore, nether quartz ore
 
 #== UPDATE-SPECIFICS
 # Building blocks added in 1.9 whose IDs have never changed. End City stuff, namely.
@@ -752,6 +753,7 @@ caves and cliffs update part 1:
 	deepslate lapis [lazuli] ore¦s = minecraft:deepslate_lapis_ore
 	deepslate diamond ore¦s = minecraft:deepslate_diamond_ore
 	
-	[any] stone ore = any ore
+	[any] stone ore = any stone ore
 	[any] deepslate ore = deepslate coal ore, deepslate iron ore, deepslate copper ore, deepslate gold ore, deepslate redstone ore, deepslate emerald ore, deepslate lapis ore, deepslate diamond ore
-	[any] ore = any stone ore, any deepslate ore
+	[any] nether ore = nether quartz ore, nether gold ore, ancient debris
+	[any] ore = any stone ore, any deepslate ore, any nether ore
