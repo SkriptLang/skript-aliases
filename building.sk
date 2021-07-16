@@ -3,7 +3,6 @@
 # These were not changed in 1.13
 unchanged building blocks:
 	# Stones
-	stone [block¦s] = minecraft:stone
 
 	cobble[stone] [block¦s] = minecraft:cobblestone
 	moss[y] cobble[stone] [block¦s] = minecraft:mossy_cobblestone
@@ -59,6 +58,7 @@ unchanged building blocks:
 old blocks before flattening:
 	minecraft version = 1.12.2 or older
 	# Stones
+	stone [block¦s] = minecraft:stone {Damage:0}
 	[raw] granite¦s = minecraft:stone {Damage:1}
 	(smooth|polished) granite¦s = minecraft:stone {Damage:2}
 	any granite¦s = raw granite, polished granite
@@ -249,6 +249,7 @@ old blocks before flattening:
 building blocks after flattening:
 	minecraft version = 1.13 or newer
 	# Stones
+	stone [block¦s] = minecraft:stone
 	[raw] granite¦s = minecraft:granite
 	(smooth|polished) granite¦s = minecraft:polished_granite
 	any granite¦s = raw granite, polished granite
@@ -421,7 +422,9 @@ categories:
 	[any] log = any oak log, any spruce log, any birch log, any jungle log, any acacia log, any dark oak log
 	[any] normal log = any log # 1.13 adds some not so normal log types
 
-	[any] ore = gold ore, iron ore, coal ore, lapis ore, diamond ore, redstone ore, emerald ore, nether quartz ore
+	[any] stone ore = gold ore, iron ore, coal ore, lapis ore, diamond ore, redstone ore, emerald ore
+	[any] nether ore = nether quartz ore
+	[any] ore = any stone ore, any nether ore
 
 #== UPDATE-SPECIFICS
 # Building blocks added in 1.9 whose IDs have never changed. End City stuff, namely.
@@ -621,7 +624,7 @@ village and pillage update:
 	{waterloggable} {slab} red nether brick slab¦s = minecraft:red_nether_brick_slab
 	{waterloggable} {slab} end stone brick slab¦s = minecraft:end_stone_brick_slab
 	[any] slab¦s = any wooden slab, stone slab, sandstone slab, petrified oak slab, cobblestone slab, brick slab, stone brick slab, nether brick slab, quartz slab, red sandstone slab, purpur slab, prismarine slab, prismarine brick slab, dark prismarine slab, stone slab, smooth stone slab, granite slab, diorite slab, andesite slab, polished granite slab, polished diorite slab, polished andesite slab, mossy stone brick slab, mossy cobblestone slab, smooth sandstone slab, smooth red sandstone slab, cut sandstone slab, cut red sandstone slab, smooth quartz slab, red nether brick slab, end stone brick slab
-	[any] stone slab¦s = stone slab, smooth stone slab, granite slab, diorite slab, andesite slab, polished granite slab, polished diorite slab, polished andesite slab, mossy stone brick slab, mossy cobblestone slab
+	any stone slab¦s = stone slab, smooth stone slab, granite slab, diorite slab, andesite slab, polished granite slab, polished diorite slab, polished andesite slab, mossy stone brick slab, mossy cobblestone slab
 	[any] sandstone slab¦s = smooth sandstone slab, smooth red sandstone slab, cut sandstone slab, cut red sandstone slab
 
 nether update:
@@ -638,6 +641,9 @@ nether update:
 	cracked nether brick¦s = minecraft:cracked_nether_bricks
 	nether gold ore¦s = minecraft:nether_gold_ore
 	quartz brick¦s = minecraft:quartz_bricks
+	
+	[any] nether ore = any nether ore, ancient debris, nether gold ore
+	[any] ore = any stone ore, any nether ore
 
 	{nether block} nylium¦s = -nylium
 	{axis-aligned} {nether block} stem¦s = -stem
@@ -665,8 +671,8 @@ nether update:
 
 	any blackstone slab¦s = blackstone slab, polished blackstone slab, polished blackstone brick slab
 	any blackstone stair¦s = blackstone stairs, polished blackstone stairs, polished blackstone brick stairs
-	[any] slab¦s = any slab, any blackstone slab
-	[any] stair¦s = any stair, any blackstone stair
+	[any] slab¦s = any slab, any blackstone slab, crimson slab, warped slab
+	[any] stair¦s = any stair, any blackstone stair, crimson stair, warped stair
 
 caves and cliffs update part 1:
 	minecraft version = 1.17 or newer
@@ -752,6 +758,6 @@ caves and cliffs update part 1:
 	deepslate lapis [lazuli] ore¦s = minecraft:deepslate_lapis_ore
 	deepslate diamond ore¦s = minecraft:deepslate_diamond_ore
 	
-	[any] stone ore = any ore
+	[any] stone ore = any stone ore, copper ore
 	[any] deepslate ore = deepslate coal ore, deepslate iron ore, deepslate copper ore, deepslate gold ore, deepslate redstone ore, deepslate emerald ore, deepslate lapis ore, deepslate diamond ore
-	[any] ore = any stone ore, any deepslate ore
+	[any] ore = any stone ore, any nether ore, any deepslate ore
