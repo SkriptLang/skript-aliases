@@ -39,7 +39,7 @@ redstone before flattening:
 	# Buttons & levers
 	{attached toggleable} [oak] wood button¦s = minecraft:wooden_button
 	{attached toggleable} stone button¦s = minecraft:stone_button
-	[any] button = stone button, wood button
+	[any] button¦s = stone button, wood button
 	[redstone] lever¦s = minecraft:lever
 
 	# Pressure plates
@@ -253,10 +253,10 @@ nether update:
 	{powerable} {directional} {attached} polished blackstone button¦s = minecraft:polished_blackstone_button
 
 	[any] pressure plate¦s = stone pressure plate, gold pressure plate, iron pressure plate, any wooden pressure plate, crimson pressure plate, warped pressure plate, polished blackstone pressure plate
-	[any] wood[en] button¦s = oak button, spruce button, birch button, jungle button, acacia button, dark oak button, crimson button, warped button
-	[any] [fence] gate¦s = oak gate, spruce gate, birch gate, jungle gate, acacia gate, dark oak gate, crimson gate, warped gate
-	[any] wood[en] door¦s = oak door, spruce door, birch door, jungle door, acacia door, dark oak door, crimson door, warped door
-	[any] wood[en] trapdoor¦s = oak trapdoor, spruce trapdoor, birch trapdoor, jungle trapdoor, acacia trapdoor, dark oak trapdoor, crimson trapdoor, warped trapdoor
+	[any] wood[en] button¦s = any wooden button, crimson button, warped button, polished blackstone button
+	[any] [fence] gate¦s = any fence gate, crimson gate, warped gate
+	[any] wood[en] door¦s = any wooden door, crimson door, warped door
+	[any] wood[en] trapdoor¦s = any wooden trapdoor, crimson trapdoor, warped trapdoor
 
 caves and cliffs update part 1:
 	minecraft version = 1.17 or newer
@@ -266,5 +266,5 @@ caves and cliffs update part 1:
 global post flattening:
 	minecraft version = 1.13 or newer
 	[any] door¦s = iron door, any wooden door
-	[any] button¦s = stone button, wood button
+	[any] button¦s = stone button, any wooden button
 	[any] trapdoor¦s = iron trapdoor, any wooden trapdoor
