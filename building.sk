@@ -287,8 +287,7 @@ building blocks after flattening:
 	[any] log¦s = oak log, spruce log, birch log, jungle log, acacia log, dark oak log
 
 	# Bark
-	{axis-aligned} {tree type} bark [block¦s] = -wood
-	[any] bark [block¦s] = oak bark, spruce bark, birch bark, jungle bark, acacia bark, dark oak bark
+	{axis-aligned} {tree type} (wood|bark) [block¦s] = -wood
 
 	# Desert
 	red sand [block¦s] = minecraft:red_sand
@@ -418,7 +417,7 @@ categories:
 	any acacia log = acacia log, east-west acacia log, north-south acacia log, acacia bark
 	any dark oak log = dark oak log, east-west dark oak log, north-south dark oak log, dark oak bark
 
-	[any] bark = oak bark, spruce bark, birch bark, jungle bark, acacia bark, dark oak bark
+	[any] (wood|bark) [block¦s] = oak bark, spruce bark, birch bark, jungle bark, acacia bark, dark oak bark
 	[any] log = any oak log, any spruce log, any birch log, any jungle log, any acacia log, any dark oak log
 	[any] normal log = any log # 1.13 adds some not so normal log types
 
@@ -481,7 +480,7 @@ update aquatic:
 	{axis-aligned} stripped jungle (bark|wood) [block¦s] = minecraft:stripped_jungle_wood
 	{axis-aligned} stripped acacia (bark|wood) [block¦s] = minecraft:stripped_acacia_wood
 	{axis-aligned} stripped dark oak (bark|wood) [block¦s] = minecraft:stripped_dark_oak_wood
-	[any] stripped bark [block¦s] = stripped oak bark, stripped spruce bark, stripped birch bark, stripped jungle bark, stripped acacia bark, stripped dark oak bark
+	[any] stripped (bark|wood) [block¦s] = stripped oak bark, stripped spruce bark, stripped birch bark, stripped jungle bark, stripped acacia bark, stripped dark oak bark
 
 	# Define any log to include the stripped ones
 	any log = any normal log, any stripped log, any bark block, any stripped bark block
