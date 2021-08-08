@@ -237,6 +237,7 @@ decoratives after flattening:
 	{waterloggable} cobblestone wall¦s = minecraft:cobblestone_wall
 	{waterloggable} mossy cobblestone wall¦s = minecraft:mossy_cobblestone_wall
 	any cobblestone wall = cobblestone wall, mossy cobblestone wall
+	any wall[s] = any cobblestone wall
 
 	# Colored blocks
 	{colored} carpet¦s = -carpet
@@ -283,6 +284,7 @@ decoratives after flattening:
 	(potted|flower pot with) cactus = minecraft:potted_cactus
 	(potted|flower pot with) dead bush = minecraft:potted_dead_bush
 	(potted|flower pot with) fern = minecraft:potted_fern
+	(any flower pot|[any] potted plant) = potted dandelion, potted poppy, potted blue orchid, potted allium, potted azure bluet, potted red tulip, potted orange tulip, potted white tulip, potted pink tulip, potted oxeye daisy, potted oak sapling, potted spruce sapling, potted birch sapling, potted jungle sapling, potted acacia sapling, potted dark oak sapling, potted red mushroom, potted brown mushroom, potted cactus, potted dead bush, potted fern
 
 	# Miscellaneous
 	[floor] torch¦es = minecraft:torch
@@ -324,6 +326,7 @@ village update potted flowers and saplings:
 	(potted|flower pot with) cornflower = minecraft:potted_cornflower
 	(potted|flower pot with) lily of the valley = minecraft:potted_lily_of_the_valley
 	(potted|flower pot with) wither rose = minecraft:potted_wither_rose
+	(any flower pot|[any] potted plant) = any potted plant, potted bamboo, potted cornflower, potted lily of the valley, potted wither rose
 	bamboo sapling = minecraft:bamboo_sapling
 
 village and pillage decoratives:
@@ -351,6 +354,7 @@ village and pillage decoratives:
 	{waterloggable} nether brick wall¦s = minecraft:nether_brick_wall
 	{waterloggable} red nether brick wall¦s = minecraft:red_nether_brick_wall
 	{waterloggable} end stone brick wall¦s = minecraft:end_stone_brick_wall
+	any wall[s] = any walls, brick wall, prismarine wall, sandstone wall, red sandstone wall, stone brick wall, mossy stone brick wall, granite wall, diorite wall, andesite wall, nether brick wall, red nether brick wall, end stone brick wall
 
 	{scaffold bottom}:
 		{default} = -
@@ -622,10 +626,12 @@ nether update:
 	(potted|flower pot with) crimson roots = minecraft:potted_crimson_roots
 	(potted|flower pot with) warped fungus = minecraft:potted_warped_fungus
 	(potted|flower pot with) warped roots = minecraft:potted_warped_roots
+	(any flower pot|[any] potted plant) = any potted plant, potted crimson fungus, potted crimson roots, potted warped fungus, potted warped roots
 
 	{waterloggable} blackstone wall¦s = minecraft:blackstone_wall
 	{waterloggable} polished blackstone wall¦s = minecraft:polished_blackstone_wall
 	{waterloggable} polished blackstone brick wall¦s = minecraft:polished_blackstone_brick_wall
+	any wall[s] = any walls, blackstone wall, polished blackstone wall, polished blackstone brick wall
 
 	{charges}:
 		{default} = -
@@ -676,6 +682,10 @@ caves and cliffs update part 1:
 	{decayable} flowering azalea lea(f|ves) = minecraft:flowering_azalea_leaves
 	[any] lea(f|ves) = any leaves, azalea leaves, flowering azalea leaves
 	
+	(potted|flower pot with) azalea [bush] = minecraft:potted_azalea_bush
+	(potted|flower pot with) flowering azalea [bush] = minecraft:potted_flowering_azalea_bush
+	(any flower pot|[any] potted plant) = potted azalea bush, potted flowering azalea bush
+	
 	candle¦s = minecraft:candle
 	{colored} candle¦s = -candle
 	
@@ -716,6 +726,7 @@ caves and cliffs update part 1:
 	{waterloggable} polished deepslate wall¦s = minecraft:polished_deepslate_wall
 	{waterloggable} deepslate brick wall¦s = minecraft:deepslate_brick_wall
 	{waterloggable} deepslate tile wall¦s = minecraft:deepslate_tile_wall
+	any wall[s] = any walls, cobbled deepslate wall, polished deepslate wall, deepslate brick wall, deepslate tile wall
 	
 	{waterloggable} glow lichen¦s = minecraft:glow_lichen
 	glow item frame [item]¦s = minecraft:glow_item_frame[relatedEntity=glow item frame]
