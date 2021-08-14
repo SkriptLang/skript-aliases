@@ -135,7 +135,6 @@ plants:
 	any seed¦s = pumpkin seeds, melon seeds, wheat seeds
 
 	wheat [item¦s] = minecraft:wheat
-	chorus fruit¦s = minecraft:chorus_fruit
 
 unchanged buckets:
 	[empty] bucket¦s = minecraft:bucket
