@@ -284,9 +284,9 @@ village and pillage update:
 		(many berries|very berried) = -[age=3]
 	{berry age} sweet berry bush [plant] = minecraft:sweet_berry_bush
 
-	flower charge banner pattern¦s = minecraft:flower_banner_pattern
-	creeper charge banner pattern¦s = minecraft:creeper_banner_pattern
-	skull charge banner pattern¦s = minecraft:skull_banner_pattern
+	flower [charge] banner pattern¦s = minecraft:flower_banner_pattern
+	creeper [charge] banner pattern¦s = minecraft:creeper_banner_pattern
+	skull [charge] banner pattern¦s = minecraft:skull_banner_pattern
 	(mojang|thing) banner pattern¦s = minecraft:mojang_banner_pattern
 	globe banner pattern¦s = minecraft:globe_banner_pattern
 	[any] banner pattern¦s = flower charge banner pattern, creeper charge banner pattern, skull charge banner pattern, thing banner pattern, globe banner pattern
