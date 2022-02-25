@@ -303,7 +303,7 @@ nether update:
 	netherite scrap¦s = minecraft:netherite_scrap
 
 	[music] (disc|record) pigstep = minecraft:music_disc_pigstep
-	[any] [music] (disc|record) = music disc 11, music disc 13, music disc blocks, music disc cat, music disc chirp, music disc far, music disc mall, music disc mellohi, music disc stal, music disc strad, music disc wait, music disc ward, music disc pigstep
+	[any] [music] (disc|record) = any music disc, music disc pigstep
 
 	(snout|piglin) banner pattern¦s = minecraft:piglin_banner_pattern
 	[any] banner pattern¦s = flower charge banner pattern, creeper charge banner pattern, skull charge banner pattern, thing banner pattern, globe banner pattern, snout banner pattern
@@ -327,3 +327,9 @@ caves and cliffs update part 1:
 	raw copper = minecraft:raw_copper
 	raw gold = minecraft:raw_gold
 	[any] raw ore¦s = raw iron, raw copper, raw gold
+
+caves and cliffs update part 2:
+	minecraft version = 1.18 or newer
+	
+	[music] (disc|record) otherside = minecraft:music_disc_otherside
+	[any] [music] (disc|record) = any music disc, music disc otherside
