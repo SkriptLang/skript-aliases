@@ -276,3 +276,12 @@ global post flattening:
 	[any] door¦s = iron door, any wooden door
 	[any] button¦s = stone button, any wooden button
 	[any] trapdoor¦s = iron trapdoor, any wooden trapdoor
+
+the wild update:
+	minecraft version = 1.19 or newer
+
+	[any] wood[en] button¦s = wood button, mangrove button
+	[any] pressure plate¦s = pressure plate, mangrove pressure plate
+	[any] [fence] gate¦s = gate, mangrove gate
+	[any] wood[en] trapdoor¦s = wood trapdoor, mangrove trapdoor
+	[any] wood[en] door¦s = wood door, mangrove door
