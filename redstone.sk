@@ -262,6 +262,14 @@ caves and cliffs update part 1:
 	minecraft version = 1.17 or newer
 	
 	{waterloggable} {powerable} {orientable} lightning rod¦s = minecraft:lightning_rod
+	
+	# Sculk sencor has now placed on redstone since 1.19, but it existed since 1.17
+	{sculk sensor activity}:
+		{default} = -
+		active = -[sculk_sensor_phase=active]
+		cooldown = -[sculk_sensor_phase=cooldown]
+	{waterloggable} {sculk sensor activity} sculk sensor = minecraft:sculk_sensor
+
 
 global post flattening:
 	minecraft version = 1.13 or newer

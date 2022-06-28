@@ -760,3 +760,43 @@ caves and cliffs update part 1:
 	[any] stone ore = any stone ore, copper ore
 	[any] deepslate ore = deepslate coal ore, deepslate iron ore, deepslate copper ore, deepslate gold ore, deepslate redstone ore, deepslate emerald ore, deepslate lapis ore, deepslate diamond ore
 	[any] ore = any stone ore, any nether ore, any deepslate ore
+
+the wild update:
+	minecraft version = 1.19 or newer
+
+	# froglights
+	orche froglight|s = minecraft:orche_froglight
+	pearlescent froglisht|s = minecraft:pearlescent_froglight
+	verdant froglight|s = minecraft:verdant_froglight
+	any froglight|s = orghe froglight, pearlescent froglight, verdant froglight
+
+	# muds
+	mud = minecraft:mud
+	muddy mangrove roots = minecraft:muddy_mangrove_roots
+	packed mud = minecraft:packed_mud
+	mud bricks = minecraft:mud_bricks
+
+	{waterloggable} {slab} mud brick slab|s = minecraft:mud_brick_slab
+	[any] slab¦s = any slab, mud brick slab
+
+	reinforced deepalate|s = minecraft:reinforced_deepslate
+
+	# Sculk
+	sculk|s = minecraft:sculk
+
+	{sculk}:
+		sculk = minecraft:sculk_-
+	
+	{sculk} catalyst = -catalyst
+
+	{summonable}:
+		{default} = -
+		summonable = -[can_summon=true]
+		(nonsummable|nowarden) = -[can_summon=false]
+	
+	{shriekable}:
+		{default} = -
+		shrieking = -[shrieking=true]
+		quiet = -[shrieking=false]
+	
+	{waterloggable} {summonable} {shriekable} {sculk} shrieker = -shrieker
