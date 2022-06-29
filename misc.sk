@@ -337,14 +337,14 @@ caves and cliffs update part 2:
 the wild update:
 	minecraft version = 1.19 or newer
 
-	(tadpole bucket|bucket of tadpole)|s = minecraft:bucket_of_tadpole
+	(tadpole bucket|bucket of tadpole)¦s = minecraft:bucket_of_tadpole
 
-	(disc|record) [5] fragment|s = minecraft:disc_fragment_5
+	(disc|record) [5] fragment¦s = minecraft:disc_fragment_5
 	[music] (disc|record) 5 = minecraft:music_disc_5
 	[any] [music] (disc|record) = any music disc, music disc 5
 
 	# sculk-related
-	echo shard|s = minecraft:echo_shard
+	echo shard¦s = minecraft:echo_shard
 	recovery compass¦es = minecraft:recovery_compass
 
 	{horn variations}:
@@ -357,4 +357,4 @@ the wild update:
 		call = -[instrument=minecraft:call_goat_horn]
 		yearn = -[instrument=minecraft:yearn_goat_horn]
 		dream = -[instrument=minecraft:dream_goat_horn]
-	{horn variations} goat horn|s = minecraft:goat_horn
+	{horn variations} goat horn¦s = minecraft:goat_horn

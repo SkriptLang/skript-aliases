@@ -177,8 +177,8 @@ caves and cliffs update part 1:
 
 the wild update:
 	minecraft version = 1.19 or newer
-	(allay [spawn] egg|spawn allay)|s = minecraft:allay_spawn_egg
-	(frog [spawn] egg|spawn frog)|s = minecraft:frog_spawn_egg
-	(tadpole [spawn] egg|spawn tadpole)|s = minecraft:tadpole_spawn_egg
-	(warden [spawn] egg|spawn warden)|s = minecraft:warden_spawn_egg
-	[any] spawn egg|s = any spawn egg, spawn allay, spawn frog, spawn tadpole, spawn warden
+	(allay [spawn] egg|spawn allay)¦s = minecraft:allay_spawn_egg
+	(frog [spawn] egg|spawn frog)¦s = minecraft:frog_spawn_egg
+	(tadpole [spawn] egg|spawn tadpole)¦s = minecraft:tadpole_spawn_egg
+	(warden [spawn] egg|spawn warden)¦s = minecraft:warden_spawn_egg
+	[any] spawn egg¦s = any spawn egg, spawn allay, spawn frog, spawn tadpole, spawn warden

@@ -301,7 +301,3 @@ wild-update woods:
 		crimson = minecraft:crimson_-
 		warped = minecraft:warped_-
 		mangrove = minecraft:mangrove_-
-
-	{nether block}:
-		crimson = minecraft:crimson_-
-		warped = minecraft:warped_-

@@ -268,7 +268,7 @@ caves and cliffs update part 1:
 		{default} = -
 		active = -[sculk_sensor_phase=active]
 		cooldown = -[sculk_sensor_phase=cooldown]
-	{waterloggable} {sculk sensor activity} sculk sensor = minecraft:sculk_sensor
+	{waterloggable} {sculk sensor activity} sculk sensor¦s = minecraft:sculk_sensor
 
 
 global post flattening:
@@ -285,4 +285,4 @@ the wild update:
 	[any] [fence] gate¦s = gate, mangrove gate
 	[any] wood[en] trapdoor¦s = wood trapdoor, mangrove trapdoor
 	[any] wood[en] door¦s = wood door, mangrove door
-	[any] fence|s = fence, mangrove fence
+	[any] fence¦s = fence, mangrove fence

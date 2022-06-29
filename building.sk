@@ -776,27 +776,24 @@ the wild update:
 	packed mud = minecraft:packed_mud
 	mud bricks = minecraft:mud_bricks
 
-	{waterloggable} {slab} mud brick slab|s = minecraft:mud_brick_slab
+	{waterloggable} {slab} mud brick slab¦s = minecraft:mud_brick_slab
 	[any] slab¦s = any slab, mud brick slab
 
 	reinforced deepslate = minecraft:reinforced_deepslate
 
 	# Sculk
-	sculk|s = minecraft:sculk
-
-	{sculk}:
-		sculk = minecraft:sculk_-
+	sculk¦s = minecraft:sculk
 	
-	{sculk} catalyst = -catalyst
+	sculk catalyst = minecraft:sculk_catalyst
 
 	{summonable}:
 		{default} = -
-		summonable = -[can_summon=true]
-		(nonsummable|nowarden) = -[can_summon=false]
+		(summonable|active) = -[can_summon=true]
+		(non-summable|no-warden|activated) = -[can_summon=false]
 	
 	{shriekable}:
 		{default} = -
 		shrieking = -[shrieking=true]
-		quiet = -[shrieking=false]
+		(quiet|non-shrieking) = -[shrieking=false]
 	
 	{waterloggable} {summonable} {shriekable} {sculk} shrieker = -shrieker
