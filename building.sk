@@ -765,10 +765,10 @@ the wild update:
 	minecraft version = 1.19 or newer
 
 	# froglights
-	orche froglight|s = minecraft:orche_froglight
-	pearlescent froglisht|s = minecraft:pearlescent_froglight
-	verdant froglight|s = minecraft:verdant_froglight
-	any froglight|s = orghe froglight, pearlescent froglight, verdant froglight
+	ochre froglight¦s = minecraft:ochre_froglight
+	pearlescent froglight¦s = minecraft:pearlescent_froglight
+	verdant froglight¦s = minecraft:verdant_froglight
+	any froglight¦s = ochre froglight, pearlescent froglight, verdant froglight
 
 	# muds
 	mud = minecraft:mud
