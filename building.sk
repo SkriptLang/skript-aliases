@@ -779,7 +779,7 @@ the wild update:
 	{waterloggable} {slab} mud brick slab|s = minecraft:mud_brick_slab
 	[any] slab¦s = any slab, mud brick slab
 
-	reinforced deepalate|s = minecraft:reinforced_deepslate
+	reinforced deepslate = minecraft:reinforced_deepslate
 
 	# Sculk
 	sculk|s = minecraft:sculk
