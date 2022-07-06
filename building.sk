@@ -782,7 +782,7 @@ the wild update:
 	reinforced deepslate = minecraft:reinforced_deepslate
 
 	# Sculk
-	sculk¦s = minecraft:sculk
+	sculk [block¦s] = minecraft:sculk
 	
 	sculk catalyst¦s = minecraft:sculk_catalyst
 
@@ -796,4 +796,4 @@ the wild update:
 		shrieking = -[shrieking=true]
 		(quiet|non-shrieking) = -[shrieking=false]
 	
-	{waterloggable} {summonable} {shriekable} {sculk} shrieker = -shrieker
+	{waterloggable} {summonable} {shriekable} shrieker = minecraft:sculk_shrieker

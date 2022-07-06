@@ -745,13 +745,9 @@ the wild update:
    (any flower pot|[any] potted plant) = any flower pot, potted mangrove propagule
 
 	# leaves
-	{decayable}:
-		{default} = -
-		decayable = -[persistent=false]
-		(persistent|permanent) = -[persistent=true]
 	{mangrove leaves}
     	mangrove = mangrove_-
-	{waterloggable} {decayable} {mangrove leaves} lea(f|ves) = -leaves
+	{waterloggable} {mangrove leaves} lea(f|ves) = -leaves
 	[any] lea(f|ves) = any leaves, mangrove leaves
 
 	{waterloggable} mud brick stairs = minecraft:mud_brick_stairs
