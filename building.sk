@@ -768,7 +768,7 @@ the wild update:
 	ochre froglight¦s = minecraft:ochre_froglight
 	pearlescent froglight¦s = minecraft:pearlescent_froglight
 	verdant froglight¦s = minecraft:verdant_froglight
-	any froglight¦s = ochre froglight, pearlescent froglight, verdant froglight
+	[any] froglight¦s = ochre froglight, pearlescent froglight, verdant froglight
 
 	# muds
 	mud = minecraft:mud
