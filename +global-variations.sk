@@ -300,4 +300,4 @@ wild-update woods:
 		dark oak [wood] = minecraft:dark_oak_-
 		crimson = minecraft:crimson_-
 		warped = minecraft:warped_-
-		mangrove = minecraft:mangrove_-
+		mangrove [wood] = minecraft:mangrove_-
