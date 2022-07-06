@@ -784,7 +784,7 @@ the wild update:
 	# Sculk
 	sculk¦s = minecraft:sculk
 	
-	sculk catalyst = minecraft:sculk_catalyst
+	sculk catalyst¦s = minecraft:sculk_catalyst
 
 	{summonable}:
 		{default} = -
