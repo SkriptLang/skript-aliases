@@ -744,6 +744,11 @@ the wild update:
 	(potted|pot with) mangrove (propagule|sapling) = minecraft:potted_mangrove_propagule
 	(any flower pot|[any] potted plant) = any flower pot, potted mangrove propagule
 
+	{decayable}:
+		{default} = -
+		decayable = -[persistent=false]
+		(persistent|permanent) = -[persistent=true]
+	
 	{waterloggable} {decayable} lea(f|ves) = minecraft:mangrove_leaves
 	[any] lea(f|ves) = any leaves, mangrove leaves
 
