@@ -744,15 +744,14 @@ the wild update:
 	(potted|pot with) mangrove (propagule|sapling) = minecraft:potted_mangrove_propagule
 	(any flower pot|[any] potted plant) = any flower pot, potted mangrove propagule
 
-	# leaves
-	{mangrove leaves}
-    	mangrove = mangrove_-
-	{waterloggable} {mangrove leaves} lea(f|ves) = -leaves
+	{waterloggable} {decayable} lea(f|ves) = minecraft:mangrove_leaves
 	[any] lea(f|ves) = any leaves, mangrove leaves
 
+	# mud brick stuffs
 	{waterloggable} mud brick stairs = minecraft:mud_brick_stairs
 	[any] stairs = any stairs, mud brick stairs
 
 	{waterloggable} mud brick wall¦s = minecraft:mud_brick_wall
 
+	# sculk stuffs
 	{waterloggable} {orientable} sculk vein¦s = minecraft:sculk_vein
