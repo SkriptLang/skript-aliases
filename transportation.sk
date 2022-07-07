@@ -131,4 +131,4 @@ the wild update:
 
 	# mangrove
 	mangrove boat¦s = minecraft:mangrove_boat[relatedEntity=mangrove boat]
-	[any] boat¦s = any boat, any chest boat, mangrove boat
+	[any] boat¦s = any boat, mangrove boat
