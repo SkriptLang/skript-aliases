@@ -115,7 +115,7 @@ unchanged rails:
 nether update:
 	minecraft version = 1.16 or newer
 
-	warped fungus on a stick¦s = minecraft:warped_fungus_on_a_stick
+	warped fungus on [a stick¦sticks] = minecraft:warped_fungus_on_a_stick
 
 the wild update:
 	minecraft version = 1.19 or newer
