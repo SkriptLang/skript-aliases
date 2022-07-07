@@ -262,9 +262,27 @@ caves and cliffs update part 1:
 	minecraft version = 1.17 or newer
 	
 	{waterloggable} {powerable} {orientable} lightning rod¦s = minecraft:lightning_rod
+	
+	# Sculk sencor has now placed on redstone since 1.19, but it existed since 1.17
+	{sculk sensor activity}:
+		{default} = -
+		active = -[sculk_sensor_phase=active]
+		cooldown = -[sculk_sensor_phase=cooldown]
+	{waterloggable} {sculk sensor activity} sculk sensor¦s = minecraft:sculk_sensor
+
 
 global post flattening:
 	minecraft version = 1.13 or newer
 	[any] door¦s = iron door, any wooden door
 	[any] button¦s = stone button, any wooden button
 	[any] trapdoor¦s = iron trapdoor, any wooden trapdoor
+
+the wild update:
+	minecraft version = 1.19 or newer
+
+	[any] wood[en] button¦s = wood button, mangrove button
+	[any] pressure plate¦s = pressure plate, mangrove pressure plate
+	[any] [fence] gate¦s = gate, mangrove gate
+	[any] wood[en] trapdoor¦s = wood trapdoor, mangrove trapdoor
+	[any] wood[en] door¦s = wood door, mangrove door
+	[any] fence¦s = fence, mangrove fence

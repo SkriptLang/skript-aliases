@@ -286,3 +286,18 @@ nether-update woods:
 	{nether block}:
 		crimson = minecraft:crimson_-
 		warped = minecraft:warped_-
+
+wild-update woods:
+	minecraft version = 1.19 or newer
+
+    # For wood-based blocks that are defined with the wood type at the start of the alias.
+	{wood type}:
+		oak [wood] = minecraft:oak_-
+		spruce [wood] = minecraft:spruce_-
+		birch [wood] = minecraft:birch_-
+		jungle [wood] = minecraft:jungle_-
+		acacia [wood] = minecraft:acacia_-
+		dark oak [wood] = minecraft:dark_oak_-
+		crimson = minecraft:crimson_-
+		warped = minecraft:warped_-
+		mangrove [wood] = minecraft:mangrove_-

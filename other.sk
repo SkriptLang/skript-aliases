@@ -272,12 +272,6 @@ caves and cliffs update part 1:
 	{waterloggable} {light level} light [block¦s] = minecraft:light
 	
 	# The following aliases will likely need to be moved to their 'proper' categories in the future
-	# As of 1.17, these items were not fully implemented
+	# As of 1.19, these items were not fully implemented
 	
 	bundle¦s = minecraft:bundle
-	
-	{sculk sensor activity}:
-		{default} = -
-		active = -[sculk_sensor_phase=active]
-		cooldown = -[sculk_sensor_phase=cooldown]
-	{waterloggable} {sculk sensor activity} sculk sensor = minecraft:sculk_sensor

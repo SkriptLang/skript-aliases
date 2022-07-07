@@ -115,4 +115,20 @@ unchanged rails:
 nether update:
 	minecraft version = 1.16 or newer
 
-	warped fungus on a stick¦s = minecraft:warped_fungus_on_a_stick
+	warped fungus on a stick = minecraft:warped_fungus_on_a_stick
+
+the wild update:
+	minecraft version = 1.19 or newer
+
+	# boat with chest
+	spruce (chest boat¦s|boat¦s with chest) = minecraft:spruce_chest_boat[relatedEntity=spruce chest boat]
+	birch (chest boat¦s|boat¦s with chest) = minecraft:birch_chest_boat[relatedEntity=birch chest boat]
+	jungle (chest boat¦s|boat¦s with chest) = minecraft:jungle_chest_boat[relatedEntity=jungle chest boat]
+	acacia (chest boat¦s|boat¦s with chest) = minecraft:acacia_chest_boat[relatedEntity=acacia chest boat]
+	dark oak (chest boat¦s|boat¦s with chest) = minecraft:dark_oak_chest_boat[relatedEntity=dark oak chest boat]
+	mangrove (chest boat¦s|boat¦s with chest) = minecraft:mangrove_chest_boat[relatedEntity=mangrove chest boat]
+	[any] (chest boat¦s|boat¦s with chest) = spruce chest boat, birch chest boat, jungle chest boat, acacia chest boat, dark oak chest boat, mangrove chest boat
+
+	# mangrove
+	mangrove boat¦s = minecraft:mangrove_boat[relatedEntity=mangrove boat]
+	[any] boat¦s = any boat, mangrove boat

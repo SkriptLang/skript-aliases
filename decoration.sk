@@ -728,7 +728,35 @@ caves and cliffs update part 1:
 	{waterloggable} deepslate tile wall¦s = minecraft:deepslate_tile_wall
 	any wall[s] = any walls, cobbled deepslate wall, polished deepslate wall, deepslate brick wall, deepslate tile wall
 	
-	{waterloggable} glow lichen¦s = minecraft:glow_lichen
+	{waterloggable} {orientable} glow lichen¦s = minecraft:glow_lichen
 	glow item frame [item]¦s = minecraft:glow_item_frame[relatedEntity=glow item frame]
 	
 	(grass|dirt) path [block]¦s = minecraft:dirt_path
+
+
+the wild update:
+	minecraft version = 1.19 or newer
+
+	frogspawn¦s = minecraft:frogspawn
+	
+	# mangrove
+	{waterloggable} mangrove (propagule|sapling)¦s = minecraft:mangrove_propagule
+	(potted|pot with) mangrove (propagule|sapling) = minecraft:potted_mangrove_propagule
+	(any flower pot|[any] potted plant) = any flower pot, potted mangrove propagule
+
+	{decayable}:
+		{default} = -
+		decayable = -[persistent=false]
+		(persistent|permanent) = -[persistent=true]
+	
+	{waterloggable} {decayable} lea(f|ves) = minecraft:mangrove_leaves
+	[any] lea(f|ves) = any leaves, mangrove leaves
+
+	# mud brick stuffs
+	{waterloggable} mud brick stairs = minecraft:mud_brick_stairs
+	[any] stairs = any stairs, mud brick stairs
+
+	{waterloggable} mud brick wall¦s = minecraft:mud_brick_wall
+
+	# sculk stuffs
+	{waterloggable} {orientable} sculk vein¦s = minecraft:sculk_vein
