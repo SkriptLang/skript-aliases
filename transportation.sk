@@ -125,6 +125,7 @@ the wild update:
 	birch (chest boat¦s|boat¦s with chest) = minecraft:birch_chest_boat[relatedEntity=birch chest boat]
 	jungle (chest boat¦s|boat¦s with chest) = minecraft:jungle_chest_boat[relatedEntity=jungle chest boat]
 	acacia (chest boat¦s|boat¦s with chest) = minecraft:acacia_chest_boat[relatedEntity=acacia chest boat]
+	oak (chest boat¦s|boat¦s with chest) = minecraft:oak_chest_boat[relatedEntity=oak chest boat]
 	dark oak (chest boat¦s|boat¦s with chest) = minecraft:dark_oak_chest_boat[relatedEntity=dark oak chest boat]
 	mangrove (chest boat¦s|boat¦s with chest) = minecraft:mangrove_chest_boat[relatedEntity=mangrove chest boat]
 	[any] (chest boat¦s|boat¦s with chest) = spruce chest boat, birch chest boat, jungle chest boat, acacia chest boat, dark oak chest boat, mangrove chest boat
