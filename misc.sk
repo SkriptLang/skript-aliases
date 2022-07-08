@@ -338,7 +338,7 @@ the wild update:
 	minecraft version = 1.19 or newer
 
 	# Frog-related stuffs
-	(tadpole bucket|bucket of tadpole)¦s = minecraft:bucket_of_tadpole
+	(tadpole bucket|bucket of tadpole)¦s = minecraft:tadpole_bucket
 
 	# Disc 5
 	(disc|record) [5] fragment¦s = minecraft:disc_fragment_5
@@ -352,12 +352,13 @@ the wild update:
 	# Horns
 	{horn variations}:
 		{default} = -
-		ponder = -[instrument=minecraft:ponder_goat_horn]
-		sing = -[instrument=minecraft:sing_goat_horn]
-		seek = -[instrument=minecraft:seek_goat_horn]
-		feel = -[instrument=minecraft:feel_goat_horn]
-		admire = -[instrument=minecraft:admire_goat_horn]
-		call = -[instrument=minecraft:call_goat_horn]
-		yearn = -[instrument=minecraft:yearn_goat_horn]
-		dream = -[instrument=minecraft:dream_goat_horn]
+		ponder = - {"instrument": "minecraft:ponder_goat_horn"}
+		sing = - {"instrument": "minecraft:sing_goat_horn"}
+		seek = - {"instrument": "minecraft:seek_goat_horn"}
+		feel = - {"instrument": "minecraft:feel_goat_horn"}
+		admire = - {"instrument": "minecraft:admire_goat_horn"}
+		call = - {"instrument": "minecraft:call_goat_horn"}
+		yearn = - {"instrument": "minecraft:yearn_goat_horn"}
+		dream = - {"instrument": "minecraft:dream_goat_horn"}
+		
 	{horn variations} goat horn¦s = minecraft:goat_horn

@@ -153,6 +153,17 @@ block states:
 		west(ward| facing) = -[facing=west]
 		east(ward| facing) = -[facing=east]
 
+	# For blocks (like leaves) that can be at any layer of a block.
+	# e.g. glow_lichen
+	{surface}:
+		{default} = -
+		down(ward| facing) = -[down=true]
+		up(ward| facing) = -[up=true]
+		north(ward| facing) = -[north=true]
+		south(ward| facing) = -[south=true]
+		west(ward| facing) = -[west=true]
+		east(ward| facing) = -[east=true]
+
 	# For blocks that can only point in four directions.
 	{directional}:
 		{default} = -
