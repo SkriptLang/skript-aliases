@@ -805,7 +805,7 @@ the wild update:
 	{axis-aligned} mangrove log¦s = minecraft:mangrove_log
 
 	{axis-aligned} stripped mangrove (bark|wood) [block¦s] = minecraft:stripped_mangrove_wood
-	[any] stripped (bark|wood) [block¦s] = stripped oak bark, stripped spruce bark, stripped birch bark, stripped jungle bark, stripped acacia bark, stripped dark oak bark, stripped mangrove bark
+	[any] stripped (bark|wood) [block¦s] = any stripped bark, stripped mangrove bark
 
 	{axis-aligned} stripped mangrove log¦s = minecraft:stripped_mangrove_log
-	[any] stripped log [block¦s] = stripped oak log, stripped spruce log, stripped birch log, stripped jungle log, stripped acacia log, stripped dark oak log, stripped mangrove log
+	[any] stripped log [block¦s] = any stripped log, stripped mangrove log
