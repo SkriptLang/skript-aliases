@@ -781,6 +781,7 @@ the wild update:
 
 	# other build blocks
 	reinforced deepslate = minecraft:reinforced_deepslate
+	mangrove roots = minecraft:mangrove_roots
 
 	# Sculk
 	sculk [block¦s] = minecraft:sculk
@@ -798,3 +799,13 @@ the wild update:
 		(quiet|non-shrieking) = -[shrieking=false]
 	
 	{waterloggable} {summonable} {shriekable} shrieker = minecraft:sculk_shrieker
+	
+	{axis-aligned} mangrove (wood|bark) [block¦s] = minecraft:mangrove_wood
+
+	{axis-aligned} mangrove log¦s = minecraft:mangrove_log
+
+	{axis-aligned} stripped mangrove (bark|wood) [block¦s] = minecraft:stripped_mangrove_wood
+	[any] stripped (bark|wood) [block¦s] = any stripped bark, stripped mangrove bark
+
+	{axis-aligned} stripped mangrove log¦s = minecraft:stripped_mangrove_log
+	[any] stripped log [block¦s] = any stripped log, stripped mangrove log
