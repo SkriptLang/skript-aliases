@@ -44,7 +44,7 @@ Aliases can define NBT tags to apply for items. The tags should be in Mojang's
 JSON format that Vanilla commands such as /give use. Tags are put after item
 id, separated with a space:
 ```
-mundane potion = minecraft:potion {"Potion": "minecraft:mundane"}
+mundane potion = minecraft:potion {Potion: "minecraft:mundane"}
 ```
 If there are multiple ids defined for an alias, each of them can have their
 own tags specified before the next id is given.
@@ -72,8 +72,8 @@ some differences. For example potions are like this: they all share an id, but
 have their own tags. In these cases, it might make sense to define a variation:
 ```
 {potions}:
-    mundane = - {"Potion": "minecraft:mundane"}
-    awkward = - {"Potion": "mineraft:awkward"}
+    mundane = - {Potion: "minecraft:mundane"}
+    awkward = - {Potion: "mineraft:awkward"}
 {potions} potion = minecraft:potion
 ```
 Basically, in place of {potions}, there can be either mundane or awkward. What

@@ -1,65 +1,65 @@
 potions:
 	[(glass|empty)] bottle¦s = minecraft:glass_bottle
-	(bottle[s] of water|water bottle¦s) = minecraft:potion {"Potion": "minecraft:water"}
+	(bottle[s] of water|water bottle¦s) = minecraft:potion {Potion: "minecraft:water"}
 
 	{potion types}:
 		{default} = - # Match all potions
-		water = - {"Potion": "minecraft:water"}
-		thick = - {"Potion": "minecraft:thick"}
-		mundane = - {"Potion": "minecraft:mundane"}
-		awkward = - {"Potion": "minecraft:awkward"}
+		water = - {Potion: "minecraft:water"}
+		thick = - {Potion: "minecraft:thick"}
+		mundane = - {Potion: "minecraft:mundane"}
+		awkward = - {Potion: "minecraft:awkward"}
 
-		night vision = - {"Potion": "minecraft:night_vision"}
-		(extended|long) night vision = - {"Potion": "minecraft:long_night_vision"}
+		night vision = - {Potion: "minecraft:night_vision"}
+		(extended|long) night vision = - {Potion: "minecraft:long_night_vision"}
 
-		invisibility = - {"Potion": "minecraft:invisibility"}
-		(extended|long) invisibility = - {"Potion": "minecraft:long_invisibility"}
+		invisibility = - {Potion: "minecraft:invisibility"}
+		(extended|long) invisibility = - {Potion: "minecraft:long_invisibility"}
 
-		(leaping|jumping) = - {"Potion": "minecraft:leaping"}
-		(extended|long) (leaping|jumping) = - {"Potion": "minecraft:long_leaping"}
-		(strong|upgraded|level 2) (leaping|jumping) = - {"Potion": "minecraft:strong_leaping"}
+		(leaping|jumping) = - {Potion: "minecraft:leaping"}
+		(extended|long) (leaping|jumping) = - {Potion: "minecraft:long_leaping"}
+		(strong|upgraded|level 2) (leaping|jumping) = - {Potion: "minecraft:strong_leaping"}
 
-		fire resistance = - {"Potion": "minecraft:fire_resistance"}
-		(extended|long) fire resistance = - {"Potion": "minecraft:long_fire_resistance"}
+		fire resistance = - {Potion: "minecraft:fire_resistance"}
+		(extended|long) fire resistance = - {Potion: "minecraft:long_fire_resistance"}
 
-		(speed|swiftness) = - {"Potion": "minecraft:swiftness"}
-		(extended|long) (speed|swiftness) = - {"Potion": "minecraft:long_swiftness"}
-		(strong|upgraded|level 2) (speed|swiftness) = - {"Potion": "minecraft:strong_swiftness"}
+		(speed|swiftness) = - {Potion: "minecraft:swiftness"}
+		(extended|long) (speed|swiftness) = - {Potion: "minecraft:long_swiftness"}
+		(strong|upgraded|level 2) (speed|swiftness) = - {Potion: "minecraft:strong_swiftness"}
 
-		slow[ness] = - {"Potion": "minecraft:slowness"}
-		(extended|long) slow[ness] = - {"Potion": "minecraft:long_slowness"}
-		(strong|upgraded|level 2) slow[ness] = - {"Potion": "minecraft:strong_slowness"}
+		slow[ness] = - {Potion: "minecraft:slowness"}
+		(extended|long) slow[ness] = - {Potion: "minecraft:long_slowness"}
+		(strong|upgraded|level 2) slow[ness] = - {Potion: "minecraft:strong_slowness"}
 
-		turtle master = - {"Potion": "minecraft:turtle_master"}
-		(extended|long) turtle master = - {"Potion": "minecraft:long_turtle_master"}
-		(strong|upgraded|level 2) turtle master = - {"Potion": "minecraft:strong_turtle_master"}
+		turtle master = - {Potion: "minecraft:turtle_master"}
+		(extended|long) turtle master = - {Potion: "minecraft:long_turtle_master"}
+		(strong|upgraded|level 2) turtle master = - {Potion: "minecraft:strong_turtle_master"}
 
-		water breathing = - {"Potion": "minecraft:water_breathing"}
-		(extended|long) water breathing = - {"Potion": "minecraft:long_water_breathing"}
+		water breathing = - {Potion: "minecraft:water_breathing"}
+		(extended|long) water breathing = - {Potion: "minecraft:long_water_breathing"}
 
-		heal(th|ing) = - {"Potion": "minecraft:healing"}
-		(strong|upgraded|level 2) heal(th|ing) = - {"Potion": "minecraft:strong_healing"}
+		heal(th|ing) = - {Potion: "minecraft:healing"}
+		(strong|upgraded|level 2) heal(th|ing) = - {Potion: "minecraft:strong_healing"}
 
-		harming = - {"Potion": "minecraft:harming"}
-		(strong|upgraded|level 2) harming = - {"Potion": "minecraft:strong_harming"}
+		harming = - {Potion: "minecraft:harming"}
+		(strong|upgraded|level 2) harming = - {Potion: "minecraft:strong_harming"}
 
-		poison[ing] = - {"Potion": "minecraft:poison"}
-		(extended|long) poison[ing] = - {"Potion": "minecraft:long_poison"}
-		(strong|upgraded|level 2) poison[ing] = - {"Potion": "minecraft:strong_poison"}
+		poison[ing] = - {Potion: "minecraft:poison"}
+		(extended|long) poison[ing] = - {Potion: "minecraft:long_poison"}
+		(strong|upgraded|level 2) poison[ing] = - {Potion: "minecraft:strong_poison"}
 
-		regen[eration] = - {"Potion": "minecraft:regeneration"}
-		(extended|long) regen[eration] = - {"Potion": "minecraft:long_regeneration"}
-		(strong|upgraded|level 2) regen[eration] = - {"Potion": "minecraft:strong_regeneration"}
+		regen[eration] = - {Potion: "minecraft:regeneration"}
+		(extended|long) regen[eration] = - {Potion: "minecraft:long_regeneration"}
+		(strong|upgraded|level 2) regen[eration] = - {Potion: "minecraft:strong_regeneration"}
 
-		strength = - {"Potion": "minecraft:strength"}
-		(extended|long) strength = - {"Potion": "minecraft:long_strength"}
-		(strong|upgraded|level 2) strength = - {"Potion": "minecraft:strong_strength"}
+		strength = - {Potion: "minecraft:strength"}
+		(extended|long) strength = - {Potion: "minecraft:long_strength"}
+		(strong|upgraded|level 2) strength = - {Potion: "minecraft:strong_strength"}
 
-		weak(ness|ening) = - {"Potion": "minecraft:weakness"}
-		(extended|long) weak(ness|ening) = - {"Potion": "minecraft:long_weakness"}
+		weak(ness|ening) = - {Potion: "minecraft:weakness"}
+		(extended|long) weak(ness|ening) = - {Potion: "minecraft:long_weakness"}
 
-		slow fall[ing] = - {"Potion": "minecraft:slow_falling"}
-		(extended|long) slow fall[ing] = - {"Potion": "minecraft:long_slow_falling"}
+		slow fall[ing] = - {Potion: "minecraft:slow_falling"}
+		(extended|long) slow fall[ing] = - {Potion: "minecraft:long_slow_falling"}
 
 	(potion[s] of {potion types}|{potion types} potion¦s) = minecraft:potion
 	(splash potion[s] of {potion types}|{potion types} splash potion¦s) = minecraft:splash_potion
@@ -103,7 +103,7 @@ combat update brewing:
 	dragon['s] breath = minecraft:dragon_breath
 
 	{combat update potions}:
-		luck = - {"Potion": "minecraft:luck"}
+		luck = - {Potion: "minecraft:luck"}
 
 	(potion[s] of {combat update potions}|{combat update potions} potion¦s) = minecraft:potion
 	(splash potion[s] of {combat update potions}|{combat update potions} splash potion¦s) = minecraft:splash_potion

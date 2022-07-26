@@ -352,13 +352,13 @@ the wild update:
 	# Horns
 	{horn variations}:
 		{default} = -
-		ponder = - {"instrument": "minecraft:ponder_goat_horn"}
-		sing = - {"instrument": "minecraft:sing_goat_horn"}
-		seek = - {"instrument": "minecraft:seek_goat_horn"}
-		feel = - {"instrument": "minecraft:feel_goat_horn"}
-		admire = - {"instrument": "minecraft:admire_goat_horn"}
-		call = - {"instrument": "minecraft:call_goat_horn"}
-		yearn = - {"instrument": "minecraft:yearn_goat_horn"}
-		dream = - {"instrument": "minecraft:dream_goat_horn"}
+		ponder = - {instrument:"minecraft:ponder_goat_horn"}
+		sing = - {instrument:"minecraft:sing_goat_horn"}
+		seek = - {instrument:"minecraft:seek_goat_horn"}
+		feel = - {instrument:"minecraft:feel_goat_horn"}
+		admire = - {instrument:"minecraft:admire_goat_horn"}
+		call = - {instrument:"minecraft:call_goat_horn"}
+		yearn = - {instrument:"minecraft:yearn_goat_horn"}
+		dream = - {instrument:"minecraft:dream_goat_horn"}
 		
 	{horn variations} goat horn¦s = minecraft:goat_horn
