@@ -263,27 +263,27 @@ decoratives after flattening:
 
 	# Flower pots now each have their own ID!
 	[empty] flower pot¦s = minecraft:flower_pot
-	(potted|flower pot with) (dandelion|yellow flower) = minecraft:potted_dandelion
-	(potted|flower pot with) (poppy|red flower) = minecraft:potted_poppy
-	(potted|flower pot with) [blue] orchid = minecraft:potted_blue_orchid
-	(potted|flower pot with) allium = minecraft:potted_allium
-	(potted|flower pot with) azure bluet = minecraft:potted_azure_bluet
-	(potted|flower pot with) red tulip = minecraft:potted_red_tulip
-	(potted|flower pot with) orange tulip = minecraft:potted_orange_tulip
-	(potted|flower pot with) white tulip = minecraft:potted_white_tulip
-	(potted|flower pot with) pink tulip = minecraft:potted_pink_tulip
-	(potted|flower pot with) oxeye daisy = minecraft:potted_oxeye_daisy
-	(potted|flower pot with) oak [wood[en]] sapling = minecraft:potted_oak_sapling
-	(potted|flower pot with) spruce [wood[en]] sapling = minecraft:potted_spruce_sapling
-	(potted|flower pot with) birch [wood[en]] sapling = minecraft:potted_birch_sapling
-	(potted|flower pot with) jungle [wood[en]] sapling = minecraft:potted_jungle_sapling
-	(potted|flower pot with) acacia [wood[en]] sapling = minecraft:potted_acacia_sapling
-	(potted|flower pot with) dark oak [wood[en]] sapling = minecraft:potted_dark_oak_sapling
-	(potted|flower pot with) red mushroom = minecraft:potted_red_mushroom
-	(potted|flower pot with) brown mushroom = minecraft:potted_brown_mushroom
-	(potted|flower pot with) cactus = minecraft:potted_cactus
-	(potted|flower pot with) dead bush = minecraft:potted_dead_bush
-	(potted|flower pot with) fern = minecraft:potted_fern
+	(potted|flower pot with [a]) (dandelion|yellow flower) = minecraft:potted_dandelion
+	(potted|flower pot with [a]) (poppy|red flower) = minecraft:potted_poppy
+	(potted|flower pot with [a]) [blue] orchid = minecraft:potted_blue_orchid
+	(potted|flower pot with [a]) allium = minecraft:potted_allium
+	(potted|flower pot with [a]) azure bluet = minecraft:potted_azure_bluet
+	(potted|flower pot with [a]) red tulip = minecraft:potted_red_tulip
+	(potted|flower pot with [a]) orange tulip = minecraft:potted_orange_tulip
+	(potted|flower pot with [a]) white tulip = minecraft:potted_white_tulip
+	(potted|flower pot with [a]) pink tulip = minecraft:potted_pink_tulip
+	(potted|flower pot with [a]) oxeye daisy = minecraft:potted_oxeye_daisy
+	(potted|flower pot with [a]) oak [wood[en]] sapling = minecraft:potted_oak_sapling
+	(potted|flower pot with [a]) spruce [wood[en]] sapling = minecraft:potted_spruce_sapling
+	(potted|flower pot with [a]) birch [wood[en]] sapling = minecraft:potted_birch_sapling
+	(potted|flower pot with [a]) jungle [wood[en]] sapling = minecraft:potted_jungle_sapling
+	(potted|flower pot with [a]) acacia [wood[en]] sapling = minecraft:potted_acacia_sapling
+	(potted|flower pot with [a]) dark oak [wood[en]] sapling = minecraft:potted_dark_oak_sapling
+	(potted|flower pot with [a]) red mushroom = minecraft:potted_red_mushroom
+	(potted|flower pot with [a]) brown mushroom = minecraft:potted_brown_mushroom
+	(potted|flower pot with [a]) cactus = minecraft:potted_cactus
+	(potted|flower pot with [a]) dead bush = minecraft:potted_dead_bush
+	(potted|flower pot with [a]) fern = minecraft:potted_fern
 	(any flower pot|[any] potted plant) = potted dandelion, potted poppy, potted blue orchid, potted allium, potted azure bluet, potted red tulip, potted orange tulip, potted white tulip, potted pink tulip, potted oxeye daisy, potted oak sapling, potted spruce sapling, potted birch sapling, potted jungle sapling, potted acacia sapling, potted dark oak sapling, potted red mushroom, potted brown mushroom, potted cactus, potted dead bush, potted fern
 
 	# Miscellaneous
@@ -322,10 +322,10 @@ decoratives after flattening:
 
 village update potted flowers and saplings:
 	minecraft version = 1.14 or newer
-	(potted|flower pot with) bamboo = minecraft:potted_bamboo
-	(potted|flower pot with) cornflower = minecraft:potted_cornflower
-	(potted|flower pot with) lily of the valley = minecraft:potted_lily_of_the_valley
-	(potted|flower pot with) wither rose = minecraft:potted_wither_rose
+	(potted|flower pot with [a]) bamboo = minecraft:potted_bamboo
+	(potted|flower pot with [a]) cornflower = minecraft:potted_cornflower
+	(potted|flower pot with [a]) lily of the valley = minecraft:potted_lily_of_the_valley
+	(potted|flower pot with [a]) wither rose = minecraft:potted_wither_rose
 	(any flower pot|[any] potted plant) = any potted plant, potted bamboo, potted cornflower, potted lily of the valley, potted wither rose
 	bamboo sapling = minecraft:bamboo_sapling
 
@@ -620,12 +620,13 @@ nether update:
 
 	[any] nether fung(us|i) = crimson fungus, warped fungus
 	[any] nether root¦s = crimson roots, warped roots
+	[any] root¦s = crimson roots, warped roots
 	[any] fence¦s = oak fence, spruce fence, birch fence, jungle fence, acacia fence, dark oak fence, nether brick fence, crimson fence, warped fence
 
-	(potted|flower pot with) crimson fungus = minecraft:potted_crimson_fungus
-	(potted|flower pot with) crimson roots = minecraft:potted_crimson_roots
-	(potted|flower pot with) warped fungus = minecraft:potted_warped_fungus
-	(potted|flower pot with) warped roots = minecraft:potted_warped_roots
+	(potted|flower pot with [a]) crimson fungus = minecraft:potted_crimson_fungus
+	(potted|flower pot with [a]) crimson roots = minecraft:potted_crimson_roots
+	(potted|flower pot with [a]) warped fungus = minecraft:potted_warped_fungus
+	(potted|flower pot with [a]) warped roots = minecraft:potted_warped_roots
 	(any flower pot|[any] potted plant) = any potted plant, potted crimson fungus, potted crimson roots, potted warped fungus, potted warped roots
 
 	{waterloggable} blackstone wall¦s = minecraft:blackstone_wall
@@ -664,8 +665,6 @@ nether update part 2:
 
 before caves and cliffs update part 1:
 	minecraft version = 1.16.5 or older
-	
-	(grass|dirt) path [block]¦s = minecraft:grass_path
 
 caves and cliffs update part 1:
 	minecraft version = 1.17 or newer
@@ -682,8 +681,8 @@ caves and cliffs update part 1:
 	{decayable} flowering azalea lea(f|ves) = minecraft:flowering_azalea_leaves
 	[any] lea(f|ves) = any leaves, azalea leaves, flowering azalea leaves
 	
-	(potted|flower pot with) azalea [bush] = minecraft:potted_azalea_bush
-	(potted|flower pot with) flowering azalea [bush] = minecraft:potted_flowering_azalea_bush
+	(potted|flower pot with [a]) azalea [bush] = minecraft:potted_azalea_bush
+	(potted|flower pot with [a]) flowering azalea [bush] = minecraft:potted_flowering_azalea_bush
 	(any flower pot|[any] potted plant) = potted azalea bush, potted flowering azalea bush
 	
 	candle¦s = minecraft:candle
@@ -732,29 +731,37 @@ caves and cliffs update part 1:
 	glow item frame [item]¦s = minecraft:glow_item_frame[relatedEntity=glow item frame]
 	
 	(grass|dirt) path [block]¦s = minecraft:dirt_path
-
+	any dirt = any dirt, dirt path
 
 the wild update:
 	minecraft version = 1.19 or newer
 
 	frogspawn¦s = minecraft:frogspawn
-	
+
+	mangrove root¦s = minecraft:mangrove_roots
+	muddy mangrove roots = minecraft:muddy_mangrove_roots
+	hanging roots = minecraft:hanging_roots
+	[any] root¦s = any roots, mangrove roots, muddy mangrove roots, hanging roots
+	rooted dirt [block¦s] = minecraft:rooted_dirt
+	any dirt = any dirt, rooted dirt
+
 	# mangrove
 	{waterloggable} mangrove (propagule|sapling)¦s = minecraft:mangrove_propagule
-	(potted|pot with) mangrove (propagule|sapling) = minecraft:potted_mangrove_propagule
+	[any] sapling = any sapling, mangrove sapling
+	(potted|flower pot with [a]) mangrove (propagule|sapling) = minecraft:potted_mangrove_propagule
 	(any flower pot|[any] potted plant) = any flower pot, potted mangrove propagule
+
+	[any] wall sign¦s = any wall sign, mangrove wall sign
+	[any] floor sign¦s = any floor sign, mangrove floor sign
+	[any] sign¦s = any wall sign, any floor sign
 
 	{decayable}:
 		{default} = -
 		decayable = -[persistent=false]
 		(persistent|permanent) = -[persistent=true]
-	
+
 	{waterloggable} {decayable} mangrove lea(f|ves) = minecraft:mangrove_leaves
 	[any] lea(f|ves) = any leaves, mangrove leaves
-
-	# mud brick stuffs
-	{waterloggable} mud brick stairs = minecraft:mud_brick_stairs
-	[any] stairs = any stairs, mud brick stairs
 
 	{waterloggable} mud brick wall¦s = minecraft:mud_brick_wall
 

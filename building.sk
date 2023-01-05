@@ -10,6 +10,7 @@ unchanged building blocks:
 
 	# Sediments
 	dirt [block¦s] = minecraft:dirt
+	any dirt = dirt block
 	sand [block¦s] = minecraft:sand
 	gravel [block¦s] = minecraft:gravel
 	clay block¦s = minecraft:clay
@@ -77,6 +78,7 @@ old blocks before flattening:
 	grass [block¦s] = minecraft:grass
 	coarse dirt [block¦s] = minecraft:dirt {Damage:1}
 	podzol [block¦s] = minecraft:dirt {Damage:2}
+	any dirt = any block, coarse dirt, podzol
 	[nether] quartz ore¦s = minecraft:quartz_ore
 	unlit redstone ore¦s = minecraft:redstone_ore
 	lit redstone ore¦s = minecraft:lit_redstone_ore
@@ -85,8 +87,8 @@ old blocks before flattening:
 
 	# All wood
 	# planks
-	{old wood type} plank¦s = minecraft:planks
-	[any] plank¦s = oak planks, spruce planks, birch planks, jungle planks, acacia planks, dark oak planks
+	{old wood type} [wood[en]] plank¦s = minecraft:planks
+	[any] [wood[en]] plank¦s = oak planks, spruce planks, birch planks, jungle planks, acacia planks, dark oak planks
 
 	# logs
 	[vertical] oak [wood[en]] log¦s = minecraft:log {Damage:0}
@@ -273,14 +275,13 @@ building blocks after flattening:
 	{snowable} grass [block¦s] = minecraft:grass_block
 	{snowable} podzol [block¦s] = minecraft:podzol
 	{snowable} mycelium [block¦s] = minecraft:mycelium
-	coarse dirt [block¦s] = minecraft:coarse_dirt
 	[nether] quartz ore¦s = minecraft:nether_quartz_ore
 	{lightable} redstone ore¦s = minecraft:redstone_ore
 
 	# Wood
 	# planks
-	{wood type} plank[s] = -planks
-	[any] plank¦s = oak planks, spruce planks, birch planks, jungle planks, acacia planks, dark oak planks
+	{wood type} [wood[en]] plank[s] = -planks
+	[any] [wood[en]] plank¦s = oak planks, spruce planks, birch planks, jungle planks, acacia planks, dark oak planks
 
 	# Normal logs
 	{axis-aligned} {tree type} log¦s = -log
@@ -743,7 +744,6 @@ caves and cliffs update part 1:
 	tuff = minecraft:tuff
 	dripstone block¦s = minecraft:dripstone_block
 	smooth basalt = minecraft:smooth_basalt
-	rooted dirt [block¦s] = minecraft:rooted_dirt
 	
 	tinted glass = minecraft:tinted_glass
 	
@@ -772,9 +772,15 @@ the wild update:
 
 	# muds
 	mud = minecraft:mud
-	muddy mangrove roots = minecraft:muddy_mangrove_roots
 	packed mud = minecraft:packed_mud
 	mud bricks = minecraft:mud_bricks
+
+	# mud brick stuffs
+	{waterloggable} mud brick stairs = minecraft:mud_brick_stairs
+	[any] stairs = any stairs, mud brick stairs
+
+	# mangrove
+	[any] stairs = any stairs, mangrove stairs
 
 	{waterloggable} {slab} mud brick slab¦s = minecraft:mud_brick_slab
 	[any] slab¦s = any slab, mud brick slab
@@ -801,8 +807,14 @@ the wild update:
 	{waterloggable} {summonable} {shriekable} shrieker = minecraft:sculk_shrieker
 	
 	{axis-aligned} mangrove (wood|bark) [block¦s] = minecraft:mangrove_wood
+	[any] wood¦s = any wood, mangrove wood
+
+	[any] [wood[en]] plank¦s = any wooden plank, mangrove planks
+	[any] wood[en] slab = any wooden slab, mangrove slab
+	[any] slab = any slab, mangrove slab
 
 	{axis-aligned} mangrove log¦s = minecraft:mangrove_log
+	[any] log¦s = any log, mangrove log
 
 	{axis-aligned} stripped mangrove (bark|wood) [block¦s] = minecraft:stripped_mangrove_wood
 	[any] stripped (bark|wood) [block¦s] = any stripped bark, stripped mangrove bark
