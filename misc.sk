@@ -190,7 +190,7 @@ dyes before flattening:
 	(rose red|red dye)¦s =  minecraft:dye {Damage:1}
 	(cactus green|green dye)¦s = minecraft:dye {Damage:2}
 	(cocoa bean|brown dye)¦s = minecraft:dye {Damage:3}
-	(lapis [lazuli]|blue dye[s]) = minecraft:dye {Damage:4}
+	(lapis [lazuli[s]]|blue dye[s]) = minecraft:dye {Damage:4}
 	purple dye¦s = minecraft:dye {Damage:5}
 	cyan dye¦s = minecraft:dye {Damage:6}
 	light gr(a|e)y dye¦s = minecraft:dye {Damage:7}
@@ -218,7 +218,7 @@ aquatic update dyes:
 
 	minecraft version = 1.13 to 1.13.2
 	(bone[ ]meal|white dye)¦s = minecraft:bone_meal
-	(lapis [lazuli]|blue dye[s]) = minecraft:lapis_lazuli
+	(lapis [lazuli[s]]|blue dye[s]) = minecraft:lapis_lazuli
 	(ink sac|black dye)¦s = minecraft:ink_sac
 	(cocoa bean|brown dye)¦s = minecraft:cocoa_beans
 	(rose red|red dye)¦s = minecraft:rose_red
