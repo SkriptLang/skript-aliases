@@ -421,9 +421,9 @@ categories:
 	[any] log = any oak log, any spruce log, any birch log, any jungle log, any acacia log, any dark oak log
 	[any] normal log = any log # 1.13 adds some not so normal log types
 
-	[any] stone ore = gold ore, iron ore, coal ore, lapis ore, diamond ore, redstone ore, emerald ore
-	[any] nether ore = nether quartz ore
-	[any] ore = any stone ore, any nether ore
+	[any] stone ore¦s = gold ore, iron ore, coal ore, lapis ore, diamond ore, redstone ore, emerald ore
+	[any] nether ore¦s = nether quartz ore
+	[any] ore¦s = any stone ore, any nether ore
 
 #== UPDATE-SPECIFICS
 # Building blocks added in 1.9 whose IDs have never changed. End City stuff, namely.
@@ -641,8 +641,8 @@ nether update:
 	nether gold ore¦s = minecraft:nether_gold_ore
 	quartz brick¦s = minecraft:quartz_bricks
 	
-	[any] nether ore = any nether ore, ancient debris, nether gold ore
-	[any] ore = any stone ore, any nether ore
+	[any] nether ore¦s = any nether ore, ancient debris, nether gold ore
+	[any] ore¦s = any stone ore, any nether ore
 
 	{nether block} nylium¦s = -nylium
 	{axis-aligned} {nether block} stem¦s = -stem
@@ -757,9 +757,9 @@ caves and cliffs update part 1:
 	deepslate lapis [lazuli] ore¦s = minecraft:deepslate_lapis_ore
 	deepslate diamond ore¦s = minecraft:deepslate_diamond_ore
 	
-	[any] stone ore = any stone ore, copper ore
-	[any] deepslate ore = deepslate coal ore, deepslate iron ore, deepslate copper ore, deepslate gold ore, deepslate redstone ore, deepslate emerald ore, deepslate lapis ore, deepslate diamond ore
-	[any] ore = any stone ore, any nether ore, any deepslate ore
+	[any] stone ore¦s = any stone ore, copper ore
+	[any] deepslate ore¦s = deepslate coal ore, deepslate iron ore, deepslate copper ore, deepslate gold ore, deepslate redstone ore, deepslate emerald ore, deepslate lapis ore, deepslate diamond ore
+	[any] ore¦s = any stone ore, any nether ore, any deepslate ore
 
 the wild update:
 	minecraft version = 1.19 or newer
