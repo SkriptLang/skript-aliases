@@ -78,7 +78,7 @@ old blocks before flattening:
 	grass [block¦s] = minecraft:grass
 	coarse dirt [block¦s] = minecraft:dirt {Damage:1}
 	podzol [block¦s] = minecraft:dirt {Damage:2}
-	any dirt = any block, coarse dirt, podzol
+	any dirt = any dirt, coarse dirt, podzol
 	[nether] quartz ore¦s = minecraft:quartz_ore
 	unlit redstone ore¦s = minecraft:redstone_ore
 	lit redstone ore¦s = minecraft:lit_redstone_ore
