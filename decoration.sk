@@ -423,13 +423,13 @@ combat update:
 exploration update before flattening:
 	minecraft version = 1.11 to 1.12.2
 	{old colored IDs} shulker box¦es = -shulker_box
-	any shulker box¦es = purple shulker box, white shulker box, orange shulker box, magenta shulker box, light blue shulker box, yellow shulker box, lime shulker box, pink shulker box, dark gray shulker box, light gray shulker box, cyan shulker box, blue shulker box, brown shulker box, dark green shulker box, red shulker box, black shulker box
+	[any] shulker box¦es = purple shulker box, white shulker box, orange shulker box, magenta shulker box, light blue shulker box, yellow shulker box, lime shulker box, pink shulker box, dark gray shulker box, light gray shulker box, cyan shulker box, blue shulker box, brown shulker box, dark green shulker box, red shulker box, black shulker box
 
 exploration update after flattening:
 	minecraft version = 1.13 or newer
-	{orientable} [normal] shulker box¦es = minecraft:shulker_box
+	{orientable} normal shulker box¦es = minecraft:shulker_box
 	{orientable} {colored} shulker box¦es = -shulker_box
-	any shulker box¦es = normal shulker box, white shulker box, orange shulker box, magenta shulker box, light blue shulker box, yellow shulker box, lime shulker box, pink shulker box, dark gray shulker box, light gray shulker box, cyan shulker box, purple shulker box, blue shulker box, brown shulker box, dark green shulker box, red shulker box, black shulker box
+	[any] shulker box¦es = normal shulker box, white shulker box, orange shulker box, magenta shulker box, light blue shulker box, yellow shulker box, lime shulker box, pink shulker box, dark gray shulker box, light gray shulker box, cyan shulker box, purple shulker box, blue shulker box, brown shulker box, dark green shulker box, red shulker box, black shulker box
 
 # New decoratives introduced in 1.13. These could have been grouped with the above post-flattening
 # group but I think separating the entirely new items makes more sense.
