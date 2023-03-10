@@ -787,7 +787,6 @@ the wild update:
 
 	# other build blocks
 	reinforced deepslate = minecraft:reinforced_deepslate
-	mangrove roots = minecraft:mangrove_roots
 
 	# Sculk
 	sculk [block¦s] = minecraft:sculk

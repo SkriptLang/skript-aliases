@@ -536,6 +536,10 @@ directionals before flattening:
 	{skull types} item¦s = minecraft:skull
 	({wall orientations}|{skull floor orientations}) {skull types} = minecraft:skull
 
+	(grass|dirt) path [block]¦s = minecraft:dirt_path
+	coarse dirt [block¦s] = minecraft:coarse_dirt
+	any dirt = any dirt, dirt path, coarse dirt
+
 banners:
 	minecraft version = 1.11 to 1.12.2
 	{wall orientations} {placed banner colors} wall banner¦s = minecraft:wall_banner
@@ -737,9 +741,6 @@ caves and cliffs update part 1:
 	
 	{waterloggable} {surface} glow lichen¦s = minecraft:glow_lichen
 	glow item frame [item]¦s = minecraft:glow_item_frame[relatedEntity=glow item frame]
-	
-	(grass|dirt) path [block]¦s = minecraft:dirt_path
-	any dirt = any dirt, dirt path
 
 the wild update:
 	minecraft version = 1.19 or newer
