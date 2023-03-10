@@ -332,13 +332,13 @@ village update potted flowers and saplings:
 village and pillage decoratives:
 	minecraft version = 1.14 or newer
 	{waterloggable} {directional} {wood type} wall sign¦s = -wall_sign
-	{waterloggable} {rotatable} {wood type} [floor] sign¦s = -sign
-	oak sign¦s = oak floor sign, oak wall sign
-	birch sign¦s = birch floor sign, birch wall sign
-	jungle sign¦s = jungle floor sign, jungle wall sign
-	spruce sign¦s = spruce floor sign, spruce wall sign
-	acacia sign¦s = acacia floor sign, acacia wall sign
-	dark oak sign¦s = dark oak floor sign, dark oak wall sign
+	{waterloggable} {rotatable} {wood type} floor sign¦s = -sign
+	[any] oak sign¦s = oak floor sign, oak wall sign
+	[any] birch sign¦s = birch floor sign, birch wall sign
+	[any] jungle sign¦s = jungle floor sign, jungle wall sign
+	[any] spruce sign¦s = spruce floor sign, spruce wall sign
+	[any] acacia sign¦s = acacia floor sign, acacia wall sign
+	[any] dark oak sign¦s = dark oak floor sign, dark oak wall sign
 	[any] wall sign¦s = oak wall sign, birch wall sign, jungle wall sign, spruce wall sign, acacia wall sign, dark oak wall sign
 	[any] floor sign¦s = oak floor sign, birch floor sign, jungle floor sign, spruce floor sign, acacia floor sign, dark oak floor sign
 	[any] sign¦s = any wall sign, any floor sign
@@ -657,8 +657,8 @@ nether update:
 	{lantern hanging} soul lantern¦s = minecraft:soul_lantern
 	any lantern = lantern, soul lantern
 
-	crimson sign¦s = crimson floor sign, crimson wall sign
-	warped sign¦s = warped floor sign, warped wall sign
+	[any] crimson sign¦s = crimson floor sign, crimson wall sign
+	[any] warped sign¦s = warped floor sign, warped wall sign
 	[any] wall sign¦s = any wall sign, crimson wall sign, warped wall sign
 	[any] floor sign¦s = any floor sign, crimson floor sign, warped floor sign
 	[any] sign¦s = any wall sign, any floor sign
@@ -759,7 +759,7 @@ the wild update:
 	(potted|flower pot with [a]) mangrove (propagule|sapling) = minecraft:potted_mangrove_propagule
 	(any flower pot|[any] potted plant) = any flower pot, potted mangrove propagule
 
-	mangrove sign¦s = mangrove floor sign, mangrove wall sign
+	[any] mangrove sign¦s = mangrove floor sign, mangrove wall sign
 	[any] wall sign¦s = any wall sign, mangrove wall sign
 	[any] floor sign¦s = any floor sign, mangrove floor sign
 	[any] sign¦s = any wall sign, any floor sign
