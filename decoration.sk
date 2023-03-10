@@ -13,6 +13,7 @@ unchanged decoratives:
 	enchant(ment|ing) table¦s = minecraft:enchanting_table
 	painting [item]¦s = minecraft:painting[relatedEntity=painting]
 	item frame [item]¦s = minecraft:item_frame[relatedEntity=item frame]
+	glow[ing] item frame [item]¦s = minecraft:item_frame[relatedEntity=glow item frame]
 	armor stand [item]¦s = minecraft:armor_stand[relatedEntity=armor stand]
 
 # Decoratives added in 1.12 that were changed in the flattening.
