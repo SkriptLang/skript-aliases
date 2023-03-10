@@ -810,8 +810,8 @@ the wild update:
 	[any] wood¦s = any wood, mangrove wood
 
 	[any] [wood[en]] plank¦s = any wooden plank, mangrove planks
-	[any] wood[en] slab = any wooden slab, mangrove slab
-	[any] slab = any slab, mangrove slab
+	[any] wood[en] slab¦s = any wooden slab, mangrove slab
+	[any] slab¦s = any slab, mangrove slab
 
 	{axis-aligned} mangrove log¦s = minecraft:mangrove_log
 	[any] log¦s = any log, mangrove log
