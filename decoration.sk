@@ -755,7 +755,7 @@ the wild update:
 
 	# mangrove
 	{waterloggable} mangrove (propagule|sapling)¦s = minecraft:mangrove_propagule
-	[any] sapling = any sapling, mangrove sapling
+	[any] sapling¦s = any sapling, mangrove sapling
 	(potted|flower pot with [a]) mangrove (propagule|sapling) = minecraft:potted_mangrove_propagule
 	(any flower pot|[any] potted plant) = any flower pot, potted mangrove propagule
 
