@@ -10,7 +10,8 @@ unchanged building blocks:
 
 	# Sediments
 	dirt [block¦s] = minecraft:dirt
-	any dirt = dirt block
+	coarse dirt [block¦s] = minecraft:coarse_dirt
+	any dirt = dirt block, coarse dirt
 	sand [block¦s] = minecraft:sand
 	gravel [block¦s] = minecraft:gravel
 	clay block¦s = minecraft:clay
