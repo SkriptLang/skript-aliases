@@ -132,7 +132,7 @@ plants:
 	melon seed¦s = minecraft:melon_seeds
 	[wheat] seed¦s = minecraft:wheat_seeds
 	beetroot seed¦s = minecraft:beetroot_seeds
-	any seed¦s = pumpkin seeds, melon seeds, wheat seeds
+	any seed¦s = pumpkin seeds, melon seeds, wheat seeds, beetroot seeds
 
 	wheat [item¦s] = minecraft:wheat
 
@@ -362,3 +362,4 @@ the wild update:
 		dream = - {"instrument": "minecraft:dream_goat_horn"}
 		
 	{horn variations} goat horn¦s = minecraft:goat_horn
+	
