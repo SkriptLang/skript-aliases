@@ -663,6 +663,9 @@ nether update:
 	[any] floor sign¦s = any floor sign, crimson floor sign, warped floor sign
 	[any] sign¦s = any wall sign, any floor sign
 
+	(grass|dirt) path [block]¦s = minecraft:grass_path
+	any dirt = any dirt, dirt path
+
 nether update part 2:
 	minecraft version = 1.16.2 or newer
 
@@ -670,9 +673,6 @@ nether update part 2:
 	{waterloggable} {lantern hanging} lantern = minecraft:lantern
 	{waterloggable} {lantern hanging} soul lantern¦s = minecraft:soul_lantern
 	any lantern = lantern, soul lantern
-
-	(grass|dirt) path [block]¦s = minecraft:grass_path
-	any dirt = any dirt, dirt path
 
 before caves and cliffs update part 1:
 	minecraft version = 1.16.5 or older
