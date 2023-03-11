@@ -10,8 +10,6 @@ unchanged building blocks:
 
 	# Sediments
 	dirt [block¦s] = minecraft:dirt
-	coarse dirt [block¦s] = minecraft:coarse_dirt
-	any dirt = dirt block, coarse dirt
 	sand [block¦s] = minecraft:sand
 	gravel [block¦s] = minecraft:gravel
 	clay block¦s = minecraft:clay
@@ -266,6 +264,8 @@ building blocks after flattening:
 	any andesite¦s = raw andesite, polished andesite
 
 	any [natural] stone¦s = stone, any granite, any diorite, any andesite
+	coarse dirt [block¦s] = minecraft:coarse_dirt
+	any dirt = dirt block, coarse dirt
 
 	# Sediments
 	{snowable}:
