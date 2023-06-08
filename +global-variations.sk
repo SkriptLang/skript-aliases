@@ -267,6 +267,26 @@ block states:
 		acacia = minecraft:acacia_-
 		dark oak = minecraft:dark_oak_-
 
+	# Stairs
+	{stairs}:
+		{default} = -
+		top = -[half=top]
+		bottom = -[half=bottom]
+	{stairs shape}:
+		{default} = -
+		straight = -[shape=straight]
+		inner-left = -[shape=inner_left]
+		inner-right = -[shape=inner_right]
+		outer-left = -[shape=outer_left]
+		outer-right = -[shape=outer_right]
+
+	#Slabs
+	{slab}:
+		{default} = -
+		top = -[type=top]
+		bottom = -[type=bottom]
+		double = -[type=double]
+
 # Aliases that can be used in at least one place both pre and post-flattening.
 pre-nether-update woods:
 	minecraft version = 1.15.2 or older
@@ -329,3 +349,12 @@ wild-update woods:
 		mangrove [wood] = minecraft:mangrove_-
 		cherry [wood] = minecraft:cherry_-
 		bamboo [wood] = minecraft:bamboo_-
+
+	{tree type}:
+		oak = minecraft:oak_-
+		spruce = minecraft:spruce_-
+		birch = minecraft:birch_-
+		jungle = minecraft:jungle_-
+		acacia = minecraft:acacia_-
+		dark oak = minecraft:dark_oak_-
+		cherry = minecraft:cherry_-

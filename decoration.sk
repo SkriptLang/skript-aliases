@@ -778,3 +778,20 @@ the wild update:
 
 	# sculk stuffs
 	{waterloggable} {surface} sculk vein¦s = minecraft:sculk_vein
+
+trails and tales update:
+	minecraft version = 1.20 or newer
+
+	[any] sapling¦s = any sapling, cherry sapling
+	[any] lea(f|ves) = any leaves, cherry leaves
+
+	{flower amount}:
+		{default} = -
+		with (one|1) flower = -[flower_amount=1]
+		with (two|2) flowers = -[flower_amount=2]
+		with (three|3) flowers = -[flower_amount=3]
+		with (four|all|4) flowers = -[flower_amount=4]
+	pink petals¦s {flower amount} = minecraft:pink_petals
+
+	torch flower¦s = minecraft:torchflower
+	{block half} pitcher plant¦s = minecraft:pitcher_plant
