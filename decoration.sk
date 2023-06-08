@@ -818,3 +818,9 @@ trails and tales update:
 
 	[any] hanging sign¦s = oak hanging sign, oak wall hanging sign, birch hanging sign, birch wall hanging sign, jungle hanging sign, jungle wall hanging sign, spruce hanging sign, spruce wall hanging sign, acacia hanging sign, acacia wall hanging sign, dark oak hanging sign, dark oak wall hanging sign, mangrove hanging sign, mangrove wall hanging sign, cherry hanging sign, cherry wall hanging sign, bamboo hanging sign, bamboo wall hanging sign
 	[any] sign¦s = any sign, any hanging sign
+
+	piglin (head|skull) item¦s = minecraft:piglin_head
+	[any] (head|skull) item¦s = any skull item, piglin head item
+	[any] (head|skull)¦s = any skull item
+	{directional} piglin wall[-mounted] (skull|head)¦s = minecraft:piglin_wall_head
+	{reversed rotatable} piglin (head|skull)¦s = minecraft:piglin_head
