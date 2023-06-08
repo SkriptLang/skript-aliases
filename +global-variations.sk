@@ -336,7 +336,6 @@ wild-update woods:
 wild-update woods:
 	minecraft version = 1.20 or newer
 
-    # For wood-based blocks that are defined with the wood type at the start of the alias.
 	{wood type}:
 		oak [wood] = minecraft:oak_-
 		spruce [wood] = minecraft:spruce_-
