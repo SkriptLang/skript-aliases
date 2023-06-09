@@ -367,3 +367,27 @@ trails and tales update:
 	minecraft version = 1.20 or newer
 
 	brush¦es = minecraft:brush
+	[music] (disc|record) relic = minecraft:music_disc_relic
+	[any] [music] (disc|record) = any music disc, music disc relic
+
+	angler pottery sherd¦s = minecraft:angler_pottery_sherd
+	archer pottery sherd¦s = minecraft:archer_pottery_sherd
+	arms up pottery sherd¦s = minecraft:arms_up_pottery_sherd
+	blade pottery sherd¦s = minecraft:blade_pottery_sherd
+	brewer pottery sherd¦s = minecraft:brewer_pottery_sherd
+	burn pottery sherd¦s = minecraft:burn_pottery_sherd
+	danger pottery sherd¦s = minecraft:danger_pottery_sherd
+	explorer pottery sherd¦s = minecraft:explorer_pottery_sherd
+	friend pottery sherd¦s = minecraft:friend_pottery_sherd
+	heart pottery sherd¦s = minecraft:heart_pottery_sherd
+	heart[ ]break pottery sherd¦s = minecraft:heartbreak_pottery_sherd
+	howl pottery sherd¦s = minecraft:howl_pottery_sherd
+	miner pottery sherd¦s = minecraft:miner_pottery_sherd
+	mourner pottery sherd¦s = minecraft:mourner_pottery_sherd
+	plenty pottery sherd¦s = minecraft:plenty_pottery_sherd
+	prize pottery sherd¦s = minecraft:prize_pottery_sherd
+	sheaf pottery sherd¦s = minecraft:sheaf_pottery_sherd
+	shelter pottery sherd¦s = minecraft:shelter_pottery_sherd
+	snort pottery sherd¦s = minecraft:snort_pottery_sherd
+	skull pottery sherd¦s = minecraft:skull_pottery_sherd
+	[any] pottery sherd¦s = angler pottery sherd, archer pottery sherd, arms up pottery sherd, blade pottery sherd, brewer pottery sherd, burn pottery sherd, danger pottery sherd, explorer pottery sherd, friend pottery sherd, heart pottery sherd, heartbreak pottery sherd, howl pottery sherd, miner pottery sherd, mourner pottery sherd, plenty pottery sherd, prize pottery sherd, sheaf pottery sherd, shelter pottery sherd, snort pottery sherd, skull pottery sherd
