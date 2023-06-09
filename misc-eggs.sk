@@ -182,3 +182,9 @@ the wild update:
 	(tadpole [spawn] egg|spawn tadpole)¦s = minecraft:tadpole_spawn_egg
 	(warden [spawn] egg|spawn warden)¦s = minecraft:warden_spawn_egg
 	[any] spawn egg¦s = any spawn egg, spawn allay, spawn frog, spawn tadpole, spawn warden
+
+trails and tales update:
+	minecraft version = 1.20 or newer
+	(camel [spawn] egg|spawn camel)¦s = minecraft:camel_spawn_egg
+	(sniffer [spawn] egg|spawn sniffer)¦s = minecraft:sniffer_spawn_egg
+	[any] spawn egg¦s = any spawn egg, spawn camel, spawn sniffer

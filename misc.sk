@@ -391,3 +391,21 @@ trails and tales update:
 	snort pottery sherd¦s = minecraft:snort_pottery_sherd
 	skull pottery sherd¦s = minecraft:skull_pottery_sherd
 	[any] pottery sherd¦s = angler pottery sherd, archer pottery sherd, arms up pottery sherd, blade pottery sherd, brewer pottery sherd, burn pottery sherd, danger pottery sherd, explorer pottery sherd, friend pottery sherd, heart pottery sherd, heartbreak pottery sherd, howl pottery sherd, miner pottery sherd, mourner pottery sherd, plenty pottery sherd, prize pottery sherd, sheaf pottery sherd, shelter pottery sherd, snort pottery sherd, skull pottery sherd
+
+	pitcher pod¦s = minecraft:pitcher_pod
+
+	{sniffer egg hatches}:
+		{default} = -
+		(stage 1|hatch 0) = -[hatch=0]
+		(stage 2|hatch 1) = -[hatch=1]
+		(stage 3|hatch 2) = -[hatch=2]
+	{sniffer egg hatches} sniffer egg¦s = minecraft:sniffer_egg
+
+	{dusted}:
+		{default} = -
+		(stage 1|dusted 0) = -[dusted=0]
+		(stage 2|dusted 1) = -[dusted=1]
+		(stage 3|dusted 2) = -[dusted=2]
+		(stage 4|dusted 3) = -[dusted=3]
+	{dusted} suspicious sand¦s = minecraft:suspicious_sand
+	{dusted} suspicious gravel¦s = minecraft:suspicious_gravel
