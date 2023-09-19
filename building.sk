@@ -829,6 +829,6 @@ trails and tales update:
 	{waterloggable} {stairs} {stairs shape} {directional} bamboo [wood[en]] mosaic stairs¦s = minecraft:bamboo_mosaic_stairs
 	[any] wood[en] stair¦s = any wooden stairs, bamboo stairs, bamboo mosaic stairs
 	[any] stair¦s = any stairs, bamboo mosaic stairs
-	{waterloggable} {slab} bamboo mosaic slab¦s = minecraft:bamboo mosaic_slab
+	{waterloggable} {slab} bamboo mosaic slab¦s = minecraft:bamboo_mosaic_slab
 	[any] wood[en] slab¦s = any wooden slab, bamboo mosaic slab
 	[any] slab¦s = any slab, bamboo mosaic slab
