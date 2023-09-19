@@ -280,7 +280,7 @@ block states:
 		outer-left = -[shape=outer_left]
 		outer-right = -[shape=outer_right]
 
-	#Slabs
+	# Slabs
 	{slab}:
 		{default} = -
 		top = -[type=top]
