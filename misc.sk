@@ -64,7 +64,7 @@ valuables:
 
 random items:
 	stick¦s = minecraft:stick
-	bowl¦s = minecraft:bowl
+	[wooden] bowl¦s = minecraft:bowl
 	string¦s = minecraft:string
 	feather¦s = minecraft:feather
 	gunpowder = minecraft:gunpowder
