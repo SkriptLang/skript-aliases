@@ -348,19 +348,6 @@ building blocks after flattening:
 	[any] wood[en] slab¦s = oak slab, spruce slab, birch slab, jungle slab, acacia slab, dark oak slab
 	[any] slab¦s = any wooden slab, stone slab, sandstone slab, petrified oak slab, cobblestone slab, brick slab, stone brick slab, nether brick slab, quartz slab, red sandstone slab, purpur slab, prismarine slab, prismarine brick slab, dark prismarine slab
 
-	# Stairs
-	{stairs}:
-		{default} = -
-		top = -[half=top]
-		bottom = -[half=bottom]
-	{stairs shape}:
-		{default} = -
-		straight = -[shape=straight]
-		inner-left = -[shape=inner_left]
-		inner-right = -[shape=inner_right]
-		outer-left = -[shape=outer_left]
-		outer-right = -[shape=outer_right]
-
 	{waterloggable} {stairs} {stairs shape} {directional} {wood type} stair¦s = -stairs
 	{waterloggable} {stairs} {stairs shape} {directional} cobble[stone] stair¦s = minecraft:cobblestone_stairs
 	{waterloggable} {stairs} {stairs shape} {directional} [red] brick stair¦s = minecraft:brick_stairs
@@ -568,18 +555,7 @@ update aquatic:
 
 village and pillage update:
 	minecraft version = 1.14 or newer
-	# Stairs
-	{stairs}:
-		{default} = -
-		top = -[half=top]
-		bottom = -[half=bottom]
-	{stairs shape}:
-		{default} = -
-		straight = -[shape=straight]
-		inner-left = -[shape=inner_left]
-		inner-right = -[shape=inner_right]
-		outer-left = -[shape=outer_left]
-		outer-right = -[shape=outer_right]
+
 	#Stairs
 	{waterloggable} {stairs} {stairs shape} {directional} stone stair¦s = minecraft:stone_stairs
 	{waterloggable} {stairs} {stairs shape} {directional} granite stair¦s = minecraft:granite_stairs
@@ -598,14 +574,6 @@ village and pillage update:
 	any stone stair¦s = stone stairs, granite stairs, diorite stairs, andesite stairs, polished granite stairs, polished diorite stairs, polished andesite stairs, stone brick stairs, mossy stone brick stairs, cobblestone stairs, mossy cobblestone stairs
 	[any] sandstone stair¦s = sandstone stairs, smooth sandstone stairs, red sandstone stairs, smooth red sandstone stairs
 	[any] stair¦s = any wood stairs, any stone stairs, any sandstone stairs, brick stairs, nether brick stairs, quartz stairs, purpur stairs, prismarine stairs, prismarine brick stairs, dark prismarine stairs, smooth quartz stairs, red nether brick stairs, end stone brick stairs
-
-
-	#Slabs
-	{slab}:
-		{default} = -
-		top = -[type=top]
-		bottom = -[type=bottom]
-		double = -[type=double]
 		
 	{waterloggable} {slab} stone slab¦s = minecraft:stone_slab
 	{waterloggable} {slab} smooth stone slab¦s = minecraft:smooth_stone_slab
@@ -821,3 +789,46 @@ the wild update:
 
 	{axis-aligned} stripped mangrove log¦s = minecraft:stripped_mangrove_log
 	[any] stripped log [block¦s] = any stripped log, stripped mangrove log
+
+trails and tales update:
+	minecraft version = 1.20 or newer
+
+	# Cherry wood
+	[any] stairs = any stairs, cherry stairs
+
+	{axis-aligned} cherry (wood|bark) [block¦s] = minecraft:cherry_wood
+	[any] wood¦s = any wood, cherry wood
+
+	{axis-aligned} cherry log¦s = minecraft:cherry_log
+	[any] log¦s = any log, cherry log
+
+	[any] wood[en] slab¦s = any wooden slab, cherry slab
+	[any] slab¦s = any slab, cherry slab
+	[any] [wood[en]] plank¦s = any wooden plank, cherry planks
+
+	{axis-aligned} stripped cherry (bark|wood) [block¦s] = minecraft:stripped_cherry_wood
+	[any] stripped (bark|wood) [block¦s] = any stripped bark, stripped cherry bark
+
+	{axis-aligned} stripped cherry log¦s = minecraft:stripped_cherry_log
+	[any] stripped log [block¦s] = any stripped log, stripped cherry log
+
+	# Bamboo wood
+	[any] stairs = any stairs, bamboo stairs
+
+	# Reminder that bamboo is slightly different than a wood log, but still has similar principles, don't copy section for new wood.
+	{axis-aligned} bamboo [wood] block¦s = minecraft:bamboo_block
+	{axis-aligned} stripped bamboo [wood] block¦s = minecraft:stripped_bamboo_block
+	[any] stripped (bark|wood) [block¦s] = any stripped wood, stripped bamboo wood block
+	[any] wood¦s = any wood, bamboo block, stripped bamboo wood block
+
+	[any] wood[en] slab¦s = any wooden slab, bamboo slab
+	[any] slab¦s = any slab, bamboo slab
+	[any] [wood[en]] plank¦s = any wooden plank, bamboo planks
+
+	bamboo [wood[en]] mosaic¦s = minecraft:bamboo_mosaic
+	{waterloggable} {stairs} {stairs shape} {directional} bamboo [wood[en]] mosaic stairs¦s = minecraft:bamboo_mosaic_stairs
+	[any] wood[en] stair¦s = any wooden stairs, bamboo stairs, bamboo mosaic stairs
+	[any] stair¦s = any stairs, bamboo mosaic stairs
+	{waterloggable} {slab} bamboo mosaic slab¦s = minecraft:bamboo_mosaic_slab
+	[any] wood[en] slab¦s = any wooden slab, bamboo mosaic slab
+	[any] slab¦s = any slab, bamboo mosaic slab

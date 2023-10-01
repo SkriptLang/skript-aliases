@@ -290,3 +290,30 @@ the wild update:
 	[any] door¦s = any door, mangrove door
 	[any] fence¦s = any fence, mangrove fence
 	[any] wood[en] pressure plate¦s = any wooden pressure plate, mangrove pressure plate
+
+trails and tales update:
+	minecraft version = 1.20 or newer
+
+	# Cherry wood
+	[any] wood[en] button¦s = wood button, cherry button
+	[any] button¦s = any button, cherry button
+	[any] pressure plate¦s = pressure plate, cherry pressure plate
+	[any] [fence] gate¦s = gate, cherry gate
+	[any] wood[en] trapdoor¦s = wood trapdoor, cherry trapdoor
+	[any] trapdoor¦s = any trapdoor, cherry trapdoor
+	[any] wood[en] door¦s = any wood door, cherry door
+	[any] door¦s = any door, cherry door
+	[any] fence¦s = any fence, cherry fence
+	[any] wood[en] pressure plate¦s = any wooden pressure plate, cherry pressure plate
+
+	# Bamboo wood
+	[any] wood[en] button¦s = wood button, bamboo button
+	[any] button¦s = any button, bamboo button
+	[any] pressure plate¦s = pressure plate, bamboo pressure plate
+	[any] [fence] gate¦s = gate, bamboo gate
+	[any] wood[en] trapdoor¦s = wood trapdoor, bamboo trapdoor
+	[any] trapdoor¦s = any trapdoor, bamboo trapdoor
+	[any] wood[en] door¦s = any wood door, bamboo door
+	[any] door¦s = any door, bamboo door
+	[any] fence¦s = any fence, bamboo fence
+	[any] wood[en] pressure plate¦s = any wooden pressure plate, bamboo pressure plate
