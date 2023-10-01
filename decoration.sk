@@ -802,22 +802,22 @@ trails and tales update:
 		(dangling|attached|loose) = -[attached=true]
 	{waterloggable} {directional} {wood type} wall hanging sign¦s = -wall_hanging_sign
 	{waterloggable} {rotatable} {hanging sign attachment} {wood type} hanging sign¦s = -hanging_sign
-	[any] oak sign¦s = oak sign, oak hanging sign, oak wall hanging sign
-	[any] birch sign¦s = birch sign, birch hanging sign, birch wall hanging sign
-	[any] jungle sign¦s = jungle sign, jungle hanging sign, jungle wall hanging sign
-	[any] spruce sign¦s = spruce sign, spruce hanging sign, spruce wall hanging sign
-	[any] acacia sign¦s = acacia sign, acacia hanging sign, acacia wall hanging sign
-	[any] dark oak sign¦s = dark oak sign, dark oak hanging sign, dark oak wall hanging sign
-	[any] mangrove sign¦s = mangrove sign, mangrove hanging sign, mangrove wall hanging sign
+	#[any] oak sign¦s = oak sign, oak hanging sign, oak wall hanging sign
+	#[any] birch sign¦s = birch sign, birch hanging sign, birch wall hanging sign
+	#[any] jungle sign¦s = jungle sign, jungle hanging sign, jungle wall hanging sign
+	#[any] spruce sign¦s = spruce sign, spruce hanging sign, spruce wall hanging sign
+	#[any] acacia sign¦s = acacia sign, acacia hanging sign, acacia wall hanging sign
+	#[any] dark oak sign¦s = dark oak sign, dark oak hanging sign, dark oak wall hanging sign
+	#[any] mangrove sign¦s = mangrove sign, mangrove hanging sign, mangrove wall hanging sign
 
-	[any] cherry sign¦s = cherry floor sign, cherry wall sign, cherry hanging sign, cherry wall hanging sign
-	[any] bamboo sign¦s = bamboo floor sign, bamboo wall sign, bamboo hanging sign, bamboo wall hanging sign
+	[any] cherry sign¦s = cherry floor sign, cherry wall sign#, cherry hanging sign, cherry wall hanging sign
+	[any] bamboo sign¦s = bamboo floor sign, bamboo wall sign#, bamboo hanging sign, bamboo wall hanging sign
 
 	[any] wall hanging sign¦s = oak wall hanging sign, birch wall hanging sign, jungle wall hanging sign, spruce wall hanging sign, acacia wall hanging sign, dark oak wall hanging sign, mangrove wall hanging sign, cherry wall hanging sign, bamboo wall hanging sign
 	[any] wall sign¦s = wall sign, wall hanging sign
 
 	[any] hanging sign¦s = oak hanging sign, oak wall hanging sign, birch hanging sign, birch wall hanging sign, jungle hanging sign, jungle wall hanging sign, spruce hanging sign, spruce wall hanging sign, acacia hanging sign, acacia wall hanging sign, dark oak hanging sign, dark oak wall hanging sign, mangrove hanging sign, mangrove wall hanging sign, cherry hanging sign, cherry wall hanging sign, bamboo hanging sign, bamboo wall hanging sign
-	[any] sign¦s = any sign, any hanging sign
+	[any] sign¦s = any sign, any wall sign, any hanging sign
 
 	piglin (head|skull) item¦s = minecraft:piglin_head
 	[any] (head|skull) item¦s = any skull item, piglin head item
