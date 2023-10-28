@@ -791,10 +791,12 @@ trails and tales update:
 		with (two|2) flowers = -[flower_amount=2]
 		with (three|3) flowers = -[flower_amount=3]
 		with (four|all|4) flowers = -[flower_amount=4]
-	pink petals¦s {flower amount} = minecraft:pink_petals
+	pink petals {flower amount} = minecraft:pink_petals
 
 	torch flower¦s = minecraft:torchflower
+	[any] small flower = any small flower, pink petals, torch flowers
 	{block half} pitcher plant¦s = minecraft:pitcher_plant
+	[any] (large|tall|double height) flower = any large flower, pitcher plants
 
 	{hanging sign attachment}:
 		{default} = -
