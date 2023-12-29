@@ -827,8 +827,8 @@ trails and tales update:
 	{reversed rotatable} piglin (head|skull)¦s = minecraft:piglin_head
 
 grass change:
-    minecraft version = 1.20.2 or older
-    short grass¦es = minecraft:grass
+	minecraft version = 1.20.2 or older
+	short grass¦es = minecraft:grass
 
 trails and tales update continued: # Name is yet to be determined
 	minecraft version = 1.20.3 or newer
