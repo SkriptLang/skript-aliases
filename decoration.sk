@@ -180,7 +180,6 @@ decoratives after flattening:
 
 	# Plants
 	dead (grass|bush)¦es = minecraft:dead_bush
-	short grass¦es = minecraft:grass
 	fern¦s = minecraft:fern
 
 	kelp plant¦s = minecraft:kelp_plant
@@ -826,3 +825,11 @@ trails and tales update:
 	[any] (head|skull)¦s = any skull item
 	{directional} piglin wall[-mounted] (skull|head)¦s = minecraft:piglin_wall_head
 	{reversed rotatable} piglin (head|skull)¦s = minecraft:piglin_head
+
+before grass change:
+	minecraft version = 1.20.2 or older
+	short grass¦es = minecraft:grass
+
+after grass change:
+	minecraft version = 1.20.3 or newer
+	short grass¦es = minecraft:short_grass
