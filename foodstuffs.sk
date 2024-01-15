@@ -71,8 +71,8 @@ foods after flattening:
 	tropical fish¦es = minecraft:tropical_fish[relatedEntity=tropical fish]
 	any raw fish¦es = raw cod, raw salmon, pufferfish, tropical fish
 	
-	[normal] golden apple = minecraft:golden_apple
-	(enchanted golden|notch) apple = minecraft:enchanted_golden_apple
+	[normal] golden apple¦s = minecraft:golden_apple
+	(enchanted golden|notch) apple¦s = minecraft:enchanted_golden_apple
 	
 	melon slice¦s = minecraft:melon_slice
 	dried kelp¦s = minecraft:dried_kelp
