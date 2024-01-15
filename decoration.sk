@@ -697,6 +697,7 @@ caves and cliffs update part 1:
 	
 	candle¦s = minecraft:candle
 	{colored} candle¦s = -candle
+	any candle¦s = candle, white candle, orange candle, magenta candle, light blue candle, yellow candle, lime candle, pink candle, dark gray candle, light gray candle, cyan candle, purple candle, blue candle, brown candle, dark green candle, red candle, black candle
 	
 	{pointed dripstone thickness}:
 		{default} = -
