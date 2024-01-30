@@ -183,9 +183,10 @@ the wild update:
 	(warden [spawn] egg|spawn warden)¦s = minecraft:warden_spawn_egg
 	[any] spawn egg¦s = any spawn egg, spawn allay, spawn frog, spawn tadpole, spawn warden
 
-the wild update after iron golem:
+the wild update after golems egg:
 	minecraft version = 1.19.3 or newer
-	([iron] golem [spawn] egg|spawn [iron] golem)¦s = minecraft:iron_golem_spawn_egg
+	[iron golem [spawn] egg|spawn iron golem)¦s = minecraft:iron_golem_spawn_egg
+	[snow golem [spawn] egg|spawn snow golem)¦s = minecraft:snow_golem_spawn_egg
 
 trails and tales update:
 	minecraft version = 1.20 or newer
