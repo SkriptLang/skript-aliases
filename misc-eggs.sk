@@ -185,7 +185,7 @@ the wild update:
 
 the wild update after iron golem:
 	minecraft version = 1.19.3 or newer
-	([iron] golem [spawn] egg|spawn [iron] golem)¦s = minecraft:spawn_egg {Damage:50}
+	([iron] golem [spawn] egg|spawn [iron] golem)¦s = minecraft:iron_golem_spawn_egg
 
 trails and tales update:
 	minecraft version = 1.20 or newer
