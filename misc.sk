@@ -32,7 +32,6 @@ new items:
 	charcoal = minecraft:charcoal
 	sugar cane¦s = minecraft:sugar_cane
 	conduit¦s = minecraft:conduit
-	[turtle [shell]] scute¦s = minecraft:scute
 	kelp = minecraft:kelp
 	nautilus shell¦s = minecraft:nautilus_shell
 	heart[s] of the sea = minecraft:heart_of_the_sea
@@ -51,16 +50,6 @@ new items:
 		(trio of|[pile of] three) = -[eggs=3]
 		[pile of] four = -[eggs=4]
 	{egg count} {hatch stage} turtle egg¦s = minecraft:turtle_egg
-
-valuables:
-	{beacon levels}:
-		{default} = -
-		(level (0|one)|unleveled) = - {Levels:0}
-		(level (1|one)) = - {Levels:1}
-		(level (2|two)) = - {Levels:2}
-		(level (3|three)) = - {Levels:3}
-		(level (4|four)|complete[d]) = - {Levels:4}
-	{beacon levels} beacon¦s = minecraft:beacon
 
 random items:
 	stick¦s = minecraft:stick
@@ -110,12 +99,20 @@ books:
 	enchanted book = minecraft:enchanted_book
 	any book¦s = book, book with text
 
-fireworks:
+fireworks before components:
+	minecraft version = 1.20.4 or older
 	{firework types}:
 		(0|zero|immediate) = - {Fireworks:{Flight:0}}
 		(1|one|short) = - {Fireworks:{Flight:1}}
 		(2|two|medium) = - {Fireworks:{Flight:2}}
 		(3|three|long) = - {Fireworks:{Flight:3}}
+fireworks after components:
+	minecraft version = 1.20.5 or newer
+	{firework types}:
+		(0|zero|immediate) = - {minecraft:fireworks={"flight_duration":0}}
+		(1|one|short) = - {minecraft:fireworks={"flight_duration":1}}
+		(2|two|medium) = - {minecraft:fireworks={"flight_duration":2}}
+		(3|three|long) = - {minecraft:fireworks={"flight_duration":3}}
 
 fireworks before flattening:
 	minecraft version = 1.12.2 or older
@@ -348,20 +345,6 @@ the wild update:
 	# sculk-related stuffs
 	echo shard¦s = minecraft:echo_shard
 	recovery compass¦es = minecraft:recovery_compass
-
-	# Horns
-	{horn variations}:
-		{default} = -
-		ponder = - {"instrument": "minecraft:ponder_goat_horn"}
-		sing = - {"instrument": "minecraft:sing_goat_horn"}
-		seek = - {"instrument": "minecraft:seek_goat_horn"}
-		feel = - {"instrument": "minecraft:feel_goat_horn"}
-		admire = - {"instrument": "minecraft:admire_goat_horn"}
-		call = - {"instrument": "minecraft:call_goat_horn"}
-		yearn = - {"instrument": "minecraft:yearn_goat_horn"}
-		dream = - {"instrument": "minecraft:dream_goat_horn"}
-		
-	{horn variations} goat horn¦s = minecraft:goat_horn
 	
 trails and tales update:
 	minecraft version = 1.20 or newer
@@ -409,3 +392,61 @@ trails and tales update:
 		(stage 4|dusted 3) = -[dusted=3]
 	{dusted} suspicious sand¦s = minecraft:suspicious_sand
 	{dusted} suspicious gravel¦s = minecraft:suspicious_gravel
+
+beacons before components:
+	minecraft version = 1.20.4 or older
+	{beacon levels}:
+		{default} = -
+		(level (0|one)|unleveled) = - {Levels:0}
+		(level (1|one)) = - {Levels:1}
+		(level (2|two)) = - {Levels:2}
+		(level (3|three)) = - {Levels:3}
+		(level (4|four)|complete[d]) = - {Levels:4}
+beacons after components:
+	minecraft version = 1.20.5 or newer
+	{beacon levels}:
+		{default} = -
+		(level (0|one)|unleveled) = - {minecraft:block_entity_data={"id":"minecraft:beacon","Levels":0}}
+		(level (1|one)) = - {minecraft:block_entity_data={"id":"minecraft:beacon","Levels":1}}
+		(level (2|two)) = - {minecraft:block_entity_data={"id":"minecraft:beacon","Levels":2}}
+		(level (3|three)) = - {minecraft:block_entity_data={"id":"minecraft:beacon","Levels":3}}
+		(level (4|four)|complete[d]) = - {minecraft:block_entity_data={"id":"minecraft:beacon","Levels":4}}
+beacons:
+	{beacon levels} beacon¦s = minecraft:beacon
+
+goat horns before components:
+	minecraft version = 1.19 to 1.20.4
+	{horn variations}:
+		{default} = -
+		ponder = - {"instrument": "minecraft:ponder_goat_horn"}
+		sing = - {"instrument": "minecraft:sing_goat_horn"}
+		seek = - {"instrument": "minecraft:seek_goat_horn"}
+		feel = - {"instrument": "minecraft:feel_goat_horn"}
+		admire = - {"instrument": "minecraft:admire_goat_horn"}
+		call = - {"instrument": "minecraft:call_goat_horn"}
+		yearn = - {"instrument": "minecraft:yearn_goat_horn"}
+		dream = - {"instrument": "minecraft:dream_goat_horn"}
+goat horns after components:
+	minecraft version = 1.20.5 or newer
+	{horn variations}:
+		{default} = -
+		ponder = - {minecraft:instrument="minecraft:ponder_goat_horn"}
+		sing = - {minecraft:instrument="minecraft:sing_goat_horn"}
+		seek = - {minecraft:instrument="minecraft:seek_goat_horn"}
+		feel = - {minecraft:instrument="minecraft:feel_goat_horn"}
+		admire = - {minecraft:instrument="minecraft:admire_goat_horn"}
+		call = - {minecraft:instrument="minecraft:call_goat_horn"}
+		yearn = - {minecraft:instrument="minecraft:yearn_goat_horn"}
+		dream = - {minecraft:instrument="minecraft:dream_goat_horn"}
+goat horns:
+	{horn variations} goat horn¦s = minecraft:goat_horn
+
+scutes before 1.20.5:
+	minecraft version = 1.13 to 1.20.4
+
+	[turtle [shell]] scute¦s = minecraft:scute
+
+scutes after 1.20.5:
+	minecraft version = 1.20.5 or newer
+
+	[turtle [shell]] scute¦s = minecraft:turtle_scute

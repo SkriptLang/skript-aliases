@@ -357,3 +357,131 @@ wild-update woods:
 		acacia = minecraft:acacia_-
 		dark oak = minecraft:dark_oak_-
 		cherry = minecraft:cherry_-
+
+potions before components:
+	minecraft version = 1.20.4 or older
+
+	{potion types}:
+		{default} = - # Match all potions
+		water = - {"Potion": "minecraft:water"}
+		thick = - {"Potion": "minecraft:thick"}
+		mundane = - {"Potion": "minecraft:mundane"}
+		awkward = - {"Potion": "minecraft:awkward"}
+
+		night vision = - {"Potion": "minecraft:night_vision"}
+		(long|extended) night vision = - {"Potion": "minecraft:long_night_vision"}
+
+		invisibility = - {"Potion": "minecraft:invisibility"}
+		(long|extended) invisibility = - {"Potion": "minecraft:long_invisibility"}
+
+		(leaping|jumping) = - {"Potion": "minecraft:leaping"}
+		(long|extended) (leaping|jumping) = - {"Potion": "minecraft:long_leaping"}
+		(strong|upgraded|level 2) (leaping|jumping) = - {"Potion": "minecraft:strong_leaping"}
+
+		fire resistance = - {"Potion": "minecraft:fire_resistance"}
+		(long|extended) fire resistance = - {"Potion": "minecraft:long_fire_resistance"}
+
+		(swiftness|speed) = - {"Potion": "minecraft:swiftness"}
+		(extended|long) (speed|swiftness) = - {"Potion": "minecraft:long_swiftness"}
+		(strong|upgraded|level 2) (speed|swiftness) = - {"Potion": "minecraft:strong_swiftness"}
+
+		slow[ness] = - {"Potion": "minecraft:slowness"}
+		(long|extended) slow[ness] = - {"Potion": "minecraft:long_slowness"}
+		(strong|upgraded|level 2) slow[ness] = - {"Potion": "minecraft:strong_slowness"}
+
+		water breathing = - {"Potion": "minecraft:water_breathing"}
+		(long|extended) water breathing = - {"Potion": "minecraft:long_water_breathing"}
+
+		[instant] heal(th|ing) = - {"Potion": "minecraft:healing"}
+		(strong|upgraded|level 2) [instant] heal(th|ing) = - {"Potion": "minecraft:strong_healing"}
+
+		[instant] (harming|damage) = - {"Potion": "minecraft:harming"}
+		(strong|upgraded|level 2) [instant] (harming|damage) = - {"Potion": "minecraft:strong_harming"}
+
+		poison[ing] = - {"Potion": "minecraft:poison"}
+		(long|extended) poison[ing] = - {"Potion": "minecraft:long_poison"}
+		(strong|upgraded|level 2) poison[ing] = - {"Potion": "minecraft:strong_poison"}
+
+		regen[eration] = - {"Potion": "minecraft:regeneration"}
+		(long|extended) regen[eration] = - {"Potion": "minecraft:long_regeneration"}
+		(strong|upgraded|level 2) regen[eration] = - {"Potion": "minecraft:strong_regeneration"}
+
+		strength = - {"Potion": "minecraft:strength"}
+		(long|extended) strength = - {"Potion": "minecraft:long_strength"}
+		(strong|upgraded|level 2) strength = - {"Potion": "minecraft:strong_strength"}
+
+		weak(ness|ening) = - {"Potion": "minecraft:weakness"}
+		(long|extended) weak(ness|ening) = - {"Potion": "minecraft:long_weakness"}
+
+		luck = - {"Potion": "minecraft:luck"}
+
+		turtle master = - {"Potion": "minecraft:turtle_master"}
+		(long|extended) turtle master = - {"Potion": "minecraft:long_turtle_master"}
+		(strong|upgraded|level 2) turtle master = - {"Potion": "minecraft:strong_turtle_master"}
+
+		slow fall[ing] = - {"Potion": "minecraft:slow_falling"}
+		(long|extended) slow fall[ing] = - {"Potion": "minecraft:long_slow_falling"}
+
+potions after components:
+	minecraft version = 1.20.5 or newer
+
+	{potion types}:
+		{default} = - # Match all potions
+		water = - {minecraft:potion_contents={"potion":"minecraft:water"}}
+		thick = - {minecraft:potion_contents={"potion":"minecraft:thick"}}
+		mundane = - {minecraft:potion_contents={"potion":"minecraft:mundane"}}
+		awkward = - {minecraft:potion_contents={"potion":"minecraft:awkward"}}
+
+		night vision = - {minecraft:potion_contents={"potion":"minecraft:night_vision"}}
+		(long|extended) night vision = - {minecraft:potion_contents={"potion":"minecraft:long_night_vision"}}
+
+		invisibility = - {minecraft:potion_contents={"potion":"minecraft:invisibility"}}
+		(long|extended) invisibility = - {minecraft:potion_contents={"potion":"minecraft:long_invisibility"}}
+
+		(leaping|jumping) = - {minecraft:potion_contents={"potion":"minecraft:leaping"}}
+		(long|extended) (leaping|jumping) = - {minecraft:potion_contents={"potion":"minecraft:long_leaping"}}
+		(strong|upgraded|level 2) (leaping|jumping) = - {minecraft:potion_contents={"potion":"minecraft:strong_leaping"}}
+
+		fire resistance = - {minecraft:potion_contents={"potion":"minecraft:fire_resistance"}}
+		(long|extended) fire resistance = - {minecraft:potion_contents={"potion":"minecraft:long_fire_resistance"}}
+
+		(swiftness|speed) = - {minecraft:potion_contents={"potion":"minecraft:swiftness"}}
+		(extended|long) (speed|swiftness) = - {minecraft:potion_contents={"potion":"minecraft:long_swiftness"}}
+		(strong|upgraded|level 2) (speed|swiftness) = - {minecraft:potion_contents={"potion":"minecraft:strong_swiftness"}}
+
+		slow[ness] = - {minecraft:potion_contents={"potion":"minecraft:slowness"}}
+		(long|extended) slow[ness] = - {minecraft:potion_contents={"potion":"minecraft:long_slowness"}}
+		(strong|upgraded|level 2) slow[ness] = - {minecraft:potion_contents={"potion":"minecraft:strong_slowness"}}
+
+		water breathing = - {minecraft:potion_contents={"potion":"minecraft:water_breathing"}}
+		(long|extended) water breathing = - {minecraft:potion_contents={"potion":"minecraft:long_water_breathing"}}
+
+		[instant] heal(th|ing) = - {minecraft:potion_contents={"potion":"minecraft:healing"}}
+		(strong|upgraded|level 2) [instant] heal(th|ing) = - {minecraft:potion_contents={"potion":"minecraft:strong_healing"}}
+
+		[instant] (harming|damage) = - {minecraft:potion_contents={"potion":"minecraft:harming"}}
+		(strong|upgraded|level 2) [instant] (harming|damage) = - {minecraft:potion_contents={"potion":"minecraft:strong_harming"}}
+
+		poison[ing] = - {minecraft:potion_contents={"potion":"minecraft:poison"}}
+		(long|extended) poison[ing] = - {minecraft:potion_contents={"potion":"minecraft:long_poison"}}
+		(strong|upgraded|level 2) poison[ing] = - {minecraft:potion_contents={"potion":"minecraft:strong_poison"}}
+
+		regen[eration] = - {minecraft:potion_contents={"potion":"minecraft:regeneration"}}
+		(long|extended) regen[eration] = - {minecraft:potion_contents={"potion":"minecraft:long_regeneration"}}
+		(strong|upgraded|level 2) regen[eration] = - {minecraft:potion_contents={"potion":"minecraft:strong_regeneration"}}
+
+		strength = - {minecraft:potion_contents={"potion":"minecraft:strength"}}
+		(long|extended) strength = - {minecraft:potion_contents={"potion":"minecraft:long_strength"}}
+		(strong|upgraded|level 2) strength = - {minecraft:potion_contents={"potion":"minecraft:strong_strength"}}
+
+		weak(ness|ening) = - {minecraft:potion_contents={"potion":"minecraft:weakness"}}
+		(long|extended) weak(ness|ening) = - {minecraft:potion_contents={"potion":"minecraft:long_weakness"}}
+
+		luck = - {minecraft:potion_contents={"potion":"minecraft:luck"}}
+
+		turtle master = - {minecraft:potion_contents={"potion":"minecraft:turtle_master"}}
+		(long|extended) turtle master = - {minecraft:potion_contents={"potion":"minecraft:long_turtle_master"}}
+		(strong|upgraded|level 2) turtle master = - {minecraft:potion_contents={"potion":"minecraft:strong_turtle_master"}}
+
+		slow fall[ing] = - {minecraft:potion_contents={"potion":"minecraft:slow_falling"}}
+		(long|extended) slow fall[ing] = - {minecraft:potion_contents={"potion":"minecraft:long_slow_falling"}}
