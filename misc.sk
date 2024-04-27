@@ -397,20 +397,20 @@ beacons before components:
 	minecraft version = 1.20.4 or older
 	{beacon levels}:
 		{default} = -
-		(level (0|one)|unleveled) = - {Levels:0}
-		(level (1|one)) = - {Levels:1}
-		(level (2|two)) = - {Levels:2}
-		(level (3|three)) = - {Levels:3}
-		(level (4|four)|complete[d]) = - {Levels:4}
+		(level (0|one)|unleveled) = - {Levels:0} [deduplicate=false]
+		(level (1|one)) = - {Levels:1} [deduplicate=false]
+		(level (2|two)) = - {Levels:2} [deduplicate=false]
+		(level (3|three)) = - {Levels:3} [deduplicate=false]
+		(level (4|four)|complete[d]) = - {Levels:4} [deduplicate=false]
 beacons after components:
 	minecraft version = 1.20.5 or newer
 	{beacon levels}:
 		{default} = -
-		(level (0|one)|unleveled) = - {minecraft:block_entity_data={"id":"minecraft:beacon","Levels":0}}
-		(level (1|one)) = - {minecraft:block_entity_data={"id":"minecraft:beacon","Levels":1}}
-		(level (2|two)) = - {minecraft:block_entity_data={"id":"minecraft:beacon","Levels":2}}
-		(level (3|three)) = - {minecraft:block_entity_data={"id":"minecraft:beacon","Levels":3}}
-		(level (4|four)|complete[d]) = - {minecraft:block_entity_data={"id":"minecraft:beacon","Levels":4}}
+		(level (0|one)|unleveled) = - {minecraft:block_entity_data={"id":"minecraft:beacon","Levels":0}} [deduplicate=false]
+		(level (1|one)) = - {minecraft:block_entity_data={"id":"minecraft:beacon","Levels":1}} [deduplicate=false]
+		(level (2|two)) = - {minecraft:block_entity_data={"id":"minecraft:beacon","Levels":2}} [deduplicate=false]
+		(level (3|three)) = - {minecraft:block_entity_data={"id":"minecraft:beacon","Levels":3}} [deduplicate=false]
+		(level (4|four)|complete[d]) = - {minecraft:block_entity_data={"id":"minecraft:beacon","Levels":4}} [deduplicate=false]
 beacons:
 	{beacon levels} beacon¦s = minecraft:beacon
 
