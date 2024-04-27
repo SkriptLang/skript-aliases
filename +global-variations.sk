@@ -382,8 +382,8 @@ potions before components:
 		(long|extended) fire resistance = - {"Potion": "minecraft:long_fire_resistance"}
 
 		(swiftness|speed) = - {"Potion": "minecraft:swiftness"}
-		(extended|long) (speed|swiftness) = - {"Potion": "minecraft:long_swiftness"}
-		(strong|upgraded|level 2) (speed|swiftness) = - {"Potion": "minecraft:strong_swiftness"}
+		(extended|long) (swiftness|speed) = - {"Potion": "minecraft:long_swiftness"}
+		(strong|upgraded|level 2) (swiftness|speed) = - {"Potion": "minecraft:strong_swiftness"}
 
 		slow[ness] = - {"Potion": "minecraft:slowness"}
 		(long|extended) slow[ness] = - {"Potion": "minecraft:long_slowness"}
@@ -446,8 +446,8 @@ potions after components:
 		(long|extended) fire resistance = - {minecraft:potion_contents={"potion":"minecraft:long_fire_resistance"}}
 
 		(swiftness|speed) = - {minecraft:potion_contents={"potion":"minecraft:swiftness"}}
-		(extended|long) (speed|swiftness) = - {minecraft:potion_contents={"potion":"minecraft:long_swiftness"}}
-		(strong|upgraded|level 2) (speed|swiftness) = - {minecraft:potion_contents={"potion":"minecraft:strong_swiftness"}}
+		(extended|long) (swiftness|speed) = - {minecraft:potion_contents={"potion":"minecraft:long_swiftness"}}
+		(strong|upgraded|level 2) (swiftness|speed) = - {minecraft:potion_contents={"potion":"minecraft:strong_swiftness"}}
 
 		slow[ness] = - {minecraft:potion_contents={"potion":"minecraft:slowness"}}
 		(long|extended) slow[ness] = - {minecraft:potion_contents={"potion":"minecraft:long_slowness"}}
