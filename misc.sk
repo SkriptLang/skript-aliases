@@ -439,6 +439,7 @@ goat horns after components:
 		yearn = - {minecraft:instrument="minecraft:yearn_goat_horn"}
 		dream = - {minecraft:instrument="minecraft:dream_goat_horn"}
 goat horns:
+	minecraft version = 1.19 or newer
 	{horn variations} goat horn¦s = minecraft:goat_horn
 
 scutes before 1.20.5:
