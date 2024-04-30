@@ -510,6 +510,7 @@ armor trims after components:
 		(iron|grey|gray) spire = - {minecraft:trim={"material":"minecraft:iron","pattern":"minecraft:spire"}}
 		(copper|brown) spire = - {minecraft:trim={"material":"minecraft:copper","pattern":"minecraft:spire"}}
 armor trims:
+	minecraft version = 1.20 or newer
 	{armor trims} leather (cap|helmet)¦s = minecraft:leather_helmet
 	{armor trims} leather (tunic|chest(piece|plate))¦s = minecraft:leather_chestplate
 	{armor trims} leather (pants|leggings) = minecraft:leather_leggings
