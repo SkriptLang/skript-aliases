@@ -1,0 +1,389 @@
+armor trims before components:
+	minecraft version = 1.20 to 1.20.4
+	{armor trims}:
+		{default} = -
+		(emerald|green) sentry = - {"Trim": {"material": "minecraft:emerald", "pattern": "minecraft:sentry"}}
+		(redstone|red) sentry = - {"Trim": {"material": "minecraft:redstone", "pattern": "minecraft:sentry"}}
+		(lapis [lazuli]|blue) sentry = - {"Trim": {"material": "minecraft:lapis", "pattern": "minecraft:sentry"}}
+		(amethyst [shard]|purple) sentry = - {"Trim": {"material": "minecraft:amethyst", "pattern": "minecraft:sentry"}}
+		([nether] quartz|white) sentry = - {"Trim": {"material": "minecraft:quartz", "pattern": "minecraft:sentry"}}
+		(netherite|black) sentry = - {"Trim": {"material": "minecraft:netherite", "pattern": "minecraft:sentry"}}
+		(diamond|light blue) sentry = - {"Trim": {"material": "minecraft:diamond", "pattern": "minecraft:sentry"}}
+		(gold|yellow) sentry = - {"Trim": {"material": "minecraft:gold", "pattern": "minecraft:sentry"}}
+		(iron|grey|gray) sentry = - {"Trim": {"material": "minecraft:iron", "pattern": "minecraft:sentry"}}
+		(copper|brown) sentry = - {"Trim": {"material": "minecraft:copper", "pattern": "minecraft:sentry"}}
+
+		(emerald|green) vex = - {"Trim": {"material": "minecraft:emerald", "pattern": "minecraft:vex"}}
+		(redstone|red) vex = - {"Trim": {"material": "minecraft:redstone", "pattern": "minecraft:vex"}}
+		(lapis [lazuli]|blue) vex = - {"Trim": {"material": "minecraft:lapis", "pattern": "minecraft:vex"}}
+		(amethyst [shard]|purple) vex = - {"Trim": {"material": "minecraft:amethyst", "pattern": "minecraft:vex"}}
+		([nether] quartz|white) vex = - {"Trim": {"material": "minecraft:quartz", "pattern": "minecraft:vex"}}
+		(netherite|black) vex = - {"Trim": {"material": "minecraft:netherite", "pattern": "minecraft:vex"}}
+		(diamond|light blue) vex = - {"Trim": {"material": "minecraft:diamond", "pattern": "minecraft:vex"}}
+		(gold|yellow) vex = - {"Trim": {"material": "minecraft:gold", "pattern": "minecraft:vex"}}
+		(iron|grey|gray) vex = - {"Trim": {"material": "minecraft:iron", "pattern": "minecraft:vex"}}
+		(copper|brown) vex = - {"Trim": {"material": "minecraft:copper", "pattern": "minecraft:vex"}}
+
+		(emerald|green) wild = - {"Trim": {"material": "minecraft:emerald", "pattern": "minecraft:wild"}}
+		(redstone|red) wild = - {"Trim": {"material": "minecraft:redstone", "pattern": "minecraft:wild"}}
+		(lapis [lazuli]|blue) wild = - {"Trim": {"material": "minecraft:lapis", "pattern": "minecraft:wild"}}
+		(amethyst [shard]|purple) wild = - {"Trim": {"material": "minecraft:amethyst", "pattern": "minecraft:wild"}}
+		([nether] quartz|white) wild = - {"Trim": {"material": "minecraft:quartz", "pattern": "minecraft:wild"}}
+		(netherite|black) wild = - {"Trim": {"material": "minecraft:netherite", "pattern": "minecraft:wild"}}
+		(diamond|light blue) wild = - {"Trim": {"material": "minecraft:diamond", "pattern": "minecraft:wild"}}
+		(gold|yellow) wild = - {"Trim": {"material": "minecraft:gold", "pattern": "minecraft:wild"}}
+		(iron|grey|gray) wild = - {"Trim": {"material": "minecraft:iron", "pattern": "minecraft:wild"}}
+		(copper|brown) wild = - {"Trim": {"material": "minecraft:copper", "pattern": "minecraft:wild"}}
+
+		(emerald|green) coast = - {"Trim": {"material": "minecraft:emerald", "pattern": "minecraft:coast"}}
+		(redstone|red) coast = - {"Trim": {"material": "minecraft:redstone", "pattern": "minecraft:coast"}}
+		(lapis [lazuli]|blue) coast = - {"Trim": {"material": "minecraft:lapis", "pattern": "minecraft:coast"}}
+		(amethyst [shard]|purple) coast = - {"Trim": {"material": "minecraft:amethyst", "pattern": "minecraft:coast"}}
+		([nether] quartz|white) coast = - {"Trim": {"material": "minecraft:quartz", "pattern": "minecraft:coast"}}
+		(netherite|black) coast = - {"Trim": {"material": "minecraft:netherite", "pattern": "minecraft:coast"}}
+		(diamond|light blue) coast = - {"Trim": {"material": "minecraft:diamond", "pattern": "minecraft:coast"}}
+		(gold|yellow) coast = - {"Trim": {"material": "minecraft:gold", "pattern": "minecraft:coast"}}
+		(iron|grey|gray) coast = - {"Trim": {"material": "minecraft:iron", "pattern": "minecraft:coast"}}
+		(copper|brown) coast = - {"Trim": {"material": "minecraft:copper", "pattern": "minecraft:coast"}}
+
+		(emerald|green) dune = - {"Trim": {"material": "minecraft:emerald", "pattern": "minecraft:dune"}}
+		(redstone|red) dune = - {"Trim": {"material": "minecraft:redstone", "pattern": "minecraft:dune"}}
+		(lapis [lazuli]|blue) dune = - {"Trim": {"material": "minecraft:lapis", "pattern": "minecraft:dune"}}
+		(amethyst [shard]|purple) dune = - {"Trim": {"material": "minecraft:amethyst", "pattern": "minecraft:dune"}}
+		([nether] quartz|white) dune = - {"Trim": {"material": "minecraft:quartz", "pattern": "minecraft:dune"}}
+		(netherite|black) dune = - {"Trim": {"material": "minecraft:netherite", "pattern": "minecraft:dune"}}
+		(diamond|light blue) dune = - {"Trim": {"material": "minecraft:diamond", "pattern": "minecraft:dune"}}
+		(gold|yellow) dune = - {"Trim": {"material": "minecraft:gold", "pattern": "minecraft:dune"}}
+		(iron|grey|gray) dune = - {"Trim": {"material": "minecraft:iron", "pattern": "minecraft:dune"}}
+		(copper|brown) dune = - {"Trim": {"material": "minecraft:copper", "pattern": "minecraft:dune"}}
+
+		(emerald|green) wayfinder = - {"Trim": {"material": "minecraft:emerald", "pattern": "minecraft:wayfinder"}}
+		(redstone|red) wayfinder = - {"Trim": {"material": "minecraft:redstone", "pattern": "minecraft:wayfinder"}}
+		(lapis [lazuli]|blue) wayfinder = - {"Trim": {"material": "minecraft:lapis", "pattern": "minecraft:wayfinder"}}
+		(amethyst [shard]|purple) wayfinder = - {"Trim": {"material": "minecraft:amethyst", "pattern": "minecraft:wayfinder"}}
+		([nether] quartz|white) wayfinder = - {"Trim": {"material": "minecraft:quartz", "pattern": "minecraft:wayfinder"}}
+		(netherite|black) wayfinder = - {"Trim": {"material": "minecraft:netherite", "pattern": "minecraft:wayfinder"}}
+		(diamond|light blue) wayfinder = - {"Trim": {"material": "minecraft:diamond", "pattern": "minecraft:wayfinder"}}
+		(gold|yellow) wayfinder = - {"Trim": {"material": "minecraft:gold", "pattern": "minecraft:wayfinder"}}
+		(iron|grey|gray) wayfinder = - {"Trim": {"material": "minecraft:iron", "pattern": "minecraft:wayfinder"}}
+		(copper|brown) wayfinder = - {"Trim": {"material": "minecraft:copper", "pattern": "minecraft:wayfinder"}}
+
+		(emerald|green) raiser = - {"Trim": {"material": "minecraft:emerald", "pattern": "minecraft:raiser"}}
+		(redstone|red) raiser = - {"Trim": {"material": "minecraft:redstone", "pattern": "minecraft:raiser"}}
+		(lapis [lazuli]|blue) raiser = - {"Trim": {"material": "minecraft:lapis", "pattern": "minecraft:raiser"}}
+		(amethyst [shard]|purple) raiser = - {"Trim": {"material": "minecraft:amethyst", "pattern": "minecraft:raiser"}}
+		([nether] quartz|white) raiser = - {"Trim": {"material": "minecraft:quartz", "pattern": "minecraft:raiser"}}
+		(netherite|black) raiser = - {"Trim": {"material": "minecraft:netherite", "pattern": "minecraft:raiser"}}
+		(diamond|light blue) raiser = - {"Trim": {"material": "minecraft:diamond", "pattern": "minecraft:raiser"}}
+		(gold|yellow) raiser = - {"Trim": {"material": "minecraft:gold", "pattern": "minecraft:raiser"}}
+		(iron|grey|gray) raiser = - {"Trim": {"material": "minecraft:iron", "pattern": "minecraft:raiser"}}
+		(copper|brown) raiser = - {"Trim": {"material": "minecraft:copper", "pattern": "minecraft:raiser"}}
+
+		(emerald|green) shaper = - {"Trim": {"material": "minecraft:emerald", "pattern": "minecraft:shaper"}}
+		(redstone|red) shaper = - {"Trim": {"material": "minecraft:redstone", "pattern": "minecraft:shaper"}}
+		(lapis [lazuli]|blue) shaper = - {"Trim": {"material": "minecraft:lapis", "pattern": "minecraft:shaper"}}
+		(amethyst [shard]|purple) shaper = - {"Trim": {"material": "minecraft:amethyst", "pattern": "minecraft:shaper"}}
+		([nether] quartz|white) shaper = - {"Trim": {"material": "minecraft:quartz", "pattern": "minecraft:shaper"}}
+		(netherite|black) shaper = - {"Trim": {"material": "minecraft:netherite", "pattern": "minecraft:shaper"}}
+		(diamond|light blue) shaper = - {"Trim": {"material": "minecraft:diamond", "pattern": "minecraft:shaper"}}
+		(gold|yellow) shaper = - {"Trim": {"material": "minecraft:gold", "pattern": "minecraft:shaper"}}
+		(iron|grey|gray) shaper = - {"Trim": {"material": "minecraft:iron", "pattern": "minecraft:shaper"}}
+		(copper|brown) shaper = - {"Trim": {"material": "minecraft:copper", "pattern": "minecraft:shaper"}}
+
+		(emerald|green) host = - {"Trim": {"material": "minecraft:emerald", "pattern": "minecraft:host"}}
+		(redstone|red) host = - {"Trim": {"material": "minecraft:redstone", "pattern": "minecraft:host"}}
+		(lapis [lazuli]|blue) host = - {"Trim": {"material": "minecraft:lapis", "pattern": "minecraft:host"}}
+		(amethyst [shard]|purple) host = - {"Trim": {"material": "minecraft:amethyst", "pattern": "minecraft:host"}}
+		([nether] quartz|white) host = - {"Trim": {"material": "minecraft:quartz", "pattern": "minecraft:host"}}
+		(netherite|black) host = - {"Trim": {"material": "minecraft:netherite", "pattern": "minecraft:host"}}
+		(diamond|light blue) host = - {"Trim": {"material": "minecraft:diamond", "pattern": "minecraft:host"}}
+		(gold|yellow) host = - {"Trim": {"material": "minecraft:gold", "pattern": "minecraft:host"}}
+		(iron|grey|gray) host = - {"Trim": {"material": "minecraft:iron", "pattern": "minecraft:host"}}
+		(copper|brown) host = - {"Trim": {"material": "minecraft:copper", "pattern": "minecraft:host"}}
+
+		(emerald|green) ward = - {"Trim": {"material": "minecraft:emerald", "pattern": "minecraft:ward"}}
+		(redstone|red) ward = - {"Trim": {"material": "minecraft:redstone", "pattern": "minecraft:ward"}}
+		(lapis [lazuli]|blue) ward = - {"Trim": {"material": "minecraft:lapis", "pattern": "minecraft:ward"}}
+		(amethyst [shard]|purple) ward = - {"Trim": {"material": "minecraft:amethyst", "pattern": "minecraft:ward"}}
+		([nether] quartz|white) ward = - {"Trim": {"material": "minecraft:quartz", "pattern": "minecraft:ward"}}
+		(netherite|black) ward = - {"Trim": {"material": "minecraft:netherite", "pattern": "minecraft:ward"}}
+		(diamond|light blue) ward = - {"Trim": {"material": "minecraft:diamond", "pattern": "minecraft:ward"}}
+		(gold|yellow) ward = - {"Trim": {"material": "minecraft:gold", "pattern": "minecraft:ward"}}
+		(iron|grey|gray) ward = - {"Trim": {"material": "minecraft:iron", "pattern": "minecraft:ward"}}
+		(copper|brown) ward = - {"Trim": {"material": "minecraft:copper", "pattern": "minecraft:ward"}}
+
+		(emerald|green) silence = - {"Trim": {"material": "minecraft:emerald", "pattern": "minecraft:silence"}}
+		(redstone|red) silence = - {"Trim": {"material": "minecraft:redstone", "pattern": "minecraft:silence"}}
+		(lapis [lazuli]|blue) silence = - {"Trim": {"material": "minecraft:lapis", "pattern": "minecraft:silence"}}
+		(amethyst [shard]|purple) silence = - {"Trim": {"material": "minecraft:amethyst", "pattern": "minecraft:silence"}}
+		([nether] quartz|white) silence = - {"Trim": {"material": "minecraft:quartz", "pattern": "minecraft:silence"}}
+		(netherite|black) silence = - {"Trim": {"material": "minecraft:netherite", "pattern": "minecraft:silence"}}
+		(diamond|light blue) silence = - {"Trim": {"material": "minecraft:diamond", "pattern": "minecraft:silence"}}
+		(gold|yellow) silence = - {"Trim": {"material": "minecraft:gold", "pattern": "minecraft:silence"}}
+		(iron|grey|gray) silence = - {"Trim": {"material": "minecraft:iron", "pattern": "minecraft:silence"}}
+		(copper|brown) silence = - {"Trim": {"material": "minecraft:copper", "pattern": "minecraft:silence"}}
+
+		(emerald|green) tide = - {"Trim": {"material": "minecraft:emerald", "pattern": "minecraft:tide"}}
+		(redstone|red) tide = - {"Trim": {"material": "minecraft:redstone", "pattern": "minecraft:tide"}}
+		(lapis [lazuli]|blue) tide = - {"Trim": {"material": "minecraft:lapis", "pattern": "minecraft:tide"}}
+		(amethyst [shard]|purple) tide = - {"Trim": {"material": "minecraft:amethyst", "pattern": "minecraft:tide"}}
+		([nether] quartz|white) tide = - {"Trim": {"material": "minecraft:quartz", "pattern": "minecraft:tide"}}
+		(netherite|black) tide = - {"Trim": {"material": "minecraft:netherite", "pattern": "minecraft:tide"}}
+		(diamond|light blue) tide = - {"Trim": {"material": "minecraft:diamond", "pattern": "minecraft:tide"}}
+		(gold|yellow) tide = - {"Trim": {"material": "minecraft:gold", "pattern": "minecraft:tide"}}
+		(iron|grey|gray) tide = - {"Trim": {"material": "minecraft:iron", "pattern": "minecraft:tide"}}
+		(copper|brown) tide = - {"Trim": {"material": "minecraft:copper", "pattern": "minecraft:tide"}}
+
+		(emerald|green) snout = - {"Trim": {"material": "minecraft:emerald", "pattern": "minecraft:snout"}}
+		(redstone|red) snout = - {"Trim": {"material": "minecraft:redstone", "pattern": "minecraft:snout"}}
+		(lapis [lazuli]|blue) snout = - {"Trim": {"material": "minecraft:lapis", "pattern": "minecraft:snout"}}
+		(amethyst [shard]|purple) snout = - {"Trim": {"material": "minecraft:amethyst", "pattern": "minecraft:snout"}}
+		([nether] quartz|white) snout = - {"Trim": {"material": "minecraft:quartz", "pattern": "minecraft:snout"}}
+		(netherite|black) snout = - {"Trim": {"material": "minecraft:netherite", "pattern": "minecraft:snout"}}
+		(diamond|light blue) snout = - {"Trim": {"material": "minecraft:diamond", "pattern": "minecraft:snout"}}
+		(gold|yellow) snout = - {"Trim": {"material": "minecraft:gold", "pattern": "minecraft:snout"}}
+		(iron|grey|gray) snout = - {"Trim": {"material": "minecraft:iron", "pattern": "minecraft:snout"}}
+		(copper|brown) snout = - {"Trim": {"material": "minecraft:copper", "pattern": "minecraft:snout"}}
+
+		(emerald|green) rib = - {"Trim": {"material": "minecraft:emerald", "pattern": "minecraft:rib"}}
+		(redstone|red) rib = - {"Trim": {"material": "minecraft:redstone", "pattern": "minecraft:rib"}}
+		(lapis [lazuli]|blue) rib = - {"Trim": {"material": "minecraft:lapis", "pattern": "minecraft:rib"}}
+		(amethyst [shard]|purple) rib = - {"Trim": {"material": "minecraft:amethyst", "pattern": "minecraft:rib"}}
+		([nether] quartz|white) rib = - {"Trim": {"material": "minecraft:quartz", "pattern": "minecraft:rib"}}
+		(netherite|black) rib = - {"Trim": {"material": "minecraft:netherite", "pattern": "minecraft:rib"}}
+		(diamond|light blue) rib = - {"Trim": {"material": "minecraft:diamond", "pattern": "minecraft:rib"}}
+		(gold|yellow) rib = - {"Trim": {"material": "minecraft:gold", "pattern": "minecraft:rib"}}
+		(iron|grey|gray) rib = - {"Trim": {"material": "minecraft:iron", "pattern": "minecraft:rib"}}
+		(copper|brown) rib = - {"Trim": {"material": "minecraft:copper", "pattern": "minecraft:rib"}}
+
+		(emerald|green) eye = - {"Trim": {"material": "minecraft:emerald", "pattern": "minecraft:eye"}}
+		(redstone|red) eye = - {"Trim": {"material": "minecraft:redstone", "pattern": "minecraft:eye"}}
+		(lapis [lazuli]|blue) eye = - {"Trim": {"material": "minecraft:lapis", "pattern": "minecraft:eye"}}
+		(amethyst [shard]|purple) eye = - {"Trim": {"material": "minecraft:amethyst", "pattern": "minecraft:eye"}}
+		([nether] quartz|white) eye = - {"Trim": {"material": "minecraft:quartz", "pattern": "minecraft:eye"}}
+		(netherite|black) eye = - {"Trim": {"material": "minecraft:netherite", "pattern": "minecraft:eye"}}
+		(diamond|light blue) eye = - {"Trim": {"material": "minecraft:diamond", "pattern": "minecraft:eye"}}
+		(gold|yellow) eye = - {"Trim": {"material": "minecraft:gold", "pattern": "minecraft:eye"}}
+		(iron|grey|gray) eye = - {"Trim": {"material": "minecraft:iron", "pattern": "minecraft:eye"}}
+		(copper|brown) eye = - {"Trim": {"material": "minecraft:copper", "pattern": "minecraft:eye"}}
+
+		(emerald|green) spire = - {"Trim": {"material": "minecraft:emerald", "pattern": "minecraft:spire"}}
+		(redstone|red) spire = - {"Trim": {"material": "minecraft:redstone", "pattern": "minecraft:spire"}}
+		(lapis [lazuli]|blue) spire = - {"Trim": {"material": "minecraft:lapis", "pattern": "minecraft:spire"}}
+		(amethyst [shard]|purple) spire = - {"Trim": {"material": "minecraft:amethyst", "pattern": "minecraft:spire"}}
+		([nether] quartz|white) spire = - {"Trim": {"material": "minecraft:quartz", "pattern": "minecraft:spire"}}
+		(netherite|black) spire = - {"Trim": {"material": "minecraft:netherite", "pattern": "minecraft:spire"}}
+		(diamond|light blue) spire = - {"Trim": {"material": "minecraft:diamond", "pattern": "minecraft:spire"}}
+		(gold|yellow) spire = - {"Trim": {"material": "minecraft:gold", "pattern": "minecraft:spire"}}
+		(iron|grey|gray) spire = - {"Trim": {"material": "minecraft:iron", "pattern": "minecraft:spire"}}
+		(copper|brown) spire = - {"Trim": {"material": "minecraft:copper", "pattern": "minecraft:spire"}}
+armor trims after components:
+	minecraft version = 1.20.5 or newer
+	{armor trims}:
+		{default} = -
+		(emerald|green) sentry = - {minecraft:trim={"material":"minecraft:emerald","pattern":"minecraft:sentry"}}
+		(redstone|red) sentry = - {minecraft:trim={"material":"minecraft:redstone","pattern":"minecraft:sentry"}}
+		(lapis [lazuli]|blue) sentry = - {minecraft:trim={"material":"minecraft:lapis","pattern":"minecraft:sentry"}}
+		(amethyst [shard]|purple) sentry = - {minecraft:trim={"material":"minecraft:amethyst","pattern":"minecraft:sentry"}}
+		([nether] quartz|white) sentry = - {minecraft:trim={"material":"minecraft:quartz","pattern":"minecraft:sentry"}}
+		(netherite|black) sentry = - {minecraft:trim={"material":"minecraft:netherite","pattern":"minecraft:sentry"}}
+		(diamond|light blue) sentry = - {minecraft:trim={"material":"minecraft:diamond","pattern":"minecraft:sentry"}}
+		(gold|yellow) sentry = - {minecraft:trim={"material":"minecraft:gold","pattern":"minecraft:sentry"}}
+		(iron|grey|gray) sentry = - {minecraft:trim={"material":"minecraft:iron","pattern":"minecraft:sentry"}}
+		(copper|brown) sentry = - {minecraft:trim={"material":"minecraft:copper","pattern":"minecraft:sentry"}}
+
+		(emerald|green) vex = - {minecraft:trim={"material":"minecraft:emerald","pattern":"minecraft:vex"}}
+		(redstone|red) vex = - {minecraft:trim={"material":"minecraft:redstone","pattern":"minecraft:vex"}}
+		(lapis [lazuli]|blue) vex = - {minecraft:trim={"material":"minecraft:lapis","pattern":"minecraft:vex"}}
+		(amethyst [shard]|purple) vex = - {minecraft:trim={"material":"minecraft:amethyst","pattern":"minecraft:vex"}}
+		([nether] quartz|white) vex = - {minecraft:trim={"material":"minecraft:quartz","pattern":"minecraft:vex"}}
+		(netherite|black) vex = - {minecraft:trim={"material":"minecraft:netherite","pattern":"minecraft:vex"}}
+		(diamond|light blue) vex = - {minecraft:trim={"material":"minecraft:diamond","pattern":"minecraft:vex"}}
+		(gold|yellow) vex = - {minecraft:trim={"material":"minecraft:gold","pattern":"minecraft:vex"}}
+		(iron|grey|gray) vex = - {minecraft:trim={"material":"minecraft:iron","pattern":"minecraft:vex"}}
+		(copper|brown) vex = - {minecraft:trim={"material":"minecraft:copper","pattern":"minecraft:vex"}}
+
+		(emerald|green) wild = - {minecraft:trim={"material":"minecraft:emerald","pattern":"minecraft:wild"}}
+		(redstone|red) wild = - {minecraft:trim={"material":"minecraft:redstone","pattern":"minecraft:wild"}}
+		(lapis [lazuli]|blue) wild = - {minecraft:trim={"material":"minecraft:lapis","pattern":"minecraft:wild"}}
+		(amethyst [shard]|purple) wild = - {minecraft:trim={"material":"minecraft:amethyst","pattern":"minecraft:wild"}}
+		([nether] quartz|white) wild = - {minecraft:trim={"material":"minecraft:quartz","pattern":"minecraft:wild"}}
+		(netherite|black) wild = - {minecraft:trim={"material":"minecraft:netherite","pattern":"minecraft:wild"}}
+		(diamond|light blue) wild = - {minecraft:trim={"material":"minecraft:diamond","pattern":"minecraft:wild"}}
+		(gold|yellow) wild = - {minecraft:trim={"material":"minecraft:gold","pattern":"minecraft:wild"}}
+		(iron|grey|gray) wild = - {minecraft:trim={"material":"minecraft:iron","pattern":"minecraft:wild"}}
+		(copper|brown) wild = - {minecraft:trim={"material":"minecraft:copper","pattern":"minecraft:wild"}}
+
+		(emerald|green) coast = - {minecraft:trim={"material":"minecraft:emerald","pattern":"minecraft:coast"}}
+		(redstone|red) coast = - {minecraft:trim={"material":"minecraft:redstone","pattern":"minecraft:coast"}}
+		(lapis [lazuli]|blue) coast = - {minecraft:trim={"material":"minecraft:lapis","pattern":"minecraft:coast"}}
+		(amethyst [shard]|purple) coast = - {minecraft:trim={"material":"minecraft:amethyst","pattern":"minecraft:coast"}}
+		([nether] quartz|white) coast = - {minecraft:trim={"material":"minecraft:quartz","pattern":"minecraft:coast"}}
+		(netherite|black) coast = - {minecraft:trim={"material":"minecraft:netherite","pattern":"minecraft:coast"}}
+		(diamond|light blue) coast = - {minecraft:trim={"material":"minecraft:diamond","pattern":"minecraft:coast"}}
+		(gold|yellow) coast = - {minecraft:trim={"material":"minecraft:gold","pattern":"minecraft:coast"}}
+		(iron|grey|gray) coast = - {minecraft:trim={"material":"minecraft:iron","pattern":"minecraft:coast"}}
+		(copper|brown) coast = - {minecraft:trim={"material":"minecraft:copper","pattern":"minecraft:coast"}}
+
+		(emerald|green) dune = - {minecraft:trim={"material":"minecraft:emerald","pattern":"minecraft:dune"}}
+		(redstone|red) dune = - {minecraft:trim={"material":"minecraft:redstone","pattern":"minecraft:dune"}}
+		(lapis [lazuli]|blue) dune = - {minecraft:trim={"material":"minecraft:lapis","pattern":"minecraft:dune"}}
+		(amethyst [shard]|purple) dune = - {minecraft:trim={"material":"minecraft:amethyst","pattern":"minecraft:dune"}}
+		([nether] quartz|white) dune = - {minecraft:trim={"material":"minecraft:quartz","pattern":"minecraft:dune"}}
+		(netherite|black) dune = - {minecraft:trim={"material":"minecraft:netherite","pattern":"minecraft:dune"}}
+		(diamond|light blue) dune = - {minecraft:trim={"material":"minecraft:diamond","pattern":"minecraft:dune"}}
+		(gold|yellow) dune = - {minecraft:trim={"material":"minecraft:gold","pattern":"minecraft:dune"}}
+		(iron|grey|gray) dune = - {minecraft:trim={"material":"minecraft:iron","pattern":"minecraft:dune"}}
+		(copper|brown) dune = - {minecraft:trim={"material":"minecraft:copper","pattern":"minecraft:dune"}}
+
+		(emerald|green) wayfinder = - {minecraft:trim={"material":"minecraft:emerald","pattern":"minecraft:wayfinder"}}
+		(redstone|red) wayfinder = - {minecraft:trim={"material":"minecraft:redstone","pattern":"minecraft:wayfinder"}}
+		(lapis [lazuli]|blue) wayfinder = - {minecraft:trim={"material":"minecraft:lapis","pattern":"minecraft:wayfinder"}}
+		(amethyst [shard]|purple) wayfinder = - {minecraft:trim={"material":"minecraft:amethyst","pattern":"minecraft:wayfinder"}}
+		([nether] quartz|white) wayfinder = - {minecraft:trim={"material":"minecraft:quartz","pattern":"minecraft:wayfinder"}}
+		(netherite|black) wayfinder = - {minecraft:trim={"material":"minecraft:netherite","pattern":"minecraft:wayfinder"}}
+		(diamond|light blue) wayfinder = - {minecraft:trim={"material":"minecraft:diamond","pattern":"minecraft:wayfinder"}}
+		(gold|yellow) wayfinder = - {minecraft:trim={"material":"minecraft:gold","pattern":"minecraft:wayfinder"}}
+		(iron|grey|gray) wayfinder = - {minecraft:trim={"material":"minecraft:iron","pattern":"minecraft:wayfinder"}}
+		(copper|brown) wayfinder = - {minecraft:trim={"material":"minecraft:copper","pattern":"minecraft:wayfinder"}}
+
+		(emerald|green) raiser = - {minecraft:trim={"material":"minecraft:emerald","pattern":"minecraft:raiser"}}
+		(redstone|red) raiser = - {minecraft:trim={"material":"minecraft:redstone","pattern":"minecraft:raiser"}}
+		(lapis [lazuli]|blue) raiser = - {minecraft:trim={"material":"minecraft:lapis","pattern":"minecraft:raiser"}}
+		(amethyst [shard]|purple) raiser = - {minecraft:trim={"material":"minecraft:amethyst","pattern":"minecraft:raiser"}}
+		([nether] quartz|white) raiser = - {minecraft:trim={"material":"minecraft:quartz","pattern":"minecraft:raiser"}}
+		(netherite|black) raiser = - {minecraft:trim={"material":"minecraft:netherite","pattern":"minecraft:raiser"}}
+		(diamond|light blue) raiser = - {minecraft:trim={"material":"minecraft:diamond","pattern":"minecraft:raiser"}}
+		(gold|yellow) raiser = - {minecraft:trim={"material":"minecraft:gold","pattern":"minecraft:raiser"}}
+		(iron|grey|gray) raiser = - {minecraft:trim={"material":"minecraft:iron","pattern":"minecraft:raiser"}}
+		(copper|brown) raiser = - {minecraft:trim={"material":"minecraft:copper","pattern":"minecraft:raiser"}}
+
+		(emerald|green) shaper = - {minecraft:trim={"material":"minecraft:emerald","pattern":"minecraft:shaper"}}
+		(redstone|red) shaper = - {minecraft:trim={"material":"minecraft:redstone","pattern":"minecraft:shaper"}}
+		(lapis [lazuli]|blue) shaper = - {minecraft:trim={"material":"minecraft:lapis","pattern":"minecraft:shaper"}}
+		(amethyst [shard]|purple) shaper = - {minecraft:trim={"material":"minecraft:amethyst","pattern":"minecraft:shaper"}}
+		([nether] quartz|white) shaper = - {minecraft:trim={"material":"minecraft:quartz","pattern":"minecraft:shaper"}}
+		(netherite|black) shaper = - {minecraft:trim={"material":"minecraft:netherite","pattern":"minecraft:shaper"}}
+		(diamond|light blue) shaper = - {minecraft:trim={"material":"minecraft:diamond","pattern":"minecraft:shaper"}}
+		(gold|yellow) shaper = - {minecraft:trim={"material":"minecraft:gold","pattern":"minecraft:shaper"}}
+		(iron|grey|gray) shaper = - {minecraft:trim={"material":"minecraft:iron","pattern":"minecraft:shaper"}}
+		(copper|brown) shaper = - {minecraft:trim={"material":"minecraft:copper","pattern":"minecraft:shaper"}}
+
+		(emerald|green) host = - {minecraft:trim={"material":"minecraft:emerald","pattern":"minecraft:host"}}
+		(redstone|red) host = - {minecraft:trim={"material":"minecraft:redstone","pattern":"minecraft:host"}}
+		(lapis [lazuli]|blue) host = - {minecraft:trim={"material":"minecraft:lapis","pattern":"minecraft:host"}}
+		(amethyst [shard]|purple) host = - {minecraft:trim={"material":"minecraft:amethyst","pattern":"minecraft:host"}}
+		([nether] quartz|white) host = - {minecraft:trim={"material":"minecraft:quartz","pattern":"minecraft:host"}}
+		(netherite|black) host = - {minecraft:trim={"material":"minecraft:netherite","pattern":"minecraft:host"}}
+		(diamond|light blue) host = - {minecraft:trim={"material":"minecraft:diamond","pattern":"minecraft:host"}}
+		(gold|yellow) host = - {minecraft:trim={"material":"minecraft:gold","pattern":"minecraft:host"}}
+		(iron|grey|gray) host = - {minecraft:trim={"material":"minecraft:iron","pattern":"minecraft:host"}}
+		(copper|brown) host = - {minecraft:trim={"material":"minecraft:copper","pattern":"minecraft:host"}}
+
+		(emerald|green) ward = - {minecraft:trim={"material":"minecraft:emerald","pattern":"minecraft:ward"}}
+		(redstone|red) ward = - {minecraft:trim={"material":"minecraft:redstone","pattern":"minecraft:ward"}}
+		(lapis [lazuli]|blue) ward = - {minecraft:trim={"material":"minecraft:lapis","pattern":"minecraft:ward"}}
+		(amethyst [shard]|purple) ward = - {minecraft:trim={"material":"minecraft:amethyst","pattern":"minecraft:ward"}}
+		([nether] quartz|white) ward = - {minecraft:trim={"material":"minecraft:quartz","pattern":"minecraft:ward"}}
+		(netherite|black) ward = - {minecraft:trim={"material":"minecraft:netherite","pattern":"minecraft:ward"}}
+		(diamond|light blue) ward = - {minecraft:trim={"material":"minecraft:diamond","pattern":"minecraft:ward"}}
+		(gold|yellow) ward = - {minecraft:trim={"material":"minecraft:gold","pattern":"minecraft:ward"}}
+		(iron|grey|gray) ward = - {minecraft:trim={"material":"minecraft:iron","pattern":"minecraft:ward"}}
+		(copper|brown) ward = - {minecraft:trim={"material":"minecraft:copper","pattern":"minecraft:ward"}}
+
+		(emerald|green) silence = - {minecraft:trim={"material":"minecraft:emerald","pattern":"minecraft:silence"}}
+		(redstone|red) silence = - {minecraft:trim={"material":"minecraft:redstone","pattern":"minecraft:silence"}}
+		(lapis [lazuli]|blue) silence = - {minecraft:trim={"material":"minecraft:lapis","pattern":"minecraft:silence"}}
+		(amethyst [shard]|purple) silence = - {minecraft:trim={"material":"minecraft:amethyst","pattern":"minecraft:silence"}}
+		([nether] quartz|white) silence = - {minecraft:trim={"material":"minecraft:quartz","pattern":"minecraft:silence"}}
+		(netherite|black) silence = - {minecraft:trim={"material":"minecraft:netherite","pattern":"minecraft:silence"}}
+		(diamond|light blue) silence = - {minecraft:trim={"material":"minecraft:diamond","pattern":"minecraft:silence"}}
+		(gold|yellow) silence = - {minecraft:trim={"material":"minecraft:gold","pattern":"minecraft:silence"}}
+		(iron|grey|gray) silence = - {minecraft:trim={"material":"minecraft:iron","pattern":"minecraft:silence"}}
+		(copper|brown) silence = - {minecraft:trim={"material":"minecraft:copper","pattern":"minecraft:silence"}}
+
+		(emerald|green) tide = - {minecraft:trim={"material":"minecraft:emerald","pattern":"minecraft:tide"}}
+		(redstone|red) tide = - {minecraft:trim={"material":"minecraft:redstone","pattern":"minecraft:tide"}}
+		(lapis [lazuli]|blue) tide = - {minecraft:trim={"material":"minecraft:lapis","pattern":"minecraft:tide"}}
+		(amethyst [shard]|purple) tide = - {minecraft:trim={"material":"minecraft:amethyst","pattern":"minecraft:tide"}}
+		([nether] quartz|white) tide = - {minecraft:trim={"material":"minecraft:quartz","pattern":"minecraft:tide"}}
+		(netherite|black) tide = - {minecraft:trim={"material":"minecraft:netherite","pattern":"minecraft:tide"}}
+		(diamond|light blue) tide = - {minecraft:trim={"material":"minecraft:diamond","pattern":"minecraft:tide"}}
+		(gold|yellow) tide = - {minecraft:trim={"material":"minecraft:gold","pattern":"minecraft:tide"}}
+		(iron|grey|gray) tide = - {minecraft:trim={"material":"minecraft:iron","pattern":"minecraft:tide"}}
+		(copper|brown) tide = - {minecraft:trim={"material":"minecraft:copper","pattern":"minecraft:tide"}}
+
+		(emerald|green) snout = - {minecraft:trim={"material":"minecraft:emerald","pattern":"minecraft:snout"}}
+		(redstone|red) snout = - {minecraft:trim={"material":"minecraft:redstone","pattern":"minecraft:snout"}}
+		(lapis [lazuli]|blue) snout = - {minecraft:trim={"material":"minecraft:lapis","pattern":"minecraft:snout"}}
+		(amethyst [shard]|purple) snout = - {minecraft:trim={"material":"minecraft:amethyst","pattern":"minecraft:snout"}}
+		([nether] quartz|white) snout = - {minecraft:trim={"material":"minecraft:quartz","pattern":"minecraft:snout"}}
+		(netherite|black) snout = - {minecraft:trim={"material":"minecraft:netherite","pattern":"minecraft:snout"}}
+		(diamond|light blue) snout = - {minecraft:trim={"material":"minecraft:diamond","pattern":"minecraft:snout"}}
+		(gold|yellow) snout = - {minecraft:trim={"material":"minecraft:gold","pattern":"minecraft:snout"}}
+		(iron|grey|gray) snout = - {minecraft:trim={"material":"minecraft:iron","pattern":"minecraft:snout"}}
+		(copper|brown) snout = - {minecraft:trim={"material":"minecraft:copper","pattern":"minecraft:snout"}}
+
+		(emerald|green) rib = - {minecraft:trim={"material":"minecraft:emerald","pattern":"minecraft:rib"}}
+		(redstone|red) rib = - {minecraft:trim={"material":"minecraft:redstone","pattern":"minecraft:rib"}}
+		(lapis [lazuli]|blue) rib = - {minecraft:trim={"material":"minecraft:lapis","pattern":"minecraft:rib"}}
+		(amethyst [shard]|purple) rib = - {minecraft:trim={"material":"minecraft:amethyst","pattern":"minecraft:rib"}}
+		([nether] quartz|white) rib = - {minecraft:trim={"material":"minecraft:quartz","pattern":"minecraft:rib"}}
+		(netherite|black) rib = - {minecraft:trim={"material":"minecraft:netherite","pattern":"minecraft:rib"}}
+		(diamond|light blue) rib = - {minecraft:trim={"material":"minecraft:diamond","pattern":"minecraft:rib"}}
+		(gold|yellow) rib = - {minecraft:trim={"material":"minecraft:gold","pattern":"minecraft:rib"}}
+		(iron|grey|gray) rib = - {minecraft:trim={"material":"minecraft:iron","pattern":"minecraft:rib"}}
+		(copper|brown) rib = - {minecraft:trim={"material":"minecraft:copper","pattern":"minecraft:rib"}}
+
+		(emerald|green) eye = - {minecraft:trim={"material":"minecraft:emerald","pattern":"minecraft:eye"}}
+		(redstone|red) eye = - {minecraft:trim={"material":"minecraft:redstone","pattern":"minecraft:eye"}}
+		(lapis [lazuli]|blue) eye = - {minecraft:trim={"material":"minecraft:lapis","pattern":"minecraft:eye"}}
+		(amethyst [shard]|purple) eye = - {minecraft:trim={"material":"minecraft:amethyst","pattern":"minecraft:eye"}}
+		([nether] quartz|white) eye = - {minecraft:trim={"material":"minecraft:quartz","pattern":"minecraft:eye"}}
+		(netherite|black) eye = - {minecraft:trim={"material":"minecraft:netherite","pattern":"minecraft:eye"}}
+		(diamond|light blue) eye = - {minecraft:trim={"material":"minecraft:diamond","pattern":"minecraft:eye"}}
+		(gold|yellow) eye = - {minecraft:trim={"material":"minecraft:gold","pattern":"minecraft:eye"}}
+		(iron|grey|gray) eye = - {minecraft:trim={"material":"minecraft:iron","pattern":"minecraft:eye"}}
+		(copper|brown) eye = - {minecraft:trim={"material":"minecraft:copper","pattern":"minecraft:eye"}}
+
+		(emerald|green) spire = - {minecraft:trim={"material":"minecraft:emerald","pattern":"minecraft:spire"}}
+		(redstone|red) spire = - {minecraft:trim={"material":"minecraft:redstone","pattern":"minecraft:spire"}}
+		(lapis [lazuli]|blue) spire = - {minecraft:trim={"material":"minecraft:lapis","pattern":"minecraft:spire"}}
+		(amethyst [shard]|purple) spire = - {minecraft:trim={"material":"minecraft:amethyst","pattern":"minecraft:spire"}}
+		([nether] quartz|white) spire = - {minecraft:trim={"material":"minecraft:quartz","pattern":"minecraft:spire"}}
+		(netherite|black) spire = - {minecraft:trim={"material":"minecraft:netherite","pattern":"minecraft:spire"}}
+		(diamond|light blue) spire = - {minecraft:trim={"material":"minecraft:diamond","pattern":"minecraft:spire"}}
+		(gold|yellow) spire = - {minecraft:trim={"material":"minecraft:gold","pattern":"minecraft:spire"}}
+		(iron|grey|gray) spire = - {minecraft:trim={"material":"minecraft:iron","pattern":"minecraft:spire"}}
+		(copper|brown) spire = - {minecraft:trim={"material":"minecraft:copper","pattern":"minecraft:spire"}}
+armor trims:
+	minecraft version = 1.20 or newer
+	{armor trims} leather (cap|helmet)¦s = minecraft:leather_helmet
+	{armor trims} leather (tunic|chest(piece|plate))¦s = minecraft:leather_chestplate
+	{armor trims} leather (pants|leggings) = minecraft:leather_leggings
+	{armor trims} leather boots = minecraft:leather_boots
+
+	{armor trims} iron (cap|helmet)¦s = minecraft:iron_helmet
+	{armor trims} iron chest(piece|plate)¦s = minecraft:iron_chestplate
+	{armor trims} iron (pants|leggings) = minecraft:iron_leggings
+	{armor trims} iron boots = minecraft:iron_boots
+
+	{armor trims} gold[en] (cap|helmet)¦s = minecraft:golden_helmet
+	{armor trims} gold[en] chest(piece|plate)¦s = minecraft:golden_chestplate
+	{armor trims} gold[en] (pants|leggings) = minecraft:golden_leggings
+	{armor trims} gold[en] boots = minecraft:golden_boots
+
+	{armor trims} diamond (cap|helmet)¦s = minecraft:diamond_helmet
+	{armor trims} diamond chest(piece|plate)¦s = minecraft:diamond_chestplate
+	{armor trims} diamond (pants|leggings) = minecraft:diamond_leggings
+	{armor trims} diamond boots = minecraft:diamond_boots
+
+	{armor trims} chain[mail] (cap|helmet)¦s = minecraft:chainmail_helmet
+	{armor trims} chain[mail] chest(piece|plate)¦s = minecraft:chainmail_chestplate
+	{armor trims} chain[mail] (pants|leggings) = minecraft:chainmail_leggings
+	{armor trims} chain[mail] boots = minecraft:chainmail_boots
+
+	{armor trims} netherite (cap|helmet)¦s = minecraft:netherite_helmet
+	{armor trims} netherite chest(piece|plate)¦s = minecraft:netherite_chestplate
+	{armor trims} netherite (pants|leggings) = minecraft:netherite_leggings
+	{armor trims} netherite boots = minecraft:netherite_boots
