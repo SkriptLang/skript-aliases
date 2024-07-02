@@ -152,24 +152,6 @@ redstone after flattening:
 	[any] wood[en] pressure plate¦s = oak pressure plate, spruce pressure plate, birch pressure plate, jungle pressure plate, acacia pressure plate, dark oak pressure plate
 	[any] pressure plate¦s = stone pressure plate, gold pressure plate, iron pressure plate, any wooden pressure plate
 
-	# Trapdoors
-	{trapdoor position}:
-		{default} = -
-		(bottom|lower)[-half] = -[half=bottom]
-		(top|upper)[-half] = -[half=top]
-	{waterloggable} {openable} {trapdoor position} {directional} iron trapdoor¦s = minecraft:iron_trapdoor
-	{waterloggable} {openable} {trapdoor position} {directional} {wood type} trapdoor¦s = -trapdoor
-	[any] wood[en] trapdoor¦s = oak trapdoor, spruce trapdoor, birch trapdoor, jungle trapdoor, acacia trapdoor, dark oak trapdoor
-
-	# Fence gates
-	{powerable} {openable} {directional} {wood type} [fence] gate¦s = -fence_gate
-	[any] [fence] gate¦s = oak gate, spruce gate, birch gate, jungle gate, acacia gate, dark oak gate
-
-	# Doors
-	{powerable} {openable} {block half} {directional} {wood type} door¦s = -door
-	{powerable} {openable} {block half} {directional} iron door¦s = minecraft:iron_door
-	[any] wood[en] door¦s = oak door, spruce door, birch door, jungle door, acacia door, dark oak door
-
 	# Redstone torches
 	{lightable} redstone [floor] torch¦es = minecraft:redstone_torch
 	{directional} {lightable} redstone wall torch¦es = minecraft:redstone_wall_torch
