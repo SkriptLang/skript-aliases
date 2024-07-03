@@ -41,25 +41,6 @@ caves and cliffs update part 1:
 	minecraft version = 1.17 or newer
 	glow berr(y|ies) = minecraft:glow_berries
 
-# Before the flattening in 1.13, some foods used data values.
-foods before flattening:
-	minecraft version = 1.12.2 or older
-	[raw] (fish¦es|cod [fillet]¦s|fish fillet¦s) = minecraft:fish
-	[raw] salmon [fillet]¦s = minecraft:fish {Damage:1}
-	clownfish¦es = minecraft:fish {Damage:2}
-	pufferfish¦es = minecraft:fish {Damage:3}
-	cooked (fish¦es|cod [fillet]¦s|fish fillet¦s) = minecraft:cooked_fish
-	cooked salmon [fillet]¦s = minecraft:cooked_fish {Damage:1}
-	any raw fish¦es = raw cod, raw salmon, pufferfish, clownfish
-
-	[normal] golden apple¦s = minecraft:golden_apple {Damage:0}
-	(enchanted golden|notch) apple¦s = minecraft:golden_apple {Damage:1}
-	
-	melon slice¦s = minecraft:melon
-
-	cake¦s = minecraft:cake_block
-	cake item¦s = minecraft:cake
-
 # Foods whose IDs were changed as part of the ID flattening in 1.13.
 foods after flattening:
 	minecraft version = 1.13 or newer
@@ -102,12 +83,6 @@ common categories:
 village and pillage common categories:
 	minecraft version = 1.14 or newer
 	[any] fruit¦s = any apple, chorus fruit, melon slice, sweet berry
-
-# All foods before
-old food categories:
-	minecraft version = 1.12.2 or older
-	[any] dessert¦s = cookie, cake item, pumpkin pie
-	[any] food = any fish, fruit, root vegetables, stews, meats, monster meats, desserts, bread, baked potato, poisonous potato
 
 food categories after update aquatic:
 	minecraft version = 1.13 or newer

@@ -52,199 +52,6 @@ unchanged building blocks:
 	packed ice [block¦s] = minecraft:packed_ice
 	end[ ]stone [block¦s] = minecraft:end_stone
 
-
-# 1.13 changed the IDs of a lot of blocks since they're no longer defined by data value.
-# This section is for blocks that had a different ID prior to 1.13.
-old blocks before flattening:
-	minecraft version = 1.12.2 or older
-	# Stones
-	stone [block¦s] = minecraft:stone {Damage:0}
-	[raw] granite¦s = minecraft:stone {Damage:1}
-	(smooth|polished) granite¦s = minecraft:stone {Damage:2}
-	any granite¦s = raw granite, polished granite
-
-	[raw] diorite¦s = minecraft:stone {Damage:3}
-	(smooth|polished) diorite¦s = minecraft:stone {Damage:4}
-	any diorite¦s = raw diorite, polished diorite
-
-	[raw] andesite¦s = minecraft:stone {Damage:5}
-	(smooth|polished) andesite¦s = minecraft:stone {Damage:6}
-	any andesite¦s = raw andesite, polished andesite
-
-	any [natural] stone¦s = stone, any granite, any diorite, any andesite
-
-	# Sediments
-	grass [block¦s] = minecraft:grass
-	coarse dirt [block¦s] = minecraft:dirt {Damage:1}
-	podzol [block¦s] = minecraft:dirt {Damage:2}
-	any dirt = any dirt, coarse dirt, podzol
-	[nether] quartz ore¦s = minecraft:quartz_ore
-	unlit redstone ore¦s = minecraft:redstone_ore
-	lit redstone ore¦s = minecraft:lit_redstone_ore
-	redstone ore¦s = unlit redstone ore, lit redstone ore
-	mycelium [block¦s] = minecraft:mycelium
-
-	# All wood
-	# planks
-	{old wood type} [wood[en]] plank¦s = minecraft:planks
-	[any] [wood[en]] plank¦s = oak planks, spruce planks, birch planks, jungle planks, acacia planks, dark oak planks
-
-	# logs
-	[vertical] oak [wood[en]] log¦s = minecraft:log {Damage:0}
-	(east-west|west-east) oak [wood[en]] log¦s = minecraft:log {Damage:4}
-	(north-south|south-north) oak [wood[en]] log¦s = minecraft:log {Damage:8}
-
-	[vertical] spruce [wood[en]] log¦s = minecraft:log {Damage:1}
-	(east-west|west-east) spruce [wood[en]] log¦s = minecraft:log {Damage:5}
-	(north-south|south-north) spruce [wood[en]] log¦s = minecraft:log {Damage:9}
-
-	[vertical] birch [wood[en]] log¦s = minecraft:log {Damage:2}
-	(east-west|west-east) birch [wood[en]] log¦s = minecraft:log {Damage:6}
-	(north-south|south-north) birch [wood[en]] log¦s = minecraft:log {Damage:10}
-
-	[vertical] jungle [wood[en]] log¦s = minecraft:log {Damage:3}
-	(east-west|west-east) jungle [wood[en]] log¦s = minecraft:log {Damage:7}
-	(north-south|south-north) jungle [wood[en]] log¦s = minecraft:log {Damage:11}
-
-	[vertical] acacia [wood[en]] log¦s = minecraft:log2 {Damage:0}
-	(east-west|west-east) acacia [wood[en]] log¦s = minecraft:log2 {Damage:4}
-	(north-south|south-north) acacia [wood[en]] log¦s = minecraft:log2 {Damage:8}
-
-	[vertical] dark oak [wood[en]] log¦s = minecraft:log2 {Damage:1}
-	(east-west|west-east) dark oak [wood[en]] log¦s = minecraft:log2 {Damage:5}
-	(north-south|south-north) dark oak [wood[en]] log¦s = minecraft:log2 {Damage:9}
-
-	oak [wood[en]] bark [block¦s] = minecraft:log {Damage:12}
-	spruce [wood[en]] bark [block¦s] = minecraft:log {Damage:13}
-	birch [wood[en]] bark [block¦s] = minecraft:log {Damage:14}
-	jungle [wood[en]] bark [block¦s] = minecraft:log {Damage:15}
-	acacia [wood[en]] bark [block¦s] = minecraft:log2 {Damage:12}
-	dark oak [wood[en]] bark [block¦s] = minecraft:log2 {Damage:13}
-
-	# Desert
-	red sand [block¦s] = minecraft:sand {Damage:1}
-	[normal] sandstone [block¦s] = minecraft:sandstone {Damage:0}
-	chiseled sandstone [block¦s] = minecraft:sandstone {Damage:1}
-	(smooth|cut) sandstone [block¦s] = minecraft:sandstone {Damage:2}
-	any sandstone [block¦s] = sandstone, chiseled sandstone, cut sandstone
-
-	[normal] red sandstone [block¦s] = minecraft:red_sandstone {Damage:0}
-	red chiseled sandstone [block¦s] = minecraft:red_sandstone {Damage:1}
-	(smooth|cut) red sandstone [block¦s] = minecraft:red_sandstone {Damage:2}
-	any red sandstone [block¦s] = red sandstone, red chiseled sandstone, cut red sandstone
-
-	# Glass
-	{colored} [stained] glass [block¦s] = minecraft:stained_glass
-	[any] stained glass block¦s = white stained glass, orange stained glass, magenta stained glass, light blue stained glass, yellow stained glass, lime stained glass, pink stained glass, dark gray stained glass, light gray stained glass, cyan stained glass, purple stained glass, blue stained glass, brown stained glass, dark green stained glass, red stained glass, black stained glass
-
-	# Wool
-	{colored} wool [block¦s] = minecraft:wool
-	[any] wool [block¦s] = white wool, orange wool, magenta wool, light blue wool, yellow wool, lime wool, pink wool, dark gray wool, light gray wool, cyan wool, purple wool, blue wool, brown wool, dark green wool, red wool, black wool
-
-	# Stained clay. Renamed to terracotta in 1.12 but the ID wasn't changed until 1.13.
-	{colored} [stained] ([hard[ened]] clay|terracotta) [block¦s] = minecraft:stained_hardened_clay
-	[any] stained ([hard[ened]] clay|terracotta) [block¦s] = minecraft:stained_hardened_clay
-
-	[un(dyed|stained)] (hard[ened] clay|terracotta) [block¦s] = minecraft:hardened_clay
-	any (hard[ened] clay|terracotta) [block¦s] = any stained terracotta, unstained terracotta
-
-	#= Slabs
-	# Stone slabs
-	[bottom] stone slab = minecraft:stone_slab {Damage:0}
-	[bottom] sandstone slab = minecraft:stone_slab {Damage:1}
-	[bottom] (petrified|stone) oak [wood[en]] slab = minecraft:stone_slab {Damage:2}
-	[bottom] cobble[stone] slab = minecraft:stone_slab {Damage:3}
-	[bottom] brick slab = minecraft:stone_slab {Damage:4}
-	[bottom] stone[ ]brick slab = minecraft:stone_slab {Damage:5}
-	[bottom] nether brick slab = minecraft:stone_slab {Damage:6}
-	[bottom] [nether] quartz slab = minecraft:stone_slab {Damage:7}
-	[bottom] red sandstone slab = minecraft:stone_slab2 {Damage:0}
-
-	(upside-down|top) stone slab = minecraft:stone_slab {Damage:8}
-	(upside-down|top) sandstone slab = minecraft:stone_slab {Damage:9}
-	(upside-down|top) (petrified|stone) oak [wood[en]] slab = minecraft:stone_slab {Damage:10}
-	(upside-down|top) cobble[stone] slab = minecraft:stone_slab {Damage:11}
-	(upside-down|top) brick slab = minecraft:stone_slab {Damage:12}
-	(upside-down|top) stone[ ]brick slab = minecraft:stone_slab {Damage:13}
-	(upside-down|top) nether brick slab = minecraft:stone_slab {Damage:14}
-	(upside-down|top) [nether] quartz slab = minecraft:stone_slab {Damage:15}
-	(upside-down|top) red sandstone slab = minecraft:stone_slab2 {Damage:8}
-
-	double stone slab = minecraft:double_stone_slab {Damage:0}
-	double sandstone slab = minecraft:double_stone_slab {Damage:1}
-	double (petrified|stone) oak [wood[en]] slab = minecraft:double_stone_slab {Damage:2}
-	double cobble[stone] slab = minecraft:double_stone_slab {Damage:3}
-	double brick slab = minecraft:double_stone_slab {Damage:4}
-	double stone[ ]brick slab = minecraft:double_stone_slab {Damage:5}
-	double nether brick slab = minecraft:double_stone_slab {Damage:6}
-	double [nether] quartz slab = minecraft:double_stone_slab {Damage:7}
-	double red sandstone slab = minecraft:double_stone_slab2 {Damage:0}
-
-	# Wood slabs
-	[bottom] {old wood type} slab = minecraft:wooden_slab
-
-	(upside-down|top) oak [wood[en]] slab = minecraft:wooden_slab {Damage:8}
-	(upside-down|top) spruce [wood[en]] slab = minecraft:wooden_slab {Damage:9}
-	(upside-down|top) birch [wood[en]] slab = minecraft:wooden_slab {Damage:10}
-	(upside-down|top) jungle [wood[en]] slab = minecraft:wooden_slab {Damage:11}
-	(upside-down|top) acacia [wood[en]] slab = minecraft:wooden_slab {Damage:12}
-	(upside-down|top) dark oak [wood[en]] slab = minecraft:wooden_slab {Damage:13}
-
-	double oak [wood[en]] slab = minecraft:double_wooden_slab {Damage:0}
-	double spruce [wood[en]] slab = minecraft:double_wooden_slab {Damage:1}
-	double birch [wood[en]] slab = minecraft:double_wooden_slab {Damage:2}
-	double jungle [wood[en]] slab = minecraft:double_wooden_slab {Damage:3}
-	double acacia [wood[en]] slab = minecraft:double_wooden_slab {Damage:4}
-	double dark oak [wood[en]] slab = minecraft:double_wooden_slab {Damage:5}
-
-	any wood[en] slab = oak slab, spruce slab, birch slab, jungle slab, acacia slab, dark oak slab
-	any slab = any wooden slab, stone slab, sandstone slab, petrified oak slab, cobblestone slab, brick slab, stone brick slab, nether brick slab, quartz slab, red sandstone slab
-
-	#= Stairs
-	{stair direction} cobble[stone] stair¦s = minecraft:stone_stairs
-	{stair direction} {wood type} stair¦s = -stairs
-	{stair direction} [red] brick stair¦s = minecraft:brick_stairs
-	{stair direction} stone brick stair¦s = minecraft:stone_brick_stairs
-	{stair direction} nether brick stair¦s = minecraft:nether_brick_stairs
-	{stair direction} [nether] quartz stair¦s = minecraft:quartz_stairs
-	{stair direction} sandstone stair¦s = minecraft:sandstone_stairs
-	{stair direction} red sandstone stair¦s = minecraft:red_sandstone_stairs
-	{stair direction} purpur stair¦s = minecraft:purpur_stairs
-	[any] stair¦s = oak stairs, spruce stairs, birch stairs, jungle stairs, acacia stairs, dark oak stairs, cobblestone stairs, brick stairs, stone brick stairs, nether brick stairs, quartz stairs, purpur stairs, sandstone stairs, red sandstone stairs
-
-	# Construction/Decorative
-	[red] brick block¦s = minecraft:brick_block
-	nether brick [block]¦s = minecraft:nether_brick
-
-	stone brick¦s = minecraft:stonebrick {Damage:0}
-	moss[y] stone brick¦s = minecraft:stonebrick {Damage:1}
-	cracked stone brick¦s = minecraft:stonebrick {Damage:2}
-	chiseled stone brick¦s = minecraft:stonebrick {Damage:3}
-	any stone brick¦s = stone bricks, mossy stone bricks, cracked stone bricks, chiseled stone bricks
-
-	([nether] quartz block¦s|block¦s of [nether] quartz) = minecraft:quartz_block {Damage:0}
-	chiseled [nether] quartz [block¦s] = minecraft:quartz_block {Damage:1}
-	vertical [nether] quartz pillar¦s = minecraft:quartz_block {Damage:2}
-	(east-west|west-east) [nether] quartz pillar¦s = minecraft:quartz_block {Damage:3}
-	(north-south|south-north) [nether] quartz pillar¦s = minecraft:quartz_block {Damage:4}
-	[any] [nether] quartz pillar = vertical quartz pillar, east-west quartz pillar, north-south quartz pillar
-	any [nether] quartz [block¦s] = quartz block, chiseled quartz, any quartz pillar
-
-	[raw] prismarine [block¦s] = minecraft:prismarine {Damage:0}
-	prismarine brick¦s = minecraft:prismarine {Damage:1}
-	dark prismarine [block¦s] = minecraft:prismarine {Damage:2}
-	any prismarine = raw prismarine, prismarine bricks, dark prismarine
-	sea lantern¦s = minecraft:sea_lantern
-	wet sponge¦s = minecraft:sponge {Damage:1}
-
-	# Miscellaneous
-	[unlit] pumpkin¦s = minecraft:pumpkin
-	(lit pumpkin|jack(-| )o['](-| )lantern)¦s = minecraft:lit_pumpkin
-	melon [block]¦s = minecraft:melon_block
-	any ice [block¦s] = ice, packed ice
-	hay [(bale|block)¦s] = minecraft:hay_block
-	snow block¦s = minecraft:snow
-
 # 1.13 removed data values and separated tons of blocks into their own IDs.
 # This section contains building blocks whose IDs were changed by 1.13.
 building blocks after flattening:
@@ -277,7 +84,7 @@ building blocks after flattening:
 	{snowable} podzol [block¦s] = minecraft:podzol
 	{snowable} mycelium [block¦s] = minecraft:mycelium
 	[nether] quartz ore¦s = minecraft:nether_quartz_ore
-	{lightable} redstone ore¦s = minecraft:redstone_ore
+	redstone ore¦s = minecraft:redstone_ore
 
 	# Wood
 	# planks
@@ -285,11 +92,11 @@ building blocks after flattening:
 	[any] [wood[en]] plank¦s = oak planks, spruce planks, birch planks, jungle planks, acacia planks, dark oak planks
 
 	# Normal logs
-	{axis-aligned} {tree type} log¦s = -log
+	{tree type} log¦s = -log
 	[any] log¦s = oak log, spruce log, birch log, jungle log, acacia log, dark oak log
 
 	# Bark
-	{axis-aligned} {tree type} (wood|bark) [block¦s] = -wood
+	{tree type} (wood|bark) [block¦s] = -wood
 
 	# Desert
 	red sand [block¦s] = minecraft:red_sand
@@ -327,7 +134,7 @@ building blocks after flattening:
 	# Construction/Decorative
 	([nether] quartz block[s]|block[s] of [nether] quartz) = minecraft:quartz_block
 	chiseled [nether] quartz [block¦s] = minecraft:chiseled_quartz_block
-	{axis-aligned} [nether] quartz pillar¦s = minecraft:quartz_pillar
+	[nether] quartz pillar¦s = minecraft:quartz_pillar
 	any [nether] quartz = quartz block, chiseled quartz, quartz pillar
 
 	[raw] prismarine [block¦s] = minecraft:prismarine
@@ -349,23 +156,22 @@ building blocks after flattening:
 
 	# Miscellaneous
 	pumpkin¦s = minecraft:pumpkin
-	{directional} (unlit|carved) pumpkin¦s = minecraft:carved_pumpkin
-	{directional} (lit pumpkin|jack(-| )o['](-| )lantern)¦s = minecraft:jack_o_lantern
+	(unlit|carved) pumpkin¦s = minecraft:carved_pumpkin
+	(lit pumpkin|jack(-| )o['](-| )lantern)¦s = minecraft:jack_o_lantern
 	melon [block]¦s = minecraft:melon
 	[red] brick block¦s = minecraft:bricks
-	{axis-aligned} hay [(bale|block)¦s] = minecraft:hay_block
-	[any] hay [(bale|block)¦s] = vertical hay bale, east-west hay bale, north-south hay bale
+	hay [(bale|block)¦s] = minecraft:hay_block
 	snow block¦s = minecraft:snow_block
-	{axis-aligned} purpur pillar¦s = minecraft:purpur_pillar
+	purpur pillar¦s = minecraft:purpur_pillar
 
 # Categories for items that exist in both 1.13 and before but with different ids
 categories:
-	any oak log = oak log, east-west oak log, north-south oak log, oak bark
-	any spruce log = spruce log, east-west spruce log, north-south spruce log, spruce bark
-	any birch log = birch log, east-west birch log, north-south birch log, birch bark
-	any jungle log = jungle log, east-west jungle log, north-south jungle log, jungle bark
-	any acacia log = acacia log, east-west acacia log, north-south acacia log, acacia bark
-	any dark oak log = dark oak log, east-west dark oak log, north-south dark oak log, dark oak bark
+	any oak log = oak log, oak bark
+	any spruce log = spruce log, spruce bark
+	any birch log = birch log, birch bark
+	any jungle log = jungle log, jungle bark
+	any acacia log = acacia log, acacia bark
+	any dark oak log = dark oak log, dark oak bark
 
 	[any] (wood|bark) [block¦s] = oak bark, spruce bark, birch bark, jungle bark, acacia bark, dark oak bark
 	[any] log = any oak log, any spruce log, any birch log, any jungle log, any acacia log, any dark oak log
@@ -381,33 +187,11 @@ combat update:
 	minecraft version = 1.9 or newer
 	purpur block¦s = minecraft:purpur_block
 
-# Building blocks add in 1.9 whose IDs were changed in the flattening (1.13)
-combat update before flattening:
-	minecraft version = 1.9 to 1.12.2
-	end[ ]stone brick¦s = minecraft:end_bricks
-	purpur pillar¦s = minecraft:purpur_pillar
-	[bottom] purpur slab = minecraft:purpur_slab {Damage:0}
-	(upside-down|top) purpur slab = minecraft:purpur_slab {Damage:8}
-	(double purpur|purpur double) slab = minecraft:purpur_double_slab
-	[any] slab = any slab, purpur slab
-
 # Building blocks added in 1.10 whose IDs have never changed.
 frostburn update:
 	minecraft version = 1.10 or newer
 	nether wart block¦s = minecraft:nether_wart_block
 	bone block¦s = minecraft:bone_block
-
-# Building blocks added in 1.10 whose IDs were changed in the flattening (1.13)
-frostburn update before flattening:
-	minecraft version = 1.10 to 1.12.2
-	magma [block¦s] = minecraft:magma
-	red nether brick¦s = minecraft:red_nether_brick
-
-# Building blocks add in 1.12 whose IDs were changed in the flattening.
-world of color update before flattening:
-	minecraft version = 1.12.2
-	{colored} concrete = minecraft:concrete
-	{colored} concrete powder = minecraft:concrete_powder
 
 # NEW items that were added by 1.13 (as opposed to renames of old items).
 # These could've been grouped with the post-flattening aliases but this is better for clarity
@@ -415,21 +199,21 @@ world of color update before flattening:
 update aquatic:
 	minecraft version = 1.13 or newer
 	# Update Aquatic added log variants with no bark.
-	{axis-aligned} stripped oak log¦s = minecraft:stripped_oak_log
-	{axis-aligned} stripped spruce log¦s = minecraft:stripped_spruce_log
-	{axis-aligned} stripped birch log¦s = minecraft:stripped_birch_log
-	{axis-aligned} stripped jungle log¦s = minecraft:stripped_jungle_log
-	{axis-aligned} stripped acacia log¦s = minecraft:stripped_acacia_log
-	{axis-aligned} stripped dark oak log¦s = minecraft:stripped_dark_oak_log
+	stripped oak log¦s = minecraft:stripped_oak_log
+	stripped spruce log¦s = minecraft:stripped_spruce_log
+	stripped birch log¦s = minecraft:stripped_birch_log
+	stripped jungle log¦s = minecraft:stripped_jungle_log
+	stripped acacia log¦s = minecraft:stripped_acacia_log
+	stripped dark oak log¦s = minecraft:stripped_dark_oak_log
 	[any] stripped log [block¦s] = stripped oak log, stripped spruce log, stripped birch log, stripped jungle log, stripped acacia log, stripped dark oak log
 
 	# There's also barkless variants of the full bark logs.
-	{axis-aligned} stripped oak (bark|wood) [block¦s] = minecraft:stripped_oak_wood
-	{axis-aligned} stripped spruce (bark|wood) [block¦s] = minecraft:stripped_spruce_wood
-	{axis-aligned} stripped birch (bark|wood) [block¦s] = minecraft:stripped_birch_wood
-	{axis-aligned} stripped jungle (bark|wood) [block¦s] = minecraft:stripped_jungle_wood
-	{axis-aligned} stripped acacia (bark|wood) [block¦s] = minecraft:stripped_acacia_wood
-	{axis-aligned} stripped dark oak (bark|wood) [block¦s] = minecraft:stripped_dark_oak_wood
+	stripped oak (bark|wood) [block¦s] = minecraft:stripped_oak_wood
+	stripped spruce (bark|wood) [block¦s] = minecraft:stripped_spruce_wood
+	stripped birch (bark|wood) [block¦s] = minecraft:stripped_birch_wood
+	stripped jungle (bark|wood) [block¦s] = minecraft:stripped_jungle_wood
+	stripped acacia (bark|wood) [block¦s] = minecraft:stripped_acacia_wood
+	stripped dark oak (bark|wood) [block¦s] = minecraft:stripped_dark_oak_wood
 	[any] stripped (bark|wood) [block¦s] = stripped oak bark, stripped spruce bark, stripped birch bark, stripped jungle bark, stripped acacia bark, stripped dark oak bark
 
 	# Define any log to include the stripped ones
@@ -468,7 +252,7 @@ update aquatic:
 	[any] coral block¦s = any dead coral block, any living coral block
 
 	# Coral plants (the 2D ones like flowers).
-	{waterloggable} {coral type} plant¦s = -
+	{coral type} plant¦s = -
 
 	[any] (tube|blue) coral plant¦s = dead tube coral plant, living tube coral plant
 	[any] (brain|pink) coral plant¦s = dead brain coral plant, living brain coral plant
@@ -482,9 +266,9 @@ update aquatic:
 
 	# Coral fans
 	# Floor
-	{waterloggable} {coral type} fan¦s = -_fan
+	{coral type} fan¦s = -_fan
 	# Wall
-	{waterloggable} {directional} {coral type} wall fan¦s = -_wall_fan
+	{coral type} wall fan¦s = -_wall_fan
 
 	[any] (tube|blue) coral fan¦s = dead tube coral fan, living tube coral fan, dead tube coral wall fan, living tube coral wall fan
 	[any] (brain|pink) coral fan¦s = dead brain coral fan, living brain coral fan, dead brain coral wall fan, living brain coral wall fan
@@ -532,12 +316,12 @@ nether update:
 	[any] ore¦s = any stone ore, any nether ore
 
 	{nether block} nylium¦s = -nylium
-	{axis-aligned} {nether block} stem¦s = -stem
-	{axis-aligned} {nether block} hyphae = -hyphae
-	{axis-aligned} stripped crimson stem¦s = minecraft:stripped_crimson_stem
-	{axis-aligned} stripped warped stem¦s = minecraft:stripped_warped_stem
-	{axis-aligned} stripped crimson hyphae¦s = minecraft:stripped_crimson_hyphae
-	{axis-aligned} stripped warped hyphae¦s = minecraft:stripped_warped_hyphae
+	{nether block} stem¦s = -stem
+	{nether block} hyphae = -hyphae
+	stripped crimson stem¦s = minecraft:stripped_crimson_stem
+	stripped warped stem¦s = minecraft:stripped_warped_stem
+	stripped crimson hyphae¦s = minecraft:stripped_crimson_hyphae
+	stripped warped hyphae¦s = minecraft:stripped_warped_hyphae
 
 	[any] nylium¦s = crimson nylium, warped nylium
 	[any] plank¦s = oak planks, spruce planks, jungle planks, birch planks, acacia planks, dark oak planks, crimson planks, warped planks
@@ -568,7 +352,7 @@ caves and cliffs update part 1:
 	{waxed} weathered cut copper [block¦s] = -weathered_cut_copper
 	{waxed} oxidized cut copper [block¦s] = -oxidized_cut_copper
 	
-	{axis-aligned} deepslate [block¦s] = minecraft:deepslate
+	deepslate [block¦s] = minecraft:deepslate
 	chiseled deepslate [block¦s] = minecraft:chiseled_deepslate
 	cobbled deepslate [block¦s] = minecraft:cobbled_deepslate
 	polished deepslate [block¦s] = minecraft:polished_deepslate
@@ -629,55 +413,45 @@ the wild update:
 	
 	sculk catalyst¦s = minecraft:sculk_catalyst
 
-	{summonable}:
-		{default} = -
-		(summonable|active) = -[can_summon=true]
-		(non-summable|no-warden|activated) = -[can_summon=false]
+	shrieker = minecraft:sculk_shrieker
 	
-	{shriekable}:
-		{default} = -
-		shrieking = -[shrieking=true]
-		(quiet|non-shrieking) = -[shrieking=false]
-	
-	{waterloggable} {summonable} {shriekable} shrieker = minecraft:sculk_shrieker
-	
-	{axis-aligned} mangrove (wood|bark) [block¦s] = minecraft:mangrove_wood
+	mangrove (wood|bark) [block¦s] = minecraft:mangrove_wood
 	[any] wood¦s = any wood, mangrove wood
 
 	[any] [wood[en]] plank¦s = any wooden plank, mangrove planks
 
-	{axis-aligned} mangrove log¦s = minecraft:mangrove_log
+	mangrove log¦s = minecraft:mangrove_log
 	[any] log¦s = any log, mangrove log
 
-	{axis-aligned} stripped mangrove (bark|wood) [block¦s] = minecraft:stripped_mangrove_wood
+	stripped mangrove (bark|wood) [block¦s] = minecraft:stripped_mangrove_wood
 	[any] stripped (bark|wood) [block¦s] = any stripped bark, stripped mangrove bark
 
-	{axis-aligned} stripped mangrove log¦s = minecraft:stripped_mangrove_log
+	stripped mangrove log¦s = minecraft:stripped_mangrove_log
 	[any] stripped log [block¦s] = any stripped log, stripped mangrove log
 
 trails and tales update:
 	minecraft version = 1.20 or newer
 
 	# Cherry wood
-	{axis-aligned} cherry (wood|bark) [block¦s] = minecraft:cherry_wood
+	cherry (wood|bark) [block¦s] = minecraft:cherry_wood
 	[any] wood¦s = any wood, cherry wood
 
-	{axis-aligned} cherry log¦s = minecraft:cherry_log
+	cherry log¦s = minecraft:cherry_log
 	[any] log¦s = any log, cherry log
 
 	[any] [wood[en]] plank¦s = any wooden plank, cherry planks
 
-	{axis-aligned} stripped cherry (bark|wood) [block¦s] = minecraft:stripped_cherry_wood
+	stripped cherry (bark|wood) [block¦s] = minecraft:stripped_cherry_wood
 	[any] stripped (bark|wood) [block¦s] = any stripped bark, stripped cherry bark
 
-	{axis-aligned} stripped cherry log¦s = minecraft:stripped_cherry_log
+	stripped cherry log¦s = minecraft:stripped_cherry_log
 	[any] stripped log [block¦s] = any stripped log, stripped cherry log
 
 	# Bamboo wood
 
 	# Reminder that bamboo is slightly different than a wood log, but still has similar principles, don't copy section for new wood.
-	{axis-aligned} bamboo [wood] block¦s = minecraft:bamboo_block
-	{axis-aligned} stripped bamboo [wood] block¦s = minecraft:stripped_bamboo_block
+	bamboo [wood] block¦s = minecraft:bamboo_block
+	stripped bamboo [wood] block¦s = minecraft:stripped_bamboo_block
 	[any] stripped (bark|wood) [block¦s] = any stripped wood, stripped bamboo wood block
 	[any] wood¦s = any wood, bamboo block, stripped bamboo wood block
 

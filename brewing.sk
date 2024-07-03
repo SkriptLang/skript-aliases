@@ -50,10 +50,6 @@ unchanged ingredients:
 	gold[en] carrot¦s = minecraft:golden_carrot
 	rabbit['s] (foot|feet) = minecraft:rabbit_foot
 
-ingredients before flattening:
-	minecraft version = 1.12.2 or older
-	(glistering|gold[en]) melon[ slice]¦s = minecraft:speckled_melon
-
 ingredients after flattening:
 	minecraft version = 1.13 or newer
 	(glistering|gold[en]) melon[ slice]¦s = minecraft:glistering_melon_slice

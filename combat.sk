@@ -69,11 +69,6 @@ village and pillage horse armor:
 
 	[any] (horse armo[u]r|barding) = iron horse armor, gold horse armor, diamond horse armor, leather horse armor
 
-# Minecraft Wiki is wrong about totem versions; name changed only after 1.12
-old totem:
-	minecraft version = 1.11 to 1.11.2
-	totem[s] of undying = minecraft:totem
-
 new totem:
 	minecraft version = 1.12 or newer
 	totem[s] of undying = minecraft:totem_of_undying
@@ -88,11 +83,6 @@ update aquatic combat items:
 	[any] (cap|helmet)¦s = leather cap, iron cap, gold cap, diamond cap, chain cap, turtle helmet
 
 	trident¦s = minecraft:trident[relatedEntity=trident]
-
-old categories:
-	minecraft version = 1.12.2 or older
-	[any] weapon¦s = any sword, bow
-	[any] equipment = any weapon, any armor, shield
 
 village and pillage update categories:
 	minecraft version = 1.14 or newer
@@ -133,20 +123,20 @@ trails and tales update:
 	minecraft version = 1.20 or newer
 
 	netherite [armo[u]r] [upgrade] smithing template¦s = minecraft:netherite_upgrade_smithing_template
-	sentry armo[u]r [trim] smithing template¦s = minecraft:sentry_armor_trim_smithing_template
-	vex armo[u]r [trim] smithing template¦s = minecraft:vex_armor_trim_smithing_template
-	wild armo[u]r [trim] smithing template¦s = minecraft:wild_armor_trim_smithing_template
-	coast armo[u]r [trim] smithing template¦s = minecraft:coast_armor_trim_smithing_template
-	dune armo[u]r [trim] smithing template¦s = minecraft:dune_armor_trim_smithing_template
-	wayfinder armo[u]r [trim] smithing template¦s = minecraft:wayfinder_armor_trim_smithing_template
-	raiser armo[u]r [trim] smithing template¦s = minecraft:raiser_armor_trim_smithing_template
-	shaper armo[u]r [trim] smithing template¦s = minecraft:shaper_armor_trim_smithing_template
-	host armo[u]r [trim] smithing template¦s = minecraft:host_armor_trim_smithing_template
-	ward armo[u]r [trim] smithing template¦s = minecraft:ward_armor_trim_smithing_template
-	silence armo[u]r [trim] smithing template¦s = minecraft:silence_armor_trim_smithing_template
-	tide armo[u]r [trim] smithing template¦s = minecraft:tide_armor_trim_smithing_template
-	snout armo[u]r [trim] smithing template¦s = minecraft:snout_armor_trim_smithing_template
-	rib armo[u]r [trim] smithing template¦s = minecraft:rib_armor_trim_smithing_template
-	eye armo[u]r [trim] smithing template¦s = minecraft:eye_armor_trim_smithing_template
-	spire armo[u]r [trim] smithing template¦s = minecraft:spire_armor_trim_smithing_template
-	[any] [armo[u]r] [trim] smithing template¦s = netherite armor smithing template, sentry armor smithing template, vex armor smithing template, wild armor smithing template, coast armor smithing template, dune armor smithing template, wayfinder armor smithing template, raiser armor smithing template, shaper armor smithing template, host armor smithing template, ward armor smithing template, silence armor smithing template, tide armor smithing template, snout armor smithing template, rib armor smithing template, eye armor smithing template, spire armor smithing template
+	sentry armo[u]r trim smithing template¦s = minecraft:sentry_armor_trim_smithing_template
+	vex armo[u]r trim smithing template¦s = minecraft:vex_armor_trim_smithing_template
+	wild armo[u]r trim smithing template¦s = minecraft:wild_armor_trim_smithing_template
+	coast armo[u]r trim smithing template¦s = minecraft:coast_armor_trim_smithing_template
+	dune armo[u]r trim smithing template¦s = minecraft:dune_armor_trim_smithing_template
+	wayfinder armo[u]r trim smithing template¦s = minecraft:wayfinder_armor_trim_smithing_template
+	raiser armo[u]r trim smithing template¦s = minecraft:raiser_armor_trim_smithing_template
+	shaper armo[u]r trim smithing template¦s = minecraft:shaper_armor_trim_smithing_template
+	host armo[u]r trim smithing template¦s = minecraft:host_armor_trim_smithing_template
+	ward armo[u]r trim smithing template¦s = minecraft:ward_armor_trim_smithing_template
+	silence armo[u]r trim smithing template¦s = minecraft:silence_armor_trim_smithing_template
+	tide armo[u]r trim smithing template¦s = minecraft:tide_armor_trim_smithing_template
+	snout armo[u]r trim smithing template¦s = minecraft:snout_armor_trim_smithing_template
+	rib armo[u]r trim smithing template¦s = minecraft:rib_armor_trim_smithing_template
+	eye armo[u]r trim smithing template¦s = minecraft:eye_armor_trim_smithing_template
+	spire armo[u]r trim smithing template¦s = minecraft:spire_armor_trim_smithing_template
+	[any] [armo[u]r] trim smithing template¦s = netherite armor smithing template, sentry armor smithing template, vex armor smithing template, wild armor smithing template, coast armor smithing template, dune armor smithing template, wayfinder armor smithing template, raiser armor smithing template, shaper armor smithing template, host armor smithing template, ward armor smithing template, silence armor smithing template, tide armor smithing template, snout armor smithing template, rib armor smithing template, eye armor smithing template, spire armor smithing template

@@ -9,77 +9,13 @@ unlisted blocks:
 	barrier [block]¦s = minecraft:barrier
 	dragon egg¦s = minecraft:dragon_egg
 
-# Unlisted blocks that had a different ID before the flattening.
-unlisted before flattening:
-	minecraft version = 1.12.2 or older
-	[nether] portal [block¦s] = minecraft:portal
-	[monster] spawner¦s = minecraft:mob_spawner
-
-	{command block direction}:
-		{default} = - {Damage:1}
-		down[ward] [facing] = - {Damage:0}
-		up[ward] [facing] = - {Damage:1}
-		north[ward] [facing] = - {Damage:2}
-		south[ward] [facing] = - {Damage:3}
-		west[ward] [facing] = - {Damage:4}
-		east[ward] [facing] = - {Damage:5}
-		down[ward] [facing] conditional = - {Damage:8}
-		up[ward] [facing] conditional = - {Damage:9}
-		north[ward] [facing] conditional = - {Damage:10}
-		south[ward] [facing] conditional = - {Damage:11}
-		west[ward] [facing] conditional = - {Damage:12}
-		east[ward] [facing] conditional = - {Damage:13}
-	{command block direction} [impulse] command block¦s = minecraft:command_block
-
-	{cocoa states}:
-		{default} = - {Damage:0}
-		(small|freshly planted) north[ward] [facing] = - {Damage:0}
-		(small|freshly planted) east[ward] [facing] = - {Damage:1}
-		(small|freshly planted) south[ward] [facing] = - {Damage:2}
-		(small|freshly planted) west[ward] [facing] = - {Damage:3}
-		medium north[ward] [facing] = - {Damage:4}
-		medium east[ward] [facing] = - {Damage:5}
-		medium south[ward] [facing] = - {Damage:6}
-		medium west[ward] [facing] = - {Damage:7}
-		(ripe|big|large) north[ward] [facing] = - {Damage:8}
-		(ripe|big|large) east[ward] [facing] = - {Damage:9}
-		(ripe|big|large) south[ward] [facing] = - {Damage:10}
-		(ripe|big|large) west[ward] [facing] = - {Damage:11}
-	{cocoa states} cocoa [plant¦s] = minecraft:cocoa
-
-	pumpkin stem = minecraft:pumpkin_stem
-	melon stem = minecraft:melon_stem
-
-	{crop growth stage}:
-		{default} = - {Damage:7}
-		freshly planted = - {Damage:0}
-		stage (2|two) = - {Damage:1}
-		stage (3|three) = - {Damage:2}
-		stage (4|four) = - {Damage:3}
-		stage (5|five) = - {Damage:4}
-		stage (6|six) = - {Damage:5}
-		stage (7|seven) = - {Damage:6}
-		(ripe|fully grown|stage (8|eight)) = - {Damage:7}
-	{crop growth stage} potato plant¦s = minecraft:potatoes
-	{crop growth stage} carrot plant¦s = minecraft:carrots
-	{crop growth stage} wheat plant¦s = minecraft:wheat_plant
-	{crop growth stage} pumpkin stem = minecraft:pumpkin_stem
-	{crop growth stage} melon stem = minecraft:melon_stem
-	{beetroot growth stage}:
-		{default} = - {Damage:3}
-		(freshly planted|stage (1|one)) = - {Damage:0}
-		stage (2|two) = - {Damage:1}
-		stage (3|three) = - {Damage:2}
-		(ripe|fully grown|stage (4|four)) = - {Damage:3}
-	{beetroot growth stage} beet[root] plant¦s = minecraft:beetroots
-
 village and pillage update:
 	minecraft version = 1.14 or newer
 	suspicious stew¦s = minecraft:suspicious_stew #food item, but not listed in creative menu; may change
 
 village and pillage pre-nether:
 	minecraft version = 1.14 to 1.15.2
-	{orientable} jigsaw block¦s = minecraft:jigsaw
+	jigsaw block¦s = minecraft:jigsaw
 
 # Unlisted blocks added in 1.9
 unchanged combat update unlisted:
@@ -87,25 +23,10 @@ unchanged combat update unlisted:
 	frosted ice = minecraft:frosted_ice
 	end[er] gateway = minecraft:end_gateway
 
-# Unlisted blocks added in 1.9 whose states were changed in the flattening.
-combat update unlisted blocks before flattening:
-	minecraft version = 1.9 to 1.12.2
-	{command block direction} chain command block¦s = minecraft:chain_command_block
-	{command block direction} repeating command block¦s = minecraft:repeating_command_block
-
 # Unlisted blocks added in 1.10 that never changed.
 frostburn update unlisted blocks:
 	minecraft version = 1.10 or newer
 	structure void¦s = minecraft:structure_void
-
-# Unlisted blocks added in 1.10 which were changed as part of the flattening
-exploration update unlisted blocks before flattening:
-	minecraft version = 1.10 to 1.12.2
-	save structure block = minecraft:structure_block {Damage:0}
-	load structure block = minecraft:structure_block {Damage:1}
-	corner structure block = minecraft:structure_block {Damage:2}
-	data structure block = minecraft:structure_block {Damage:3}
-	[any] structure block¦s = save structure block, load structure block, corner structure block, data structure block
 
 # Unlisted blocks added in 1.12
 world of color unlisted blocks:
@@ -122,52 +43,26 @@ unlisted after flattening:
 		{default} = -
 		unconditional = -[conditional=false]
 		conditional = -[conditional=true]
-	{orientable} {conditional} [impulse] command block¦s = minecraft:command_block
-	{orientable} {conditional} chain command block¦s = minecraft:chain_command_block
-	{orientable} {conditional} repeating command block¦s = minecraft:repeating_command_block
+	{conditional} [impulse] command block¦s = minecraft:command_block
+	{conditional} chain command block¦s = minecraft:chain_command_block
+	{conditional} repeating command block¦s = minecraft:repeating_command_block
 
-	{structure block mode}:
-		{default} = -
-		save [mode] = -[mode=save]
-		load [mode] = -[mode=load]
-		corner [mode] = -[mode=corner]
-		data [mode] = -[mode=data]
-	{structure block mode} structure block¦s = minecraft:structure_block
+	structure block¦s = minecraft:structure_block
 	[any] structure block¦s = save structure block, load structure block, corner structure block, data structure block
 
-	{directional} attached melon stem = minecraft:attached_melon_stem
-	{directional} attached pumpkin stem = minecraft:attached_pumpkin_stem
+	attached melon stem = minecraft:attached_melon_stem
+	attached pumpkin stem = minecraft:attached_pumpkin_stem
 
-	{cocoa growth state}:
-		{default} = -
-		(small|freshly planted) = -[age=0]
-		medium = -[age=1]
-		(ripe|big|large) = -[age=2]
-	{cocoa growth state} {directional} cocoa [plant¦s] = minecraft:cocoa
+	cocoa [plant¦s] = minecraft:cocoa
 
-	{crop growth stage}:
-		{default} = -
-		freshly planted = -[age=0]
-		stage (2|two) = -[age=1]
-		stage (3|three) = -[age=2]
-		stage (4|four) = -[age=3]
-		stage (5|five) = -[age=4]
-		stage (6|six) = -[age=5]
-		stage (7|seven) = -[age=6]
-		(ripe|fully grown|stage (8|eight)) = -[age=7]
-	{crop growth stage} potato plant = minecraft:potatoes
-	{crop growth stage} carrot plant = minecraft:carrots
-	{crop growth stage} wheat plant = minecraft:wheat
-	{crop growth stage} pumpkin stem = minecraft:pumpkin_stem
-	{crop growth stage} melon stem = minecraft:melon_stem
-	{three stage growth}:
-		{default} = -
-		(freshly planted|stage (1|one)) = -[age=0]
-		stage (2|two) = -[age=1]
-		stage (3|three) = -[age=2]
-		(ripe|fully grown|stage (4|four)) = -[age=3]
-	{three stage growth} beet[root] plant = minecraft:beetroots
-	{three stage growth} nether wart plant = minecraft:nether_wart
+	potato plant = minecraft:potatoes
+	carrot plant = minecraft:carrots
+	wheat plant = minecraft:wheat
+	pumpkin stem = minecraft:pumpkin_stem
+	melon stem = minecraft:melon_stem
+
+	beet[root] plant = minecraft:beetroots
+	nether wart plant = minecraft:nether_wart
 
 	debug stick¦s = minecraft:debug_stick
 
@@ -180,63 +75,19 @@ update aquatic unlisted blocks:
 	{column direction}:
 		{default} = -
 		(upward|pushing) = -[drag=false]
-		(downward[s]|whirlpool|dragging) = -[drag=true]
+		(downward|dragging) = -[drag=true]
 	{column direction} bubble column = minecraft:bubble_column
 
 # Flowing lava and water exist as technical blocks in Minecraft 1.13 but they're not placeable
 # with vanilla commands nor do they exist in the material enum.
 updated fluids:
 	minecraft version = 1.13 or newer
-	{fluid state}:
-		{default} = -
-		stationary = -[level=0]
-		flowing = -[level=1]
-		flowing stage (1|one) = -[level=1]
-		flowing stage (2|two) = -[level=2]
-		flowing stage (3|three) = -[level=3]
-		flowing stage (4|four) = -[level=4]
-		flowing stage (5|five) = -[level=5]
-		flowing stage (6|six) = -[level=6]
-		flowing stage (7|seven) = -[level=7]
-		falling = -[level=8]
-		falling stage (1|one) = -[level=8]
-		falling stage (2|two) = -[level=9]
-		falling stage (3|three) = -[level=10]
-		falling stage (4|four) = -[level=11]
-		falling stage (5|five) = -[level=12]
-		falling stage (6|six) = -[level=13]
-		falling stage (7|seven) = -[level=14]
-		falling stage (8|eight) = -[level=15]
-	{fluid state} water = minecraft:water
-	{fluid state} lava = minecraft:lava
-old fluids:
-	minecraft version = 1.12.2 or older
-	flowing water = minecraft:flowing_water
-	flowing lava = minecraft:flowing_lava
-	[stationary] water = minecraft:water
-	[stationary] lava = minecraft:lava
+	water = minecraft:water
+	lava = minecraft:lava
 
 nether update:
 	minecraft version = 1.16 or newer
-
-	soul fire = minecraft:soul_fire #will do block states at a later time
-
-	# Blockstates for jigsaws were changed
-	{jigsaw-orientation}:
-		{default} = -
-		down-east = -[orientation=down_east]
-		down-north = -[orientation=down_north]
-		down-south = -[orientation=down_south]
-		down-west = -[orientation=down_west]
-		up-east = -[orientation=up_east]
-		up-north = -[orientation=up_north]
-		up-south = -[orientation=up_south]
-		up-west = -[orientation=up_west]
-		east-up = -[orientation=east_up]
-		west-up = -[orientation=west_up]
-		north-up = -[orientation=north_up]
-		south-up = -[orientation=south_up]
-	{jigsaw-orientation} jigsaw block¦s = minecraft:jigsaw
+	soul fire = minecraft:soul_fire
 
 caves and cliffs update part 1:
 	minecraft version = 1.17 or newer
@@ -244,9 +95,6 @@ caves and cliffs update part 1:
 	candle cake¦s = minecraft:candle_cake
 	{colored} candle cake¦s = -candle_cake
 	
-	{berried}:
-		{default} = -
-		berried = -[berries=true]
 	cave vines = minecraft:cave_vines
 	cave vines plant = minecraft:cave_vines_plant
 	
@@ -269,7 +117,7 @@ caves and cliffs update part 1:
 		level (13|thirteen) = -[level=13]
 		level (14|fourteen) = -[level=14]
 		level (15|fifteen) = -[level=15]
-	{waterloggable} {light level} light [block¦s] = minecraft:light
+	{light level} light [block¦s] = minecraft:light
 	
 	# The following aliases will likely need to be moved to their 'proper' categories in the future
 	# As of 1.19, these items were not fully implemented

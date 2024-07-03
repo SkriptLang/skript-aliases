@@ -12,125 +12,14 @@ unchanged redstone:
 
 	(tripwire|placed string)¦s = minecraft:tripwire
 
-	{orientable} dispenser¦s = minecraft:dispenser
-	{orientable} dropper¦s = minecraft:dropper
+	dispenser¦s = minecraft:dispenser
+	dropper¦s = minecraft:dropper
 
 	tnt [block¦s] = minecraft:tnt[relatedEntity=primed tnt]
 
 village and pillage update:
 	minecraft version = 1.14 or newer
-	{powerable} {directional} lectern = minecraft:lectern
-
-redstone before flattening:
-	minecraft version = 1.12.2 or older
-	# Repeater
-	unpowered [redstone] repeater¦s = minecraft:unpowered_repeater
-	powered [redstone] repeater¦s = minecraft:powered_repeater
-	[redstone] repeater item¦s = minecraft:repeater
-	[any] [redstone] repeater¦s = unpowered repeater, powered repeater, repeater item
-
-	# Comparator. Note that the powered_comparator block isn't even used.
-	powered comparator = minecraft:powered_comparator
-
-	[unpowered] [redstone] comparator [item]¦s = minecraft:comparator
-	powered [redstone] comparator¦s = minecraft:comparator {Damage:4}
-	any [redstone] comparator¦s = unpowered comparator, powered comparator
-
-	# Buttons & levers
-	{attached toggleable} [oak] wood button¦s = minecraft:wooden_button
-	{attached toggleable} stone button¦s = minecraft:stone_button
-	[any] button¦s = stone button, wood button
-	[redstone] lever¦s = minecraft:lever
-
-	# Pressure plates
-	[oak] wood pressure plate¦s = minecraft:wooden_pressure_plate
-	[any] pressure plate¦s = stone pressure plate, wood pressure plate, gold pressure plate, iron pressure plate
-
-	# Trapdoors
-	iron trapdoor¦s = minecraft:iron_trapdoor
-	[oak] wood trapdoor¦s = minecraft:trapdoor
-	[any] trapdoor¦s = wood trapdoor, iron trapdoor
-
-	# Fences and doors
-	{gate state}:
-		{default} = - {Damage:0}
-		[closed] south(ward| facing) = - {Damage:0}
-		[closed] west(ward| facing) = - {Damage:1}
-		[closed] north(ward| facing) = - {Damage:2}
-		[closed] east(ward| facing) = - {Damage:3}
-		open south(ward| facing) = - {Damage:4}
-		open west(ward| facing) = - {Damage:5}
-		open north(ward| facing) = - {Damage:6}
-		open east(ward| facing) = - {Damage:7}
-
-	{gate state} oak [wood] [fence] gate¦s = minecraft:fence_gate
-	{gate state} spruce [wood] [fence] gate¦s = minecraft:spruce_fence_gate
-	{gate state} birch [wood] [fence] gate¦s = minecraft:birch_fence_gate
-	{gate state} jungle [wood] [fence] gate¦s = minecraft:jungle_fence_gate
-	{gate state} acacia [wood] [fence] gate¦s = minecraft:acacia_fence_gate
-	{gate state} dark oak [wood] [fence] gate¦s = minecraft:dark_oak_fence_gate
-	[any] [fence] gate¦s = oak gate, spruce gate, birch gate, jungle gate, acacia gate, dark oak gate
-
-	{door state}:
-		{default} = - {Damage:0}
-		[closed] east(ward| facing) [bottom] = - {Damage:0}
-		[closed] south(ward| facing) [bottom] = - {Damage:1}
-		[closed] west(ward| facing) [bottom] = - {Damage:2}
-		[closed] north(ward| facing) [bottom] = - {Damage:3}
-		open east(ward| facing) [bottom] = - {Damage:4}
-		open south(ward| facing) [bottom] = - {Damage:5}
-		open west(ward| facing) [bottom] = - {Damage:6}
-		open north(ward| facing) [bottom] = - {Damage:7}
-		left-hinged [closed] top = - {Damage:8}
-		right-hinged [closed] top = - {Damage:9}
-		left-hinged powered [closed] top = - {Damage:10}
-		right-hinged powered [closed] top = - {Damage:11}
-
-	# Door blocks
-	{door state} oak [wood] door¦s = minecraft:wooden_door_block
-	{door state} iron door¦s = minecraft:iron_door_block
-	{door state} spruce [wood] door¦s = minecraft:spruce_door_block
-	{door state} birch [wood] door¦s = minecraft:birch_door_block
-	{door state} jungle [wood] door¦s = minecraft:jungle_door_block
-	{door state} acacia [wood] door¦s = minecraft:acacia_door_block
-	{door state} dark oak [wood] door¦s = minecraft:dark_oak_door_block
-
-	# Door items
-	oak [wood] door item¦s = minecraft:wooden_door
-	iron door item¦s = minecraft:iron_door
-	spruce [wood] door item¦s = minecraft:spruce_door
-	birch [wood] door item¦s = minecraft:birch_door
-	jungle [wood] door item¦s = minecraft:jungle_door
-	acacia [wood] door item¦s = minecraft:acacia_door
-	dark oak [wood] door item¦s = minecraft:dark_oak_door
-
-	[any] wood[en] door item¦s = oak door item, spruce door item, birch door item, jungle door item, acacia door item, dark oak door item
-	[any] wood[en] door¦s = oak door, spruce door, birch door, jungle door, acacia door, dark oak door
-	[any] door item¦s = iron door item, any wood door item
-	[any] door¦s = iron door, any wood door
-
-	# Redstone torches
-	{attached} [lit] redstone torch¦es = minecraft:redstone_torch
-	{attached} unlit redstone torch¦es = minecraft:unlit_redstone_torch
-	any redstone torch¦es = lit redstone torch, unlit redstone torch
-
-	# Redstone lamp
-	lit redstone lamp¦s = minecraft:lit_redstone_lamp
-	[unlit] redstone lamp¦s = minecraft:redstone_lamp
-	any redstone lamp¦s = lit redstone lamp, unlit redstone lamp
-
-	# Pistons
-	{orientable} [(normal|non-sticky)] piston¦s = minecraft:piston
-	{orientable} sticky piston¦s = minecraft:sticky_piston
-	{orientable} piston head¦s = minecraft:piston_head
-
-	# Misc activatables/redstone components
-	note block¦s = minecraft:noteblock
-	tripwire hook¦s = minecraft:tripwire_hook
-	(piston extension|block 36|moving piston|moving block¦s) = minecraft:piston_head
-	hopper¦s = minecraft:hopper
-	(normal|uninverted) daylight (detector|sensor)¦s = minecraft:daylight_detector
-	inverted daylight (detector|sensor)¦s = minecraft:daylight_detector_inverted
+	lectern = minecraft:lectern
 
 redstone after flattening:
 	minecraft version = 1.13 or newer
@@ -139,31 +28,26 @@ redstone after flattening:
 		{default} = -
 		(comparison|compare mode) = -[mode=compare]
 		(subtraction|subtract mode) = -[mode=subtract]
-	{powerable} {directional} [redstone] repeater¦s = minecraft:repeater
-	{powerable} {directional} {comparator mode} [redstone] comparator [item]¦s = minecraft:comparator
+	[redstone] repeater¦s = minecraft:repeater
+	{comparator mode} [redstone] comparator [item]¦s = minecraft:comparator
 
 	# Buttons
-	{powerable} {directional} {wood type} {attached} button¦s = -button
-	{powerable} {directional} {attached} stone button¦s = minecraft:stone_button
+	{wood type} button¦s = -button
+	stone button¦s = minecraft:stone_button
 	[any] wood[en] button¦s = oak button, spruce button, birch button, jungle button, acacia button, dark oak button
 
 	# Pressure plates
-	{powerable} {wood type} pressure plate¦s = -pressure_plate
+	{wood type} pressure plate¦s = -pressure_plate
 	[any] wood[en] pressure plate¦s = oak pressure plate, spruce pressure plate, birch pressure plate, jungle pressure plate, acacia pressure plate, dark oak pressure plate
 	[any] pressure plate¦s = stone pressure plate, gold pressure plate, iron pressure plate, any wooden pressure plate
 
 	# Redstone torches
-	{lightable} redstone [floor] torch¦es = minecraft:redstone_torch
-	{directional} {lightable} redstone wall torch¦es = minecraft:redstone_wall_torch
-	[any] redstone floor torch¦es = lit redstone floor torch, unlit redstone floor torch
-	[any] redstone wall torch¦es = lit redstone wall torch, unlit redstone wall torch
-	[any] lit redstone torch¦es = lit redstone floor torch, lit redstone wall torch
-	[any] unlit redstone torch¦es = unlit redstone floor torch, unlit redstone wall torch
-	any redstone torch = any redstone floor torch, any redstone wall torch
+	redstone [floor] torch¦es = minecraft:redstone_torch
+	redstone wall torch¦es = minecraft:redstone_wall_torch
+	any redstone torch = redstone floor torch, redstone wall torch
 
 	# Redstone lamp
-	{lightable} redstone lamp¦s = minecraft:redstone_lamp
-	[any] redstone lamp¦s = lit redstone lamp, unlit redstone lamp
+	redstone lamp¦s = minecraft:redstone_lamp
 
 	# Note blocks
 	{instrumental}:
@@ -178,50 +62,30 @@ redstone after flattening:
 		snare = -[instrument=snare]
 		basedrum = -[instrument=basedrum]
 		harp = -[instrument=harp]
-	{powerable} {instrumental} note block¦s = minecraft:note_block
+	{instrumental} note block¦s = minecraft:note_block
 
-	# Hoppers can't point up, and orientable includes up (and it's the default state)
-	{hopper direction}:
-		{default} = -
-		down(ward| facing) = -[facing=down]
-		north(ward| facing) = -[facing=north]
-		south(ward| facing) = -[facing=south]
-		west(ward| facing) = -[facing=west]
-		east(ward| facing) = -[facing=east]
-	{enableable}:
-		{default} = -
-		enabled = -[enabled=true]
-		disabled = -[enabled=false]
-	{hopper direction} {enableable} hopper¦s = minecraft:hopper
+	hopper¦s = minecraft:hopper
 
 	# Pistons
-	{extendable}:
-		{default} = -
-		(unextended|retracted) = -[extended=false]
-		extended = -[extended=true]
-	{orientable} {extendable} [(normal|non-sticky)] piston¦s = minecraft:piston
-	{orientable} {extendable} sticky piston¦s = minecraft:sticky_piston
-	{orientable} piston head¦s = minecraft:piston_head
+	[(normal|non-sticky)] piston¦s = minecraft:piston
+	sticky piston¦s = minecraft:sticky_piston
+	piston head¦s = minecraft:piston_head
 	(piston extension|block 36|moving piston|moving block¦s) = minecraft:moving_piston
 
 	# Misc activatables
-	{directional} {powerable} tripwire hook¦s = minecraft:tripwire_hook
+	tripwire hook¦s = minecraft:tripwire_hook
 	[(normal|uninverted)] daylight (detector|sensor)¦s = minecraft:daylight_detector[inverted=false]
 	inverted daylight (detector|sensor)¦s = minecraft:daylight_detector[inverted=true]
-	{powerable} {directional} {attached} [redstone] lever¦s = minecraft:lever
+	[redstone] lever¦s = minecraft:lever
 
 unstable tnt:
 	minecraft version = 1.13.1 or newer
 	stable tnt [block¦s] = minecraft:tnt[unstable=false]
 	unstable tnt [block¦s] = minecraft:tnt[unstable=true]
 
-old observer:
-	minecraft version = 1.11 to 1.12.2
-	{orientable} [redstone] observer¦s = minecraft:observer
-
 new observer:
 	minecraft version = 1.13 or newer
-	{powerable} {orientable} [redstone] observer¦s = minecraft:observer
+	[redstone] observer¦s = minecraft:observer
 
 categories:
 	[any] daylight (detector|sensor)¦s = normal daylight detector, inverted daylight detector
@@ -231,8 +95,8 @@ nether update:
 	minecraft version = 1.16 or newer
 
 	(archery|redstone|hay|bullseye) target [block]¦s = minecraft:target
-	{powerable} polished blackstone pressure plate¦s = minecraft:polished_blackstone_pressure_plate
-	{powerable} {directional} {attached} polished blackstone button¦s = minecraft:polished_blackstone_button
+	polished blackstone pressure plate¦s = minecraft:polished_blackstone_pressure_plate
+	polished blackstone button¦s = minecraft:polished_blackstone_button
 
 	[any] pressure plate¦s = stone pressure plate, gold pressure plate, iron pressure plate, any wooden pressure plate, crimson pressure plate, warped pressure plate, polished blackstone pressure plate
 	[any] wood[en] button¦s = any wooden button, crimson button, warped button, polished blackstone button
@@ -243,14 +107,10 @@ nether update:
 caves and cliffs update part 1:
 	minecraft version = 1.17 or newer
 	
-	{waterloggable} {powerable} {orientable} lightning rod¦s = minecraft:lightning_rod
+	lightning rod¦s = minecraft:lightning_rod
 	
 	# Sculk sencor has now placed on redstone since 1.19, but it existed since 1.17
-	{sculk sensor activity}:
-		{default} = -
-		active = -[sculk_sensor_phase=active]
-		cooldown = -[sculk_sensor_phase=cooldown]
-	{waterloggable} {sculk sensor activity} sculk sensor¦s = minecraft:sculk_sensor
+	sculk sensor¦s = minecraft:sculk_sensor
 
 global post flattening:
 	minecraft version = 1.13 or newer

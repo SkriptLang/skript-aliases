@@ -19,14 +19,6 @@ exploration update 2:
 	iron nugget¦s = minecraft:iron_nugget
 	any nugget¦s = gold nugget, iron nugget
 
-old items:
-	minecraft version = 1.12.2 or older
-	charcoal = minecraft:coal {Damage:1}
-	sugar cane item¦s = minecraft:reeds
-	sugar cane¦s = minecraft:sugar_cane_block
-	popped chorus fruit¦s = minecraft:chorus_fruit_popped
-	nether brick item¦s = minecraft:netherbrick
-
 new items:
 	minecraft version = 1.13 or newer
 	charcoal = minecraft:charcoal
@@ -38,18 +30,7 @@ new items:
 	popped chorus fruit¦s = minecraft:popped_chorus_fruit
 	nether brick item¦s = minecraft:nether_brick
 
-	{hatch stage}:
-		{default} = -
-		uncracked = -[hatch=0]
-		cracked = -[hatch=1]
-		almost hatched = -[hatch=2]
-	{egg count}:
-		{default} = -
-		(one|singular) = -[eggs=1]
-		(pair of|[pile of] two) = -[eggs=2]
-		(trio of|[pile of] three) = -[eggs=3]
-		[pile of] four = -[eggs=4]
-	{egg count} {hatch stage} turtle egg¦s = minecraft:turtle_egg
+	turtle egg¦s = minecraft:turtle_egg
 
 random items:
 	stick¦s = minecraft:stick
@@ -81,11 +62,6 @@ random items:
 	rabbit hide¦s = minecraft:rabbit_hide
 	enchanted book¦s = minecraft:enchanted_book
 
-pre-flattening random items:
-	minecraft version = 1.12.2 or older
-	nether wart item¦s = minecraft:nether_wart
-	nether wart [plant]¦s = minecraft:nether_warts
-
 post-flattening random items:
 	minecraft version = 1.13 or newer
 	nether wart [item]¦s = minecraft:nether_wart
@@ -113,11 +89,6 @@ fireworks after components:
 		(1|one|short) = - {minecraft:fireworks={"flight_duration":1}}
 		(2|two|medium) = - {minecraft:fireworks={"flight_duration":2}}
 		(3|three|long) = - {minecraft:fireworks={"flight_duration":3}}
-
-fireworks before flattening:
-	minecraft version = 1.12.2 or older
-	[(flight|duration|flight duration) {firework types} ] firework [rocket]¦s = minecraft:fireworks[relatedEntity=firework rocket]
-	firework (star|charge)¦s = minecraft:firework_charge
 
 fireworks after flattening:
 	minecraft version = 1.13 or newer
@@ -165,42 +136,6 @@ new music discs:
 	[music] (disc|record) ward = minecraft:music_disc_ward
 	[any] [music] (disc|record) = music disc 11, music disc 13, music disc blocks, music disc cat, music disc chirp, music disc far, music disc mall, music disc mellohi, music disc stal, music disc strad, music disc wait, music disc ward
 
-old music discs:
-	minecraft version = 1.12.2 or older
-	[music] (disc|record) 11 = minecraft:record_11
-	[music] (disc|record) 13 = minecraft:record_13
-	[music] (disc|record) blocks = minecraft:record_blocks
-	[music] (disc|record) cat = minecraft:record_cat
-	[music] (disc|record) chirp = minecraft:record_chirp
-	[music] (disc|record) far = minecraft:record_far
-	[music] (disc|record) mall = minecraft:record_mall
-	[music] (disc|record) mellohi = minecraft:record_mellohi
-	[music] (disc|record) stal = minecraft:record_stal
-	[music] (disc|record) strad = minecraft:record_strad
-	[music] (disc|record) wait = minecraft:record_wait
-	[music] (disc|record) ward = minecraft:record_ward
-	any [music] (disc|record) = music disc 11, music disc 13, music disc blocks, music disc cat, music disc chirp, music disc far, music disc mall, music disc mellohi, music disc stal, music disc strad, music disc wait, music disc ward
-
-dyes before flattening:
-	minecraft version = 1.12.2 or older
-	(ink sac|black dye)¦s = minecraft:dye {Damage:0}
-	(rose red|red dye)¦s =  minecraft:dye {Damage:1}
-	(cactus green|green dye)¦s = minecraft:dye {Damage:2}
-	(cocoa bean|brown dye)¦s = minecraft:dye {Damage:3}
-	(lapis [lazuli[s]]|blue dye[s]) = minecraft:dye {Damage:4}
-	purple dye¦s = minecraft:dye {Damage:5}
-	cyan dye¦s = minecraft:dye {Damage:6}
-	light gr(a|e)y dye¦s = minecraft:dye {Damage:7}
-	gr(a|e)y dye¦s = minecraft:dye {Damage:8}
-	pink dye¦s = minecraft:dye {Damage:9}
-	lime dye¦s = minecraft:dye {Damage:10}
-	(dandelion yellow|yellow dye)¦s = minecraft:dye {Damage:11}
-	light blue dye¦s = minecraft:dye {Damage:12}
-	magenta dye¦s = minecraft:dye {Damage:13}
-	orange dye¦s = minecraft:dye {Damage:14}
-	(bone[ ]meal|white dye)¦s = minecraft:dye {Damage:15}
-	[any] dye = black dye, red dye, green dye, brown dye, blue dye, purple dye, cyan dye, light gray dye, gray dye, pink dye, lime dye, yellow dye, light blue dye, magenta dye, orange dye, white dye
-
 aquatic update dyes:
 	minecraft version = 1.13 or newer
 	purple dye¦s = minecraft:purple_dye
@@ -244,42 +179,11 @@ village and pillage update (removed from dyes):
 
 village and pillage update:
 	minecraft version = 1.14 or newer
-	{composter stage}:
-		{default} = -
-		(empty|unfilled|level 0) = -[level=0]
-		level 1 = -[level=1]
-		level 2 = -[level=2]
-		level 3 = -[level=3]
-		(half full|half empty|level 4) = -[level=4]
-		level 5 = -[level=5]
-		level 6 = -[level=6]
-		level 7 = -[level=7]
-		(filled|level 8) = -[level=8]
-	{composter stage} composter¦s = minecraft:composter
+	composter¦s = minecraft:composter
 
-	{bamboo age}:
-		{default} = -
-		(thin|age 0) = -[age=0]
-		(thick|age 1) = -[age=1]
-	{bamboo leaves}:
-		{default} = -
-		leafless = -[leaves=none]
-		small leaved = -[leaves=small]
-		large leaved = -[leaves=large]
-	{bamboo stage}:
-		{default} = -
-		(stagnant|stage 0) = -[stage=0]
-		(growing|stage 1) = -[stage=1]
-	{bamboo age} {bamboo leaves} {bamboo stage} bamboo [plant] = minecraft:bamboo
-	bamboo = minecraft:bamboo
+	bamboo [plant] = minecraft:bamboo
 
-	{berry age}:
-		{default} = -
-		young = -[age=0]
-		berryless = -[age=1]
-		(some berries|berried) = -[age=2]
-		(many berries|very berried) = -[age=3]
-	{berry age} sweet berry bush [plant] = minecraft:sweet_berry_bush
+	sweet berry bush [plant] = minecraft:sweet_berry_bush
 
 	flower [charge] banner pattern¦s = minecraft:flower_banner_pattern
 	creeper [charge] banner pattern¦s = minecraft:creeper_banner_pattern
@@ -377,21 +281,10 @@ trails and tales update:
 
 	pitcher pod¦s = minecraft:pitcher_pod
 
-	{sniffer egg hatches}:
-		{default} = -
-		(stage 1|hatch 0) = -[hatch=0]
-		(stage 2|hatch 1) = -[hatch=1]
-		(stage 3|hatch 2) = -[hatch=2]
-	{sniffer egg hatches} sniffer egg¦s = minecraft:sniffer_egg
+	sniffer egg¦s = minecraft:sniffer_egg
 
-	{dusted}:
-		{default} = -
-		(stage 1|dusted 0) = -[dusted=0]
-		(stage 2|dusted 1) = -[dusted=1]
-		(stage 3|dusted 2) = -[dusted=2]
-		(stage 4|dusted 3) = -[dusted=3]
-	{dusted} suspicious sand¦s = minecraft:suspicious_sand
-	{dusted} suspicious gravel¦s = minecraft:suspicious_gravel
+	suspicious sand¦s = minecraft:suspicious_sand
+	suspicious gravel¦s = minecraft:suspicious_gravel
 
 beacons before components:
 	minecraft version = 1.20.4 or older

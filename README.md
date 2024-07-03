@@ -1,7 +1,9 @@
 # Skript Aliases
-These are the new aliases for Skript, currently work in progress. If you are
-looking for the plugin, you should go to the main
-[repository](https://github.com/SkriptLang/Skript).
+These is a stripped down version of the aliases for Skript. Nearly all aliases relating to blockdata have been removed, along with the armor trim aliases. This cuts the alias count from ~230,000 to ~9,000, significantly reducing load times.
+
+
+## How To Use
+If you're using Skript 2.9+, start by downloading the files from this repository (click the green code button and then 'download ZIP'). In your `plugins/Skript` folder, create a new folder named `aliases`. Copy the .sk files from the downloaded zip file into this new folder. Finally, set `load default aliases` to `false` in your `config.sk`. 
 
 ## Structure of Aliases
 Aliases are laid out in multiple subfolders and files inside them. In each file,
