@@ -67,7 +67,7 @@ foods after flattening:
 	cooked cod [fillet]¦s = minecraft:cooked_cod
 	[raw] salmon [fillet]¦s = minecraft:salmon[relatedEntity=salmon]
 	cooked salmon [fillet]¦s = minecraft:cooked_salmon
-	pufferfish¦es = minecraft:pufferfish[relatedEntity=puffer fish]
+	pufferfish¦es = minecraft:pufferfish[relatedEntity=pufferfish]
 	tropical fish¦es = minecraft:tropical_fish[relatedEntity=tropical fish]
 	any raw fish¦es = raw cod, raw salmon, pufferfish, tropical fish
 	
