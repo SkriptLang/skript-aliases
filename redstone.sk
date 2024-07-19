@@ -252,6 +252,12 @@ caves and cliffs update part 1:
 		cooldown = -[sculk_sensor_phase=cooldown]
 	{waterloggable} {sculk sensor activity} sculk sensor¦s = minecraft:sculk_sensor
 
+	{calibrated sculk sensor activity}:
+		{default} = -
+		active = -[sculk_sensor_phase=active]
+		cooldown = -[sculk_sensor_phase=cooldown]
+	{waterloggable} {calibrated sculk sensor activity} calibrated sculk sensor¦s = minecraft:calibrated_sculk_sensor
+
 global post flattening:
 	minecraft version = 1.13 or newer
 
