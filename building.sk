@@ -41,6 +41,7 @@ unchanged building blocks:
 	# Construction/Decorative
 	[(plain|unstained)] glass [block¦s] = minecraft:glass
 	book[ ]shel(f|ves) = minecraft:bookshelf
+	chiseled book[ ]shel(f|ves) = minecraft:chiseled_bookshelf
 
 	# Nether
 	netherrack [block¦s] = minecraft:netherrack
