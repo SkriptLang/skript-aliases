@@ -17,7 +17,7 @@ carrot¦s = minecraft:carrot
 The strange character, ¦, tells where the difference between singular and plural
 is. In this case: *carrot*, *carrots*
 
-For figuring out the ids, [Minecraft Wiki](https://minecraft.gamepedia.com/Minecraft_Wiki)
+For figuring out the ids, [Minecraft Wiki](https://minecraft.wiki/)
 is probably the best place. Alternatively, you can see them ingame if you use
 F3+H.
 
