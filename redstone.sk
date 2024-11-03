@@ -299,3 +299,10 @@ trails and tales update:
 	[any] door¦s = any door, bamboo door
 	[any] fence¦s = any fence, bamboo fence
 	[any] wood[en] pressure plate¦s = any wooden pressure plate, bamboo pressure plate
+
+	{sculk sensor activity}:
+		{default} = -
+		active = -[sculk_sensor_phase=active]
+		cooldown = -[sculk_sensor_phase=cooldown]
+
+	{waterloggable} {sculk sensor activity} {directional} calibrated sculk sensor¦s = minecraft:calibrated_sculk_sensor
