@@ -138,7 +138,7 @@ the wild update:
 	mangrove (boat¦s with chest|chest boat¦s) = minecraft:mangrove_chest_boat[relatedEntity=mangrove chest boat]
 	any mangrove boat¦s = mangrove boat, mangrove chest boat
 
-	[any] (boat¦s with [a] chest|chest[ed] boat¦s) = spruce chest boat, birch chest boat, jungle chest boat, acacia chest boat, dark oak chest boat, mangrove chest boat
+	[any] (boat¦s with [a] chest|chest[ed] boat¦s) = oak chest boat, spruce chest boat, birch chest boat, jungle chest boat, acacia chest boat, dark oak chest boat, mangrove chest boat
 	[any] boat = any boat, chested boat, any mangrove boat
 
 trails and tales update:
