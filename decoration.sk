@@ -654,7 +654,7 @@ nether update:
 	any campfire = campfire, soul campfire
 
 	{lantern hanging} soul lantern¦s = minecraft:soul_lantern
-	any lantern = lantern, soul lantern
+	[any] lantern = lantern, soul lantern
 
 	[any] crimson sign¦s = crimson floor sign, crimson wall sign
 	[any] warped sign¦s = warped floor sign, warped wall sign
