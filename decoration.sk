@@ -349,7 +349,7 @@ village and pillage decoratives:
 
 	{waterloggable} brick wall¦s = minecraft:brick_wall
 	{waterloggable} prismarine wall¦s = minecraft:prismarine_wall
-	{waterloggable} sandstone wall¦s = minecraft:sandstone wall
+	{waterloggable} sandstone wall¦s = minecraft:sandstone_wall
 	{waterloggable} red sandstone wall¦s = minecraft:red_sandstone_wall
 	{waterloggable} stone brick wall¦s = minecraft:stone_brick_wall
 	{waterloggable} mossy stone brick wall¦s = minecraft:mossy_stone_brick_wall
