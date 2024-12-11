@@ -295,9 +295,6 @@ nether update:
 	[music] (disc|record) pigstep = minecraft:music_disc_pigstep
 	[any] [music] (disc|record) = any music disc, music disc pigstep
 
-	(snout|piglin) banner pattern¦s = minecraft:piglin_banner_pattern
-	[any] banner pattern¦s = flower charge banner pattern, creeper charge banner pattern, skull charge banner pattern, thing banner pattern, globe banner pattern, snout banner pattern
-
 caves and cliffs update part 1:
 	minecraft version = 1.17 or newer
 	
