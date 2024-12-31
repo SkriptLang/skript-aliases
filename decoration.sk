@@ -8,11 +8,5 @@ unchanged decoratives:
 combat update:
 	end crystal [item]¦s = minecraft:end_crystal[relatedEntity=ender crystal]
 
-before caves and cliffs update part 1:
-	minecraft version = 1.16.5 or older
-
-	(grass|dirt) path [block]¦s = minecraft:grass_path
-	any dirt = any dirt, dirt path
-
 caves and cliffs update part 1:
 	glow item frame [item]¦s = minecraft:glow_item_frame[relatedEntity=glow item frame]
