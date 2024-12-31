@@ -1,94 +1,28 @@
-transportation items:
-	elytra¦s = minecraft:elytra
-	saddle¦s = minecraft:saddle
-	carrot[s] on [a] stick¦s = minecraft:carrot_on_a_stick
-
-new oak boat:
-	minecraft version = 1.13 or newer
-	oak boat¦s = minecraft:oak_boat[relatedEntity=oak boat]
-
 boats:
+	oak boat¦s = minecraft:oak_boat[relatedEntity=oak boat]
 	spruce boat¦s = minecraft:spruce_boat[relatedEntity=spruce boat]
 	birch boat¦s = minecraft:birch_boat[relatedEntity=birch boat]
 	jungle boat¦s = minecraft:jungle_boat[relatedEntity=jungle boat]
 	acacia boat¦s = minecraft:acacia_boat[relatedEntity=acacia boat]
 	dark oak boat¦s = minecraft:dark_oak_boat[relatedEntity=dark oak boat]
-
-	[any] boat¦s = oak boat, spruce boat, birch boat, jungle boat, acacia boat, dark oak boat
+	mangrove boat¦s = minecraft:mangrove_boat[relatedEntity=mangrove boat]
+	# boat with chest
+	oak (boat¦s with chest|chest boat¦s) = minecraft:oak_chest_boat[relatedEntity=oak chest boat]
+	spruce (boat¦s with chest|chest boat¦s) = minecraft:spruce_chest_boat[relatedEntity=spruce chest boat]
+	birch (boat¦s with chest|chest boat¦s) = minecraft:birch_chest_boat[relatedEntity=birch chest boat]
+	jungle (boat¦s with chest|chest boat¦s) = minecraft:jungle_chest_boat[relatedEntity=jungle chest boat]
+	acacia (boat¦s with chest|chest boat¦s) = minecraft:acacia_chest_boat[relatedEntity=acacia chest boat]
+	dark oak (boat¦s with chest|chest boat¦s) = minecraft:dark_oak_chest_boat[relatedEntity=dark oak chest boat]
+	mangrove (boat¦s with chest|chest boat¦s) = minecraft:mangrove_chest_boat[relatedEntity=mangrove chest boat]
 
 minecarts:
 	[normal] minecart¦s = minecraft:minecart[relatedEntity=minecart]
-
-	minecart[s] with chest¦s = minecraft:chest_minecart
-	storage minecart¦s = minecart with chest[relatedEntity=minecart with chest]
-
-	minecart[s] with furnace¦s = minecraft:furnace_minecart
-	powered minecart¦s = minecart with furnace[relatedEntity=powered minecart]
-
 	minecart[s] with tnt¦s = minecraft:tnt_minecart[relatedEntity=explosive minecart]
 	minecart[s] with hopper¦s = minecraft:hopper_minecart[relatedEntity=hopper minecart]
-	minecart[s] with command block¦s = minecraft:command_block_minecart
-
-	any minecart¦s = minecart, minecart with chest, minecart with furnace, minecart with tnt, minecart with hopper, minecart with command block
-
-rails after flattening:
-	minecraft version = 1.13 or newer
-
-	# Powered Rail
-	(golden|powered) [minecart] (rail|track)¦s = minecraft:powered_rail
-	(golden|powered) [minecart] (rail|track) item¦s = minecraft:powered_rail
-
-	# Detector Rail
-	detector [minecart] (rail|track)¦s = minecraft:detector_rail
-	detector [minecart] (rail|track) item¦s = minecraft:detector_rail
-
-	# Activator rail
-	activator [minecart] (rail|track)¦s = minecraft:activator_rail
-	activator [minecart] (rail|track) item¦s = minecraft:activator_rail
-
-# Rails whose IDs were never changed and whose version differences can be defined by variations.
-unchanged rails:
-	[normal] [minecart] (rail|track) [block]¦s = minecraft:rail
-	[minecart] (rail|track) item¦s = minecraft:rail
-
-nether update:
-	minecraft version = 1.16 or newer
-
-	warped fungus on a stick = minecraft:warped_fungus_on_a_stick
-
-the wild update:
-	minecraft version = 1.19 or newer
-
-	# boat with chest
-	spruce (boat¦s with chest|chest boat¦s) = minecraft:spruce_chest_boat[relatedEntity=spruce chest boat]
-	any spruce boat¦s = spruce boat, spruce chest boat
-	birch (boat¦s with chest|chest boat¦s) = minecraft:birch_chest_boat[relatedEntity=birch chest boat]
-	any birch boat¦s = birch boat, birch chest boat
-	jungle (boat¦s with chest|chest boat¦s) = minecraft:jungle_chest_boat[relatedEntity=jungle chest boat]
-	any jungle boat¦s = jungle boat, jungle chest boat
-	acacia (boat¦s with chest|chest boat¦s) = minecraft:acacia_chest_boat[relatedEntity=acacia chest boat]
-	any acacia boat¦s = acacia boat, acacia chest boat
-	oak (boat¦s with chest|chest boat¦s) = minecraft:oak_chest_boat[relatedEntity=oak chest boat]
-	any oak boat¦s = oak boat, oak chest boat
-	dark oak (boat¦s with chest|chest boat¦s) = minecraft:dark_oak_chest_boat[relatedEntity=dark oak chest boat]
-	any dark oak boat¦s = dark oak boat, dark oak chest boat
-
-	mangrove boat¦s = minecraft:mangrove_boat[relatedEntity=mangrove boat]
-	mangrove (boat¦s with chest|chest boat¦s) = minecraft:mangrove_chest_boat[relatedEntity=mangrove chest boat]
-	any mangrove boat¦s = mangrove boat, mangrove chest boat
-
-	[any] (boat¦s with [a] chest|chest[ed] boat¦s) = oak chest boat, spruce chest boat, birch chest boat, jungle chest boat, acacia chest boat, dark oak chest boat, mangrove chest boat
-	[any] boat = any boat, chested boat, any mangrove boat
 
 trails and tales update:
 	minecraft version = 1.20 or newer
-
 	cherry boat¦s = minecraft:cherry_boat[relatedEntity=cherry boat]
 	cherry (boat¦s with chest|chest boat¦s) = minecraft:cherry_chest_boat[relatedEntity=cherry chest boat]
-	any cherry boat¦s = cherry boat, cherry chest boat
 	bamboo (boat|raft)¦s = minecraft:bamboo_raft[relatedEntity=bamboo raft]
 	bamboo ((boat|raft)¦s with chest|chest (boat|raft)¦s) = minecraft:bamboo_chest_raft[relatedEntity=bamboo chest raft]
-	any bamboo (boat|raft)¦s = bamboo raft, bamboo chest raft
-
-	[any] (boat¦s with [a] chest|chest[ed] boat¦s) = any chest boat, cherry chest boat, bamboo chest raft
-	[any] boat = any boat, any cherry boat, any bamboo raft
