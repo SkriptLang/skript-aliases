@@ -5,6 +5,8 @@ random items:
 	egg¦s = minecraft:egg[relatedEntity=egg]
 	ender pearl¦s = minecraft:ender_pearl[relatedEntity=ender pearl]
 	(bottle[s] o' enchanting|xp bottle¦s|experience bottle¦s) = minecraft:experience_bottle[relatedEntity=xp bottle]
+	brick block¦s = minecraft:bricks
+	brick¦s = minecraft:brick
 
 fireworks before components:
 	minecraft version = 1.20.4 or older
