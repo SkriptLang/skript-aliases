@@ -10,3 +10,10 @@ combat update:
 
 caves and cliffs update part 1:
 	glow item frame [item]¦s = minecraft:glow_item_frame[relatedEntity=glow item frame]
+
+# https://github.com/SkriptLang/Skript/issues/7484
+bricks:
+	brick = minecraft:brick
+	bricks = minecraft:bricks
+	nether brick = minecraft:nether_brick
+	nether bricks = minecraft:nether_bricks
