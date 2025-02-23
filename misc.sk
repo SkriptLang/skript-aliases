@@ -73,3 +73,6 @@ goat horns after components:
 goat horns:
 	minecraft version = 1.19 or newer
 	{horn variations} goat horn¦s = minecraft:goat_horn
+wind charge data:
+	minecraft version = 1.20.5 or newer
+	wind charge [item]¦s = minecraft:wind_charge[relatedEntity=wind charge]
