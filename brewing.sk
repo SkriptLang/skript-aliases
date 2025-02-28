@@ -1,8 +1,4 @@
 potions:
-	[(glass|empty)] bottle¦s = minecraft:glass_bottle
-
-	dragon['s] breath = minecraft:dragon_breath
-
 	(potion¦s of {potion types}|{potion types} potion¦s) = minecraft:potion
 	(splash potion¦s of {potion types}|{potion types} splash potion¦s) = minecraft:splash_potion
 	(lingering potion¦s of {potion types}|{potion types} lingering potion¦s) = minecraft:lingering_potion
@@ -13,51 +9,3 @@ potions:
 	[any] splash potion¦s = minecraft:splash_potion
 	[any] lingering potion¦s = minecraft:lingering_potion
 	any potion = potion, any splash potion, any lingering potion
-
-blocks unchanged:
-	brewing stand¦s = minecraft:brewing_stand
-
-blocks before caves and cliffs update part 1:
-	minecraft version = 1.16.5 or older
-	
-	{cauldron level}:
-		{default} = -
-		empty = -[level=0]
-		one-third filled = -[level=1]
-		two-thirds filled = -[level=2]
-		(filled|full) = -[level=3]
-	{cauldron level} cauldron¦s = minecraft:cauldron
-
-blocks after caves and cliffs update part 1:
-	minecraft version = 1.17 or newer
-	
-	[empty] cauldron¦s = minecraft:cauldron
-	
-	lava cauldron¦s = minecraft:lava_cauldron
-	{cauldron level}:
-		{default} = -
-		one-third filled = -[level=1]
-		two-thirds filled = -[level=2]
-		(filled|full) = -[level=3]
-	{cauldron level} [water] cauldron¦s = minecraft:water_cauldron # "water" is optional for backwards compatibility
-	{cauldron level} powder snow cauldron¦s = minecraft:powder_snow_cauldron
-
-unchanged ingredients:
-	ghast tear¦s = minecraft:ghast_tear
-	fermented spider eye¦s = minecraft:fermented_spider_eye
-	blaze powder¦s = minecraft:blaze_powder
-	magma cream¦s = minecraft:magma_cream
-	gold[en] carrot¦s = minecraft:golden_carrot
-	rabbit['s] (foot|feet) = minecraft:rabbit_foot
-
-ingredients before flattening:
-	minecraft version = 1.12.2 or older
-	(glistering|gold[en]) melon[ slice]¦s = minecraft:speckled_melon
-
-ingredients after flattening:
-	minecraft version = 1.13 or newer
-	(glistering|gold[en]) melon[ slice]¦s = minecraft:glistering_melon_slice
-
-update aquatic ingredients:
-	minecraft version = 1.13 or newer
-	phantom membrane¦s = minecraft:phantom_membrane
