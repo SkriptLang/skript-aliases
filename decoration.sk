@@ -18,5 +18,8 @@ bricks:
 	bricks = minecraft:bricks
 	nether brick = minecraft:nether_brick
 	nether bricks = minecraft:nether_bricks
+
+resin bricks:
+	minecraft version = 1.21.4 or newer
 	resin brick = minecraft:resin_brick
 	resin bricks = minecraft:resin_bricks
