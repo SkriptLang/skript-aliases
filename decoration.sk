@@ -834,3 +834,20 @@ before grass change:
 after grass change:
 	minecraft version = 1.20.3 or newer
 	short grass¦es = minecraft:short_grass
+
+copper age update:
+	minecraft version = 1.21.9 or newer
+	{oxidized}:
+		{default} = -
+		(lightly weathered|exposed) = exposed_-
+		weathered = weathered_-
+		oxidized = oxidized_-
+	{waxed}:
+		{default} = minecraft:-
+		waxed = minecraft:waxed_-
+
+	{waterloggable} {axis-aligned} [iron] chain¦s = minecraft:iron_chain
+
+	{waterloggable} {axis-aligned} {waxed} {oxidized} copper chain¦s = -copper_chain
+
+	{waterloggable} {waxed} {oxidized} copper bars = -copper_bars
