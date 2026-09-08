@@ -192,5 +192,5 @@ the wild update after golems egg:
 trails and tales update:
 	minecraft version = 1.20 or newer
 	(camel [spawn] egg|spawn camel)¦s = minecraft:camel_spawn_egg
-	(sniffer [spawn] egg|spawn sniffer)¦s = minecraft:sniffer_spawn_egg
+	(sniffer spawn egg|spawn sniffer)¦s = minecraft:sniffer_spawn_egg
 	[any] spawn egg¦s = any spawn egg, spawn camel, spawn sniffer
