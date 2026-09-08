@@ -106,7 +106,7 @@ decoratives before flattening:
 	# Cobble walls
 	cobblestone wall¦s = minecraft:cobblestone_wall {Damage:0}
 	mossy cobblestone wall¦s = minecraft:cobblestone_wall {Damage:1}
-	any cobblstone wall¦s = cobblestone wall, mossy cobblestone wall
+	any cobblestone wall¦s = cobblestone wall, mossy cobblestone wall
 
 	# Colored blocks
 	{colored} carpet¦s = minecraft:carpet
@@ -349,7 +349,7 @@ village and pillage decoratives:
 
 	{waterloggable} brick wall¦s = minecraft:brick_wall
 	{waterloggable} prismarine wall¦s = minecraft:prismarine_wall
-	{waterloggable} sandstone wall¦s = minecraft:sandstone wall
+	{waterloggable} sandstone wall¦s = minecraft:sandstone_wall
 	{waterloggable} red sandstone wall¦s = minecraft:red_sandstone_wall
 	{waterloggable} stone brick wall¦s = minecraft:stone_brick_wall
 	{waterloggable} mossy stone brick wall¦s = minecraft:mossy_stone_brick_wall
@@ -617,7 +617,7 @@ nether update:
 	twisting vine¦s = minecraft:twisting_vines
 	twisting vine (block|plant)¦s = minecraft:twisting_vines_plant
 	nether sprout¦s = minecraft:nether_sprouts
-	{waterloggable} chain¦s = minecraft:chain
+	{waterloggable} [iron] chain¦s = minecraft:iron_chain
 	lodestone¦s = minecraft:lodestone
 
 	{nether block} fung(us|i) = -fungus
@@ -665,7 +665,7 @@ nether update:
 nether update part 2:
 	minecraft version = 1.16.2 or newer
 
-	{waterloggable} {axis-aligned} chain¦s = minecraft:chain
+	{waterloggable} {axis-aligned} [iron] chain¦s = minecraft:iron_chain
 	{waterloggable} {lantern hanging} lantern = minecraft:lantern
 	{waterloggable} {lantern hanging} soul lantern¦s = minecraft:soul_lantern
 	any lantern = lantern, soul lantern
@@ -827,6 +827,8 @@ trails and tales update:
 	{directional} piglin wall[-mounted] (skull|head)¦s = minecraft:piglin_wall_head
 	{reversed rotatable} piglin (head|skull)¦s = minecraft:piglin_head
 
+	sniffer egg¦s = minecraft:sniffer_egg
+
 before grass change:
 	minecraft version = 1.20.2 or older
 	short grass¦es = minecraft:grass
@@ -834,3 +836,20 @@ before grass change:
 after grass change:
 	minecraft version = 1.20.3 or newer
 	short grass¦es = minecraft:short_grass
+
+copper age update:
+	minecraft version = 1.21.9 or newer
+	{oxidized}:
+		{default} = -
+		(lightly weathered|exposed) = exposed_-
+		weathered = weathered_-
+		oxidized = oxidized_-
+	{waxed}:
+		{default} = minecraft:-
+		waxed = minecraft:waxed_-
+
+	{waterloggable} {axis-aligned} [iron] chain¦s = minecraft:iron_chain
+
+	{waterloggable} {axis-aligned} {waxed} {oxidized} copper chain¦s = -copper_chain
+
+	{waterloggable} {waxed} {oxidized} copper bars = -copper_bars
