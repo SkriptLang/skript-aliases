@@ -106,7 +106,7 @@ decoratives before flattening:
 	# Cobble walls
 	cobblestone wall¦s = minecraft:cobblestone_wall {Damage:0}
 	mossy cobblestone wall¦s = minecraft:cobblestone_wall {Damage:1}
-	any cobblstone wall¦s = cobblestone wall, mossy cobblestone wall
+	any cobblestone wall¦s = cobblestone wall, mossy cobblestone wall
 
 	# Colored blocks
 	{colored} carpet¦s = minecraft:carpet
@@ -617,7 +617,7 @@ nether update:
 	twisting vine¦s = minecraft:twisting_vines
 	twisting vine (block|plant)¦s = minecraft:twisting_vines_plant
 	nether sprout¦s = minecraft:nether_sprouts
-	{waterloggable} chain¦s = minecraft:chain
+	{waterloggable} [iron] chain¦s = minecraft:iron_chain
 	lodestone¦s = minecraft:lodestone
 
 	{nether block} fung(us|i) = -fungus
@@ -665,7 +665,7 @@ nether update:
 nether update part 2:
 	minecraft version = 1.16.2 or newer
 
-	{waterloggable} {axis-aligned} chain¦s = minecraft:chain
+	{waterloggable} {axis-aligned} [iron] chain¦s = minecraft:iron_chain
 	{waterloggable} {lantern hanging} lantern = minecraft:lantern
 	{waterloggable} {lantern hanging} soul lantern¦s = minecraft:soul_lantern
 	any lantern = lantern, soul lantern
